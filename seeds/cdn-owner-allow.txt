@@ -1,0 +1,41 @@
+# GitHub owners / npm packages on public CDNs that are legitimate and must never
+# be turned into URL-list entries, even if one of their files looks like a loader.
+# Lowercase, one per line.
+twbs
+jquery
+simple-icons
+devicons
+lipis
+fortawesome
+twitter
+jdecked
+google
+googlefonts
+microsoft
+mozilla
+jsdelivr
+highlightjs
+mathjax
+katex
+desmos
+lucide-icons
+lucide-static
+feathericons
+tabler
+iconify
+mdi
+material-icons
+bootstrap
+bootstrap-icons
+font-awesome
+@fortawesome
+d3
+plotly
+chart.js
+three
+p5
+phaser
+pixi.js
+swagger-api
+mermaid-js
+mermaid

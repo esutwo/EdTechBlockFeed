@@ -21,6 +21,9 @@
 *.jsdelivr.net
 *.unpkg.com
 *.cdnjs.cloudflare.com
+*.esm.sh
+*.statically.io
+*.githack.com
 *.wikipedia.org
 *.archive.org
 *.reddit.com

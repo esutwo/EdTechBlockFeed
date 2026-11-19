@@ -18,8 +18,9 @@ discovered_max_age_days = 60
 # Hosts from lists are kept this many days after they disappear from all lists
 # (protects against a source being briefly broken).
 list_grace_days = 7
-# Live verification budget per run.
+# Live verification budget per run (hosts / Google URLs, and CDN files).
 verify_max_hosts = 1500
+verify_max_cdn = 1500
 verify_workers = 32
 verify_timeout = 10
 # Re-check already-confirmed discovered hosts after this many days.
@@ -29,6 +30,12 @@ emit_wildcards = true
 # FortiGate threat feeds have per-feed entry limits (model dependent). Output
 # files are split into domains.txt, domains-2.txt, ... at this many lines.
 max_lines_per_file = 100000
+# CDN loaders (urls.txt): an owner with this many confirmed loader repos is
+# blocked as a whole on every mirror; below it, only the confirmed repos are.
+owner_promote_min = 2
+# "prefix"   -> cdn.jsdelivr.net/gh/owner/        (FortiGate matches as prefix)
+# "wildcard" -> cdn.jsdelivr.net/gh/owner/*       (if your FortiOS needs it)
+url_entry_style = "prefix"
 
 # ---------------------------------------------------------------------------
 # Curated lists
@@ -201,3 +208,28 @@ urls = [
 enabled = true
 keywords = ["unblocked", "unblockedgames", "ubg", "gnmath", "gn-math", "eaglercraft", "freegames", "schoolgames", "mathgames"]
 suffixes = ["pages.dev", "vercel.app", "netlify.app", "github.io", "workers.dev", "onrender.com", "it.com", "web.app"]
+
+# ---------------------------------------------------------------------------
+# Shared-CDN loaders (GitHub repos / npm packages opened through jsDelivr,
+# unpkg, esm.sh, statically, githack). Links come from every discovery source
+# above; these settings add owner expansion and GitHub code search.
+# ---------------------------------------------------------------------------
+
+[cdn]
+# Re-list each confirmed owner's repositories this often (days).
+owner_expand_days = 1
+owner_expand_max = 40       # owners expanded per run
+owner_repos_max = 40        # newest repos listed per owner
+files_per_repo = 6          # likely entry files (index.*, *.svg, *.html) checked per repo
+# GitHub code search for the loader signature: a full-screen SVG that embeds
+# HTML through <foreignObject> and loads an iframe or script. Needs a token
+# (the Actions GITHUB_TOKEN works); limited to 10 requests per minute.
+code_search_pages = 1
+code_search_queries = [
+  'foreignObject "position:fixed" iframe extension:svg',
+  'foreignObject "position: fixed" iframe extension:svg',
+  'foreignObject "position:fixed" script extension:svg',
+  'foreignObject "inset:0" iframe extension:svg',
+  'foreignObject "100vw" iframe extension:svg',
+  'foreignObject "1999/xhtml" "about:blank" extension:svg',
+]

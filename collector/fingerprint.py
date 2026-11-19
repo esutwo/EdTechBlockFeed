@@ -47,9 +47,68 @@ _GW = [re.compile(p, re.I) for p in GAME_WEAK]
 _PX = [re.compile(p, re.I) for p in PROXY]
 
 
+# --- CDN loader signatures (SVG / HTML files served from jsDelivr, unpkg ...)
+# A loader is a file that, opened as a page, takes over the whole viewport and
+# pulls in a game/proxy front end. Legitimate icon SVGs never do this.
+_SVG_ROOT = re.compile(r"<svg[\s>]", re.I)
+_FOREIGN = re.compile(r"<foreignObject", re.I)
+_XHTML = re.compile(r"1999/xhtml|<body[\s>]|<html[\s>]", re.I)
+_ACTIVE = re.compile(
+    r"<iframe|<script|srcdoc\s*=|createElement\(\s*['\"](?:script|iframe)|\bimport\(|"
+    r"document\.write|location\.(?:href|replace|assign)|window\.open\(|\batob\(|"
+    r"<embed|<object", re.I)
+_FULLVIEW = re.compile(
+    r"width=[\"']100%[\"'][^>]*height=[\"']100%|position:\s*fixed|inset:\s*0|100vw|100vh", re.I)
+_SCRIPT_NAV = re.compile(
+    r"<script[\s\S]{0,4000}?(?:location\.(?:href|replace|assign)|window\.open\(|"
+    r"document\.write|createElement\(\s*['\"](?:script|iframe))", re.I)
+_HTML_LOADER = [
+    re.compile(r"<iframe[^>]+(?:100vw|100vh|100%|position:\s*fixed|inset:\s*0)", re.I),
+    re.compile(r"document\.write\([\s\S]{0,200}atob\(", re.I),
+    re.compile(r"srcdoc\s*=\s*[\"'][^\"']{2000,}", re.I),
+    re.compile(r"window\.open\(\s*['\"]about:blank", re.I),
+]
+
+
+# Page titles copied from school tools. A real one is never served from a CDN.
+_CLOAK_TITLE = re.compile(
+    r"\b(classroom|google\s+(docs|drive|slides|sheets|forms)|my\s+drive|clever|"
+    r"schoology|canvas|powerschool|classlink|khan\s+academy|ixl|quizlet|edpuzzle|"
+    r"securly|goguardian|lightspeed|new\s+tab|inbox|gmail)\b", re.I)
+
+
+def loader_score(text: str, url: str = "", cdn: bool = False) -> Result | None:
+    """Detect SVG loaders anywhere, and HTML loaders on shared CDNs."""
+    head = text[:2000]
+    is_svg = url.lower().split("?")[0].split("#")[0].endswith(".svg") or bool(_SVG_ROOT.search(head))
+    if is_svg and _SVG_ROOT.search(text):
+        fo, act = bool(_FOREIGN.search(text)), sorted({m.lower()[:20] for m in _ACTIVE.findall(text)})
+        xhtml, full = bool(_XHTML.search(text)), bool(_FULLVIEW.search(text))
+        ev = f"svg foreignObject={fo} xhtml={xhtml} fullview={full} active={act[:4]}"
+        # Needs: embedded HTML + something active + either a full-screen layout
+        # or an active navigation/decoder (XSS samples and test fixtures that
+        # merely embed an element don't qualify).
+        strong_act = any(a.startswith(("document.write", "window.open", "srcdoc", "atob(",
+                                       "location.", "createelement", "import("))
+                         for a in act)
+        if fo and act and xhtml and (full or strong_act):
+            return Result("loader", ev)
+        if _SCRIPT_NAV.search(text):
+            return Result("loader", ev + " script-nav")
+        return None
+    if cdn:
+        hits = [p.pattern[:25] for p in _HTML_LOADER if p.search(text)]
+        t = TITLE_RE.search(text[:5000])
+        if t and _CLOAK_TITLE.search(t.group(1)) and "<script" in text.lower():
+            hits.append(f"tab-cloak title={t.group(1).strip()[:40]!r}")
+        if hits:
+            return Result("loader", f"html-loader {hits}")
+    return None
+
+
 @dataclass
 class Result:
-    verdict: str  # game | proxy | alive | dead
+    verdict: str  # game | proxy | loader | alive | dead
     evidence: str = ""
     final_url: str = ""
 
@@ -89,17 +148,27 @@ def score(text: str) -> Result | None:
     return None
 
 
-def classify(url: str, *, timeout: float = 10, ua: str = "Mozilla/5.0") -> Result:
+def _safe_url(url: str) -> str:
+    """Percent-encode characters http.client refuses (spaces, quotes, unicode)."""
+    p = urllib.parse.urlsplit(url)
+    path = urllib.parse.quote(p.path, safe="/%@:+,;=!$&'()*~-._")
+    query = urllib.parse.quote(p.query, safe="=&%+/:,;@!$'()*~-._?")
+    return urllib.parse.urlunsplit((p.scheme, p.netloc, path, query, ""))
+
+
+def classify(url: str, *, timeout: float = 10, ua: str = "Mozilla/5.0",
+             cdn: bool = False) -> Result:
+    """Fetch url and return game | proxy | loader | alive | dead.
+    cdn=True enables HTML-loader detection (used for shared-CDN files)."""
     try:
-        status, final, text = _fetch(url, timeout, ua)
-    except (urllib.error.URLError, socket.timeout, TimeoutError, ConnectionError,
-            ssl.SSLError, OSError, ValueError) as e:
+        status, final, text = _fetch(_safe_url(url), timeout, ua)
+    except Exception as e:  # noqa: BLE001  any fetch failure = not reachable
         return Result("dead", f"{type(e).__name__}: {str(e)[:80]}")
     if status >= 400:
         if status in (401, 403, 429, 503):  # often Cloudflare challenge: alive
             return Result("alive", f"HTTP {status}")
         return Result("dead", f"HTTP {status}")
-    r = score(text)
+    r = score(text) or loader_score(text, final, cdn)
     if r:
         r.evidence = f"{final} {r.evidence}"
         r.final_url = final

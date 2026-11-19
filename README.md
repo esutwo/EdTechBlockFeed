@@ -10,7 +10,7 @@ Students reach games through sites that are quick to stand up and change often: 
 |---|---|---|
 | [`fortigate/domains.txt`](fortigate/domains.txt) | Domain Name | **Main feed.** Every gaming domain: unblocked-games sites, discovered mirrors, the UT1 games category, and platform games (Steam, Roblox, Epic and others). |
 | [`fortigate/domains-priority.txt`](fortigate/domains-priority.txt) | Domain Name | Unblocked and school-bypass game sites only. Use it on smaller FortiGates that can't hold the main feed. |
-| [`fortigate/urls.txt`](fortigate/urls.txt) | URL List | URL-level entries for hosts that can't be blocked whole, such as `sites.google.com/view/...` and `cdn.jsdelivr.net/npm/<pkg>`. |
+| [`fortigate/urls.txt`](fortigate/urls.txt) | URL List | Path-level entries for hosts that can't be blocked whole: **CDN loaders** (game and proxy loaders hosted in GitHub repos or npm packages and opened through jsDelivr, unpkg, esm.sh, statically or githack, written for every mirror and blocked per owner, repo or package), plus Google Sites and Apps Script pages. |
 
 Raw URLs to give the FortiGate:
 
@@ -48,22 +48,19 @@ Then:
 
 The feed is rebuilt every 2 hours. A refresh rate of 15–60 minutes on the FortiGate is enough.
 
+**`urls.txt` matching:** CDN entries are written as path prefixes, such as `cdn.jsdelivr.net/gh/<owner>/`, so that one entry covers every repo and file beneath it. After the first pull, test one by opening a file under a listed owner, for example a `.svg` from an owner in the feed. If it isn't blocked, set `url_entry_style = "wildcard"` in `config/sources.toml`, which writes `.../gh/<owner>/*` instead.
+
 ## How it works
 
-`.github/workflows/update-feed.yml` runs `collector/collect.py` every 2 hours (and on any change to `seeds/`, `config/` or `collector/`). The script uses only the Python standard library and has no third-party dependencies.
+Every 2 hours, `.github/workflows/update-feed.yml` runs `collector/collect.py`. It also runs whenever `seeds/`, `config/` or `collector/` changes. The collector uses only the Python standard library. Each run has five stages:
 
-1. **Curated lists** (`config/sources.toml → [[lists]]`) are downloaded and normalized from hosts, adblock, plain-domain, UT1 tarball and AdGuard services formats. If a source is down, the last good copy in `data/lists/` is used.
-2. **Discovery** finds hosts that no list has yet:
-   * **GitHub**: repositories tagged `unblocked-games`, `unblockedforschool`, `gn-math`, `eaglercraft` and similar, plus keyword searches. The collector harvests each repo's homepage, its GitHub Pages URL, and links in its README.
-   * **Link aggregators**: lists that students circulate, such as yourworstnightmare1/proxy-list, ByePassHub and the unblocked-sites gists.
-   * **Certificate Transparency** (crt.sh): new certificates whose names contain `unblocked`, `ubg`, `gn-math` and similar. This is best-effort, because crt.sh is often slow.
-3. **Live verification**: each discovered host is fetched and fingerprinted. Game signals include `unblocked games`, Unity WebGL loaders, Ruffle, EmulatorJS, Eaglercraft, GameDistribution, `games.json`, and well-known titles. Proxy signals include Ultraviolet, Scramjet, Wisp, bare-server and Rammerhead.
-   * A match goes into the feed.
-   * If a match redirects to another domain, that landing domain is added too.
-   * A site that is alive but has no fingerprint goes to `review/pending.txt`.
-   * A site that is dead three times in a row is dropped.
-4. **Aging**: discovered hosts are re-checked weekly and removed after 60 days without a match. List hosts stay in the feed for as long as a list carries them.
-5. **Safety filters**: `seeds/allow.txt` overrides every source. Shared hosting platforms in `seeds/platforms.txt` (github.io, pages.dev and so on) are never blocked as a whole, but their individual subdomains are.
+1. **Collect** 14 curated gaming blocklists, normalized from 5 formats.
+2. **Discover** new sites from GitHub repo searches and READMEs, 9 student link lists, certificate logs, repositories of known CDN-loader owners, and GitHub code search for loader files.
+3. **Filter** every link through 8 ordered checks: CDN recognition, path-level platforms, allowlist, non-game services, bare hosting platforms, README hints, test fixtures and already-listed sites.
+4. **Verify** each candidate live, fingerprinting it as a game site, web proxy, SVG/HTML loader or tab-cloaked page.
+5. **Publish** the three feed files, writing CDN findings for every mirror.
+
+**[docs/how-it-works.md](docs/how-it-works.md)** breaks down every check, with each pattern and threshold. **[docs/latest-run.md](docs/latest-run.md)** is regenerated on every run, and shows how many checks ran, what each one found, and what went into the feed.
 
 ## Day-to-day maintenance
 
@@ -72,9 +69,11 @@ The feed is rebuilt every 2 hours. A refresh rate of 15–60 minutes on the Fort
 | Block a site right now | Add it to `seeds/confirmed.txt` and commit. The workflow runs on push. |
 | Block a path on a shared host | Add `host/path` to `seeds/confirmed-urls.txt` |
 | Unblock / fix a false positive | Add it to `seeds/allow.txt` (`example.com` exact, `*.example.com` with subdomains) |
+| Stop a GitHub owner / npm package being turned into CDN entries | Add it, lowercase, to `seeds/cdn-owner-allow.txt` |
+| Change when a CDN owner is blocked as a whole | `owner_promote_min` in `config/sources.toml` (default 2 confirmed repos) |
 | Add a blocklist or aggregator page | `config/sources.toml` |
 | See what needs a human look | `review/pending.txt` |
-| See run stats | `data/state.json → stats`, or the Actions run summary |
+| See run stats | [`docs/latest-run.md`](docs/latest-run.md), or the Actions run summary |
 
 `seeds/allow.txt` already exempts core infrastructure (Google, Microsoft, GitHub, CDNs), `.edu`, `.gov` and `.mil`, and classroom tools that look like games (Kahoot, Blooket, Gimkit, Quizizz, Prodigy, IXL, Khan Academy, Code.org, Scratch, Desmos and others). Remove a line to block that site.
 

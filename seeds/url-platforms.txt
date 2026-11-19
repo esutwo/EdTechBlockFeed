@@ -1,9 +1,7 @@
-# Hosts where blocking must be URL-level (host/path) rather than whole-host.
-# Discovered URLs on these hosts go to fortigate/urls.txt as host/first-path.
-#   host            path segments to keep
-sites.google.com 2
-cdn.jsdelivr.net 2
-fastly.jsdelivr.net 2
-unpkg.com 1
-raw.githack.com 2
-codehs.com 2
+# Shared hosts where blocking must be URL-level (host/path), not whole-host.
+# Format: <host> <regex matched against the URL path>. The matched part becomes
+# the urls.txt entry, e.g. sites.google.com/view/coolgames
+# (GitHub/npm CDNs such as jsDelivr and unpkg are handled in collector/cdn.py.)
+sites.google.com    ^/(?:view/[^/?#]+|a/[^/]+/[^/?#]+|(?!view/|a/|u/|new|s/)[^/]+\.[^/]+/[^/?#]+)
+script.google.com   ^/(?:a/macros/[^/]+/s/[^/]+|macros/s/[^/]+)
+codehs.com          ^/(?:sandbox|share)/[^/]+/[^/?#]+
