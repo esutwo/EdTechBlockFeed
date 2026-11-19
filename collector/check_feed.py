@@ -21,7 +21,7 @@ from hostutil import Matcher, normalize_host, read_list  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# Services Chromebooks, Google Workspace and Android apps depend on.
+# Services Chromebooks, Google Workspace, Android apps and curriculum depend on.
 CRITICAL = [
     "*.google.com", "*.googleapis.com", "*.gstatic.com", "*.googleusercontent.com",
     "*.gvt1.com", "*.gvt2.com", "*.gvt3.com", "*.1e100.net", "*.ggpht.com",
@@ -30,6 +30,8 @@ CRITICAL = [
     "*.office.com", "*.apple.com", "*.icloud.com", "*.github.com",
     "*.githubusercontent.com", "*.jsdelivr.net", "*.unpkg.com", "*.cloudflare.com",
     "*.amazonaws.com", "*.edu", "*.gov",
+    # Curriculum / assessment platforms students need.
+    "*.amplify.com",
 ]
 
 
