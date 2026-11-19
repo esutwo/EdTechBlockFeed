@@ -68,6 +68,17 @@ cros-omahaproxy.appspot.com
 # and learning.amplify.com are Amplify curriculum. Included by UT1 and the
 # gjohnpaull list (from Amplify's former games division). Do not remove.
 *.amplify.com
+# Microsoft 365 sign-in content (login page scripts/styles). Blocked via the
+# gjohnpaull list; breaks Microsoft 365 login. Do not remove.
+*.msauth.net
+*.msftauth.net
+# Services blocked in error by broad game lists (log review 2026-11-19):
+*.msn.com                         # Edge start page / widgets
+*.mzstatic.com                    # Apple App Store content
+*.itunes.apple.com.edgesuite.net  # Apple (iTunes API via Akamai)
+*.mathsisfun.com                  # educational math site
+*.theoplayer.com                  # video player used by content sites
+*.gravatar.com                    # profile images on WordPress/edu sites
 # Classroom tools that look like games (remove a line to block it)
 *.kahoot.com
 kahoot.it

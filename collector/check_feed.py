@@ -27,7 +27,7 @@ CRITICAL = [
     "*.gvt1.com", "*.gvt2.com", "*.gvt3.com", "*.1e100.net", "*.ggpht.com",
     "*.android.com", "*.googlevideo.com", "*.ytimg.com", "*.youtube.com",
     "*.chromium.org", "*.pki.goog", "*.microsoft.com", "*.microsoftonline.com",
-    "*.office.com", "*.apple.com", "*.icloud.com", "*.github.com",
+    "*.office.com", "*.msauth.net", "*.msftauth.net", "*.apple.com", "*.icloud.com", "*.github.com",
     "*.githubusercontent.com", "*.jsdelivr.net", "*.unpkg.com", "*.cloudflare.com",
     "*.amazonaws.com", "*.edu", "*.gov",
     # Curriculum / assessment platforms students need.
