@@ -85,7 +85,7 @@ Every candidate link from Stage 2 passes through these checks, in order. The fir
 | 2 | **Path-level platform?** Google Sites, Google Apps Script and CodeHS (`seeds/url-platforms.txt`). | Becomes a **URL** candidate, cut to the part that identifies one site, for example `sites.google.com/view/<name>` or `script.google.com/macros/s/<id>`. |
 | 3 | **Allowlist?** `seeds/allow.txt`: core infrastructure, `.edu`, `.gov`, `.mil`, and classroom tools. | Dropped. The allowlist wins over every source. |
 | 4 | **Known non-game service?** 76 services that show up in READMEs (badges, Discord, Patreon, documentation sites). | Dropped. |
-| 5 | **Bare hosting platform?** For example `pages.dev` or `github.io` itself. | Dropped. Individual subdomains are fine, but the platform as a whole is never blocked. |
+| 5 | **Bare hosting platform or CDN network?** For example `pages.dev`, `github.io`, `akamaihd.net` or `edgesuite.net` itself. | Dropped. Individual subdomains, such as one game's CDN hostname, are fine, but the network as a whole is never blocked. |
 | 6 | **README hint** (README links only; see 2a). | Dropped if there's no hint. |
 | 7 | **Already on a trusted list?** | Skips the live check, because it's already in the feed. |
 | 8 | Everything else | Becomes a **host** candidate. |
@@ -133,6 +133,16 @@ Counted in latest-run.md under *Live check results*, by entry type and verdict.
 | `fortigate/urls.txt` | Hand-confirmed URL seeds + confirmed Google Sites and Apps Script URLs + **CDN loader entries** (below). |
 
 Files are split at 100,000 lines (`domains-2.txt` and so on), and are only rewritten when their contents change.
+
+### Publish safety check
+
+Before anything is committed, `collector/check_feed.py` reads every output file and **fails the run** if it finds:
+
+* a domain covered by `seeds/allow.txt`;
+* a hosting platform or CDN network as a whole (`pages.dev`, `edgesuite.net`, `akamaihd.net` and so on, from `seeds/platforms.txt`); or
+* any of about 30 **critical domains hard-coded in the checker**: Google (`google.com`, `googleapis.com`, `gstatic.com`, `gvt1/2/3.com` for Chrome and ChromeOS updates and Play Store, `ggpht.com`, `1e100.net`), Android (`android.com`), YouTube, Microsoft 365, Apple, GitHub, jsDelivr, unpkg, Cloudflare, AWS, and the `.edu` and `.gov` TLDs.
+
+Because the critical list lives in code rather than in `allow.txt`, a mistaken edit to the allowlist still can't publish a feed that breaks Chromebooks. A failed check stops the workflow before the commit step, so the FortiGates keep pulling the last good feed, and the failure shows up in GitHub Actions.
 
 <a id="cdn-loaders"></a>
 ### CDN loader entries

@@ -54,6 +54,8 @@ The feed is rebuilt every 2 hours. A refresh rate of 15–60 minutes on the Fort
 
 Every 2 hours, `.github/workflows/update-feed.yml` runs `collector/collect.py`. It also runs whenever `seeds/`, `config/` or `collector/` changes. The collector uses only the Python standard library. Each run has five stages:
 
+Before every publish, a safety check fails the run if any allowlisted, CDN-network or hard-coded critical domain (Google/ChromeOS, Microsoft 365, Apple, GitHub and others) is in the output. When that happens, the FortiGates keep the last good feed.
+
 1. **Collect** 14 curated gaming blocklists, normalized from 5 formats.
 2. **Discover** new sites from GitHub repo searches and READMEs, 9 student link lists, certificate logs, repositories of known CDN-loader owners, and GitHub code search for loader files.
 3. **Filter** every link through 8 ordered checks: CDN recognition, path-level platforms, allowlist, non-game services, bare hosting platforms, README hints, test fixtures and already-listed sites.
@@ -75,7 +77,7 @@ Every 2 hours, `.github/workflows/update-feed.yml` runs `collector/collect.py`. 
 | See what needs a human look | `review/pending.txt` |
 | See run stats | [`docs/latest-run.md`](docs/latest-run.md), or the Actions run summary |
 
-`seeds/allow.txt` already exempts core infrastructure (Google, Microsoft, GitHub, CDNs), `.edu`, `.gov` and `.mil`, and classroom tools that look like games (Kahoot, Blooket, Gimkit, Quizizz, Prodigy, IXL, Khan Academy, Code.org, Scratch, Desmos and others). Remove a line to block that site.
+`seeds/allow.txt` already exempts Google and ChromeOS services that some community lists include by mistake (`gvt1/2/3.com` for Chrome updates and Play Store, `android.com`, `ggpht.com`, Google analytics and ad domains), core infrastructure (Google, Microsoft, GitHub, CDNs), `.edu`, `.gov` and `.mil`, and classroom tools that look like games (Kahoot, Blooket, Gimkit, Quizizz, Prodigy, IXL, Khan Academy, Code.org, Scratch, Desmos and others). Remove a line to block that site.
 
 Run it locally:
 

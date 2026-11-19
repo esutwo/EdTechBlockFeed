@@ -48,3 +48,18 @@ stackblitz.io
 codesandbox.io
 csb.app
 glitch.com
+# Commercial CDN / edge networks: specific game subdomains on them are fine
+# (e.g. steamcdn-a.akamaihd.net); the network itself must never be blocked.
+akamai.net
+akamaihd.net
+akamaized.net
+akamaiedge.net
+edgesuite.net
+edgekey.net
+azureedge.net
+azurefd.net
+fastly.net
+fastlylb.net
+llnwd.net
+cdn77.org
+cloudflare.net
