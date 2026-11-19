@@ -6287,8 +6287,6 @@ ampedgaming.com
 ampgames.com
 *.amplifiergameinvest.com
 amplifiergameinvest.com
-*.amplify.com
-amplify.com
 main.dh7legjxmt1f4.amplifyapp.com
 *.amplitude-studios.com
 amplitude-studios.com
