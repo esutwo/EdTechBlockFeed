@@ -33,6 +33,15 @@ max_lines_per_file = 100000
 # CDN loaders (urls.txt): an owner with this many confirmed loader repos is
 # blocked as a whole on every mirror; below it, only the confirmed repos are.
 owner_promote_min = 2
+# Guards for sites the collector discovers on its own (curated lists are not
+# affected), using the Tranco popularity ranking:
+#   rank <= popular_guard_top          never auto-blocked; held for review
+#   rank <= popular_list_size          a game sub-page blocks the whole host
+#                                      only if the homepage is a game site too
+#   unranked (obscure) domains         a game sub-page is enough (disguised
+#                                      bypass sites hide games behind a decoy)
+popular_guard_top = 10000
+popular_list_size = 100000
 # "prefix"   -> cdn.jsdelivr.net/gh/owner/        (FortiGate matches as prefix)
 # "wildcard" -> cdn.jsdelivr.net/gh/owner/*       (if your FortiOS needs it)
 url_entry_style = "prefix"

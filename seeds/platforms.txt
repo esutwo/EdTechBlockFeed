@@ -63,3 +63,25 @@ fastlylb.net
 llnwd.net
 cdn77.org
 cloudflare.net
+# Shared subdomain services (wildcard DNS, dynamic DNS, free subdomains, user
+# file hosting). Each subdomain belongs to one user. Listing them here also
+# keeps the discovery popularity guard from treating the service's own rank
+# as the site's rank.
+plesk.page
+nip.io
+sslip.io
+anyip.dev
+cprapid.com
+local-ip.sh
+filesusr.com
+ftp.sh
+tcadmin.net
+1337.cx
+is-not.cool
+mimo.run
+is-a.dev
+theworkpc.com
+dedyn.io
+twilightparadox.com
+hf.space
+customer-oci.com

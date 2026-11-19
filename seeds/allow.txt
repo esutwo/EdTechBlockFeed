@@ -79,6 +79,12 @@ cros-omahaproxy.appspot.com
 *.mathsisfun.com                  # educational math site
 *.theoplayer.com                  # video player used by content sites
 *.gravatar.com                    # profile images on WordPress/edu sites
+# Blocked in error, from the 2026-11-19 afternoon log review:
+*.nytimes.com                     # news; discovery matched its Games pages
+*.ducksters.com                   # kids' education (history, science)
+*.watchdocumentaries.com          # documentaries
+*.mortgagecalculator.org          # finance calculator
+*.wixmp.com                       # Wix / DeviantArt image CDN
 # Classroom tools that look like games (remove a line to block it)
 *.kahoot.com
 kahoot.it
