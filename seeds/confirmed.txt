@@ -1,0 +1,6 @@
+# Hand-confirmed hosts. Always included in fortigate/domains.txt.
+# One host per line. Use "*.example.com" to also cover subdomains explicitly.
+# Add a comment with date/reason, e.g.:  example.pages.dev   # 2026-11-19 retro bowl mirror
+xylora.nwmteducationalcoop.org     # 2026-11 sample: games/proxy front end impersonating ed co-op
+bossierschools.it.com              # 2026-11 sample: impersonates a school district
+vaultedd.pages.dev                 # 2026-11 sample: client-side proxy/games front end

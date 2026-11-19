@@ -1,0 +1,4 @@
+# Hand-confirmed URL-level entries for fortigate/urls.txt (URL List threat feed).
+# Use for hosts that can't be blocked whole: sites.google.com, cdn.jsdelivr.net, etc.
+# Format: host/path (no scheme), one per line.
+cdn.jsdelivr.net/npm/opiumbest     # 2026-08 npm package abused as SVG loader

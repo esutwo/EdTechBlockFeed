@@ -1,0 +1,54 @@
+# Never include these in any feed. Wins over every source.
+#   example.com      -> exact host only
+#   *.example.com    -> host and all subdomains
+#
+# Core infrastructure / platforms (never block the whole thing)
+*.google.com
+*.googleapis.com
+*.gstatic.com
+*.googleusercontent.com
+*.youtube.com
+*.github.com
+*.githubusercontent.com
+*.microsoft.com
+*.microsoftonline.com
+*.office.com
+*.live.com
+*.apple.com
+*.icloud.com
+*.amazonaws.com
+*.cloudflare.com
+*.jsdelivr.net
+*.unpkg.com
+*.cdnjs.cloudflare.com
+*.wikipedia.org
+*.archive.org
+*.reddit.com
+*.discord.com
+# Education / government TLDs: broad category lists include university game
+# research labs etc. Remove these lines if you want them in scope.
+*.edu
+*.gov
+*.mil
+# Classroom tools that look like games (remove a line to block it)
+*.kahoot.com
+kahoot.it
+*.blooket.com
+*.gimkit.com
+*.quizizz.com
+*.wayground.com
+*.prodigygame.com
+*.ixl.com
+*.khanacademy.org
+*.code.org
+scratch.mit.edu
+*.typing.com
+*.typingclub.com
+*.pbskids.org
+*.brainpop.com
+*.legendsoflearning.com
+*.deltamath.com
+*.desmos.com
+*.education.com
+*.mathplayground.com
+# Add district / vendor hosts below

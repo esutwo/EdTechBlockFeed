@@ -1,0 +1,203 @@
+# EdTechBlockFeed collector configuration.
+#
+# Every tier goes into fortigate/domains.txt (the main feed).
+# tier = "priority" -> also in fortigate/domains-priority.txt: unblocked /
+#                      school-bypass game sites (the ones FortiGuard usually does
+#                      NOT rate as Games). A smaller feed for low-capacity models.
+# tier = "general"  -> broad gaming category lists (mostly also rated Games by
+#                      FortiGuard; included anyway as defense in depth).
+#
+# trusted = true    -> entries go straight into the feed (curated lists)
+# trusted = false   -> entries must pass the live fingerprint check first;
+#                      inconclusive hosts land in review/pending.txt
+
+[settings]
+# Hosts discovered (not from a trusted list) are kept this many days after the
+# last time they were seen alive / fingerprinted.
+discovered_max_age_days = 60
+# Hosts from lists are kept this many days after they disappear from all lists
+# (protects against a source being briefly broken).
+list_grace_days = 7
+# Live verification budget per run.
+verify_max_hosts = 1500
+verify_workers = 32
+verify_timeout = 10
+# Re-check already-confirmed discovered hosts after this many days.
+reverify_after_days = 7
+# Also emit "*.example.com" next to registrable domains so subdomains match.
+emit_wildcards = true
+# FortiGate threat feeds have per-feed entry limits (model dependent). Output
+# files are split into domains.txt, domains-2.txt, ... at this many lines.
+max_lines_per_file = 100000
+
+# ---------------------------------------------------------------------------
+# Curated lists
+# format: hosts | adblock | domains | ut1 (UT1 tar.gz) | adguard-services (JSON)
+# Whole-platform entries (pages.dev, github.io, ...), whole-TLD rules, regex
+# rules and anything in seeds/allow.txt are stripped automatically.
+# Licenses: see README "Sources and licenses".
+# ---------------------------------------------------------------------------
+
+# --- Unblocked / school-bypass game sites (priority tier) ---
+
+[[lists]]
+name = "josuha-games"          # ~12.7k, updated daily; CC BY-NC-SA 4.0
+url = "https://raw.githubusercontent.com/JosuhaSanhueza/BlockList/main/GamesBlockList_hosts.txt"
+format = "hosts"
+tier = "priority"
+trusted = true
+
+[[lists]]
+name = "cascas2-mega"           # CC0, built for schools
+url = "https://raw.githubusercontent.com/CasCas2/school-gaming-dns-blocklist/main/mega-gaming-blocklist.txt"
+format = "hosts"
+tier = "priority"
+trusted = true
+
+[[lists]]
+name = "cascas2-classroom"
+url = "https://raw.githubusercontent.com/CasCas2/school-gaming-dns-blocklist/main/classroom-only-blocklist.txt"
+format = "hosts"
+tier = "priority"
+trusted = true
+
+[[lists]]
+name = "cascas2-lite"
+url = "https://raw.githubusercontent.com/CasCas2/school-gaming-dns-blocklist/main/school-gaming-lite.txt"
+format = "hosts"
+tier = "priority"
+trusted = true
+
+[[lists]]
+name = "dkorunic-browser-games"
+url = "https://raw.githubusercontent.com/dkorunic/browser-games-blocklist/main/hosts.txt"
+format = "adblock"
+tier = "priority"
+trusted = true
+
+[[lists]]
+name = "nuneze54-games"         # strong on github.io / onrender mirrors
+url = "https://raw.githubusercontent.com/nuneze54/Network-Lists/main/blocklist-games"
+format = "adblock"
+tier = "priority"
+trusted = true
+
+[[lists]]
+name = "gjohnpaull-games"       # merged list incl. bypass proxies, now.gg mirrors
+url = "https://raw.githubusercontent.com/gjohnpaull/adguard-games-blocklist/master/dist/games.txt"
+format = "adblock"
+tier = "general"
+trusted = true
+
+[[lists]]
+name = "marcuccione-browser-games"
+url = "https://raw.githubusercontent.com/marcuccione/pihole-browser-games-blocklist/main/browser-games.txt"
+format = "hosts"
+tier = "priority"
+trusted = true
+
+[[lists]]
+name = "bridgerhung-games"
+url = "https://raw.githubusercontent.com/bridgerhung/adblock/main/games"
+format = "adblock"
+tier = "priority"
+trusted = true
+
+[[lists]]
+name = "panamastem-minigames"
+url = "https://raw.githubusercontent.com/panamastem/Pihole-BlockLists-OnlineMinigames/main/OnlineMinigames.txt"
+format = "hosts"
+tier = "priority"
+trusted = true
+
+[[lists]]
+name = "mmcohen-online-games"   # MIT
+url = "https://raw.githubusercontent.com/mmcohen-tech/parsa-blocklists/main/online-games.txt"
+format = "hosts"
+tier = "priority"
+trusted = true
+
+[[lists]]
+name = "game-proxy-gist"        # stale (2025-05); many hijacked small-business
+url = "https://gist.githubusercontent.com/apsbartlettb/26220978c466cdbe0aaed9c63680ea27/raw/game_proxy_blocklist1"
+format = "domains"              # subdomains -> verify live before use
+tier = "priority"
+trusted = false
+
+# --- General gaming category (also in domains.txt) ---
+
+[[lists]]
+name = "ut1-games"              # Univ. Toulouse 1, CC BY-SA 4.0
+url = "https://dsi.ut-capitole.fr/blacklists/download/games.tar.gz"
+format = "ut1"
+tier = "general"
+trusted = true
+
+[[lists]]
+name = "adguard-services-gaming"  # Steam, Epic, Roblox, Minecraft, Riot, Xbox...
+url = "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/main/assets/services.json"
+format = "adguard-services"
+tier = "general"
+trusted = true
+
+# ---------------------------------------------------------------------------
+# GitHub discovery: repositories tagged with these topics / matching these
+# searches. The repo "homepage" field and URLs in the README are harvested,
+# then fingerprinted live before entering the feed.
+# ---------------------------------------------------------------------------
+
+[github]
+topics = [
+  "unblocked-games",
+  "unblockedgames",
+  "unblocked-games-site",
+  "unblocked-games-website",
+  "unblockedforschool",
+  "unblockers-for-school",
+  "school-games",
+  "games-unblocked",
+  "html5-games",
+  "browser-games",
+  "gn-math",
+  "eaglercraft",
+]
+queries = [
+  "unblocked games in:name,description",
+  "unblocked games school in:readme",
+  "games site school chromebook in:name,description,readme",
+]
+# Only repos pushed within this many days are processed.
+pushed_within_days = 120
+# Max search result pages per topic/query (100 repos per page, GitHub caps at 10).
+max_pages = 5
+# Max READMEs fetched per run (raw.githubusercontent.com, not API-rate-limited).
+max_readmes = 300
+
+# ---------------------------------------------------------------------------
+# Link aggregator pages students use. Every outbound link is harvested and
+# fingerprinted. Add pages here as you find them.
+# ---------------------------------------------------------------------------
+
+[aggregators]
+urls = [
+  "https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt",
+  "https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/unsorted_links.txt",
+  "https://raw.githubusercontent.com/wea-f/ByePassHub/main/README.md",
+  "https://gist.githubusercontent.com/eddy-22/2cdfadfa539cdaccfd0a9e31bf98e6d6/raw/unblocked_sites.md",
+  "https://raw.githubusercontent.com/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports/main/README.md",
+  "https://raw.githubusercontent.com/ab-613/unblocked-games-sites-list/main/README.md",
+  "https://raw.githubusercontent.com/bns34/Unblocked-Sites/main/README.md",
+  "https://raw.githubusercontent.com/task4z/unblockedgames/main/README.md",
+  "https://raw.githubusercontent.com/0800WebDev/UBGdir/main/README.md",
+]
+
+# ---------------------------------------------------------------------------
+# Certificate Transparency (crt.sh). Finds brand-new hosts on free hosting
+# platforms whose names contain these keywords. crt.sh is often slow/down;
+# failures are logged and skipped.
+# ---------------------------------------------------------------------------
+
+[ct]
+enabled = true
+keywords = ["unblocked", "unblockedgames", "ubg", "gnmath", "gn-math", "eaglercraft", "freegames", "schoolgames", "mathgames"]
+suffixes = ["pages.dev", "vercel.app", "netlify.app", "github.io", "workers.dev", "onrender.com", "it.com", "web.app"]
