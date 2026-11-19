@@ -22870,12 +22870,6 @@ guysfromandromeda.com
 guyunsq.com
 *.gvlarp.com
 gvlarp.com
-*.gvt1.com
-gvt1.com
-*.gvt2.com
-gvt2.com
-*.gvt3.com
-gvt3.com
 *.gw2blacklion.com
 gw2blacklion.com
 *.gwages.com
