@@ -10,6 +10,8 @@ play.afl
 airbotix.ai
 *.arcadelab.ai
 arcadelab.ai
+*.automatio.ai
+automatio.ai
 *.beacons.ai
 beacons.ai
 *.doodleduel.ai
@@ -37,6 +39,8 @@ developers.rune.ai
 tripo3d.ai
 *.bubble.am
 bubble.am
+*.2minutedrillgame.app
+2minutedrillgame.app
 *.base44.app
 base44.app
 *.basketballstars.app
@@ -372,6 +376,8 @@ sudokuonline.app
 suikagames.app
 *.sunfs.app
 sunfs.app
+*.superuser.app
+superuser.app
 *.tankgames.app
 tankgames.app
 *.taparcade.app
@@ -407,6 +413,7 @@ unblockedgames76.app
 99nightsintheforest.vercel.app
 a-small-world-cup.vercel.app
 admin-hub-games.vercel.app
+agame-six.vercel.app
 agar-io-clone-8std.vercel.app
 agario-three.vercel.app
 ai-kids-games-fawn.vercel.app
@@ -747,6 +754,7 @@ rocket-league-unblocked.vercel.app
 rooftop-snipers.vercel.app
 rusty2048.vercel.app
 rx-gaming-minecraft-website.vercel.app
+scarmjet.vercel.app
 scroll-games.vercel.app
 seo-game-website.vercel.app
 shell-shockers-2d.vercel.app
@@ -830,6 +838,8 @@ tambayan-arcade.vercel.app
 tarcadegames.vercel.app
 test380.vercel.app
 tetris-unblocked.vercel.app
+tharun9772.vercel.app
+tharun9772gaming.vercel.app
 the-unblocked-repository.vercel.app
 thehalloweengamegraveyard.vercel.app
 threejspunkdrive.vercel.app
@@ -840,8 +850,12 @@ totallymath-gamma.vercel.app
 tunnel-rush-3285373.vercel.app
 turbo-typer-pro.vercel.app
 ubg.vercel.app
+ubg-games.vercel.app
+ubg-tuff.vercel.app
 ubg100.vercel.app
 ubg88.vercel.app
+ubggames.vercel.app
+ubgtuff.vercel.app
 unblocked-games.vercel.app
 unblocked-games-96.vercel.app
 unblocked-games-sepia.vercel.app
@@ -854,12 +868,15 @@ unblocked-stuff-i-guess.vercel.app
 unblockedgame-sage.vercel.app
 unblockedytcom.vercel.app
 unblockgameplus-github-io.vercel.app
+unblockings.vercel.app
 unicornattack.vercel.app
+unstable-smp.vercel.app
 urban-rush-game.vercel.app
 usesienna.vercel.app
 v0-v0-games-blond.vercel.app
 v2-disaster-arena-poki-unblocked.vercel.app
 vault-ubg.vercel.app
+vercel-nine-wheat.vercel.app
 vertex-arcades.vercel.app
 vim-snake-navy.vercel.app
 volley-random-unblocked.vercel.app
@@ -1000,6 +1017,7 @@ thenextturn.web.app
 timeshooter.web.app
 tiny-fishing-game.web.app
 trafficrider.web.app
+trainland9912.web.app
 trucksimulator.web.app
 tunnelrush.web.app
 unblocked-games-66.web.app
@@ -1022,6 +1040,7 @@ bonatik.com.ar
 canutoregala.com.ar
 copero.com.ar
 media.copero.com.ar
+strawberryelephant.estudiodborkin.com.ar
 imperiumao.com.ar
 imperiumgames.com.ar
 able.itlogistics.com.ar
@@ -1083,11 +1102,16 @@ wordle.at
 free-games.com.au
 *.gamesmarket.com.au
 gamesmarket.com.au
+voya.bielenberg.id.au
 goodmathsir.srivaishnavam.org.au
 goodmathsirok.srivaishnavam.org.au
 oksirtkhmm.srivaishnavam.org.au
+siryessir.srivaishnavam.org.au
+thankssir.srivaishnavam.org.au
 *.chevrolet.autos
 chevrolet.autos
+*.strawberry.autos
+strawberry.autos
 *.crazygames.be
 crazygames.be
 *.funnygames.be
@@ -1235,6 +1259,7 @@ poki.com.br
 purogames.com.br
 *.rggames.com.br
 rggames.com.br
+schools.roje.com.br
 *.sojogar.com.br
 sojogar.com.br
 *.the-west.com.br
@@ -1510,6 +1535,7 @@ duck.freezenova.chat
 gtavice.city
 acid.contactme.cl
 makes.gcpservicios.cl
+quotes.gcpservicios.cl
 not-phishing-for-the-last-time.inoa.cl
 ajar.jpleventos.cl
 *.juegosonline.cl
@@ -2072,6 +2098,8 @@ addictivegames.com
 adfreegames.com
 *.adinplay.com
 adinplay.com
+*.adityaravishankar.com
+adityaravishankar.com
 *.admeen.com
 admeen.com
 *.adnxs.com
@@ -2107,12 +2135,16 @@ agariomoddedserver.com
 agarz.com
 *.ai-rebuilds.com
 ai-rebuilds.com
+*.aibuiltgames.com
+aibuiltgames.com
 *.aigameshare.com
 aigameshare.com
 *.aimbooster.com
 aimbooster.com
 *.airconsole.com
 airconsole.com
+*.aisloparcade.com
+aisloparcade.com
 db.aitutorgo.com
 *.al3ab.com
 al3ab.com
@@ -2172,8 +2204,6 @@ ancientbeast.com
 *.andkon.com
 andkon.com
 lucy.andreoehler.com
-*.android.com
-android.com
 *.angband3d.com
 angband3d.com
 *.animalgames247.com
@@ -2320,8 +2350,12 @@ atmegame.com
 atmhtml5games.com
 *.atwar-game.com
 atwar-game.com
+*.autocode.com
+autocode.com
 *.autowebgames.com
 autowebgames.com
+*.avalon-game.com
+avalon-game.com
 *.avandagame.com
 avandagame.com
 *.avangame.com
@@ -2504,6 +2538,8 @@ bezumie.com
 bfgames.com
 *.bgames.com
 bgames.com
+*.bhlearn.com
+bhlearn.com
 *.big8games.com
 big8games.com
 *.bigbangempire.com
@@ -2764,6 +2800,7 @@ buckshotroulette.com
 buckshotroulette3d.com
 *.buddyboardgames.com
 buddyboardgames.com
+voya.buf2.com
 *.buho21.com
 buho21.com
 *.buildascamempire.com
@@ -3056,6 +3093,8 @@ classrooms-6x.com
 classroomunblockedgames.com
 *.classwork.com
 classwork.com
+*.claudecodegames.com
+claudecodegames.com
 *.clavejuegos.com
 clavejuegos.com
 *.clearrivergames.com
@@ -3180,6 +3219,8 @@ coolunblockedgame.com
 coopboardgames.com
 *.coreballjp.com
 coreballjp.com
+*.cosmillion.com
+cosmillion.com
 *.costcodle.com
 costcodle.com
 *.cosyhex.com
@@ -3263,6 +3304,7 @@ culinariasara.com
 curseforge.com
 *.curvefever.com
 curvefever.com
+axjcou67ax5a.compat.objectstorage.us-sanjose-1.oci.customer-oci.com
 *.cutedressup.com
 cutedressup.com
 *.cuteflashgames.com
@@ -3749,6 +3791,8 @@ exordiumgames.com
 experimonkey.com
 *.eyezmaze.com
 eyezmaze.com
+*.ezclasswork.com
+ezclasswork.com
 *.ezpzunblockedgames.com
 ezpzunblockedgames.com
 *.f2pg.com
@@ -3934,6 +3978,7 @@ tetris-unblocked.firebaseapp.com
 timeshooter.firebaseapp.com
 tiny-fishing-game.firebaseapp.com
 trafficrider.firebaseapp.com
+trainland9912.firebaseapp.com
 trucksimulator.firebaseapp.com
 tunnelrush.firebaseapp.com
 unblocked-games-66.firebaseapp.com
@@ -4994,6 +5039,7 @@ gamui.com
 gamulo.com
 *.gandergames.com
 gandergames.com
+words.gandhinagar.com
 *.garathor.com
 garathor.com
 *.garbagegarage.com
@@ -5117,8 +5163,6 @@ gettingover-it.com
 gettingoveritonline.com
 *.ggjogos.com
 ggjogos.com
-*.ggpht.com
-ggpht.com
 *.ghost-invaders.com
 ghost-invaders.com
 *.ghosttowngames.com
@@ -5157,8 +5201,10 @@ girlsplay.com
 gitea.com
 *.githubiogames.com
 githubiogames.com
+cdn.githubraw.com
 *.giveawayoftheday.com
 giveawayoftheday.com
+xoeand.glamourfreaks.com
 *.glazegames.com
 glazegames.com
 *.globalgameh5.com
@@ -5208,10 +5254,6 @@ goodgamestudios.com
 goodkidsgame.com
 *.goodoldtetris.com
 goodoldtetris.com
-*.google-analytics.com
-google-analytics.com
-*.googleadservices.com
-googleadservices.com
 *.googledoodle-games.com
 googledoodle-games.com
 *.googlefeud.com
@@ -5222,10 +5264,6 @@ googlesnake.com
 googlesnake3d.com
 *.googlesnakemods.com
 googlesnakemods.com
-*.googlesyndication.com
-googlesyndication.com
-*.googletagservices.com
-googletagservices.com
 *.gopherwoodstudios.com
 gopherwoodstudios.com
 *.goplayfreegames.com
@@ -5308,12 +5346,6 @@ gunblood.com
 gunspingame.com
 *.gunspinunblocked.com
 gunspinunblocked.com
-*.gvt1.com
-gvt1.com
-*.gvt2.com
-gvt2.com
-*.gvt3.com
-gvt3.com
 *.gz-associates.com
 gz-associates.com
 *.h5crazygame.com
@@ -5626,6 +5658,7 @@ infinitecraftunblocked.com
 infiplay.com
 *.ingamejob.com
 ingamejob.com
+cdn.inksoft.com
 mango.inmobiliariamardelplata.com
 math-sch.inmobiliariamardelplata.com
 *.innersloth.com
@@ -5644,6 +5677,7 @@ gameplay.intel.com
 gameplayapi.intel.com
 *.internetgames365.com
 internetgames365.com
+scubaaflowworks.invisiblephotography.com
 *.invisiproxy.com
 invisiproxy.com
 *.inxanitylabs.com
@@ -6176,6 +6210,7 @@ krafton.com
 *.kraloyun.com
 kraloyun.com
 mathsri.krepche.com
+voya.krepche.com
 *.kubeverse.com
 kubeverse.com
 *.kukogames.com
@@ -7497,6 +7532,8 @@ pixeongames.com
 pixihof.com
 *.pixletters.com
 pixletters.com
+*.pizagame.com
+pizagame.com
 *.pizzaedition.com
 pizzaedition.com
 *.pizzaeditiongames.com
@@ -9717,6 +9754,7 @@ undertale-game.com
 undertale-spanish.com
 *.unfair-mario.com
 unfair-mario.com
+zlami.unibutton.com
 *.unique100.com
 unique100.com
 play.unity.com
@@ -10070,6 +10108,7 @@ workmelt.com
 worldescapegames.com
 *.worldguessr.com
 worldguessr.com
+voya.worldmicroscope.com
 *.worldofcardgames.com
 worldofcardgames.com
 *.worldofsolitaire.com
@@ -10640,6 +10679,8 @@ xn--solitrspider-kcb.de
 yepi.de
 *.yucata.de
 yucata.de
+*.amountle.dev
+amountle.dev
 15-204-247-166.anyip.dev
 *.claudered.dev
 claudered.dev
@@ -10703,6 +10744,7 @@ oddisbest.dev
 1v1-lol-unblocked-games.pages.dev
 1v1-lolunblocked.pages.dev
 1v1lolunblocked.pages.dev
+2-player-games-unblocked---slope-1.pages.dev
 200lire.pages.dev
 2048-game.pages.dev
 2048-online.pages.dev
@@ -10795,6 +10837,7 @@ blox-craft.pages.dev
 blox-craft-ub.pages.dev
 blox-craft-ubg.pages.dev
 bloxcraft-ub.pages.dev
+bloxcraft-ubg.pages.dev
 bloxcraftub.pages.dev
 bloxd-online.pages.dev
 bloxdio.pages.dev
@@ -11199,6 +11242,7 @@ phrazle-game.pages.dev
 pineapple-games.pages.dev
 pixel-art-games-roblox.pages.dev
 pixel-number-diy-coloring.pages.dev
+pizagame.pages.dev
 pizza-edition-games.pages.dev
 pizza-edition-golf-orbit.pages.dev
 pizza-edition-google-sites.pages.dev
@@ -11497,6 +11541,10 @@ suika-game-online.pages.dev
 suika-watermelon-game.pages.dev
 suikagame.pages.dev
 super-liquid-soccer-unblocked.pages.dev
+sys-admin.pages.dev
+sys-administrator.pages.dev
+sys-bio.pages.dev
+sysadministrator.pages.dev
 tabletennisgame.pages.dev
 tank-trouble.pages.dev
 team-building-games-roblox.pages.dev
@@ -11507,7 +11555,13 @@ territorialio2.pages.dev
 tetris-games.pages.dev
 tetris-unblocked.pages.dev
 th08-web.pages.dev
+tharun-9772.pages.dev
+tharun-9772-gaming.pages.dev
+tharun-9772gaming.pages.dev
+tharun9772-gaming.pages.dev
 the-drift-boss.pages.dev
+the-math.pages.dev
+the-math-wiki.pages.dev
 theluigiplayer.pages.dev
 thepizzaeditions-github-io.pages.dev
 tiberava.pages.dev
@@ -11519,12 +11573,17 @@ tinyfishinggame.pages.dev
 tinyfishingunblocked.pages.dev
 tinytrapgames.pages.dev
 tombofthemask.pages.dev
+top-memes.pages.dev
 top-roblox-games-earnings.pages.dev
 totallyscience-unblocked.pages.dev
 traffic-jam-unblocked.pages.dev
 trafficrider.pages.dev
 tripleogames-web.pages.dev
 trivia-roblox.pages.dev
+tuff-ub.pages.dev
+tuff-ubg.pages.dev
+tuffub.pages.dev
+tuffubg.pages.dev
 tunnelrush2.pages.dev
 tunnelrushunblocked.pages.dev
 twittergames.pages.dev
@@ -11607,6 +11666,7 @@ worthy-mobile-games-site.pages.dev
 www-bigapplegame-com.pages.dev
 xo-beta.pages.dev
 yee.pages.dev
+zc13.pages.dev
 zebra-gamer-roblox.pages.dev
 zeldamon.pages.dev
 zenithub.pages.dev
@@ -11626,11 +11686,16 @@ bloxy.bucket-ported.workers.dev
 ducky.bucket-ported.workers.dev
 games.bucket-ported.workers.dev
 go-to.bucket-ported.workers.dev
+sqpfyesz8f.bucket-ported.workers.dev
+ubg.bucket-ported.workers.dev
 shar-wasm.cjoseph.workers.dev
+winf-dictionary.dk-ubg.workers.dev
+wirestone-park.helpful-learning.workers.dev
 kantmicrogames.lohyapkant.workers.dev
 nexaplay.online-nexaplay.workers.dev
 theunblockedinitiative.p2pgames.workers.dev
 bloxcraft-ubg-worker-js.rnkiddo.workers.dev
+thegoat.rnkiddo.workers.dev
 cloudgamer.sansiscool58170.workers.dev
 duckinggreat.sansiscool58170.workers.dev
 stickman-chaos.stickman-c06.workers.dev
@@ -12129,6 +12194,8 @@ tidou.fr
 top-games.fr
 *.tribalwars.fr
 tribalwars.fr
+*.weissmann.fr
+weissmann.fr
 *.world-of-dungeons.fr
 world-of-dungeons.fr
 *.yepi.fr
@@ -12249,6 +12316,8 @@ skibidigames.fun
 slope.fun
 *.smcraft.fun
 smcraft.fun
+*.smz.fun
+smz.fun
 *.snakegame.fun
 snakegame.fun
 *.spacedino.fun
@@ -12282,6 +12351,8 @@ winterstellar.s1monwork.ga
 *.smallfeet.ga
 smallfeet.ga
 unblocker.whitespider.ga
+*.aha.game
+aha.game
 *.allout.game
 allout.game
 *.blockblast.game
@@ -13059,8 +13130,6 @@ starsgames.id
 click.unusida.id
 *.geometrydash.ie
 geometrydash.ie
-*.google-analytics.ie
-google-analytics.ie
 *.nerdle.ie
 nerdle.ie
 *.deltarune.im
@@ -13690,6 +13759,8 @@ copter.io
 costcodle.io
 *.cozygame.io
 cozygame.io
+*.cpfhub.io
+cpfhub.io
 *.cptest.io
 cptest.io
 *.craftnite.io
@@ -13864,6 +13935,8 @@ eggy-car.io
 eggycaronline.io
 *.eldyn.io
 eldyn.io
+*.elevenlabs.io
+elevenlabs.io
 *.emberwars.io
 emberwars.io
 *.escaperoad.io
@@ -14165,6 +14238,7 @@ geometydashwave.io
 25200666.github.io
 28klotlucas2.github.io
 2ach2ach.github.io
+2emk7.github.io
 2player-online.github.io
 2vision-rubx.github.io
 2ygty.github.io
@@ -14640,6 +14714,7 @@ byteboss8.github.io
 byteharmony73.github.io
 bytenimble.github.io
 c00lkimx01-creator.github.io
+c0dewiz4rd010.github.io
 cadawnofthedead.github.io
 caerulav.github.io
 cainsoto460-lab.github.io
@@ -15907,6 +15982,7 @@ mcnateyboii.github.io
 mcphq.github.io
 megapoopturd.github.io
 megpurkis-cpu.github.io
+meharajm.github.io
 mekomancer.github.io
 mena599.github.io
 meodiemvuong1609.github.io
@@ -16523,6 +16599,7 @@ scorchediv.github.io
 scpshowcases.github.io
 sd592g.github.io
 sdjclassroom.github.io
+sdsdadadddas.github.io
 seanxiaori.github.io
 seapusher.github.io
 sebbii59185.github.io
@@ -16866,6 +16943,7 @@ thelightnecrozma.github.io
 thelouras58.github.io
 themethodgames.github.io
 themimicartist.github.io
+theminescout.github.io
 themonkeexe.github.io
 themyprintspeople.github.io
 theoneand33.github.io
@@ -18056,6 +18134,8 @@ onlyuponline.io
 oopsgames.io
 *.openfront.io
 openfront.io
+*.opengame.io
+opengame.io
 *.overtide.io
 overtide.io
 *.ovogame.io
@@ -18112,6 +18192,8 @@ pikes.io
 pixelwarfare.io
 *.pizzaedition.io
 pizzaedition.io
+*.pizzaeditiongames.io
+pizzaeditiongames.io
 *.planetcapture.io
 planetcapture.io
 *.plants-vs-brainrots.io
@@ -18657,6 +18739,8 @@ turball.io
 typearena.io
 *.tyran.io
 tyran.io
+*.ubg98.io
+ubg98.io
 *.unbannedgames.io
 unbannedgames.io
 *.unblocked-76.io
@@ -18955,6 +19039,7 @@ bunnies.lat
 nextuser.lat
 cook.cthulhu.li
 science.cthulhu.li
+what.cthulhu.li
 *.vrg.li
 vrg.li
 *.deathegg.life
@@ -19009,6 +19094,8 @@ morquendrix.live
 rotto.live
 *.run3.live
 run3.live
+*.unblocked-games.live
+unblocked-games.live
 *.watersort.live
 watersort.live
 *.zeropass.live
@@ -19548,6 +19635,10 @@ ciudadelas.net
 classicube.net
 *.classroom-games.net
 classroom-games.net
+*.classroom15x.net
+classroom15x.net
+*.classroom20x.net
+classroom20x.net
 *.classroom6x.net
 classroom6x.net
 d11jzht7mj96rr.cloudfront.net
@@ -19639,8 +19730,6 @@ discordapp.net
 doodlejump.net
 *.doomlord.net
 doomlord.net
-*.doubleclick.net
-doubleclick.net
 *.doublegames.net
 doublegames.net
 *.dragonbound.net
@@ -20103,6 +20192,7 @@ pizza.global.ssl.fastly.net
 plate.global.ssl.fastly.net
 platter.global.ssl.fastly.net
 plutonium.global.ssl.fastly.net
+poki-v2.global.ssl.fastly.net
 poki1.global.ssl.fastly.net
 pokigames.global.ssl.fastly.net
 polo.global.ssl.fastly.net
@@ -20809,6 +20899,8 @@ truckloader.net
 ttvnw.net
 *.ubg100.net
 ubg100.net
+*.ubg911.net
+ubg911.net
 *.ubgames.net
 ubgames.net
 *.ufreegame.net
@@ -21511,6 +21603,8 @@ w3cx-3of5.bauska.org
 bcgames.org
 *.bestonlinegames.org
 bestonlinegames.org
+*.bikesense.org
+bikesense.org
 *.bitefight.org
 bitefight.org
 *.bitlife-game.org
@@ -21630,6 +21724,8 @@ coolmathgamesforkids.org
 copterroyale.org
 *.countle.org
 countle.org
+*.coursera.org
+coursera.org
 *.cpsgames.org
 cpsgames.org
 *.cpstest.org
@@ -22964,6 +23060,8 @@ yolk.quest
 geometry.report
 *.mexi.rest
 mexi.rest
+*.wasm.rip
+wasm.rip
 *.1001jocuri.ro
 1001jocuri.ro
 *.cartoonnetwork.ro
@@ -23133,6 +23231,8 @@ geometrydash.school
 retrobowl.school
 *.unblockedgames.school
 unblockedgames.school
+*.unblockedgames66.school
+unblockedgames66.school
 *.1001games.se
 1001games.se
 *.cartoonnetwork.se
@@ -23183,6 +23283,10 @@ games.jjv.sh
 sparklygames.lgbt.sh
 15.204.247.166.my.local-ip.sh
 1v1-lol.surge.sh
+60366a19ed6c.surge.sh
+77082d89b226.surge.sh
+9f02c543aec5.surge.sh
+a89b788b48e0.surge.sh
 asmallworldcup.surge.sh
 boxingrandom.surge.sh
 browser-games.surge.sh
@@ -23376,6 +23480,7 @@ play.st
 afganistan.stream
 *.eaglercraft.studio
 eaglercraft.studio
+cot.kevinliu.studio
 *.m28.studio
 m28.studio
 *.old-games.su
@@ -23419,6 +23524,7 @@ freecell.to
 geometrydash.to
 *.ironwar.to
 ironwar.to
+arcade.oyster.to
 *.poki.to
 poki.to
 *.friv.today
@@ -23467,6 +23573,8 @@ kidsgames.top
 matheducation.top
 *.minesweeper.top
 minesweeper.top
+*.pizzaedition.top
+pizzaedition.top
 *.play-backgammon.top
 play-backgammon.top
 *.playsnow.top
