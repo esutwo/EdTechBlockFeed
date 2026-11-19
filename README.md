@@ -49,7 +49,11 @@ config system external-resource
 end
 ```
 
-(`set category` can be any unused number from 192 to 221. It's the ID the web filter uses for this remote category.)
+Notes on the URL feed:
+
+* `set category` is required. Without it, FortiOS rejects the entry with *"Must configure category"*. Use any number from 192 to 221 that isn't already used by another remote feed. It's the ID the web filter uses for this remote category.
+* `set type url` is not valid (*"command parse error"*). Type `set type ?` at that prompt to see the types your firmware supports.
+* To confirm a feed loaded, open *Security Fabric → External Connectors → (feed) → View Entries*. The entry count should match [`docs/latest-run.md`](docs/latest-run.md).
 
 Then, on student policies:
 
