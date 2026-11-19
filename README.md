@@ -35,12 +35,18 @@ FortiOS has no "URL" feed type. A Domain Name feed only matches whole hostnames,
 
 ```
 config system external-resource
-    edit "EdTech-Games-Domains"
+    edit "EdTech Threat Feed Domains"
         set type domain
         set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/domains.txt"
         set refresh-rate 15
     next
-    edit "EdTech-Games-URLs"
+    edit "EdTech Threat Feed Domains"
+        set type category
+        set category 193
+        set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/domains.txt"
+        set refresh-rate 15
+    next
+    edit "EdTech Threat Feed CDNs"
         set type category
         set category 192
         set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/urls.txt"
