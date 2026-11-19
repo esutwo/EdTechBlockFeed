@@ -21,10 +21,43 @@
 *.jsdelivr.net
 *.unpkg.com
 *.cdnjs.cloudflare.com
+*.esm.sh
+*.statically.io
+*.githack.com
 *.wikipedia.org
 *.archive.org
 *.reddit.com
 *.discord.com
+# Google / ChromeOS services. From Google's ChromeOS hostname allowlist
+# (support.google.com/chrome/a/answer/6334001): gvt1 = Chrome/ChromeOS update
+# payloads, gvt2/gvt3 + android.com = Play Store / Android apps on Chromebooks.
+# Some community game lists include these by mistake. Do not remove.
+*.gvt1.com
+*.gvt2.com
+*.gvt3.com
+*.1e100.net
+*.ggpht.com
+*.android.com
+*.googlevideo.com
+*.ytimg.com
+*.youtubeeducation.com
+*.withgoogle.com
+*.chromium.org
+*.pki.goog
+*.securegateway.goog
+ingress.cloudproxy.app
+omahaproxy.appspot.com
+cros-omahaproxy.appspot.com
+*.recaptcha.net
+*.google-analytics.com
+*.google-analytics.ie
+*.googletagmanager.com
+# Google ad / tag infrastructure: not game sites, and blocking them breaks
+# video playback and some ed-tech pages. Block ads with a separate policy.
+*.doubleclick.net
+*.googleadservices.com
+*.googlesyndication.com
+*.googletagservices.com
 # Education / government TLDs: broad category lists include university game
 # research labs etc. Remove these lines if you want them in scope.
 *.edu

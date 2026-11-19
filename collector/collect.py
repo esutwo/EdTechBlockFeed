@@ -13,6 +13,7 @@ Standard library only. Run from the repository root:
 from __future__ import annotations
 
 import argparse
+import collections
 import concurrent.futures as cf
 import datetime as dt
 import gzip
@@ -30,6 +31,7 @@ import urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import cdn  # noqa: E402
 from fingerprint import classify  # noqa: E402
 from hostutil import (  # noqa: E402
     Matcher,
@@ -41,6 +43,8 @@ from hostutil import (  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 TODAY = dt.date.today()
+# Per-run counters of every check performed (published to docs/latest-run.md).
+METRICS: collections.Counter = collections.Counter()
 UA = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/130.0 Safari/537.36 EdTechBlockFeed"
@@ -172,13 +176,27 @@ def fetch_lists(cfg: dict) -> dict[str, tuple[str, set[str], bool]]:
 # --------------------------------------------------------------- discovery
 
 class Candidates:
-    """Discovered URLs, keyed by the feed entry they would produce."""
+    """Discovered URLs, keyed by the feed entry they would produce.
 
-    def __init__(self, allow: Matcher, platforms: set[str], url_platforms: dict[str, int]):
+    kind = "host" -> whole-domain entry (domains.txt)
+           "url"  -> path entry on a shared host, e.g. sites.google.com/view/x
+           "cdn"  -> a file in a GitHub repo / npm package served by a public CDN
+    """
+
+    def __init__(self, allow: Matcher, platforms: set[str],
+                 url_platforms: dict[str, re.Pattern], cdn_owner_allow: set[str]):
         self.allow, self.platforms, self.url_platforms = allow, platforms, url_platforms
-        self.items: dict[str, dict] = {}  # key -> {kind, check_url, source, priority}
+        self.cdn_owner_allow = cdn_owner_allow
+        self.items: dict[str, dict] = {}
+
+    def _put(self, key: str, kind: str, url: str, source: str, priority: int, **extra) -> None:
+        cur = self.items.get(key)
+        if cur is None or priority > cur["priority"]:
+            self.items[key] = {"kind": kind, "check_url": url, "source": source,
+                               "priority": priority, **extra}
 
     def add(self, url: str, source: str, priority: int = 1, require_hint: bool = False) -> None:
+        METRICS["links_examined"] += 1
         if "://" not in url:
             url = "https://" + url
         try:
@@ -186,25 +204,58 @@ class Candidates:
         except ValueError:
             return
         host = normalize_host(parts.hostname or "")
-        if not host or self.allow.matches(host) or NOISE.matches(host):
+        if not host:
+            METRICS["links_dropped_invalid"] += 1
+            return
+        raw_host = (parts.hostname or "").lower()
+
+        # 1. Shared file CDNs (jsDelivr, unpkg, esm.sh, statically, githack).
+        #    Handled before the allowlist, which protects these hosts as a whole.
+        ref = cdn.parse(url)
+        if ref is not None:
+            if not cdn.ENTRY_EXT.search(ref.file):
+                METRICS["cdn_links_not_entry_file"] += 1
+                return
+            if cdn.TEST_PATH.search(ref.file) or cdn.TEST_PATH.search(ref.repo):
+                METRICS["cdn_links_test_fixture"] += 1
+                return
+            if ref.owner.lower() in self.cdn_owner_allow:
+                METRICS["cdn_links_allowlisted_owner"] += 1
+                return
+            METRICS["cdn_links_candidate"] += 1
+            self._put("cdn:" + ref.key, "cdn", url, source, priority,
+                      cdn_kind=ref.kind, owner=ref.owner, repo=ref.repo)
+            return
+        if raw_host in cdn.CDN_HOSTS:
+            METRICS["cdn_links_unparsed"] += 1
+            return
+
+        # 2. Path-level platforms (Google Sites, Apps Script, ...).
+        rx = self.url_platforms.get(raw_host) or self.url_platforms.get(host)
+        if rx is not None:
+            m = rx.match(urllib.parse.unquote(parts.path))
+            if not m:
+                METRICS["url_platform_links_unmatched"] += 1
+                return
+            METRICS["url_platform_links_candidate"] += 1
+            self._put(raw_host + m.group(0).rstrip("/"), "url", url, source, priority)
+            return
+
+        # 3. Whole hosts.
+        if self.allow.matches(host):
+            METRICS["links_dropped_allowlist"] += 1
+            return
+        if NOISE.matches(host):
+            METRICS["links_dropped_noise"] += 1
             return
         if host in self.platforms:
-            return  # bare platform apex
-        if require_hint and not (platform_apex(host, self.platforms) or HINT_RE.search(url)):
+            METRICS["links_dropped_platform_apex"] += 1
             return
-        if host in self.url_platforms:
-            segs = [s for s in parts.path.split("/") if s][: self.url_platforms[host]]
-            if len(segs) < self.url_platforms[host]:
-                return
-            key, kind = host + "/" + "/".join(segs), "url"
-        else:
-            if self.allow.matches(host):
-                return
-            key, kind = host, "host"
-        cur = self.items.get(key)
-        if cur is None or priority > cur["priority"]:
-            self.items[key] = {"kind": kind, "check_url": url, "source": source,
-                               "priority": priority}
+        if require_hint and not (platform_apex(host, self.platforms) or HINT_RE.search(url)):
+            METRICS["links_dropped_no_hint"] += 1
+            return
+        METRICS["host_links_candidate"] += 1
+        self._put(host, "host", url, source, priority)
 
 
 def gh_headers() -> dict:
@@ -233,6 +284,8 @@ def discover_github(cfg: dict, cands: Candidates, state: dict) -> None:
             try:
                 data, _ = http_get(url, headers=gh_headers(), timeout=30)
                 items = json.loads(data).get("items", [])
+                METRICS["github_search_requests"] += 1
+                METRICS["github_repos_returned"] += len(items)
             except urllib.error.HTTPError as e:
                 log(f"[github] {q!r} p{page}: HTTP {e.code}")
                 if e.code in (403, 429):
@@ -284,6 +337,8 @@ def discover_github(cfg: dict, cands: Candidates, state: dict) -> None:
             for u in extract_urls(text):
                 cands.add(u, f"github-readme:{r['full_name']}", priority=1, require_hint=True)
             seen[r["full_name"]] = r.get("pushed_at")
+    METRICS["github_readmes_scanned"] += len(todo)
+    METRICS["github_repos_unique"] += len(repos)
     log(f"[github] scanned {len(todo)} READMEs")
 
 
@@ -295,9 +350,11 @@ def discover_aggregators(cfg: dict, cands: Candidates) -> None:
             log(f"[aggregator] {url}: {e}")
             continue
         n = 0
+        METRICS["aggregator_pages_fetched"] += 1
         for u in extract_urls(data.decode("utf-8", "replace")):
             cands.add(u, f"aggregator:{url}", priority=2)
             n += 1
+        METRICS["aggregator_links_harvested"] += n
         log(f"[aggregator] {url}: {n} links")
 
 
@@ -334,7 +391,99 @@ def discover_ct(cfg: dict, cands: Candidates) -> None:
                     if h and kw.replace("-", "") in h.replace("-", ""):
                         cands.add(f"https://{h}/", f"ct:{kw}", priority=2)
                         n += 1
+            METRICS["ct_queries"] += 1
+            METRICS["ct_certificates_examined"] += len(rows)
+            METRICS["ct_names_matched"] += n
             log(f"[ct] {kw}: {len(rows)} certs, {n} names")
+
+
+def discover_cdn(cfg: dict, cands: Candidates, state: dict) -> None:
+    """Find more CDN loaders: expand known owners' repos, and code-search
+    GitHub for files with the loader signature."""
+    c = cfg.get("cdn", {})
+    entries = state.get("entries", {})
+    owners_state = state.setdefault("cdn_owners", {})
+    known = {}
+    for e in entries.values():
+        if e["kind"] == "cdn" and e["status"] == "confirmed" and e.get("cdn_kind") == "gh":
+            known.setdefault(e["owner"].lower(), e["owner"])
+    due = [o for lo, o in known.items()
+           if days_since(owners_state.get(lo, {}).get("last_expanded")) >= c.get("owner_expand_days", 1)]
+    due = due[: c.get("owner_expand_max", 40)]
+
+    search_lock = __import__("threading").Lock()
+
+    def list_repos(owner):
+        try:
+            data, _ = http_get(f"https://api.github.com/users/{owner}/repos?per_page=100&sort=pushed",
+                               headers=gh_headers(), timeout=30)
+            return json.loads(data)
+        except Exception:  # noqa: BLE001
+            pass
+        # Fallback: the search API (also works where /users/ is restricted).
+        with search_lock:  # search API: 30 requests/minute
+            time.sleep(2.2)
+            q = urllib.parse.urlencode({"q": f"user:{owner}", "sort": "updated", "per_page": 100})
+            data, _ = http_get(f"https://api.github.com/search/repositories?{q}",
+                               headers=gh_headers(), timeout=30)
+            return json.loads(data).get("items", [])
+
+    def expand(owner):
+        out = []
+        try:
+            repos = list_repos(owner)
+        except Exception as e:  # noqa: BLE001
+            return owner, None, str(e)
+        for r in repos[: c.get("owner_repos_max", 40)]:
+            full, br = r["full_name"], r.get("default_branch") or "main"
+            try:
+                d, _ = http_get(f"https://data.jsdelivr.com/v1/packages/gh/{full}@{br}?structure=flat",
+                                timeout=30)
+                files = [f["name"] for f in json.loads(d).get("files", [])]
+            except Exception:  # noqa: BLE001
+                continue
+            for f in cdn.entry_files(files, c.get("files_per_repo", 6)):
+                out.append(f"https://cdn.jsdelivr.net/gh/{full}@{br}/{f}")
+        return owner, (len(repos), out), None
+
+    with cf.ThreadPoolExecutor(6) as ex:
+        for owner, res, err in ex.map(expand, due):
+            METRICS["cdn_owners_expanded"] += 1
+            if res is None:
+                log(f"[cdn] expand {owner}: {err}")
+                continue
+            nrepos, urls = res
+            METRICS["cdn_owner_repos_listed"] += nrepos
+            METRICS["cdn_owner_entry_files_found"] += len(urls)
+            for u in urls:
+                cands.add(u, f"owner-expand:{owner}", priority=2)
+            owners_state[owner.lower()] = {"last_expanded": date_str(TODAY), "repos": nrepos}
+    log(f"[cdn] expanded {len(due)} of {len(known)} known owners")
+
+    if not ("Authorization" in gh_headers()):
+        log("[cdn] code search skipped (needs GITHUB_TOKEN)")
+        return
+    for q in c.get("code_search_queries", []):
+        for page in range(1, c.get("code_search_pages", 1) + 1):
+            url = "https://api.github.com/search/code?" + urllib.parse.urlencode(
+                {"q": q, "per_page": 100, "page": page})
+            try:
+                data, _ = http_get(url, headers=gh_headers(), timeout=60)
+                items = json.loads(data).get("items", [])
+            except Exception as e:  # noqa: BLE001
+                log(f"[cdn] code search {q!r}: {e}")
+                items = []
+            finally:
+                time.sleep(7)  # code search: 10 requests/minute
+            METRICS["cdn_code_search_requests"] += 1
+            METRICS["cdn_code_search_files"] += len(items)
+            for it in items:
+                full = it.get("repository", {}).get("full_name")
+                if full and it.get("path"):
+                    cands.add(f"https://cdn.jsdelivr.net/gh/{full}/{it['path']}", "code-search", priority=1)
+            log(f"[cdn] code search {q!r} p{page}: {len(items)} files")
+            if len(items) < 100:
+                break
 
 
 # ------------------------------------------------------------ verification
@@ -349,8 +498,12 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
                             "source": c["source"], "first_seen": date_str(TODAY),
                             "last_seen": date_str(TODAY), "status": "new",
                             "attempts": 0, "priority": c["priority"]}
+            e = entries[key]
         else:
             e["last_seen"] = date_str(TODAY)
+        for f in ("cdn_kind", "owner", "repo"):
+            if f in c:
+                e[f] = c[f]
             if c["priority"] > e.get("priority", 0):
                 e.update(check_url=c["check_url"], source=c["source"], priority=c["priority"])
     if not do_verify:
@@ -372,14 +525,16 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
     order = {"new": 0, "pending": 1, "confirmed": 2, "rejected": 3}
     todo.sort(key=lambda kv: (order[kv[1]["status"]], -kv[1].get("priority", 0),
                               kv[1].get("last_checked") or ""))
-    todo = todo[: settings.get("verify_max_hosts", 400)]
+    # CDN files are cheap single fetches; give them their own budget so a big
+    # host backlog can't starve them.
+    cdn_todo = [kv for kv in todo if kv[1]["kind"] == "cdn"][: settings.get("verify_max_cdn", 1500)]
+    todo = [kv for kv in todo if kv[1]["kind"] != "cdn"][: settings.get("verify_max_hosts", 400)] + cdn_todo
     log(f"[verify] checking {len(todo)} of {len(entries)} tracked entries")
     timeout = settings.get("verify_timeout", 10)
 
     def check(kv):
         k, e = kv
-        url = e["check_url"] if e["kind"] == "url" else e["check_url"]
-        return k, classify(url, timeout=timeout, ua=UA)
+        return k, classify(e["check_url"], timeout=timeout, ua=UA, cdn=e["kind"] == "cdn")
 
     redirected: list[tuple[str, str, str]] = []
     with cf.ThreadPoolExecutor(settings.get("verify_workers", 32)) as ex:
@@ -388,10 +543,17 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
             e["last_checked"] = date_str(TODAY)
             e["attempts"] = e.get("attempts", 0) + 1
             e["evidence"] = res.evidence[:200]
-            if res.verdict in ("game", "proxy"):
+            METRICS[f"verify_{e['kind']}_{res.verdict}"] += 1
+            # A Google Sites / Apps Script page listed by a student link list is
+            # a bypass by definition; their content rarely fingerprints.
+            if (res.verdict == "alive" and e["kind"] == "url"
+                    and e["source"].startswith("aggregator:")):
+                res.verdict = "listed"
+            if res.verdict in ("game", "proxy", "loader", "listed"):
                 e.update(status="confirmed", category=res.verdict,
                          last_alive=date_str(TODAY), attempts=0)
-                redirected.append((res.final_url, k, res.verdict))
+                if e["kind"] == "host":
+                    redirected.append((res.final_url, k, res.verdict))
             elif res.verdict == "dead":
                 if e["status"] != "confirmed":
                     e["status"] = "rejected" if e["attempts"] >= 3 else "pending"
@@ -406,7 +568,7 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
     # A confirmed site that redirected elsewhere: the landing host is a game
     # site too (often a custom domain behind a github.io/pages.dev mirror).
     for final, origin, verdict in redirected:
-        tmp = Candidates(cands.allow, cands.platforms, cands.url_platforms)
+        tmp = Candidates(cands.allow, cands.platforms, cands.url_platforms, cands.cdn_owner_allow)
         tmp.add(final, f"redirect:{origin}", priority=2)
         for key, c in tmp.items.items():
             if key not in entries or entries[key]["status"] != "confirmed":
@@ -463,6 +625,37 @@ def build_domain_lines(hosts: set[str], allow: Matcher, platforms: set[str],
     return sorted(lines, key=lambda x: (x.lstrip("*.").split(".")[::-1], x))
 
 
+def build_cdn_lines(entries: dict, settings: dict) -> tuple[set[str], dict]:
+    """Owner-level entries once an owner has >= owner_promote_min confirmed
+    loader repos; repo-level entries otherwise; npm package-level entries."""
+    style = settings.get("url_entry_style", "prefix")
+    promote = settings.get("owner_promote_min", 2)
+    gh: dict[str, dict] = {}
+    npm: set[str] = set()
+    for e in entries.values():
+        if e["kind"] != "cdn" or e["status"] != "confirmed":
+            continue
+        if e.get("cdn_kind") == "gh":
+            o = gh.setdefault(e["owner"].lower(), {"name": e["owner"], "repos": set()})
+            o["repos"].add(e["repo"])
+        else:
+            npm.add(e["owner"])
+    lines: set[str] = set()
+    owner_level = repo_level = 0
+    for o in gh.values():
+        if len({r.lower() for r in o["repos"]}) >= promote:
+            lines.update(cdn.entry_lines("gh", o["name"], style=style))
+            owner_level += 1
+        else:
+            for r in o["repos"]:
+                lines.update(cdn.entry_lines("gh", o["name"], r, style=style))
+                repo_level += 1
+    for pkg in npm:
+        lines.update(cdn.entry_lines("npm", pkg, style=style))
+    return lines, {"gh_owners_owner_level": owner_level, "gh_repos_repo_level": repo_level,
+                   "npm_packages": len(npm), "url_lines": len(lines)}
+
+
 def write_feed(path: Path, lines: list[str], max_lines: int) -> list[str]:
     """Write one entry per line (no comments: FortiGate expects bare entries),
     splitting into path, path-2, ... Only rewrites files whose content changed."""
@@ -492,23 +685,25 @@ def main() -> int:
     settings = cfg.get("settings", {})
     allow = Matcher(read_list(ROOT / "seeds" / "allow.txt"))
     platforms = {h for h in (normalize_host(x) for x in read_list(ROOT / "seeds" / "platforms.txt")) if h}
-    url_platforms = {}
-    for line in read_list(ROOT / "seeds" / "url-platforms.txt"):
-        parts = line.split()
-        if parts and (h := normalize_host(parts[0])):
-            url_platforms[h] = int(parts[1]) if len(parts) > 1 else 1
+    url_platforms: dict[str, re.Pattern] = {}
+    for line in (ROOT / "seeds" / "url-platforms.txt").read_text().splitlines():
+        parts = line.strip().split(None, 1)
+        if len(parts) == 2 and not parts[0].startswith("#"):
+            url_platforms[parts[0].lower()] = re.compile(parts[1].strip(), re.I)
+    cdn_owner_allow = set(read_list(ROOT / "seeds" / "cdn-owner-allow.txt"))
 
     state_path = ROOT / "data" / "state.json"
     state = json.loads(state_path.read_text()) if state_path.exists() else {}
 
     lists = fetch_lists(cfg)
 
-    cands = Candidates(allow, platforms, url_platforms)
+    cands = Candidates(allow, platforms, url_platforms, cdn_owner_allow)
     if not args.no_discovery:
         discover_github(cfg, cands, state)
         discover_aggregators(cfg, cands)
         if not args.no_ct:
             discover_ct(cfg, cands)
+        discover_cdn(cfg, cands, state)
         log(f"[discovery] {len(cands.items)} candidate entries")
 
     # Untrusted lists feed discovery; trusted lists go straight to the feed.
@@ -539,6 +734,8 @@ def main() -> int:
     pri_lines = build_domain_lines(confirmed_seed | priority_lists | disc_hosts, allow, platforms, wild)
 
     url_lines = set(disc_urls)
+    cdn_lines, cdn_stats = build_cdn_lines(entries, settings)
+    url_lines |= cdn_lines
     for line in read_list(ROOT / "seeds" / "confirmed-urls.txt"):
         url_lines.add(re.sub(r"^https?://", "", line).rstrip("/"))
 
@@ -568,13 +765,20 @@ def main() -> int:
         "domains_priority_entries": len(pri_lines),
         "urls_entries": len(url_lines),
         "lists": {n: len(h) for n, (_, h, _) in lists.items()},
-        "discovered_confirmed": len(disc_hosts) + len(disc_urls),
+        "discovered_confirmed": len(disc_hosts) + len(disc_urls) + sum(
+            1 for e in entries.values() if e["kind"] == "cdn" and e["status"] == "confirmed"),
+        "cdn": cdn_stats,
         "discovered_pending": sum(1 for e in entries.values() if e["status"] == "pending"),
         "discovered_rejected": sum(1 for e in entries.values() if e["status"] == "rejected"),
         "files": f1 + f2 + f3,
     }
     state["last_run"] = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+    for name, (_, h, _) in lists.items():
+        METRICS["list_entries_parsed"] += len(h)
+    METRICS["lists_fetched"] = len(lists)
+    stats["checks"] = dict(sorted(METRICS.items()))
     state["stats"] = stats
+    write_run_report(stats, entries)
     state_path.parent.mkdir(exist_ok=True)
     state_path.write_text(json.dumps(state, indent=1, sort_keys=True) + "\n")
     log(json.dumps(stats, indent=2))
@@ -582,6 +786,63 @@ def main() -> int:
         with open(summ, "a") as f:
             f.write("## Feed stats\n```json\n" + json.dumps(stats, indent=2) + "\n```\n")
     return 0
+
+
+def write_run_report(stats: dict, entries: dict) -> None:
+    """docs/latest-run.md: what the last run checked, in plain numbers."""
+    m = stats["checks"]
+    by = collections.Counter((e["kind"], e["status"]) for e in entries.values())
+    g = lambda k: m.get(k, 0)  # noqa: E731
+    verified = sum(v for k, v in m.items() if k.startswith("verify_"))
+    rows = [
+        ("Curated lists downloaded", g("lists_fetched")),
+        ("List entries parsed and normalized", g("list_entries_parsed")),
+        ("GitHub repository searches", g("github_search_requests")),
+        ("GitHub repositories examined", g("github_repos_unique")),
+        ("README files scanned for links", g("github_readmes_scanned")),
+        ("Student link-list pages scanned", g("aggregator_pages_fetched")),
+        ("Links harvested from link lists", g("aggregator_links_harvested")),
+        ("Certificate Transparency queries", g("ct_queries")),
+        ("Certificates examined", g("ct_certificates_examined")),
+        ("CDN owners expanded (repo listings)", g("cdn_owners_expanded")),
+        ("CDN owner repositories listed", g("cdn_owner_repos_listed")),
+        ("CDN entry files found in owner repos", g("cdn_owner_entry_files_found")),
+        ("GitHub code searches for loader files", g("cdn_code_search_requests")),
+        ("Loader-candidate files from code search", g("cdn_code_search_files")),
+        ("Links examined by the filters", g("links_examined")),
+        ("  dropped: allowlist", g("links_dropped_allowlist")),
+        ("  dropped: known non-game service", g("links_dropped_noise")),
+        ("  dropped: bare hosting-platform domain", g("links_dropped_platform_apex")),
+        ("  dropped: README link with no game/bypass hint", g("links_dropped_no_hint")),
+        ("  dropped: CDN file that isn't a page (js/css/img)", g("cdn_links_not_entry_file")),
+        ("  dropped: CDN owner on allowlist", g("cdn_links_allowlisted_owner")),
+        ("  dropped: CDN file in a test/fixture folder", g("cdn_links_test_fixture")),
+        ("Live checks performed this run", verified),
+    ]
+    lines = ["# Latest collector run", "",
+             f"Run: {dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}  ",
+             "Generated automatically by `collector/collect.py`. "
+             "See [how-it-works.md](how-it-works.md) for what each check does.", "",
+             "## Checks performed", "", "| Check | Count |", "|---|---:|"]
+    lines += [f"| {k} | {v:,} |" for k, v in rows]
+    lines += ["", "## Live check results", "", "| Entry type | Result | Count |", "|---|---|---:|"]
+    for k in sorted(x for x in m if x.startswith("verify_")):
+        _, kind, verdict = k.split("_", 2)
+        lines.append(f"| {kind} | {verdict} | {m[k]:,} |")
+    lines += ["", "## Feed output", "", "| Item | Count |", "|---|---:|",
+              f"| `domains.txt` entries | {stats['domains_txt_entries']:,} |",
+              f"| `domains-priority.txt` entries | {stats['domains_priority_entries']:,} |",
+              f"| `urls.txt` entries | {stats['urls_entries']:,} |",
+              f"| CDN owners blocked at owner level | {stats['cdn']['gh_owners_owner_level']:,} |",
+              f"| CDN repos blocked at repo level | {stats['cdn']['gh_repos_repo_level']:,} |",
+              f"| npm packages blocked | {stats['cdn']['npm_packages']:,} |", "",
+              "## Tracked discoveries", "", "| Entry type | Status | Count |", "|---|---|---:|"]
+    lines += [f"| {k} | {st} | {n:,} |" for (k, st), n in sorted(by.items())]
+    lines += ["", "## Lists", "", "| List | Entries |", "|---|---:|"]
+    lines += [f"| {n} | {c:,} |" for n, c in sorted(stats["lists"].items())]
+    d = ROOT / "docs"
+    d.mkdir(exist_ok=True)
+    (d / "latest-run.md").write_text("\n".join(lines) + "\n")
 
 
 if __name__ == "__main__":
