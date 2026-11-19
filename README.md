@@ -10,7 +10,7 @@ Students reach games through sites that are quick to stand up and change often: 
 |---|---|---|
 | [`fortigate/domains.txt`](fortigate/domains.txt) | Domain Name | **Main feed.** Every gaming domain: unblocked-games sites, discovered mirrors, the UT1 games category, and platform games (Steam, Roblox, Epic and others). |
 | [`fortigate/domains-priority.txt`](fortigate/domains-priority.txt) | Domain Name | Unblocked and school-bypass game sites only. Use it on smaller FortiGates that can't hold the main feed. |
-| [`fortigate/urls.txt`](fortigate/urls.txt) | URL List | Path-level entries for hosts that can't be blocked whole: **CDN loaders** (game and proxy loaders hosted in GitHub repos or npm packages and opened through jsDelivr, unpkg, esm.sh, statically or githack, written for every mirror and blocked per owner, repo or package), plus Google Sites and Apps Script pages. |
+| [`fortigate/urls.txt`](fortigate/urls.txt) | FortiGuard Category (URL list) | Path-level entries for hosts that can't be blocked whole: **CDN loaders** (game and proxy loaders hosted in GitHub repos or npm packages and opened through jsDelivr, unpkg, esm.sh, statically or githack, written for every mirror and blocked per owner, repo or package), plus Google Sites and Apps Script pages. |
 
 Raw URLs to give the FortiGate:
 
@@ -24,6 +24,15 @@ File format: one entry per line, with no comments, schemes or paths (except in `
 
 ## FortiGate setup
 
+The two kinds of feed use **different threat-feed types**:
+
+| File | Threat feed type | Used in |
+|---|---|---|
+| `domains.txt` / `domains-priority.txt` | **Domain Name** (`set type domain`) | DNS filter |
+| `urls.txt` | **FortiGuard Category** (`set type category`), which is the URL-list type | Web filter |
+
+FortiOS has no "URL" feed type. A Domain Name feed only matches whole hostnames, so `urls.txt` won't work as one.
+
 ```
 config system external-resource
     edit "EdTech-Games-Domains"
@@ -32,23 +41,32 @@ config system external-resource
         set refresh-rate 15
     next
     edit "EdTech-Games-URLs"
-        set type url
+        set type category
+        set category 192
         set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/urls.txt"
         set refresh-rate 15
     next
 end
 ```
 
-Then:
+Notes on the URL feed:
 
-* **DNS filter** (student profiles): under *FortiGuard Category Based Filter → Remote Categories*, set `EdTech-Games-Domains` to **Block** (or Redirect to Block Portal).
-* **Web filter** (student profiles): under *FortiGuard Category Based Filter → Remote Categories*, set both `EdTech-Games-Domains` and `EdTech-Games-URLs` to **Block**.
+* `set category` is required. Without it, FortiOS rejects the entry with *"Must configure category"*. Use any number from 192 to 221 that isn't already used by another remote feed. It's the ID the web filter uses for this remote category.
+* `set type url` is not valid (*"command parse error"*). Type `set type ?` at that prompt to see the types your firmware supports.
+* To confirm a feed loaded, open *Security Fabric → External Connectors → (feed) → View Entries*. The entry count should match [`docs/latest-run.md`](docs/latest-run.md).
+
+Then, on student policies:
+
+* **DNS filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `EdTech-Games-Domains` to **Block** (or Redirect to Block Portal).
+* **Web filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `EdTech-Games-URLs` to **Block**.
+  * Optional: to block the domain list in the web filter too (it catches devices that get around your DNS, for example with DNS-over-HTTPS), add a second `type category` feed (another category number) pointing at `domains.txt`, and block it here as well.
+* **Deep SSL inspection is required for `urls.txt`.** Every entry in it is a path on a shared host, such as `cdn.jsdelivr.net/gh/<owner>/` or `sites.google.com/view/<name>`. With certificate-only inspection the FortiGate sees only the hostname of an HTTPS request, never the path, so these entries can't match. The domain feeds work either way.
 * The FortiGate's management interface needs outbound HTTPS to `raw.githubusercontent.com`.
 * Entry limits depend on the model. Check *Security Fabric → External Connectors → (feed) → View Entries* and the event log after the first pull. If the main feed is too large for a smaller box, use `domains-priority.txt` instead.
 
 The feed is rebuilt every 2 hours. A refresh rate of 15–60 minutes on the FortiGate is enough.
 
-**`urls.txt` matching:** CDN entries are written as path prefixes, such as `cdn.jsdelivr.net/gh/<owner>/`, so that one entry covers every repo and file beneath it. After the first pull, test one by opening a file under a listed owner, for example a `.svg` from an owner in the feed. If it isn't blocked, set `url_entry_style = "wildcard"` in `config/sources.toml`, which writes `.../gh/<owner>/*` instead.
+**`urls.txt` matching:** CDN entries are written as path prefixes, such as `cdn.jsdelivr.net/gh/<owner>/`, so that one entry covers every repo and file beneath it. After the first pull, test one by opening a file under a listed owner, for example a `.svg` from an owner in the feed. If it isn't blocked even with deep inspection on, set `url_entry_style = "wildcard"` in `config/sources.toml`, which writes `.../gh/<owner>/*` instead.
 
 ## How it works
 
