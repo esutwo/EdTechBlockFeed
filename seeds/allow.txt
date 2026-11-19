@@ -63,6 +63,11 @@ cros-omahaproxy.appspot.com
 *.edu
 *.gov
 *.mil
+# Curriculum / assessment platforms that broad game lists include by mistake.
+# Amplify: my.amplify.com is the assessment platform (mCLASS etc.); student.
+# and learning.amplify.com are Amplify curriculum. Included by UT1 and the
+# gjohnpaull list (from Amplify's former games division). Do not remove.
+*.amplify.com
 # Classroom tools that look like games (remove a line to block it)
 *.kahoot.com
 kahoot.it

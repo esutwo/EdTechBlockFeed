@@ -216,6 +216,8 @@ suffixes = ["pages.dev", "vercel.app", "netlify.app", "github.io", "workers.dev"
 # ---------------------------------------------------------------------------
 
 [cdn]
+# Open a GitHub issue when a new CDN/mirror is detected (Actions only).
+open_issues = true
 # Re-list each confirmed owner's repositories this often (days).
 owner_expand_days = 1
 owner_expand_max = 40       # owners expanded per run

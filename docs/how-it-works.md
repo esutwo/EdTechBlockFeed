@@ -68,7 +68,20 @@ Students increasingly avoid domains entirely. They put a game or proxy *loader* 
 
 Six code searches for the loader signature: a full-screen SVG (`position:fixed`, `inset:0`, `100vw`) that embeds HTML through `<foreignObject>` and loads an `<iframe>` or `<script>`. Each matching file becomes a candidate. This is how owners nobody has reported yet are found.
 
-Counted in latest-run.md under *GitHub repository searches* through *Loader-candidate files from code search*.
+### 2f. New CDN and mirror detection
+
+Students move to whichever CDN hostname isn't blocked yet: alternate jsDelivr hostnames (`quantil.`, `originfastly.`), third-party jsDelivr clones (`cdn.jsdmirror.com`, `jsd.onmicrosoft.cn`, `cdn.staticdelivr.com`) and new services. The collector looks for them on every run, using links it has already downloaded:
+
+| Check | What it does |
+|---|---|
+| Path shape | Any link on a host we don't track whose path looks like a file CDN is held aside instead of being treated as a normal site. The shapes are `/gh/<owner>/<repo>@<ref>/…`, `/npm/<pkg>@<ver>/…`, `/<pkg>@<ver>/x.html`, and `/<owner>/<repo>/main/x.svg`. The allowlist doesn't apply here, because new `*.jsdelivr.net` hostnames are the likeliest mirrors. |
+| Owner evidence | The host is tested only if its links reference **2 or more different owners or packages**, or **any owner we've already confirmed**. A single site that happens to have a CDN-like path isn't enough. |
+| Loader confirmation | Up to 3 sample links (confirmed owners first) are fetched. If one serves a loader, game or proxy, the host is **confirmed**. |
+| Activation | A confirmed host is registered as a mirror straight away. Every owner, repo and package entry in `urls.txt` is written for it from that run on, and its links are processed as CDN files. |
+| Safety | A shaped host is **never** blocked as a whole domain, whether or not it's confirmed. Getting it wrong can only make blocking narrower. |
+| Notification | Confirmed hosts are listed in `review/new-cdns.txt`, with *suspect* and *watch* hosts below them. A **GitHub issue** labelled `new-cdn` is opened once per host, with a to-do list: add it to the Chrome URL blocklist, and make it permanent in `seeds/cdn-mirrors.txt`. |
+
+Counted in latest-run.md under *GitHub repository searches* through *new CDNs/mirrors confirmed this run*.
 
 ---
 
@@ -78,7 +91,8 @@ Every candidate link from Stage 2 passes through these checks, in order. The fir
 
 | # | Check | Result |
 |---|---|---|
-| 1 | **Shared CDN?** Recognizes 12 GitHub-backed and 6 npm-backed CDN address formats (jsDelivr and its fastly, gcore and testingcf mirrors, unpkg, esm.sh, statically, githack). | Becomes a **CDN file** candidate, tracked by owner, repo and file. |
+| 1 | **Shared CDN?** Recognizes every known GitHub/npm file CDN host: 9 built in (jsDelivr's cdn, fastly, gcore and testingcf hostnames, unpkg, esm.sh, statically, and two githack hosts), plus `seeds/cdn-mirrors.txt` and any auto-detected mirrors (2f), in 5 URL styles. | Becomes a **CDN file** candidate, tracked by owner, repo and file. |
+| 1′ | **CDN-shaped link on a host we don't track?** | Held for new-CDN detection (2f). Never becomes a whole-host candidate. |
 | 1a | ↳ Is the file something you can open as a page (`.svg`, `.html`)? | If not (`.js`, `.css`, images), dropped. Legitimate sites load these from CDNs every day. |
 | 1b | ↳ Is it in a test or fixture folder (`tests/`, `LayoutTests/`, `fixtures/`, `xss*`, fuzzing corpora)? | Dropped. Browser and SVG test suites contain scripted SVGs on purpose. |
 | 1c | ↳ Is the owner on `seeds/cdn-owner-allow.txt` (Bootstrap, jQuery, Simple Icons, Devicon, Font Awesome, and others)? | Dropped. |
@@ -140,7 +154,7 @@ Before anything is committed, `collector/check_feed.py` reads every output file 
 
 * a domain covered by `seeds/allow.txt`;
 * a hosting platform or CDN network as a whole (`pages.dev`, `edgesuite.net`, `akamaihd.net` and so on, from `seeds/platforms.txt`); or
-* any of about 30 **critical domains hard-coded in the checker**: Google (`google.com`, `googleapis.com`, `gstatic.com`, `gvt1/2/3.com` for Chrome and ChromeOS updates and Play Store, `ggpht.com`, `1e100.net`), Android (`android.com`), YouTube, Microsoft 365, Apple, GitHub, jsDelivr, unpkg, Cloudflare, AWS, and the `.edu` and `.gov` TLDs.
+* any of about 30 **critical domains hard-coded in the checker**: Google (`google.com`, `googleapis.com`, `gstatic.com`, `gvt1/2/3.com` for Chrome and ChromeOS updates and Play Store, `ggpht.com`, `1e100.net`), Android (`android.com`), YouTube, Microsoft 365, Apple, GitHub, jsDelivr, unpkg, Cloudflare, AWS, the **Amplify** curriculum and assessment platform (`*.amplify.com`), and the `.edu` and `.gov` TLDs.
 
 Because the critical list lives in code rather than in `allow.txt`, a mistaken edit to the allowlist still can't publish a feed that breaks Chromebooks. A failed check stops the workflow before the commit step, so the FortiGates keep pulling the last good feed, and the failure shows up in GitHub Actions.
 
@@ -151,9 +165,11 @@ A single loader is reachable through many CDN addresses, so each confirmed findi
 
 | Finding | Entries written |
 |---|---|
-| GitHub owner with **≥ 2** confirmed loader repos (`owner_promote_min`) | **Owner level**: `cdn.jsdelivr.net/gh/<owner>/` plus the same on fastly, gcore and testingcf, the `/combine/gh/` form of each, `esm.sh/gh/`, `cdn.statically.io/gh/`, `raw.githack.com/` and `rawcdn.githack.com/`. That's 12 entries, doubled if the owner name has capitals, so both spellings match. Every current and future repo from that owner is covered. |
-| GitHub owner with 1 confirmed repo | **Repo level**: the same 12 mirrors, for that repo only, in both `repo/` and `repo@` forms (to cover pinned versions). |
-| npm package | **Package level**: `cdn.jsdelivr.net/npm/<pkg>` on all 4 jsDelivr hosts, `unpkg.com/<pkg>` and `esm.sh/<pkg>`, in both `/` and `@` forms. |
+| GitHub owner with **≥ 2** confirmed loader repos (`owner_promote_min`) | **Owner level**: `<mirror>/gh/<owner>/` on every GitHub-serving mirror, plus the `/combine/gh/` form on each jsDelivr-style mirror, `esm.sh/gh/`, statically, and the githack hosts. That's 24 entries with the current 16 mirror hosts, doubled if the owner name has capitals, so both spellings match. Every current and future repo from that owner is covered. |
+| GitHub owner with 1 confirmed repo | **Repo level**: the same mirrors, for that repo only, in both `repo/` and `repo@` forms (to cover pinned versions). |
+| npm package | **Package level**: `<mirror>/npm/<pkg>` on every jsDelivr-style mirror, plus `unpkg.com/<pkg>` and `esm.sh/<pkg>` and its aliases, in both `/` and `@` forms. |
+
+The mirror list grows on its own (2f), so entries for owners already in the feed are rewritten for a new mirror on the run that detects it.
 
 `url_entry_style` in `config/sources.toml` switches entries between prefix form (`.../gh/owner/`) and wildcard form (`.../gh/owner/*`), depending on how your FortiOS version matches URL-list entries.
 
@@ -167,7 +183,9 @@ A single loader is reachable through many CDN addresses, so each confirmed findi
 | `seeds/confirmed-urls.txt` | URL entries always in the feed. |
 | `seeds/allow.txt` | Domains never in the feed. Wins over everything. |
 | `seeds/cdn-owner-allow.txt` | GitHub owners and npm packages never turned into CDN entries. |
+| `seeds/cdn-mirrors.txt` | Extra CDN mirror hosts and their URL style. Make an auto-detected mirror permanent here, or add `<host> ignore` to reject one. |
 | `seeds/platforms.txt` | Hosting platforms that are never blocked as a whole. |
 | `seeds/url-platforms.txt` | Hosts that are blocked by path, with a pattern for the part to keep. |
 | `review/pending.txt` | What the job couldn't decide: alive but no fingerprint. |
+| `review/new-cdns.txt` | Auto-detected CDN mirrors (confirmed, suspect, watch). Each confirmed one also gets a GitHub issue. |
 | `docs/latest-run.md` | The numbers from the last run. |

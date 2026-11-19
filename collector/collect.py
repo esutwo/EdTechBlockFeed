@@ -188,6 +188,10 @@ class Candidates:
         self.allow, self.platforms, self.url_platforms = allow, platforms, url_platforms
         self.cdn_owner_allow = cdn_owner_allow
         self.items: dict[str, dict] = {}
+        # Unknown hosts whose links look like GitHub/npm CDN paths:
+        # host -> [(url, style, source)]. Resolved by detect_new_cdns().
+        self.cdn_shapes: dict[str, list[tuple[str, str, str]]] = {}
+        self.cdn_ignore: set[str] = set()
 
     def _put(self, key: str, kind: str, url: str, source: str, priority: int, **extra) -> None:
         cur = self.items.get(key)
@@ -229,6 +233,18 @@ class Candidates:
         if raw_host in cdn.CDN_HOSTS:
             METRICS["cdn_links_unparsed"] += 1
             return
+
+        # 1b. Unknown host, but the link looks like a GitHub/npm CDN path
+        #     (/gh/owner/repo@ref/..., /npm/pkg@ver/..., /owner/repo/main/x.svg).
+        #     Held for new-CDN detection; never treated as a whole-host block.
+        #     The allowlist doesn't apply here: CDN handling is path-level only,
+        #     and new *.jsdelivr.net-style hostnames are the likeliest mirrors.
+        if raw_host not in self.cdn_ignore:
+            style = cdn.infer_style(urllib.parse.unquote(parts.path))
+            if style:
+                METRICS["cdn_shape_links"] += 1
+                self.cdn_shapes.setdefault(raw_host, []).append((url, style, source))
+                return
 
         # 2. Path-level platforms (Google Sites, Apps Script, ...).
         rx = self.url_platforms.get(raw_host) or self.url_platforms.get(host)
@@ -486,6 +502,91 @@ def discover_cdn(cfg: dict, cands: Candidates, state: dict) -> None:
                 break
 
 
+def detect_new_cdns(cfg: dict, cands: Candidates, state: dict) -> None:
+    """Spot GitHub/npm file CDNs (or mirrors of one) we don't know yet.
+
+    A host qualifies when its links have a CDN path shape AND they reference
+    >= 2 different owners/packages or an owner we've already confirmed; it is
+    confirmed when a sampled link serves a loader/game/proxy. Confirmed hosts
+    are registered as mirrors immediately (so entries are written for them),
+    recorded in review/new-cdns.txt, and optionally reported as a GitHub issue.
+    """
+    c = cfg.get("cdn", {})
+    det = state.setdefault("cdn_detected", {})
+    known_owners = {e["owner"].lower() for e in state.get("entries", {}).values()
+                    if e["kind"] == "cdn" and e["status"] == "confirmed"}
+    for host, links in sorted(cands.cdn_shapes.items()):
+        METRICS["cdn_shape_hosts"] += 1
+        refs = []
+        for url, style, source in links:
+            path = urllib.parse.unquote(urllib.parse.urlsplit(url).path).lstrip("/")
+            r = cdn.parse_path(style, path)
+            if r:
+                refs.append((url, style, source, r))
+        owners = {r.owner.lower() for *_, r in refs}
+        overlap = owners & known_owners
+        style = collections.Counter(st for _, st, _, _ in refs).most_common(1)[0][0] if refs else links[0][1]
+        rec = det.setdefault(host, {"first_seen": date_str(TODAY), "status": "watch"})
+        rec.update(last_seen=date_str(TODAY), style=style, links=len(links),
+                   owners=len(owners), known_owner_overlap=len(overlap),
+                   sample=links[0][0][:200])
+        if rec["status"] == "confirmed":
+            continue
+        if len(owners) < 2 and not overlap:
+            continue  # stays "watch": too little evidence to test
+        if days_since(rec.get("last_checked")) < 1:
+            continue
+        # Live-check up to 3 samples, known owners first.
+        samples = sorted(refs, key=lambda x: x[3].owner.lower() not in overlap)[:3]
+        rec["last_checked"] = date_str(TODAY)
+        rec["status"] = "suspect"
+        for url, *_ in samples:
+            METRICS["cdn_detect_checks"] += 1
+            res = classify(url, timeout=15, ua=UA, cdn=True)
+            if res.verdict in ("loader", "game", "proxy"):
+                rec.update(status="confirmed", confirmed=date_str(TODAY),
+                           evidence=f"{url[:160]} -> {res.verdict}: {res.evidence[-120:]}")
+                break
+            rec["evidence"] = f"{url[:160]} -> {res.verdict}"
+        if rec["status"] == "confirmed":
+            METRICS["cdn_detect_confirmed"] += 1
+            cdn.register(host, style)
+            log(f"[cdn] NEW CDN/mirror detected: {host} ({style}), {len(owners)} owners")
+            for url, _, source in links:      # now parseable as CDN links
+                cands.add(url, source, priority=2)
+            if c.get("open_issues", True):
+                open_issue_for_cdn(host, rec)
+
+
+def open_issue_for_cdn(host: str, rec: dict) -> None:
+    """Open a GitHub issue for a newly detected CDN (Actions only, once)."""
+    repo, tok = os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GITHUB_TOKEN")
+    if not repo or not tok or rec.get("issue"):
+        return
+    body = (f"The collector detected a new GitHub/npm file CDN or mirror serving loaders:\n\n"
+            f"* **Host:** `{host}`\n* **URL style:** `{rec['style']}`\n"
+            f"* **Links seen:** {rec['links']} across {rec['owners']} owners/packages "
+            f"({rec['known_owner_overlap']} already confirmed)\n"
+            f"* **Evidence:** `{rec.get('evidence', '')}`\n\n"
+            "It is already active: owner/repo/package entries in `fortigate/urls.txt` now "
+            "include this host.\n\n**To do**\n"
+            f"- [ ] Add `{host}` to the Chrome URL blocklist for student OUs (Google Admin)\n"
+            f"- [ ] Make it permanent: add `{host} {rec['style']}` to `seeds/cdn-mirrors.txt` "
+            f"(or `{host} ignore` if this is a false positive)\n\n"
+            "_Opened automatically by the feed collector._")
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/{repo}/issues", method="POST",
+        data=json.dumps({"title": f"New CDN mirror detected: {host}", "body": body,
+                         "labels": ["new-cdn"]}).encode(),
+        headers={**gh_headers(), "Content-Type": "application/json", "User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            rec["issue"] = json.loads(r.read()).get("html_url", "opened")
+            METRICS["cdn_issues_opened"] += 1
+    except Exception as e:  # noqa: BLE001
+        log(f"[cdn] could not open issue for {host}: {e}")
+
+
 # ------------------------------------------------------------ verification
 
 def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> None:
@@ -608,7 +709,7 @@ def build_domain_lines(hosts: set[str], allow: Matcher, platforms: set[str],
                        wildcards: bool) -> list[str]:
     clean = set()
     for h in hosts:
-        if allow.matches(h) or h in platforms or NOISE.matches(h):
+        if allow.matches(h) or h in platforms or NOISE.matches(h) or h in cdn.CDN_HOSTS:
             continue
         clean.add(h)
     lines = set()
@@ -695,15 +796,30 @@ def main() -> int:
     state_path = ROOT / "data" / "state.json"
     state = json.loads(state_path.read_text()) if state_path.exists() else {}
 
+    # Extra CDN mirrors: seeds/cdn-mirrors.txt, then previously auto-detected.
+    cdn_ignore = set()
+    for line in read_list(ROOT / "seeds" / "cdn-mirrors.txt"):
+        parts = line.split()
+        if len(parts) == 2:
+            if parts[1] == "ignore":
+                cdn_ignore.add(parts[0])
+            else:
+                cdn.register(parts[0], parts[1])
+    for host, rec in state.get("cdn_detected", {}).items():
+        if rec.get("status") == "confirmed" and host not in cdn_ignore:
+            cdn.register(host, rec["style"])
+
     lists = fetch_lists(cfg)
 
     cands = Candidates(allow, platforms, url_platforms, cdn_owner_allow)
+    cands.cdn_ignore = cdn_ignore
     if not args.no_discovery:
         discover_github(cfg, cands, state)
         discover_aggregators(cfg, cands)
         if not args.no_ct:
             discover_ct(cfg, cands)
         discover_cdn(cfg, cands, state)
+        detect_new_cdns(cfg, cands, state)
         log(f"[discovery] {len(cands.items)} candidate entries")
 
     # Untrusted lists feed discovery; trusted lists go straight to the feed.
@@ -759,6 +875,19 @@ def main() -> int:
         lines.append("\t".join([k, e["status"], e["first_seen"], e["source"],
                                 e["check_url"], e.get("evidence", "")]))
     (rev / "pending.txt").write_text("\n".join(lines) + "\n")
+    det = state.get("cdn_detected", {})
+    nl = ["# Hosts whose links look like a GitHub/npm file CDN (automatic detection).",
+          "# confirmed = serving loaders; already active as a mirror in urls.txt.",
+          "#   Make permanent in seeds/cdn-mirrors.txt; add to the Chrome URL blocklist.",
+          "# suspect   = CDN-shaped links to several owners, but no loader confirmed yet.",
+          "# watch     = CDN-shaped links seen, too few owners to test yet.",
+          "# host\tstatus\tstyle\tfirst_seen\tlinks\towners\tknown_owners\tissue\tevidence"]
+    order = {"confirmed": 0, "suspect": 1, "watch": 2}
+    for h, r in sorted(det.items(), key=lambda kv: (order.get(kv[1]["status"], 9), kv[0])):
+        nl.append("\t".join(str(x) for x in [h, r["status"], r.get("style", ""), r["first_seen"],
+                  r.get("links", 0), r.get("owners", 0), r.get("known_owner_overlap", 0),
+                  r.get("issue", ""), r.get("evidence", r.get("sample", ""))]))
+    (rev / "new-cdns.txt").write_text("\n".join(nl) + "\n")
 
     stats = {
         "domains_txt_entries": len(all_lines),
@@ -817,6 +946,10 @@ def write_run_report(stats: dict, entries: dict) -> None:
         ("  dropped: CDN file that isn't a page (js/css/img)", g("cdn_links_not_entry_file")),
         ("  dropped: CDN owner on allowlist", g("cdn_links_allowlisted_owner")),
         ("  dropped: CDN file in a test/fixture folder", g("cdn_links_test_fixture")),
+        ("Links with a CDN path shape on unknown hosts", g("cdn_shape_links")),
+        ("Unknown hosts tested for being a new CDN/mirror", g("cdn_shape_hosts")),
+        ("  live checks on those hosts", g("cdn_detect_checks")),
+        ("  new CDNs/mirrors confirmed this run", g("cdn_detect_confirmed")),
         ("Live checks performed this run", verified),
     ]
     lines = ["# Latest collector run", "",
@@ -835,7 +968,8 @@ def write_run_report(stats: dict, entries: dict) -> None:
               f"| `urls.txt` entries | {stats['urls_entries']:,} |",
               f"| CDN owners blocked at owner level | {stats['cdn']['gh_owners_owner_level']:,} |",
               f"| CDN repos blocked at repo level | {stats['cdn']['gh_repos_repo_level']:,} |",
-              f"| npm packages blocked | {stats['cdn']['npm_packages']:,} |", "",
+              f"| npm packages blocked | {stats['cdn']['npm_packages']:,} |",
+              f"| CDN mirror hosts covered | {len(cdn.MIRRORS):,} |", "",
               "## Tracked discoveries", "", "| Entry type | Status | Count |", "|---|---|---:|"]
     lines += [f"| {k} | {st} | {n:,} |" for (k, st), n in sorted(by.items())]
     lines += ["", "## Lists", "", "| List | Entries |", "|---|---:|"]
