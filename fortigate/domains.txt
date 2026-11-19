@@ -22597,8 +22597,6 @@ grattmouton.com
 gratuit-jeux-fille.com
 *.gratwee.com
 gratwee.com
-*.gravatar.com
-gravatar.com
 *.graveck.com
 graveck.com
 *.gravitylagoon.com
@@ -22832,6 +22830,8 @@ guerriereamazone.com
 guerrilla-games.com
 *.guessasketch.com
 guessasketch.com
+*.guessdash.com
+guessdash.com
 *.gugusland.com
 gugusland.com
 *.guides4gamers.com
@@ -30079,8 +30079,6 @@ mathnook.com
 mathplayzone.com
 *.mathsinc.com
 mathsinc.com
-*.mathsisfun.com
-mathsisfun.com
 *.mathsspot.com
 mathsspot.com
 *.mathsstudio.com
@@ -30287,6 +30285,8 @@ mediamonks.com
 mediaplayercodecpack.com
 *.mediaplaynews.com
 mediaplaynews.com
+*.mediareduce.com
+mediareduce.com
 *.mediatonicgames.com
 mediatonicgames.com
 *.medieval-war.com
@@ -31782,8 +31782,6 @@ mscclan.com
 msgameonline.com
 *.msgamestudios.com
 msgamestudios.com
-*.msn.com
-msn.com
 *.msnfun.com
 msnfun.com
 *.msngames.com
@@ -32207,7 +32205,6 @@ mywordgames.com
 mzonestudio.com
 *.mzplayclub.com
 mzplayclub.com
-is1-ssl.mzstatic.com
 *.n-europe.com
 n-europe.com
 *.n-fusion.com
@@ -45343,8 +45340,6 @@ theoldergamers.com
 theoldschoolgamevault.com
 *.theonyxpath.com
 theonyxpath.com
-*.theoplayer.com
-theoplayer.com
 *.theories-itsagame.com
 theories-itsagame.com
 *.theorycraftgames.com
@@ -70839,8 +70834,6 @@ mots-caches.net
 mousebreaker.net
 *.mp3play.net
 mp3play.net
-*.msauth.net
-msauth.net
 *.mshade.net
 mshade.net
 *.mtaigame.net
@@ -80883,6 +80876,8 @@ ihaventsleptfortwodays.space
 iogames.space
 *.luminox.space
 luminox.space
+*.mage.space
+mage.space
 *.opx.space
 opx.space
 *.play-aviator-for-money.space

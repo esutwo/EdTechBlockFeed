@@ -5364,6 +5364,8 @@ gta5browser.com
 gtabrowser.com
 *.gtarcade.com
 gtarcade.com
+*.guessdash.com
+guessdash.com
 *.guitarflash.com
 guitarflash.com
 *.gun-mayhem2.com
@@ -6544,8 +6546,6 @@ mathler.com
 mathnook.com
 *.mathplayzone.com
 mathplayzone.com
-*.mathsisfun.com
-mathsisfun.com
 *.mathsspot.com
 mathsspot.com
 *.matica.com
@@ -6574,6 +6574,8 @@ meaburro.com
 mecharoyale.com
 *.mediagecko.com
 mediagecko.com
+*.mediareduce.com
+mediareduce.com
 *.mediatonicgames.com
 mediatonicgames.com
 *.meegames.com
@@ -6806,8 +6808,6 @@ mrnussbaum.com
 msgameonline.com
 *.msgamestudios.com
 msgamestudios.com
-*.msn.com
-msn.com
 *.msnfun.com
 msnfun.com
 *.msngames.com
@@ -23604,6 +23604,8 @@ hihihi934-gn-math.static.hf.space
 iogames.space
 *.luminox.space
 luminox.space
+*.mage.space
+mage.space
 *.playhopgames.space
 playhopgames.space
 *.playnowgames.space

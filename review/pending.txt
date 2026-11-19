@@ -1159,6 +1159,7 @@ cdn:gh/PeteZah-G/serverguard/src/public/flagged.html	pending	2026-11-19	owner-ex
 cdn:gh/PeteZah-G/serverguard/src/public/mobile.html	pending	2026-11-19	owner-expand:PeteZah-G	https://cdn.jsdelivr.net/gh/PeteZah-G/serverguard@main/src/public/mobile.html	https://cdn.jsdelivr.net/gh/PeteZah-G/serverguard@main/src/public/mobile.html HTTP 200 title='ProxyGuard'
 cdn:gh/PeteZah-G/serverguard/src/public/passed.html	pending	2026-11-19	owner-expand:PeteZah-G	https://cdn.jsdelivr.net/gh/PeteZah-G/serverguard@main/src/public/passed.html	https://cdn.jsdelivr.net/gh/PeteZah-G/serverguard@main/src/public/passed.html HTTP 200 title='ProxyGuard'
 cdn:gh/PeteZah-G/serverguard/src/public/verifying.html	pending	2026-11-19	owner-expand:PeteZah-G	https://cdn.jsdelivr.net/gh/PeteZah-G/serverguard@main/src/public/verifying.html	https://cdn.jsdelivr.net/gh/PeteZah-G/serverguard@main/src/public/verifying.html HTTP 200 title='ProxyGuard'
+cdn:gh/Stockable/duckmath/index.html	pending	2026-11-19	owner-expand:Stockable	https://cdn.jsdelivr.net/gh/Stockable/duckmath@main/index.html	https://cdn.jsdelivr.net/gh/Stockable/duckmath@main/index.html HTTP 200 title=''
 cdn:gh/Stockable/duckmath/index.svg	pending	2026-11-19	owner-expand:Stockable	https://cdn.jsdelivr.net/gh/Stockable/duckmath@main/index.svg	https://cdn.jsdelivr.net/gh/Stockable/duckmath@main/index.svg HTTP 200 title=''
 cdn:gh/Stockable/edu/index.html	pending	2026-11-19	owner-expand:Stockable	https://cdn.jsdelivr.net/gh/Stockable/edu@main/index.html	https://cdn.jsdelivr.net/gh/Stockable/edu@main/index.html HTTP 200 title='Hello, Deno'
 cdn:gh/Stockable/games/1.html	pending	2026-11-19	owner-expand:Stockable	https://cdn.jsdelivr.net/gh/Stockable/games@main/1.html	https://cdn.jsdelivr.net/gh/Stockable/games@main/1.html HTTP 200 title='1'
@@ -1242,7 +1243,6 @@ cdn:gh/lolration/Bolt-Unblocker/public/assets/imgs/logos/boltbrowser.svg	pending
 cdn:gh/lolration/Bolt-Unblocker/public/assets/imgs/logos/cog.svg	pending	2026-11-19	owner-expand:lolration	https://cdn.jsdelivr.net/gh/lolration/Bolt-Unblocker@main/public/assets/imgs/logos/cog.svg	https://cdn.jsdelivr.net/gh/lolration/Bolt-Unblocker@main/public/assets/imgs/logos/cog.svg HTTP 200 title=''
 cdn:gh/lolration/Bolt-Unblocker/public/assets/imgs/logos/gamehub.svg	pending	2026-11-19	owner-expand:lolration	https://cdn.jsdelivr.net/gh/lolration/Bolt-Unblocker@main/public/assets/imgs/logos/gamehub.svg	https://cdn.jsdelivr.net/gh/lolration/Bolt-Unblocker@main/public/assets/imgs/logos/gamehub.svg HTTP 200 title=''
 cdn:gh/lolration/Bolt-Unblocker/public/assets/imgs/otherlogos/tiktok.svg	pending	2026-11-19	owner-expand:lolration	https://cdn.jsdelivr.net/gh/lolration/Bolt-Unblocker@main/public/assets/imgs/otherlogos/tiktok.svg	https://cdn.jsdelivr.net/gh/lolration/Bolt-Unblocker@main/public/assets/imgs/otherlogos/tiktok.svg HTTP 200 title='tiktok'
-cdn:gh/lolration/Mojang-hello/Novix_26.1.2.html	pending	2026-11-19	owner-expand:lolration	https://cdn.jsdelivr.net/gh/lolration/Mojang-hello@main/Novix_26.1.2.html	https://cdn.jsdelivr.net/gh/lolration/Mojang-hello@main/Novix_26.1.2.html HTTP 200 title=''
 cdn:gh/lolration/classroom-15x/resources/lesson004/index.html	pending	2026-11-19	owner-expand:lolration	https://cdn.jsdelivr.net/gh/lolration/classroom-15x@main/resources/lesson004/index.html	https://cdn.jsdelivr.net/gh/lolration/classroom-15x@main/resources/lesson004/index.html HTTP 200 title=''
 cdn:gh/lolration/classroom-15x/resources/lesson005/index.html	pending	2026-11-19	owner-expand:lolration	https://cdn.jsdelivr.net/gh/lolration/classroom-15x@main/resources/lesson005/index.html	https://cdn.jsdelivr.net/gh/lolration/classroom-15x@main/resources/lesson005/index.html HTTP 200 title=''
 cdn:gh/lolration/codeit/404.html	pending	2026-11-19	owner-expand:lolration	https://cdn.jsdelivr.net/gh/lolration/codeit@main/404.html	https://cdn.jsdelivr.net/gh/lolration/codeit@main/404.html HTTP 200 title='ITCode - Programming Tutorials'
@@ -2624,7 +2624,7 @@ eqbull.thongthaitextile.com	pending	2026-11-19	aggregator:https://raw.githubuser
 equal.bulls.ferrosider.com.ar	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://equal.bulls.ferrosider.com.ar/	URLError: <urlopen error [Errno -2] Name or service not known>
 equipment-python.vercel.app	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://equipment-python.vercel.app	https://equipment-python.vercel.app HTTP 200 title='The root of your next Python project | Equipment'
 equivifyoalevels.netlify.app	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://equivifyoalevels.netlify.app/	HTTP 404
-eraguessr.ai	pending	2026-11-19	github-readme:lappemic/awesome-ai-built-games	https://eraguessr.ai/play/daily	https://eraguessr.ai/play/daily HTTP 200 title='Today&#x27;s Daily Puzzle · EraGuessr'
+eraguessr.ai	pending	2026-11-19	github-readme:lappemic/awesome-ai-built-games	https://eraguessr.ai/play/daily	IncompleteRead: IncompleteRead(61354 bytes read)
 eraly.io	pending	2026-11-19	github-readme:bestdailygames/bestdailygames	https://eraly.io/?utm_source=bestdaily.games&utm_medium=referral	https://eraly.io/?utm_source=bestdaily.games&utm_medium=referral HTTP 200 title='Eraly · the daily time-travel'
 erlang-ls.github.io	pending	2026-11-19	github-readme:enhansome/enhansome-Developer-Handbook	https://erlang-ls.github.io/editors/vscode/	HTTP 404
 erlinredondo2-netizen.github.io	pending	2026-11-19	github:erlinredondo2-netizen/unblocked-games	https://erlinredondo2-netizen.github.io/unblocked-games/	HTTP 401
@@ -2809,7 +2809,7 @@ flopper.io	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://fl
 flowcharts.iteflow.com.np	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://flowcharts.iteflow.com.np/	URLError: <urlopen error [Errno 111] Connection refused>
 flowcharts.monedita.cl	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://flowcharts.monedita.cl/	URLError: <urlopen error [Errno 111] Connection refused>
 flows.iteflow.com.np	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://flows.iteflow.com.np/	URLError: <urlopen error [Errno 111] Connection refused>
-flurry-fight.onrender.com	pending	2026-11-19	github-readme:Andien99/flurry-fight	https://flurry-fight.onrender.com	HTTP 503
+flurry-fight.onrender.com	pending	2026-11-19	github-readme:Andien99/flurry-fight	https://flurry-fight.onrender.com	https://flurry-fight.onrender.com HTTP 200 title='Snowdown'
 flutter.io	pending	2026-11-19	github-readme:enhansome/enhansome-Zorin-OS-Guide	https://flutter.io/platform-plugins/	https://docs.flutter.dev/packages-and-plugins/using-packages HTTP 200 title='Using packages'
 flux1kontext.io	pending	2026-11-19	github-readme:FlyingHorse168/FreeAiTools	https://flux1kontext.io/	https://79kingvn.ceo/ HTTP 200 title='79Kingvn | Link Vào 79King Không Bị Chặn, Đăng Ký Tặng 799k'
 fluxcd.control-plane.io	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://fluxcd.control-plane.io/	https://fluxcd.control-plane.io/ HTTP 200 title='ControlPlane Enterprise for Flux CD'
@@ -3183,7 +3183,6 @@ guardian.grotestapelnonsens.nl	pending	2026-11-19	aggregator:https://raw.githubu
 guardian.sicily.co.uk	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://guardian.sicily.co.uk/	URLError: <urlopen error [Errno 111] Connection refused>
 guardian.sylai.io	pending	2026-11-19	github-readme:punkpeye/awesome-remote-mcp-servers	https://guardian.sylai.io/mcp	HTTP 406
 guardian.trhd.ro	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://guardian.trhd.ro/	URLError: <urlopen error [Errno 111] Connection refused>
-guessdash.com	pending	2026-11-19	github-readme:bestdailygames/bestdailygames	https://guessdash.com/extraplot?utm_source=bestdaily.games&utm_medium=referral	https://guessdash.com/extraplot?utm_source=bestdaily.games&utm_medium=referral HTTP 200 title='Extraplot: Draw where the chart goes next | GuessDash'
 guessthe.game	pending	2026-11-19	github-readme:teobot/daily-slop-games	https://guessthe.game/	https://guessthe.game/ HTTP 200 title='GuessThe.Game - Your daily video game guessing puzzle!'
 guidedenglish.bakeryos.net	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://guidedenglish.bakeryos.net/	URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certi
 guilherme-moraiss.github.io	pending	2026-11-19	github-readme:kush-coder/autopilot-cybersources-v2	https://guilherme-moraiss.github.io/Deep-Dork-Web/	https://guilherme-moraiss.github.io/Deep-Dork-Web/ HTTP 200 title='Deep Dork'
@@ -3296,7 +3295,7 @@ historyislife.wikidelia.net	pending	2026-11-19	aggregator:https://raw.githubuser
 historyofutopia.orekhov.space	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://historyofutopia.orekhov.space	URLError: <urlopen error [Errno -2] Name or service not known>
 hitbox.io	pending	2026-11-19	github-readme:NikaGeospatial/awesome-office-gg	https://hitbox.io	https://hitbox.io HTTP 200 title='hitbox.io - Official Site: Play Hitbox here!'
 hits.seeyoufarm.com	pending	2026-11-19	github-readme:Nintendoboi22/nintendoboi22.github.io	https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fnintendoboi22.github.io&count_bg=%23AF11F6&title_bg=%235C5C5C&icon=github.svg&icon_color=%23AF11F6&title=Views&edge_flat=false	URLError: <urlopen error [Errno -2] Name or service not known>
-hiveio.com	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://www.hiveio.com/	https://www.hiveio.com/ HTTP 200 title='All in one Virtualization solution for VDI, VSI, HCI and Edge Computing – HiveIO'
+hiveio.com	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://www.hiveio.com/	TimeoutError: The read operation timed out
 hjuu.recepist.fi	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://hjuu.recepist.fi	URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway>
 hks.harvard.edu	pending	2026-11-19	github-readme:lineality/ai_2024_in_review	https://www.hks.harvard.edu/faculty/jason-furman	https://www.hks.harvard.edu/faculty/jason-furman HTTP 200 title='Jason Furman | Harvard Kennedy School'
 hl2.slqnt.dev	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports/main/README.md	https://hl2.slqnt.dev/	HTTP 404
@@ -3445,7 +3444,7 @@ imintheskibofiteverybodyknows.recca.cl	pending	2026-11-19	list:game-proxy-gist	h
 imlikeby2025.hosts.name	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://imlikeby2025.hosts.name/onboarding/	URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway>
 imlikefgfgd.rinet.ai	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://imlikefgfgd.rinet.ai/onboarding/	URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway>
 immadeofscrap.github.io	pending	2026-11-19	github:ImMadeOfScrap/DumpsterGames	https://immadeofscrap.github.io/DumpsterGames/	https://immadeofscrap.github.io/DumpsterGames/ HTTP 200 title='DumpsterGames — Diver Profiles'
-imoti-i-imperii.onrender.com	pending	2026-11-19	github-readme:hackthecode/evil-games	https://imoti-i-imperii.onrender.com	HTTP 503
+imoti-i-imperii.onrender.com	pending	2026-11-19	github-readme:hackthecode/evil-games	https://imoti-i-imperii.onrender.com	https://imoti-i-imperii.onrender.com HTTP 200 title='Имоти и Империи'
 impontop.kmtrade.ar	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/unsorted_links.txt	https://impontop.kmtrade.ar	URLError: <urlopen error [Errno -2] Name or service not known>
 imsea.herokuapp.com	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://imsea.herokuapp.com/	HTTP 404
 imsorryibrokestaticaether.medicalscience.academy	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://imsorryibrokestaticaether.medicalscience.academy	HTTP 404
@@ -3677,7 +3676,7 @@ justicenoise.org	pending	2026-11-19	aggregator:https://raw.githubusercontent.com
 justin-credible.github.io	pending	2026-11-19	github-readme:enhansome/enhansome-Developer-Handbook	http://justin-credible.github.io/Ionic-TypeScript-Starter/	http://justin-credible.github.io/Ionic-TypeScript-Starter/ HTTP 200 title='Ionic/TypeScript Starter'
 justin.jia.xingtong.tysm.japan.is	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://justin.jia.xingtong.tysm.japan.is	URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway>
 justinbukoski.github.io	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports/main/README.md	https://justinbukoski.github.io/mc2-rust/	https://justinbukoski.github.io/mc2-rust/ HTTP 200 title='MC2 Rust'
-justlearn.com	pending	2026-11-19	github-readme:pingan8787/awesome-ai-tools	https://www.justlearn.com/	https://justlearn.com/ HTTP 200 title='Just Learn — Find the AI That Teaches You (2026)'
+justlearn.com	pending	2026-11-19	github-readme:pingan8787/awesome-ai-tools	https://www.justlearn.com/	TimeoutError: The read operation timed out
 justmathgames.auszeitseminar.ch	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://justmathgames.auszeitseminar.ch/onboarding/	URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway>
 justsomeboringmathclassesthatsuckandyoushouldntseesuperhard.mzdy.com	pending	2026-11-19	list:game-proxy-gist	https://justsomeboringmathclassesthatsuckandyoushouldntseesuperhard.mzdy.com/	URLError: <urlopen error [Errno -2] Name or service not known>
 jvaz-deveng.github.io	pending	2026-11-19	github:jvaz-DEVENG/showcase	https://jvaz-deveng.github.io/showcase/	https://jvaz-deveng.github.io/showcase/ HTTP 200 title='Showcase — Minijogos'
@@ -3695,14 +3694,14 @@ kaih1825.github.io	pending	2026-11-19	github-readme:JefferyLee/awesome-vibe-code
 kaisar.io	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://kaisar.io	https://kaisar.io HTTP 200 title='Kaisar · Say the number.'
 kanari.io	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://kanari.io/en/api	https://kanari.io/en/api HTTP 200 title='Free wildfire API: satellite detections (JSON) + open data | kanari'
 kanary.to	pending	2026-11-19	github-readme:JefferyLee/awesome-vibe-coded-apps	https://kanary.to/ai-class	https://kanary.to/ai-class HTTP 200 title='AI Class — Kanary'
-kanbanpizza.onrender.com	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://kanbanpizza.onrender.com	HTTP 503
+kanbanpizza.onrender.com	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://kanbanpizza.onrender.com	https://kanbanpizza.onrender.com HTTP 200 title='Kanban Pizza Online'
 kandi.openweaver.com	pending	2026-11-19	github-readme:enhansome/enhansome-raspberry-pi	https://kandi.openweaver.com/collections/educational-service-providers/10-years-of-raspberry-pi	URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostn
 kansogame.com	pending	2026-11-19	github-readme:lappemic/awesome-ai-built-games	https://www.kansogame.com/	https://www.kansogame.com/ HTTP 200 title='Kansō'
 karma-runner.github.io	pending	2026-11-19	github-readme:enhansome/enhansome-Zorin-OS-Guide	https://karma-runner.github.io/latest/index.html	https://karma-runner.github.io/latest/index.html HTTP 200 title='Karma - Spectacular Test Runner for Javascript'
 kartweb.gvbvdxx.me	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports/main/README.md	https://kartweb.gvbvdxx.me	https://kartweb.gvbvdxx.me HTTP 200 title='SRB2Kart Web'
 katacoda.com	pending	2026-11-19	github-readme:enhansome/enhansome-Developer-Handbook	https://www.katacoda.com/courses/kubernetes/playground	HTTP 404
 katacontainers.io	pending	2026-11-19	github-readme:enhansome/enhansome-Zorin-OS-Guide	https://katacontainers.io/	https://katacontainers.io/ HTTP 200 title='Kata Containers - Open Source Container Runtime Software | Kata Containers'
-kaylousberg.itch.io	pending	2026-11-19	github-readme:Coinupbtc/arcade	https://kaylousberg.itch.io/	https://kaylousberg.itch.io/ HTTP 200 title='Kay Lousberg - itch.io'
+kaylousberg.itch.io	pending	2026-11-19	github-readme:Coinupbtc/arcade	https://kaylousberg.itch.io/	HTTP 429
 kb.larp.ccwu.cc	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://kb.larp.ccwu.cc	URLError: <urlopen error timed out>
 kcl-lang.io	pending	2026-11-19	github-readme:sunlei/awesome-stars	https://kcl-lang.io	https://www.kcl-lang.io/ HTTP 200 title='KCL programming language. - Mutation  Validation  Abstraction  Automation  Produ'
 kda00m-galaxy.40.160.3.200.local-ip.sh	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	http://kda00m-galaxy.40.160.3.200.local-ip.sh/onboarding	URLError: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ss
@@ -3731,7 +3730,7 @@ khnn.roje.com.br	pending	2026-11-19	aggregator:https://raw.githubusercontent.com
 kidvo.eu	pending	2026-11-19	github:AlparKacso/kidvo	https://kidvo.eu	https://kidvo.eu HTTP 200 title='kidvo: use AI wisely, keep thinking for yourself'
 kikonos.github.io	pending	2026-11-19	github:Kikonos/Handmaids-tale	https://kikonos.github.io/Handmaids-tale/	https://kikonos.github.io/Handmaids-tale/ HTTP 200 title='Gilead: Under His Eye'
 kiloex.io	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://kiloex.io	https://www.kiloex.io/ HTTP 200 title='KiloEx | Perpetual DEX on opBNB &amp; Base to Trade Bitcoin, ETH &amp; Crypto Fu'
-kimchistan.itch.io	pending	2026-11-19	github-readme:lappemic/awesome-ai-built-games	https://kimchistan.itch.io/orbit-foundry	https://kimchistan.itch.io/orbit-foundry HTTP 200 title='Orbit Foundry by KIMCHISTAN STUDIO'
+kimchistan.itch.io	pending	2026-11-19	github-readme:lappemic/awesome-ai-built-games	https://kimchistan.itch.io/orbit-foundry	HTTP 429
 kimiquotes.herokuapp.com	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://kimiquotes.herokuapp.com/doc	HTTP 404
 kimiquotes.pages.dev	pending	2026-11-19	github-readme:marcelscruz/public-apis	https://kimiquotes.pages.dev/docs	https://kimiquotes.pages.dev/docs HTTP 200 title='KimiQuotes API'
 kind.sigs.k8s.io	pending	2026-11-19	github-readme:enhansome/enhansome-Zorin-OS-Guide	https://kind.sigs.k8s.io/	https://kind.sigs.k8s.io/ HTTP 200 title='kind'
@@ -3742,7 +3741,7 @@ kinemala.mindhackers.org	pending	2026-11-19	list:game-proxy-gist	https://kinemal
 kinemala.webs.vc	pending	2026-11-19	list:game-proxy-gist	https://kinemala.webs.vc/	URLError: <urlopen error [Errno -2] Name or service not known>
 kino-der-toten.pages.dev	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports/main/README.md	http://kino-der-toten.pages.dev	https://kino-der-toten.pages.dev/ HTTP 200 title='Redirecting...'
 kiprio.com	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://kiprio.com/email-validation-api	https://kiprio.com/email-validation-api/ HTTP 200 title='Email Validation API | kiprio.com'
-kitsu.docs.apiary.io	pending	2026-11-19	github-readme:marcelscruz/public-apis	https://kitsu.docs.apiary.io/	https://kitsu.docs.apiary.io/ HTTP 200 title='Kitsu API Docs · Apiary'
+kitsu.docs.apiary.io	pending	2026-11-19	github-readme:marcelscruz/public-apis	https://kitsu.docs.apiary.io/	TimeoutError: The read operation timed out
 kitty.gokartprix.se	pending	2026-11-19	list:game-proxy-gist	https://kitty.gokartprix.se/	URLError: <urlopen error [Errno -2] Name or service not known>
 kiwiprojekt.github.io	pending	2026-11-19	github:kiwiprojekt/play	https://kiwiprojekt.github.io/play/	http://play.kiwiprojekt.pl/ HTTP 200 title='KiwiPlay'
 kmcto.github.io	pending	2026-11-19	github-readme:punkpeye/awesome-remote-mcp-servers	https://kmcto.github.io/fmcsa-carrier-intelligence/	https://carriers.4sakeco.com/ HTTP 200 title='FMCSA Carrier Intelligence: carrier vetting data and API'
@@ -3761,7 +3760,7 @@ korea-ocean-mcp.picks-site.workers.dev	pending	2026-11-19	github-readme:punkpeye
 kotlin.larp.ccwu.cc	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://kotlin.larp.ccwu.cc	URLError: <urlopen error timed out>
 kozminski.edu.pl	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://kozminski.edu.pl	https://www.kozminski.edu.pl/pl HTTP 200 title='Strona główna | Akademia Leona Koźminskiego Warszawa'
 kpr3306-lab.github.io	pending	2026-11-19	github:kpr3306-lab/The-Playground	https://kpr3306-lab.github.io/The-Playground/	https://kpr3306-lab.github.io/The-Playground/ HTTP 200 title='The Playground'
-krenin.itch.io	pending	2026-11-19	github-readme:JefferyLee/awesome-vibe-coded-apps	https://krenin.itch.io/reptile-catcher	https://krenin.itch.io/reptile-catcher HTTP 200 title='Reptile Catcher (Demo) by krenin'
+krenin.itch.io	pending	2026-11-19	github-readme:JefferyLee/awesome-vibe-coded-apps	https://krenin.itch.io/reptile-catcher	HTTP 429
 krillion.io	pending	2026-11-19	github-readme:bestdailygames/bestdailygames	https://krillion.io/?utm_source=bestdaily.games&utm_medium=referral	https://krillion.io/?utm_source=bestdaily.games&utm_medium=referral HTTP 200 title='Krillion · the daily dive'
 kripken.github.io	pending	2026-11-19	github-readme:enhansome/enhansome-Developer-Handbook	http://kripken.github.io/emscripten-site/	https://emscripten.org/ HTTP 200 title='Emscripten 7.0.1-git (dev) documentation'
 kriptic-edition-3-0.vercel.app	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/unsorted_links.txt	http://kriptic-edition-3-0.vercel.app	HTTP 451
@@ -3785,7 +3784,7 @@ kyleschichl0x16.github.io	pending	2026-11-19	aggregator:https://raw.githubuserco
 l.global.ssl.fastly.net	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/unsorted_links.txt	https://l.global.ssl.fastly.net	https://l.global.ssl.fastly.net HTTP 200 title=''
 l1ghtmadethis.undo.it	pending	2026-11-19	list:game-proxy-gist	https://l1ghtmadethis.undo.it/	URLError: <urlopen error [Errno -2] Name or service not known>
 lab.exlmoto.ru	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports/main/README.md	https://lab.exlmoto.ru/f1/	https://lab.exlmoto.ru/f1/ HTTP 200 title='F1 Race'
-labiel1.itch.io	pending	2026-11-19	github-readme:lappemic/awesome-ai-built-games	https://labiel1.itch.io/a-guilda	https://labiel1.itch.io/a-guilda HTTP 200 title='The Guild - A Guilda - El Gremio by labiel1'
+labiel1.itch.io	pending	2026-11-19	github-readme:lappemic/awesome-ai-built-games	https://labiel1.itch.io/a-guilda	HTTP 429
 labs.honufon.com	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://labs.honufon.com/	URLError: <urlopen error [Errno 111] Connection refused>
 labs.larp.ccwu.cc	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://labs.larp.ccwu.cc	URLError: <urlopen error timed out>
 lacuna.mergeinc.workers.dev	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://lacuna.mergeinc.workers.dev/agents.md	https://lacuna.mergeinc.workers.dev/agents.md HTTP 200 title=''
@@ -3802,7 +3801,7 @@ laoshi.global.ssl.fastly.net	pending	2026-11-19	aggregator:https://raw.githubuse
 laptoppcok.art-motel.com	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://laptoppcok.art-motel.com/	https://laptoppcok.art-motel.com/ HTTP 200 title='Student Practice Center | Math, Language Arts, Science, Social Studies, and Span'
 laravel-angular.io	pending	2026-11-19	github-readme:enhansome/enhansome-Developer-Handbook	https://laravel-angular.io/docs/1/	https://laravel-angular.io/docs/1/ HTTP 200 title='Documentation | Laravel &amp; Angular'
 last-commit-standing.vercel.app	pending	2026-11-19	github-readme:hacagahasanli/merge-conflict	https://last-commit-standing.vercel.app	https://last-commit-standing.vercel.app HTTP 200 title='Last Commit Standing · Merge Conflict'
-latch.io	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://latch.io	https://latch.io HTTP 200 title='Latch Sunset'
+latch.io	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://latch.io	HTTP 403
 latchshot.fly.dev	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://latchshot.fly.dev	URLError: <urlopen error [Errno -2] Name or service not known>
 latency.larp.ccwu.cc	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://latency.larp.ccwu.cc	URLError: <urlopen error timed out>
 lattice.namiq.io	pending	2026-11-19	github-readme:punkpeye/awesome-remote-mcp-servers	https://lattice.namiq.io	https://namiq.io/lattice HTTP 200 title='Lattice: cybersecurity answers you can check · NamiQ'
@@ -4026,7 +4025,7 @@ lunarphysics.lervs.ro	pending	2026-11-19	aggregator:https://raw.githubuserconten
 lutris.net	pending	2026-11-19	github-readme:enhansome/enhansome-Zorin-OS-Guide	https://lutris.net/games/epic-games-store/	https://lutris.net/games/epic-games-store/ HTTP 200 title='Epic Games Store - Lutris'
 lxsolutions.github.io	pending	2026-11-19	github:lxsolutions/studio-foundation	https://lxsolutions.github.io/studio-foundation/	https://lxsolutions.github.io/studio-foundation/ HTTP 200 title='Studio Foundation — Godot 4.7.1 WebGPU release evidence'
 lyft.github.io	pending	2026-11-19	github-readme:sunlei/awesome-stars	https://lyft.github.io/confidant	https://lyft.github.io/confidant/ HTTP 200 title='Confidant: Your secret keeper'
-lyricsovh.docs.apiary.io	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://lyricsovh.docs.apiary.io	HTTP 502
+lyricsovh.docs.apiary.io	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://lyricsovh.docs.apiary.io	https://lyricsovh.docs.apiary.io HTTP 200 title='lyrics.ovh · Apiary'
 m-stronaut.vercel.app	pending	2026-11-19	github:MadihaDar/m-stronaut	https://m-stronaut.vercel.app	https://m-stronaut.vercel.app HTTP 200 title='M-STRONAUT: Mission Academy Game'
 m0rph1n3-0tt3r.github.io	pending	2026-11-19	github:m0rph1n3-0tt3r/m0rph1n3-GCv1	https://m0rph1n3-0tt3r.github.io/m0rph1n3-GCv1/	https://m0rph1n3-0tt3r.github.io/m0rph1n3-GCv1/ HTTP 200 title='m0rph1n3'
 m5opot-galaxy.40.160.3.200.local-ip.sh	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	http://m5opot-galaxy.40.160.3.200.local-ip.sh/onboarding	URLError: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ss
@@ -4043,7 +4042,6 @@ macro-data-refinement-five.vercel.app	pending	2026-11-19	github-readme:lappemic/
 madamman.sirwoman.trap.baumgardner.us	pending	2026-11-19	list:game-proxy-gist	https://madamman.sirwoman.trap.baumgardner.us/	URLError: <urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake fail
 maddennfl08.online	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports/main/README.md	https://maddennfl08.online/	https://maddennfl08.online/ HTTP 200 title=''
 madebyplyrnationforsk.hjshop.net	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://madebyplyrnationforsk.hjshop.net/	URLError: <urlopen error [Errno 111] Connection refused>
-mage.space	pending	2026-11-19	github-readme:punkpeye/awesome-remote-mcp-servers	https://www.mage.space/mcp	IncompleteRead: IncompleteRead(159035 bytes read)
 magical-exe.redmint.studio	pending	2026-11-19	github-readme:lappemic/awesome-ai-built-games	https://magical-exe.redmint.studio/	https://magical-exe.redmint.studio/ HTTP 200 title='MAGICAL.EXE'
 magical-jepsen.152-53-246-17.plesk.page	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://magical-jepsen.152-53-246-17.plesk.page	URLError: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ss
 magiceraser.io	pending	2026-11-19	github-readme:FlyingHorse168/FreeAiTools	https://www.magiceraser.io/	https://magicstudio.com/magiceraser/ HTTP 200 title='Remove objects from photos | Magic Eraser by Magic Studio'
@@ -4057,7 +4055,7 @@ maif.github.io	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	htt
 mail.larp.ccwu.cc	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://mail.larp.ccwu.cc	URLError: <urlopen error timed out>
 mailboxlayer.com	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://mailboxlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers	https://mailboxlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers HTTP 200 title='Reliable Email Verification API - Mailboxlayer API Service'
 mailcoach.app	pending	2026-11-19	github-readme:mcpHQ/awesome-mcp-servers	https://www.mailcoach.app/resources/learn-mailcoach/integrations/mcp-server/	https://www.mailcoach.app/docs/integrations/mcp-server/ HTTP 200 title='Mailcoach MCP server | Mailcoach docs'
-mailtrap.docs.apiary.io	pending	2026-11-19	github-readme:marcelscruz/public-apis	https://mailtrap.docs.apiary.io/#	HTTP 502
+mailtrap.docs.apiary.io	pending	2026-11-19	github-readme:marcelscruz/public-apis	https://mailtrap.docs.apiary.io/#	HTTP 404
 mailtrap.io	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://mailtrap.io	https://mailtrap.io HTTP 200 title='Mailtrap: We Send Emails | Live Sending, Sandbox, Marketing'
 mailvalid.io	pending	2026-11-19	github-readme:marcelscruz/public-apis	https://mailvalid.io	https://mailvalid.io HTTP 200 title='Email Verifier &amp; List Cleaning Tool | MailValid'
 major.io	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://major.io/icanhazip-com-faq/	https://major.io/icanhazip-com-faq/ HTTP 200 title='icanhazip.com FAQ :: Major Hayden'
@@ -4253,7 +4251,6 @@ meal8.tantrym.com	pending	2026-11-19	aggregator:https://raw.githubusercontent.co
 medabots-ax.meme.ar	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports/main/README.md	https://medabots-ax.meme.ar/	https://medabots-ax.meme.ar/ HTTP 200 title='Medabots AX'
 medevmadethistufflink.medicalscience.academy	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://medevmadethistufflink.medicalscience.academy	HTTP 429
 mediacraft-x402-api.onrender.com	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://mediacraft-x402-api.onrender.com	https://mediacraft-x402-api.onrender.com HTTP 200 title=''
-mediareduce.com	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://mediareduce.com/	https://mediareduce.com/ HTTP 200 title='MediaReduce: Automate Amazon & Shopify Product Images'
 mediastack.com	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://mediastack.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers	https://mediastack.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers HTTP 200 title='Live News API for Global Coverage & Blog Articles | Mediastack'
 medicalscience.academy	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://medicalscience.academy/	HTTP 404
 medotype.wasmer.app	pending	2026-11-19	github:medotype/medotype	https://medotype.wasmer.app/	https://medotype.wasmer.app/ HTTP 200 title='MeDoType'
@@ -4555,7 +4552,7 @@ nlcasinospace.com	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	htt
 nlp.larp.ccwu.cc	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://nlp.larp.ccwu.cc	URLError: <urlopen error timed out>
 nlp.stanford.edu	pending	2026-11-19	github-readme:Ale-Newport/Games	https://nlp.stanford.edu/projects/glove/	URLError: <urlopen error timed out>
 nlpcloud.io	pending	2026-11-19	github-readme:marcelscruz/public-apis	https://nlpcloud.io	https://nlpcloud.com/ HTTP 200 title='Advanced Artificial Intelligence API'
-nmkd.itch.io	pending	2026-11-19	github-readme:pingan8787/awesome-ai-tools	https://nmkd.itch.io/t2i-gui	https://nmkd.itch.io/t2i-gui HTTP 200 title='NMKD Stable Diffusion GUI - AI Image Generator by N00MKRAD'
+nmkd.itch.io	pending	2026-11-19	github-readme:pingan8787/awesome-ai-tools	https://nmkd.itch.io/t2i-gui	HTTP 429
 nmlkjmlkjihupdate.update.987298765432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://nmlkjmlkjihupdate.update.987298765432sdabhvaewukbcfjkaesk.152.53.136.204.nip.io/	URLError: <urlopen error [Errno 104] Connection reset by peer>
 nmoroze.github.io	pending	2026-11-19	github-readme:Correia-jpv/fucking-games	http://nmoroze.github.io/swap/	https://noahmoroze.com/swap/ HTTP 200 title='Swap'
 nn0z.github.io	pending	2026-11-19	github:nn0z/Word-Strike	https://nn0z.github.io/Word-Strike/	https://nn0z.github.io/Word-Strike/ HTTP 200 title='Word Strike'
@@ -4611,7 +4608,7 @@ nrmyp.albrightscycling.com	pending	2026-11-19	aggregator:https://raw.githubuserc
 nrn-world.github.io	pending	2026-11-19	github:nRn-World/nrn-world.github.io	https://nrn-world.github.io/	https://nrnworld.one/ HTTP 200 title='nRnWorld - Project Hub & Direct Downloads'
 nrnworld.one	pending	2026-11-19	github:nRn-World/nrn-world.github.io	https://nrnworld.one/	https://nrnworld.one/ HTTP 200 title='nRnWorld - Project Hub & Direct Downloads'
 nsodbxnwos.lervs.ro	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://nsodbxnwos.lervs.ro	URLError: <urlopen error Tunnel connection failed: 502 Bad Gateway>
-nubra.io	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://nubra.io/products/api/docs/	https://nubra.io/products/api/docs/ HTTP 200 title='API Documentation | Nubra'
+nubra.io	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	https://nubra.io/products/api/docs/	URLError: <urlopen error [Errno 101] Network is unreachable>
 nuclio.io	pending	2026-11-19	github-readme:enhansome/enhansome-Developer-Handbook	https://nuclio.io/	https://nuclio.io/ HTTP 200 title='Nuclio: Serverless Platform for Automated Data Science'
 numanak-b221210105.github.io	pending	2026-11-19	github:numanak-b221210105/meydan	https://numanak-b221210105.github.io/meydan/	https://numanak-b221210105.github.io/meydan/ HTTP 200 title='Meydan'
 numb.ngt.systems	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://numb.ngt.systems/	URLError: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ss
@@ -4698,7 +4695,7 @@ openfort.io	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://w
 openmediavault.org	pending	2026-11-19	github-readme:enhansome/enhansome-raspberry-pi	https://www.openmediavault.org/	https://www.openmediavault.org/ HTTP 200 title='openmediavault'
 openmeter.io	pending	2026-11-19	github-readme:thedaviddias/llms-txt-hub	https://openmeter.io/	https://openmeter.io/ HTTP 200 title='OpenMeter by Kong - Open Source Billing and Usage Metering'
 openpolicing.stanford.edu	pending	2026-11-19	github-readme:danilofreire/awesome-stars	https://openpolicing.stanford.edu	https://openpolicing.stanford.edu HTTP 200 title='The Stanford Open Policing Project'
-openradar.fun	pending	2026-11-19	github-readme:marcelscruz/public-apis	https://openradar.fun/docs	TimeoutError: The read operation timed out
+openradar.fun	pending	2026-11-19	github-readme:marcelscruz/public-apis	https://openradar.fun/docs	https://openradar.fun/docs HTTP 200 title='HTTP API · openradar'
 openrates.io	pending	2026-11-19	github-readme:Manavarya09/public-apis-live	http://www.openrates.io/	https://exchangeratesapi.io/ HTTP 200 title='Exchange Rate API: Real Time and Historical Currency Data'
 opensearch.larp.ccwu.cc	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://opensearch.larp.ccwu.cc	URLError: <urlopen error timed out>
 openshift.com	pending	2026-11-19	github-readme:enhansome/enhansome-Developer-Handbook	https://www.openshift.com/learn/topics/serverless	https://www.redhat.com/en/technologies/cloud-computing/openshift/serverless HTTP 200 title='Red Hat OpenShift Serverless'
@@ -4790,7 +4787,7 @@ papa.myhousesetup.com	pending	2026-11-19	aggregator:https://raw.githubuserconten
 paparizzler67boiboi.github.io	pending	2026-11-19	github:paparizzler67boiboi/paparizzler67boiboi.github.io	https://paparizzler67boiboi.github.io/	https://paparizzler67boiboi.github.io/ HTTP 200 title='paparizzler67boiboi.github.io | paparizzler67boiboi'
 paperelathailandhappiness.chickenkiller.com	pending	2026-11-19	aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/main/links.txt	https://paperelathailandhappiness.chickenkiller.com	URLError: <urlopen error [Errno -2] Name or service not known>
 papers-mcp.vercel.app	pending	2026-11-19	github-readme:punkpeye/awesome-remote-mcp-servers	https://papers-mcp.vercel.app/mcp	HTTP 405
-para1992.itch.io	pending	2026-11-19	github-readme:lappemic/awesome-ai-built-games	https://para1992.itch.io/second-tail	https://para1992.itch.io/second-tail HTTP 200 title='Second Tail by para1992'
+para1992.itch.io	pending	2026-11-19	github-readme:lappemic/awesome-ai-built-games	https://para1992.itch.io/second-tail	HTTP 429
 parrotfacts.nordparrot.ro	pending	2026-11-19	list:game-proxy-gist	https://parrotfacts.nordparrot.ro/	URLError: <urlopen error [Errno -2] Name or service not known>
 party.workaholicdevelopers.com	pending	2026-11-19	github-readme:workaholicdevelopers/noodle-games	https://party.workaholicdevelopers.com/play/	https://party.workaholicdevelopers.com/play/ HTTP 200 title='Noodle Party'
 password-game.you.workers.dev	pending	2026-11-19	github-readme:audiophrases/password	https://password-game.you.workers.dev	URLError: <urlopen error [Errno -2] Name or service not known>

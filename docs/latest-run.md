@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-19 20:26 UTC  
+Run: 2026-11-19 20:40 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -10,22 +10,22 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Curated lists downloaded | 14 |
 | List entries parsed and normalized | 86,937 |
 | GitHub repository searches | 28 |
-| GitHub repositories examined | 1,536 |
+| GitHub repositories examined | 1,537 |
 | README files scanned for links | 300 |
 | Student link-list pages scanned | 9 |
 | Links harvested from link lists | 6,930 |
 | Certificate Transparency queries | 9 |
-| Certificates examined | 8 |
+| Certificates examined | 6 |
 | CDN owners expanded (repo listings) | 29 |
 | CDN owner repositories listed | 608 |
 | CDN entry files found in owner repos | 845 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 0 |
-| Links examined by the filters | 30,013 |
-|   dropped: allowlist | 7,235 |
-|   dropped: known non-game service | 700 |
+| Links examined by the filters | 30,101 |
+|   dropped: allowlist | 7,257 |
+|   dropped: known non-game service | 714 |
 |   dropped: bare hosting-platform domain | 4 |
-|   dropped: README link with no game/bypass hint | 10,367 |
+|   dropped: README link with no game/bypass hint | 10,379 |
 |   dropped: CDN file that isn't a page (js/css/img) | 30 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 0 |
@@ -44,9 +44,9 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | cdn | game | 110 |
 | cdn | loader | 189 |
 | cdn | proxy | 110 |
-| host | alive | 1,221 |
-| host | dead | 201 |
-| host | game | 68 |
+| host | alive | 1,216 |
+| host | dead | 203 |
+| host | game | 71 |
 | host | loader | 4 |
 | host | proxy | 6 |
 
@@ -54,8 +54,8 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 84,375 |
-| `domains-priority.txt` entries | 24,246 |
+| `domains.txt` entries | 84,370 |
+| `domains-priority.txt` entries | 24,248 |
 | `urls.txt` entries | 1,786 |
 | CDN owners blocked at owner level | 20 |
 | CDN repos blocked at repo level | 10 |
@@ -68,9 +68,9 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 |---|---|---:|
 | cdn | confirmed | 523 |
 | cdn | pending | 645 |
-| host | confirmed | 677 |
+| host | confirmed | 680 |
 | host | new | 1,049 |
-| host | pending | 5,295 |
+| host | pending | 5,292 |
 | url | confirmed | 45 |
 | url | new | 10 |
 | url | pending | 5 |
