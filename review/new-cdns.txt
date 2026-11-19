@@ -6,4 +6,5 @@
 # host	status	style	first_seen	links	owners	known_owners	issue	evidence
 cdn.statistically.io	watch	jsdelivr	2026-11-19	1	1	0		https://cdn.statistically.io/gh/zaka13alt/history@main/v5.svg
 purge.jsdelivr.net	watch	jsdelivr	2026-11-19	1	1	0		https://purge.jsdelivr.net/gh/USER/REPO@main/nebula.sw.js
-raw.githubusercontent.com	watch	githack	2026-11-19	16	1	0		https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/azure.svg
+raw.githubusercontent.com	watch	githack	2026-11-19	8	1	0		https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/azure.svg
+www.digikey.com	watch	githack	2026-11-19	1	1	0		https://www.digikey.com/htmldatasheets/production/2068431/0/0/1/intel-ethernet-server-adapter-i350-brief.html

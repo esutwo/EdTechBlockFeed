@@ -24,6 +24,7 @@ gamescript.ai
 humanornot.ai
 *.ironbee.ai
 ironbee.ai
+play.lakera.ai
 *.mathos.ai
 mathos.ai
 *.miniapps.ai
@@ -41,8 +42,8 @@ playharmony.ai
 *.rosebud.ai
 rosebud.ai
 developers.rune.ai
-*.tripo3d.ai
-tripo3d.ai
+*.teleplay.ai
+teleplay.ai
 *.bubble.am
 bubble.am
 *.2minutedrillgame.app
@@ -280,6 +281,7 @@ poki-games-online.netlify.app
 prigames.netlify.app
 puzzle-games.netlify.app
 raghio.netlify.app
+resolving-the-great-silence.netlify.app
 retro-bowl.netlify.app
 retro-games.netlify.app
 retro-station.netlify.app
@@ -287,6 +289,7 @@ retrobowlunblocked.netlify.app
 rhythm-games.netlify.app
 robo-galactic-shooter.netlify.app
 rocket-league-game.netlify.app
+rococo-halva-585065.netlify.app
 rost-games-hub.netlify.app
 rpndocuments.netlify.app
 run-3-unblocked.netlify.app
@@ -331,8 +334,10 @@ unblocked-games-free.netlify.app
 unblocked-games-wtf.netlify.app
 unblockedgames77.netlify.app
 unblockedswaggygames.netlify.app
+where-is-everybody-fermi.netlify.app
 wordsearchgame.netlify.app
 xenon-emulator.netlify.app
+xiafei.netlify.app
 zodiac-games.netlify.app
 *.nostalgiagames.app
 nostalgiagames.app
@@ -650,6 +655,7 @@ html5-games.vercel.app
 html5-games-deploy.vercel.app
 html5-games-wheat.vercel.app
 html5games.vercel.app
+huebreak-card-game.vercel.app
 infinite-hub-chi.vercel.app
 infinitrix-games.vercel.app
 infinityforever.vercel.app
@@ -742,11 +748,13 @@ polytrack-racing-game-6boy.vercel.app
 polytrack-ruby-five.vercel.app
 polytrack-study.vercel.app
 polytrackunblocked.vercel.app
+pong-game-omega.vercel.app
 pookie-games.vercel.app
 portedhub.vercel.app
 pp7-deacons-quorum-arcade.vercel.app
 princeton-tower-defense.vercel.app
 prismscience.vercel.app
+project-87xpi.vercel.app
 project-bftvz.vercel.app
 project-scythe.vercel.app
 quantum-backrooms.vercel.app
@@ -849,6 +857,7 @@ superpark-games.vercel.app
 surviv-io.vercel.app
 tambayan-arcade.vercel.app
 tarcadegames.vercel.app
+tejagamehub.vercel.app
 test380.vercel.app
 tetris-unblocked.vercel.app
 tharun9772.vercel.app
@@ -871,6 +880,7 @@ ubggames.vercel.app
 ubgtuff.vercel.app
 unblocked-games.vercel.app
 unblocked-games-96.vercel.app
+unblocked-games-alex.vercel.app
 unblocked-games-sepia.vercel.app
 unblocked-games-test-2.vercel.app
 unblocked-games-v1.vercel.app
@@ -968,6 +978,7 @@ fridaynightfunkin.web.app
 getawayshootout.web.app
 gettingoverit.web.app
 golforbit.web.app
+gotok-beta.web.app
 grow-a-garden.web.app
 gunmayhem.web.app
 happy-wheels-unblocked.web.app
@@ -1004,6 +1015,7 @@ parkourrace.web.app
 penaltyshootout.web.app
 pizzatower.web.app
 pong-game-8ad96.web.app
+pr0xy-compilations.web.app
 racinglimits.web.app
 raftwars.web.app
 ragdollarchers.web.app
@@ -1019,6 +1031,7 @@ sprunki-game.web.app
 stick-war.web.app
 strike-force-heroes.web.app
 strikeforceheroes.web.app
+super-jumper-game.web.app
 superliquidsoccer.web.app
 supersmashflash.web.app
 survivoridlerun.web.app
@@ -1281,6 +1294,8 @@ the-west.com.br
 tribalwars.com.br
 *.tvgames.com.br
 tvgames.com.br
+*.viktorkav.com.br
+viktorkav.com.br
 *.zerotoone.com.br
 zerotoone.com.br
 *.zuzubalandia.com.br
@@ -1815,6 +1830,8 @@ unblockedgames76.co
 uno-online.co
 *.unoonline.co
 unoonline.co
+*.videogamemarketing.co
+videogamemarketing.co
 *.virlan.co
 virlan.co
 *.yougame.co
@@ -2127,7 +2144,6 @@ adogames.com
 adoluxgames.com
 *.adventuregamehotspot.com
 adventuregamehotspot.com
-edu.rawr.africa.com
 *.agame.com
 agame.com
 *.agamecdn.com
@@ -3611,8 +3627,6 @@ duckmath.com
 duckmathgames.com
 *.duckmaths.com
 duckmaths.com
-*.ducksters.com
-ducksters.com
 *.ducksum.com
 ducksum.com
 *.duelboard.com
@@ -4993,6 +5007,8 @@ gameszila.com
 gameszur.com
 *.gametacts.com
 gametacts.com
+*.gametaffy.com
+gametaffy.com
 *.gametap.com
 gametap.com
 *.gametestedpro.com
@@ -5225,8 +5241,6 @@ girlsgogames.com
 girlsgogamescdn.com
 *.girlsplay.com
 girlsplay.com
-*.gitea.com
-gitea.com
 *.githubiogames.com
 githubiogames.com
 cdn.githubraw.com
@@ -6307,8 +6321,6 @@ lexaloffle.com
 web.libretro.com
 *.lich.com
 lich.com
-*.lifehacker.com
-lifehacker.com
 *.ligadegamers.com
 ligadegamers.com
 *.lilith.com
@@ -6550,6 +6562,8 @@ mathplayzone.com
 mathsspot.com
 *.matica.com
 matica.com
+*.mavagames.com
+mavagames.com
 *.maxgames.com
 maxgames.com
 *.maxigames.com
@@ -7064,8 +7078,6 @@ events.gfe.nvidia.com
 telemetry.gfe.nvidia.com
 accounts.nvgs.nvidia.com
 code.nyphp.com
-*.nytimes.com
-nytimes.com
 *.obbygame.com
 obbygame.com
 *.obfog.com
@@ -7511,8 +7523,6 @@ partidago.com
 passion-industry-game.com
 *.passiongames-es.com
 passiongames-es.com
-*.pastebin.com
-pastebin.com
 *.pazugames.com
 pazugames.com
 *.pbemplayers.com
@@ -7730,6 +7740,8 @@ playeaglercraft.com
 playedonline.com
 *.player03.com
 player03.com
+*.player1ai.com
+player1ai.com
 *.playercounter.com
 playercounter.com
 *.playerthree.com
@@ -7825,6 +7837,8 @@ playmurdermystery.com
 playmushies.com
 *.playniac.com
 playniac.com
+*.playobsidian.com
+playobsidian.com
 *.playoctordle.com
 playoctordle.com
 *.playok.com
@@ -8072,6 +8086,8 @@ pongnado.com
 ponjy.com
 *.ponytown.com
 ponytown.com
+*.pooplegame.com
+pooplegame.com
 *.popgameh5.com
 popgameh5.com
 *.poppy-playtime-free.com
@@ -8086,6 +8102,8 @@ populargames.com
 porkgames.com
 *.portalgameh5.com
 portalgameh5.com
+*.portedgames.com
+portedgames.com
 *.powerpets.com
 powerpets.com
 *.ppigame.com
@@ -8298,6 +8316,7 @@ ragdollhitunblocked.com
 ragewar.com
 *.raidengame.com
 raidengame.com
+store.raidshadowlegends.com
 *.railmid.com
 railmid.com
 *.rainbow6.com
@@ -8316,6 +8335,8 @@ rarepike.com
 ratalaikagames.com
 *.ratethatgameh5.com
 ratethatgameh5.com
+*.ravalmatic.com
+ravalmatic.com
 *.rbkgames.com
 rbkgames.com
 *.rbtechngames.com
@@ -8334,6 +8355,8 @@ realgames.com
 realmofthemadgod.com
 *.realsbet.com
 realsbet.com
+*.reberhardt.com
+reberhardt.com
 *.rebubbled.com
 rebubbled.com
 *.rec0ded88.com
@@ -8539,6 +8562,8 @@ scarymazegameworld.com
 scaryshawarmakiosk.com
 *.scaryteacher.com
 scaryteacher.com
+*.scenario.com
+scenario.com
 *.schoolgamesfree.com
 schoolgamesfree.com
 *.schoolnetworkadminsarethebest.com
@@ -8907,6 +8932,8 @@ sorvetemalvado.com
 soundboardguy.com
 *.spacebarclicker.com
 spacebarclicker.com
+*.spacechakra.com
+spacechakra.com
 *.spacegoo.com
 spacegoo.com
 *.spaceinvadersonline.com
@@ -9154,6 +9181,8 @@ acme.strongson.com
 struckd.com
 *.stubmbleguys.com
 stubmbleguys.com
+*.studyfetch.com
+studyfetch.com
 duck.studymenes.com
 *.stumbleguys.com
 stumbleguys.com
@@ -9193,6 +9222,8 @@ suikagame.com
 suikagamepc.com
 *.sumdog.com
 sumdog.com
+*.suneatergames.com
+suneatergames.com
 *.sunrisevillagegame.com
 sunrisevillagegame.com
 *.super-liquid-soccer.com
@@ -9366,6 +9397,8 @@ david.thecallenders.com
 thechoicervoicergames.com
 *.thecrims.com
 thecrims.com
+*.thedressingupgames.com
+thedressingupgames.com
 db2.theducklair.com
 *.thegameband.com
 thegameband.com
@@ -9877,6 +9910,8 @@ utopia-game.com
 utoposgames.com
 *.uvejuegos.com
 uvejuegos.com
+*.vaigames.com
+vaigames.com
 *.valentinesdaysolitaire.com
 valentinesdaysolitaire.com
 html001.valkix.com
@@ -9998,8 +10033,6 @@ warzone.com
 games.washingtonpost.com
 *.wasmarcade.com
 wasmarcade.com
-*.watchdocumentaries.com
-watchdocumentaries.com
 *.watermelongame.com
 watermelongame.com
 *.waternfire.com
@@ -10069,6 +10102,8 @@ wellgames.com
 weloplay.com
 *.weregeek.com
 weregeek.com
+*.wesleyarcade.com
+wesleyarcade.com
 *.wgplayer.com
 wgplayer.com
 *.wgplayground.com
@@ -10744,6 +10779,8 @@ yucata.de
 *.amountle.dev
 amountle.dev
 15-204-247-166.anyip.dev
+*.classroom4x.dev
+classroom4x.dev
 *.claudered.dev
 claudered.dev
 *.eaglercraft.dev
@@ -10789,7 +10826,8 @@ albertoortiz.is-a.dev
 xrompf.is-a.dev
 *.learnbybuilding.dev
 learnbybuilding.dev
-play.libe.dev
+*.libe.dev
+libe.dev
 games.markusmayer.dev
 *.mathstudy.dev
 mathstudy.dev
@@ -11149,6 +11187,7 @@ googlegames.pages.dev
 googlesnake.pages.dev
 googlesnakegame.pages.dev
 gooning-games-on-roblox.pages.dev
+gotok-beta.pages.dev
 granny.pages.dev
 granny-unblocked.pages.dev
 grannyunblocked.pages.dev
@@ -11745,12 +11784,16 @@ zillion-games-scommesse.pages.dev
 zodiac-knights-roblox-games.pages.dev
 *.pangolinworks.dev
 pangolinworks.dev
+*.playhorizon.dev
+playhorizon.dev
 bomberman.pr0mming.dev
 selenite.skysthelimit.dev
 client.tlochsta.dev
 *.unblockedgames.dev
 unblockedgames.dev
 eaglercraft-launcher.vexr.dev
+*.voidless.dev
+voidless.dev
 hoof-game.a2040404.workers.dev
 bloxcraft-ubg.bucket-ported.workers.dev
 bloxy.bucket-ported.workers.dev
@@ -11766,10 +11809,12 @@ kantmicrogames.lohyapkant.workers.dev
 nexus-games.metricsmedia.workers.dev
 nexaplay.online-nexaplay.workers.dev
 theunblockedinitiative.p2pgames.workers.dev
+gotok-beta.parepmah000.workers.dev
 bloxcraft-ubg-worker-js.rnkiddo.workers.dev
 thegoat.rnkiddo.workers.dev
 cloudgamer.sansiscool58170.workers.dev
 duckinggreat.sansiscool58170.workers.dev
+polytrack.sawyerbobk563.workers.dev
 stickman-chaos.stickman-c06.workers.dev
 billiards.tailuge.workers.dev
 tops-games.workers.dev
@@ -12405,6 +12450,8 @@ supermario.fun
 swimmyfish.fun
 *.trucksimulator.fun
 trucksimulator.fun
+*.tunesfortales.fun
+tunesfortales.fun
 *.violentegg.fun
 violentegg.fun
 *.webmc.fun
@@ -12502,6 +12549,8 @@ tictactoe.game
 tower.game
 *.vex.game
 vex.game
+*.vibecode.game
+vibecode.game
 *.1b.games
 1b.games
 *.2player.games
@@ -12883,7 +12932,8 @@ whiteboard.games
 whizbang.games
 *.wix.games
 wix.games
-vibe.wiz.games
+*.wiz.games
+wiz.games
 *.wtf.games
 wtf.games
 *.y8games.games
@@ -12962,6 +13012,8 @@ dinosaur.gg
 dinosaurgames.gg
 *.dinoswords.gg
 dinoswords.gg
+*.dmnshd.gg
+dmnshd.gg
 *.dordle.gg
 dordle.gg
 *.dreamcore.gg
@@ -13016,6 +13068,8 @@ now.gg
 op.gg
 *.playfrog.gg
 playfrog.gg
+*.playit.gg
+playit.gg
 *.plix.gg
 plix.gg
 *.ragdollhit.gg
@@ -13030,6 +13084,8 @@ retromania.gg
 retrovault.gg
 *.run3.gg
 run3.gg
+*.scenario.gg
+scenario.gg
 *.slopegame.gg
 slopegame.gg
 *.snake-game.gg
@@ -13437,6 +13493,8 @@ arrowsgames.io
 asciilands.io
 *.asmallworldcup.io
 asmallworldcup.io
+*.astralwar.io
+astralwar.io
 *.astrix.io
 astrix.io
 *.astrorace.io
@@ -14023,8 +14081,6 @@ eggy-car.io
 eggycaronline.io
 *.eldyn.io
 eldyn.io
-*.elevenlabs.io
-elevenlabs.io
 *.emberwars.io
 emberwars.io
 *.escaperoad.io
@@ -14213,6 +14269,7 @@ gamevolt.io
 gartic.io
 *.gats.io
 gats.io
+wiki.gdevelop.io
 *.gdfree.io
 gdfree.io
 *.generals.io
@@ -14918,6 +14975,7 @@ coinupbtc.github.io
 colbster937.github.io
 coldbrewofficial.github.io
 comdot-loser.github.io
+community-scripts.github.io
 complex-arcade.github.io
 compositedrivegames.github.io
 conewasnthere.github.io
@@ -15779,6 +15837,7 @@ joemamaaaa.github.io
 joeyc1pro.github.io
 joeykwispel.github.io
 johanromanque.github.io
+johe172.github.io
 johms0976-cmyk.github.io
 john-ju.github.io
 john-plex.github.io
@@ -16432,6 +16491,7 @@ play67.github.io
 playbyorigins.github.io
 playerepic76.github.io
 playfreegamesonlinewithoutdownloading.github.io
+playgama.github.io
 playhubhqdk.github.io
 playstacking.github.io
 playsurd.github.io
@@ -16680,6 +16740,7 @@ sans-simulator.github.io
 sanssimulator.github.io
 sanxegames.github.io
 sarfoataa-lab.github.io
+satanas.github.io
 sathwikpwdschool.github.io
 satoshishelf.github.io
 savage-steve.github.io
@@ -16905,6 +16966,7 @@ stefanbogoev4545-cyber.github.io
 stephenlb.github.io
 stephenlucerne.github.io
 steveniotech.github.io
+stevkazt.github.io
 stewpidtnlvr.github.io
 stick-defenders-online.github.io
 stick-manhook.github.io
@@ -16940,6 +17002,7 @@ sujitchhetri.github.io
 sukidukinn.github.io
 sunny-son-sahur.github.io
 sunrise-public-school.github.io
+supboiii552.github.io
 supercooldud-e.github.io
 superheroesio.github.io
 superliquidsoccer.github.io
@@ -17448,6 +17511,7 @@ x8rr.github.io
 xaductrung-rgb.github.io
 xavier371.github.io
 xdevman9.github.io
+xem.github.io
 xenooooss.github.io
 xfzr123.github.io
 xintingleiteam.github.io
@@ -18072,6 +18136,7 @@ leveldevilnotatrollgame.io
 lier.io
 *.limax.io
 limax.io
+tinker.liriliri.io
 *.litemint.io
 litemint.io
 *.littlebigsnake.io
@@ -18343,6 +18408,8 @@ playlnk.io
 playslope.io
 *.playsolitaire.io
 playsolitaire.io
+*.playtester.io
+playtester.io
 *.playunoonline.io
 playunoonline.io
 *.playvio.io
@@ -18363,6 +18430,8 @@ polytrackgames.io
 ponggame.io
 *.poolgame.io
 poolgame.io
+*.poople.io
+poople.io
 *.poorbunny.io
 poorbunny.io
 *.popcorngames.io
@@ -18373,6 +18442,8 @@ populargames.io
 powerline.io
 *.poxel.io
 poxel.io
+*.prisma.io
+prisma.io
 *.pucks.io
 pucks.io
 *.pung.io
@@ -18408,6 +18479,8 @@ ragdollhitonline.io
 ragez.io
 *.rainbowfriends.io
 rainbowfriends.io
+*.rawg.io
+rawg.io
 *.reboun.io
 reboun.io
 *.redcoats.io
@@ -18426,6 +18499,8 @@ retroarch.io
 retrobowl-game.io
 *.retrobowlfree.io
 retrobowlfree.io
+*.reui.io
+reui.io
 *.rhythmgames.io
 rhythmgames.io
 *.richup.io
@@ -18452,6 +18527,8 @@ run3-online.io
 run3dgame.io
 *.run3unblocked.io
 run3unblocked.io
+*.saascity.io
+saascity.io
 *.saltyseas.io
 saltyseas.io
 *.sandboxgames.io
@@ -18498,6 +18575,8 @@ shootem.io
 shootup.io
 *.shotwars.io
 shotwars.io
+*.sifting.io
+sifting.io
 *.silvergames.io
 silvergames.io
 *.simmer.io
@@ -18588,6 +18667,8 @@ snowrider2.io
 snowridergame.io
 *.snowrideronline.io
 snowrideronline.io
+*.snyk.io
+snyk.io
 *.soccerleague.io
 soccerleague.io
 *.soccerrandom.io
@@ -18766,6 +18847,8 @@ swordmasters.io
 swordz.io
 *.sworm.io
 sworm.io
+*.synthesys.io
+synthesys.io
 *.tacticscore.io
 tacticscore.io
 *.takemine.io
@@ -18780,6 +18863,8 @@ tankwars.io
 tap-nation.io
 *.taproadgame.io
 taproadgame.io
+*.teacherbot.io
+teacherbot.io
 *.teamball.io
 teamball.io
 *.terrariagame.io
@@ -18943,6 +19028,8 @@ wildcastle.io
 wilds.io
 *.wings.io
 wings.io
+*.wonderhop.io
+wonderhop.io
 *.woogames.io
 woogames.io
 *.wordle2.io
@@ -19080,6 +19167,8 @@ onlinefootballmanager.it
 playcombo.it
 *.poki.it
 poki.it
+*.repl.it
+repl.it
 *.supremacy1914.it
 supremacy1914.it
 *.the-west.it
@@ -19302,6 +19391,8 @@ playunblocked.lol
 pokerogue.lol
 *.pong.lol
 pong.lol
+*.publicapis.lol
+publicapis.lol
 *.puckyou.lol
 puckyou.lol
 *.rpc.lol
@@ -19324,6 +19415,8 @@ tatesjourney.lol
 warz.lol
 *.watermelongame.lol
 watermelongame.lol
+clients.x-network.lol
+kahootx-client.x-network.lol
 *.doodoo.love
 doodoo.love
 *.poki.lt
@@ -20954,6 +21047,8 @@ sprunkiphase4.net
 sprunkiretake.net
 *.sprunky.net
 sprunky.net
+*.stablehorde.net
+stablehorde.net
 *.stadtlandflussonline.net
 stadtlandflussonline.net
 *.starsue.net
@@ -21542,6 +21637,8 @@ retrobowlcollege.online
 retrobowlgame.online
 *.retrobowlonline.online
 retrobowlonline.online
+*.riddle-school.online
+riddle-school.online
 *.robloxunblocked.online
 robloxunblocked.online
 *.skribblio.online
@@ -21830,6 +21927,8 @@ classroom-6x.org
 classroom6x.org
 *.clickerheroes.org
 clickerheroes.org
+*.community-scripts.org
+community-scripts.org
 *.complexplay.org
 complexplay.org
 *.connections-unlimited.org
@@ -21852,8 +21951,6 @@ coolmathgamesforkids.org
 copterroyale.org
 *.countle.org
 countle.org
-*.coursera.org
-coursera.org
 *.cpsgames.org
 cpsgames.org
 *.cpstest.org
@@ -21985,8 +22082,6 @@ duckmath.org
 eaglercraft.org
 *.eaglercraftx.org
 eaglercraftx.org
-*.edx.org
-edx.org
 *.eggycar.org
 eggycar.org
 *.eggycarunblocked.org
@@ -22416,8 +22511,6 @@ monkeymart.org
 monkeymartgame.org
 *.monkeymartonline.org
 monkeymartonline.org
-*.mortgagecalculator.org
-mortgagecalculator.org
 *.moto-x3m.org
 moto-x3m.org
 *.motox3m.org
@@ -22522,6 +22615,8 @@ playboardgames.org
 playbrainrot.org
 *.playclickergames.org
 playclickergames.org
+*.playdaily.org
+playdaily.org
 *.playgofish.org
 playgofish.org
 *.playmath.org
@@ -22822,6 +22917,8 @@ towersdefense.org
 townscaper.org
 *.traffic-rider.org
 traffic-rider.org
+*.trinitypreschoolmp.org
+trinitypreschoolmp.org
 *.tubzi.org
 tubzi.org
 *.tungtungsahur.org
@@ -23541,6 +23638,7 @@ koolmathgames.site
 *.langwiligi.site
 langwiligi.site
 nfsmwested.lauta.site
+vh-prod-math-class-main-6f638f-09230ec8.livemy.site
 *.mathcaculator.site
 mathcaculator.site
 *.neator.site
@@ -23627,6 +23725,7 @@ silenthillorigins.zeliaopen.space
 play.st
 *.afganistan.stream
 afganistan.stream
+stockbloc.ai.studio
 *.eaglercraft.studio
 eaglercraft.studio
 cot.kevinliu.studio
@@ -24062,6 +24161,8 @@ jetyeh.vodka
 *.fifa10.website
 fifa10.website
 mathclass.ballbang.wiki
+*.classroom.wiki
+classroom.wiki
 *.mathland.wiki
 mathland.wiki
 *.playgame.wiki
