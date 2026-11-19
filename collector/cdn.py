@@ -13,32 +13,47 @@ import urllib.parse
 from dataclasses import dataclass
 
 # --- mirrors -----------------------------------------------------------------
-# Hosts that serve any public GitHub repo, and the path prefix they use.
-GH_MIRRORS = [
-    ("cdn.jsdelivr.net", "gh/"),
-    ("fastly.jsdelivr.net", "gh/"),
-    ("gcore.jsdelivr.net", "gh/"),
-    ("testingcf.jsdelivr.net", "gh/"),
-    ("cdn.jsdelivr.net", "combine/gh/"),
-    ("fastly.jsdelivr.net", "combine/gh/"),
-    ("gcore.jsdelivr.net", "combine/gh/"),
-    ("testingcf.jsdelivr.net", "combine/gh/"),
-    ("esm.sh", "gh/"),
-    ("cdn.statically.io", "gh/"),
-    ("raw.githack.com", ""),
-    ("rawcdn.githack.com", ""),
-]
-# Hosts that serve any public npm package.
-NPM_MIRRORS = [
-    ("cdn.jsdelivr.net", "npm/"),
-    ("fastly.jsdelivr.net", "npm/"),
-    ("gcore.jsdelivr.net", "npm/"),
-    ("testingcf.jsdelivr.net", "npm/"),
-    ("unpkg.com", ""),
-    ("esm.sh", ""),
-]
-CDN_HOSTS = {h for h, _ in GH_MIRRORS} | {h for h, _ in NPM_MIRRORS}
-_JSD = {"cdn.jsdelivr.net", "fastly.jsdelivr.net", "gcore.jsdelivr.net", "testingcf.jsdelivr.net"}
+# Every CDN host has a URL *style*. The style says which GitHub / npm path
+# prefixes it serves, so a new mirror only needs a host + style
+# (seeds/cdn-mirrors.txt, or automatic detection in collect.py).
+STYLES: dict[str, dict[str, list[str]]] = {
+    # jsDelivr and its clones: /gh/owner/repo@ref/file, /combine/gh/..., /npm/pkg@v/file
+    "jsdelivr": {"gh": ["gh/", "combine/gh/"], "npm": ["npm/"]},
+    # statically: /gh/owner/repo@ref/file
+    "statically": {"gh": ["gh/"], "npm": []},
+    # esm.sh: /gh/owner/repo@ref/file and /pkg@v/file
+    "esm": {"gh": ["gh/"], "npm": [""]},
+    # unpkg: /pkg@v/file
+    "unpkg": {"gh": [], "npm": [""]},
+    # githack: /owner/repo/ref/file
+    "githack": {"gh": [""], "npm": []},
+}
+BUILTIN_MIRRORS = {
+    "cdn.jsdelivr.net": "jsdelivr",
+    "fastly.jsdelivr.net": "jsdelivr",
+    "gcore.jsdelivr.net": "jsdelivr",
+    "testingcf.jsdelivr.net": "jsdelivr",
+    "esm.sh": "esm",
+    "cdn.statically.io": "statically",
+    "raw.githack.com": "githack",
+    "rawcdn.githack.com": "githack",
+    "unpkg.com": "unpkg",
+}
+MIRRORS: dict[str, str] = dict(BUILTIN_MIRRORS)   # host -> style (extended at runtime)
+CDN_HOSTS: set[str] = set(MIRRORS)
+
+
+def register(host: str, style: str) -> None:
+    """Add a mirror host (from seeds/cdn-mirrors.txt or auto-detection)."""
+    if style in STYLES:
+        MIRRORS[host.lower()] = style
+        CDN_HOSTS.add(host.lower())
+
+
+def mirrors(kind: str) -> list[tuple[str, str]]:
+    """(host, path prefix) pairs serving GitHub ("gh") or npm content."""
+    return [(h, pre) for h, st in sorted(MIRRORS.items()) for pre in STYLES[st][kind]]
+
 
 _OWNER = r"[A-Za-z0-9](?:[A-Za-z0-9-]{0,38})"
 _REPO = r"[A-Za-z0-9._-]{1,100}"
@@ -78,37 +93,50 @@ def parse(url: str) -> CdnRef | None:
     if host not in CDN_HOSTS or not path:
         return None
 
-    gh_path = None
-    if host in _JSD or host in ("esm.sh", "cdn.statically.io"):
-        m = re.match(r"(?:combine/)?gh/(.*)", path)
-        if m:
-            gh_path = m.group(1).split(",", 1)[0]  # combine: first file only
-    elif host in ("raw.githack.com", "rawcdn.githack.com"):
-        # /<owner>/<repo>/<ref>/<file>
-        m = re.match(rf"({_OWNER})/({_REPO})/[^/]+/(.*)", path)
-        if m:
-            return CdnRef("gh", m.group(1), m.group(2), m.group(3))
-        return None
-    if gh_path is not None:
-        m = re.match(rf"({_OWNER})/({_REPO}?)(?:@[^/]*)?(?:/(.*))?$", gh_path)
-        if not m or not m.group(2):
-            return None
-        repo = m.group(2)
-        return CdnRef("gh", m.group(1), repo, (m.group(3) or "").rstrip("/"))
+    return parse_path(MIRRORS[host], path)
 
-    # npm forms
-    npm_path = None
-    if host in _JSD:
-        m = re.match(r"npm/(.*)", path)
-        npm_path = m.group(1) if m else None
-    elif host in ("unpkg.com", "esm.sh"):
-        npm_path = path
-    if npm_path is None:
-        return None
-    m = re.match(rf"({_PKG})(?:@[^/]*)?(?:/(.*))?$", npm_path, re.I)
-    if not m:
-        return None
-    return CdnRef("npm", m.group(1).lower(), "", (m.group(2) or "").rstrip("/"))
+
+def parse_path(style: str, path: str) -> CdnRef | None:
+    """Parse a URL path (no leading slash) according to a mirror style."""
+    st = STYLES[style]
+    if style == "githack":
+        m = re.match(rf"({_OWNER})/({_REPO})/[^/]+/(.+)", path)
+        return CdnRef("gh", m.group(1), m.group(2), m.group(3)) if m else None
+    for pre in st["gh"]:
+        if pre and path.lower().startswith(pre):
+            gh_path = path[len(pre):].split(",", 1)[0]  # combine: first file only
+            m = re.match(rf"({_OWNER})/({_REPO})(?:@[^/]*)?(?:/(.*))?$", gh_path)
+            if not m:
+                return None
+            return CdnRef("gh", m.group(1), m.group(2), (m.group(3) or "").rstrip("/"))
+    for pre in st["npm"]:
+        if pre and not path.lower().startswith(pre):
+            continue
+        npm_path = path[len(pre):]
+        if pre == "" and re.match(r"(?:combine/)?gh/", npm_path):
+            return None
+        m = re.match(rf"({_PKG})(?:@[^/]*)?(?:/(.*))?$", npm_path, re.I)
+        if m:
+            return CdnRef("npm", m.group(1).lower(), "", (m.group(2) or "").rstrip("/"))
+    return None
+
+
+_SHAPES = [
+    # (style, regex on the path). Order matters: most specific first.
+    ("jsdelivr", re.compile(rf"^(?:combine/)?gh/{_OWNER}/{_REPO}(?:@[^/]+)?/.+", re.I)),
+    ("jsdelivr", re.compile(rf"^npm/{_PKG}@[^/]+/.+", re.I)),
+    ("unpkg", re.compile(rf"^{_PKG}@\d[^/]*/.+\.(?:svg|html?)$", re.I)),
+    ("githack", re.compile(rf"^{_OWNER}/{_REPO}/(?:main|master|gh-pages|[0-9a-f]{{7,40}})/.+\.(?:svg|html?)$", re.I)),
+]
+
+
+def infer_style(path: str) -> str | None:
+    """Does a URL path on an unknown host look like a GitHub/npm CDN path?"""
+    path = path.lstrip("/")
+    for style, rx in _SHAPES:
+        if rx.match(path):
+            return style
+    return None
 
 
 def entry_lines(kind: str, owner: str, repo: str = "", style: str = "prefix") -> list[str]:
@@ -117,7 +145,7 @@ def entry_lines(kind: str, owner: str, repo: str = "", style: str = "prefix") ->
     out = []
     if kind == "gh":
         names = {owner, owner.lower()}
-        for host, pre in GH_MIRRORS:
+        for host, pre in mirrors("gh"):
             for o in sorted(names):
                 if repo:
                     for r in sorted({repo, repo.lower()}):
@@ -125,7 +153,7 @@ def entry_lines(kind: str, owner: str, repo: str = "", style: str = "prefix") ->
                 else:
                     out.append(f"{host}/{pre}{o}/")
     else:  # npm package
-        for host, pre in NPM_MIRRORS:
+        for host, pre in mirrors("npm"):
             out += [f"{host}/{pre}{owner}/", f"{host}/{pre}{owner}@"]
     if style == "wildcard":
         out = [l + "*" for l in out]

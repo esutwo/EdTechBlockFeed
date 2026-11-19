@@ -1,0 +1,21 @@
+# Extra GitHub/npm file-CDN hosts, beyond the built-in ones in collector/cdn.py.
+# Every owner / repo / package entry in urls.txt is also written for these.
+# Format: <host> <style>
+#   jsdelivr   /gh/owner/repo@ref/file, /combine/gh/..., /npm/pkg@ver/file
+#   statically /gh/owner/repo@ref/file
+#   esm        /gh/owner/repo@ref/file and /pkg@ver/file
+#   unpkg      /pkg@ver/file
+#   githack    /owner/repo/ref/file
+# The collector also detects new mirrors automatically (review/new-cdns.txt);
+# add confirmed ones here to make them permanent. Use "<host> ignore" to stop
+# a host from being treated as a CDN.
+
+# Found serving loader SVGs from student link lists, 2026-11
+quantil.jsdelivr.net        jsdelivr
+originfastly.jsdelivr.net   jsdelivr
+jsd.onmicrosoft.cn          jsdelivr
+cdn.jsdmirror.com           jsdelivr
+raw.esm.sh                  esm
+cdn.esm.sh                  esm
+# Auto-detected 2026-11 (4 owners, serving loader SVGs)
+cdn.staticdelivr.com        jsdelivr

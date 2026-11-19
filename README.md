@@ -81,7 +81,7 @@ Every 2 hours, `.github/workflows/update-feed.yml` runs `collector/collect.py`. 
 Before every publish, a safety check fails the run if any allowlisted, CDN-network or hard-coded critical domain (Google/ChromeOS, Microsoft 365, Apple, GitHub and others) is in the output. When that happens, the FortiGates keep the last good feed.
 
 1. **Collect** 14 curated gaming blocklists, normalized from 5 formats.
-2. **Discover** new sites from GitHub repo searches and READMEs, 9 student link lists, certificate logs, repositories of known CDN-loader owners, and GitHub code search for loader files.
+2. **Discover** new sites from GitHub repo searches and READMEs, 9 student link lists, certificate logs, repositories of known CDN-loader owners, and GitHub code search for loader files. It also **detects new CDN mirrors** by their link shape and activates them automatically.
 3. **Filter** every link through 8 ordered checks: CDN recognition, path-level platforms, allowlist, non-game services, bare hosting platforms, README hints, test fixtures and already-listed sites.
 4. **Verify** each candidate live, fingerprinting it as a game site, web proxy, SVG/HTML loader or tab-cloaked page.
 5. **Publish** the three feed files, writing CDN findings for every mirror.
@@ -96,6 +96,7 @@ Before every publish, a safety check fails the run if any allowlisted, CDN-netwo
 | Block a path on a shared host | Add `host/path` to `seeds/confirmed-urls.txt` |
 | Unblock / fix a false positive | Add it to `seeds/allow.txt` (`example.com` exact, `*.example.com` with subdomains) |
 | Stop a GitHub owner / npm package being turned into CDN entries | Add it, lowercase, to `seeds/cdn-owner-allow.txt` |
+| Handle a newly detected CDN mirror (GitHub issue labelled `new-cdn`) | Already active. Add it to the Chrome URL blocklist, and make it permanent in `seeds/cdn-mirrors.txt` (or `<host> ignore`) |
 | Change when a CDN owner is blocked as a whole | `owner_promote_min` in `config/sources.toml` (default 2 confirmed repos) |
 | Add a blocklist or aggregator page | `config/sources.toml` |
 | See what needs a human look | `review/pending.txt` |
