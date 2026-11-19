@@ -173,6 +173,57 @@ def fetch_lists(cfg: dict) -> dict[str, tuple[str, set[str], bool]]:
     return result
 
 
+# ------------------------------------------------------- popularity guard
+
+POPULAR: dict[str, int] = {}   # registrable domain -> Tranco rank
+
+
+def load_popular(settings: dict, state: dict) -> None:
+    """Domain popularity from the Tranco research ranking (top
+    `popular_list_size`). Used only for sites the collector *discovers*;
+    curated lists are unaffected. Refreshed weekly, cached in
+    data/popular-domains.txt so a Tranco outage never disables the guards."""
+    size = settings.get("popular_list_size", 100000)
+    cache = ROOT / "data" / "popular-domains.txt"
+    fresh = days_since(state.get("popular_fetched")) < 7 and cache.exists()
+    if not fresh:
+        try:
+            data, _ = http_get("https://tranco-list.eu/top-1m.csv.zip", timeout=90,
+                               max_bytes=60_000_000)
+            import zipfile
+            z = zipfile.ZipFile(io.BytesIO(data))
+            lines = z.read(z.namelist()[0]).decode("utf-8", "replace").splitlines()[:size]
+            ranked = [l.split(",", 1) for l in lines if "," in l]
+            if len(ranked) < size // 2:
+                raise ValueError(f"only {len(ranked)} domains parsed")
+            cache.write_text("".join(f"{d.strip().lower()} {r}\n" for r, d in ranked))
+            state["popular_fetched"] = date_str(TODAY)
+            log(f"[popular] Tranco top {len(ranked)} refreshed")
+        except Exception as e:  # noqa: BLE001
+            log(f"[popular] refresh failed ({e}); using cache")
+    if cache.exists():
+        for line in cache.read_text().splitlines():
+            d, _, r = line.partition(" ")
+            if r.isdigit():
+                POPULAR[d] = int(r)
+    if not POPULAR:
+        log("[popular] no ranking available: popularity guards inactive this run")
+
+
+def popular_rank(host: str, platforms: set[str]) -> tuple[str, int] | None:
+    """(domain, rank) if host belongs to a ranked site. Subdomains of shared
+    free-hosting platforms (user.github.io) belong to one author, so the
+    platform's own rank doesn't count."""
+    if platform_apex(host, platforms) or host in cdn.CDN_HOSTS:
+        return None
+    parts = host.split(".")
+    for i in range(len(parts) - 1):
+        d = ".".join(parts[i:])
+        if d in POPULAR:
+            return d, POPULAR[d]
+    return None
+
+
 # --------------------------------------------------------------- discovery
 
 class Candidates:
@@ -633,13 +684,42 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
     log(f"[verify] checking {len(todo)} of {len(entries)} tracked entries")
     timeout = settings.get("verify_timeout", 10)
 
+    platforms = cands.platforms
+    top = settings.get("popular_guard_top", 10000)
+
     def check(kv):
         k, e = kv
-        return k, classify(e["check_url"], timeout=timeout, ua=UA, cdn=e["kind"] == "cdn")
+        res = classify(e["check_url"], timeout=timeout, ua=UA, cdn=e["kind"] == "cdn")
+        root = None
+        # Homepage guard for established sites (ranked, but below the top
+        # tier): a game page deep inside (example.com/games/x) only blocks the
+        # whole host if the homepage is a game/proxy site too. Unranked
+        # domains skip this on purpose: disguised bypass sites hide their
+        # games behind a decoy homepage.
+        pr = popular_rank(k, platforms) if e["kind"] == "host" else None
+        if (pr and pr[1] > top and res.verdict in ("game", "proxy", "loader")
+                and urllib.parse.urlsplit(e["check_url"]).path not in ("", "/")):
+            root = classify(f"https://{k}/", timeout=timeout, ua=UA)
+        return k, res, root
+
+    def hold(e, reason, metric):
+        METRICS[metric] += 1
+        e.update(status="pending", needs_review=True, hold=reason,
+                 evidence=(f"HELD: {reason} | " + e.get("evidence", "").split(" | ")[-1])[:300])
+
+    def too_popular(k):
+        pr = popular_rank(k, platforms)
+        return pr if pr and pr[1] <= top else None
+
+    # Top-tier guard, applied retroactively to anything already confirmed.
+    for k, e in entries.items():
+        if e["kind"] == "host" and e["status"] == "confirmed" and (pr := too_popular(k)):
+            hold(e, f"{pr[0]} is a top-{top} site (Tranco #{pr[1]}); confirm manually",
+                 "discovery_held_popular")
 
     redirected: list[tuple[str, str, str]] = []
     with cf.ThreadPoolExecutor(settings.get("verify_workers", 32)) as ex:
-        for k, res in ex.map(check, todo):
+        for k, res, root in ex.map(check, todo):
             e = entries[k]
             e["last_checked"] = date_str(TODAY)
             e["attempts"] = e.get("attempts", 0) + 1
@@ -650,9 +730,19 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
             if (res.verdict == "alive" and e["kind"] == "url"
                     and e["source"].startswith("aggregator:")):
                 res.verdict = "listed"
+            if res.verdict in ("game", "proxy", "loader") and e["kind"] == "host":
+                if pr := too_popular(k):
+                    hold(e, f"{pr[0]} is a top-{top} site (Tranco #{pr[1]}); confirm manually",
+                         "discovery_held_popular")
+                    continue
+                if root is not None and root.verdict not in ("game", "proxy", "loader", "dead"):
+                    hold(e, "established site: game content only at a sub-page, homepage "
+                            "is not a game site", "discovery_held_homepage")
+                    continue
             if res.verdict in ("game", "proxy", "loader", "listed"):
                 e.update(status="confirmed", category=res.verdict,
                          last_alive=date_str(TODAY), attempts=0)
+                e.pop("hold", None)
                 if e["kind"] == "host":
                     redirected.append((res.final_url, k, res.verdict))
             elif res.verdict == "dead":
@@ -672,6 +762,9 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
         tmp = Candidates(cands.allow, cands.platforms, cands.url_platforms, cands.cdn_owner_allow)
         tmp.add(final, f"redirect:{origin}", priority=2)
         for key, c in tmp.items.items():
+            if c["kind"] == "host" and too_popular(key):
+                METRICS["discovery_held_popular"] += 1
+                continue
             if key not in entries or entries[key]["status"] != "confirmed":
                 entries[key] = {"kind": c["kind"], "check_url": final, "source": c["source"],
                                 "first_seen": date_str(TODAY), "last_seen": date_str(TODAY),
@@ -832,6 +925,7 @@ def main() -> int:
     for k in [k for k, c in cands.items.items() if c["kind"] == "host" and k in listed]:
         del cands.items[k]
 
+    load_popular(settings, state)
     verify(cands, state, settings, not args.no_verify)
     age_out(state, settings)
 
@@ -950,6 +1044,8 @@ def write_run_report(stats: dict, entries: dict) -> None:
         ("Unknown hosts tested for being a new CDN/mirror", g("cdn_shape_hosts")),
         ("  live checks on those hosts", g("cdn_detect_checks")),
         ("  new CDNs/mirrors confirmed this run", g("cdn_detect_confirmed")),
+        ("Discovered sites held for review: top-ranked domain", g("discovery_held_popular")),
+        ("Discovered sites held for review: established site, only a sub-page is a game", g("discovery_held_homepage")),
         ("Live checks performed this run", verified),
     ]
     lines = ["# Latest collector run", "",

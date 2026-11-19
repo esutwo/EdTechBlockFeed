@@ -129,6 +129,8 @@ Each candidate is fetched the way a browser would, and the content is fingerprin
 | Check | What it does |
 |---|---|
 | Script follow-through | Pages that are only a thin loading shell get their first 3 same-site scripts fetched and fingerprinted too. |
+| Popularity guard (discovered sites only) | Uses the Tranco research ranking of the top 100,000 domains, refreshed weekly. A discovered site in the **top 10,000** (for example `nytimes.com`) is never blocked automatically. It goes to `review/pending.txt` for a person to confirm. Curated lists aren't affected. |
+| Homepage guard (established sites) | For a ranked but less popular site (10,000–100,000), a game page deep inside it (`site.com/games/x`) only blocks the whole domain if the **homepage** is a game or proxy site too. Unranked, obscure domains skip this on purpose, because disguised bypass sites hide their games behind a decoy homepage. Free-hosting subdomains (`user.github.io`) count as the author's own site. |
 | Redirect capture | When a confirmed site redirects to a different domain (often a custom domain behind a github.io mirror), the landing domain is added too. |
 | Cloudflare tolerance | 401, 403, 429 and 503 responses count as *alive*, not *dead*, because they're usually bot challenges. |
 | Re-verification | Confirmed entries are re-checked every 7 days. One that stops matching stays in the feed but is flagged for review. |
@@ -186,6 +188,6 @@ The mirror list grows on its own (2f), so entries for owners already in the feed
 | `seeds/cdn-mirrors.txt` | Extra CDN mirror hosts and their URL style. Make an auto-detected mirror permanent here, or add `<host> ignore` to reject one. |
 | `seeds/platforms.txt` | Hosting platforms that are never blocked as a whole. |
 | `seeds/url-platforms.txt` | Hosts that are blocked by path, with a pattern for the part to keep. |
-| `review/pending.txt` | What the job couldn't decide: alive but no fingerprint. |
+| `review/pending.txt` | What the job couldn't decide: alive but no fingerprint, or **held** by the popularity or homepage guard (marked `HELD:` with the reason). To block a held site anyway, add it to `seeds/confirmed.txt`. |
 | `review/new-cdns.txt` | Auto-detected CDN mirrors (confirmed, suspect, watch). Each confirmed one also gets a GitHub issue. |
 | `docs/latest-run.md` | The numbers from the last run. |
