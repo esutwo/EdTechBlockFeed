@@ -1,0 +1,9 @@
+# Hosts where blocking must be URL-level (host/path) rather than whole-host.
+# Discovered URLs on these hosts go to fortigate/urls.txt as host/first-path.
+#   host            path segments to keep
+sites.google.com 2
+cdn.jsdelivr.net 2
+fastly.jsdelivr.net 2
+unpkg.com 1
+raw.githack.com 2
+codehs.com 2
