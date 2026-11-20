@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-19 21:25 UTC  
+Run: 2026-11-20 00:47 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -10,58 +10,58 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Curated lists downloaded | 14 |
 | List entries parsed and normalized | 86,937 |
 | GitHub repository searches | 28 |
-| GitHub repositories examined | 1,538 |
-| README files scanned for links | 300 |
-| Student link-list pages scanned | 9 |
-| Links harvested from link lists | 6,930 |
+| GitHub repositories examined | 1,539 |
+| README files scanned for links | 156 |
+| Student link-list pages scanned | 8 |
+| Links harvested from link lists | 6,622 |
 | Certificate Transparency queries | 9 |
 | Certificates examined | 8 |
-| CDN owners expanded (repo listings) | 3 |
-| CDN owner repositories listed | 15 |
-| CDN entry files found in owner repos | 6 |
+| CDN owners expanded (repo listings) | 40 |
+| CDN owner repositories listed | 887 |
+| CDN entry files found in owner repos | 1,069 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 100 |
-| Links examined by the filters | 14,621 |
-|   dropped: allowlist | 2,661 |
-|   dropped: known non-game service | 340 |
+| Links examined by the filters | 35,115 |
+|   dropped: allowlist | 14,019 |
+|   dropped: known non-game service | 509 |
 |   dropped: bare hosting-platform domain | 4 |
-|   dropped: README link with no game/bypass hint | 3,592 |
-|   dropped: CDN file that isn't a page (js/css/img) | 1 |
+|   dropped: README link with no game/bypass hint | 9,238 |
+|   dropped: CDN file that isn't a page (js/css/img) | 24 |
 |   dropped: CDN owner on allowlist | 0 |
-|   dropped: CDN file in a test/fixture folder | 2 |
-| Links with a CDN path shape on unknown hosts | 10 |
-| Unknown hosts tested for being a new CDN/mirror | 3 |
+|   dropped: CDN file in a test/fixture folder | 0 |
+| Links with a CDN path shape on unknown hosts | 2 |
+| Unknown hosts tested for being a new CDN/mirror | 2 |
 |   live checks on those hosts | 0 |
 |   new CDNs/mirrors confirmed this run | 0 |
-| Discovered sites held for review: top-ranked domain | 22 |
-| Discovered sites held for review: established site, only a sub-page is a game | 0 |
-| Live checks performed this run | 1,292 |
+| Discovered sites held for review: top-ranked domain | 6 |
+| Discovered sites held for review: established site, only a sub-page is a game | 2 |
+| Live checks performed this run | 2,455 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| cdn | alive | 5 |
-| cdn | game | 1 |
-| cdn | loader | 87 |
-| cdn | proxy | 6 |
-| host | alive | 957 |
-| host | dead | 134 |
-| host | game | 80 |
-| host | loader | 2 |
-| host | proxy | 7 |
-| url | alive | 7 |
-| url | game | 6 |
+| cdn | alive | 616 |
+| cdn | dead | 228 |
+| cdn | game | 38 |
+| cdn | loader | 41 |
+| cdn | proxy | 32 |
+| host | alive | 811 |
+| host | dead | 601 |
+| host | game | 78 |
+| host | loader | 5 |
+| host | proxy | 1 |
+| url | alive | 4 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 84,468 |
-| `domains-priority.txt` entries | 24,349 |
-| `urls.txt` entries | 3,208 |
-| CDN owners blocked at owner level | 21 |
-| CDN repos blocked at repo level | 24 |
+| `domains.txt` entries | 84,597 |
+| `domains-priority.txt` entries | 24,478 |
+| `urls.txt` entries | 2,996 |
+| CDN owners blocked at owner level | 30 |
+| CDN repos blocked at repo level | 19 |
 | npm packages blocked | 6 |
 | CDN mirror hosts covered | 16 |
 
@@ -69,12 +69,12 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 
 | Entry type | Status | Count |
 |---|---|---:|
-| cdn | confirmed | 617 |
-| cdn | pending | 650 |
-| host | confirmed | 749 |
-| host | pending | 6,405 |
-| url | confirmed | 51 |
-| url | pending | 12 |
+| cdn | confirmed | 728 |
+| cdn | pending | 844 |
+| host | confirmed | 825 |
+| host | pending | 6,582 |
+| url | confirmed | 55 |
+| url | pending | 8 |
 
 ## Lists
 

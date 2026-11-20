@@ -4,6 +4,7 @@
 # suspect   = CDN-shaped links to several owners, but no loader confirmed yet.
 # watch     = CDN-shaped links seen, too few owners to test yet.
 # host	status	style	first_seen	links	owners	known_owners	issue	evidence
+cdn.rawgit.com	watch	githack	2026-11-20	1	1	0		https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 cdn.statistically.io	watch	jsdelivr	2026-11-19	1	1	0		https://cdn.statistically.io/gh/zaka13alt/history@main/v5.svg
 purge.jsdelivr.net	watch	jsdelivr	2026-11-19	1	1	0		https://purge.jsdelivr.net/gh/USER/REPO@main/nebula.sw.js
 raw.githubusercontent.com	watch	githack	2026-11-19	8	1	0		https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/azure.svg

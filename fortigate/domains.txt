@@ -129,6 +129,8 @@ block-blast.app
 brainpickle.app
 *.calcsolver.app
 calcsolver.app
+*.capitalle.app
+capitalle.app
 *.chromedino.app
 chromedino.app
 *.classroom6x.app
@@ -297,6 +299,7 @@ eduquests.netlify.app
 efgames.netlify.app
 eloquent-tulumba-7667c4.netlify.app
 escaperoad.netlify.app
+facle.netlify.app
 fall-guys-game.netlify.app
 feetnetworks.netlify.app
 flappy-bird.netlify.app
@@ -462,6 +465,8 @@ ragdoll-archers.app
 retrobowl.app
 *.retrobowlgames.app
 retrobowlgames.app
+*.ripplegame.app
+ripplegame.app
 *.slope2.app
 slope2.app
 *.smashkarts.app
@@ -841,6 +846,7 @@ pip-games.vercel.app
 play-gta5.vercel.app
 play-time-past.vercel.app
 playgtav.vercel.app
+playscramble.vercel.app
 playsunblocked.vercel.app
 playvault-black.vercel.app
 poggygames.vercel.app
@@ -881,6 +887,7 @@ rx-gaming-minecraft-website.vercel.app
 scarmjet.vercel.app
 scroll-games.vercel.app
 seo-game-website.vercel.app
+seqle.vercel.app
 shell-shockers-2d.vercel.app
 shrcade.vercel.app
 simplelife-blond.vercel.app
@@ -995,6 +1002,7 @@ unblockedgame-sage.vercel.app
 unblockedytcom.vercel.app
 unblockgameplus-github-io.vercel.app
 unblockings.vercel.app
+unicodele.vercel.app
 unicornattack.vercel.app
 unstable-smp.vercel.app
 urban-rush-game.vercel.app
@@ -1147,6 +1155,7 @@ tetris-unblocked.web.app
 thenextturn.web.app
 timeshooter.web.app
 tiny-fishing-game.web.app
+toddle-puzzle.web.app
 trafficrider.web.app
 trainland9912.web.app
 trucksimulator.web.app
@@ -3692,6 +3701,7 @@ csgo.wmsj.cn
 dota2.wmsj.cn
 *.wsygame.cn
 wsygame.cn
+games.wyf0931.cn
 *.xbkgame.cn
 xbkgame.cn
 *.xhygame.cn
@@ -7900,6 +7910,8 @@ baseball-bros.com
 baseballbrosonline.com
 *.baseballbrosunblocked.com
 baseballbrosunblocked.com
+*.baseballchaingame.com
+baseballchaingame.com
 *.basementarcade.com
 basementarcade.com
 *.basementmode.com
@@ -8937,6 +8949,8 @@ blockblastonline.com
 blockblastunblocked.com
 *.blockergame.com
 blockergame.com
+*.blockfitgame.com
+blockfitgame.com
 *.blockmango.com
 blockmango.com
 *.blockpuzzle.com
@@ -11897,6 +11911,8 @@ colorbloks.com
 colorgrave.com
 *.colorir-online.com
 colorir-online.com
+*.colormemorygame.com
+colormemorygame.com
 *.colorspacestudio.com
 colorspacestudio.com
 *.colourguardminiatures.com
@@ -22842,6 +22858,8 @@ guerreonline.com
 guerriereamazone.com
 *.guerrilla-games.com
 guerrilla-games.com
+*.guessandmatch.com
+guessandmatch.com
 *.guessasketch.com
 guessasketch.com
 *.guessdash.com
@@ -23672,6 +23690,7 @@ hiltonbyplaya.com
 himalayastudios.com
 *.himecsglobal.com
 himecsglobal.com
+yearbook.hindsightgames.com
 *.hinterlandgames.com
 hinterlandgames.com
 *.hinterwelt.com
@@ -23961,6 +23980,8 @@ sapfarah.hostoi.com
 hot-roads.com
 *.hotadventuregames.com
 hotadventuregames.com
+*.hotandcoldgame.com
+hotandcoldgame.com
 *.hotbargames.com
 hotbargames.com
 *.hotflashgames.com
@@ -24862,6 +24883,8 @@ inklestudios.com
 *.inksgame.com
 inksgame.com
 cdn.inksoft.com
+*.inkwellgames.com
+inkwellgames.com
 *.inlightentertainment.com
 inlightentertainment.com
 *.inlingogames.com
@@ -25541,6 +25564,8 @@ jellyjumper.com
 jellyoasis.com
 *.jenkatgames.com
 jenkatgames.com
+*.jeopardy.com
+jeopardy.com
 *.jeremysilman.com
 jeremysilman.com
 *.jerrec.com
@@ -33086,6 +33111,8 @@ noddingheadsgames.com
 nodeka.com
 *.nodepositforum.com
 nodepositforum.com
+*.nodes-game.com
+nodes-game.com
 *.nodiatis.com
 nodiatis.com
 *.noelshack.com
@@ -35780,6 +35807,8 @@ platonicpartnership.com
 games.platrium.com
 *.plausibleconcept.com
 plausibleconcept.com
+*.plausiblegame.com
+plausiblegame.com
 *.play.com
 play.com
 *.play-1xbet-ar.com
@@ -36212,6 +36241,8 @@ playdigious.com
 playdigo.com
 *.playdiplomacy.com
 playdiplomacy.com
+*.playdisorderly.com
+playdisorderly.com
 *.playdium.com
 playdium.com
 *.playdius-games.com
@@ -36473,6 +36504,8 @@ playgwent.com
 playh1.com
 *.playhalloweengames.com
 playhalloweengames.com
+*.playhangfive.com
+playhangfive.com
 *.playhangmangames.com
 playhangmangames.com
 *.playhaven.com
@@ -36499,6 +36532,8 @@ playhollowknight.com
 playhop.com
 *.playhop2.com
 playhop2.com
+*.playhopconnect.com
+playhopconnect.com
 *.playhpc.com
 playhpc.com
 *.playhq.com
@@ -36724,6 +36759,8 @@ playmushies.com
 playmystake.com
 *.plaync.com
 plaync.com
+*.playneedledrop.com
+playneedledrop.com
 *.playnetwork.com
 playnetwork.com
 *.playneverwinter.com
@@ -36794,6 +36831,8 @@ playonmac.com
 playonwordsstudios.com
 *.playorbita.com
 playorbita.com
+*.playorbits.com
+playorbits.com
 *.playorigin.com
 playorigin.com
 *.playorlandonorth.com
@@ -36968,6 +37007,8 @@ playshifu.com
 playsidestudios.com
 *.playsight.com
 playsight.com
+*.playsillylittlegames.com
+playsillylittlegames.com
 *.playsino.com
 playsino.com
 *.playsipher.com
@@ -37242,6 +37283,8 @@ playwiththebest.com
 playwithyourmind.com
 *.playwolfstudios.com
 playwolfstudios.com
+*.playwordlink.com
+playwordlink.com
 *.playwordly.com
 playwordly.com
 *.playworksonline.com
@@ -38599,6 +38642,8 @@ qigames.com
 qihuanggame.com
 *.qiqigames.com
 qiqigames.com
+*.qiyaasgame.com
+qiyaasgame.com
 *.qjuegos.com
 qjuegos.com
 *.qldbridge.com
@@ -38665,6 +38710,8 @@ quantumsignal.com
 quarrelsandquills.com
 *.quarterarcade.com
 quarterarcade.com
+*.quartileswordgame.com
+quartileswordgame.com
 *.quasarzone.com
 quasarzone.com
 *.quazal.com
@@ -39394,6 +39441,8 @@ reginabridge.com
 regnum-studio.com
 *.regnumonlinegame.com
 regnumonlinegame.com
+*.reheardle.com
+reheardle.com
 *.reignofshingen.com
 reignofshingen.com
 *.reignsgame.com
@@ -40115,6 +40164,8 @@ roseonlinegame.com
 roshkastudios.com
 *.rosmersholmplay.com
 rosmersholmplay.com
+*.rotaboxes.com
+rotaboxes.com
 lawnmowerman.rotheblog.com
 *.rottenmage.com
 rottenmage.com
@@ -42848,6 +42899,8 @@ sportsbettingstats.com
 sportsbook.com
 *.sportsbrokers.com
 sportsbrokers.com
+*.sportsdle.com
+sportsdle.com
 *.sportsengineplay.com
 sportsengineplay.com
 *.sportsgamersonline.com
@@ -43205,6 +43258,8 @@ station-interactive.com
 stationplaylist.com
 db2.statisticscontest.com
 interval.statisticscontest.com
+*.statpadgame.com
+statpadgame.com
 *.stats777.com
 stats777.com
 *.statsremote.com
@@ -43320,6 +43375,8 @@ stepchess.com
 stepinbooks.com
 *.stepmania.com
 stepmania.com
+*.steppedupdle.com
+steppedupdle.com
 *.stereo7.com
 stereo7.com
 *.stereopoly.com
@@ -43822,6 +43879,8 @@ summitcasino.com
 sumo-digital.com
 *.sumopacific.com
 sumopacific.com
+*.sumplete.com
+sumplete.com
 *.sunandthunderstudio.com
 sunandthunderstudio.com
 *.sunborngame.com
@@ -45590,6 +45649,8 @@ theweekinchess.com
 thewholeworldisaplayground.com
 *.thewikigame.com
 thewikigame.com
+*.thewikigamedaily.com
+thewikigamedaily.com
 *.thewildgentlemen.com
 thewildgentlemen.com
 *.thewildhuntgame.com
@@ -48119,6 +48180,8 @@ usdoku.com
 usedstar.com
 *.usefultrivia.com
 usefultrivia.com
+*.usernamle.com
+usernamle.com
 *.usfine.com
 usfine.com
 *.usgamember.com
@@ -49034,6 +49097,8 @@ warcraftscreensavers.com
 warcry.com
 *.wardb.com
 wardb.com
+*.wardlegame.com
+wardlegame.com
 *.warducks.com
 warducks.com
 *.warface.com
@@ -49469,6 +49534,8 @@ wevr.com
 wewanttoknow.com
 *.weymery.com
 weymery.com
+*.wfhgames.com
+wfhgames.com
 *.wfhgs.com
 wfhgs.com
 *.wftogame.com
@@ -56748,6 +56815,8 @@ suikagame.fun
 supermario.fun
 *.swimmyfish.fun
 swimmyfish.fun
+*.toon-tone.fun
+toon-tone.fun
 *.trucksimulator.fun
 trucksimulator.fun
 *.tunesfortales.fun
@@ -56807,6 +56876,8 @@ chess.game
 classic.game
 *.codenames.game
 codenames.game
+*.couples.game
+couples.game
 *.crazygames.game
 crazygames.game
 *.cybercity.game
@@ -57103,8 +57174,12 @@ classroom.games
 cloisters.games
 *.clout.games
 clout.games
+*.cluecrush.games
+cluecrush.games
 *.cm.games
 cm.games
+*.coffeefirst.games
+coffeefirst.games
 *.colossi.games
 colossi.games
 *.communion.games
@@ -57310,6 +57385,8 @@ gossamer.games
 granny.games
 *.gravitywell.games
 gravitywell.games
+*.greatest.games
+greatest.games
 *.greensky.games
 greensky.games
 *.gudao.games
@@ -57324,6 +57401,8 @@ hands.games
 happyland.games
 *.havoc.games
 havoc.games
+*.headlines.games
+headlines.games
 *.hepy.games
 hepy.games
 *.hibzz.games
@@ -57592,6 +57671,8 @@ pouncelight.games
 powerstruggle.games
 *.preserve.games
 preserve.games
+*.price.games
+price.games
 *.prismatika.games
 prismatika.games
 *.protovision.games
@@ -57692,6 +57773,7 @@ startplaying.games
 stillalive.games
 *.stoke.games
 stoke.games
+palette.stoop.games
 *.stormynights.games
 stormynights.games
 *.stratos.games
@@ -57704,6 +57786,8 @@ sudokufree.games
 sudokuonline.games
 *.sukabet.games
 sukabet.games
+*.sums.games
+sums.games
 *.superliquidsoccer.games
 superliquidsoccer.games
 *.surefire.games
@@ -57724,6 +57808,8 @@ tilt.games
 tomb.games
 *.top20.games
 top20.games
+*.topbins.games
+topbins.games
 *.topcasino.games
 topcasino.games
 *.tops.games
@@ -59669,6 +59755,8 @@ bloxdhop.io
 bloxdio.io
 *.bloxgames.io
 bloxgames.io
+*.bluesky-labelers.io
+bluesky-labelers.io
 *.blum.io
 blum.io
 *.bombcrypto.io
@@ -59809,6 +59897,8 @@ cmgames.io
 colonist.io
 *.colortunnel.io
 colortunnel.io
+*.coloruno.io
+coloruno.io
 *.colorwars.io
 colorwars.io
 *.combines.io
@@ -60059,6 +60149,8 @@ eggy-car.io
 eggycaronline.io
 *.eldyn.io
 eldyn.io
+*.elementle.io
+elementle.io
 *.elsanow.io
 elsanow.io
 *.elyz.io
@@ -60109,6 +60201,8 @@ ferge.io
 fightz.io
 *.filelist.io
 filelist.io
+*.filmlink.io
+filmlink.io
 *.findcat.io
 findcat.io
 *.finz.io
@@ -60464,6 +60558,7 @@ geometydashwave.io
 8smcrlgq850irkn7pmvjzg1s.github.io
 900-unblocked-games.github.io
 900344599-bit.github.io
+979031-star.github.io
 9kh0.github.io
 a-australian.github.io
 a25adataftaf.github.io
@@ -60754,6 +60849,7 @@ benjooyt.github.io
 benliu6000.github.io
 bennettryanroach-blip.github.io
 bennisai.github.io
+bennw.github.io
 benteachesmathdotcom.github.io
 beright454-cyber.github.io
 berkecancavus1881-design.github.io
@@ -61306,6 +61402,7 @@ eggy-edition.github.io
 eggycar76.github.io
 eggycarunblocked.github.io
 eggycarunblocked76.github.io
+ehassan256417-afk.github.io
 elcamargo.github.io
 elfexds.github.io
 elfinglitter706.github.io
@@ -61933,6 +62030,7 @@ justfalllol.github.io
 justlachin.github.io
 justmorv.github.io
 justushellman.github.io
+jvaz-deveng.github.io
 jw5507347-star.github.io
 jxmath.github.io
 jzhan1017.github.io
@@ -62348,6 +62446,7 @@ newga22.github.io
 nextgenunblocked.github.io
 nextpulsegames.github.io
 neymarkingingyt.github.io
+nezza.github.io
 nhineety.github.io
 nick77331.github.io
 nickesc.github.io
@@ -62516,6 +62615,7 @@ picklekid31.github.io
 picodoki-games.github.io
 pierre-and-basil.github.io
 pierrefitzroy.github.io
+pietroppeter.github.io
 pingpong-games.github.io
 pipehd54.github.io
 pixel-shooter.github.io
@@ -62556,6 +62656,7 @@ pokigamez.github.io
 pokiunblocked.github.io
 poly-track-online.github.io
 polybackup.github.io
+polydle.github.io
 polytrack-online.github.io
 polytrack-unblocked-game.github.io
 polytrackunblocked.github.io
@@ -62726,6 +62827,7 @@ roentgenjon.github.io
 rofleq.github.io
 rohatergen.github.io
 rohitmaneshwar.github.io
+roidayan.github.io
 romanidk.github.io
 romannnoodesl.github.io
 ronaldocr7kingok-ops.github.io
@@ -62935,6 +63037,7 @@ smurphy1398.github.io
 snail3d.github.io
 snake-online.github.io
 snakeio-unblocked.github.io
+snapdle.github.io
 snekflat.github.io
 sneslover22.github.io
 snipergamingwastaken.github.io
@@ -63004,6 +63107,7 @@ srpskironin.github.io
 st3771471-alt.github.io
 stahllll.github.io
 stanasko.github.io
+stardlegame.github.io
 starfallfestival.github.io
 starifiedmc.github.io
 starrobot12.github.io
@@ -64233,6 +64337,8 @@ legiongames.io
 lestersarcade.io
 *.letsdraw.io
 letsdraw.io
+*.lettered.io
+lettered.io
 *.leveldevil.io
 leveldevil.io
 *.leveldevil-game.io
@@ -64541,6 +64647,8 @@ pgslot-game.io
 phaser.io
 *.phrazle.io
 phrazle.io
+*.picguessr.io
+picguessr.io
 *.pikes.io
 pikes.io
 *.pilw.io
@@ -64615,6 +64723,8 @@ playvio.io
 playwordle.io
 *.playzen.io
 playzen.io
+*.pokelingo.io
+pokelingo.io
 *.pokemoninfinitefusion.io
 pokemoninfinitefusion.io
 *.pokerogue.io
@@ -64668,6 +64778,7 @@ qag.io
 *.quordlegame.io
 quordlegame.io
 nimogames.qzz.io
+launcher.verxus.qzz.io
 *.raaaaft.io
 raaaaft.io
 *.racing-limits.io
@@ -64708,6 +64819,8 @@ redcoats.io
 redshell.io
 *.redstart.io
 redstart.io
+*.relatle.io
+relatle.io
 *.relmz2.io
 relmz2.io
 *.repuls.io
@@ -64793,6 +64906,8 @@ scryfall.io
 seaguys.io
 *.searide.io
 searide.io
+*.seedle.io
+seedle.io
 *.senpa.io
 senpa.io
 *.sgames.io
@@ -65381,6 +65496,8 @@ wormax.io
 wormax2.io
 *.wormroyale.io
 wormroyale.io
+*.wrdlink.io
+wrdlink.io
 *.wtfgames.io
 wtfgames.io
 *.xempire.io
@@ -67451,6 +67568,8 @@ alliancesf.net
 allsonicgames.net
 *.allthegames.net
 allthegames.net
+*.alphalockgame.net
+alphalockgame.net
 *.alpilotx.net
 alpilotx.net
 *.altmarket.net
@@ -67582,6 +67701,7 @@ axisandallies.net
 ayumilove.net
 *.azuregaming.net
 azuregaming.net
+delightful-pebble-0477dc310.6.azurestaticapps.net
 2dynamic.azurewebsites.net
 duck-math.b-cdn.net
 fusion-formula.b-cdn.net
@@ -72517,6 +72637,8 @@ thechessdrum.net
 thechessmind.net
 worms.thecybershadow.net
 gh3.thediaryofchris.net
+*.thedictionarygame.net
+thedictionarygame.net
 *.thedisgaeafan.net
 thedisgaeafan.net
 *.thegamecollection.net
@@ -76838,6 +76960,8 @@ monkeymartgame.org
 monkeymartonline.org
 *.montanachess.org
 montanachess.org
+*.moreorlessgame.org
+moreorlessgame.org
 *.mostgames.org
 mostgames.org
 *.moto-x3m.org
@@ -80997,6 +81121,8 @@ arsenic.smartfoloo.space
 *.st4rf1re.space
 st4rf1re.space
 subg.strandedclone.space
+*.synthia.space
+synthia.space
 *.testersoulja.space
 testersoulja.space
 *.topsandtees.space
@@ -81317,6 +81443,7 @@ scrambled.today
 shellshockers.today
 *.unblocked.today
 unblocked.today
+play.woodle.today
 *.yolk.today
 yolk.today
 *.playerapp.tokyo
@@ -82026,6 +82153,8 @@ buddhawheel.co.uk
 buyandsellpokemon.co.uk
 *.bvecornwall.co.uk
 bvecornwall.co.uk
+*.bythomas.co.uk
+bythomas.co.uk
 *.cairniefruitfarm.co.uk
 cairniefruitfarm.co.uk
 *.calypso.co.uk
