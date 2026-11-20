@@ -1,6 +1,6 @@
 # How the feed is built
 
-The collector (`collector/collect.py`) runs every 2 hours in GitHub Actions. Each run goes through the five stages below, and every check in them is counted. The counts from the most recent run are published automatically in **[latest-run.md](latest-run.md)**.
+The collector (`collector/collect.py`) runs in GitHub Actions hourly during school hours (weekdays 6am–5pm Central) and every 4 hours otherwise. Each run goes through the five stages below, and every check in them is counted. The counts from the most recent run are published automatically in **[latest-run.md](latest-run.md)**.
 
 ```
  1. COLLECT                2. DISCOVER                     3. FILTER            4. VERIFY (live)         5. PUBLISH
@@ -121,7 +121,7 @@ Each candidate is fetched the way a browser would, and the content is fingerprin
 | **loader** (SVG, anywhere) | An SVG that embeds HTML (`<foreignObject>` with an XHTML body), contains something active (`<iframe>`, `<script>`, `srcdoc`, `atob()`, `document.write`, `window.open`, `location.*`, dynamic `import()`), **and** either covers the whole screen or actively navigates or decodes. A script inside an SVG that redirects or writes the page also counts. Real icons and logos never do this. |
 | **loader** (HTML, CDN files only) | A full-screen `<iframe>`, `document.write(atob(...))`, a large `srcdoc` payload, an `about:blank` pop-up cloak, or a **tab cloak**: a page whose title copies a school tool (Google Classroom, Docs, Clever, Canvas, Schoology, IXL, GoGuardian and 15 others) but is served from a CDN, where no real one lives. |
 | **listed** | A Google Sites or Apps Script page that appears on a student link list. These pages render their content inside Google's sandbox, so they rarely fingerprint, but being on a bypass list is enough evidence. |
-| **alive** | Reachable, but nothing matched. The candidate goes to `review/pending.txt` for a human or the daily review task. |
+| **alive** | Reachable, but nothing matched. The candidate goes to the automatic retry queue, `review/pending.txt` on the `state` branch, and is re-checked daily. After 3 checks without a match it is rejected. |
 | **dead** | DNS failure, connection error, or HTTP 404/410/5xx. After 3 dead checks the candidate is rejected. |
 
 ### Extra checks during verification
@@ -129,7 +129,7 @@ Each candidate is fetched the way a browser would, and the content is fingerprin
 | Check | What it does |
 |---|---|
 | Script follow-through | Pages that are only a thin loading shell get their first 3 same-site scripts fetched and fingerprinted too. |
-| Popularity guard (discovered sites only) | Uses the Tranco research ranking of the top 100,000 domains, refreshed weekly. A discovered site in the **top 10,000** (for example `nytimes.com`) is never blocked automatically. It goes to `review/pending.txt` for a person to confirm. Curated lists aren't affected. |
+| Popularity guard (discovered sites only) | Uses the Tranco research ranking of the top 100,000 domains, refreshed weekly. A discovered site in the **top 10,000** (for example `nytimes.com`) is never blocked automatically. It goes to `review/held.txt` for a person to decide. Curated lists aren't affected. |
 | Homepage guard (established sites) | For a ranked but less popular site (10,000–100,000), a game page deep inside it (`site.com/games/x`) only blocks the whole domain if the **homepage** is a game or proxy site too. Unranked, obscure domains skip this on purpose, because disguised bypass sites hide their games behind a decoy homepage. Free-hosting subdomains (`user.github.io`) count as the author's own site. |
 | Redirect capture | When a confirmed site redirects to a different domain (often a custom domain behind a github.io mirror), the landing domain is added too. |
 | Cloudflare tolerance | 401, 403, 429 and 503 responses count as *alive*, not *dead*, because they're usually bot challenges. |
@@ -177,6 +177,10 @@ The mirror list grows on its own (2f), so entries for owners already in the feed
 
 ---
 
+## Daily review
+
+Each school day at 7:13 AM Central, a scheduled Claude review session goes through `review/held.txt`, the confirmed and suspect hosts in `review/new-cdns.txt`, and any open `new-cdn` issues. For each one it visits the site, decides block, dismiss, allow or mirror, records the decision with a reason in the matching seed file, and opens **one pull request** for a person to approve. It never merges anything itself. Nothing changes in the feed until the PR is merged.
+
 ## Human controls
 
 | File | Effect |
@@ -188,6 +192,9 @@ The mirror list grows on its own (2f), so entries for owners already in the feed
 | `seeds/cdn-mirrors.txt` | Extra CDN mirror hosts and their URL style. Make an auto-detected mirror permanent here, or add `<host> ignore` to reject one. |
 | `seeds/platforms.txt` | Hosting platforms that are never blocked as a whole. |
 | `seeds/url-platforms.txt` | Hosts that are blocked by path, with a pattern for the part to keep. |
-| `review/pending.txt` | What the job couldn't decide: alive but no fingerprint, or **held** by the popularity or homepage guard (marked `HELD:` with the reason). To block a held site anyway, add it to `seeds/confirmed.txt`. |
+| `review/held.txt` | **The only list that needs a person.** Sites held by the popularity or homepage guard, plus blocked sites whose game fingerprint disappeared. For each one: block (`seeds/confirmed.txt`), dismiss (`seeds/review-dismissed.txt`) or allow (`seeds/allow.txt`). |
+| `seeds/review-dismissed.txt` | Held sites a reviewer decided not to block. The collector stops re-checking them. |
+| `review/pending.txt` (on the `state` branch) | Automatic retry queue: alive but no fingerprint yet, or unreachable. Re-checked daily, and dropped after 3 failed checks. No action needed. |
+| `state` branch | The collector's working state (`data/state.json`, list caches, popularity ranking, retry queue). It's overwritten every run, so `main`'s history only records feed changes. |
 | `review/new-cdns.txt` | Auto-detected CDN mirrors (confirmed, suspect, watch). Each confirmed one also gets a GitHub issue. |
 | `docs/latest-run.md` | The numbers from the last run. |

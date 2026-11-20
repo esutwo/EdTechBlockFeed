@@ -2,3 +2,8 @@
 # Use for hosts that can't be blocked whole: sites.google.com, cdn.jsdelivr.net, etc.
 # Format: host/path (no scheme), one per line.
 cdn.jsdelivr.net/npm/opiumbest     # 2026-08 npm package abused as SVG loader
+# 2026-11-20 review: npm package "edurocks", page title ROT13-obfuscated ("learnmathedu")
+cdn.jsdelivr.net/npm/edurocks
+unpkg.com/edurocks
+esm.sh/edurocks
+s4.zstatic.net/npm/edurocks

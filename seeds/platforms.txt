@@ -85,3 +85,4 @@ dedyn.io
 twilightparadox.com
 hf.space
 customer-oci.com
+lovable.app                        # AI app builder; one subdomain per user

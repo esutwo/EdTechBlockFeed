@@ -19,3 +19,12 @@ raw.esm.sh                  esm
 cdn.esm.sh                  esm
 # Auto-detected 2026-11 (4 owners, serving loader SVGs)
 cdn.staticdelivr.com        jsdelivr
+# 2026-11-20 review of review/new-cdns.txt
+cdn.githubraw.com                  githack    # GitHub file mirror; served a redirecting SVG loader
+s4.zstatic.net                     jsdelivr   # npm/GitHub mirror (forwards to an unpkg clone)
+unpkg-www.us-west-1.workers.dev    unpkg      # unpkg clone on Cloudflare Workers
+purge.jsdelivr.net                 ignore     # jsDelivr cache-purge API, not a mirror
+raw.githubusercontent.com          ignore     # serves files as plain text; can't render a loader
+cdn.rawgit.com                     ignore     # RawGit, shut down
+cdn3.me-qr.com                     ignore     # QR-code service images
+www.digikey.com                    ignore     # electronics datasheets (false shape match)

@@ -70,13 +70,13 @@ Then, on student policies:
 * The FortiGate's management interface needs outbound HTTPS to `raw.githubusercontent.com`.
 * Entry limits depend on the model. Check *Security Fabric → External Connectors → (feed) → View Entries* and the event log after the first pull. If the main feed is too large for a smaller box, use `domains-priority.txt` instead.
 
-The feed is rebuilt every 2 hours. A refresh rate of 15–60 minutes on the FortiGate is enough.
+The feed is rebuilt **hourly during school hours** (weekdays 6am–5pm Central) and every 4 hours otherwise. A FortiGate refresh rate of 10–15 minutes keeps up with it.
 
 **`urls.txt` matching:** CDN entries are written as path prefixes, such as `cdn.jsdelivr.net/gh/<owner>/`, so that one entry covers every repo and file beneath it. After the first pull, test one by opening a file under a listed owner, for example a `.svg` from an owner in the feed. If it isn't blocked even with deep inspection on, set `url_entry_style = "wildcard"` in `config/sources.toml`, which writes `.../gh/<owner>/*` instead.
 
 ## How it works
 
-Every 2 hours, `.github/workflows/update-feed.yml` runs `collector/collect.py`. It also runs whenever `seeds/`, `config/` or `collector/` changes. The collector uses only the Python standard library. Each run has five stages:
+Hourly during school hours, and every 4 hours otherwise, `.github/workflows/update-feed.yml` runs `collector/collect.py`. It also runs whenever `seeds/`, `config/` or `collector/` changes. The collector uses only the Python standard library. Each run has five stages:
 
 Before every publish, a safety check fails the run if any allowlisted, CDN-network or hard-coded critical domain (Google/ChromeOS, Microsoft 365, Apple, GitHub and others) is in the output. When that happens, the FortiGates keep the last good feed.
 
@@ -99,7 +99,8 @@ Before every publish, a safety check fails the run if any allowlisted, CDN-netwo
 | Handle a newly detected CDN mirror (GitHub issue labelled `new-cdn`) | Already active. Add it to the Chrome URL blocklist, and make it permanent in `seeds/cdn-mirrors.txt` (or `<host> ignore`) |
 | Change when a CDN owner is blocked as a whole | `owner_promote_min` in `config/sources.toml` (default 2 confirmed repos) |
 | Add a blocklist or aggregator page | `config/sources.toml` |
-| See what needs a human look | `review/pending.txt` |
+| See what needs a human decision | [`review/held.txt`](review/held.txt): block (`seeds/confirmed.txt`), dismiss (`seeds/review-dismissed.txt`) or allow (`seeds/allow.txt`). A daily review opens a PR with proposed decisions. |
+| See the automatic retry queue | `review/pending.txt` on the [`state` branch](../../tree/state). No action needed. |
 | See run stats | [`docs/latest-run.md`](docs/latest-run.md), or the Actions run summary |
 
 `seeds/allow.txt` already exempts Google and ChromeOS services that some community lists include by mistake (`gvt1/2/3.com` for Chrome updates and Play Store, `android.com`, `ggpht.com`, Google analytics and ad domains), core infrastructure (Google, Microsoft, GitHub, CDNs), `.edu`, `.gov` and `.mil`, and classroom tools that look like games (Kahoot, Blooket, Gimkit, Quizizz, Prodigy, IXL, Khan Academy, Code.org, Scratch, Desmos and others). Remove a line to block that site.

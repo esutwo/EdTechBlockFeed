@@ -2,7 +2,12 @@ name: Update threat feed
 
 on:
   schedule:
-    - cron: "17 */2 * * *"   # every 2 hours
+    # Times are UTC. School hours (Central): hourly 6am-5pm on weekdays.
+    # GitHub skips scheduled runs when busy, so off-peak minutes are used and
+    # the off-hours schedule overlaps a little for resilience.
+    - cron: "23 12-23 * * 1-5"   # weekdays 6am-5pm CST (7am-6pm CDT), hourly
+    - cron: "41 1,5,9 * * 1-5"   # weekday evenings/overnight, every 4 hours
+    - cron: "41 */4 * * 0,6"     # weekends, every 4 hours
   workflow_dispatch: {}
   push:
     branches: [main]
@@ -22,13 +27,28 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      # Working state (data/ and the retry queue) lives on the `state` branch,
+      # overwritten every run, so main's history only records feed changes.
+      # First run after this change: there is no state branch yet, so the copy
+      # still tracked on main is used as the starting point.
+      - name: Restore working state
+        run: |
+          if git fetch --depth 1 origin state 2>/dev/null; then
+            rm -rf data && git checkout FETCH_HEAD -- data
+            git checkout FETCH_HEAD -- review/pending.txt 2>/dev/null || true
+            git reset -q
+            echo "Restored state from the state branch"
+          else
+            echo "No state branch yet; seeding from main"
+          fi
 
       - name: Run collector
         env:
@@ -38,16 +58,39 @@ jobs:
       - name: Safety check (protected domains must not be in the feed)
         run: python3 collector/check_feed.py
 
-      - name: Commit changes
+      - name: Save working state
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tmp=$(mktemp -d)
+          mkdir -p "$tmp/review"
+          cp -r data "$tmp/"
+          cp review/pending.txt "$tmp/review/"
+          cat > "$tmp/README.md" <<'EOF'
+          Working state for the EdTech Block Feed collector (overwritten every run).
+          `data/state.json` tracks discovered sites; `review/pending.txt` is the
+          automatic retry queue. The published feeds are on the main branch.
+          EOF
+          cd "$tmp"
+          git init -q -b state
+          git config user.name "edtechblockfeed-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Collector state $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" state
+
+      - name: Commit feed changes
         run: |
           git config user.name "edtechblockfeed-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fortigate review data docs
+          # One-time migration: stop tracking working state on main.
+          git rm -r -q --cached --ignore-unmatch data review/pending.txt
+          git add .gitignore fortigate review docs
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0
           fi
-          STATS=$(python3 -c "import json;s=json.load(open('data/state.json'))['stats'];print(f\"domains={s['domains_txt_entries']} priority={s['domains_priority_entries']} urls={s['urls_entries']} discovered={s['discovered_confirmed']} pending={s['discovered_pending']}\")")
+          STATS=$(python3 -c "import json;s=json.load(open('data/state.json'))['stats'];print(f\"domains={s['domains_txt_entries']} priority={s['domains_priority_entries']} urls={s['urls_entries']} discovered={s['discovered_confirmed']} held={s.get('review_held',0)}\")")
           git commit -m "Feed update: $STATS"
           for i in 1 2 3; do
             git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push && break
