@@ -1,0 +1,32 @@
+# Held items a reviewer decided NOT to block. Exact entry keys as shown in
+# review/held.txt. The collector stops re-checking them and removes them from
+# the held list. (To block something instead, use seeds/confirmed.txt.)
+#
+# 2026-11-20 review: not game sites (a game page, course or article on a
+# major site):
+coursera.org
+edx.org
+nytimes.com
+theguardian.com
+finance.yahoo.com
+merriam-webster.com
+lifehacker.com
+tomshardware.com
+spectrum.ieee.org
+wiz.io
+tripo3d.ai
+elevenlabs.io
+beta.elevenlabs.io
+gitea.com
+gitee.com
+pastebin.com
+assets.editor.p5js.org
+# 2026-11-20 review: game content, but already blocked by curated lists
+# (roblox.com, itch.io, poki.com, gamedistribution.com are in the feed):
+about.roblox.com
+corp.roblox.com
+sdk.poki.com
+aukak.itch.io
+hahaha10001.itch.io
+little-moon-games.itch.io
+html5.gamedistribution.com

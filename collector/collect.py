@@ -780,7 +780,8 @@ def age_out(state: dict, settings: dict) -> None:
         e = entries[k]
         if e["status"] == "confirmed" and days_since(e.get("last_alive")) > max_age:
             del entries[k]
-        elif e["status"] in ("rejected", "pending", "new") and days_since(e["last_seen"]) > 90:
+        elif (e["status"] in ("rejected", "pending", "new", "dismissed")
+              and days_since(e["last_seen"]) > 90):
             del entries[k]
 
 
@@ -885,6 +886,9 @@ def main() -> int:
         if len(parts) == 2 and not parts[0].startswith("#"):
             url_platforms[parts[0].lower()] = re.compile(parts[1].strip(), re.I)
     cdn_owner_allow = set(read_list(ROOT / "seeds" / "cdn-owner-allow.txt"))
+    # Held items a reviewer decided not to block (not game sites, or already
+    # covered by a curated list). Exact entry keys, as shown in review/held.txt.
+    dismissed = set(read_list(ROOT / "seeds" / "review-dismissed.txt"))
 
     state_path = ROOT / "data" / "state.json"
     state = json.loads(state_path.read_text()) if state_path.exists() else {}
@@ -925,6 +929,20 @@ def main() -> int:
     for k in [k for k, c in cands.items.items() if c["kind"] == "host" and k in listed]:
         del cands.items[k]
 
+    # A held item is resolved once a reviewer blocks it (seeds/confirmed.txt),
+    # allows it (seeds/allow.txt) or dismisses it: stop re-checking it.
+    decided_block = {h for h in (normalize_host(x) for x in read_list(ROOT / "seeds" / "confirmed.txt")) if h}
+    for k, e in state.get("entries", {}).items():
+        if e.get("hold") and e["status"] == "pending" and (k in decided_block or allow.matches(k)):
+            e.update(status="dismissed", needs_review=False,
+                     resolution="blocked by reviewer" if k in decided_block else "allowlisted")
+            e.pop("hold", None)
+            METRICS["review_resolved_applied"] += 1
+    for k, e in state.get("entries", {}).items():
+        if k.lower() in dismissed and e["status"] != "dismissed":
+            e.update(status="dismissed", needs_review=False)
+            e.pop("hold", None)
+            METRICS["review_dismissed_applied"] += 1
     load_popular(settings, state)
     verify(cands, state, settings, not args.no_verify)
     age_out(state, settings)
@@ -959,11 +977,30 @@ def main() -> int:
     # ---- review queue for humans / the daily triage agent
     rev = ROOT / "review"
     rev.mkdir(exist_ok=True)
+    held = sorted((k, e) for k, e in entries.items()
+                  if (e["status"] == "pending" and e.get("hold"))
+                  or (e["status"] == "confirmed" and e.get("needs_review")))
     pend = sorted((k, e) for k, e in entries.items()
-                  if e["status"] == "pending" or e.get("needs_review"))
-    lines = ["# Discovered entries that are alive but did not match a game/proxy fingerprint,",
-             "# or confirmed entries whose fingerprint disappeared. Move real game sites",
-             "# into seeds/confirmed.txt; add false positives to seeds/allow.txt.",
+                  if e["status"] == "pending" and not e.get("hold"))
+    hl = ["# NEEDS A HUMAN DECISION. Sites the collector found and fingerprinted as",
+          "# games/proxies, but did not block automatically (popular or established",
+          "# site), plus blocked sites whose game fingerprint has disappeared.",
+          "# For each entry, do one of:",
+          "#   block    -> add the entry (hostname) to seeds/confirmed.txt",
+          "#   dismiss  -> add the entry, exactly as shown, to seeds/review-dismissed.txt",
+          "#               (not a game site, or already covered by a curated list)",
+          "#   allow    -> add it to seeds/allow.txt (a service students need; this also",
+          "#               keeps curated lists from ever blocking it)",
+          "# entry\theld_since\treason\tcheck_url\tevidence"]
+    for k, e in held:
+        reason = e.get("hold") or "blocked, but the game fingerprint no longer matches"
+        ev = e.get("evidence", "").split(" | ", 1)[-1]
+        hl.append("\t".join([k, e["first_seen"], reason, e["check_url"], ev]))
+    (rev / "held.txt").write_text("\n".join(hl) + "\n")
+    lines = ["# Automatic retry queue (no action needed). Discovered entries that are",
+             "# alive but don't match a game/proxy fingerprint yet, or were unreachable.",
+             "# Each is re-checked daily; after 3 failed checks it is rejected and dropped.",
+             "# Items that need a person are in review/held.txt.",
              "# entry\tstatus\tfirst_seen\tsource\tcheck_url\tevidence"]
     for k, e in pend:
         lines.append("\t".join([k, e["status"], e["first_seen"], e["source"],
@@ -992,6 +1029,7 @@ def main() -> int:
             1 for e in entries.values() if e["kind"] == "cdn" and e["status"] == "confirmed"),
         "cdn": cdn_stats,
         "discovered_pending": sum(1 for e in entries.values() if e["status"] == "pending"),
+        "review_held": len(held),
         "discovered_rejected": sum(1 for e in entries.values() if e["status"] == "rejected"),
         "files": f1 + f2 + f3,
     }
@@ -1065,7 +1103,8 @@ def write_run_report(stats: dict, entries: dict) -> None:
               f"| CDN owners blocked at owner level | {stats['cdn']['gh_owners_owner_level']:,} |",
               f"| CDN repos blocked at repo level | {stats['cdn']['gh_repos_repo_level']:,} |",
               f"| npm packages blocked | {stats['cdn']['npm_packages']:,} |",
-              f"| CDN mirror hosts covered | {len(cdn.MIRRORS):,} |", "",
+              f"| CDN mirror hosts covered | {len(cdn.MIRRORS):,} |",
+              f"| Waiting for a human decision (`review/held.txt`) | {stats.get('review_held', 0):,} |", "",
               "## Tracked discoveries", "", "| Entry type | Status | Count |", "|---|---|---:|"]
     lines += [f"| {k} | {st} | {n:,} |" for (k, st), n in sorted(by.items())]
     lines += ["", "## Lists", "", "| List | Entries |", "|---|---:|"]
