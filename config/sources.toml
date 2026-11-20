@@ -176,7 +176,12 @@ topics = [
   "browser-games",
   "gn-math",
   "eaglercraft",
+  "school-unblocker",
+  "scramjet",
 ]
+# Whole GitHub organisations whose repos' homepages / Pages are harvested:
+# the authors of the main web-proxy frameworks.
+orgs = ["MercuryWorkshop", "titaniumnetwork-dev"]
 queries = [
   "unblocked games in:name,description",
   "unblocked games school in:readme",
@@ -244,3 +249,33 @@ code_search_queries = [
   'foreignObject "100vw" iframe extension:svg',
   'foreignObject "1999/xhtml" "about:blank" extension:svg',
 ]
+
+# ---------------------------------------------------------------------------
+# urlscan.io search: pages other people scanned that load the web-proxy
+# frameworks' files or carry "unblocked games" titles. Free public API; an
+# optional URLSCAN_API_KEY repository secret raises the rate limits. Every hit
+# still has to pass the live fingerprint (results also contain phishing kits
+# built on the same proxy code).
+# ---------------------------------------------------------------------------
+
+[urlscan]
+enabled = true
+interval_hours = 6          # search at most this often
+days = 3                    # only scans from the last N days
+max_per_domain = 3          # cap hits per registrable domain per run
+queries = [
+  'filename:"uv.bundle.js"',
+  'filename:"scramjet.all.js"',
+  'filename:"baremux/worker.js"',
+  'filename:"epoxy/index.mjs"',
+  'page.title:"unblocked games"',
+]
+# Wildcard-IP and throwaway-DNS services: scans of them are mostly random
+# generated names, not sites students are given.
+skip_domains = ["sslip.io", "nip.io", "ipv64.net", "ipv64.de", "local-ip.sh", "traefik.me",
+                "xip.io", "nip.direct", "anyip.dev", "lvh.me", "localtest.me",
+                "f5.si", "dynipv6.de", "cpanel.site"]
+# Hosts with these words are phishing kits built on the same proxy code
+# (fake billing / sign-in pages): out of scope for a games feed.
+skip_keywords = ["netflix", "paypal", "billing", "signin", "sign-in", "verify",
+                 "payment", "wallet", "login-", "account-", "appleid", "microsoft-"]

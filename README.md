@@ -81,7 +81,7 @@ Hourly during school hours, and every 4 hours otherwise, `.github/workflows/upda
 Before every publish, a safety check fails the run if any allowlisted, CDN-network or hard-coded critical domain (Google/ChromeOS, Microsoft 365, Apple, GitHub and others) is in the output. When that happens, the FortiGates keep the last good feed.
 
 1. **Collect** 14 curated gaming blocklists, normalized from 5 formats.
-2. **Discover** new sites from GitHub repo searches and READMEs, 9 student link lists, certificate logs, repositories of known CDN-loader owners, and GitHub code search for loader files. It also **detects new CDN mirrors** by their link shape and activates them automatically.
+2. **Discover** new sites from GitHub repo searches and READMEs, 9 student link lists, certificate logs, repositories of known CDN-loader owners, and GitHub code search for loader files. It also **detects new CDN mirrors** by their link shape, confirming them when they serve identical files, and activates them automatically. **urlscan.io** searches find pages that load the web-proxy frameworks' files, and blocked pages teach the collector which **game engines** (GitHub owners loaded through mirror fallback chains) to block on every CDN.
 3. **Filter** every link through 8 ordered checks: CDN recognition, path-level platforms, allowlist, non-game services, bare hosting platforms, README hints, test fixtures and already-listed sites.
 4. **Verify** each candidate live, fingerprinting it as a game site, web proxy, SVG/HTML loader or tab-cloaked page.
 5. **Publish** the three feed files, writing CDN findings for every mirror.

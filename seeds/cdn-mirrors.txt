@@ -28,3 +28,6 @@ raw.githubusercontent.com          ignore     # serves files as plain text; can'
 cdn.rawgit.com                     ignore     # RawGit, shut down
 cdn3.me-qr.com                     ignore     # QR-code service images
 www.digikey.com                    ignore     # electronics datasheets (false shape match)
+# 2026-11-20: from the Achroma UBG engine's fallback chain (byte-identical engine file)
+jsdelivr.b-cdn.net                 jsdelivr
+jsd.liiiu.cn                       jsdelivr

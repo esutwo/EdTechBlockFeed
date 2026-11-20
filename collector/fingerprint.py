@@ -40,6 +40,16 @@ PROXY = [
     r"scramjet", r"/wisp/", r"bare-?mux", r"epoxy-?transport", r"libcurl-?transport",
     r"rammerhead", r"holy\s*unblocker", r"interstellar", r"/bare/v[1-3]/",
     r"titanium\s*network", r"\bultraviolet\b",
+    # Default paths, globals and DOM ids of the Titanium Network /
+    # MercuryWorkshop frameworks (Ultraviolet, Scramjet, bare-mux, Epoxy,
+    # libcurl, Wisp), as shipped in their reference apps.
+    r"/uv/service/", r"uv\.handler\.js", r"uv\.client\.js", r"Ultraviolet\.codec",
+    r"/scram/scramjet", r"scramjet\.(?:all|sync|wasm)", r"\$scramjetLoad(?:Controller|Worker)",
+    r"ScramjetServiceWorker", r"/baremux/(?:index|worker)\.js", r"BareMux\.BareMuxConnection",
+    r"/epoxy/index\.mjs", r"/libcurl/index\.mjs",
+    r"id=[\"'](?:uv|sj)-(?:form|address|frame)[\"']",
+    # MasqrProject: device-locked access that hides a proxy until authorized.
+    r"\bmasqr\b", r"MasqrProject",
 ]
 TITLE_RE = re.compile(r"<title[^>]*>(.*?)</title>", re.I | re.S)
 _GS = [re.compile(p, re.I) for p in GAME_STRONG]
@@ -111,6 +121,9 @@ class Result:
     verdict: str  # game | proxy | loader | alive | dead
     evidence: str = ""
     final_url: str = ""
+    # Absolute URLs of scripts the page loads (for engine-owner and CDN
+    # mirror discovery). Filled by classify() for HTML pages.
+    scripts: list = None
 
 
 def _fetch(url: str, timeout: float, ua: str) -> tuple[int, str, str]:
@@ -168,11 +181,29 @@ def classify(url: str, *, timeout: float = 10, ua: str = "Mozilla/5.0",
         if status in (401, 403, 429, 503):  # often Cloudflare challenge: alive
             return Result("alive", f"HTTP {status}")
         return Result("dead", f"HTTP {status}")
+    srcs = _script_srcs(text, final)
     r = score(text) or loader_score(text, final, cdn)
     if r:
         r.evidence = f"{final} {r.evidence}"
-        r.final_url = final
+        r.final_url, r.scripts = final, srcs
         return r
+    # Decoy swap: a harmless-looking page (e.g. a fake school-district site)
+    # whose inline script fetches another same-site page and writes it over
+    # itself (document.open/write). Fingerprint the page it swaps in.
+    m = DECOY_SWAP.search(text)
+    if m:
+        target = urllib.parse.urljoin(final, m.group(1))
+        if urllib.parse.urlsplit(target).hostname == urllib.parse.urlsplit(final).hostname:
+            try:
+                _, _, swapped = _fetch(_safe_url(target), timeout, ua)
+                srcs += _script_srcs(swapped, target)
+                r = score(swapped) or loader_score(swapped, target, True)
+                if r:
+                    r.evidence = f"{final} (decoy page swaps in {m.group(1)}) {r.evidence}"
+                    r.final_url, r.scripts = final, srcs
+                    return r
+            except Exception:  # noqa: BLE001
+                pass
     # Thin SPA shells: look at the first couple of same-origin scripts.
     scripts = re.findall(r"""<script[^>]+src=["']([^"']+)["']""", text, re.I)[:3]
     combined = text
@@ -188,8 +219,28 @@ def classify(url: str, *, timeout: float = 10, ua: str = "Mozilla/5.0",
     r = score(combined)
     if r:
         r.evidence = f"{final} (via scripts) {r.evidence}"
-        r.final_url = final
+        r.final_url, r.scripts = final, srcs
         return r
     t = TITLE_RE.search(text)
-    return Result("alive", f"{final} HTTP {status} title={(t.group(1).strip()[:80] if t else '')!r}")
+    return Result("alive", f"{final} HTTP {status} title={(t.group(1).strip()[:80] if t else '')!r}",
+                  final, srcs)
+
+
+# Bumped whenever signatures change materially: the collector then re-checks
+# discovered sites it had given up on, so they get the new signatures.
+FINGERPRINT_VERSION = 2
+
+# fetch("/app.html") ... document.open()/document.write(...) in one script.
+DECOY_SWAP = re.compile(
+    r"""fetch\(\s*['"](/[^'"]{1,120})['"][\s\S]{0,600}?document\.(?:open|write)\(""", re.I)
+
+
+def _script_srcs(html: str, base: str) -> list:
+    out = []
+    for s in re.findall(r"""<script[^>]+src=["']([^"']+)["']""", html, re.I)[:60]:
+        try:
+            out.append(urllib.parse.urljoin(base, s))
+        except ValueError:
+            continue
+    return out
 

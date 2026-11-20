@@ -6,3 +6,4 @@ bossierschools.it.com              # 2026-11 sample: impersonates a school distr
 vaultedd.pages.dev                 # 2026-11 sample: client-side proxy/games front end
 edu.rawr.africa.com                # 2026-11-20 review: "EduSecurify" disguised game/proxy hub on a hijacked subdomain
 flamehubgames.lovable.app          # 2026-11-20 review: "FlameHub - Unblocked Games"
+api.tuplantaforma.com              # 2026-11-20: shadowed subdomain; fake school-district decoy page that swaps in the Achroma UBG games hub
