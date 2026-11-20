@@ -21,12 +21,3 @@ gitea.com
 gitee.com
 pastebin.com
 assets.editor.p5js.org
-# 2026-11-20 review: game content, but already blocked by curated lists
-# (roblox.com, itch.io, poki.com, gamedistribution.com are in the feed):
-about.roblox.com
-corp.roblox.com
-sdk.poki.com
-aukak.itch.io
-hahaha10001.itch.io
-little-moon-games.itch.io
-html5.gamedistribution.com
