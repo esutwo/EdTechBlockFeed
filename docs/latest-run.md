@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-20 16:05 UTC  
+Run: 2026-11-20 21:53 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -8,12 +8,12 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Check | Count |
 |---|---:|
 | Curated lists downloaded | 14 |
-| List entries parsed and normalized | 86,975 |
+| List entries parsed and normalized | 87,001 |
 | GitHub repository searches | 28 |
-| GitHub repositories examined | 1,548 |
-| README files scanned for links | 6 |
+| GitHub repositories examined | 1,555 |
+| README files scanned for links | 74 |
 | Student link-list pages scanned | 8 |
-| Links harvested from link lists | 6,622 |
+| Links harvested from link lists | 6,639 |
 | Certificate Transparency queries | 9 |
 | Certificates examined | 6 |
 | CDN owners expanded (repo listings) | 2 |
@@ -21,11 +21,11 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | CDN entry files found in owner repos | 0 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 0 |
-| Links examined by the filters | 8,427 |
-|   dropped: allowlist | 1,751 |
-|   dropped: known non-game service | 27 |
+| Links examined by the filters | 30,196 |
+|   dropped: allowlist | 6,352 |
+|   dropped: known non-game service | 291 |
 |   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 9 |
+|   dropped: README link with no game/bypass hint | 13,916 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 0 |
@@ -35,25 +35,23 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 |   new CDNs/mirrors confirmed this run | 0 |
 | Discovered sites held for review: top-ranked domain | 0 |
 | Discovered sites held for review: established site, only a sub-page is a game | 0 |
-| Live checks performed this run | 696 |
+| Live checks performed this run | 18 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| host | alive | 599 |
-| host | dead | 86 |
-| host | game | 3 |
-| host | proxy | 1 |
-| url | alive | 7 |
+| host | alive | 10 |
+| host | dead | 3 |
+| host | game | 5 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 84,649 |
-| `domains-priority.txt` entries | 24,530 |
-| `urls.txt` entries | 3,130 |
+| `domains.txt` entries | 84,702 |
+| `domains-priority.txt` entries | 24,583 |
+| `urls.txt` entries | 3,131 |
 | CDN owners blocked at owner level | 34 |
 | CDN repos blocked at repo level | 15 |
 | npm packages blocked | 6 |
@@ -66,9 +64,9 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 |---|---|---:|
 | cdn | confirmed | 754 |
 | cdn | pending | 949 |
-| host | confirmed | 838 |
+| host | confirmed | 843 |
 | host | dismissed | 26 |
-| host | pending | 6,584 |
+| host | pending | 6,597 |
 | url | confirmed | 56 |
 | url | pending | 7 |
 
@@ -84,7 +82,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | dkorunic-browser-games | 1,000 |
 | game-proxy-gist | 393 |
 | gjohnpaull-games | 35,636 |
-| josuha-games | 12,802 |
+| josuha-games | 12,828 |
 | marcuccione-browser-games | 91 |
 | mmcohen-online-games | 65 |
 | nuneze54-games | 2,552 |

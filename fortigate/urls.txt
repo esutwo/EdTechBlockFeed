@@ -1,3 +1,4 @@
+api.tuplantaforma.com
 cdn.esm.sh/browselucide/
 cdn.esm.sh/browselucide@
 cdn.esm.sh/career-plans/

@@ -1514,6 +1514,8 @@ subwaysurfers.cc
 suikagame.cc
 *.tapgames.cc
 tapgames.cc
+*.thefreakcircus.cc
+thefreakcircus.cc
 *.unblocked-games.cc
 unblocked-games.cc
 *.yogames.cc
@@ -2900,6 +2902,8 @@ calcly.com
 calcsolver.com
 *.calcsolverpro.com
 calcsolverpro.com
+*.calcsolvers.com
+calcsolvers.com
 *.callofduty.com
 callofduty.com
 *.callofwar.com
@@ -2979,6 +2983,8 @@ catninja-unblocked.com
 causalzap.com
 *.caygames.com
 caygames.com
+*.ccalcsolver.com
+ccalcsolver.com
 *.cdgameclub.com
 cdgameclub.com
 *.cdn-kolibrigames.com
@@ -3328,6 +3334,8 @@ crazygamesmix.com
 crazygamesonline.com
 *.crazygameszone.com
 crazygameszone.com
+*.crazyiogames.com
+crazyiogames.com
 *.crazyjump-io.com
 crazyjump-io.com
 *.crazylabs.com
@@ -5807,6 +5815,8 @@ itafricagroup.com
 itbombs.com
 *.itchiogame.com
 itchiogame.com
+*.itscalcsolver.com
+itscalcsolver.com
 *.itsyourturn.com
 itsyourturn.com
 *.iwin.com
@@ -6958,6 +6968,8 @@ nadigame.com
 naijanostalgia.com
 *.najox.com
 najox.com
+*.nalbakigames.com
+nalbakigames.com
 *.namogame.com
 namogame.com
 *.naptechgames.com
@@ -7458,6 +7470,8 @@ ottersplay.com
 ouazgames.com
 *.ouiheberg.com
 ouiheberg.com
+*.our.com
+our.com
 *.ourworldofpixels.com
 ourworldofpixels.com
 *.outbrain.com
@@ -8067,6 +8081,8 @@ pnfreegames.com
 pnvfdgame.com
 *.pocketworlds.com
 pocketworlds.com
+*.pocoyo.com
+pocoyo.com
 *.pog.com
 pog.com
 *.pogo.com
@@ -8978,6 +8994,8 @@ solitr.com
 sologames.com
 *.sololearn.com
 sololearn.com
+*.solvecalcpro.com
+solvecalcpro.com
 *.solvecalcs.com
 solvecalcs.com
 *.solvercalc.com
@@ -9464,6 +9482,8 @@ thearcadecrew.com
 thebigfarmgame.com
 *.thebrotherhoodgames.com
 thebrotherhoodgames.com
+*.thecalcsolver.com
+thecalcsolver.com
 david.thecallenders.com
 *.thechoicervoicergames.com
 thechoicervoicergames.com
@@ -10006,6 +10026,8 @@ veckio.com
 veckiogame.com
 *.vectorgame.com
 vectorgame.com
+*.velgames.com
+velgames.com
 *.vemtk.com
 vemtk.com
 *.vertigo-games.com
@@ -11651,6 +11673,11 @@ run3-online.pages.dev
 salak138-player.pages.dev
 school-games-unblocked-now.pages.dev
 school-unblocked-arcade.pages.dev
+schoolmaths-assets.pages.dev
+schoolmaths-lib11.pages.dev
+schoolmaths-lib3.pages.dev
+schoolmaths-lib4.pages.dev
+schoolmaths-lib9.pages.dev
 scratch-roblox-cookie-clicker.pages.dev
 sections-bestgameverse-com.pages.dev
 sedecordle-nyt.pages.dev
@@ -11899,6 +11926,8 @@ pangolinworks.dev
 playhorizon.dev
 bomberman.pr0mming.dev
 selenite.skysthelimit.dev
+*.source64.dev
+source64.dev
 client.tlochsta.dev
 *.unblockedgames.dev
 unblockedgames.dev
@@ -12148,6 +12177,8 @@ pomu.es
 prinxy.es
 *.snake.es
 snake.es
+*.snakegratis.es
+snakegratis.es
 *.solitario-online.es
 solitario-online.es
 areajugones.sport.es
@@ -12276,6 +12307,8 @@ games.fm
 1001games.fr
 *.1001jeux.fr
 1001jeux.fr
+*.1v1lol.fr
+1v1lol.fr
 *.2001jeux.fr
 2001jeux.fr
 *.bubble-shooter.fr
@@ -12469,6 +12502,8 @@ driftboss.fun
 eggfacts.fun
 *.ellaz.fun
 ellaz.fun
+*.elunvi.fun
+elunvi.fun
 vie.enjoyplanet.fun
 restorecheck.familyfungames.fun
 *.fifastreet2.fun
@@ -15334,6 +15369,7 @@ ducklife4game.github.io
 ducklings123.github.io
 duckmath.github.io
 duckmath-online.github.io
+ducky443747.github.io
 duckyygames.github.io
 dumguy516-ship-it.github.io
 dumpstercompound01.github.io
@@ -17399,6 +17435,7 @@ ubgamesuk.github.io
 ubghyper.github.io
 ubgmom.github.io
 ubgpro.github.io
+ubgweb.github.io
 ubgwtf.github.io
 ucodia.github.io
 udayahuja19.github.io
@@ -18802,6 +18839,8 @@ smashtanks.io
 snake.io
 *.snake-game.io
 snake-game.io
+*.snakefree.io
+snakefree.io
 *.snakegame.io
 snakegame.io
 *.snakegameonline.io
@@ -21029,6 +21068,8 @@ opticraft.net
 optijuegos.net
 *.osumania.net
 osumania.net
+*.ourgames.net
+ourgames.net
 *.ovo-game.net
 ovo-game.net
 *.ovogame.net
@@ -21735,6 +21776,8 @@ linerider.online
 localchess.online
 *.mahjong.online
 mahjong.online
+*.mcii.online
+mcii.online
 *.megaapps.online
 megaapps.online
 *.mergefellas.online
@@ -23780,6 +23823,8 @@ basketballbros.site
 bitlifeunblocked.site
 *.blockblast.site
 blockblast.site
+*.calcsolverpro.site
+calcsolverpro.site
 gremlin-child-studios.my.canva.site
 tryhxrdbaconyt.my.canva.site
 *.cargames.site
@@ -23880,6 +23925,8 @@ iogames.space
 luminox.space
 *.mage.space
 mage.space
+*.mistserver.space
+mistserver.space
 *.playhopgames.space
 playhopgames.space
 *.playnowgames.space
@@ -24203,6 +24250,8 @@ consto.uk
 flappy-bird.uk
 *.huedle.uk
 huedle.uk
+*.mathsolver.uk
+mathsolver.uk
 *.oddgames.uk
 oddgames.uk
 *.coolgames.org.uk
@@ -24445,6 +24494,8 @@ boredomarcade.xyz
 browser-games.xyz
 *.bubble-shooter.xyz
 bubble-shooter.xyz
+*.cabezones.xyz
+cabezones.xyz
 *.castle.xyz
 castle.xyz
 *.classroomgames.xyz
@@ -24491,6 +24542,8 @@ mahjong-online.xyz
 mariogames.xyz
 *.mathactivity.xyz
 mathactivity.xyz
+*.mcdub3.xyz
+mcdub3.xyz
 *.monkeymart.xyz
 monkeymart.xyz
 *.nesemulator.xyz
