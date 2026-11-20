@@ -8,6 +8,7 @@ cdn.githubraw.com	watch	githack	2026-11-20	1	1	0		https://cdn.githubraw.com/stud
 cdn.rawgit.com	watch	githack	2026-11-20	2	1	0		https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
 cdn.statistically.io	watch	jsdelivr	2026-11-19	1	1	0		https://cdn.statistically.io/gh/zaka13alt/history@main/v5.svg
 cdn3.me-qr.com	watch	githack	2026-11-20	1	1	0		https://cdn3.me-qr.com/constructor/user/1810329/1790116711.svg
+circleci.com	watch	jsdelivr	2026-11-20	2	1	0		https://circleci.com/gh/emscripten-core/emscripten/tree/main
 purge.jsdelivr.net	watch	jsdelivr	2026-11-19	1	1	0		https://purge.jsdelivr.net/gh/USER/REPO@main/nebula.sw.js
 raw.githubusercontent.com	watch	githack	2026-11-19	4	1	0		https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/azure.svg
 s4.zstatic.net	watch	jsdelivr	2026-11-20	1	1	0		https://s4.zstatic.net/npm/edurocks@latest/index.html

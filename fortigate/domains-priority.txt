@@ -568,6 +568,7 @@ eaglercraftservers.vercel.app
 eaglercraftxmk2tests.vercel.app
 eaglerhacks.vercel.app
 eagservers.vercel.app
+easy-anura.vercel.app
 edgellm-bench.vercel.app
 edu-games.vercel.app
 eliio-alpha.vercel.app
@@ -646,6 +647,7 @@ geometry-dash-unblocked-nine.vercel.app
 ghoogle.vercel.app
 glimpse-game.vercel.app
 glitchnest.vercel.app
+googleplex.vercel.app
 goomer-jogos-picpay.vercel.app
 graveyard-pinball.vercel.app
 greenx-client-beta.vercel.app
@@ -695,6 +697,7 @@ manygames.vercel.app
 maruwa-drive.vercel.app
 masons1v1.vercel.app
 math-lessons.vercel.app
+merge-conflict-drab.vercel.app
 merge-fellas.vercel.app
 mergefellas.vercel.app
 merry-played-christmas.vercel.app
@@ -941,6 +944,7 @@ wasmarcade.app
 *.watermelongame.app
 watermelongame.app
 adarkroom.web.app
+adrift-6c1f6.web.app
 aelienz.web.app
 among-us-unblocked.web.app
 aquaparkio.web.app
@@ -1579,6 +1583,8 @@ wog.ch
 duck.freezenova.chat
 *.gtavice.city
 gtavice.city
+*.isle.city
+isle.city
 acid.contactme.cl
 makes.gcpservicios.cl
 quotes.gcpservicios.cl
@@ -5457,6 +5463,8 @@ hackertyper.com
 hahagames.com
 *.hahamini.com
 hahamini.com
+*.halcyoncentral.com
+halcyoncentral.com
 *.halflemongames.com
 halflemongames.com
 *.halloweenflashgames.com
@@ -9741,6 +9749,7 @@ tummygames.com
 tunnelrush-unblocked.com
 *.tunnelrush3d.com
 tunnelrush3d.com
+api.tuplantaforma.com
 *.turbogames.com
 turbogames.com
 *.turbonuke.com
@@ -10890,6 +10899,7 @@ amountle.dev
 classroom4x.dev
 *.claudered.dev
 claudered.dev
+docs.crllect.dev
 *.eaglercraft.dev
 eaglercraft.dev
 1-dpi8mv3hci4s.edgeone.dev
@@ -10923,6 +10933,7 @@ stingy-salmon-pvzycqz5-dpw66qhn98a7.edgeone.dev
 tropical-copper-ybwi2dcv-dpyxpfh7dbuy.edgeone.dev
 *.epicgames.dev
 epicgames.dev
+phosphur.etcherfx.dev
 *.game-vault.dev
 game-vault.dev
 *.gaminglab.dev
@@ -10978,6 +10989,7 @@ ajg-games.pages.dev
 akses-opera-games.pages.dev
 aksesgames-indowede.pages.dev
 alex-games-roblox.pages.dev
+aluraos-proxy.pages.dev
 amongus-unblocked.pages.dev
 amongus3d.pages.dev
 animation-games-roblox.pages.dev
@@ -11079,6 +11091,7 @@ chromedino-io.pages.dev
 clackzo.pages.dev
 clashofskulls.pages.dev
 clashroyale-unblocked.pages.dev
+clashzone57.pages.dev
 classroom-6x.pages.dev
 classroom-6x-unblocked-games.pages.dev
 classroom-6xunblocked.pages.dev
@@ -11337,6 +11350,7 @@ incrediboxunblocked.pages.dev
 indian-games-in-roblox.pages.dev
 infinite-craft.pages.dev
 inquisitormaster-scary-roblox-games.pages.dev
+interstellar-unblocked-games-roblox.pages.dev
 iron-snout.pages.dev
 italian-brainrot-games.pages.dev
 italianbrainrot.pages.dev
@@ -11690,6 +11704,7 @@ sf-lib2.pages.dev
 sf-lib6.pages.dev
 sf-lib7.pages.dev
 sf-lib9.pages.dev
+shasta-dtg.pages.dev
 shellshock-1b6.pages.dev
 shellshokers-unblocked.pages.dev
 shred-sauce.pages.dev
@@ -11859,6 +11874,7 @@ unblocked-games-no-wifi.pages.dev
 unblocked-games-on-chromebook.pages.dev
 unblocked-games-safe-school.pages.dev
 unblocked-games-study-hall.pages.dev
+unblocked-games-websites-that-have-roblox.pages.dev
 unblocked-hill-climb.pages.dev
 unblocked-idle-games-school.pages.dev
 unblocked-io-games.pages.dev
@@ -13389,6 +13405,7 @@ garbagegarage.hu
 gombis.hu
 *.goodgameempire.hu
 goodgameempire.hu
+nichestudies.govt.hu
 *.jatekokjatekok.hu
 jatekokjatekok.hu
 *.jatekokxl.hu
@@ -16015,6 +16032,7 @@ joeheyming.github.io
 joemamaaaa.github.io
 joeyc1pro.github.io
 joeykwispel.github.io
+jogosgratis.github.io
 johanromanque.github.io
 johe172.github.io
 johms0976-cmyk.github.io
@@ -16365,6 +16383,7 @@ mishaz4321.github.io
 misteralexanderb.github.io
 misttimegame.github.io
 mitch-fogler.github.io
+mizcausevic-dev.github.io
 mkdsl.github.io
 mkoroweb.github.io
 mksmpc.github.io
@@ -16449,6 +16468,7 @@ nabilubg.github.io
 nail-rinatovich.github.io
 namandhakad712.github.io
 nanakoinoue-ui.github.io
+nano-proxy.github.io
 naresh-tech6380.github.io
 nat748.github.io
 nataraja-games.github.io
@@ -16521,6 +16541,7 @@ notrecordingyetyt.github.io
 notro-r.github.io
 noufelgaming.github.io
 novaloid117.github.io
+novaro1.github.io
 nowggunblocked.github.io
 nstudios1.github.io
 null-x-team.github.io
@@ -17330,6 +17351,7 @@ tinyfishing-games.github.io
 tinyfishing-unblocked.github.io
 tinyfishinggame.github.io
 titan-gorilla-loves-unblocked-websites.github.io
+titaniumnetwork-dev.github.io
 titisamshouse-afk.github.io
 tjbublitz24-hash.github.io
 tlewis13730-cloud.github.io
@@ -17763,6 +17785,7 @@ zane3535.github.io
 zanvan.github.io
 zaprasdower.github.io
 zavi499.github.io
+zayd-the-gr8.github.io
 zaynaldosari-dotcom.github.io
 ze-man.github.io
 zechariah-guo.github.io
@@ -18207,6 +18230,7 @@ hurdlegame.io
 hury.io
 *.hypixel.io
 hypixel.io
+cpvxz-iyaaa-aaaad-qflqq-cai.icp0.io
 xzhoq-qiaaa-aaaag-ay4wa-cai.icp0.io
 *.idolsofash.io
 idolsofash.io
@@ -19926,7 +19950,6 @@ delightful-pebble-0477dc310.6.azurestaticapps.net
 duck-math.b-cdn.net
 fusion-formula.b-cdn.net
 gsmedia.b-cdn.net
-jsdelivr.b-cdn.net
 math-a1.b-cdn.net
 math-a2.b-cdn.net
 mathlessons.b-cdn.net
@@ -23130,6 +23153,8 @@ tombofthemask.org
 topg.org
 *.toponlinegames.org
 toponlinegames.org
+*.tortillagames.org
+tortillagames.org
 *.towersdefense.org
 towersdefense.org
 *.townscaper.org
@@ -23792,6 +23817,8 @@ html5game.shop
 *.jxmath.shop
 jxmath.shop
 bloxy.kerboodle.shop
+*.mercurywork.shop
+mercurywork.shop
 *.gartic.show
 gartic.show
 *.browsergame.si
@@ -23854,6 +23881,7 @@ game-repack.site
 bloxy.goguardian.site
 *.iogames.site
 iogames.site
+pgis-wisp.joytree.site
 *.koolmathgames.site
 koolmathgames.site
 *.langwiligi.site
