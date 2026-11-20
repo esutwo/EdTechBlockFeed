@@ -213,6 +213,7 @@ duck-math.netlify.app
 eaglercraft-26-2.netlify.app
 eduquests.netlify.app
 efgames.netlify.app
+elitegameshmo.netlify.app
 eloquent-tulumba-7667c4.netlify.app
 escaperoad.netlify.app
 facle.netlify.app
@@ -252,6 +253,7 @@ italian-brainrot-game.netlify.app
 jigsaw-puzzle-game.netlify.app
 jogos-online.netlify.app
 juegos-gratis.netlify.app
+jumbo-game.netlify.app
 kingdomarchitect.netlify.app
 korner-arcade.netlify.app
 krunker-io.netlify.app
@@ -474,6 +476,7 @@ brainrotclicker.vercel.app
 brick-arcade-eight.vercel.app
 browser-games-gh-ayman.vercel.app
 car-games-unblocked-five.vercel.app
+card-games-one.vercel.app
 carlson-games.vercel.app
 castle-game-hub.vercel.app
 catch-the-goblin.vercel.app
@@ -656,6 +659,7 @@ highway-racer.vercel.app
 highwayracer.vercel.app
 hill-climb-racing.vercel.app
 hollowknightunblocked.vercel.app
+hse-econ-games.vercel.app
 html5-games.vercel.app
 html5-games-deploy.vercel.app
 html5-games-wheat.vercel.app
@@ -1083,6 +1087,7 @@ juegos.com.ar
 juegosestupidos.com.ar
 mundijuegos.com.ar
 openingzero.com.ar
+patotero.com.ar
 pixelartegames.com.ar
 playgamer.com.ar
 aide.tuapel.com.ar
@@ -3369,6 +3374,8 @@ czechgames.com
 dab3games.com
 *.dabontv.com
 dabontv.com
+*.dailiesplay.com
+dailiesplay.com
 *.dailygameindex.com
 dailygameindex.com
 *.dailygames.com
@@ -5031,6 +5038,8 @@ gametap.com
 gametestedpro.com
 *.gamethat.com
 gamethat.com
+*.gametio.com
+gametio.com
 *.gametje.com
 gametje.com
 *.gametop.com
@@ -9617,6 +9626,8 @@ totalmayhemgames.com
 totugo.com
 *.towerpanic.com
 towerpanic.com
+*.towersdefense.com
+towersdefense.com
 *.towerunite.com
 towerunite.com
 *.towerward.com
@@ -10936,10 +10947,12 @@ ai-friend-in-roblox.pages.dev
 ai-games-portal.pages.dev
 ajg-games.pages.dev
 akses-opera-games.pages.dev
+aksesgames-indowede.pages.dev
 alex-games-roblox.pages.dev
 amongus-unblocked.pages.dev
 amongus3d.pages.dev
 animation-games-roblox.pages.dev
+anime-games-roblox-reddit.pages.dev
 anime-roblox-games-rpg.pages.dev
 apex-appcraft-website.pages.dev
 apk0-com-games.pages.dev
@@ -10980,9 +10993,11 @@ beras11-games.pages.dev
 best-couple-roblox-games.pages.dev
 best-math-hub.pages.dev
 bestfightinggamesonroblox.pages.dev
+bestsimulatorgamesonroblox.pages.dev
 bgp-paolos-game.pages.dev
 bgs.pages.dev
 bigfishgamesloginaccount.pages.dev
+bigfishgamesloginaccount-yz6.pages.dev
 bigfoot.pages.dev
 bit-life-unblocked.pages.dev
 bitlife-online.pages.dev
@@ -11023,6 +11038,7 @@ bubbleshooter.pages.dev
 bullet-force.pages.dev
 bullet-force-online.pages.dev
 business-management-games-roblox.pages.dev
+candidates-hyperplaycity-com.pages.dev
 canyongame.pages.dev
 career-sim.pages.dev
 catalogo-board-games.pages.dev
@@ -11051,6 +11067,7 @@ codyshack.pages.dev
 coinops.pages.dev
 colorartist.pages.dev
 combinations-game-unlimited.pages.dev
+common-core-games.pages.dev
 community-server-roblox.pages.dev
 comojogarrobloxnaextencao.pages.dev
 connections-nyt.pages.dev
@@ -11102,6 +11119,7 @@ dinosaur-game.pages.dev
 dinosaurgame-3d.pages.dev
 dlpsgames-click-y68.pages.dev
 dmg-db.pages.dev
+doctor-like-roblox-games.pages.dev
 dominoesgame.pages.dev
 doodle-snake.pages.dev
 doodle-solitaire.pages.dev
@@ -11157,6 +11175,7 @@ escaperoad.pages.dev
 escaperoad-unblocked.pages.dev
 euloge-arcade.pages.dev
 ev-rush-game.pages.dev
+exploration-games-in-roblox.pages.dev
 f-games.pages.dev
 falorant-5qk.pages.dev
 fashion-model-games-roblox.pages.dev
@@ -11209,8 +11228,10 @@ games-not-filtered-school.pages.dev
 games-online-offer-review.pages.dev
 games-play-on-roblox.pages.dev
 games-related-to-weeworld.pages.dev
+games-unblocked.pages.dev
 gamesdoodle.pages.dev
 gamestudiohub.pages.dev
+gameunc.pages.dev
 gamevo-staging.pages.dev
 gbaemulator.pages.dev
 gd-webport.pages.dev
@@ -11255,6 +11276,7 @@ googlesnake.pages.dev
 googlesnakegame.pages.dev
 gooning-games-on-roblox.pages.dev
 gotok-beta.pages.dev
+gpark-roblox.pages.dev
 granny.pages.dev
 granny-unblocked.pages.dev
 grannyunblocked.pages.dev
@@ -11279,6 +11301,7 @@ hollowguessr.pages.dev
 horror-games-roblox-foltyn.pages.dev
 horror-games-roblox-good.pages.dev
 horror-games-roblox-itsfunneh.pages.dev
+horror-games-roblox-mobile.pages.dev
 howtoplaygames.pages.dev
 immaculategrid.pages.dev
 incrediboxunblocked.pages.dev
@@ -11289,6 +11312,7 @@ iron-snout.pages.dev
 italian-brainrot-games.pages.dev
 italianbrainrot.pages.dev
 items-gratis-roblox-juegos.pages.dev
+itsfunneh-roblox-scary-games.pages.dev
 jab-arcade.pages.dev
 jelly-truck.pages.dev
 jellytruckgame.pages.dev
@@ -11364,6 +11388,7 @@ mope-io.pages.dev
 moto-x3m-online.pages.dev
 moto-x3m-unblocked-games.pages.dev
 motox3mgame.pages.dev
+multiplayer-fighting-games-roblox.pages.dev
 murder-mystery-2.pages.dev
 narrowone.pages.dev
 nettleweb.pages.dev
@@ -11377,6 +11402,7 @@ novaarcade28.pages.dev
 numberle-unlimited.pages.dev
 nytconnections.pages.dev
 nytspellingbee.pages.dev
+oceangamesv2.pages.dev
 octordle-nyt.pages.dev
 octordlewordle.pages.dev
 odyssey-freeapplegame-com.pages.dev
@@ -11384,6 +11410,7 @@ oeogames-com.pages.dev
 olx188-dstplay.pages.dev
 olx188-games-online.pages.dev
 one-line-drawing.pages.dev
+online-game-play-roblox.pages.dev
 onlinefreesolitaire.pages.dev
 only-up.pages.dev
 onlyup.pages.dev
@@ -11431,6 +11458,7 @@ playcandy.pages.dev
 playchickenscream.pages.dev
 playclassroom6x-games.pages.dev
 playconquerio.pages.dev
+playdailyguess.pages.dev
 playdecorlife.pages.dev
 playepicracing.pages.dev
 playforge-3pb.pages.dev
@@ -11470,6 +11498,7 @@ playsushipuzzle.pages.dev
 playtabletennisopen.pages.dev
 playtailorstylist.pages.dev
 playwhatawalk.pages.dev
+plinko-games-on-roblox.pages.dev
 poki2-portal.pages.dev
 pokigames.pages.dev
 poly-track.pages.dev
@@ -11528,6 +11557,7 @@ roblox-hitbox-expander-script.pages.dev
 roblox-hockey-simulator-script.pages.dev
 roblox-hood-games-leaked.pages.dev
 roblox-horror-games-asmr.pages.dev
+roblox-horror-games-code.pages.dev
 roblox-horror-games-easy.pages.dev
 roblox-horror-games-horangi99.pages.dev
 roblox-horror-games-review.pages.dev
@@ -11559,6 +11589,7 @@ roblox-unblocked-games.pages.dev
 roblox-unblocked-games-school.pages.dev
 roblox-uncopylocked-simulator-games.pages.dev
 roblox-underrated-games-list.pages.dev
+roblox-union-ui-library.pages.dev
 roblox-unlock-script.pages.dev
 roblox-valorant-clone-script.pages.dev
 roblox-violin-sound.pages.dev
@@ -11573,6 +11604,7 @@ roblox-websocketsend.pages.dev
 roblox-window-esp.pages.dev
 roblox-zachs-service-station.pages.dev
 roblox-zombie-elimination-games.pages.dev
+robloxautosellscript.pages.dev
 robloxbasicadminessentialsscript.pages.dev
 robloxchakramarkscript.pages.dev
 robloxchakramindscript.pages.dev
@@ -11584,6 +11616,7 @@ robloxgamesnana-hack.pages.dev
 robloxgenjutsuscript.pages.dev
 robloxhandtrackingsupportscript.pages.dev
 robloxhapticfeedbackscript.pages.dev
+robloxidcodesforgames.pages.dev
 robloxquadtreemoduleluascript.pages.dev
 robloxrainbowscriptparticle.pages.dev
 robloxrule34games.pages.dev
@@ -11612,6 +11645,7 @@ salak138-player.pages.dev
 school-games-unblocked-now.pages.dev
 school-unblocked-arcade.pages.dev
 scratch-roblox-cookie-clicker.pages.dev
+sections-bestgameverse-com.pages.dev
 sedecordle-nyt.pages.dev
 semi-trucks-roblox-games.pages.dev
 serial-killer-on-roblox.pages.dev
@@ -11741,6 +11775,7 @@ the-math.pages.dev
 the-math-wiki.pages.dev
 theluigiplayer.pages.dev
 thepizzaeditions-github-io.pages.dev
+ti-89-calculator-games.pages.dev
 tiberava.pages.dev
 tiny-fishing-game.pages.dev
 tinyfishing.pages.dev
@@ -11749,6 +11784,7 @@ tinyfishing-unblocked.pages.dev
 tinyfishinggame.pages.dev
 tinyfishingunblocked.pages.dev
 tinytrapgames.pages.dev
+titan-army-games-2026.pages.dev
 tombofthemask.pages.dev
 top-memes.pages.dev
 top-roblox-games-earnings.pages.dev
@@ -11832,6 +11868,7 @@ weaver-game.pages.dev
 websudoku.pages.dev
 wellgame.pages.dev
 whiskey-games-website.pages.dev
+white-spider-games.pages.dev
 whitespider.pages.dev
 wordle-connections.pages.dev
 wordle-io.pages.dev
@@ -15625,6 +15662,7 @@ givemeapizza.github.io
 givemebobux.github.io
 gkcooking.github.io
 glairozz.github.io
+gleer2013-crypto.github.io
 glennfb83.github.io
 gn-math.github.io
 gn-math-t.github.io
@@ -22513,6 +22551,8 @@ ikariam.org
 imperialhero.org
 *.imperiaonline.org
 imperiaonline.org
+*.inpages.org
+inpages.org
 *.iogamesio.org
 iogamesio.org
 *.iogameslist.org
