@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-20 15:45 UTC  
+Run: 2026-11-20 15:57 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -11,7 +11,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | List entries parsed and normalized | 86,975 |
 | GitHub repository searches | 28 |
 | GitHub repositories examined | 1,548 |
-| README files scanned for links | 68 |
+| README files scanned for links | 8 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,622 |
 | Certificate Transparency queries | 9 |
@@ -21,11 +21,11 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | CDN entry files found in owner repos | 0 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 0 |
-| Links examined by the filters | 30,794 |
-|   dropped: allowlist | 8,784 |
-|   dropped: known non-game service | 239 |
+| Links examined by the filters | 8,457 |
+|   dropped: allowlist | 1,753 |
+|   dropped: known non-game service | 33 |
 |   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 12,631 |
+|   dropped: README link with no game/bypass hint | 9 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 0 |
@@ -41,10 +41,8 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 
 | Entry type | Result | Count |
 |---|---|---:|
-| host | alive | 959 |
-| host | dead | 538 |
-| host | game | 2 |
-| host | loader | 1 |
+| host | alive | 1,289 |
+| host | dead | 211 |
 
 ## Feed output
 
