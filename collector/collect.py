@@ -919,6 +919,12 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
         pr = popular_rank(k, platforms)
         return pr if pr and pr[1] <= top else None
 
+    # CDN mirror hosts are handled per file, never as whole hosts.
+    for k, e in entries.items():
+        if e["kind"] == "host" and k in cdn.CDN_HOSTS and e["status"] != "dismissed":
+            e.update(status="dismissed", needs_review=False, resolution="CDN mirror host")
+            e.pop("hold", None)
+
     # Top-tier guard, applied retroactively to anything already confirmed.
     for k, e in entries.items():
         if e["kind"] == "host" and e["status"] == "confirmed" and (pr := too_popular(k)):
@@ -932,6 +938,13 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
             e["last_checked"] = date_str(TODAY)
             e["attempts"] = e.get("attempts", 0) + 1
             e["evidence"] = res.evidence[:200]
+            e["last_verdict"] = res.verdict
+            if getattr(res, "page_hash", ""):
+                e["page_hash"] = res.page_hash
+            if getattr(res, "title", ""):
+                e["title"] = res.title[:120]
+            if getattr(res, "sw", False):
+                e["sw"] = True
             METRICS[f"verify_{e['kind']}_{res.verdict}"] += 1
             if getattr(res, "shadow", None):
                 e["shadow"] = res.shadow
@@ -971,7 +984,9 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
                 if e["status"] != "confirmed":
                     e["status"] = "rejected" if e["attempts"] >= 3 else "pending"
             else:  # alive but no fingerprint
-                if e["status"] == "confirmed":
+                if e["status"] == "confirmed" and e.get("category") in ("clone", "impersonation", "listed"):
+                    e["last_alive"] = date_str(TODAY)  # confirmed by page identity, not markup
+                elif e["status"] == "confirmed":
                     e["last_alive"] = date_str(TODAY)  # keep; flag for review
                     e["needs_review"] = True
                 else:
@@ -993,6 +1008,77 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
                                 "status": "confirmed", "category": verdict, "attempts": 0,
                                 "last_checked": date_str(TODAY), "last_alive": date_str(TODAY),
                                 "priority": 2, "evidence": f"redirect target of {origin}"}
+
+
+def resolve_stalled(cfg: dict, state: dict, platforms: set[str]) -> None:
+    """Decide stalled sites (alive, no fingerprint) that came from dedicated
+    student bypass lists, using evidence other than page markup:
+      1. clone: byte-identical (whitespace-normalized) to a confirmed bypass
+         page, or the same page served by >= min_cluster hosts from those lists
+      2. impersonation: title names a known service (Coursera, IXL, NASA...)
+         but the site is a subdomain of an unrelated domain
+      3. otherwise, if there is a second signal (shadowing CNAME, a service
+         worker, a cloaked title), hold it for review
+    Only subdomains of unranked domains (or free-hosting subdomains) qualify;
+    whole domains and popular sites are never blocked by these rules."""
+    c = cfg.get("stalled", {})
+    if not c.get("enabled", True):
+        return
+    entries = state.get("entries", {})
+    trusted = tuple(c.get("trusted_sources", []))
+    min_cluster = c.get("min_cluster", 3)
+    services = {k.lower(): v for k, v in c.get("impersonated_services", {}).items()}
+    svc_re = re.compile(r"\b(" + "|".join(re.escape(k) for k in services) + r")\b", re.I) if services else None
+
+    def eligible(k, e):
+        return (e["kind"] == "host" and e["source"].startswith(trusted)
+                and (platform_apex(k, platforms) or not is_registrable(k))
+                and popular_rank(k, platforms) is None)
+
+    def stalled(e):
+        return (e["status"] in ("pending", "rejected", "new") and not e.get("hold")
+                and e.get("last_verdict") == "alive")
+
+    confirmed_hashes = {e["page_hash"] for e in entries.values()
+                        if e["kind"] == "host" and e["status"] == "confirmed" and e.get("page_hash")
+                        and e.get("category") in ("game", "proxy", "loader")}
+    clusters: dict[str, set] = {}
+    for k, e in entries.items():
+        if e.get("page_hash") and eligible(k, e) and (stalled(e) or e["status"] == "confirmed"):
+            clusters.setdefault(e["page_hash"], set()).add(k)
+
+    def confirm(k, e, category, why, metric):
+        METRICS[metric] += 1
+        e.update(status="confirmed", category=category, last_alive=date_str(TODAY),
+                 attempts=0, evidence=(f"{why} | " + e.get("evidence", ""))[:300])
+        e.pop("hold", None)
+
+    spam = re.compile(r"casino|kazino|казино|\bbet\b|betting|slot|gacor|toto|poker|"
+                      r"gambl|porn|xxx|sex|escort|viagra|loan", re.I)
+    for k, e in entries.items():
+        if not (stalled(e) and eligible(k, e)):
+            continue
+        h, title = e.get("page_hash", ""), e.get("title", "")
+        if spam.search(title):
+            continue  # SEO spam on hijacked subdomains: not this feed's scope
+        if h and h in confirmed_hashes:
+            confirm(k, e, "clone", "clone of a confirmed bypass page", "stalled_confirmed_clone")
+        elif h and len(clusters.get(h, ())) >= min_cluster:
+            confirm(k, e, "clone", f"same page served by {len(clusters[h])} hosts from student "
+                                   "bypass lists", "stalled_confirmed_clone")
+        elif svc_re and (m := svc_re.search(title)):
+            owners = services[m.group(1).lower()]
+            if not any(k == o or k.endswith("." + o) for o in owners):
+                confirm(k, e, "impersonation", f"title impersonates {m.group(1)} on an unrelated "
+                                               "domain", "stalled_confirmed_impersonation")
+        else:
+            second = [s for s in (e.get("shadow") or []) if s.startswith("cname")]
+            if e.get("sw"):
+                second.append("registers a service worker")
+            if second:
+                METRICS["stalled_held_second_signal"] += 1
+                e.update(status="pending", needs_review=True,
+                         hold="stalled bypass-list site with " + ", ".join(second))
 
 
 def age_out(state: dict, settings: dict) -> None:
@@ -1202,6 +1288,7 @@ def main() -> int:
             METRICS["review_dismissed_applied"] += 1
     load_popular(settings, state)
     verify(cands, state, settings, not args.no_verify)
+    resolve_stalled(cfg, state, platforms)
     age_out(state, settings)
 
     # ---- assemble
@@ -1372,6 +1459,9 @@ def write_run_report(stats: dict, entries: dict) -> None:
         ("Discovered sites held for review: top-ranked domain", g("discovery_held_popular")),
         ("Discovered sites held for review: established site, only a sub-page is a game", g("discovery_held_homepage")),
         ("Discovered sites held for review: possible domain shadowing", g("discovery_held_shadowing")),
+        ("Stalled bypass-list sites blocked as clones of known bypass pages", g("stalled_confirmed_clone")),
+        ("Stalled bypass-list sites blocked for impersonating a known service", g("stalled_confirmed_impersonation")),
+        ("Stalled bypass-list sites held for review (second signal)", g("stalled_held_second_signal")),
         ("Live checks performed this run", verified),
     ]
     lines = ["# Latest collector run", "",

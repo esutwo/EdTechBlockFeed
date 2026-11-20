@@ -124,6 +124,12 @@ class Result:
     # Absolute URLs of scripts the page loads (for engine-owner and CDN
     # mirror discovery). Filled by classify() for HTML pages.
     scripts: list = None
+    # Page identity for clone clustering: hash of the whitespace-normalized
+    # HTML, its size, the <title>, and whether it registers a service worker.
+    page_hash: str = ""
+    size: int = 0
+    title: str = ""
+    sw: bool = False
 
 
 def _fetch(url: str, timeout: float, ua: str) -> tuple[int, str, str]:
@@ -182,10 +188,12 @@ def classify(url: str, *, timeout: float = 10, ua: str = "Mozilla/5.0",
             return Result("alive", f"HTTP {status}")
         return Result("dead", f"HTTP {status}")
     srcs = _script_srcs(text, final)
+    ident = page_identity(text)
     r = score(text) or loader_score(text, final, cdn)
     if r:
         r.evidence = f"{final} {r.evidence}"
         r.final_url, r.scripts = final, srcs
+        r.page_hash, r.size, r.title, r.sw = ident
         return r
     # Decoy swap: a harmless-looking page (e.g. a fake school-district site)
     # whose inline script fetches another same-site page and writes it over
@@ -201,6 +209,7 @@ def classify(url: str, *, timeout: float = 10, ua: str = "Mozilla/5.0",
                 if r:
                     r.evidence = f"{final} (decoy page swaps in {m.group(1)}) {r.evidence}"
                     r.final_url, r.scripts = final, srcs
+                    r.page_hash, r.size, r.title, r.sw = ident
                     return r
             except Exception:  # noqa: BLE001
                 pass
@@ -220,15 +229,35 @@ def classify(url: str, *, timeout: float = 10, ua: str = "Mozilla/5.0",
     if r:
         r.evidence = f"{final} (via scripts) {r.evidence}"
         r.final_url, r.scripts = final, srcs
+        r.page_hash, r.size, r.title, r.sw = ident
         return r
     t = TITLE_RE.search(text)
     return Result("alive", f"{final} HTTP {status} title={(t.group(1).strip()[:80] if t else '')!r}",
-                  final, srcs)
+                  final, srcs, *ident)
+
+
+_DEFAULT_PAGE = re.compile(
+    r"welcome to nginx|apache2? (?:ubuntu|debian)? ?default page|it works!|index of /|"
+    r"domain (?:is )?parked|this domain (?:is|may be) for sale|coming soon|default web site page|"
+    r"cpanel|plesk|under construction|redirecting\.\.\.", re.I)
+
+
+def page_identity(html: str) -> tuple:
+    """(hash, size, title, registers_service_worker). Pages that are tiny or
+    are web-server/parking defaults get no hash, so they never cluster."""
+    t = TITLE_RE.search(html[:20000])
+    title = re.sub(r"\s+", " ", t.group(1)).strip()[:120] if t else ""
+    sw = bool(re.search(r"serviceWorker\s*\.\s*register", html))
+    norm = re.sub(r"\s+", "", html)
+    if len(norm) < 2000 or _DEFAULT_PAGE.search(html[:20000]):
+        return "", len(norm), title, sw
+    import hashlib
+    return hashlib.sha256(norm.encode("utf-8", "replace")).hexdigest()[:24], len(norm), title, sw
 
 
 # Bumped whenever signatures change materially: the collector then re-checks
 # discovered sites it had given up on, so they get the new signatures.
-FINGERPRINT_VERSION = 2
+FINGERPRINT_VERSION = 3
 
 # fetch("/app.html") ... document.open()/document.write(...) in one script.
 DECOY_SWAP = re.compile(
