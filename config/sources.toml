@@ -206,7 +206,6 @@ urls = [
   "https://raw.githubusercontent.com/wea-f/ByePassHub/main/README.md",
   "https://gist.githubusercontent.com/eddy-22/2cdfadfa539cdaccfd0a9e31bf98e6d6/raw/unblocked_sites.md",
   "https://raw.githubusercontent.com/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports/main/README.md",
-  "https://raw.githubusercontent.com/ab-613/unblocked-games-sites-list/main/README.md",
   "https://raw.githubusercontent.com/bns34/Unblocked-Sites/main/README.md",
   "https://raw.githubusercontent.com/task4z/unblockedgames/main/README.md",
   "https://raw.githubusercontent.com/0800WebDev/UBGdir/main/README.md",
@@ -279,3 +278,43 @@ skip_domains = ["sslip.io", "nip.io", "ipv64.net", "ipv64.de", "local-ip.sh", "t
 # (fake billing / sign-in pages): out of scope for a games feed.
 skip_keywords = ["netflix", "paypal", "billing", "signin", "sign-in", "verify",
                  "payment", "wallet", "login-", "account-", "appleid", "microsoft-"]
+
+# ---------------------------------------------------------------------------
+# Stalled sites (alive, but no game/proxy markup, usually JavaScript-only or
+# device-locked proxies) from dedicated student bypass lists are decided by
+# page identity instead of markup. Applies only to subdomains of unranked
+# domains and free-hosting subdomains, never to whole or popular domains.
+# ---------------------------------------------------------------------------
+
+[stalled]
+enabled = true
+# Sources whose every link is meant as a bypass (README links and catalogs are
+# NOT included: most of their stalled links are ordinary pages).
+trusted_sources = [
+  "aggregator:https://raw.githubusercontent.com/yourworstnightmare1/proxy-list/",
+  "urlscan:",
+]
+# Same normalized page on this many hosts from those sources = a deployed clone.
+min_cluster = 3
+
+# Titles naming these services on a site that is not theirs = impersonation.
+[stalled.impersonated_services]
+"coursera" = ["coursera.org"]
+"ixl" = ["ixl.com"]
+"canvas" = ["instructure.com", "canvas.net"]
+"google classroom" = ["google.com"]
+"clever" = ["clever.com"]
+"schoology" = ["schoology.com"]
+"khan academy" = ["khanacademy.org"]
+"quizlet" = ["quizlet.com"]
+"edpuzzle" = ["edpuzzle.com"]
+"desmos" = ["desmos.com"]
+"deltamath" = ["deltamath.com"]
+"powerschool" = ["powerschool.com"]
+"classlink" = ["classlink.com"]
+"kahoot" = ["kahoot.com", "kahoot.it"]
+"blooket" = ["blooket.com"]
+"gimkit" = ["gimkit.com"]
+"nasa" = ["nasa.gov"]
+"harvard" = ["harvard.edu"]
+"wikipedia" = ["wikipedia.org"]
