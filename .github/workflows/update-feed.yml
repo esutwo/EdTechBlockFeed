@@ -54,6 +54,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           URLSCAN_API_KEY: ${{ secrets.URLSCAN_API_KEY }}   # optional
+          CODE_SEARCH_TOKEN: ${{ secrets.CODE_SEARCH_TOKEN }}   # read-only PAT for GitHub code search
         run: python3 collector/collect.py
 
       - name: Safety check (protected domains must not be in the feed)

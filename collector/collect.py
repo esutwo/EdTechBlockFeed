@@ -549,17 +549,31 @@ def discover_cdn(cfg: dict, cands: Candidates, state: dict) -> None:
             owners_state[owner.lower()] = {"last_expanded": date_str(TODAY), "repos": nrepos}
     log(f"[cdn] expanded {len(due)} of {len(known)} known owners")
 
-    if not ("Authorization" in gh_headers()):
-        log("[cdn] code search skipped (needs GITHUB_TOKEN)")
+    # GitHub's code search API needs a user token: the automatic Actions
+    # GITHUB_TOKEN gets no results. CODE_SEARCH_TOKEN is a fine-grained,
+    # read-only personal access token stored as a repository secret.
+    cs_token = os.environ.get("CODE_SEARCH_TOKEN")
+    cs_headers = gh_headers()
+    if cs_token:
+        cs_headers["Authorization"] = f"Bearer {cs_token}"
+    elif "Authorization" not in cs_headers:
+        log("[cdn] code search skipped (no token)")
         return
     for q in c.get("code_search_queries", []):
         for page in range(1, c.get("code_search_pages", 1) + 1):
             url = "https://api.github.com/search/code?" + urllib.parse.urlencode(
                 {"q": q, "per_page": 100, "page": page})
             try:
-                data, _ = http_get(url, headers=gh_headers(), timeout=60)
+                data, _ = http_get(url, headers=cs_headers, timeout=60)
                 items = json.loads(data).get("items", [])
+            except urllib.error.HTTPError as e:
+                # 401 = token expired or revoked; 403/422 = token not accepted.
+                METRICS["cdn_code_search_errors"] += 1
+                log(f"[cdn] code search {q!r}: HTTP {e.code}"
+                    + (" - CODE_SEARCH_TOKEN expired or revoked?" if e.code == 401 else ""))
+                items = []
             except Exception as e:  # noqa: BLE001
+                METRICS["cdn_code_search_errors"] += 1
                 log(f"[cdn] code search {q!r}: {e}")
                 items = []
             finally:
@@ -1334,6 +1348,7 @@ def write_run_report(stats: dict, entries: dict) -> None:
         ("CDN entry files found in owner repos", g("cdn_owner_entry_files_found")),
         ("GitHub code searches for loader files", g("cdn_code_search_requests")),
         ("Loader-candidate files from code search", g("cdn_code_search_files")),
+        ("  code searches that failed (check CODE_SEARCH_TOKEN)", g("cdn_code_search_errors")),
         ("Links examined by the filters", g("links_examined")),
         ("  dropped: allowlist", g("links_dropped_allowlist")),
         ("  dropped: known non-game service", g("links_dropped_noise")),

@@ -66,7 +66,7 @@ Students increasingly avoid domains entirely. They put a game or proxy *loader* 
 
 ### 2e. CDN loaders: GitHub code search
 
-Six code searches for the loader signature: a full-screen SVG (`position:fixed`, `inset:0`, `100vw`) that embeds HTML through `<foreignObject>` and loads an `<iframe>` or `<script>`. Each matching file becomes a candidate. This is how owners nobody has reported yet are found.
+Uses the `CODE_SEARCH_TOKEN` repository secret, a fine-grained read-only personal access token, because GitHub's code search API returns nothing to the automatic workflow token. If the token expires, failed searches are counted under *code searches that failed* in latest-run.md. Six code searches for the loader signature: a full-screen SVG (`position:fixed`, `inset:0`, `100vw`) that embeds HTML through `<foreignObject>` and loads an `<iframe>` or `<script>`. Each matching file becomes a candidate. This is how owners nobody has reported yet are found.
 
 ### 2f. New CDN and mirror detection
 
