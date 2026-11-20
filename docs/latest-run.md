@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-20 15:57 UTC  
+Run: 2026-11-20 16:05 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -11,7 +11,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | List entries parsed and normalized | 86,975 |
 | GitHub repository searches | 28 |
 | GitHub repositories examined | 1,548 |
-| README files scanned for links | 8 |
+| README files scanned for links | 6 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,622 |
 | Certificate Transparency queries | 9 |
@@ -21,9 +21,9 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | CDN entry files found in owner repos | 0 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 0 |
-| Links examined by the filters | 8,457 |
-|   dropped: allowlist | 1,753 |
-|   dropped: known non-game service | 33 |
+| Links examined by the filters | 8,427 |
+|   dropped: allowlist | 1,751 |
+|   dropped: known non-game service | 27 |
 |   dropped: bare hosting-platform domain | 1 |
 |   dropped: README link with no game/bypass hint | 9 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
@@ -35,21 +35,24 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 |   new CDNs/mirrors confirmed this run | 0 |
 | Discovered sites held for review: top-ranked domain | 0 |
 | Discovered sites held for review: established site, only a sub-page is a game | 0 |
-| Live checks performed this run | 1,500 |
+| Live checks performed this run | 696 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| host | alive | 1,289 |
-| host | dead | 211 |
+| host | alive | 599 |
+| host | dead | 86 |
+| host | game | 3 |
+| host | proxy | 1 |
+| url | alive | 7 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 84,644 |
-| `domains-priority.txt` entries | 24,525 |
+| `domains.txt` entries | 84,649 |
+| `domains-priority.txt` entries | 24,530 |
 | `urls.txt` entries | 3,130 |
 | CDN owners blocked at owner level | 34 |
 | CDN repos blocked at repo level | 15 |
@@ -63,9 +66,9 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 |---|---|---:|
 | cdn | confirmed | 754 |
 | cdn | pending | 949 |
-| host | confirmed | 834 |
+| host | confirmed | 838 |
 | host | dismissed | 26 |
-| host | pending | 6,588 |
+| host | pending | 6,584 |
 | url | confirmed | 56 |
 | url | pending | 7 |
 

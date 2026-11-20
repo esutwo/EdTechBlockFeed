@@ -9020,6 +9020,7 @@ robmanuel.blogspot.com
 ruby-games.blogspot.com
 run4unblocked.blogspot.com
 scorpnabier.blogspot.com
+sktechproxies.blogspot.com
 theygopedia.blogspot.com
 todoelgrandt.blogspot.com
 trucosjuegosplus.blogspot.com
@@ -9031,6 +9032,7 @@ unblockedgames76-sofia.blogspot.com
 unblockedgames911-zoe.blogspot.com
 vicaluna.blogspot.com
 videosxjuegos.blogspot.com
+warrenwoodhouse.blogspot.com
 worldbuildingpasta.blogspot.com
 zenithgames.blogspot.com
 *.blogtruyenmoi.com
@@ -45983,6 +45985,8 @@ tinytitanstudios.com
 tioatum.com
 *.tipspragmaticplay.com
 tipspragmaticplay.com
+*.tiptapgames.com
+tiptapgames.com
 *.titancraft.com
 titancraft.com
 *.titanforgegames.com
@@ -50205,6 +50209,7 @@ wordunscrambler.com
 *.wordwiththeletterq.com
 wordwiththeletterq.com
 cam.workaholicdevelopers.com
+wordnest.workaholicdevelopers.com
 *.workinman.com
 workinman.com
 *.workmelt.com

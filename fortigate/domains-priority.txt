@@ -2693,11 +2693,13 @@ grajzadarmo.blogspot.com
 millseagles.blogspot.com
 ruby-games.blogspot.com
 run4unblocked.blogspot.com
+sktechproxies.blogspot.com
 unblockedgames-264.blogspot.com
 unblockedgames-66-hudson.blogspot.com
 unblockedgames45.blogspot.com
 unblockedgames76-sofia.blogspot.com
 unblockedgames911-zoe.blogspot.com
+warrenwoodhouse.blogspot.com
 *.blooket1.com
 blooket1.com
 *.blox.com
@@ -9566,6 +9568,8 @@ tinyfishingame.com
 tinysubversions.com
 *.tinytap.com
 tinytap.com
+*.tiptapgames.com
+tiptapgames.com
 *.tlkgames.com
 tlkgames.com
 *.to14.com
@@ -10277,6 +10281,7 @@ wordsearchzone.com
 *.wordspine.com
 wordspine.com
 cam.workaholicdevelopers.com
+wordnest.workaholicdevelopers.com
 *.workmelt.com
 workmelt.com
 *.worldescapegames.com
