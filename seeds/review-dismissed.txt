@@ -21,3 +21,11 @@ gitea.com
 gitee.com
 pastebin.com
 assets.editor.p5js.org
+# 2026-11-20 review: already blocked by a parent domain in fortigate/domains.txt
+about.roblox.com             # 2026-11-20 review: Roblox education page; *.roblox.com already blocked
+corp.roblox.com              # 2026-11-20 review: Roblox education page; *.roblox.com already blocked
+aukak.itch.io                # 2026-11-20 review: itch.io game page; *.itch.io already blocked
+hahaha10001.itch.io          # 2026-11-20 review: itch.io game page; *.itch.io already blocked
+little-moon-games.itch.io    # 2026-11-20 review: itch.io game page; *.itch.io already blocked
+html5.gamedistribution.com   # 2026-11-20 review: game host; *.gamedistribution.com already blocked
+sdk.poki.com                 # 2026-11-20 review: Poki SDK docs; *.poki.com already blocked
