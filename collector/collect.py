@@ -32,7 +32,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import cdn  # noqa: E402
-from fingerprint import classify  # noqa: E402
+import hashlib  # noqa: E402
+import socket  # noqa: E402
+from fingerprint import FINGERPRINT_VERSION, classify  # noqa: E402
 from hostutil import (  # noqa: E402
     Matcher,
     extract_urls,
@@ -368,6 +370,26 @@ def discover_github(cfg: dict, cands: Candidates, state: dict) -> None:
                     repos[r["full_name"]] = r
             if len(items) < 100:
                 break
+    # Whole organisations (framework authors such as MercuryWorkshop and
+    # Titanium Network): their repos' homepages/Pages are often live services.
+    for org in g.get("orgs", []):
+        try:
+            data, _ = http_get(f"https://api.github.com/users/{org}/repos?per_page=100&sort=pushed",
+                               headers=gh_headers(), timeout=30)
+            org_repos = json.loads(data)
+        except Exception:  # noqa: BLE001
+            try:
+                q = urllib.parse.urlencode({"q": f"user:{org}", "per_page": 100})
+                data, _ = http_get(f"https://api.github.com/search/repositories?{q}",
+                                   headers=gh_headers(), timeout=30)
+                org_repos = json.loads(data).get("items", [])
+                time.sleep(pause)
+            except Exception as e:  # noqa: BLE001
+                log(f"[github] org {org}: {e}")
+                continue
+        METRICS["github_org_repos_listed"] += len(org_repos)
+        for r in org_repos:
+            repos.setdefault(r["full_name"], r)
     log(f"[github] {len(repos)} repos from {len(queries)} queries")
 
     seen = state.setdefault("repos", {})
@@ -553,6 +575,90 @@ def discover_cdn(cfg: dict, cands: Candidates, state: dict) -> None:
                 break
 
 
+def discover_urlscan(cfg: dict, cands: Candidates, state: dict) -> None:
+    """Search urlscan.io's public scan index for pages that load the proxy
+    frameworks' files or carry "unblocked games" titles. Every hit still has
+    to pass the live fingerprint (results include phishing kits built on the
+    same proxy code, and wildcard-DNS noise)."""
+    u = cfg.get("urlscan", {})
+    if not u.get("enabled"):
+        return
+    last = state.get("urlscan_last")
+    if last:
+        age_h = (dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(last)).total_seconds() / 3600
+        if age_h < u.get("interval_hours", 6):
+            log(f"[urlscan] skipped (last run {age_h:.1f}h ago)")
+            return
+    skip = Matcher(["*." + d for d in u.get("skip_domains", [])])
+    headers = {"Accept": "application/json"}
+    if key := os.environ.get("URLSCAN_API_KEY"):
+        headers["API-Key"] = key
+    per_apex: collections.Counter = collections.Counter()
+    max_apex = u.get("max_per_domain", 3)
+    for q in u.get("queries", []):
+        full = f"{q} AND date:>now-{u.get('days', 3)}d"
+        url = "https://urlscan.io/api/v1/search/?" + urllib.parse.urlencode({"q": full, "size": 100})
+        try:
+            data, _ = http_get(url, headers=headers, timeout=60)
+            results = json.loads(data).get("results", [])
+        except urllib.error.HTTPError as e:
+            log(f"[urlscan] {q!r}: HTTP {e.code}")
+            if e.code == 429:
+                break
+            continue
+        except Exception as e:  # noqa: BLE001
+            log(f"[urlscan] {q!r}: {e}")
+            continue
+        finally:
+            time.sleep(2)
+        METRICS["urlscan_queries"] += 1
+        METRICS["urlscan_results"] += len(results)
+        n = 0
+        for r in results:
+            page = r.get("page", {})
+            dom = normalize_host(page.get("domain", "") or "")
+            labels = dom.split(".") if dom else []
+            generated = (len(labels) > 6 or any(a == b for a, b in zip(labels, labels[1:])))
+            phishy = any(w in dom for w in u.get("skip_keywords", []))
+            if not dom or skip.matches(dom) or generated or phishy:
+                METRICS["urlscan_skipped_noise"] += 1
+                continue
+            apex = dom if platform_apex(dom, cands.platforms) else registrable(dom)
+            if per_apex[apex] >= max_apex:
+                continue
+            per_apex[apex] += 1
+            cands.add(page.get("url") or f"https://{dom}/", f"urlscan:{q[:40]}", priority=2)
+            n += 1
+        log(f"[urlscan] {q!r}: {len(results)} results, {n} candidates")
+    state["urlscan_last"] = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+
+
+def requeue_harvested(cands: Candidates, state: dict) -> None:
+    """Script URLs collected from confirmed game/proxy pages on the previous
+    run (engine files on CDN mirrors). Known mirrors become CDN candidates;
+    CDN-shaped links on unknown hosts feed new-mirror detection."""
+    links = state.pop("harvested_links", [])
+    for u, src in links:
+        cands.add(u, src, priority=2)
+    METRICS["harvested_links_requeued"] += len(links)
+
+
+def _mirror_reference(style: str, path: str) -> str | None:
+    """The same path on the reference host for a mirror style."""
+    ref = {"jsdelivr": "cdn.jsdelivr.net", "statically": "cdn.statically.io",
+           "esm": "esm.sh", "unpkg": "unpkg.com", "githack": "raw.githack.com"}.get(style)
+    return f"https://{ref}/{path}" if ref else None
+
+
+def _same_content(a: str, b: str) -> bool:
+    try:
+        da, _ = http_get(a, timeout=20, max_bytes=3_000_000)
+        db, _ = http_get(b, timeout=20, max_bytes=3_000_000)
+    except Exception:  # noqa: BLE001
+        return False
+    return len(da) > 200 and hashlib.sha256(da).digest() == hashlib.sha256(db).digest()
+
+
 def detect_new_cdns(cfg: dict, cands: Candidates, state: dict) -> None:
     """Spot GitHub/npm file CDNs (or mirrors of one) we don't know yet.
 
@@ -566,6 +672,8 @@ def detect_new_cdns(cfg: dict, cands: Candidates, state: dict) -> None:
     det = state.setdefault("cdn_detected", {})
     known_owners = {e["owner"].lower() for e in state.get("entries", {}).values()
                     if e["kind"] == "cdn" and e["status"] == "confirmed"}
+    known_owners |= {o for o, r in state.get("engine_owners", {}).items()
+                     if r.get("status") == "confirmed"}
     for host, links in sorted(cands.cdn_shapes.items()):
         METRICS["cdn_shape_hosts"] += 1
         refs = []
@@ -591,7 +699,17 @@ def detect_new_cdns(cfg: dict, cands: Candidates, state: dict) -> None:
         samples = sorted(refs, key=lambda x: x[3].owner.lower() not in overlap)[:3]
         rec["last_checked"] = date_str(TODAY)
         rec["status"] = "suspect"
-        for url, *_ in samples:
+        for url, st, _src, _r in samples:
+            # Strongest proof: the host serves byte-identical files to the
+            # reference CDN for the same path, i.e. it is a mirror.
+            path = urllib.parse.urlsplit(url).path.lstrip("/")
+            ref = _mirror_reference(st, path)
+            if ref and _same_content(url, ref):
+                METRICS["cdn_detect_checks"] += 1
+                rec.update(status="confirmed", confirmed=date_str(TODAY),
+                           evidence=f"{url[:160]} is byte-identical to {ref[:120]}")
+                break
+        for url, *_ in (samples if rec["status"] != "confirmed" else []):
             METRICS["cdn_detect_checks"] += 1
             res = classify(url, timeout=15, ua=UA, cdn=True)
             if res.verdict in ("loader", "game", "proxy"):
@@ -636,6 +754,81 @@ def open_issue_for_cdn(host: str, rec: dict) -> None:
             METRICS["cdn_issues_opened"] += 1
     except Exception as e:  # noqa: BLE001
         log(f"[cdn] could not open issue for {host}: {e}")
+
+
+# ------------------------------------------------------ shadowing & engines
+
+SHADOW_TARGETS = ("pages.dev", "vercel.app", "github.io", "netlify.app", "b-cdn.net",
+                  "azurewebsites.net", "cloudfront.net", "herokuapp.com", "onrender.com",
+                  "fly.dev", "amazonaws.com", "elasticbeanstalk.com", "firebaseapp.com",
+                  "web.app", "workers.dev", "surge.sh", "glitch.me", "replit.app")
+ENGINE_HINT = re.compile(r"ubg|unbl|proxy|game|arcade|gn-?math|selenite|eagler|scram|\buv\b|"
+                         r"achroma|nebula|interstellar|doge|shadow|void|lunar|astro", re.I)
+
+
+def _resolve(h: str):
+    try:
+        canon, _aliases, ips = socket.gethostbyname_ex(h)
+        return canon.lower().rstrip("."), set(ips)
+    except Exception:  # noqa: BLE001
+        return None, set()
+
+
+def shadow_signals(host: str, platforms: set[str]) -> list[str]:
+    """Signs a subdomain of an unrelated domain was hijacked or shadowed:
+    a CNAME onto free hosting, the CNAME-name trick used by shadowing kits
+    (target label = hostname with dots as hyphens), or the subdomain pointing
+    at different servers than its parent domain."""
+    if platform_apex(host, platforms) or is_registrable(host):
+        return []
+    canon, ips = _resolve(host)
+    sig = []
+    if canon and canon != host:
+        if any(canon == t or canon.endswith("." + t) for t in SHADOW_TARGETS):
+            sig.append(f"cname->{canon}")
+        if canon.split(".")[0] == host.replace(".", "-"):
+            sig.append("cname-name-is-hostname")
+    apex = registrable(host)
+    if ips and apex != host and not host.startswith("www."):
+        _c, apex_ips = _resolve(apex)
+        if apex_ips and not (ips & apex_ips):
+            sig.append("different-servers-than-parent")
+    return sig
+
+
+def learn_from_scripts(page: str, scripts: list, state: dict, owner_allow: set[str]) -> None:
+    """From a confirmed game/proxy page's script URLs: (1) GitHub owners whose
+    code it loads from CDN mirrors (its engine), and (2) every CDN-shaped
+    script URL, re-queued next run so unknown mirrors get detected."""
+    harvested = state.setdefault("harvested_links", [])
+    by_owner: dict[str, set] = {}
+    for u in scripts:
+        host = (urllib.parse.urlsplit(u).hostname or "").lower()
+        ref = cdn.parse(u)
+        if ref and ref.kind == "gh":
+            by_owner.setdefault(ref.owner, set()).add(host)
+        elif host not in cdn.CDN_HOSTS and cdn.infer_style(urllib.parse.urlsplit(u).path):
+            if len(harvested) < 3000 and [u, f"page-script:{page}"] not in harvested:
+                harvested.append([u, f"page-script:{page}"])
+    eng = state.setdefault("engine_owners", {})
+    for owner, hosts in by_owner.items():
+        if owner.lower() in owner_allow:
+            continue
+        r = eng.setdefault(owner.lower(), {"name": owner, "sites": [], "max_mirrors": 0,
+                                           "first_seen": date_str(TODAY), "status": "watch"})
+        if page not in r["sites"]:
+            r["sites"] = (r["sites"] + [page])[-20:]
+        r["max_mirrors"] = max(r["max_mirrors"], len(hosts))
+        r["last_seen"] = date_str(TODAY)
+        # Legit sites never load one library through a chain of 3+ mirrors;
+        # a fallback chain is how bypass sites survive CDN blocks.
+        if r["status"] != "confirmed" and (
+                r["max_mirrors"] >= 3 or (len(r["sites"]) >= 2 and ENGINE_HINT.search(owner))):
+            r["status"] = "confirmed"
+            r["evidence"] = (f"loaded via {r['max_mirrors']} CDN mirrors"
+                             if r["max_mirrors"] >= 3 else f"loaded by {len(r['sites'])} confirmed sites")
+            METRICS["engine_owners_confirmed"] += 1
+            log(f"[engine] {owner}: {r['evidence']} (first on {page})")
 
 
 # ------------------------------------------------------------ verification
@@ -700,6 +893,7 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
         if (pr and pr[1] > top and res.verdict in ("game", "proxy", "loader")
                 and urllib.parse.urlsplit(e["check_url"]).path not in ("", "/")):
             root = classify(f"https://{k}/", timeout=timeout, ua=UA)
+        res.shadow = shadow_signals(k, platforms) if (e["kind"] == "host" and res.verdict != "dead") else []
         return k, res, root
 
     def hold(e, reason, metric):
@@ -725,6 +919,20 @@ def verify(cands: Candidates, state: dict, settings: dict, do_verify: bool) -> N
             e["attempts"] = e.get("attempts", 0) + 1
             e["evidence"] = res.evidence[:200]
             METRICS[f"verify_{e['kind']}_{res.verdict}"] += 1
+            if getattr(res, "shadow", None):
+                e["shadow"] = res.shadow
+                METRICS["shadow_signals_found"] += 1
+            if res.verdict in ("game", "proxy", "loader") and getattr(res, "scripts", None):
+                learn_from_scripts(k, res.scripts, state, cands.cdn_owner_allow)
+            # Alive, no fingerprint, but a student list / scan index points at
+            # it and DNS looks shadowed: a person should look (masked proxies
+            # often show nothing until a device is authorized).
+            strong = [x for x in (getattr(res, "shadow", None) or []) if x.startswith("cname")]
+            if (res.verdict == "alive" and e["kind"] == "host" and strong
+                    and e["source"].startswith(("aggregator:", "urlscan:")) and e["status"] != "confirmed"):
+                hold(e, "possible domain shadowing (" + ", ".join(strong) + "), no fingerprint yet",
+                     "discovery_held_shadowing")
+                continue
             # A Google Sites / Apps Script page listed by a student link list is
             # a bypass by definition; their content rarely fingerprints.
             if (res.verdict == "alive" and e["kind"] == "url"
@@ -792,6 +1000,14 @@ _2LD = {"co.uk", "org.uk", "ac.uk", "com.au", "net.au", "org.au", "co.nz", "com.
         "eu.com", "com.de", "co.com", "in.net", "br.com", "cn.com", "jp.net"}
 
 
+def registrable(host: str) -> str:
+    """Approximate registrable domain (eTLD+1) without a public-suffix list."""
+    labels = host.split(".")
+    if len(labels) >= 3 and ".".join(labels[-2:]) in _2LD:
+        return ".".join(labels[-3:])
+    return ".".join(labels[-2:])
+
+
 def is_registrable(host: str) -> bool:
     labels = host.split(".")
     if len(labels) == 2:
@@ -820,7 +1036,8 @@ def build_domain_lines(hosts: set[str], allow: Matcher, platforms: set[str],
     return sorted(lines, key=lambda x: (x.lstrip("*.").split(".")[::-1], x))
 
 
-def build_cdn_lines(entries: dict, settings: dict) -> tuple[set[str], dict]:
+def build_cdn_lines(entries: dict, settings: dict, state: dict | None = None,
+                    owner_allow: set[str] | None = None) -> tuple[set[str], dict]:
     """Owner-level entries once an owner has >= owner_promote_min confirmed
     loader repos; repo-level entries otherwise; npm package-level entries."""
     style = settings.get("url_entry_style", "prefix")
@@ -847,8 +1064,25 @@ def build_cdn_lines(entries: dict, settings: dict) -> tuple[set[str], dict]:
                 repo_level += 1
     for pkg in npm:
         lines.update(cdn.entry_lines("npm", pkg, style=style))
+    # Owner-level blocks from seeds/cdn-owners-block.txt ("gh <owner>" or
+    # "npm <package>") and from engine owners learned from confirmed pages.
+    extra: set[tuple[str, str]] = set()
+    for line in read_list(ROOT / "seeds" / "cdn-owners-block.txt"):
+        parts = line.split()
+        if len(parts) == 2 and parts[0] in ("gh", "npm"):
+            extra.add((parts[0], parts[1]))
+    engines = 0
+    for o, r in (state or {}).get("engine_owners", {}).items():
+        if r.get("status") == "confirmed" and o not in (owner_allow or set()):
+            extra.add(("gh", r["name"]))
+            engines += 1
+    for kind, name in extra:
+        if name.lower() in (owner_allow or set()):
+            continue
+        lines.update(cdn.entry_lines(kind, name, style=style))
     return lines, {"gh_owners_owner_level": owner_level, "gh_repos_repo_level": repo_level,
-                   "npm_packages": len(npm), "url_lines": len(lines)}
+                   "npm_packages": len(npm), "engine_owners": engines,
+                   "seeded_owner_blocks": len(extra) - engines, "url_lines": len(lines)}
 
 
 def write_feed(path: Path, lines: list[str], max_lines: int) -> list[str]:
@@ -910,9 +1144,18 @@ def main() -> int:
 
     cands = Candidates(allow, platforms, url_platforms, cdn_owner_allow)
     cands.cdn_ignore = cdn_ignore
+    # New signatures: re-check discovered sites the collector had given up on.
+    if state.get("fp_version") != FINGERPRINT_VERSION:
+        for e in state.get("entries", {}).values():
+            if e["status"] in ("pending", "rejected") and not e.get("hold"):
+                e.update(status="new", attempts=0)
+                METRICS["requeued_for_new_fingerprints"] += 1
+        state["fp_version"] = FINGERPRINT_VERSION
     if not args.no_discovery:
+        requeue_harvested(cands, state)
         discover_github(cfg, cands, state)
         discover_aggregators(cfg, cands)
+        discover_urlscan(cfg, cands, state)
         if not args.no_ct:
             discover_ct(cfg, cands)
         discover_cdn(cfg, cands, state)
@@ -962,7 +1205,7 @@ def main() -> int:
     pri_lines = build_domain_lines(confirmed_seed | priority_lists | disc_hosts, allow, platforms, wild)
 
     url_lines = set(disc_urls)
-    cdn_lines, cdn_stats = build_cdn_lines(entries, settings)
+    cdn_lines, cdn_stats = build_cdn_lines(entries, settings, state, cdn_owner_allow)
     url_lines |= cdn_lines
     for line in read_list(ROOT / "seeds" / "confirmed-urls.txt"):
         url_lines.add(re.sub(r"^https?://", "", line).rstrip("/"))
@@ -1019,6 +1262,27 @@ def main() -> int:
                   r.get("links", 0), r.get("owners", 0), r.get("known_owner_overlap", 0),
                   r.get("issue", ""), r.get("evidence", r.get("sample", ""))]))
     (rev / "new-cdns.txt").write_text("\n".join(nl) + "\n")
+    # Domain shadowing / subdomain takeover view.
+    sl = ["# Domain shadowing and subdomain takeover signals (informational).",
+          "# Blocked or held sites on subdomains of unrelated domains whose DNS looks",
+          "# hijacked, and parent domains with several such subdomains (bursts).",
+          "# Consider notifying the domain's owner; held ones are in review/held.txt.",
+          "# host\tstatus\tsignals\tsource"]
+    burst: dict[str, set] = {}
+    for k, e in sorted(entries.items()):
+        if e["kind"] != "host" or e["status"] not in ("confirmed", "pending"):
+            continue
+        if e.get("shadow"):
+            sl.append("\t".join([k, e["status"], ",".join(e["shadow"]), e["source"][:60]]))
+        if (not platform_apex(k, platforms) and not is_registrable(k)
+                and days_since(e.get("first_seen")) <= 14):
+            burst.setdefault(registrable(k), set()).add(k)
+    sl += ["", "# Parent domains with 3+ discovered subdomains in the last 14 days:",
+           "# parent\tsubdomains\texamples"]
+    for apex, subs in sorted(burst.items(), key=lambda kv: -len(kv[1])):
+        if len(subs) >= 3 and any(entries[x]["status"] == "confirmed" for x in subs):
+            sl.append("\t".join([apex, str(len(subs)), " ".join(sorted(subs)[:5])]))
+    (rev / "shadowing.txt").write_text("\n".join(sl) + "\n")
 
     stats = {
         "domains_txt_entries": len(all_lines),
@@ -1078,12 +1342,21 @@ def write_run_report(stats: dict, entries: dict) -> None:
         ("  dropped: CDN file that isn't a page (js/css/img)", g("cdn_links_not_entry_file")),
         ("  dropped: CDN owner on allowlist", g("cdn_links_allowlisted_owner")),
         ("  dropped: CDN file in a test/fixture folder", g("cdn_links_test_fixture")),
+        ("urlscan.io searches (proxy framework files, page titles)", g("urlscan_queries")),
+        ("  urlscan.io results examined", g("urlscan_results")),
+        ("  skipped as wildcard-DNS noise", g("urlscan_skipped_noise")),
+        ("Repositories listed from watched GitHub orgs", g("github_org_repos_listed")),
+        ("Script URLs from confirmed pages re-queued for mirror detection", g("harvested_links_requeued")),
+        ("Game engines (GitHub owners) newly confirmed from page scripts", g("engine_owners_confirmed")),
+        ("Sites with domain-shadowing DNS signals", g("shadow_signals_found")),
+        ("Sites re-queued after a fingerprint upgrade", g("requeued_for_new_fingerprints")),
         ("Links with a CDN path shape on unknown hosts", g("cdn_shape_links")),
         ("Unknown hosts tested for being a new CDN/mirror", g("cdn_shape_hosts")),
         ("  live checks on those hosts", g("cdn_detect_checks")),
         ("  new CDNs/mirrors confirmed this run", g("cdn_detect_confirmed")),
         ("Discovered sites held for review: top-ranked domain", g("discovery_held_popular")),
         ("Discovered sites held for review: established site, only a sub-page is a game", g("discovery_held_homepage")),
+        ("Discovered sites held for review: possible domain shadowing", g("discovery_held_shadowing")),
         ("Live checks performed this run", verified),
     ]
     lines = ["# Latest collector run", "",
@@ -1103,6 +1376,7 @@ def write_run_report(stats: dict, entries: dict) -> None:
               f"| CDN owners blocked at owner level | {stats['cdn']['gh_owners_owner_level']:,} |",
               f"| CDN repos blocked at repo level | {stats['cdn']['gh_repos_repo_level']:,} |",
               f"| npm packages blocked | {stats['cdn']['npm_packages']:,} |",
+              f"| Game engines blocked at owner level (learned + seeded) | {stats['cdn'].get('engine_owners', 0) + stats['cdn'].get('seeded_owner_blocks', 0):,} |",
               f"| CDN mirror hosts covered | {len(cdn.MIRRORS):,} |",
               f"| Waiting for a human decision (`review/held.txt`) | {stats.get('review_held', 0):,} |", "",
               "## Tracked discoveries", "", "| Entry type | Status | Count |", "|---|---|---:|"]

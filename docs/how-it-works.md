@@ -81,7 +81,23 @@ Students move to whichever CDN hostname isn't blocked yet: alternate jsDelivr ho
 | Safety | A shaped host is **never** blocked as a whole domain, whether or not it's confirmed. Getting it wrong can only make blocking narrower. |
 | Notification | Confirmed hosts are listed in `review/new-cdns.txt`, with *suspect* and *watch* hosts below them. A **GitHub issue** labelled `new-cdn` is opened once per host, with a to-do list: add it to the Chrome URL blocklist, and make it permanent in `seeds/cdn-mirrors.txt`. |
 
-Counted in latest-run.md under *GitHub repository searches* through *new CDNs/mirrors confirmed this run*.
+A host is also confirmed as a mirror when it serves a **byte-identical file** to the reference CDN for the same path. That works even for plain script files, such as a game engine, that carry no loader markup.
+
+### 2g. urlscan.io search
+
+urlscan.io indexes millions of web pages that people and security tools submit for scanning. Every 6 hours the collector searches the last 3 days of scans for pages that load the web-proxy frameworks' own files (`uv.bundle.js`, `scramjet.all.js`, `baremux/worker.js`, `epoxy/index.mjs`) or are titled "unblocked games".
+- **Noise filtering:** wildcard-IP and throwaway dynamic-DNS services (`sslip.io`, `nip.io` and others), machine-generated names (repeated labels, very deep names), and phishing kits built on the same proxy code (names containing *billing*, *signin*, *netflix* and the like) are skipped.
+- **Per-domain cap:** at most 3 hits per domain per run.
+- **Key:** none is needed. An optional `URLSCAN_API_KEY` repository secret raises the rate limits.
+
+### 2h. GitHub organisations, and learning from blocked pages
+
+- The repositories of the web-proxy framework authors (MercuryWorkshop and Titanium Network) are listed each run, and their homepages harvested like any other repository.
+- Every page confirmed as a game or proxy site has its **script URLs** recorded:
+  - **Game engines.** A GitHub owner whose code the page loads from CDN mirrors becomes a **confirmed engine** when the page loads it through **3 or more mirrors** (a fallback chain, which legitimate sites never use), or when 2 or more confirmed sites load it and its name looks game or bypass related. Engines are blocked at owner level on every mirror, so the site breaks on whatever domain it moves to next.
+  - **Unknown mirrors.** Script URLs on unknown hosts with a CDN path shape are re-queued on the next run, where step 2f tests them as possible mirrors.
+
+Counted in latest-run.md under *GitHub repository searches* through *Sites re-queued after a fingerprint upgrade*.
 
 ---
 
@@ -117,7 +133,7 @@ Each candidate is fetched the way a browser would, and the content is fingerprin
 | Verdict | What it looks for |
 |---|---|
 | **game** | Any one *strong* signal: "unblocked games", GameDistribution, Unity WebGL loaders, Ruffle (Flash), EmulatorJS, Eaglercraft, gn-math, `games.json` game catalogs, "games for school" and others (20 patterns). **Or** three or more *weak* signals, such as well-known titles (Retro Bowl, Slope, Cookie Clicker, Geometry Dash, 1v1.lol, Bitlife and others; 42 patterns). **Or** a game-like page title plus one specific title. |
-| **proxy** | Web-proxy frameworks: Ultraviolet (`__uv$config`, `uv.bundle.js`), Scramjet, Wisp, bare-server, bare-mux, Epoxy and libcurl transports, Rammerhead, Interstellar, Holy Unblocker (15 patterns). |
+| **proxy** | Web-proxy frameworks: Ultraviolet (`__uv$config`, `uv.bundle.js`, `/uv/service/`, `Ultraviolet.codec`), Scramjet (`/scram/scramjet.all.js`, `$scramjetLoadController`, `ScramjetServiceWorker`), Wisp, bare-server, bare-mux (`BareMux.BareMuxConnection`), Epoxy and libcurl transports, the reference apps' DOM ids (`uv-form`, `sj-address`…), Rammerhead, Interstellar, Holy Unblocker, and **MasqrProject** (device-locked access that hides a proxy until a device is authorized). 30 patterns. |
 | **loader** (SVG, anywhere) | An SVG that embeds HTML (`<foreignObject>` with an XHTML body), contains something active (`<iframe>`, `<script>`, `srcdoc`, `atob()`, `document.write`, `window.open`, `location.*`, dynamic `import()`), **and** either covers the whole screen or actively navigates or decodes. A script inside an SVG that redirects or writes the page also counts. Real icons and logos never do this. |
 | **loader** (HTML, CDN files only) | A full-screen `<iframe>`, `document.write(atob(...))`, a large `srcdoc` payload, an `about:blank` pop-up cloak, or a **tab cloak**: a page whose title copies a school tool (Google Classroom, Docs, Clever, Canvas, Schoology, IXL, GoGuardian and 15 others) but is served from a CDN, where no real one lives. |
 | **listed** | A Google Sites or Apps Script page that appears on a student link list. These pages render their content inside Google's sandbox, so they rarely fingerprint, but being on a bypass list is enough evidence. |
@@ -131,6 +147,9 @@ Each candidate is fetched the way a browser would, and the content is fingerprin
 | Script follow-through | Pages that are only a thin loading shell get their first 3 same-site scripts fetched and fingerprinted too. |
 | Popularity guard (discovered sites only) | Uses the Tranco research ranking of the top 100,000 domains, refreshed weekly. A discovered site in the **top 10,000** (for example `nytimes.com`) is never blocked automatically. It goes to `review/held.txt` for a person to decide. Curated lists aren't affected. |
 | Homepage guard (established sites) | For a ranked but less popular site (10,000–100,000), a game page deep inside it (`site.com/games/x`) only blocks the whole domain if the **homepage** is a game or proxy site too. Unranked, obscure domains skip this on purpose, because disguised bypass sites hide their games behind a decoy homepage. Free-hosting subdomains (`user.github.io`) count as the author's own site. |
+| Decoy swap | Some sites show a harmless decoy, such as a fake school-district homepage, then fetch another page from the same site and write it over the decoy (`fetch("/app.html")` … `document.write`). The collector follows the swap and fingerprints the page that replaces the decoy. |
+| Domain-shadowing signals | For subdomains of unrelated domains, DNS is checked for: a CNAME onto free hosting (`pages.dev`, `vercel.app`, `github.io`, `b-cdn.net` and others); the shadowing-kit trick of a CNAME named after the hostname with dots as hyphens; and the subdomain pointing at different servers than its parent. A site from a student list or urlscan with a shadowing CNAME but no fingerprint (often a Masqr-locked proxy) is **held for review** rather than ignored. All signals, plus parent domains with bursts of 3 or more new subdomains, are listed in `review/shadowing.txt`. |
+| Fingerprint upgrades | When the signatures change (`FINGERPRINT_VERSION`), sites the collector had given up on are re-checked once with the new signatures. |
 | Redirect capture | When a confirmed site redirects to a different domain (often a custom domain behind a github.io mirror), the landing domain is added too. |
 | Cloudflare tolerance | 401, 403, 429 and 503 responses count as *alive*, not *dead*, because they're usually bot challenges. |
 | Re-verification | Confirmed entries are re-checked every 7 days. One that stops matching stays in the feed but is flagged for review. |
@@ -192,6 +211,8 @@ Each school day at 7:13 AM Central, a scheduled Claude review session goes throu
 | `seeds/cdn-mirrors.txt` | Extra CDN mirror hosts and their URL style. Make an auto-detected mirror permanent here, or add `<host> ignore` to reject one. |
 | `seeds/platforms.txt` | Hosting platforms that are never blocked as a whole. |
 | `seeds/url-platforms.txt` | Hosts that are blocked by path, with a pattern for the part to keep. |
+| `seeds/cdn-owners-block.txt` | GitHub owners or npm packages to block at owner level on every mirror, for example a game engine (`gh achroma-ubg`). Engines found automatically are added on their own. |
+| `review/shadowing.txt` | Domain-shadowing signals and subdomain bursts (informational, useful for notifying a hijacked domain's owner). |
 | `review/held.txt` | **The only list that needs a person.** Sites held by the popularity or homepage guard, plus blocked sites whose game fingerprint disappeared. For each one: block (`seeds/confirmed.txt`), dismiss (`seeds/review-dismissed.txt`) or allow (`seeds/allow.txt`). |
 | `seeds/review-dismissed.txt` | Held sites a reviewer decided not to block. The collector stops re-checking them. |
 | `review/pending.txt` (on the `state` branch) | Automatic retry queue: alive but no fingerprint yet, or unreachable. Re-checked daily, and dropped after 3 failed checks. No action needed. |

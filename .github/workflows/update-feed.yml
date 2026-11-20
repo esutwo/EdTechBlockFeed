@@ -53,6 +53,7 @@ jobs:
       - name: Run collector
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          URLSCAN_API_KEY: ${{ secrets.URLSCAN_API_KEY }}   # optional
         run: python3 collector/collect.py
 
       - name: Safety check (protected domains must not be in the feed)

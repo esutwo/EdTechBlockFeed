@@ -1,0 +1,6 @@
+# GitHub owners ("gh <owner>") and npm packages ("npm <package>") to block
+# at owner level on every CDN mirror, in addition to what the collector finds
+# itself. Use for game/proxy *engines*: code every mirror of a bypass site
+# loads from a CDN, so blocking it breaks the site on any domain it moves to.
+# The collector also learns engine owners automatically (state: engine_owners).
+gh achroma-ubg     # 2026-11-20: "Achroma UBG" engine; loaded via a 10-mirror fallback chain by api.tuplantaforma.com

@@ -8,3 +8,5 @@ unpkg.com/edurocks
 esm.sh/edurocks
 s4.zstatic.net/npm/edurocks
 api.tuplantaforma.com
+# 2026-11-20: from an AnySecura "games not blocked by school" article; verified live
+sites.google.com/site/unblockedgames6x
