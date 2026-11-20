@@ -452,6 +452,17 @@ def discover_ct(cfg: dict, cands: Candidates) -> None:
     if not ct.get("enabled"):
         return
     cutoff = TODAY - dt.timedelta(days=45)
+    # Fail fast: crt.sh is often unreachable from CI runners; one short probe
+    # instead of minutes of retries per keyword.
+    try:
+        http_get("https://crt.sh/?q=example.com&output=json&exclude=expired",
+                 timeout=ct.get("probe_timeout", 20), max_bytes=200_000)
+    except urllib.error.HTTPError:
+        pass  # reachable, just unhappy with the probe query
+    except Exception as e:  # noqa: BLE001
+        METRICS["ct_unreachable"] += 1
+        log(f"[ct] crt.sh unreachable ({str(e)[:60]}); skipped this run")
+        return
 
     def one(kw):
         url = ("https://crt.sh/?" + urllib.parse.urlencode(
@@ -462,6 +473,8 @@ def discover_ct(cfg: dict, cands: Candidates) -> None:
                 return kw, json.loads(data or b"[]")
             except Exception as e:  # noqa: BLE001
                 err = e
+                if not isinstance(e, urllib.error.HTTPError):
+                    break  # network-level failure: retrying won't help this run
                 time.sleep(5 * (attempt + 1))
         log(f"[ct] {kw}: {err}")
         return kw, []
@@ -1430,6 +1443,7 @@ def write_run_report(stats: dict, entries: dict) -> None:
         ("Links harvested from link lists", g("aggregator_links_harvested")),
         ("Certificate Transparency queries", g("ct_queries")),
         ("Certificates examined", g("ct_certificates_examined")),
+        ("  certificate-log source unreachable this run (skipped)", g("ct_unreachable")),
         ("CDN owners expanded (repo listings)", g("cdn_owners_expanded")),
         ("CDN owner repositories listed", g("cdn_owner_repos_listed")),
         ("CDN entry files found in owner repos", g("cdn_owner_entry_files_found")),
