@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-20 21:53 UTC  
+Run: 2026-11-20 22:46 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -11,21 +11,21 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | List entries parsed and normalized | 87,001 |
 | GitHub repository searches | 28 |
 | GitHub repositories examined | 1,555 |
-| README files scanned for links | 74 |
+| README files scanned for links | 19 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,639 |
 | Certificate Transparency queries | 9 |
-| Certificates examined | 6 |
+| Certificates examined | 8 |
 | CDN owners expanded (repo listings) | 2 |
 | CDN owner repositories listed | 0 |
 | CDN entry files found in owner repos | 0 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 0 |
-| Links examined by the filters | 30,196 |
-|   dropped: allowlist | 6,352 |
-|   dropped: known non-game service | 291 |
-|   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 13,916 |
+| Links examined by the filters | 21,999 |
+|   dropped: allowlist | 5,987 |
+|   dropped: known non-game service | 205 |
+|   dropped: bare hosting-platform domain | 2 |
+|   dropped: README link with no game/bypass hint | 7,664 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 0 |
@@ -35,15 +35,12 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 |   new CDNs/mirrors confirmed this run | 0 |
 | Discovered sites held for review: top-ranked domain | 0 |
 | Discovered sites held for review: established site, only a sub-page is a game | 0 |
-| Live checks performed this run | 18 |
+| Live checks performed this run | 0 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| host | alive | 10 |
-| host | dead | 3 |
-| host | game | 5 |
 
 ## Feed output
 
