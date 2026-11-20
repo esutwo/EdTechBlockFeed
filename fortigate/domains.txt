@@ -250,6 +250,7 @@ longstoryshort.app
 cardsgames.lovable.app
 classicludo.lovable.app
 dailyplayme.lovable.app
+flamehubgames.lovable.app
 level36arcade.lovable.app
 *.mahjong-solitaire.app
 mahjong-solitaire.app
@@ -1066,6 +1067,7 @@ burnoutdrift.web.app
 bus-simulator.web.app
 celltosingularity.web.app
 classroom6x.web.app
+claybound-56949.web.app
 clever-error-logging-in.web.app
 clickerheroes.web.app
 cool-math-games-unblocked.web.app
@@ -5763,6 +5765,7 @@ affordancestudio.com
 *.affutd.com
 affutd.com
 jeuvideo.afjv.com
+edu.rawr.africa.com
 *.africanbettingclan.com
 africanbettingclan.com
 *.afro-ninja.com
@@ -22104,7 +22107,6 @@ gismart.com
 gitclan.com
 *.githubiogames.com
 githubiogames.com
-cdn.githubraw.com
 *.giveawayoftheday.com
 giveawayoftheday.com
 *.giydiroyun.com
@@ -60670,6 +60672,7 @@ alexanderdavies1st.github.io
 alexarchx.github.io
 alexdev-90.github.io
 alexisntcool123.github.io
+alexthegoat67-alt.github.io
 alfredorobindabank-hub.github.io
 algraculture.github.io
 ali-2123.github.io
@@ -62499,8 +62502,10 @@ nikageospatial.github.io
 nikeuser47.github.io
 nikitaboyarkin.github.io
 niklas-h1y.github.io
+nintendoboi2.github.io
 nintendoboi22.github.io
 nintendoboi222.github.io
+nintendoboi2222.github.io
 nirlivne.github.io
 nirmal91.github.io
 nishant-bn.github.io
@@ -67952,6 +67957,8 @@ boxingrandom.net
 drasaonline-481.ah.bpcdn.net
 *.braincandy.net
 braincandy.net
+*.brammersathletic.net
+brammersathletic.net
 *.bridgefiles.net
 bridgefiles.net
 *.bridgelady.net

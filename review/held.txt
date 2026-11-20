@@ -1,0 +1,10 @@
+# NEEDS A HUMAN DECISION. Sites the collector found and fingerprinted as
+# games/proxies, but did not block automatically (popular or established
+# site), plus blocked sites whose game fingerprint has disappeared.
+# For each entry, do one of:
+#   block    -> add the entry (hostname) to seeds/confirmed.txt
+#   dismiss  -> add the entry, exactly as shown, to seeds/review-dismissed.txt
+#               (not a game site, or already covered by a curated list)
+#   allow    -> add it to seeds/allow.txt (a service students need; this also
+#               keeps curated lists from ever blocking it)
+# entry	held_since	reason	check_url	evidence

@@ -172,6 +172,7 @@ littlealchemy.app
 cardsgames.lovable.app
 classicludo.lovable.app
 dailyplayme.lovable.app
+flamehubgames.lovable.app
 level36arcade.lovable.app
 *.mahjong-solitaire.app
 mahjong-solitaire.app
@@ -961,6 +962,7 @@ burnoutdrift.web.app
 bus-simulator.web.app
 celltosingularity.web.app
 classroom6x.web.app
+claybound-56949.web.app
 clever-error-logging-in.web.app
 clickerheroes.web.app
 cool-math-games-unblocked.web.app
@@ -2159,6 +2161,7 @@ adogames.com
 adoluxgames.com
 *.adventuregamehotspot.com
 adventuregamehotspot.com
+edu.rawr.africa.com
 *.agame.com
 agame.com
 *.agamecdn.com
@@ -5268,7 +5271,6 @@ girlsgogamescdn.com
 girlsplay.com
 *.githubiogames.com
 githubiogames.com
-cdn.githubraw.com
 *.giveawayoftheday.com
 giveawayoftheday.com
 xoeand.glamourfreaks.com
@@ -14627,6 +14629,7 @@ alexanderdavies1st.github.io
 alexarchx.github.io
 alexdev-90.github.io
 alexisntcool123.github.io
+alexthegoat67-alt.github.io
 alfredorobindabank-hub.github.io
 algraculture.github.io
 ali-2123.github.io
@@ -16449,8 +16452,10 @@ nikageospatial.github.io
 nikeuser47.github.io
 nikitaboyarkin.github.io
 niklas-h1y.github.io
+nintendoboi2.github.io
 nintendoboi22.github.io
 nintendoboi222.github.io
+nintendoboi2222.github.io
 nirlivne.github.io
 nirmal91.github.io
 nishant-bn.github.io
@@ -19954,6 +19959,8 @@ full.boxathome.net
 boxing-random.net
 *.boxingrandom.net
 boxingrandom.net
+*.brammersathletic.net
+brammersathletic.net
 *.browser-games.net
 browser-games.net
 *.browsergamer.net

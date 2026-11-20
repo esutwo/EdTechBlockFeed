@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-20 10:06 UTC  
+Run: 2026-11-20 15:45 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -8,61 +8,56 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Check | Count |
 |---|---:|
 | Curated lists downloaded | 14 |
-| List entries parsed and normalized | 86,972 |
+| List entries parsed and normalized | 86,975 |
 | GitHub repository searches | 28 |
-| GitHub repositories examined | 1,544 |
-| README files scanned for links | 91 |
+| GitHub repositories examined | 1,548 |
+| README files scanned for links | 68 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,622 |
 | Certificate Transparency queries | 9 |
-| Certificates examined | 8 |
-| CDN owners expanded (repo listings) | 11 |
-| CDN owner repositories listed | 162 |
-| CDN entry files found in owner repos | 219 |
+| Certificates examined | 6 |
+| CDN owners expanded (repo listings) | 2 |
+| CDN owner repositories listed | 0 |
+| CDN entry files found in owner repos | 0 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 0 |
-| Links examined by the filters | 49,602 |
-|   dropped: allowlist | 22,765 |
-|   dropped: known non-game service | 811 |
-|   dropped: bare hosting-platform domain | 2 |
-|   dropped: README link with no game/bypass hint | 15,571 |
-|   dropped: CDN file that isn't a page (js/css/img) | 2 |
+| Links examined by the filters | 30,794 |
+|   dropped: allowlist | 8,784 |
+|   dropped: known non-game service | 239 |
+|   dropped: bare hosting-platform domain | 1 |
+|   dropped: README link with no game/bypass hint | 12,631 |
+|   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 0 |
-| Links with a CDN path shape on unknown hosts | 10 |
-| Unknown hosts tested for being a new CDN/mirror | 6 |
+| Links with a CDN path shape on unknown hosts | 1 |
+| Unknown hosts tested for being a new CDN/mirror | 1 |
 |   live checks on those hosts | 0 |
 |   new CDNs/mirrors confirmed this run | 0 |
-| Discovered sites held for review: top-ranked domain | 3 |
+| Discovered sites held for review: top-ranked domain | 0 |
 | Discovered sites held for review: established site, only a sub-page is a game | 0 |
-| Live checks performed this run | 1,631 |
+| Live checks performed this run | 1,500 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| cdn | alive | 101 |
-| cdn | dead | 4 |
-| cdn | game | 8 |
-| cdn | loader | 10 |
-| cdn | proxy | 8 |
-| host | alive | 378 |
-| host | dead | 1,112 |
-| host | game | 5 |
-| host | loader | 4 |
-| url | loader | 1 |
+| host | alive | 959 |
+| host | dead | 538 |
+| host | game | 2 |
+| host | loader | 1 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 84,637 |
-| `domains-priority.txt` entries | 24,518 |
-| `urls.txt` entries | 2,781 |
+| `domains.txt` entries | 84,644 |
+| `domains-priority.txt` entries | 24,525 |
+| `urls.txt` entries | 3,130 |
 | CDN owners blocked at owner level | 34 |
 | CDN repos blocked at repo level | 15 |
 | npm packages blocked | 6 |
-| CDN mirror hosts covered | 16 |
+| CDN mirror hosts covered | 19 |
+| Waiting for a human decision (`review/held.txt`) | 0 |
 
 ## Tracked discoveries
 
@@ -70,8 +65,9 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 |---|---|---:|
 | cdn | confirmed | 754 |
 | cdn | pending | 949 |
-| host | confirmed | 831 |
-| host | pending | 6,585 |
+| host | confirmed | 834 |
+| host | dismissed | 26 |
+| host | pending | 6,588 |
 | url | confirmed | 56 |
 | url | pending | 7 |
 
@@ -87,7 +83,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | dkorunic-browser-games | 1,000 |
 | game-proxy-gist | 393 |
 | gjohnpaull-games | 35,636 |
-| josuha-games | 12,799 |
+| josuha-games | 12,802 |
 | marcuccione-browser-games | 91 |
 | mmcohen-online-games | 65 |
 | nuneze54-games | 2,552 |
