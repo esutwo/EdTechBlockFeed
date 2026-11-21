@@ -503,6 +503,7 @@ cool-orpin.vercel.app
 copyofmasite.vercel.app
 corn-games.vercel.app
 country-defense-bheng.vercel.app
+cozybakery.vercel.app
 cozygames-ten.vercel.app
 crash-casino-games-18.vercel.app
 crazycattleunblocked.vercel.app
@@ -647,6 +648,7 @@ genarcy.vercel.app
 geometry-dash-unblocked.vercel.app
 geometry-dash-unblocked-nine.vercel.app
 ghoogle.vercel.app
+giant-leap.vercel.app
 glimpse-game.vercel.app
 glitchnest.vercel.app
 googleplex.vercel.app
@@ -1333,6 +1335,7 @@ purogames.com.br
 rggames.com.br
 goodtung.roje.com.br
 schools.roje.com.br
+well.roje.com.br
 *.sojogar.com.br
 sojogar.com.br
 *.the-west.com.br
@@ -1623,7 +1626,9 @@ came.confiarriendo.cl
 acid.contactme.cl
 bene.contactme.cl
 school-tt.contratoslab.cl
+ttmath.contratoslab.cl
 thg-ms.dila.cl
+tung-school.dila.cl
 bums.edificare.cl
 bell.espinosa.cl
 bias.gcpservicios.cl
@@ -1631,6 +1636,7 @@ deend.gcpservicios.cl
 good.gcpservicios.cl
 makes.gcpservicios.cl
 quotes.gcpservicios.cl
+wee.gcpservicios.cl
 not-phishing-for-the-last-time.inoa.cl
 ajar.jpleventos.cl
 *.juegosonline.cl
@@ -1826,6 +1832,7 @@ juegospoki.co
 15-204-116-29.my.local-ip.co
 api.15-204-116-29.my.local-ip.co
 c00lkiddtech.15-204-116-29.my.local-ip.co
+vps.15-204-116-29.my.local-ip.co
 practice.mathlessons.co
 *.melonplayground.co
 melonplayground.co
@@ -2876,6 +2883,7 @@ brawlstars.com
 brawlstarsgame.com
 *.breakoutgames.com
 breakoutgames.com
+vacation.briaquaticcabinets.com
 *.brickbrag.com
 brickbrag.com
 *.brickplanet.com
@@ -3564,6 +3572,8 @@ didigames.com
 diegosjuegos.com
 *.digamore.com
 digamore.com
+*.digimillennials.com
+digimillennials.com
 *.digtoescapecalculator.com
 digtoescapecalculator.com
 *.diguifi.com
@@ -4624,6 +4634,7 @@ frivv.com
 frivwtf.com
 *.frivy.com
 frivy.com
+h2aihbtm.frogseducation.com
 *.frostyz.com
 frostyz.com
 db.frozenschool.com
@@ -5196,6 +5207,8 @@ gamui.com
 gamulo.com
 *.gandergames.com
 gandergames.com
+triplet.gandhinagar.com
+tungtung.gandhinagar.com
 words.gandhinagar.com
 *.garathor.com
 garathor.com
@@ -5840,6 +5853,7 @@ chat.inmobiliariamardelplata.com
 mango.inmobiliariamardelplata.com
 math-sch.inmobiliariamardelplata.com
 study-hub.inmobiliariamardelplata.com
+tung-math.inmobiliariamardelplata.com
 *.innersloth.com
 innersloth.com
 *.innogames.com
@@ -6651,6 +6665,7 @@ maniadejogos.com
 aida.manoahinvest.com
 area.mantavyagajjar.com
 studyhub.mantavyagajjar.com
+ttpscience.mantavyagajjar.com
 *.manyland.com
 manyland.com
 *.marapets.com
@@ -7670,6 +7685,7 @@ googmamdir.parcomunica.com
 homeworkmath.parcomunica.com
 mrkultragood.parcomunica.com
 treetreetree.parcomunica.com
+ultramathtech.parcomunica.com
 *.parkourblock3d.com
 parkourblock3d.com
 *.partidago.com
@@ -8658,6 +8674,8 @@ rockpapershotgun.com
 rockstargames.com
 *.rodeostampedeunblocked.com
 rodeostampedeunblocked.com
+*.rokengames.com
+rokengames.com
 *.rollercoin.com
 rollercoin.com
 *.rolling-sky.com
@@ -8666,6 +8684,7 @@ rolling-sky.com
 romsjuegos.com
 cipher.ronginbari.com
 studyhub.ronginbari.com
+tungtung.ronginbari.com
 *.rooftopsnipers-unblocked.com
 rooftopsnipers-unblocked.com
 *.roomescapes.com
@@ -8713,6 +8732,7 @@ rushuphill.com
 *.rushvexgame.com
 rushvexgame.com
 english.rusticrivergear.com
+youman.rusticrivergear.com
 *.safekidgames.com
 safekidgames.com
 *.salarygames.com
@@ -11019,8 +11039,10 @@ dead-maroon-m1psr1ml-dpr1n0m3de55.edgeone.dev
 duckmathlearning-dpwektsw5t93.edgeone.dev
 external-green-9nvl6gws-dpbnotsjlvbq.edgeone.dev
 extraordinary-red-tq1zoybi-dpxed1o0jsqi.edgeone.dev
+fkbfklhhjjhjfhjgb-dp2vsrot4npc.edgeone.dev
 furious-emerald-xgix1jfd-dpfr1dwftli0.edgeone.dev
 given-lavender-wrbdpf3u-dpcijfpasa2m.edgeone.dev
+lecky-os123-dpa74iyw8mib.edgeone.dev
 medieval-white-8cfmyend-dp8ibdquu1we.edgeone.dev
 mrs-tomatogames-dpi107mnzm49.edgeone.dev
 noble-maroon-8vftdev7-dpepvy73o1nv.edgeone.dev
@@ -11265,6 +11287,7 @@ dinochrome.pages.dev
 dinogame-unblocked.pages.dev
 dinosaur-game.pages.dev
 dinosaurgame-3d.pages.dev
+dirtline.pages.dev
 dlpsgames-click-y68.pages.dev
 dmg-db.pages.dev
 doctor-like-roblox-games.pages.dev
@@ -11325,6 +11348,7 @@ euloge-arcade.pages.dev
 ev-rush-game.pages.dev
 exploration-games-in-roblox.pages.dev
 f-games.pages.dev
+fallline-9zo.pages.dev
 falorant-5qk.pages.dev
 fashion-model-games-roblox.pages.dev
 five-nights-at-freddys.pages.dev
@@ -12047,6 +12071,8 @@ pangolinworks.dev
 *.playhorizon.dev
 playhorizon.dev
 bomberman.pr0mming.dev
+*.r58playz.dev
+r58playz.dev
 selenite.skysthelimit.dev
 *.source64.dev
 source64.dev
@@ -13754,6 +13780,8 @@ agaronline.io
 *.agma.io
 agma.io
 games.aiandsons.io
+*.aicharts.io
+aicharts.io
 *.aidungeon.io
 aidungeon.io
 *.airconsole.io
@@ -15446,6 +15474,7 @@ dlfma1985.github.io
 dluxz09.github.io
 dmccuk.github.io
 dmg013.github.io
+dndnoob.github.io
 docternachos.github.io
 doddoreul.github.io
 doge2048unblocked.github.io
@@ -17553,6 +17582,7 @@ ubg39.github.io
 ubg42.github.io
 ubg423.github.io
 ubg44.github.io
+ubg47.github.io
 ubg6.github.io
 ubg61.github.io
 ubg66.github.io
@@ -19336,6 +19366,7 @@ voodoo-gaming.io
 voxar.io
 *.voxiom.io
 voxiom.io
+docs.vpndetection.io
 *.wacky-flip.io
 wacky-flip.io
 *.wafflegame.io
@@ -19440,6 +19471,10 @@ gfufgf.67lol.fwh.is
 gfufgfgth.67lol.fwh.is
 ggjfs.67lol.fwh.is
 jagjy.67lol.fwh.is
+ufhtj.67lol.fwh.is
+ugkyfh.67lol.fwh.is
+ydtjut.67lol.fwh.is
+yrtldy9x8td9y.67lol.fwh.is
 dgzfgfyfz.ceifjskdj.fwh.is
 dphckbc9.ceifjskdj.fwh.is
 edu.ceifjskdj.fwh.is
@@ -22391,6 +22426,7 @@ bookshelf-bell-schedule-2264.dllontop.org
 chalk-eraser-metronome-3426.dllontop.org
 chalkboard-locker-magnet-8413.dllontop.org
 paintbrush-journal-8500.dllontop.org
+worksheet-lanyard-2479.dllontop.org
 *.doll-games.org
 doll-games.org
 *.donkey-kong.org
@@ -22846,6 +22882,7 @@ klanlar.org
 krunkergame.org
 *.kurnik.org
 kurnik.org
+rb3hwx4r.lakehillpreschool.org
 arcs.largent.org
 *.lichess.org
 lichess.org
@@ -23257,6 +23294,7 @@ stickmanwar.org
 stickwar.org
 *.stickwargame.org
 stickwargame.org
+ynlfqehb.stmpreschool.org
 *.strategygame.org
 strategygame.org
 *.stuntbikeextreme.org
@@ -23285,6 +23323,7 @@ supersmashflash.org
 tamingio.org
 cipher.tanenbaumchat.org
 greenlight.tanenbaumchat.org
+triplet.tanenbaumchat.org
 *.tanktrouble.org
 tanktrouble.org
 ill.tantrum.org
