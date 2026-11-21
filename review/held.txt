@@ -8,3 +8,8 @@
 #   allow    -> add it to seeds/allow.txt (a service students need; this also
 #               keeps curated lists from ever blocking it)
 # entry	held_since	reason	check_url	evidence
+mka.lauta.site	2026-11-19	possible domain shadowing (cname->lautatwt.github.io), no fingerprint yet	https://mka.lauta.site/	https://mka.lauta.site/ HTTP 200 title='Mortal Kombardo'
+play.fatal.racing	2026-11-19	possible domain shadowing (cname->roller-web.pages.dev), no fingerprint yet	https://play.fatal.racing/	https://play.fatal.racing/ HTTP 200 title='ROLLER'
+play.neverball.org	2026-11-20	possible domain shadowing (cname->neverball.github.io), no fingerprint yet	https://play.neverball.org/	https://play.neverball.org/ HTTP 200 title='Neverball'
+stock95633.wixsite.com	2026-11-19	stalled bypass-list site with registers a service worker	https://stock95633.wixsite.com/content-fetcher/	gn-education'
+tickets.blackbearshow.com	2026-11-19	possible domain shadowing (cname->tf-blackbearshow.netlify.app), no fingerprint yet	https://tickets.blackbearshow.com/	https://tickets.blackbearshow.com/ HTTP 200 title='Checkout'

@@ -116,6 +116,8 @@ cdn.esm.sh/gh/justin-city-games-and-more/Singlefile@
 cdn.esm.sh/gh/justin-city-games-and-more/singlefile/
 cdn.esm.sh/gh/justin-city-games-and-more/singlefile@
 cdn.esm.sh/gh/jxoj/
+cdn.esm.sh/gh/kbarbel640-del/skills/
+cdn.esm.sh/gh/kbarbel640-del/skills@
 cdn.esm.sh/gh/kernel8901/ai-agent-skills-classification/
 cdn.esm.sh/gh/kernel8901/ai-agent-skills-classification@
 cdn.esm.sh/gh/kkudzu/
@@ -302,6 +304,8 @@ cdn.githubraw.com/justin-city-games-and-more/Singlefile@
 cdn.githubraw.com/justin-city-games-and-more/singlefile/
 cdn.githubraw.com/justin-city-games-and-more/singlefile@
 cdn.githubraw.com/jxoj/
+cdn.githubraw.com/kbarbel640-del/skills/
+cdn.githubraw.com/kbarbel640-del/skills@
 cdn.githubraw.com/kernel8901/ai-agent-skills-classification/
 cdn.githubraw.com/kernel8901/ai-agent-skills-classification@
 cdn.githubraw.com/kkudzu/
@@ -480,6 +484,8 @@ cdn.jsdelivr.net/combine/gh/justin-city-games-and-more/Singlefile@
 cdn.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile/
 cdn.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile@
 cdn.jsdelivr.net/combine/gh/jxoj/
+cdn.jsdelivr.net/combine/gh/kbarbel640-del/skills/
+cdn.jsdelivr.net/combine/gh/kbarbel640-del/skills@
 cdn.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification/
 cdn.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification@
 cdn.jsdelivr.net/combine/gh/kkudzu/
@@ -658,6 +664,8 @@ cdn.jsdelivr.net/gh/justin-city-games-and-more/Singlefile@
 cdn.jsdelivr.net/gh/justin-city-games-and-more/singlefile/
 cdn.jsdelivr.net/gh/justin-city-games-and-more/singlefile@
 cdn.jsdelivr.net/gh/jxoj/
+cdn.jsdelivr.net/gh/kbarbel640-del/skills/
+cdn.jsdelivr.net/gh/kbarbel640-del/skills@
 cdn.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification/
 cdn.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification@
 cdn.jsdelivr.net/gh/kkudzu/
@@ -850,6 +858,8 @@ cdn.jsdmirror.com/combine/gh/justin-city-games-and-more/Singlefile@
 cdn.jsdmirror.com/combine/gh/justin-city-games-and-more/singlefile/
 cdn.jsdmirror.com/combine/gh/justin-city-games-and-more/singlefile@
 cdn.jsdmirror.com/combine/gh/jxoj/
+cdn.jsdmirror.com/combine/gh/kbarbel640-del/skills/
+cdn.jsdmirror.com/combine/gh/kbarbel640-del/skills@
 cdn.jsdmirror.com/combine/gh/kernel8901/ai-agent-skills-classification/
 cdn.jsdmirror.com/combine/gh/kernel8901/ai-agent-skills-classification@
 cdn.jsdmirror.com/combine/gh/kkudzu/
@@ -1028,6 +1038,8 @@ cdn.jsdmirror.com/gh/justin-city-games-and-more/Singlefile@
 cdn.jsdmirror.com/gh/justin-city-games-and-more/singlefile/
 cdn.jsdmirror.com/gh/justin-city-games-and-more/singlefile@
 cdn.jsdmirror.com/gh/jxoj/
+cdn.jsdmirror.com/gh/kbarbel640-del/skills/
+cdn.jsdmirror.com/gh/kbarbel640-del/skills@
 cdn.jsdmirror.com/gh/kernel8901/ai-agent-skills-classification/
 cdn.jsdmirror.com/gh/kernel8901/ai-agent-skills-classification@
 cdn.jsdmirror.com/gh/kkudzu/
@@ -1218,6 +1230,8 @@ cdn.statically.io/gh/justin-city-games-and-more/Singlefile@
 cdn.statically.io/gh/justin-city-games-and-more/singlefile/
 cdn.statically.io/gh/justin-city-games-and-more/singlefile@
 cdn.statically.io/gh/jxoj/
+cdn.statically.io/gh/kbarbel640-del/skills/
+cdn.statically.io/gh/kbarbel640-del/skills@
 cdn.statically.io/gh/kernel8901/ai-agent-skills-classification/
 cdn.statically.io/gh/kernel8901/ai-agent-skills-classification@
 cdn.statically.io/gh/kkudzu/
@@ -1396,6 +1410,8 @@ cdn.staticdelivr.com/combine/gh/justin-city-games-and-more/Singlefile@
 cdn.staticdelivr.com/combine/gh/justin-city-games-and-more/singlefile/
 cdn.staticdelivr.com/combine/gh/justin-city-games-and-more/singlefile@
 cdn.staticdelivr.com/combine/gh/jxoj/
+cdn.staticdelivr.com/combine/gh/kbarbel640-del/skills/
+cdn.staticdelivr.com/combine/gh/kbarbel640-del/skills@
 cdn.staticdelivr.com/combine/gh/kernel8901/ai-agent-skills-classification/
 cdn.staticdelivr.com/combine/gh/kernel8901/ai-agent-skills-classification@
 cdn.staticdelivr.com/combine/gh/kkudzu/
@@ -1574,6 +1590,8 @@ cdn.staticdelivr.com/gh/justin-city-games-and-more/Singlefile@
 cdn.staticdelivr.com/gh/justin-city-games-and-more/singlefile/
 cdn.staticdelivr.com/gh/justin-city-games-and-more/singlefile@
 cdn.staticdelivr.com/gh/jxoj/
+cdn.staticdelivr.com/gh/kbarbel640-del/skills/
+cdn.staticdelivr.com/gh/kbarbel640-del/skills@
 cdn.staticdelivr.com/gh/kernel8901/ai-agent-skills-classification/
 cdn.staticdelivr.com/gh/kernel8901/ai-agent-skills-classification@
 cdn.staticdelivr.com/gh/kkudzu/
@@ -1774,6 +1792,8 @@ esm.sh/gh/justin-city-games-and-more/Singlefile@
 esm.sh/gh/justin-city-games-and-more/singlefile/
 esm.sh/gh/justin-city-games-and-more/singlefile@
 esm.sh/gh/jxoj/
+esm.sh/gh/kbarbel640-del/skills/
+esm.sh/gh/kbarbel640-del/skills@
 esm.sh/gh/kernel8901/ai-agent-skills-classification/
 esm.sh/gh/kernel8901/ai-agent-skills-classification@
 esm.sh/gh/kkudzu/
@@ -1960,6 +1980,8 @@ fastly.jsdelivr.net/combine/gh/justin-city-games-and-more/Singlefile@
 fastly.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile/
 fastly.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile@
 fastly.jsdelivr.net/combine/gh/jxoj/
+fastly.jsdelivr.net/combine/gh/kbarbel640-del/skills/
+fastly.jsdelivr.net/combine/gh/kbarbel640-del/skills@
 fastly.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification/
 fastly.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification@
 fastly.jsdelivr.net/combine/gh/kkudzu/
@@ -2138,6 +2160,8 @@ fastly.jsdelivr.net/gh/justin-city-games-and-more/Singlefile@
 fastly.jsdelivr.net/gh/justin-city-games-and-more/singlefile/
 fastly.jsdelivr.net/gh/justin-city-games-and-more/singlefile@
 fastly.jsdelivr.net/gh/jxoj/
+fastly.jsdelivr.net/gh/kbarbel640-del/skills/
+fastly.jsdelivr.net/gh/kbarbel640-del/skills@
 fastly.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification/
 fastly.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification@
 fastly.jsdelivr.net/gh/kkudzu/
@@ -2328,6 +2352,8 @@ gcore.jsdelivr.net/combine/gh/justin-city-games-and-more/Singlefile@
 gcore.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile/
 gcore.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile@
 gcore.jsdelivr.net/combine/gh/jxoj/
+gcore.jsdelivr.net/combine/gh/kbarbel640-del/skills/
+gcore.jsdelivr.net/combine/gh/kbarbel640-del/skills@
 gcore.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification/
 gcore.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification@
 gcore.jsdelivr.net/combine/gh/kkudzu/
@@ -2506,6 +2532,8 @@ gcore.jsdelivr.net/gh/justin-city-games-and-more/Singlefile@
 gcore.jsdelivr.net/gh/justin-city-games-and-more/singlefile/
 gcore.jsdelivr.net/gh/justin-city-games-and-more/singlefile@
 gcore.jsdelivr.net/gh/jxoj/
+gcore.jsdelivr.net/gh/kbarbel640-del/skills/
+gcore.jsdelivr.net/gh/kbarbel640-del/skills@
 gcore.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification/
 gcore.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification@
 gcore.jsdelivr.net/gh/kkudzu/
@@ -2696,6 +2724,8 @@ jsd.liiiu.cn/combine/gh/justin-city-games-and-more/Singlefile@
 jsd.liiiu.cn/combine/gh/justin-city-games-and-more/singlefile/
 jsd.liiiu.cn/combine/gh/justin-city-games-and-more/singlefile@
 jsd.liiiu.cn/combine/gh/jxoj/
+jsd.liiiu.cn/combine/gh/kbarbel640-del/skills/
+jsd.liiiu.cn/combine/gh/kbarbel640-del/skills@
 jsd.liiiu.cn/combine/gh/kernel8901/ai-agent-skills-classification/
 jsd.liiiu.cn/combine/gh/kernel8901/ai-agent-skills-classification@
 jsd.liiiu.cn/combine/gh/kkudzu/
@@ -2874,6 +2904,8 @@ jsd.liiiu.cn/gh/justin-city-games-and-more/Singlefile@
 jsd.liiiu.cn/gh/justin-city-games-and-more/singlefile/
 jsd.liiiu.cn/gh/justin-city-games-and-more/singlefile@
 jsd.liiiu.cn/gh/jxoj/
+jsd.liiiu.cn/gh/kbarbel640-del/skills/
+jsd.liiiu.cn/gh/kbarbel640-del/skills@
 jsd.liiiu.cn/gh/kernel8901/ai-agent-skills-classification/
 jsd.liiiu.cn/gh/kernel8901/ai-agent-skills-classification@
 jsd.liiiu.cn/gh/kkudzu/
@@ -3064,6 +3096,8 @@ jsd.onmicrosoft.cn/combine/gh/justin-city-games-and-more/Singlefile@
 jsd.onmicrosoft.cn/combine/gh/justin-city-games-and-more/singlefile/
 jsd.onmicrosoft.cn/combine/gh/justin-city-games-and-more/singlefile@
 jsd.onmicrosoft.cn/combine/gh/jxoj/
+jsd.onmicrosoft.cn/combine/gh/kbarbel640-del/skills/
+jsd.onmicrosoft.cn/combine/gh/kbarbel640-del/skills@
 jsd.onmicrosoft.cn/combine/gh/kernel8901/ai-agent-skills-classification/
 jsd.onmicrosoft.cn/combine/gh/kernel8901/ai-agent-skills-classification@
 jsd.onmicrosoft.cn/combine/gh/kkudzu/
@@ -3242,6 +3276,8 @@ jsd.onmicrosoft.cn/gh/justin-city-games-and-more/Singlefile@
 jsd.onmicrosoft.cn/gh/justin-city-games-and-more/singlefile/
 jsd.onmicrosoft.cn/gh/justin-city-games-and-more/singlefile@
 jsd.onmicrosoft.cn/gh/jxoj/
+jsd.onmicrosoft.cn/gh/kbarbel640-del/skills/
+jsd.onmicrosoft.cn/gh/kbarbel640-del/skills@
 jsd.onmicrosoft.cn/gh/kernel8901/ai-agent-skills-classification/
 jsd.onmicrosoft.cn/gh/kernel8901/ai-agent-skills-classification@
 jsd.onmicrosoft.cn/gh/kkudzu/
@@ -3432,6 +3468,8 @@ jsdelivr.b-cdn.net/combine/gh/justin-city-games-and-more/Singlefile@
 jsdelivr.b-cdn.net/combine/gh/justin-city-games-and-more/singlefile/
 jsdelivr.b-cdn.net/combine/gh/justin-city-games-and-more/singlefile@
 jsdelivr.b-cdn.net/combine/gh/jxoj/
+jsdelivr.b-cdn.net/combine/gh/kbarbel640-del/skills/
+jsdelivr.b-cdn.net/combine/gh/kbarbel640-del/skills@
 jsdelivr.b-cdn.net/combine/gh/kernel8901/ai-agent-skills-classification/
 jsdelivr.b-cdn.net/combine/gh/kernel8901/ai-agent-skills-classification@
 jsdelivr.b-cdn.net/combine/gh/kkudzu/
@@ -3610,6 +3648,8 @@ jsdelivr.b-cdn.net/gh/justin-city-games-and-more/Singlefile@
 jsdelivr.b-cdn.net/gh/justin-city-games-and-more/singlefile/
 jsdelivr.b-cdn.net/gh/justin-city-games-and-more/singlefile@
 jsdelivr.b-cdn.net/gh/jxoj/
+jsdelivr.b-cdn.net/gh/kbarbel640-del/skills/
+jsdelivr.b-cdn.net/gh/kbarbel640-del/skills@
 jsdelivr.b-cdn.net/gh/kernel8901/ai-agent-skills-classification/
 jsdelivr.b-cdn.net/gh/kernel8901/ai-agent-skills-classification@
 jsdelivr.b-cdn.net/gh/kkudzu/
@@ -3800,6 +3840,8 @@ originfastly.jsdelivr.net/combine/gh/justin-city-games-and-more/Singlefile@
 originfastly.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile/
 originfastly.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile@
 originfastly.jsdelivr.net/combine/gh/jxoj/
+originfastly.jsdelivr.net/combine/gh/kbarbel640-del/skills/
+originfastly.jsdelivr.net/combine/gh/kbarbel640-del/skills@
 originfastly.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification/
 originfastly.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification@
 originfastly.jsdelivr.net/combine/gh/kkudzu/
@@ -3978,6 +4020,8 @@ originfastly.jsdelivr.net/gh/justin-city-games-and-more/Singlefile@
 originfastly.jsdelivr.net/gh/justin-city-games-and-more/singlefile/
 originfastly.jsdelivr.net/gh/justin-city-games-and-more/singlefile@
 originfastly.jsdelivr.net/gh/jxoj/
+originfastly.jsdelivr.net/gh/kbarbel640-del/skills/
+originfastly.jsdelivr.net/gh/kbarbel640-del/skills@
 originfastly.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification/
 originfastly.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification@
 originfastly.jsdelivr.net/gh/kkudzu/
@@ -4168,6 +4212,8 @@ quantil.jsdelivr.net/combine/gh/justin-city-games-and-more/Singlefile@
 quantil.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile/
 quantil.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile@
 quantil.jsdelivr.net/combine/gh/jxoj/
+quantil.jsdelivr.net/combine/gh/kbarbel640-del/skills/
+quantil.jsdelivr.net/combine/gh/kbarbel640-del/skills@
 quantil.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification/
 quantil.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification@
 quantil.jsdelivr.net/combine/gh/kkudzu/
@@ -4346,6 +4392,8 @@ quantil.jsdelivr.net/gh/justin-city-games-and-more/Singlefile@
 quantil.jsdelivr.net/gh/justin-city-games-and-more/singlefile/
 quantil.jsdelivr.net/gh/justin-city-games-and-more/singlefile@
 quantil.jsdelivr.net/gh/jxoj/
+quantil.jsdelivr.net/gh/kbarbel640-del/skills/
+quantil.jsdelivr.net/gh/kbarbel640-del/skills@
 quantil.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification/
 quantil.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification@
 quantil.jsdelivr.net/gh/kkudzu/
@@ -4540,6 +4588,8 @@ raw.esm.sh/gh/justin-city-games-and-more/Singlefile@
 raw.esm.sh/gh/justin-city-games-and-more/singlefile/
 raw.esm.sh/gh/justin-city-games-and-more/singlefile@
 raw.esm.sh/gh/jxoj/
+raw.esm.sh/gh/kbarbel640-del/skills/
+raw.esm.sh/gh/kbarbel640-del/skills@
 raw.esm.sh/gh/kernel8901/ai-agent-skills-classification/
 raw.esm.sh/gh/kernel8901/ai-agent-skills-classification@
 raw.esm.sh/gh/kkudzu/
@@ -4727,6 +4777,8 @@ raw.githack.com/justin-city-games-and-more/Singlefile@
 raw.githack.com/justin-city-games-and-more/singlefile/
 raw.githack.com/justin-city-games-and-more/singlefile@
 raw.githack.com/jxoj/
+raw.githack.com/kbarbel640-del/skills/
+raw.githack.com/kbarbel640-del/skills@
 raw.githack.com/kernel8901/ai-agent-skills-classification/
 raw.githack.com/kernel8901/ai-agent-skills-classification@
 raw.githack.com/kkudzu/
@@ -4908,6 +4960,8 @@ rawcdn.githack.com/justin-city-games-and-more/Singlefile@
 rawcdn.githack.com/justin-city-games-and-more/singlefile/
 rawcdn.githack.com/justin-city-games-and-more/singlefile@
 rawcdn.githack.com/jxoj/
+rawcdn.githack.com/kbarbel640-del/skills/
+rawcdn.githack.com/kbarbel640-del/skills@
 rawcdn.githack.com/kernel8901/ai-agent-skills-classification/
 rawcdn.githack.com/kernel8901/ai-agent-skills-classification@
 rawcdn.githack.com/kkudzu/
@@ -5086,6 +5140,8 @@ s4.zstatic.net/combine/gh/justin-city-games-and-more/Singlefile@
 s4.zstatic.net/combine/gh/justin-city-games-and-more/singlefile/
 s4.zstatic.net/combine/gh/justin-city-games-and-more/singlefile@
 s4.zstatic.net/combine/gh/jxoj/
+s4.zstatic.net/combine/gh/kbarbel640-del/skills/
+s4.zstatic.net/combine/gh/kbarbel640-del/skills@
 s4.zstatic.net/combine/gh/kernel8901/ai-agent-skills-classification/
 s4.zstatic.net/combine/gh/kernel8901/ai-agent-skills-classification@
 s4.zstatic.net/combine/gh/kkudzu/
@@ -5264,6 +5320,8 @@ s4.zstatic.net/gh/justin-city-games-and-more/Singlefile@
 s4.zstatic.net/gh/justin-city-games-and-more/singlefile/
 s4.zstatic.net/gh/justin-city-games-and-more/singlefile@
 s4.zstatic.net/gh/jxoj/
+s4.zstatic.net/gh/kbarbel640-del/skills/
+s4.zstatic.net/gh/kbarbel640-del/skills@
 s4.zstatic.net/gh/kernel8901/ai-agent-skills-classification/
 s4.zstatic.net/gh/kernel8901/ai-agent-skills-classification@
 s4.zstatic.net/gh/kkudzu/
@@ -5503,6 +5561,8 @@ testingcf.jsdelivr.net/combine/gh/justin-city-games-and-more/Singlefile@
 testingcf.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile/
 testingcf.jsdelivr.net/combine/gh/justin-city-games-and-more/singlefile@
 testingcf.jsdelivr.net/combine/gh/jxoj/
+testingcf.jsdelivr.net/combine/gh/kbarbel640-del/skills/
+testingcf.jsdelivr.net/combine/gh/kbarbel640-del/skills@
 testingcf.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification/
 testingcf.jsdelivr.net/combine/gh/kernel8901/ai-agent-skills-classification@
 testingcf.jsdelivr.net/combine/gh/kkudzu/
@@ -5681,6 +5741,8 @@ testingcf.jsdelivr.net/gh/justin-city-games-and-more/Singlefile@
 testingcf.jsdelivr.net/gh/justin-city-games-and-more/singlefile/
 testingcf.jsdelivr.net/gh/justin-city-games-and-more/singlefile@
 testingcf.jsdelivr.net/gh/jxoj/
+testingcf.jsdelivr.net/gh/kbarbel640-del/skills/
+testingcf.jsdelivr.net/gh/kbarbel640-del/skills@
 testingcf.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification/
 testingcf.jsdelivr.net/gh/kernel8901/ai-agent-skills-classification@
 testingcf.jsdelivr.net/gh/kkudzu/

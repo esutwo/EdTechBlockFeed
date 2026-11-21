@@ -1187,7 +1187,11 @@ zetflix24.app
 2048.ar
 cipher.bumon.ar
 ford.bumon.ar
+sky.haze.bumon.ar
 homie.bumon.ar
+smartstudy.bumon.ar
+study.bumon.ar
+studyv2.bumon.ar
 3dgames.com.ar
 ably.7dejunio.com.ar
 ames.agus-87.com.ar
@@ -1260,6 +1264,9 @@ videojuegoshoy.com.ar
 wargamez.com.ar
 barn.yabo.com.ar
 amen.zabiasrl.com.ar
+shopping.elemporio.ar
+smartbio.elemporio.ar
+triplet.elemporio.ar
 cs.nostalgia.ar
 clearfacts.vidanimal.ar
 *.pixai.art
@@ -2449,6 +2456,7 @@ rachacuca.com.br
 revisamais.com.br
 *.rggames.com.br
 rggames.com.br
+goodtung.roje.com.br
 schools.roje.com.br
 *.sioux.com.br
 sioux.com.br
@@ -2814,6 +2822,7 @@ righttoplay.ca
 roofdog.ca
 *.sakurariver.ca
 sakurariver.ca
+linewise.samandjen.ca
 *.saskatoonbridgeclub.ca
 saskatoonbridgeclub.ca
 *.scavengers.ca
@@ -3323,6 +3332,7 @@ sapk.ch
 sgda.ch
 *.shockwavegames.ch
 shockwavegames.ch
+science-tungtung.shor.ch
 *.smallgames.ch
 smallgames.ch
 *.spiels.ch
@@ -3370,15 +3380,19 @@ adventurejump.cl
 amnesiagames.cl
 *.bura.cl
 bura.cl
+approving.at.certified.cl
 came.confiarriendo.cl
 acid.contactme.cl
 bene.contactme.cl
+school-tt.contratoslab.cl
+thg-ms.dila.cl
 bums.edificare.cl
 bell.espinosa.cl
 *.fifachile.cl
 fifachile.cl
 bias.gcpservicios.cl
 deend.gcpservicios.cl
+good.gcpservicios.cl
 makes.gcpservicios.cl
 quotes.gcpservicios.cl
 *.habbo.cl
@@ -7204,6 +7218,9 @@ arslotplay.com
 art-games.com
 cellmathsch.art-motel.com
 engagesirok.art-motel.com
+laptoppcok.art-motel.com
+pcroomsir.art-motel.com
+sirmathgood.art-motel.com
 *.art95.com
 art95.com
 *.artaemys.com
@@ -7609,6 +7626,7 @@ avendar.com
 *.aventurespatiale.com
 aventurespatiale.com
 images.aventuria.com
+science-tungtung.avenuecarriagecrossing.com
 *.avenuedesjeux.com
 avenuedesjeux.com
 *.avernum.com
@@ -7919,6 +7937,7 @@ bangalorechess.com
 bangkokchess.com
 *.banglagamer.com
 banglagamer.com
+mhi.banglam.com
 *.banja.com
 banja.com
 *.bankersbridgeclub.com
@@ -10945,6 +10964,7 @@ chaptermasters.com
 charazay.com
 *.charitablegaming.com
 charitablegaming.com
+town.charlestonwvhotel.com
 *.charlottechess.com
 charlottechess.com
 *.charlottemadelon.com
@@ -21731,6 +21751,7 @@ gcloud.com
 gcontrolgames.com
 *.gcrest.com
 gcrest.com
+keepcontent.gd1code.com
 *.gdbrowser.com
 gdbrowser.com
 *.gdconf.com
@@ -22195,6 +22216,7 @@ glaielgames.com
 *.glamarcade.com
 glamarcade.com
 formula.glamourfreaks.com
+lesson.glamourfreaks.com
 xoeand.glamourfreaks.com
 *.glassbottomgames.com
 glassbottomgames.com
@@ -23221,6 +23243,7 @@ handdrawngames.com
 handelabra.com
 *.handeyesociety.com
 handeyesociety.com
+science-tungtung.handfolding.com
 *.handicapperworld.com
 handicapperworld.com
 *.handicapping.com
@@ -24979,6 +25002,7 @@ inmersys.com
 chat.inmobiliariamardelplata.com
 mango.inmobiliariamardelplata.com
 math-sch.inmobiliariamardelplata.com
+study-hub.inmobiliariamardelplata.com
 *.innersloth.com
 innersloth.com
 *.innerspacevr.com
@@ -29933,6 +29957,7 @@ mansioncasino.com
 *.mansionpoker.com
 mansionpoker.com
 area.mantavyagajjar.com
+studyhub.mantavyagajjar.com
 *.manticgames.com
 manticgames.com
 *.manticoregames.com
@@ -34298,6 +34323,7 @@ opticalethegame.com
 opticubestudio.com
 *.optijuegos.com
 optijuegos.com
+studyhubv2.optioflow.com
 *.optionsplaybook.com
 optionsplaybook.com
 *.oquirrh.com
@@ -34929,6 +34955,10 @@ parchis.com
 parco-play.com
 *.parcoil.com
 parcoil.com
+googmamdir.parcomunica.com
+homeworkmath.parcomunica.com
+mrkultragood.parcomunica.com
+treetreetree.parcomunica.com
 *.parcworld.com
 parcworld.com
 *.parenthoodkids.com
@@ -40227,6 +40257,7 @@ romsjuegos.com
 *.rondaksportal.com
 rondaksportal.com
 cipher.ronginbari.com
+studyhub.ronginbari.com
 *.ronimo-games.com
 ronimo-games.com
 *.ronjonesproductions.com
@@ -43969,6 +44000,7 @@ sukafuteam.com
 sulake.com
 *.sulerin.com
 sulerin.com
+grove.cloud.suliaotongwang.com
 *.sulkyland.com
 sulkyland.com
 *.sultansofgame.com
@@ -54472,6 +54504,7 @@ jetpac.ee
 amir.johanson.ee
 *.kong.ee
 kong.ee
+readisfun.localization.ee
 *.minesweeper.ee
 minesweeper.ee
 *.pacman.ee
@@ -58684,6 +58717,7 @@ gombis.hu
 *.goodgameempire.hu
 goodgameempire.hu
 nichestudies.govt.hu
+science-tungtung.govt.hu
 *.hodito.hu
 hodito.hu
 *.honfoglalo.hu
@@ -58784,6 +58818,7 @@ seagames.id
 starsgames.id
 click.unusida.id
 flashgame.web.id
+studyready.zone.id
 *.awaywiththefairies.ie
 awaywiththefairies.ie
 *.bluebear.ie
@@ -58928,6 +58963,7 @@ hry.in
 imois.in
 *.indiaeveryday.in
 indiaeveryday.in
+thinking.night.isroot.in
 *.juegosgratis.in
 juegosgratis.in
 *.juegospc.in
@@ -61523,6 +61559,7 @@ durugames.github.io
 dustinhale14-max.github.io
 duxxd.github.io
 dylancai1390.github.io
+dylanmastesilly.github.io
 e9-kkuat.github.io
 eagler-craft.github.io
 eagler-hubs.github.io
@@ -66764,6 +66801,7 @@ schoology.lat
 boon.busse.li
 cook.cthulhu.li
 felt.cthulhu.li
+schools.cthulhu.li
 science.cthulhu.li
 what.cthulhu.li
 *.vrg.li
@@ -68121,6 +68159,8 @@ bridgestars.net
 brokenmetal.net
 *.browser-games.net
 browser-games.net
+*.browsergamehub.net
+browsergamehub.net
 *.browsergamer.net
 browsergamer.net
 *.brutalstudio.net
@@ -69204,12 +69244,14 @@ jian-dang.global.ssl.fastly.net
 jian-dangge-laoshi.global.ssl.fastly.net
 jiandang-ge.global.ssl.fastly.net
 jiandang-gelaoshi.global.ssl.fastly.net
+jiandangge.global.ssl.fastly.net
 jiandanggelaoshi.global.ssl.fastly.net
 justice.global.ssl.fastly.net
 kazwireomg.global.ssl.fastly.net
 kbhgames.global.ssl.fastly.net
 kinegame-accelerator.global.ssl.fastly.net
 krunker.global.ssl.fastly.net
+l.global.ssl.fastly.net
 lagged.global.ssl.fastly.net
 laoshi-ge.global.ssl.fastly.net
 laoshige.global.ssl.fastly.net
@@ -69221,17 +69263,21 @@ linkportal.global.ssl.fastly.net
 lolbeans.global.ssl.fastly.net
 lunar.global.ssl.fastly.net
 mango.global.ssl.fastly.net
+manually-relaxed-alien.global.ssl.fastly.net
 mathematical.global.ssl.fastly.net
 mathlete.global.ssl.fastly.net
 mcraft.global.ssl.fastly.net
 mes.global.ssl.fastly.net
 middling.global.ssl.fastly.net
+mikumovieispeak.global.ssl.fastly.net
 mine.global.ssl.fastly.net
 mister-gelao-shi.global.ssl.fastly.net
 misterge-laoshi.global.ssl.fastly.net
 mope.global.ssl.fastly.net
 mr-ge.global.ssl.fastly.net
 mr-ge-is-so-cool.global.ssl.fastly.net
+mr-ge-tuff.global.ssl.fastly.net
+mr-gelao-shi.global.ssl.fastly.net
 mrgelao-shi.global.ssl.fastly.net
 mylinkportal.global.ssl.fastly.net
 nealfun.global.ssl.fastly.net
@@ -74016,6 +74062,7 @@ teknopilot.no
 viaplay.no
 *.larp.now
 larp.now
+river.wave.bhimupadhyaya.com.np
 bestspark.windowpublication.com.np
 *.schulministerium.nrw
 schulministerium.nrw
@@ -75540,6 +75587,7 @@ divinereapers.org
 bookshelf-bell-schedule-2264.dllontop.org
 chalk-eraser-metronome-3426.dllontop.org
 chalkboard-locker-magnet-8413.dllontop.org
+paintbrush-journal-8500.dllontop.org
 *.dnd-wiki.org
 dnd-wiki.org
 *.dndtools.org
@@ -75918,6 +75966,7 @@ framagames.org
 *.freddygames.org
 freddygames.org
 blog.free-dyndns.org
+math.free-dyndns.org
 *.freeallegiance.org
 freeallegiance.org
 *.freeasteroids.org
@@ -77877,6 +77926,7 @@ run3unblocked.org
 runjumpdev.org
 *.ryeplayland.org
 ryeplayland.org
+studyready.ryzedns.org
 *.sacramentochessclub.org
 sacramentochessclub.org
 *.sacredvalor.org
@@ -78273,6 +78323,7 @@ tamingio.org
 *.tamriel-rebuilt.org
 tamriel-rebuilt.org
 cipher.tanenbaumchat.org
+greenlight.tanenbaumchat.org
 *.tanglewoodforest.org
 tanglewoodforest.org
 *.tangofleet.org
@@ -79470,6 +79521,8 @@ cstrike.ro
 *.ejocuri.ro
 ejocuri.ro
 ford.ekocleaner.ro
+schoolast3.ekocleaner.ro
+triplet.ekocleaner.ro
 afar.euasazic.ro
 *.farmerama.ro
 farmerama.ro
@@ -79671,6 +79724,7 @@ balloon-play-kz.ru
 basketball-game-kz.ru
 *.bestgamer.ru
 bestgamer.ru
+totallynotsuspicious.at.all.biblosconsulting.ru
 thebestvideogames4u.blogspot.ru
 *.boardgamer.ru
 boardgamer.ru
