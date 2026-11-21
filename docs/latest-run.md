@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-21 16:34 UTC  
+Run: 2026-11-21 22:01 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -8,36 +8,36 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Check | Count |
 |---|---:|
 | Curated lists downloaded | 14 |
-| List entries parsed and normalized | 87,032 |
+| List entries parsed and normalized | 87,034 |
 | GitHub repository searches | 30 |
-| GitHub repositories examined | 1,717 |
-| README files scanned for links | 70 |
+| GitHub repositories examined | 1,719 |
+| README files scanned for links | 49 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,644 |
-| Certificate Transparency queries | 9 |
-| Certificates examined | 8 |
-|   certificate-log source unreachable this run (skipped) | 0 |
-| CDN owners expanded (repo listings) | 13 |
-| CDN owner repositories listed | 290 |
-| CDN entry files found in owner repos | 482 |
+| Certificate Transparency queries | 0 |
+| Certificates examined | 0 |
+|   certificate-log source unreachable this run (skipped) | 1 |
+| CDN owners expanded (repo listings) | 2 |
+| CDN owner repositories listed | 0 |
+| CDN entry files found in owner repos | 0 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 571 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 37,932 |
-|   dropped: allowlist | 10,045 |
-|   dropped: known non-game service | 531 |
-|   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 15,700 |
+| Links examined by the filters | 31,483 |
+|   dropped: allowlist | 7,446 |
+|   dropped: known non-game service | 533 |
+|   dropped: bare hosting-platform domain | 2 |
+|   dropped: README link with no game/bypass hint | 12,634 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 10 |
-| urlscan.io searches (proxy framework files, page titles) | 5 |
-|   urlscan.io results examined | 266 |
-|   skipped as wildcard-DNS noise | 219 |
+| urlscan.io searches (proxy framework files, page titles) | 0 |
+|   urlscan.io results examined | 0 |
+|   skipped as wildcard-DNS noise | 0 |
 | Repositories listed from watched GitHub orgs | 135 |
 | Script URLs from confirmed pages re-queued for mirror detection | 0 |
 | Game engines (GitHub owners) newly confirmed from page scripts | 0 |
-| Sites with domain-shadowing DNS signals | 91 |
+| Sites with domain-shadowing DNS signals | 48 |
 | Sites re-queued after a fingerprint upgrade | 0 |
 | Links with a CDN path shape on unknown hosts | 1 |
 | Unknown hosts tested for being a new CDN/mirror | 1 |
@@ -49,34 +49,30 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Stalled bypass-list sites blocked as clones of known bypass pages | 0 |
 | Stalled bypass-list sites blocked for impersonating a known service | 0 |
 | Stalled bypass-list sites held for review (second signal) | 0 |
-| Live checks performed this run | 1,612 |
+| Live checks performed this run | 1,500 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| cdn | alive | 79 |
-| cdn | dead | 2 |
-| cdn | game | 10 |
-| cdn | loader | 3 |
-| cdn | proxy | 18 |
-| host | alive | 1,290 |
-| host | dead | 204 |
-| host | game | 6 |
+| host | alive | 1,102 |
+| host | dead | 387 |
+| host | game | 4 |
+| url | alive | 7 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 84,980 |
-| `domains-priority.txt` entries | 24,876 |
+| `domains.txt` entries | 84,987 |
+| `domains-priority.txt` entries | 24,883 |
 | `urls.txt` entries | 5,847 |
 | CDN owners blocked at owner level | 65 |
 | CDN repos blocked at repo level | 24 |
 | npm packages blocked | 6 |
 | Game engines blocked at owner level (learned + seeded) | 4 |
 | CDN mirror hosts covered | 21 |
-| Waiting for a human decision (`review/held.txt`) | 9 |
+| Waiting for a human decision (`review/held.txt`) | 10 |
 
 ## Tracked discoveries
 
@@ -84,13 +80,11 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 |---|---|---:|
 | cdn | confirmed | 1,593 |
 | cdn | pending | 1,932 |
-| host | confirmed | 1,091 |
+| host | confirmed | 1,094 |
 | host | dismissed | 37 |
-| host | new | 724 |
-| host | pending | 5,766 |
+| host | pending | 6,497 |
 | url | confirmed | 56 |
-| url | new | 7 |
-| url | pending | 1 |
+| url | pending | 8 |
 
 ## Lists
 
@@ -104,7 +98,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | dkorunic-browser-games | 1,000 |
 | game-proxy-gist | 393 |
 | gjohnpaull-games | 35,636 |
-| josuha-games | 12,859 |
+| josuha-games | 12,861 |
 | marcuccione-browser-games | 91 |
 | mmcohen-online-games | 65 |
 | nuneze54-games | 2,552 |

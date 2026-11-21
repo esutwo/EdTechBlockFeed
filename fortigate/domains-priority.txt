@@ -1,6 +1,8 @@
 brew.120v.ac
 *.poki.ac
 poki.ac
+*.noahstutoring.academy
+noahstutoring.academy
 *.tribalwars.ae
 tribalwars.ae
 *.zgames.ae
@@ -413,6 +415,8 @@ tankgames.app
 taparcade.app
 *.tinyfishing.app
 tinyfishing.app
+*.totallyscience.app
+totallyscience.app
 *.tunnelrush.app
 tunnelrush.app
 *.unblockedgames76.app
@@ -13411,6 +13415,7 @@ mapban.gg
 micdrop.gg
 *.miniscript.gg
 miniscript.gg
+play.mint.gg
 *.monkeymart.gg
 monkeymart.gg
 *.now.gg
@@ -19327,6 +19332,8 @@ trappersquares.io
 trapz.io
 *.trendgames.io
 trendgames.io
+*.trendshift.io
+trendshift.io
 *.tribals.io
 tribals.io
 *.triep.io
