@@ -45770,6 +45770,8 @@ thetechgame.com
 thetechnicalplayers.com
 *.thetetrisgame.com
 thetetrisgame.com
+*.thetexttospeech.com
+thetexttospeech.com
 *.thethirdfloorinc.com
 thethirdfloorinc.com
 *.thetimeseller.com
@@ -61022,6 +61024,7 @@ asherwin86.github.io
 ashmeet670.github.io
 ashton20271.github.io
 ashutosh10075.github.io
+asistenprovikom.github.io
 asriel-deemurr.github.io
 astasolfo.github.io
 astromeyt.github.io
@@ -62345,6 +62348,7 @@ kcheburek.github.io
 kebabfanpl.github.io
 kelvenclay19.github.io
 kenfin777.github.io
+kenlaufy.github.io
 kerlinamitha-debug.github.io
 kermittheconqueror.github.io
 kernelgreyberet.github.io
@@ -69258,6 +69262,7 @@ deltarunesim.global.ssl.fastly.net
 digger.global.ssl.fastly.net
 divinity.global.ssl.fastly.net
 doctor-ge-laoshi.global.ssl.fastly.net
+domainexpansioninfinitediamonds.global.ssl.fastly.net
 dr-ge-laoshi.global.ssl.fastly.net
 duck-2.global.ssl.fastly.net
 duck-math.global.ssl.fastly.net

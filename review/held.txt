@@ -9,7 +9,6 @@
 #               keeps curated lists from ever blocking it)
 # entry	held_since	reason	check_url	evidence
 api.sleeper.app	2026-11-20	established site: game content only at a sub-page, homepage is not a game site	https://api.sleeper.app/v1/players/nfl	https://api.sleeper.app/v1/players/nfl title='' strong=['ubg'] weak=[] proxy=[]
-crystal-crash.pearly-haven-3558.chatgpt.site	2026-11-19	chatgpt.site is a top-10000 site (Tranco #315); confirm manually	https://crystal-crash.pearly-haven-3558.chatgpt.site	https://crystal-crash.pearly-haven-3558.chatgpt.site title='' strong=['ubg'] weak=[] proxy=[]
 eii56-giaaa-aaaad-qfypa-cai.icp0.io	2026-11-21	established site: game content only at a sub-page, homepage is not a game site	https://eii56-giaaa-aaaad-qfypa-cai.icp0.io/static/play.html	https://eii56-giaaa-aaaad-qfypa-cai.icp0.io/static/play.html title='Classes' strong=['/games/masked-io/index.html', '3kh0', 'eaglercraft', 'gamedistribution.com'] weak=['1v1.lol', 'basketball-stars', 
 higgsfield.ai	2026-11-21	higgsfield.ai is a top-10000 site (Tranco #4209); confirm manually	https://higgsfield.ai/@higgsfield.studio/blogs/fable-5-2-built-this-rpg-from-pure-code-here-s-every-step	https://higgsfield.ai/@higgsfield.studio/blogs/fable-5-2-built-this-rpg-from-pure-code-here-s-every-step title='Here&#x27;s How To Build This RPG From Pure Code using Fable 5.2' strong=[] weak=['games
 killedbyapixel.itch.io	2026-11-21	itch.io is a top-10000 site (Tranco #711); confirm manually	https://killedbyapixel.itch.io/sunshine-golf	https://killedbyapixel.itch.io/sunshine-golf title='Sunshine Golf by Frank Force Games' strong=[] weak=['games', 'slope'] proxy=[]
@@ -17,4 +16,5 @@ mka.lauta.site	2026-11-19	possible domain shadowing (cname->lautatwt.github.io),
 play.fatal.racing	2026-11-19	possible domain shadowing (cname->roller-web.pages.dev), no fingerprint yet	https://play.fatal.racing/	https://play.fatal.racing/ HTTP 200 title='ROLLER'
 play.neverball.org	2026-11-20	possible domain shadowing (cname->neverball.github.io), no fingerprint yet	https://play.neverball.org/	https://play.neverball.org/ HTTP 200 title='Neverball'
 stock95633.wixsite.com	2026-11-19	stalled bypass-list site with registers a service worker	https://stock95633.wixsite.com/content-fetcher/	gn-education'
+thearchive.us.com	2026-11-22	us.com is a top-10000 site (Tranco #1840); confirm manually	https://thearchive.us.com/	https://thearchive.us.com/ title='The Archive' strong=[] weak=['games'] proxy=['/baremux/index.js', '/scram/scramjet', 'baremux']
 tickets.blackbearshow.com	2026-11-19	possible domain shadowing (cname->tf-blackbearshow.netlify.app), no fingerprint yet	https://tickets.blackbearshow.com/	https://tickets.blackbearshow.com/ HTTP 200 title='Checkout'
