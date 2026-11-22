@@ -41,6 +41,7 @@ api.techmap.io	pending	different-servers-than-parent	github-readme:Manavarya09/p
 app-api.costory.io	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 app.affiliatebase.io	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 app.dexio.wiki	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
+app.dotrequirements.io	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 app.mysocial.io	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 app.neomindhub.com	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 app.repostit.io	pending	different-servers-than-parent	github-readme:mcpHQ/awesome-mcp-servers
@@ -96,6 +97,7 @@ bled.argusdenshi.com	confirmed	different-servers-than-parent	aggregator:https://
 blew.carcano.me	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 blog.pagesd.info	pending	cname->michelc.github.io,different-servers-than-parent	github-readme:rarelygoeshere/WordleWeb
 blog.purestorage.com	pending	different-servers-than-parent	github-readme:AncientMystic/HomeLab
+bloom.stoop.games	pending	different-servers-than-parent	github-readme:ryviuszero/awesome-daily-games
 blur.casadotricolor.com.br	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 blynkapi.docs.apiary.io	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 bob-nolanbetter.wasmer.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -310,6 +312,7 @@ edu.cyanpurr.cc.cd	pending	different-servers-than-parent	github-readme:tryingmyb
 edu.snubby.top	pending	different-servers-than-parent	github-readme:shatwyatt-boop/Gay
 edu4u.dyndns.berlin	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 education.despla.in	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+education.oracle.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
 education1.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 educationforall.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 edudash.edu-spark.top	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -595,6 +598,7 @@ youman.rusticrivergear.com	confirmed	different-servers-than-parent	aggregator:ht
 yrtldy9x8td9y.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 yukios.edgeone.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 zhitmyoghxfwqcprrqjf.supabase.co	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
+zoomzoomzoom.zapier.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 zzamnvhadwibvafqcfpd.supabase.co	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 
 # Parent domains with 3+ discovered subdomains in the last 14 days:

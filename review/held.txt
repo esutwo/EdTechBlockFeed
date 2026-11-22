@@ -8,7 +8,7 @@
 #   allow    -> add it to seeds/allow.txt (a service students need; this also
 #               keeps curated lists from ever blocking it)
 # entry	held_since	reason	check_url	evidence
-api.sleeper.app	2026-11-20	established site: game content only at a sub-page, homepage is not a game site	https://api.sleeper.app/v1/players/nfl	https://api.sleeper.app/v1/players/nfl title='' strong=['ubg'] weak=[] proxy=[]
+api.sleeper.app	2026-11-20	established site: game content only at a sub-page, homepage is not a game site	https://api.sleeper.app/v1/players/nfl	https://api.sleeper.app/v1/players/nfl HTTP 200 title=''
 eii56-giaaa-aaaad-qfypa-cai.icp0.io	2026-11-21	established site: game content only at a sub-page, homepage is not a game site	https://eii56-giaaa-aaaad-qfypa-cai.icp0.io/static/play.html	https://eii56-giaaa-aaaad-qfypa-cai.icp0.io/static/play.html title='Classes' strong=['/games/masked-io/index.html', '3kh0', 'eaglercraft', 'gamedistribution.com'] weak=['1v1.lol', 'basketball-stars', 
 higgsfield.ai	2026-11-21	higgsfield.ai is a top-10000 site (Tranco #4209); confirm manually	https://higgsfield.ai/@higgsfield.studio/blogs/fable-5-2-built-this-rpg-from-pure-code-here-s-every-step	https://higgsfield.ai/@higgsfield.studio/blogs/fable-5-2-built-this-rpg-from-pure-code-here-s-every-step title='Here&#x27;s How To Build This RPG From Pure Code using Fable 5.2' strong=[] weak=['games
 killedbyapixel.itch.io	2026-11-21	itch.io is a top-10000 site (Tranco #711); confirm manually	https://killedbyapixel.itch.io/sunshine-golf	https://killedbyapixel.itch.io/sunshine-golf title='Sunshine Golf by Frank Force Games' strong=[] weak=['games', 'slope'] proxy=[]

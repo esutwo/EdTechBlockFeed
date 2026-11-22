@@ -5220,6 +5220,8 @@ gamezop.com
 gamezori.com
 *.gamigo.com
 gamigo.com
+*.gaming-cdn.com
+gaming-cdn.com
 *.gaming-style.com
 gaming-style.com
 *.gamingcloud.com
@@ -5501,6 +5503,8 @@ granny-game.com
 granny-games.com
 *.granny-online.com
 granny-online.com
+*.grannygameunblocked.com
+grannygameunblocked.com
 *.grannyhorror.com
 grannyhorror.com
 *.grannyunblocked.com
@@ -6070,6 +6074,10 @@ jogosfas.com
 jogosfriv.com
 *.jogosfriv2.com
 jogosfriv2.com
+*.jogosfrivoriginal.com
+jogosfrivoriginal.com
+*.jogosfrivoriginals.com
+jogosfrivoriginals.com
 *.jogosgratis.com
 jogosgratis.com
 *.jogosjogos.com
@@ -6972,6 +6980,8 @@ monkeytype.com
 moonshotdailygame.com
 marccraft.mooo.com
 screaminginstoresprank.mooo.com
+*.moosite.com
+moosite.com
 *.mopixie.com
 mopixie.com
 *.more9game.com
@@ -13264,6 +13274,8 @@ romsmania.games
 saber.games
 *.say.games
 say.games
+*.saycheese.games
+saycheese.games
 *.serp.games
 serp.games
 *.shellshock.games
@@ -13664,6 +13676,7 @@ secretrelict.hu
 *.the-west.hu
 the-west.hu
 poly2.benlaunches.icu
+watch.benlaunches.icu
 *.calcsolver.id
 calcsolver.id
 crazygames.co.id
@@ -14271,6 +14284,8 @@ clanker.io
 clash-royale.io
 *.classicgame.io
 classicgame.io
+*.classrom7x.io
+classrom7x.io
 *.classroom-6x.io
 classroom-6x.io
 *.classroom10x.io
@@ -14641,6 +14656,8 @@ foundplay.io
 fowz.io
 *.framedgame.io
 framedgame.io
+*.freakcircus.io
+freakcircus.io
 *.free-games.io
 free-games.io
 *.freearcade.io
@@ -15991,6 +16008,7 @@ gplockedin.github.io
 gplusunblocked.github.io
 gr4ys0n.github.io
 grahamkayton17-art.github.io
+grannyunblockedonline.github.io
 gravityrail.github.io
 gray0072.github.io
 greyw0lf1888.github.io
@@ -23286,6 +23304,8 @@ schoolunblockedgames.org
 scoutlife.org
 *.scratchgeometrydash.org
 scratchgeometrydash.org
+*.scritchyscratchy.org
+scritchyscratchy.org
 *.scrunkly.org
 scrunkly.org
 *.sgames.org
