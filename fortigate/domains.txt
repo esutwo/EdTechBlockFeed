@@ -7,6 +7,18 @@ easy.ac
 ify.ac
 *.poki.ac
 poki.ac
+hazbinhotelisgood.medicalscience.academy
+hortymakesbadsongs.medicalscience.academy
+link1.medicalscience.academy
+link2.medicalscience.academy
+link3.medicalscience.academy
+link4.medicalscience.academy
+link5.medicalscience.academy
+link6.medicalscience.academy
+medevmadethistufflink.medicalscience.academy
+mickerino.medicalscience.academy
+puffer.medicalscience.academy
+summerbreakyippe.medicalscience.academy
 *.noahstutoring.academy
 noahstutoring.academy
 *.afterworkgames.ae
@@ -316,6 +328,7 @@ frhmlingames.netlify.app
 frivgames.netlify.app
 front-end-games-beacon.netlify.app
 fruit-ninja.netlify.app
+fusele.netlify.app
 gamerla.netlify.app
 gay-lovers.netlify.app
 geometry-dash.netlify.app
@@ -433,8 +446,10 @@ unblockedgames77.netlify.app
 unblockedswaggygames.netlify.app
 wackygames.netlify.app
 webmist.netlify.app
+weredle.netlify.app
 where-is-everybody-fermi.netlify.app
 wordsearchgame.netlify.app
+wwwordle.netlify.app
 xenon-emulator.netlify.app
 xiafei.netlify.app
 zodiac-games.netlify.app
@@ -814,6 +829,7 @@ manygames.vercel.app
 maruwa-drive.vercel.app
 masons1v1.vercel.app
 math-lessons.vercel.app
+mathclass-streaming.vercel.app
 merge-conflict-drab.vercel.app
 merge-fellas.vercel.app
 mergefellas.vercel.app
@@ -977,6 +993,7 @@ stillbound-arcade.vercel.app
 stratos-family-staging.vercel.app
 studio-games.vercel.app
 studyflow-one-pi.vercel.app
+subway-score-calculator.vercel.app
 subway-surfers-flax.vercel.app
 subway-surfers-sand.vercel.app
 subwayurf1.vercel.app
@@ -3400,6 +3417,7 @@ acid.contactme.cl
 bene.contactme.cl
 school-tt.contratoslab.cl
 ttmath.contratoslab.cl
+math-school.dila.cl
 thg-ms.dila.cl
 tung-school.dila.cl
 bums.edificare.cl
@@ -7237,6 +7255,7 @@ art-games.com
 cellmathsch.art-motel.com
 engagesirok.art-motel.com
 laptoppcok.art-motel.com
+nickmathsir.art-motel.com
 pcroomsir.art-motel.com
 sirmathgood.art-motel.com
 *.art95.com
@@ -8252,6 +8271,8 @@ beeblegames.com
 beechhillfarm.com
 *.beefjack.com
 beefjack.com
+*.beehints.com
+beehints.com
 *.beejeux.com
 beejeux.com
 *.beelinguapp.com
@@ -13389,6 +13410,7 @@ daymarethegame.com
 dayofdefeat.com
 *.dayofdragons.com
 dayofdragons.com
+golf.dayplaygames.com
 *.daysofevil.com
 daysofevil.com
 *.daysofwonder.com
@@ -26629,6 +26651,8 @@ judaoedu.com
 judgehype.com
 *.juegacarros.com
 juegacarros.com
+*.juegachos.com
+juegachos.com
 *.juegaclub.com
 juegaclub.com
 *.juegaenlinea.com
@@ -36318,6 +36342,8 @@ playchess.com
 playchinesecheckers.com
 *.playchip.com
 playchip.com
+*.playcladder.com
+playcladder.com
 *.playclassicsolitaire.com
 playclassicsolitaire.com
 *.playclassroom6x.com
@@ -37162,6 +37188,8 @@ playshakespeare.com
 playshellshockers.com
 *.playshifu.com
 playshifu.com
+*.playshople.com
+playshople.com
 *.playsidestudios.com
 playsidestudios.com
 *.playsight.com
@@ -40844,6 +40872,8 @@ sc3000.com
 scaenastudios.com
 *.scalacube.com
 scalacube.com
+*.scalargame.com
+scalargame.com
 *.scalefarm.com
 scalefarm.com
 *.scaniabridge.com
@@ -53335,6 +53365,7 @@ anime-games-roblox-reddit.pages.dev
 anime-roblox-games-rpg.pages.dev
 apex-appcraft-website.pages.dev
 apk0-com-games.pages.dev
+arcadegalaxy49.pages.dev
 architecture-games-on-roblox.pages.dev
 archixubg-site.pages.dev
 asmallworldcup.pages.dev
@@ -53375,6 +53406,7 @@ bestfightinggamesonroblox.pages.dev
 bestsimulatorgamesonroblox.pages.dev
 bgp-paolos-game.pages.dev
 bgs.pages.dev
+bigfishgamesaccountrecovery.pages.dev
 bigfishgamesloginaccount.pages.dev
 bigfishgamesloginaccount-yz6.pages.dev
 bigfoot.pages.dev
@@ -53409,7 +53441,9 @@ boxingrandom.pages.dev
 brainrotclicker.pages.dev
 brainrotgames.pages.dev
 breakoutgame.pages.dev
+brianduffy-games-privacy.pages.dev
 brickbreaker-app.pages.dev
+brownie-badge-making-games.pages.dev
 brushjjaemu-dyw.pages.dev
 bstar.pages.dev
 bubble-shooter.pages.dev
@@ -53504,6 +53538,7 @@ disease-spread-simulation-roblox.pages.dev
 dlpsgames-click-y68.pages.dev
 dmg-db.pages.dev
 doctor-like-roblox-games.pages.dev
+dombesteindata-play.pages.dev
 dominoesgame.pages.dev
 doodle-snake.pages.dev
 doodle-solitaire.pages.dev
@@ -53617,6 +53652,7 @@ games-unblocked.pages.dev
 gamesdoodle.pages.dev
 gamestudiohub.pages.dev
 gameunc.pages.dev
+gameviet46.pages.dev
 gamevo-staging.pages.dev
 gbaemulator.pages.dev
 gd-webport.pages.dev
@@ -53692,6 +53728,7 @@ horror-games-roblox-foltyn.pages.dev
 horror-games-roblox-good.pages.dev
 horror-games-roblox-itsfunneh.pages.dev
 horror-games-roblox-mobile.pages.dev
+horror-games-roblox-tagalog.pages.dev
 howtoplaygames.pages.dev
 idplay188-lucid-pointc.pages.dev
 immaculategrid.pages.dev
@@ -53731,6 +53768,7 @@ learntofly2.pages.dev
 level-devil.pages.dev
 leveldevil-unblocked.pages.dev
 lfgatlas.pages.dev
+like-games-in-roblox.pages.dev
 little-play-preview-1dd31c85.pages.dev
 littlealchemy2.pages.dev
 longest-words-for-roblox.pages.dev
@@ -53908,6 +53946,7 @@ polytrackgame.pages.dev
 polytrackunblocked.pages.dev
 popcat-clicker.pages.dev
 popular-roblox-car-games.pages.dev
+ppsspp-game-football.pages.dev
 precisionclient-88k.pages.dev
 protypinggames.pages.dev
 psc-games.pages.dev
@@ -53938,15 +53977,19 @@ retrobowl-game.pages.dev
 retrobowlunblocked.pages.dev
 roblox-admin2.pages.dev
 roblox-animation-exporter-tool.pages.dev
+roblox-anime-upcoming-games.pages.dev
 roblox-bodyforce-ui-library.pages.dev
+roblox-box-teleport-script.pages.dev
 roblox-card-games.pages.dev
 roblox-classic-zombie-games.pages.dev
 roblox-creator-info-script.pages.dev
 roblox-custom-validation-script.pages.dev
 roblox-earthquake-sound.pages.dev
 roblox-fate-games.pages.dev
+roblox-fps-games-realistic.pages.dev
 roblox-friend-color-esp.pages.dev
 roblox-game-download-link.pages.dev
+roblox-gameplay-horror-games.pages.dev
 roblox-games-api-v2.pages.dev
 roblox-games-half-loading.pages.dev
 roblox-games-like-iscariot.pages.dev
@@ -53964,6 +54007,8 @@ roblox-horror-games-yt.pages.dev
 roblox-horror-map-template.pages.dev
 roblox-icon-pack-ranks.pages.dev
 roblox-jailbreak-like-games.pages.dev
+roblox-lua-guide-book.pages.dev
+roblox-mage-sound.pages.dev
 roblox-marvel-games.pages.dev
 roblox-material-list-enum.pages.dev
 roblox-memory-optimizer-plugin.pages.dev
@@ -53987,6 +54032,7 @@ roblox-texture-pack-cartoon.pages.dev
 roblox-tiny-script.pages.dev
 roblox-train-ui-library.pages.dev
 roblox-trap-esp.pages.dev
+roblox-trolling-rp-games.pages.dev
 roblox-unblocked.pages.dev
 roblox-unblocked-games.pages.dev
 roblox-unblocked-games-school.pages.dev
@@ -54000,6 +54046,7 @@ roblox-virus-removal-script.pages.dev
 roblox-vr-roleplay-games.pages.dev
 roblox-vr-script-factory.pages.dev
 roblox-vr-script-framework.pages.dev
+roblox-vr-script-productively.pages.dev
 roblox-vr-script-property.pages.dev
 roblox-vr-script-valuablely.pages.dev
 roblox-vr-script-zero.pages.dev
@@ -54187,6 +54234,7 @@ theluigiplayer.pages.dev
 thepizzaeditions-github-io.pages.dev
 ti-89-calculator-games.pages.dev
 tiberava.pages.dev
+tiktokgetpaidtoplayblockblasttesterupgamesukk.pages.dev
 tiny-fishing-game.pages.dev
 tinyfishing.pages.dev
 tinyfishing-io.pages.dev
@@ -54293,6 +54341,7 @@ worthy-mobile-games-site.pages.dev
 www-bigapplegame-com.pages.dev
 xo-beta.pages.dev
 yee.pages.dev
+youtube-and-roblox-collab.pages.dev
 zc13.pages.dev
 zebra-gamer-roblox.pages.dev
 zeldamon.pages.dev
@@ -55531,6 +55580,8 @@ decerto.fr
 desjeuxgratuits.fr
 *.desticraft.fr
 desticraft.fr
+*.dialactal.fr
+dialactal.fr
 *.digiworks.fr
 digiworks.fr
 *.docplayer.fr
@@ -57053,6 +57104,8 @@ monkey-mart.fun
 neal.fun
 *.ogame.fun
 ogame.fun
+*.plaingame.fun
+plaingame.fun
 *.playgamesonline.fun
 playgamesonline.fun
 *.polytrack.fun
@@ -62285,6 +62338,7 @@ jonaslpeuu.github.io
 jonatanvieira.github.io
 jonathanballjmultimate.github.io
 jonathanjackson-droid.github.io
+jonesnxt.github.io
 jongipperich-gif.github.io
 jonkadelic.github.io
 jonnycodes123.github.io
@@ -62422,6 +62476,7 @@ larrinamsalva.github.io
 latpong22.github.io
 lax1duds.github.io
 layer8labs8.github.io
+lazyguyy.github.io
 lbannana.github.io
 lbellows.github.io
 lcpsgames.github.io
@@ -62493,6 +62548,7 @@ luckychamrs.github.io
 luckydog7.github.io
 lukeaa09.github.io
 lukeandwoofy.github.io
+lumamoto.github.io
 luminarylabs-dev.github.io
 luminosity-d3v.github.io
 lumm256.github.io
@@ -62790,6 +62846,7 @@ nvshs.github.io
 nxx99.github.io
 oboyagirl.github.io
 obsidiangame.github.io
+octokatherine.github.io
 odddevelopment.github.io
 oddpvp.github.io
 ody-seretis.github.io
@@ -63043,6 +63100,7 @@ raphinhaaus.github.io
 rashgawy13.github.io
 ratz67.github.io
 raunak-developer-del.github.io
+rbrignall.github.io
 realaqilplayz.github.io
 realdenniswong.github.io
 realdunkin.github.io
@@ -63224,6 +63282,7 @@ shaffear.github.io
 shafik86.github.io
 shahisha1.github.io
 shajhgsjhgajshgkjajasfhlkahlalfd.github.io
+shakespearegeek.github.io
 shakirdmr.github.io
 shannongtyps-lab.github.io
 sharplikescoding.github.io
@@ -64235,6 +64294,7 @@ rocketsoccerderby.gitlab.io
 rockysitetest.gitlab.io
 rooftop-snipers.gitlab.io
 run-3-game.gitlab.io
+rwmpelstilzchen.gitlab.io
 schoolunblockedgames.gitlab.io
 simplyph0.gitlab.io
 slither-io.gitlab.io
@@ -64492,6 +64552,8 @@ html5games.io
 hurdlegame.io
 *.hury.io
 hury.io
+*.hussvalley.io
+hussvalley.io
 *.hypixel.io
 hypixel.io
 *.icandy.io
@@ -64643,6 +64705,8 @@ leveldevil.io
 leveldevil-game.io
 *.leveldevilnotatrollgame.io
 leveldevilnotatrollgame.io
+*.lewdlegame.io
+lewdlegame.io
 *.lier.io
 lier.io
 *.limax.io
@@ -71842,6 +71906,8 @@ playingout.net
 playingwayhit.net
 *.playkey.net
 playkey.net
+*.playkrillion.net
+playkrillion.net
 *.playlists.net
 playlists.net
 *.playmahjong.net
@@ -75313,6 +75379,7 @@ calcudoku.org
 calgary374.org
 *.cambsbridge.org
 cambsbridge.org
+mvl.en.uhwhat123.camdvr.org
 yami-kawaii.camdvr.org
 *.camelot-irc.org
 camelot-irc.org
@@ -77454,6 +77521,7 @@ northsydneychess.org
 nostalrius.org
 *.novag.org
 novag.org
+honk.novalis.org
 *.nowifigames.org
 nowifigames.org
 *.nowomennoplay.org
@@ -84853,6 +84921,8 @@ monkeymart.xyz
 nesemulator.xyz
 *.nfscrb.xyz
 nfscrb.xyz
+*.nfsmw-web.xyz
+nfsmw-web.xyz
 *.nfsu2.xyz
 nfsu2.xyz
 *.pin-up-casino-game.xyz
