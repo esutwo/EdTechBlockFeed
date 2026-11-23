@@ -4,6 +4,16 @@ An automatically maintained **Network threat feed of gaming and "unblocked games
 
 Students reach games through sites that are quick to stand up and change often: GitHub Pages, Cloudflare Pages, Vercel or Netlify mirrors, custom domains made to look like schools, and npm packages served from jsDelivr. FortiGuard often rates these as Education, Information Technology, Personal Websites or Unrated, not as Games, so a category block misses them. This repo pulls together curated community blocklists, discovers new sites on its own, checks them live, and publishes plain-text files that a FortiGate polls.
 
+## Use this feed
+
+**Any ESU, district, school or library is welcome to use these feeds, free.** You don't need to run anything: point your firewall at the published files below. They're rebuilt hourly during the school day and reviewed every school morning.
+
+1. Add the feed URLs from [Feed files](#feed-files) to your firewall as external threat feeds (FortiGate steps below; Sophos and other NGFWs that accept plain-text domain and URL lists work too).
+2. Start in **monitor** mode for a few days, then switch to **block**.
+3. Please credit **"EdTech Block Feed by ESU 2"** when you describe or document it. Found a false positive or a site we missed? Open an issue.
+
+The feeds are licensed CC BY-NC-SA 4.0 (free, noncommercial use with attribution). The collector code is source-available under PolyForm Strict 1.0.0. See [Licensing](#licensing).
+
 ## Feed files
 
 | File | FortiGate feed type | Contents |
@@ -172,4 +182,12 @@ Every site found here is fetched and fingerprinted live before it's blocked.
 
 **Not used, by design:** Discord servers, link-dispenser bots and Discord listing sites (Disboard, Discord Me). Using them would mean joining student communities under a false identity and breaking Discord's terms. Their links still reach the feed when they're shared publicly, and engine and framework blocking catches new domains no matter how they're handed out.
 
-The collector code in this repo is © ESU 2 (see `LICENSE`). The feed files contain data from the sources above, which keep their own licenses; see each source's terms.
+## Licensing
+
+| Part | Files | License |
+|---|---|---|
+| **The feeds** | `fortigate/`, `review/`, `docs/latest-run.md` | [CC BY-NC-SA 4.0](LICENSE-FEED.md): free for any organization to use on its own networks, with attribution, noncommercially |
+| **The collector** | Everything else (`collector/`, `tools/`, `config/`, `seeds/`, `.github/`, documentation) | [PolyForm Strict 1.0.0](LICENSE-CODE.md): readable and usable for noncommercial purposes; **no modification, derivative works or redistribution** |
+| **Third-party data** | Incorporated into the feeds | Each source's own license; see [THIRD_PARTY.md](THIRD_PARTY.md) |
+
+Copyright (c) 2026 ESU 2. For commercial use, or permission to modify or host the collector, contact ESU 2.

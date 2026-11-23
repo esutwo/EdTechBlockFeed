@@ -1,5 +1,26 @@
-Copyright (c) 2026 ESU 2. All rights reserved.
+EdTech Block Feed
+Copyright (c) 2026 ESU 2
 
-This software and associated documentation are proprietary.
-No part of this software may be copied, modified, distributed, or used
-without the express written permission of ESU 2.
+This repository is licensed in two parts.
+
+1. THE FEEDS: open for use
+   Files: fortigate/ (the published threat feeds), review/ and
+   docs/latest-run.md (generated reports).
+   License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+   International (CC BY-NC-SA 4.0). See LICENSE-FEED.md.
+   In short: any ESU, school district, school, library or other
+   organization may use these feeds on its own networks, free of charge,
+   with attribution, for noncommercial purposes.
+
+2. THE COLLECTOR: source-available, no modification or redistribution
+   Files: everything else, including collector/, tools/, config/, seeds/,
+   .github/, docs/how-it-works.md and README.md.
+   License: PolyForm Strict License 1.0.0. See LICENSE-CODE.md.
+   In short: you may read it and use it for noncommercial purposes, but
+   you may not modify it, build on it, or distribute it.
+
+Third-party data incorporated in the feeds keeps its own license; see
+THIRD_PARTY.md.
+
+For other uses, such as commercial use or a modified or hosted copy of the
+collector, contact ESU 2 for written permission.
