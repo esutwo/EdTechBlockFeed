@@ -32,6 +32,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import cdn  # noqa: E402
+import proxyips  # noqa: E402
 import hashlib  # noqa: E402
 import socket  # noqa: E402
 from fingerprint import FINGERPRINT_VERSION, classify  # noqa: E402
@@ -1302,6 +1303,31 @@ def main() -> int:
     load_popular(settings, state)
     verify(cands, state, settings, not args.no_verify)
     resolve_stalled(cfg, state, platforms)
+
+    # ---- proxy server IPs (fortigate/proxyips.txt)
+    ip_lines: list[str] = []
+    pcfg = cfg.get("proxy_ips", {})
+    if pcfg.get("enabled", True):
+        trusted_src = tuple(cfg.get("stalled", {}).get("trusted_sources", []))
+
+        def ip_eligible(k, e):
+            if e["kind"] != "host" or k in cdn.CDN_HOSTS or platform_apex(k, platforms):
+                return False
+            return e["status"] == "confirmed" or (
+                e["status"] in ("pending", "new") and e.get("last_verdict") == "alive"
+                and e["source"].startswith(trusted_src))
+        nets = proxyips.load_exclusions(pcfg, ROOT, http_get, log)
+        proxyips.resolve_entries(state.get("entries", {}), ip_eligible, date_str(TODAY),
+                                 pcfg.get("resolve_budget", 4000), METRICS)
+        seed_ips = set()
+        for line in read_list(ROOT / "seeds" / "proxyips-confirmed.txt"):
+            if not proxyips.excluded(line, nets):
+                seed_ips.add(line)
+            else:
+                log(f"[proxyips] seed {line} ignored: private or in an excluded range")
+        ip_lines = proxyips.evaluate(state, pcfg, nets, allow, platforms, popular_rank,
+                                     platform_apex, trusted_src, seed_ips, dismissed,
+                                     TODAY, METRICS, log, http_get)
     age_out(state, settings)
 
     # ---- assemble
@@ -1330,6 +1356,7 @@ def main() -> int:
     f1 = write_feed(out / "domains.txt", all_lines, max_lines)
     f2 = write_feed(out / "domains-priority.txt", pri_lines, max_lines)
     f3 = write_feed(out / "urls.txt", sorted(url_lines), max_lines)
+    f3 += write_feed(out / "proxyips.txt", ip_lines, max_lines)
 
     # ---- review queue for humans / the daily triage agent
     rev = ROOT / "review"
@@ -1353,6 +1380,11 @@ def main() -> int:
         reason = e.get("hold") or "blocked, but the game fingerprint no longer matches"
         ev = e.get("evidence", "").split(" | ", 1)[-1]
         hl.append("\t".join([k, e["first_seen"], reason, e["check_url"], ev]))
+    for ip, r in sorted(state.get("proxy_ips", {}).items()):
+        if r.get("status") == "held":
+            hl.append("\t".join([f"ip:{ip}", r.get("first_seen", ""), r.get("reason", ""),
+                                  "server: " + " ".join(r.get("names", [])[:6]),
+                                  "block -> add the IP to seeds/proxyips-confirmed.txt"]))
     (rev / "held.txt").write_text("\n".join(hl) + "\n")
     lines = ["# Automatic retry queue (no action needed). Discovered entries that are",
              "# alive but don't match a game/proxy fingerprint yet, or were unreachable.",
@@ -1407,7 +1439,9 @@ def main() -> int:
             1 for e in entries.values() if e["kind"] == "cdn" and e["status"] == "confirmed"),
         "cdn": cdn_stats,
         "discovered_pending": sum(1 for e in entries.values() if e["status"] == "pending"),
-        "review_held": len(held),
+        "review_held": len(held) + sum(1 for r in state.get("proxy_ips", {}).values()
+                                       if r.get("status") == "held"),
+        "proxyips_entries": len(ip_lines),
         "discovered_rejected": sum(1 for e in entries.values() if e["status"] == "rejected"),
         "files": f1 + f2 + f3,
     }
@@ -1476,6 +1510,10 @@ def write_run_report(stats: dict, entries: dict) -> None:
         ("Stalled bypass-list sites blocked as clones of known bypass pages", g("stalled_confirmed_clone")),
         ("Stalled bypass-list sites blocked for impersonating a known service", g("stalled_confirmed_impersonation")),
         ("Stalled bypass-list sites held for review (second signal)", g("stalled_held_second_signal")),
+        ("Hostnames resolved for proxy-server detection", g("proxyips_hosts_resolved")),
+        ("  servers excluded as shared hosting", g("proxyips_shared_excluded")),
+        ("  servers excluded by network owner (cloud, CDN, parking, shared)", g("proxyips_owner_excluded")),
+        ("  proxy server IPs held for review", g("proxyips_held")),
         ("Live checks performed this run", verified),
     ]
     lines = ["# Latest collector run", "",
@@ -1492,6 +1530,7 @@ def write_run_report(stats: dict, entries: dict) -> None:
               f"| `domains.txt` entries | {stats['domains_txt_entries']:,} |",
               f"| `domains-priority.txt` entries | {stats['domains_priority_entries']:,} |",
               f"| `urls.txt` entries | {stats['urls_entries']:,} |",
+              f"| `proxyips.txt` entries (proxy server IPs) | {stats.get('proxyips_entries', 0):,} |",
               f"| CDN owners blocked at owner level | {stats['cdn']['gh_owners_owner_level']:,} |",
               f"| CDN repos blocked at repo level | {stats['cdn']['gh_repos_repo_level']:,} |",
               f"| npm packages blocked | {stats['cdn']['npm_packages']:,} |",

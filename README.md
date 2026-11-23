@@ -21,6 +21,7 @@ The feeds are licensed CC BY-NC-SA 4.0 (free, noncommercial use with attribution
 | [`fortigate/domains.txt`](fortigate/domains.txt) | Domain Name | **Main feed.** Every gaming domain: unblocked-games sites, discovered mirrors, the UT1 games category, and platform games (Steam, Roblox, Epic and others). |
 | [`fortigate/domains-priority.txt`](fortigate/domains-priority.txt) | Domain Name | Unblocked and school-bypass game sites only. Use it on smaller FortiGates that can't hold the main feed. |
 | [`fortigate/urls.txt`](fortigate/urls.txt) | FortiGuard Category (URL list) | Path-level entries for hosts that can't be blocked whole: **CDN loaders** (game and proxy loaders hosted in GitHub repos or npm packages and opened through jsDelivr, unpkg, esm.sh, statically or githack, written for every mirror and blocked per owner, repo or package), plus Google Sites and Apps Script pages. |
+| [`fortigate/proxyips.txt`](fortigate/proxyips.txt) | IP Address | **Proxy server IPs**: dedicated servers that host bypass sites under many rotating names. Blocking the server also blocks names no source has seen yet. See [Proxy server IPs](#proxy-server-ips-proxyipstxt). |
 
 Raw URLs to give the FortiGate:
 
@@ -28,6 +29,7 @@ Raw URLs to give the FortiGate:
 https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/domains.txt
 https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/domains-priority.txt
 https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/urls.txt
+https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/proxyips.txt
 ```
 
 File format: one entry per line, with no comments, schemes or paths (except in `urls.txt`). Registrable domains appear twice, as `example.com` and `*.example.com`, so subdomains match too. If a list grows past `max_lines_per_file` (100,000), it is split into `domains-2.txt`, `domains-3.txt` and so on. Add one connector per part.
@@ -74,11 +76,50 @@ Notes on the URL feed:
 
 Then, on student policies:
 
-* **DNS filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `EdTech-Games-Domains` to **Block** (or Redirect to Block Portal).
-* **Web filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `EdTech-Games-URLs` to **Block**.
-  * Optional: to block the domain list in the web filter too (it catches devices that get around your DNS, for example with DNS-over-HTTPS), add a second `type category` feed (another category number) pointing at `domains.txt`, and block it here as well.
+* **DNS filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `ESU Threat Feed: Games DNS` to **Block** (or Redirect to Block Portal).
+* **Web filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `ESU Threat Feed: Games URL` and `ESU Threat Feed: Games CDNs` to **Block**. (The Games URL feed is the domain list again, which catches devices that get around your DNS, for example with DNS-over-HTTPS.)
 * **Deep SSL inspection is recommended for `urls.txt`.** Every entry in it is a path on a shared host, such as `cdn.jsdelivr.net/gh/<owner>/` or `sites.google.com/view/<name>`. With certificate-only inspection the FortiGate sees only the hostname of an HTTPS request, never the path, so these entries can't match. The domain feeds work either way.
 * The FortiGate's management interface needs outbound HTTPS to `raw.githubusercontent.com`.
+
+### Proxy server IPs (`proxyips.txt`)
+
+An **IP address** threat feed of dedicated servers that host bypass sites under many rotating names, often on hijacked subdomains behind a Cloudflare challenge that hides the real page. Blocking the server blocks **every name pointed at it, including new ones**.
+
+**What's in it:**
+- **Automatic:** servers where at least 2 bypass-grade names are confirmed (from student bypass lists or urlscan, or confirmed as proxies, clones, impersonations or loaders), making up at least 60% of the names seen on that server.
+- **Reviewed:** IPs a reviewer confirmed in `seeds/proxyips-confirmed.txt`. Suspicious servers that don't meet the automatic bar appear in `review/held.txt` as `ip:<address>`.
+
+**What's never in it:**
+- Cloudflare, cloud, CDN, PaaS, parking and shared-hosting networks, checked by IP range **and** by network owner (ASN, via RIPEstat).
+- Any server that also hosts a free-hosting subdomain, an allowlisted site or a ranked domain.
+- Private addresses.
+- Any address a critical service (Google, Microsoft 365, Apple, GitHub, Amplify and others) resolves to. The publish safety check enforces this.
+
+**Expiry:** an IP is dropped after 30 days with no qualifying name pointing at it.
+
+```
+config system external-resource
+    edit "ESU Threat Feed: Proxy IPs"
+        set type address
+        set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/proxyips.txt"
+        set refresh-rate 15
+    next
+end
+```
+
+Use it in one or both places:
+
+* **DNS filter** (blocks any name that resolves to a listed server, so students get a clean block):
+  ```
+  config dnsfilter profile
+      edit "<student DNS filter profile>"
+          set external-ip-blocklist "ESU Threat Feed: Proxy IPs"
+      next
+  end
+  ```
+* **Firewall policy** (the backstop: blocks connections to the server however the name was resolved, including DNS-over-HTTPS or a bare IP). Add a **deny** policy from the student interfaces to the internet with destination `ESU Threat Feed: Proxy IPs`, logging enabled, and **move it above** the student internet policy.
+
+IP address feeds don't use a category number. If your firmware prompts for one, any unused number from 192 to 221 works. The web filter doesn't use IP feeds.
 * Entry limits depend on the model. Check *Security Fabric → External Connectors → (feed) → View Entries* and the event log after the first pull. If the main feed is too large for a smaller box, use `domains-priority.txt` instead.
 
 The feed is rebuilt **hourly during school hours** (weekdays 6am–5pm Central) and every 4 hours otherwise. A FortiGate refresh rate of 10–15 minutes keeps up with it.

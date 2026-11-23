@@ -16,3 +16,7 @@ mka.lauta.site                     # 2026-11-23 review: browser fighting-game po
 games.lauta.site                   # 2026-11-23 review: same owner's browser game-ports hub, linked from mka.lauta.site
 play.fatal.racing                  # 2026-11-23 review: "ROLLER" browser racing game
 play.neverball.org                 # 2026-11-23 review: Neverball playable in the browser
+mathisfun.ebine-san.com            # 2026-11-23: reported by a school; hijacked subdomain on proxy server 108.181.32.77
+wiki.schooloqy.com                 # 2026-11-23: Schoology typosquat on proxy server 108.181.32.77
+rammer.nana.nyxprint.ar            # 2026-11-23: Rammerhead proxy on 108.181.32.77
+ksd-resource.sababat.com           # 2026-11-23: proxy front end on 108.181.32.77

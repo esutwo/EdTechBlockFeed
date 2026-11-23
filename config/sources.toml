@@ -318,3 +318,70 @@ min_cluster = 3
 "nasa" = ["nasa.gov"]
 "harvard" = ["harvard.edu"]
 "wikipedia" = ["wikipedia.org"]
+
+# ---------------------------------------------------------------------------
+# Proxy server IPs (fortigate/proxyips.txt): dedicated servers hosting bypass
+# sites under many rotating names. Blocking the server catches names no source
+# has seen yet. Use as a FortiGate IP address threat feed (DNS filter
+# external IP block list and/or a firewall deny policy).
+# ---------------------------------------------------------------------------
+
+[proxy_ips]
+enabled = true
+min_confirmed = 2           # confirmed bypass names needed on one server...
+min_ratio = 0.6             # ...making up at least this share of its known names
+held_min_names = 3          # stalled names (with proxy/decoy naming) to hold a server for review
+max_age_days = 30           # drop an IP when no qualifying name has pointed at it for this long
+resolve_budget = 4000       # hostnames resolved per run (each re-resolved at most daily)
+# Never published, in addition to Cloudflare's ranges (fetched each run) and
+# private/reserved space: load balancers and front ends shared by many
+# unrelated sites.
+shared_ranges = [
+  "185.199.108.0/22",   # GitHub Pages
+  "151.101.0.0/16",     # Fastly
+  "146.75.0.0/16",      # Fastly
+  "199.232.0.0/16",     # Fastly
+  "76.76.21.0/24",      # Vercel
+  "66.33.60.0/24",      # Vercel
+  "75.2.60.5/32",       # Netlify load balancer
+  "99.83.231.61/32",    # Netlify load balancer
+  "98.84.224.111/32",   # Netlify
+  "18.208.88.157/32",   # Netlify
+  "216.24.57.0/24",     # Render
+  "199.36.158.100/32",  # Firebase Hosting
+  "142.250.0.0/15",     # Google
+  "142.251.0.0/16",     # Google
+  "172.217.0.0/16",     # Google
+  "216.239.32.0/19",    # Google (incl. Google Sites custom domains)
+  "198.185.159.0/24",   # Squarespace
+  "198.49.23.0/24",     # Squarespace
+  "23.227.38.0/24",     # Shopify
+  "192.0.78.0/24",      # WordPress.com
+  "23.236.62.147/32",   # Wix
+]
+# Network owners (from RIPEstat) whose addresses are shared by many unrelated
+# sites: never published even with strong evidence. An IP whose owner can't be
+# looked up is not published either.
+excluded_asns = [
+  16509, 14618,          # Amazon (AWS, CloudFront; Vercel front ends)
+  13335, 209242,         # Cloudflare
+  15169, 396982, 19527,  # Google
+  8075, 8068,            # Microsoft
+  54113,                 # Fastly
+  20940, 16625, 21342,   # Akamai CDN (Linode VPS, AS63949, stays eligible)
+  36459,                 # GitHub
+  133618, 47846, 397241, # Trellian / Sedo / parking
+  34119,                 # Wildcard UK (free hosting)
+  22612,                 # Namecheap shared hosting
+  46606,                 # Unified Layer (Bluehost)
+  26496, 398101,         # GoDaddy
+  47583,                 # Hostinger
+  60068,                 # CDN77 / Datacamp
+  200325,                # Bunny CDN
+]
+excluded_owner_patterns = [
+  "amazon", "cloudflare", "google", "microsoft", "fastly", "akamai-as", "github", "vercel",
+  "netlify", "parking", "sedo", "bodis", "trellian", "namecheap", "godaddy", "hostinger",
+  "unified layer", "wix", "squarespace", "shopify", "automattic", "wildcard", "ifastnet",
+  "bunny", "cdn77", "datacamp", "incapsula", "imperva", "sucuri", "stackpath", "edgecast",
+]
