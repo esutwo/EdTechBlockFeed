@@ -86,3 +86,6 @@ twilightparadox.com
 hf.space
 customer-oci.com
 lovable.app                        # AI app builder; one subdomain per user
+icp0.io                            # 2026-11-23 review: Internet Computer canister hosting; one subdomain per app
+ic0.app                            # 2026-11-23 review: older Internet Computer canister domain (same service as icp0.io)
+us.com                             # 2026-11-23 review: CentralNic shared second-level domain (like it.com); anyone registers names under it
