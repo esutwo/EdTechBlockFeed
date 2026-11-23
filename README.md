@@ -47,10 +47,11 @@ FortiOS has no "URL" feed type. A Domain Name feed only matches whole hostnames,
 config system external-resource
     edit "EdTech Threat Feed Domains"
         set type domain
+        set category 199
         set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/domains.txt"
         set refresh-rate 15
     next
-    edit "EdTech Threat Feed Domains"
+    edit "EdTech Threat Feed Domains WF"
         set type category
         set category 200
         set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/domains.txt"
@@ -65,17 +66,22 @@ config system external-resource
 end
 ```
 
-Notes on the URL feed:
+| Feed | Type | Used in | Required? |
+|---|---|---|---|
+| `EdTech Threat Feed Domains` | Domain Name | DNS filter | Yes |
+| `EdTech Threat Feed Domains WF` | FortiGuard Category | Web filter (catches devices that get around your DNS, e.g. DNS-over-HTTPS) | Recommended |
+| `EdTech Threat Feed CDNs` | FortiGuard Category | Web filter | Yes (needs deep inspection; see below) |
 
-* `set category` is required. Without it, FortiOS rejects the entry with *"Must configure category"*. Use any number from 192 to 221 that isn't already used by another remote feed. It's the ID the web filter uses for this remote category.
+Notes:
+
+* **Every feed needs `set category` and a unique name.** Without a category, FortiOS rejects the entry with *"Must configure category"* (this applies to Domain Name feeds too). Use any number from 192 to 221 that isn't already used by another remote feed; `show system external-resource` lists the ones in use. The number is the ID the DNS and web filter profiles use for that remote category. Two `edit` blocks with the same name overwrite each other.
 * `set type url` is not valid (*"command parse error"*). Type `set type ?` at that prompt to see the types your firmware supports.
 * To confirm a feed loaded, open *Security Fabric → External Connectors → (feed) → View Entries*. The entry count should match [`docs/latest-run.md`](docs/latest-run.md).
 
 Then, on student policies:
 
-* **DNS filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `EdTech-Games-Domains` to **Block** (or Redirect to Block Portal).
-* **Web filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `EdTech-Games-URLs` to **Block**.
-  * Optional: to block the domain list in the web filter too (it catches devices that get around your DNS, for example with DNS-over-HTTPS), add a second `type category` feed (another category number) pointing at `domains.txt`, and block it here as well.
+* **DNS filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `EdTech Threat Feed Domains` to **Block** (or Redirect to Block Portal).
+* **Web filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `EdTech Threat Feed CDNs` and `EdTech Threat Feed Domains WF` to **Block**.
 * **Deep SSL inspection is recommended for `urls.txt`.** Every entry in it is a path on a shared host, such as `cdn.jsdelivr.net/gh/<owner>/` or `sites.google.com/view/<name>`. With certificate-only inspection the FortiGate sees only the hostname of an HTTPS request, never the path, so these entries can't match. The domain feeds work either way.
 * The FortiGate's management interface needs outbound HTTPS to `raw.githubusercontent.com`.
 * Entry limits depend on the model. Check *Security Fabric → External Connectors → (feed) → View Entries* and the event log after the first pull. If the main feed is too large for a smaller box, use `domains-priority.txt` instead.
