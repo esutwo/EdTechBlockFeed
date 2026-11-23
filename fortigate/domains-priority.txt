@@ -2452,6 +2452,7 @@ armywars.com
 cellmathsch.art-motel.com
 engagesirok.art-motel.com
 laptoppcok.art-motel.com
+nickmathsir.art-motel.com
 pcroomsir.art-motel.com
 sirmathgood.art-motel.com
 *.artbitrator.com
@@ -13814,6 +13815,7 @@ itsmart.info
 jeuxflash.info
 *.mathdrills.info
 mathdrills.info
+paloalto.oneuniversity.info
 *.pokemongames.info
 pokemongames.info
 *.retrobowl.info

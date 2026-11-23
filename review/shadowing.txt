@@ -101,7 +101,7 @@ bestspark.krepche.com	confirmed	different-servers-than-parent	aggregator:https:/
 bestspark.oxsec.com.mx	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 bestspark.sryze.cc	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 bestspark.worldmicroscope.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-beta.dreamstudio.ai	pending	cname->d18t2cldnmhljr.cloudfront.net,different-servers-than-parent	github-readme:FlyingHorse168/FreeAiTools
+beta.dreamstudio.ai	pending	cname->d18t2cldnmhljr.cloudfront.net	github-readme:FlyingHorse168/FreeAiTools
 bias.gcpservicios.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 bids.topmoto.pl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 bile.heliumcola.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -473,6 +473,7 @@ new-sandbox-program-8-17245465.codehs.me	pending	different-servers-than-parent	a
 nexchange2.docs.apiary.io	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 niche-site.nichesite.org	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 nichestudies.govt.hu	confirmed	different-servers-than-parent	urlscan:filename:"scramjet.all.js"
+nickmathsir.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 nilstreet.playthecombine.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/Carter54git/Ult
 nobloccstatus.mattle.uk	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 npgeo-corona-npgeo-de.hub.arcgis.com	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
@@ -485,6 +486,7 @@ online-learning.harvard.edu	pending	different-servers-than-parent	github-readme:
 opendata.aemet.es	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 openpolicing.stanford.edu	pending	cname->5harad.github.io,different-servers-than-parent	github-readme:danilofreire/awesome-stars
 otx.alienvault.com	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
+paloalto.oneuniversity.info	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 partner.steamgames.com	pending	different-servers-than-parent	github-readme:Lei-TzuY/browser-game-prototypes
 pay.pnsofficial.com	pending	different-servers-than-parent	github-readme:odedkovach/awesome-web-games
 payment.joynetgame.com	pending	different-servers-than-parent	github-readme:odedkovach/awesome-web-games
@@ -622,6 +624,7 @@ youman.rusticrivergear.com	confirmed	different-servers-than-parent	aggregator:ht
 yrtldy9x8td9y.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 yukios.edgeone.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 zhitmyoghxfwqcprrqjf.supabase.co	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
+zoomzoomzoom.zapier.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 zzamnvhadwibvafqcfpd.supabase.co	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 
 # Parent domains with 3+ discovered subdomains in the last 14 days:

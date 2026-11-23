@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-23 19:12 UTC  
+Run: 2026-11-23 20:03 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -11,23 +11,23 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | List entries parsed and normalized | 87,098 |
 | GitHub repository searches | 30 |
 | GitHub repositories examined | 1,749 |
-| README files scanned for links | 36 |
+| README files scanned for links | 17 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,654 |
 | Certificate Transparency queries | 9 |
 | Certificates examined | 8 |
 |   certificate-log source unreachable this run (skipped) | 0 |
-| CDN owners expanded (repo listings) | 40 |
-| CDN owner repositories listed | 1,000 |
-| CDN entry files found in owner repos | 1,108 |
+| CDN owners expanded (repo listings) | 15 |
+| CDN owner repositories listed | 392 |
+| CDN entry files found in owner repos | 489 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 571 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 18,437 |
-|   dropped: allowlist | 3,589 |
-|   dropped: known non-game service | 159 |
+| Links examined by the filters | 11,890 |
+|   dropped: allowlist | 1,972 |
+|   dropped: known non-game service | 69 |
 |   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 5,040 |
+|   dropped: README link with no game/bypass hint | 1,646 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 10 |
@@ -37,7 +37,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Repositories listed from watched GitHub orgs | 135 |
 | Script URLs from confirmed pages re-queued for mirror detection | 0 |
 | Game engines (GitHub owners) newly confirmed from page scripts | 0 |
-| Sites with domain-shadowing DNS signals | 54 |
+| Sites with domain-shadowing DNS signals | 76 |
 | Sites re-queued after a fingerprint upgrade | 0 |
 | Links with a CDN path shape on unknown hosts | 0 |
 | Unknown hosts tested for being a new CDN/mirror | 0 |
@@ -46,33 +46,31 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Discovered sites held for review: top-ranked domain | 0 |
 | Discovered sites held for review: established site, only a sub-page is a game | 0 |
 | Discovered sites held for review: possible domain shadowing | 0 |
-| Stalled bypass-list sites blocked as clones of known bypass pages | 1 |
+| Stalled bypass-list sites blocked as clones of known bypass pages | 2 |
 | Stalled bypass-list sites blocked for impersonating a known service | 0 |
 | Stalled bypass-list sites held for review (second signal) | 0 |
-| Hostnames resolved for proxy-server detection | 945 |
+| Hostnames resolved for proxy-server detection | 7 |
 |   servers excluded as shared hosting | 1 |
 |   servers excluded by network owner (cloud, CDN, parking, shared) | 8 |
 |   proxy server IPs held for review | 3 |
-| Live checks performed this run | 1,952 |
+| Live checks performed this run | 1,507 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| cdn | alive | 237 |
-| cdn | dead | 210 |
-| cdn | game | 1 |
-| cdn | loader | 4 |
-| host | alive | 325 |
-| host | dead | 1,171 |
-| host | game | 4 |
+| cdn | alive | 6 |
+| cdn | proxy | 1 |
+| host | alive | 598 |
+| host | dead | 901 |
+| url | alive | 1 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 85,133 |
-| `domains-priority.txt` entries | 25,027 |
+| `domains.txt` entries | 85,135 |
+| `domains-priority.txt` entries | 25,029 |
 | `urls.txt` entries | 5,971 |
 | `proxyips.txt` entries (proxy server IPs) | 16 |
 | CDN owners blocked at owner level | 65 |
@@ -86,12 +84,12 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 
 | Entry type | Status | Count |
 |---|---|---:|
-| cdn | confirmed | 1,604 |
-| cdn | pending | 1,045 |
+| cdn | confirmed | 1,605 |
+| cdn | pending | 1,051 |
 | cdn | rejected | 896 |
-| host | confirmed | 1,154 |
+| host | confirmed | 1,156 |
 | host | dismissed | 47 |
-| host | pending | 6,633 |
+| host | pending | 6,631 |
 | url | confirmed | 56 |
 | url | pending | 8 |
 

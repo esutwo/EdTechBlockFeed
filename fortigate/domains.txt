@@ -7244,6 +7244,7 @@ art-games.com
 cellmathsch.art-motel.com
 engagesirok.art-motel.com
 laptoppcok.art-motel.com
+nickmathsir.art-motel.com
 pcroomsir.art-motel.com
 sirmathgood.art-motel.com
 *.art95.com
@@ -59529,6 +59530,7 @@ nukepowered.info
 *.o-a.info
 o-a.info
 jatekok.oldal.info
+paloalto.oneuniversity.info
 *.onlinesportgames.info
 onlinesportgames.info
 *.opencity.info
