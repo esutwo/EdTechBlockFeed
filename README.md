@@ -66,7 +66,7 @@ Then, on student policies:
 * **DNS filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `EdTech-Games-Domains` to **Block** (or Redirect to Block Portal).
 * **Web filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `EdTech-Games-URLs` to **Block**.
   * Optional: to block the domain list in the web filter too (it catches devices that get around your DNS, for example with DNS-over-HTTPS), add a second `type category` feed (another category number) pointing at `domains.txt`, and block it here as well.
-* **Deep SSL inspection is required for `urls.txt`.** Every entry in it is a path on a shared host, such as `cdn.jsdelivr.net/gh/<owner>/` or `sites.google.com/view/<name>`. With certificate-only inspection the FortiGate sees only the hostname of an HTTPS request, never the path, so these entries can't match. The domain feeds work either way.
+* **Deep SSL inspection is recommended for `urls.txt`.** Every entry in it is a path on a shared host, such as `cdn.jsdelivr.net/gh/<owner>/` or `sites.google.com/view/<name>`. With certificate-only inspection the FortiGate sees only the hostname of an HTTPS request, never the path, so these entries can't match. The domain feeds work either way.
 * The FortiGate's management interface needs outbound HTTPS to `raw.githubusercontent.com`.
 * Entry limits depend on the model. Check *Security Fabric → External Connectors → (feed) → View Entries* and the event log after the first pull. If the main feed is too large for a smaller box, use `domains-priority.txt` instead.
 
@@ -135,4 +135,3 @@ Feed contents come from the projects below. Each keeps its own license, and attr
 | [AdguardTeam/HostlistsRegistry](https://github.com/AdguardTeam/HostlistsRegistry) (gaming services) | GPL-3.0 |
 | marcuccione, bridgerhung, panamastem, mmcohen-tech lists; apsbartlettb gist | see each repo |
 
-The collector code in this repo is MIT licensed (see `LICENSE`).
