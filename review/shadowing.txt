@@ -100,7 +100,6 @@ blog.purestorage.com	pending	different-servers-than-parent	github-readme:Ancient
 bloom.stoop.games	pending	different-servers-than-parent	github-readme:ryviuszero/awesome-daily-games
 blur.casadotricolor.com.br	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 blynkapi.docs.apiary.io	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
-bob-nolanbetter.wasmer.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 body.treetech.tw	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 boil.bakkoda.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 bomb.carcano.me	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -111,7 +110,6 @@ bored-api.appbrewery.com	pending	different-servers-than-parent	github-readme:Man
 born.jundy.org	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 boss.igotwasted.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 bout.awiki.org	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-boykisser.rawr.africa.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 brew.120v.ac	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 bros.dstand.com.au	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 brow.lilyspadd.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -125,20 +123,14 @@ cdn-b.saashub.com	pending	cname->saashub.b-cdn.net,different-servers-than-parent
 cdn.i-ready.com	pending	different-servers-than-parent	github-readme:julianlockibarra-cat/games
 cdn.vibegamer.io	pending	different-servers-than-parent	github-readme:ummydev/awesome-claude-fable-games
 chat.inmobiliariamardelplata.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-cherribestproxy.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-cherriisgood.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 cipher.bumon.ar	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 cipher.ronginbari.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 cipher.tanenbaumchat.org	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-clash.zapier.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-clever.com.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-clever.com.silksky.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 cli.angular.io	pending	cname->dns-redirecting.web.app,different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
 clinicaltables.nlm.nih.gov	pending	different-servers-than-parent	github-readme:Manavarya09/public-apis-live
 cloud.ibm.com	pending	different-servers-than-parent	github-readme:hsoirghfohdj/invisiproxylts
 cloud.oracle.com	pending	different-servers-than-parent	github-readme:hsoirghfohdj/invisiproxylts
 cloud.qdrant.io	pending	different-servers-than-parent	github-readme:bodrick/awesome-stars
-cnameonly.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 code.visualstudio.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Zorin-OS-Guide
 cogym.saltlab.stanford.edu	pending	different-servers-than-parent	github-readme:tahir80/Agentic_AI_papers
 coinigy.docs.apiary.io	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
@@ -147,7 +139,6 @@ cs.cornell.edu	pending	different-servers-than-parent	github-readme:enhansome/enh
 cs.lmu.edu	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
 cs.uoregon.edu	pending	different-servers-than-parent	github-readme:enhansome/enhansome-ARM-Guide
 cs.utexas.edu	pending	different-servers-than-parent	github-readme:lineality/ai_2024_in_review
-cs2go.3kh0.net	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/Carter54git/Ult
 curriculum.learnalberta.ca	pending	cname->d267pl7l3p1hop.cloudfront.net,different-servers-than-parent	github-readme:scaemrfung/Grade4-Tech
 data.uio.no	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 database.lichess.org	pending	different-servers-than-parent	github-readme:SwiftIron/Chess_Coach
@@ -156,7 +147,6 @@ deend.gcpservicios.cl	confirmed	different-servers-than-parent	aggregator:https:/
 deeplearning4j.konduit.ai	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Zorin-OS-Guide
 deploy.cloud.run	pending	different-servers-than-parent	github-readme:hsoirghfohdj/invisiproxylts
 dev-portal.rappi.com	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
-dev.92spoons.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/bns34/Unblocked
 developer.android.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Zorin-OS-Guide
 developer.arm.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
 developer.firstsales.io	pending	different-servers-than-parent	github-readme:mcpHQ/awesome-mcp-servers
@@ -313,8 +303,6 @@ edu.snubby.top	pending	different-servers-than-parent	github-readme:shatwyatt-boo
 edu4u.dyndns.berlin	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 education.despla.in	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 education.oracle.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
-education1.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-educationforall.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 edudash.edu-spark.top	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 eii56-giaaa-aaaad-qfypa-cai.icp0.io	pending	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 ela.next-education-learning.sbs	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -326,32 +314,22 @@ english.next-education-learning.online	confirmed	different-servers-than-parent	a
 english.rusticrivergear.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 etcher.balena.io	pending	different-servers-than-parent	github-readme:patdeg/openclaw_kids
 explore.data.parliament.uk	pending	different-servers-than-parent	github-readme:Manavarya09/public-apis-live
-f.schoology.lat	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 felt.cthulhu.li	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-fffffff.zapier.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 flask.palletsprojects.com	pending	different-servers-than-parent	github-readme:UplandJacob/Upland-HA-Addons
 folklore.helena.bio	pending	different-servers-than-parent	github-readme:mcpHQ/awesome-mcp-servers
 formula.glamourfreaks.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-fortiguardsucks.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 forum.snapcraft.io	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Zorin-OS-Guide
-free-money-here.gt.tc	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-fsdoifasfiao.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 ftw.usatoday.com	pending	different-servers-than-parent	github-readme:rarelygoeshere/WordleWeb
 game.last-control.com	pending	different-servers-than-parent	github-readme:rarelygoeshere/WordleWeb
 game.spacemolt.com	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 games.productpickle.online	pending	cname->product-pickle-games.netlify.app,different-servers-than-parent	github-readme:ryviuszero/awesome-daily-games
 games.stardreamcruises.com	pending	different-servers-than-parent	github-readme:thedaviddias/llms-txt-hub
-generals.wasm.ltd	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/Carter54git/Ult
 gfufgf.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 gfufgfgth.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 ggjfs.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-ghostmeow-946778752360.us-central1.run.app	pending	different-servers-than-parent	list:game-proxy-gist
 git.sr.ht	pending	different-servers-than-parent	github-readme:phanirithvij/stars
 git.synz.io	pending	different-servers-than-parent	github-readme:wangjiezhe/awesome-stars
-github-guthib-17246489.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 github.grumdrig.com	pending	cname->grumdrig.github.io,different-servers-than-parent	github-readme:proyecto26/awesome-jsgames
-gn-math-67-17246219.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-goob-17245597.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 good.gcpservicios.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 goodtung.roje.com.br	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 googmamdir.parcomunica.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -359,13 +337,10 @@ gps.uml.edu	pending	different-servers-than-parent	github-readme:enhansome/enhans
 graphql.bitquery.io	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 greenlight.tanenbaumchat.org	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 grove.cloud.suliaotongwang.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-gtavc.projetoescola.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/Carter54git/Ult
 help.elgato.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
 help.figma.com	pending	different-servers-than-parent	github-readme:alvinunreal/awesome-submitlist
 help.raindrop.io	pending	different-servers-than-parent	github-readme:alvinunreal/awesome-submitlist
 help.twilio.com	pending	cname->d2epi9gu6ebj2r.cloudfront.net,different-servers-than-parent	github-readme:narwhalacademy/zebra-crossing
-hi-17246585.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-hi.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 hks.harvard.edu	pending	different-servers-than-parent	github-readme:lineality/ai_2024_in_review
 homeworkmath.parcomunica.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 honk.novalis.org	confirmed	different-servers-than-parent	github-readme:rarelygoeshere/WordleWeb
@@ -375,18 +350,12 @@ hub.superfastrobotics.com	pending	cname->superfast-robotics.github.io	github-rea
 hulufei.gitbooks.io	pending	different-servers-than-parent	github-readme:wangjiezhe/awesome-stars
 i.ibb.co	pending	different-servers-than-parent	github-readme:bbauska/W3Cx-3of5
 imaginator.developer-service.io	pending	different-servers-than-parent	github-readme:pingan8787/awesome-ai-tools
-infinityfreeisactuallypeakbutnotfast.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-info.antipodeantarot.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 intel.degenscan.io	pending	different-servers-than-parent	github-readme:Manavarya09/public-apis-live
-invidious-us.kavin.rocks	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-is-blud-einstein-17246524.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 jagjy.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 jwaoe.edu.elementalesdelsur.com	pending	different-servers-than-parent	github-readme:shatwyatt-boop/Gay
 keepcontent.gd1code.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 kind.sigs.k8s.io	pending	cname->k8s-kind.netlify.app,different-servers-than-parent	github-readme:enhansome/enhansome-Zorin-OS-Guide
 kitsu.docs.apiary.io	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
-kn0tzer.work.gd	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/Carter54git/Ult
-ksd-resource.sababat.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 lab.ytdeepsea.com	pending	different-servers-than-parent	github-readme:GuoCoder/awesome-html-games
 landscape.cncf.io	pending	cname->d1sms4bfmy7xpw.cloudfront.net,different-servers-than-parent	github-readme:enhansome/enhansome-Zorin-OS-Guide
 laptoppcok.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -399,26 +368,17 @@ learn.unity.com	pending	different-servers-than-parent	github-readme:enhansome/en
 learningdash.edu-spark.top	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 learningnetwork.cisco.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Zorin-OS-Guide
 lesson.glamourfreaks.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-let-us-have-our-phones-out-of-class.nichesite.org	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-lhabelyhfjhd.wasmer.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-light-coffee-o3mwx39zv0.edgeone.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-lightspeedsystems.com.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-lightspeedsystems.coma.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-linen.freeddns.org	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 linewise.samandjen.ca	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 lofp.metavert.io	pending	different-servers-than-parent	github-readme:lappemic/awesome-ai-built-games
 lumber-staging.webflow.io	pending	different-servers-than-parent	github-readme:thedaviddias/llms-txt-hub
 lyricsovh.docs.apiary.io	pending	different-servers-than-parent	github-readme:Manavarya09/public-apis-live
-mason.zapier.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mastodon.gamedev.place	pending	different-servers-than-parent	github-readme:rarelygoeshere/WordleWeb
 material.angular.io	pending	cname->dns-redirecting.web.app,different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
-math-lessons-space-17244170.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 math-school.dila.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 math.2.3.a.a.0.d.0.0.1.0.a.2.ip6.arpa	pending	cname->crshqd.github.io	github-readme:shatwyatt-boop/Gay
 math.cyanpurr.cc.cd	pending	different-servers-than-parent	github-readme:tryingmybest122/sapphire
 math.free-dyndns.org	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 math.next-education-learning.sbs	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-mathhomeworkhelperthingy.free.nf	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 matlab.mathworks.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Zorin-OS-Guide
 matlabacademy.mathworks.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
 mcp.atlasunited.io	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
@@ -434,36 +394,23 @@ mcp.studiosphere.space	pending	different-servers-than-parent	github-readme:punkp
 mcp.wealthnow.io	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 mcp.workspace369.com	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 mcp.ybug.io	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
-menist.free.nf	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mhi.banglam.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mka.lauta.site	pending	cname->lautatwt.github.io	aggregator:https://raw.githubusercontent.com/Carter54git/Ult
-mood.cthulhu.li	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mrkultragood.parcomunica.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mvl.en.uhwhat123.camdvr.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 mywordle.strivemath.com	pending	different-servers-than-parent	github-readme:rarelygoeshere/WordleWeb
-n.schoology.lat	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 neon-scramble.ai.studio	pending	different-servers-than-parent	github-readme:ummydev/awesome-ai-games
-new-sandbox-program-10-17799238.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-new-sandbox-program-2-17799149.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-new-sandbox-program-4-17799197.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-new-sandbox-program-5-17799199.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-new-sandbox-program-8-17245465.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 nexchange2.docs.apiary.io	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
-niche-site.nichesite.org	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 nichestudies.govt.hu	confirmed	different-servers-than-parent	urlscan:filename:"scramjet.all.js"
 nickmathsir.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-nilstreet.playthecombine.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/Carter54git/Ult
-nobloccstatus.mattle.uk	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 npgeo-corona-npgeo-de.hub.arcgis.com	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
-object-fighters-is-peak-17245571.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 objectstorage.us-sanjose-1.oraclecloud.com	pending	different-servers-than-parent	github-readme:shatwyatt-boop/Gay
 ocw.mit.edu	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
-ohio-apply-lat-17246212.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-ohio-sigma.zone.id	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 online-learning.harvard.edu	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
 opendata.aemet.es	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 openpolicing.stanford.edu	pending	cname->5harad.github.io,different-servers-than-parent	github-readme:danilofreire/awesome-stars
 otx.alienvault.com	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
+paloalto.oneuniversity.info	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 partner.steamgames.com	pending	different-servers-than-parent	github-readme:Lei-TzuY/browser-game-prototypes
 pay.pnsofficial.com	pending	different-servers-than-parent	github-readme:odedkovach/awesome-web-games
 payment.joynetgame.com	pending	different-servers-than-parent	github-readme:odedkovach/awesome-web-games
@@ -603,47 +550,40 @@ zzamnvhadwibvafqcfpd.supabase.co	pending	different-servers-than-parent	github-re
 
 # Parent domains with 3+ discovered subdomains in the last 14 days:
 # parent	subdomains	examples
-com.ar	52	able.itlogistics.com.ar ably.7dejunio.com.ar aide.tuapel.com.ar amen.zabiasrl.com.ar ames.agus-87.com.ar
 workaholicdevelopers.com	30	baseball.workaholicdevelopers.com blockfit.workaholicdevelopers.com blocks.workaholicdevelopers.com braindaily.workaholicdevelopers.com cafe.workaholicdevelopers.com
-com.np	25	bestspark.windowpublication.com.np campus.calculus.project.lecture.engineering.everestkc.com.np cheese.suwal.com.np construct.net.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.himanchalcabin.com.np extralearning.okilbahadurpun.com.np
+com.ar	28	able.itlogistics.com.ar ably.7dejunio.com.ar aide.tuapel.com.ar amen.zabiasrl.com.ar ames.agus-87.com.ar
 fwh.is	21	dgzfgfyfz.ceifjskdj.fwh.is dphckbc9.ceifjskdj.fwh.is edu.67lol.fwh.is edu.ceifjskdj.fwh.is fyxogsit.ceifjskdj.fwh.is
-medicalscience.academy	19	bobberson.medicalscience.academy findajob.medicalscience.academy hazbinhotelisgood.medicalscience.academy hortymakesbadsongs.medicalscience.academy imsorryibrokestaticaether.medicalscience.academy
-gcpservicios.cl	9	bias.gcpservicios.cl chool.gcpservicios.cl deend.gcpservicios.cl good.gcpservicios.cl makes.gcpservicios.cl
-cthulhu.li	9	bute.cthulhu.li care.cthulhu.li cook.cthulhu.li felt.cthulhu.li ive.cthulhu.li
+medicalscience.academy	14	hazbinhotelisgood.medicalscience.academy hortymakesbadsongs.medicalscience.academy link1.medicalscience.academy link2.medicalscience.academy link3.medicalscience.academy
+com.np	9	bestspark.windowpublication.com.np pulp.mptimilsina.com.np river.wave.bhimupadhyaya.com.np science.rules.aayushbhandari.com.np sleepy.thakuraiarman.com.np
 bumon.ar	9	cipher.bumon.ar ford.bumon.ar homie.bumon.ar math.bumon.ar sky.haze.bumon.ar
-srivaishnavam.org.au	9	goodmathsir.srivaishnavam.org.au goodmathsirok.srivaishnavam.org.au info.srivaishnavam.org.au oksirtkhmm.srivaishnavam.org.au siryessir.srivaishnavam.org.au
-krepche.com	7	allow.krepche.com amazingtt.krepche.com bestspark.krepche.com fern.krepche.com mathsri.krepche.com
-net.br	6	agar.seprotec.net.br alto.seprotec.net.br bestspark.gparente.net.br bill.greengarden.net.br have9.gparente.net.br
+gcpservicios.cl	8	bias.gcpservicios.cl deend.gcpservicios.cl good.gcpservicios.cl makes.gcpservicios.cl quotes.gcpservicios.cl
+srivaishnavam.org.au	8	goodmathsir.srivaishnavam.org.au goodmathsirok.srivaishnavam.org.au oksirtkhmm.srivaishnavam.org.au siryessir.srivaishnavam.org.au spacing.bull.srivaishnavam.org.au
+krepche.com	6	allow.krepche.com amazingtt.krepche.com bestspark.krepche.com mathsri.krepche.com voya.krepche.com
 art-motel.com	6	cellmathsch.art-motel.com engagesirok.art-motel.com laptoppcok.art-motel.com nickmathsir.art-motel.com pcroomsir.art-motel.com
-rusticrivergear.com	6	djyj.rusticrivergear.com english.rusticrivergear.com gear.rusticrivergear.com hello.rusticrivergear.com olivia.rusticrivergear.com
 dllontop.org	5	bookshelf-bell-schedule-2264.dllontop.org chalk-eraser-metronome-3426.dllontop.org chalkboard-locker-magnet-8413.dllontop.org paintbrush-journal-8500.dllontop.org worksheet-lanyard-2479.dllontop.org
 page.gd	5	canvas.instructure.page.gd diddygame.page.gd spanish-4b-peak.page.gd superdupereducationalsite.page.gd thyistof.page.gd
 inmobiliariamardelplata.com	5	chat.inmobiliariamardelplata.com mango.inmobiliariamardelplata.com math-sch.inmobiliariamardelplata.com study-hub.inmobiliariamardelplata.com tung-math.inmobiliariamardelplata.com
-roje.com.br	5	goodtung.roje.com.br khnn.roje.com.br schools.roje.com.br web.roje.com.br well.roje.com.br
+cthulhu.li	5	cook.cthulhu.li felt.cthulhu.li schools.cthulhu.li science.cthulhu.li what.cthulhu.li
 parcomunica.com	5	googmamdir.parcomunica.com homeworkmath.parcomunica.com mrkultragood.parcomunica.com treetreetree.parcomunica.com ultramathtech.parcomunica.com
 local-ip.co	4	15-204-116-29.my.local-ip.co api.15-204-116-29.my.local-ip.co c00lkiddtech.15-204-116-29.my.local-ip.co vps.15-204-116-29.my.local-ip.co
-vaizer.cl	4	adds.vaizer.cl earl5.vaizer.cl sean7.vaizer.cl wait8.vaizer.cl
 carcano.me	4	afro.carcano.me blew.carcano.me bomb.carcano.me plan-focus-succeed.carcano.me
+net.br	4	agar.seprotec.net.br alto.seprotec.net.br bestspark.gparente.net.br bill.greengarden.net.br
 mantavyagajjar.com	4	area.mantavyagajjar.com studyhub.mantavyagajjar.com ttpscience.mantavyagajjar.com web.mantavyagajjar.com
-casadotricolor.com.br	4	blur.casadotricolor.com.br experiments.nasa.casadotricolor.com.br playernations.casadotricolor.com.br this-is-the-future.casadotricolor.com.br
 dayplaygames.com	4	bubblethread.dayplaygames.com cornhole.dayplaygames.com darts.dayplaygames.com golf.dayplaygames.com
+icp0.io	4	cpvxz-iyaaa-aaaad-qflqq-cai.icp0.io eii56-giaaa-aaaad-qfypa-cai.icp0.io f5u4x-laaaa-aaaad-qf7xa-cai.icp0.io rv2yr-kyaaa-aaaad-qgaga-cai.icp0.io
 glamourfreaks.com	4	formula.glamourfreaks.com lesson.glamourfreaks.com web.glamourfreaks.com xoeand.glamourfreaks.com
+roje.com.br	4	goodtung.roje.com.br schools.roje.com.br web.roje.com.br well.roje.com.br
 gandhinagar.com	4	shopping.gandhinagar.com triplet.gandhinagar.com tungtung.gandhinagar.com words.gandhinagar.com
 strongson.com	3	acme.strongson.com bind.strongson.com boat.strongson.com
-aptrc.tw	3	babe.aptrc.tw blue.aptrc.tw doll5.aptrc.tw
-crum-family.com	3	bans.crum-family.com lolspace.crum-family.com poke4.crum-family.com
-baikabibai.com	3	bask.baikabibai.com overcloaked.pal.baikabibai.com overcloakedleak.baikabibai.com
-id.au	3	bestspark.bielenberg.id.au fern.bielenberg.id.au voya.bielenberg.id.au
-buf2.com	3	bestspark.buf2.com fern.buf2.com voya.buf2.com
+vaizer.cl	3	adds.vaizer.cl sean7.vaizer.cl wait8.vaizer.cl
 stoop.games	3	bloom.stoop.games palette.stoop.games sortl.stoop.games
-org.il	3	boys.dream.org.il leandrito.dream.org.il stag2.dream.org.il
+casadotricolor.com.br	3	blur.casadotricolor.com.br playernations.casadotricolor.com.br this-is-the-future.casadotricolor.com.br
 playgama.com	3	bridge.playgama.com developer.playgama.com wiki.playgama.com
 ronginbari.com	3	cipher.ronginbari.com studyhub.ronginbari.com tungtung.ronginbari.com
 tanenbaumchat.org	3	cipher.tanenbaumchat.org greenlight.tanenbaumchat.org triplet.tanenbaumchat.org
 edgeone.dev	3	fkbfklhhjjhjfhjgb-dp2vsrot4npc.edgeone.dev lecky-os123-dpa74iyw8mib.edgeone.dev victorious-white-o9kfanmw-dplc90h2e5qt.edgeone.dev
 ekocleaner.ro	3	ford.ekocleaner.ro schoolast3.ekocleaner.ro triplet.ekocleaner.ro
 tripo.page	3	handbook-lantern-alley.tripo.page handbook-pit-nine.tripo.page handbook-snowdrift-dash.tripo.page
-biblosconsulting.ru	3	manhattan.mathematical.scientific.foundation.university.biblosconsulting.ru totallynotsuspicious.at.all.biblosconsulting.ru trade.my.biblosconsulting.ru
 dila.cl	3	math-school.dila.cl thg-ms.dila.cl tung-school.dila.cl
 govt.hu	3	nichestudies.govt.hu science-tungtung.govt.hu youaresosamige.govt.hu
 elemporio.ar	3	shopping.elemporio.ar smartbio.elemporio.ar triplet.elemporio.ar
