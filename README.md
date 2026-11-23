@@ -42,13 +42,13 @@ config system external-resource
     next
     edit "EdTech Threat Feed Domains"
         set type category
-        set category 193
+        set category 200
         set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/domains.txt"
         set refresh-rate 15
     next
     edit "EdTech Threat Feed CDNs"
         set type category
-        set category 192
+        set category 201
         set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/urls.txt"
         set refresh-rate 15
     next
