@@ -86,7 +86,7 @@ Then, on student policies:
 
 * **DNS filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `ESU Threat Feed: Games DNS` to **Block** (or Redirect to Block Portal).
 * **Web filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `ESU Threat Feed: Games URL` and `ESU Threat Feed: Games CDNs` to **Block**. (The Games URL feed is the domain list again, which catches devices that get around your DNS, for example with DNS-over-HTTPS.)
-* **Proxy server IPs:** add `ESU Threat Feed: Proxy IPs` to the DNS filter profile's IP block list and/or a firewall deny policy. Scripts for both are in [Proxy server IPs](#proxy-server-ips-proxyipstxt).
+* **Proxy server IPs:** add `ESU Threat Feed: Proxy IPs` to the DNS filter profile's IP block list and/or a firewall deny policy. Setup for both is in [Proxy server IPs](#proxy-server-ips-proxyipstxt).
 * **Deep SSL inspection is recommended for `urls.txt`.** Every entry in it is a path on a shared host, such as `cdn.jsdelivr.net/gh/<owner>/` or `sites.google.com/view/<name>`. With certificate-only inspection the FortiGate sees only the hostname of an HTTPS request, never the path, so these entries can't match. The domain feeds work either way.
 * The FortiGate's management interface needs outbound HTTPS to `raw.githubusercontent.com`.
 
@@ -126,29 +126,7 @@ Use it in one or both places:
       next
   end
   ```
-* **Firewall policy** (the backstop: blocks connections to the server however the name was resolved, including DNS-over-HTTPS or a bare IP). Add a **deny** policy from the student interfaces to the internet with destination `ESU Threat Feed: Proxy IPs`, logging enabled, and **move it above** the student internet policy:
-  ```
-  config firewall policy
-      edit 0
-          set name "Block ESU proxy server IPs"
-          set srcintf "<student interface>"
-          set dstintf "<internet interface>"
-          set srcaddr "all"
-          set dstaddr "ESU Threat Feed: Proxy IPs"
-          set action deny
-          set schedule "always"
-          set service "ALL"
-          set logtraffic all
-      next
-  end
-  ```
-  `edit 0` creates the policy with the next free ID. Find that ID and your student internet policy's ID with `show firewall policy | grep -f "Block ESU proxy server IPs"` (or in the policy list), then move it above:
-  ```
-  config firewall policy
-      move <new policy ID> before <student internet policy ID>
-  end
-  ```
-  Replace `srcaddr "all"` with your student address group if the interface also carries staff traffic.
+* **Firewall policy** (the backstop: blocks connections to the server however the name was resolved, including DNS-over-HTTPS or a bare IP). Add a **deny** policy from the student interfaces to the internet with destination `ESU Threat Feed: Proxy IPs`, logging enabled, and **move it above** the student internet policy.
 
 IP address feeds don't use a category number. If your firmware prompts for one, any unused number from 192 to 221 works. The web filter doesn't use IP feeds.
 
