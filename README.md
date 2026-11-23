@@ -42,6 +42,7 @@ The two kinds of feed use **different threat-feed types**:
 |---|---|---|
 | `domains.txt` / `domains-priority.txt` | **Domain Name** (`set type domain`) | DNS filter |
 | `urls.txt` | **FortiGuard Category** (`set type category`), which is the URL-list type | Web filter |
+| `proxyips.txt` | **IP Address** (`set type address`) | DNS filter (IP block list) and/or a firewall deny policy |
 
 FortiOS has no "URL" feed type. A Domain Name feed only matches whole hostnames, so `urls.txt` won't work as one.
 
@@ -65,8 +66,15 @@ config system external-resource
         set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/urls.txt"
         set refresh-rate 15
     next
+    edit "ESU Threat Feed: Proxy IPs"
+        set type address
+        set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/proxyips.txt"
+        set refresh-rate 15
+    next
 end
 ```
+
+The last entry is the [proxy server IP feed](#proxy-server-ips-proxyipstxt). Leave it out if you don't want IP blocking.
 
 Notes on the URL feed:
 
@@ -78,6 +86,7 @@ Then, on student policies:
 
 * **DNS filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `ESU Threat Feed: Games DNS` to **Block** (or Redirect to Block Portal).
 * **Web filter profile:** under *FortiGuard Category Based Filter → Remote Categories*, set `ESU Threat Feed: Games URL` and `ESU Threat Feed: Games CDNs` to **Block**. (The Games URL feed is the domain list again, which catches devices that get around your DNS, for example with DNS-over-HTTPS.)
+* **Proxy server IPs:** add `ESU Threat Feed: Proxy IPs` to the DNS filter profile's IP block list and/or a firewall deny policy. Scripts for both are in [Proxy server IPs](#proxy-server-ips-proxyipstxt).
 * **Deep SSL inspection is recommended for `urls.txt`.** Every entry in it is a path on a shared host, such as `cdn.jsdelivr.net/gh/<owner>/` or `sites.google.com/view/<name>`. With certificate-only inspection the FortiGate sees only the hostname of an HTTPS request, never the path, so these entries can't match. The domain feeds work either way.
 * The FortiGate's management interface needs outbound HTTPS to `raw.githubusercontent.com`.
 
@@ -117,12 +126,35 @@ Use it in one or both places:
       next
   end
   ```
-* **Firewall policy** (the backstop: blocks connections to the server however the name was resolved, including DNS-over-HTTPS or a bare IP). Add a **deny** policy from the student interfaces to the internet with destination `ESU Threat Feed: Proxy IPs`, logging enabled, and **move it above** the student internet policy.
+* **Firewall policy** (the backstop: blocks connections to the server however the name was resolved, including DNS-over-HTTPS or a bare IP). Add a **deny** policy from the student interfaces to the internet with destination `ESU Threat Feed: Proxy IPs`, logging enabled, and **move it above** the student internet policy:
+  ```
+  config firewall policy
+      edit 0
+          set name "Block ESU proxy server IPs"
+          set srcintf "<student interface>"
+          set dstintf "<internet interface>"
+          set srcaddr "all"
+          set dstaddr "ESU Threat Feed: Proxy IPs"
+          set action deny
+          set schedule "always"
+          set service "ALL"
+          set logtraffic all
+      next
+  end
+  ```
+  `edit 0` creates the policy with the next free ID. Find that ID and your student internet policy's ID with `show firewall policy | grep -f "Block ESU proxy server IPs"` (or in the policy list), then move it above:
+  ```
+  config firewall policy
+      move <new policy ID> before <student internet policy ID>
+  end
+  ```
+  Replace `srcaddr "all"` with your student address group if the interface also carries staff traffic.
 
 IP address feeds don't use a category number. If your firmware prompts for one, any unused number from 192 to 221 works. The web filter doesn't use IP feeds.
+
 * Entry limits depend on the model. Check *Security Fabric → External Connectors → (feed) → View Entries* and the event log after the first pull. If the main feed is too large for a smaller box, use `domains-priority.txt` instead.
 
-The feed is rebuilt **hourly during school hours** (weekdays 6am–5pm Central) and every 4 hours otherwise. A FortiGate refresh rate of 10–15 minutes keeps up with it.
+The feeds are rebuilt **at least every 4 hours**, plus after every change merged to main. A FortiGate refresh rate of 10–15 minutes keeps up with it.
 
 **`urls.txt` matching:** CDN entries are written as path prefixes, such as `cdn.jsdelivr.net/gh/<owner>/`, so that one entry covers every repo and file beneath it. After the first pull, test one by opening a file under a listed owner, for example a `.svg` from an owner in the feed. If it isn't blocked even with deep inspection on, set `url_entry_style = "wildcard"` in `config/sources.toml`, which writes `.../gh/<owner>/*` instead.
 
