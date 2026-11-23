@@ -116,3 +116,6 @@ scratch.mit.edu
 *.education.com
 *.mathplayground.com
 # Add district / vendor hosts below
+# 2026-11-23: GoFundMe short links (official redirector to gofundme.com); listed as games by UT1 and gjohnpaull
+gofund.me
+*.gofund.me
