@@ -12,6 +12,8 @@ keep pulling the last good feed.
 """
 from __future__ import annotations
 
+import os
+import subprocess
 import sys
 from pathlib import Path
 
@@ -20,11 +22,13 @@ import cdn  # noqa: E402
 from hostutil import Matcher, normalize_host, read_list  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
+MAX_SHRINK = 0.30  # fail if a published feed file loses more than 30% of its lines
 
 # Services Chromebooks, Google Workspace, Android apps and curriculum depend on.
 CRITICAL = [
     "*.google.com", "*.googleapis.com", "*.gstatic.com", "*.googleusercontent.com",
     "*.gvt1.com", "*.gvt2.com", "*.gvt3.com", "*.1e100.net", "*.ggpht.com",
+    "*.googlehosted.com",
     "*.android.com", "*.googlevideo.com", "*.ytimg.com", "*.youtube.com",
     "*.chromium.org", "*.pki.goog", "*.microsoft.com", "*.microsoftonline.com",
     "*.office.com", "*.msauth.net", "*.msftauth.net", "*.apple.com", "*.icloud.com", "*.github.com",
@@ -61,8 +65,22 @@ def main() -> int:
             host = line.split("/", 1)[0]
             if "/" not in line.rstrip("*").rstrip("/") and critical.matches(host):
                 problems.append(f"{f.name}:{n}: {line}  (whole critical host)")
+    # Shrink guard: compare with the feed currently published (HEAD). A big
+    # drop almost always means lost state or a broken source, not a cleanup.
+    if os.environ.get("ALLOW_SHRINK", "").lower() != "true":
+        for f in sorted((ROOT / "fortigate").glob("*.txt")):
+            try:
+                old = subprocess.run(["git", "show", f"HEAD:fortigate/{f.name}"], cwd=ROOT,
+                                     capture_output=True, text=True, check=True).stdout
+            except (subprocess.CalledProcessError, FileNotFoundError):
+                continue  # new file, or not a git checkout
+            n_old = sum(1 for l in old.splitlines() if l.strip())
+            n_new = sum(1 for l in f.read_text().splitlines() if l.strip())
+            if n_old >= 100 and n_new < n_old * (1 - MAX_SHRINK):
+                problems.append(f"{f.name}: {n_old} -> {n_new} lines (shrank more than "
+                                f"{MAX_SHRINK:.0%}; lost state? set allow_shrink if intended)")
     if problems:
-        print(f"FEED CHECK FAILED: {len(problems)} protected entries in output")
+        print(f"FEED CHECK FAILED: {len(problems)} problem(s)")
         print("\n".join(problems[:200]))
         return 1
     print("Feed check passed: no protected domains in output.")

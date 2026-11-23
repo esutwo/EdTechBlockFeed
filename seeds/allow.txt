@@ -85,6 +85,15 @@ cros-omahaproxy.appspot.com
 *.watchdocumentaries.com          # documentaries
 *.mortgagecalculator.org          # finance calculator
 *.wixmp.com                       # Wix / DeviantArt image CDN
+# 2026-11-23 log review: general-use / educational platforms blocked in error
+# by broad game lists (gjohnpaull, UT1, dkorunic and others). This feed targets
+# bypass and malicious game activity, not general-use platforms.
+*.googlehosted.com                # Google hosting for custom-domain Google Sites / Blogger
+*.nvidia.com                      # NVIDIA (drivers, docs); GeForce NOW stays blocked via geforcenow.com
+*.nationalgeographic.com          # National Geographic incl. NatGeo Kids
+*.starfall.com                    # early-reading curriculum
+*.99math.com                      # classroom math game
+*.abcya.com                       # educational K-5 games
 # Classroom tools that look like games (remove a line to block it)
 *.kahoot.com
 kahoot.it
