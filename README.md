@@ -1,6 +1,6 @@
-# EdTechBlockFeed
+# ESU #2 Threat Block Feeds
 
-An automatically maintained **FortiGate threat feed of gaming and "unblocked games" sites**, built for K-12 networks.
+An automatically maintained **Network threat feed of gaming and "unblocked games" sites**, built for K-12 networks. Originally designed for Fortigate systems, but the feeds will work with any NGFW that can make use of text based third party feeds.
 
 Students reach games through sites that are quick to stand up and change often: GitHub Pages, Cloudflare Pages, Vercel or Netlify mirrors, custom domains made to look like schools, and npm packages served from jsDelivr. FortiGuard often rates these as Education, Information Technology, Personal Websites or Unrated, not as Games, so a category block misses them. This repo pulls together curated community blocklists, discovers new sites on its own, checks them live, and publishes plain-text files that a FortiGate polls.
 
