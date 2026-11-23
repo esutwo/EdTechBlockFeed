@@ -7,3 +7,12 @@ vaultedd.pages.dev                 # 2026-11 sample: client-side proxy/games fro
 edu.rawr.africa.com                # 2026-11-20 review: "EduSecurify" disguised game/proxy hub on a hijacked subdomain
 flamehubgames.lovable.app          # 2026-11-20 review: "FlameHub - Unblocked Games"
 api.tuplantaforma.com              # 2026-11-20: shadowed subdomain; fake school-district decoy page that swaps in the Achroma UBG games hub
+eii56-giaaa-aaaad-qfypa-cai.icp0.io  # 2026-11-23 review: "Classes" disguised games hub with Interstellar/Ultraviolet proxy (ICP canister)
+f5u4x-laaaa-aaaad-qf7xa-cai.icp0.io  # 2026-11-23 review: Ultraviolet web proxy (ICP canister)
+rv2yr-kyaaa-aaaad-qgaga-cai.icp0.io  # 2026-11-23 review: "Native" Ultraviolet proxy with 3kh0/UBG games (ICP canister)
+thearchive.us.com                  # 2026-11-23 review: "The Archive" Scramjet proxy with games tab, about:blank cloak and panic button
+stock95633.wixsite.com             # 2026-11-23 review: "gn-education" Wix page whose embed fetches and injects a jsDelivr-hosted page (bypass loader)
+mka.lauta.site                     # 2026-11-23 review: browser fighting-game port (currently a DMCA notice; owner runs a game-ports hub)
+games.lauta.site                   # 2026-11-23 review: same owner's browser game-ports hub, linked from mka.lauta.site
+play.fatal.racing                  # 2026-11-23 review: "ROLLER" browser racing game
+play.neverball.org                 # 2026-11-23 review: Neverball playable in the browser

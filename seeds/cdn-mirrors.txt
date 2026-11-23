@@ -31,3 +31,6 @@ www.digikey.com                    ignore     # electronics datasheets (false sh
 # 2026-11-20: from the Achroma UBG engine's fallback chain (byte-identical engine file)
 jsdelivr.b-cdn.net                 jsdelivr
 jsd.liiiu.cn                       jsdelivr
+# 2026-11-23 review of review/new-cdns.txt
+cdn.statistically.io               ignore     # 2026-11-23 review: look-alike of cdn.statically.io; returns 502, not a working mirror
+circleci.com                       ignore     # 2026-11-23 review: CI service build links (false shape match)
