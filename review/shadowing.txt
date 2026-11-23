@@ -21,6 +21,7 @@ ai.gendigital.com	pending	cname->k8s-browserp-skillsca-9ae492743c-1088723533.us-
 ai.googleblog.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Zorin-OS-Guide
 ai.theysaid.io	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 aipicasso.studio.site	pending	different-servers-than-parent	github-readme:pingan8787/awesome-ai-tools
+ali.zapier.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 alin.zapier.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 allow.krepche.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 amazingtt.krepche.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -145,6 +146,7 @@ cherriisgood.educationlearningcollege.lovestoblog.com	pending	different-servers-
 cipher.bumon.ar	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 cipher.ronginbari.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 cipher.tanenbaumchat.org	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+clash.zapier.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 clever.com.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 clever.com.silksky.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 cli.angular.io	pending	cname->dns-redirecting.web.app,different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
@@ -168,6 +170,7 @@ database.lichess.org	pending	different-servers-than-parent	github-readme:SwiftIr
 datahub.metoffice.gov.uk	pending	different-servers-than-parent	github-readme:Manavarya09/public-apis-live
 deend.gcpservicios.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 deeplearning4j.konduit.ai	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Zorin-OS-Guide
+deer-club-17246500.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 deploy.cloud.run	pending	different-servers-than-parent	github-readme:hsoirghfohdj/invisiproxylts
 dev-portal.rappi.com	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 dev.92spoons.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/bns34/Unblocked
@@ -342,6 +345,7 @@ etcher.balena.io	pending	different-servers-than-parent	github-readme:patdeg/open
 explore.data.parliament.uk	pending	different-servers-than-parent	github-readme:Manavarya09/public-apis-live
 f.schoology.lat	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 felt.cthulhu.li	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+ffffff-17676319.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 fffffff.zapier.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 flask.palletsprojects.com	pending	different-servers-than-parent	github-readme:UplandJacob/Upland-HA-Addons
 folklore.helena.bio	pending	different-servers-than-parent	github-readme:mcpHQ/awesome-mcp-servers
@@ -430,6 +434,7 @@ mason.zapier.app	pending	different-servers-than-parent	aggregator:https://raw.gi
 mastodon.gamedev.place	pending	different-servers-than-parent	github-readme:rarelygoeshere/WordleWeb
 material.angular.io	pending	cname->dns-redirecting.web.app,different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
 math-lessons-space-17244170.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+math-school.dila.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 math.2.3.a.a.0.d.0.0.1.0.a.2.ip6.arpa	pending	cname->crshqd.github.io	github-readme:shatwyatt-boop/Gay
 math.cyanpurr.cc.cd	pending	different-servers-than-parent	github-readme:tryingmybest122/sapphire
 math.free-dyndns.org	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -533,11 +538,13 @@ science-tungtung.handfolding.com	confirmed	different-servers-than-parent	aggrega
 science-tungtung.shor.ch	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 scienceclasswork.webredirect.org	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 scramjet.mercurywork.shop	confirmed	cname->mercuryworkshop.github.io,different-servers-than-parent	github:MercuryWorkshop/scramjet
+sdk.zokogames.com	pending	different-servers-than-parent	github-readme:zokogames/zokogames-godot3
 securely-is-ahh.fwh.is	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 security.gameforge.com	pending	different-servers-than-parent	github-readme:api-evangelist/gameforge
 securly.com.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 self.gcpservicios.cl	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 sethmightshoothimself.codehs.me	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+setuptools.pypa.io	pending	different-servers-than-parent	github-readme:Tailor-Game/tailorgame-integrations
 shar.harshvirdhaliwal.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/Carter54git/Ult
 share.osf.io	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 shiny.rstudio.com	pending	cname->shiny-dev-center.netlify.app,different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook

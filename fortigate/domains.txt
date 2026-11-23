@@ -1290,6 +1290,7 @@ shopping.elemporio.ar
 smartbio.elemporio.ar
 triplet.elemporio.ar
 cs.nostalgia.ar
+rammer.nana.nyxprint.ar
 clearfacts.vidanimal.ar
 *.pixai.art
 pixai.art
@@ -3409,6 +3410,7 @@ acid.contactme.cl
 bene.contactme.cl
 school-tt.contratoslab.cl
 ttmath.contratoslab.cl
+math-school.dila.cl
 thg-ms.dila.cl
 tung-school.dila.cl
 bums.edificare.cl
@@ -15228,6 +15230,7 @@ ebetusa.com
 ebgames.com
 *.ebhasin.com
 ebhasin.com
+mathisfun.ebine-san.com
 *.eblong.com
 eblong.com
 *.ebog.com
@@ -40661,6 +40664,7 @@ thesimsstory.s5.com
 tristinspage.s5.com
 *.s5consultants.com
 s5consultants.com
+ksd-resource.sababat.com
 *.saber3d.com
 saber3d.com
 *.sabgames.com
@@ -40927,6 +40931,7 @@ schoolgamesfree.com
 schoolnetworkadminsarethebest.com
 *.schoolofdragons.com
 schoolofdragons.com
+wiki.schooloqy.com
 *.schoolschoolschool.com
 schoolschoolschool.com
 *.schplay.com
@@ -44585,6 +44590,8 @@ tahadi.com
 taikangame.com
 *.taikodom.com
 taikodom.com
+*.tailorgame.com
+tailorgame.com
 *.taipangames.com
 taipangames.com
 *.take2games.com
@@ -51528,6 +51535,8 @@ zoinkgames.com
 zojoi.com
 *.zokigames.com
 zokigames.com
+*.zokogames.com
+zokogames.com
 *.zolikdo.com
 zolikdo.com
 *.zoltarmachine.com
@@ -63255,6 +63264,7 @@ s-kearun.github.io
 s-sugix.github.io
 s24085309.github.io
 s2reetyt-png.github.io
+s85gamer.github.io
 sacul-6.github.io
 sahilbkhetan-web.github.io
 saibzubayr8-debug.github.io
@@ -69374,6 +69384,7 @@ deltarunesim.global.ssl.fastly.net
 digger.global.ssl.fastly.net
 divinity.global.ssl.fastly.net
 doctor-ge-laoshi.global.ssl.fastly.net
+domainexpansioninfinitediamonds.global.ssl.fastly.net
 dr-ge-laoshi.global.ssl.fastly.net
 duck-2.global.ssl.fastly.net
 duck-math.global.ssl.fastly.net

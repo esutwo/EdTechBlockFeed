@@ -1139,6 +1139,7 @@ shopping.elemporio.ar
 smartbio.elemporio.ar
 triplet.elemporio.ar
 cs.nostalgia.ar
+rammer.nana.nyxprint.ar
 clearfacts.vidanimal.ar
 *.unblockedgames.art
 unblockedgames.art
@@ -1647,6 +1648,7 @@ acid.contactme.cl
 bene.contactme.cl
 school-tt.contratoslab.cl
 ttmath.contratoslab.cl
+math-school.dila.cl
 thg-ms.dila.cl
 tung-school.dila.cl
 bums.edificare.cl
@@ -3820,6 +3822,7 @@ eastwardgame.com
 easybrain.com
 *.ebhasin.com
 ebhasin.com
+mathisfun.ebine-san.com
 *.eblong.com
 eblong.com
 *.echtragames.com
@@ -8775,6 +8778,7 @@ rushuphill.com
 rushvexgame.com
 english.rusticrivergear.com
 youman.rusticrivergear.com
+ksd-resource.sababat.com
 *.safekidgames.com
 safekidgames.com
 *.salarygames.com
@@ -8818,6 +8822,7 @@ scenario.com
 schoolgamesfree.com
 *.schoolnetworkadminsarethebest.com
 schoolnetworkadminsarethebest.com
+wiki.schooloqy.com
 *.schplay.com
 schplay.com
 duck.scienceunblocked.com
@@ -9568,6 +9573,8 @@ tabsdl.com
 tactilegames.com
 *.tagunblocked.com
 tagunblocked.com
+*.tailorgame.com
+tailorgame.com
 *.take2games.com
 take2games.com
 *.taktaktak.com
@@ -10682,6 +10689,8 @@ zipgameunlimited.com
 znkgames.com
 *.zokigames.com
 zokigames.com
+*.zokogames.com
+zokogames.com
 *.zombieshooters.com
 zombieshooters.com
 *.zombsroyaleunblocked.com
@@ -17205,6 +17214,7 @@ s-kearun.github.io
 s-sugix.github.io
 s24085309.github.io
 s2reetyt-png.github.io
+s85gamer.github.io
 sacul-6.github.io
 sahilbkhetan-web.github.io
 saibzubayr8-debug.github.io
@@ -20852,6 +20862,7 @@ deltarunesim.global.ssl.fastly.net
 digger.global.ssl.fastly.net
 divinity.global.ssl.fastly.net
 doctor-ge-laoshi.global.ssl.fastly.net
+domainexpansioninfinitediamonds.global.ssl.fastly.net
 dr-ge-laoshi.global.ssl.fastly.net
 duck-2.global.ssl.fastly.net
 duck-math.global.ssl.fastly.net
