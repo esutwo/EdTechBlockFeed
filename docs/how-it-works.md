@@ -202,6 +202,22 @@ The mirror list grows on its own (2f), so entries for owners already in the feed
 
 ---
 
+## Proxy server IPs (`fortigate/proxyips.txt`)
+
+Some operators run one dedicated server and keep pointing new names at it: hijacked subdomains, wildcard-DNS names and typosquats, often behind a Cloudflare challenge that stops automated checks. The server's address is the stable part, so the collector publishes it as an **IP address feed**.
+
+| Step | What it does |
+|---|---|
+| Resolve | Confirmed sites, and stalled sites from the student bypass lists, are resolved once a day (up to 4,000 per run). |
+| Group by server | Names are grouped by IP address. |
+| Shared-hosting screen | A server is skipped if any of its names is a free-hosting subdomain, an allowlisted site, or a ranked (popular) site itself, or if the IP is private or in Cloudflare's or another known shared range (`shared_ranges`). |
+| Evidence | **Automatic:** 2 or more confirmed *bypass-grade* names (from student bypass lists or urlscan, or confirmed as proxy, clone, impersonation or loader), making up at least 60% of the server's names. Ordinary game sites found on GitHub don't count, because they usually sit on shared platforms. **Reviewed:** `seeds/proxyips-confirmed.txt`. **Held:** 3 or more stalled names with proxy or decoy naming (`rammer`, `schooloqy`, `edu`, `math`…) go to `review/held.txt` as one `ip:<address>` item. |
+| Network owner | Each candidate's owner (ASN) is looked up with RIPEstat and cached for 30 days. Cloud, CDN, PaaS, parking and shared-hosting networks (`excluded_asns`, `excluded_owner_patterns`) are never published, even with strong evidence, and neither is an IP whose owner can't be looked up. |
+| Expiry | An IP is dropped after 30 days with no qualifying name pointing at it (reviewed seeds stay). |
+| Safety check | Every published IP must be public IPv4 outside the excluded ranges, and must not be an address any critical service (Google, Microsoft 365, Apple, GitHub, jsDelivr, Amplify and others) currently resolves to. |
+
+In testing on the live state (about 5,200 resolved sites), 16 servers qualified, all on dedicated VPS or business hosting (OVH, Interserver, Psychz, netcup, ReliableSite, an AT&T business line), carrying 7 to 77 bypass names each. 10 candidates were excluded by network owner (AWS/CloudFront, Vercel front ends, domain parking, free hosting) and 3 were held for review.
+
 ## Daily review
 
 Each school day at 7:13 AM Central, a scheduled Claude review session goes through `review/held.txt`, the confirmed and suspect hosts in `review/new-cdns.txt`, and any open `new-cdn` issues. For each one it visits the site, decides block, dismiss, allow or mirror, records the decision with a reason in the matching seed file, and opens **one pull request** for a person to approve. It never merges anything itself. Nothing changes in the feed until the PR is merged.
@@ -219,6 +235,7 @@ Each school day at 7:13 AM Central, a scheduled Claude review session goes throu
 | `seeds/url-platforms.txt` | Hosts that are blocked by path, with a pattern for the part to keep. |
 | `seeds/cdn-owners-block.txt` | GitHub owners or npm packages to block at owner level on every mirror, for example a game engine (`gh achroma-ubg`). Engines found automatically are added on their own. |
 | `review/shadowing.txt` | Domain-shadowing signals and subdomain bursts (informational, useful for notifying a hijacked domain's owner). |
+| `seeds/proxyips-confirmed.txt` | Proxy server IPs confirmed by a reviewer. Every name on these servers is blocked through `proxyips.txt`. |
 | `review/held.txt` | **The only list that needs a person.** Sites held by the popularity or homepage guard, plus blocked sites whose game fingerprint disappeared. For each one: block (`seeds/confirmed.txt`), dismiss (`seeds/review-dismissed.txt`) or allow (`seeds/allow.txt`). |
 | `seeds/review-dismissed.txt` | Held sites a reviewer decided not to block. The collector stops re-checking them. |
 | `review/pending.txt` (on the `state` branch) | Automatic retry queue: alive but no fingerprint yet, or unreachable. Re-checked daily, and dropped after 3 failed checks. No action needed. |

@@ -39,6 +39,20 @@ CRITICAL = [
 ]
 
 
+# Hostnames whose addresses must never be in the IP feed.
+CRITICAL_PROBES = [
+    "google.com", "www.google.com", "accounts.google.com", "classroom.google.com",
+    "docs.google.com", "drive.google.com", "sites.google.com", "ghs.googlehosted.com",
+    "www.youtube.com", "login.microsoftonline.com", "outlook.office.com", "www.office.com",
+    "aadcdn.msauth.net", "www.apple.com", "github.com", "raw.githubusercontent.com",
+    "cdn.jsdelivr.net", "my.amplify.com", "clever.com", "www.instructure.com",
+]
+
+
+def _no_fetch(*a, **k):
+    raise OSError("no network fetch in the safety check; use cached ranges")
+
+
 def main() -> int:
     allow = Matcher(read_list(ROOT / "seeds" / "allow.txt"))
     critical = Matcher(CRITICAL)
@@ -65,6 +79,29 @@ def main() -> int:
             host = line.split("/", 1)[0]
             if "/" not in line.rstrip("*").rstrip("/") and critical.matches(host):
                 problems.append(f"{f.name}:{n}: {line}  (whole critical host)")
+    # Proxy server IP feed: public IPv4 only, never a CDN/cloud/shared range,
+    # and never an address that a critical service resolves to.
+    ipf = ROOT / "fortigate" / "proxyips.txt"
+    if ipf.exists():
+        import socket
+        import tomllib
+        import proxyips
+        cfg = tomllib.loads((ROOT / "config" / "sources.toml").read_text()).get("proxy_ips", {})
+        nets = proxyips.load_exclusions(cfg, ROOT, _no_fetch, lambda *a: None)
+        ips = [l.strip() for l in ipf.read_text().splitlines() if l.strip()]
+        for n, ip in enumerate(ips, 1):
+            if proxyips.excluded(ip, nets):
+                problems.append(f"proxyips.txt:{n}: {ip}  (private, invalid or shared/CDN range)")
+        critical_ips = set()
+        socket.setdefaulttimeout(5)
+        for h in CRITICAL_PROBES:
+            try:
+                critical_ips |= set(socket.gethostbyname_ex(h)[2])
+            except OSError:
+                pass
+        for ip in sorted(set(ips) & critical_ips):
+            problems.append(f"proxyips.txt: {ip}  (a critical service resolves to this address)")
+
     # Shrink guard: compare with the feed currently published (HEAD). A big
     # drop almost always means lost state or a broken source, not a cleanup.
     if os.environ.get("ALLOW_SHRINK", "").lower() != "true":

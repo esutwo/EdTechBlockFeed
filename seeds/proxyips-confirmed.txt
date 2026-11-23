@@ -1,0 +1,6 @@
+# Proxy server IPs confirmed by a reviewer (one IPv4 address per line).
+# Every name pointing at these servers is blocked via fortigate/proxyips.txt,
+# including names no source has seen yet. The collector also adds servers it
+# can confirm itself (2+ confirmed bypass names); suspicious ones it can't
+# confirm appear in review/held.txt as "ip:<address>".
+108.181.32.77    # 2026-11-23: Psychz VPS, all names behind a Cloudflare challenge: mathisfun.ebine-san.com (reported by a school), wiki.schooloqy.com (Schoology typosquat), rammer.nana.nyxprint.ar and rammer-02-nana…sslip.io (Rammerhead), edu…nip.io titled "Google"
