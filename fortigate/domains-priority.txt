@@ -1,18 +1,6 @@
 brew.120v.ac
 *.poki.ac
 poki.ac
-hazbinhotelisgood.medicalscience.academy
-hortymakesbadsongs.medicalscience.academy
-link1.medicalscience.academy
-link2.medicalscience.academy
-link3.medicalscience.academy
-link4.medicalscience.academy
-link5.medicalscience.academy
-link6.medicalscience.academy
-medevmadethistufflink.medicalscience.academy
-mickerino.medicalscience.academy
-puffer.medicalscience.academy
-summerbreakyippe.medicalscience.academy
 *.noahstutoring.academy
 noahstutoring.academy
 *.tribalwars.ae
@@ -727,7 +715,6 @@ manygames.vercel.app
 maruwa-drive.vercel.app
 masons1v1.vercel.app
 math-lessons.vercel.app
-mathclass-streaming.vercel.app
 merge-conflict-drab.vercel.app
 merge-fellas.vercel.app
 mergefellas.vercel.app
@@ -1660,7 +1647,6 @@ acid.contactme.cl
 bene.contactme.cl
 school-tt.contratoslab.cl
 ttmath.contratoslab.cl
-math-school.dila.cl
 thg-ms.dila.cl
 tung-school.dila.cl
 bums.edificare.cl
@@ -2193,8 +2179,6 @@ baht.100mountain.com
 91wan.com
 *.99ez.com
 99ez.com
-*.99math.com
-99math.com
 *.a-dark-cave.com
 a-dark-cave.com
 bras.a-pratama.com
@@ -2212,8 +2196,6 @@ aarigame.com
 abardon.com
 *.abcjuegos.com
 abcjuegos.com
-*.abcya.com
-abcya.com
 *.aberoth.com
 aberoth.com
 *.abobosbigadventure.com
@@ -2468,7 +2450,6 @@ armywars.com
 cellmathsch.art-motel.com
 engagesirok.art-motel.com
 laptoppcok.art-motel.com
-nickmathsir.art-motel.com
 pcroomsir.art-motel.com
 sirmathgood.art-motel.com
 *.artbitrator.com
@@ -5549,8 +5530,6 @@ gryspiderman.com
 gt2048.com
 *.gta5browser.com
 gta5browser.com
-*.gta6minigames.com
-gta6minigames.com
 *.gtabrowser.com
 gtabrowser.com
 *.gtarcade.com
@@ -6583,6 +6562,7 @@ loopchomp.com
 lopigames.com
 *.lordswm.com
 lordswm.com
+mvd.370532dev.update.asdf.loseyourip.com
 *.losjuegosdehoradeaventura.com
 losjuegosdehoradeaventura.com
 *.lostdecadegames.com
@@ -7291,10 +7271,6 @@ numskullgames.com
 numuki.com
 *.nunagaming.com
 nunagaming.com
-ls.dtrace.nvidia.com
-events.gfe.nvidia.com
-telemetry.gfe.nvidia.com
-accounts.nvgs.nvidia.com
 code.nyphp.com
 *.obbygame.com
 obbygame.com
@@ -9362,8 +9338,6 @@ stake.com
 staratlas.com
 *.stardoll.com
 stardoll.com
-*.starfall.com
-starfall.com
 *.starkingdoms.com
 starkingdoms.com
 *.starknights.com
@@ -9779,6 +9753,7 @@ tiermaker.com
 tiermakerpro.com
 *.timeguessr.com
 timeguessr.com
+arena.timeprooflabs.com
 *.tiny-arcade.com
 tiny-arcade.com
 *.tinyfishing-unblocked.com
@@ -10192,6 +10167,7 @@ urmud.com
 1v1lol.us.com
 calcsolver.us.com
 classroom6x.us.com
+contexto.us.com
 geometrydash.us.com
 poki.us.com
 tetris.us.com
@@ -13714,6 +13690,7 @@ secretrelict.hu
 the-west.hu
 poly2.benlaunches.icu
 watch.benlaunches.icu
+studio.connections.icu
 *.calcsolver.id
 calcsolver.id
 crazygames.co.id
@@ -13828,7 +13805,6 @@ itsmart.info
 jeuxflash.info
 *.mathdrills.info
 mathdrills.info
-paloalto.oneuniversity.info
 *.pokemongames.info
 pokemongames.info
 *.retrobowl.info
@@ -16098,6 +16074,7 @@ harsizcool.github.io
 harutheme.github.io
 hatscat.github.io
 haydenlgbushell-source.github.io
+hazelcaffe.github.io
 hbrine.github.io
 heafzedd.github.io
 heena-s0412.github.io
@@ -18543,9 +18520,15 @@ hury.io
 hussvalley.io
 *.hypixel.io
 hypixel.io
+67j7z-6yaaa-aaaad-qf5hq-cai.icp0.io
+bcdpu-uqaaa-aaaad-qf7oa-cai.icp0.io
 cpvxz-iyaaa-aaaad-qflqq-cai.icp0.io
 eii56-giaaa-aaaad-qfypa-cai.icp0.io
+ex36n-jqaaa-aaaad-qf7qa-cai.icp0.io
 f5u4x-laaaa-aaaad-qf7xa-cai.icp0.io
+fbqgg-4aaaa-aaaad-qf7va-cai.icp0.io
+fitn2-kiaaa-aaaad-qf7uq-cai.icp0.io
+fpslo-hqaaa-aaaad-qf7ua-cai.icp0.io
 rv2yr-kyaaa-aaaad-qgaga-cai.icp0.io
 xzhoq-qiaaa-aaaag-ay4wa-cai.icp0.io
 *.idolsofash.io
@@ -19465,8 +19448,6 @@ trappersquares.io
 trapz.io
 *.trendgames.io
 trendgames.io
-*.trendshift.io
-trendshift.io
 *.tribals.io
 tribals.io
 *.triep.io
@@ -20871,7 +20852,6 @@ deltarunesim.global.ssl.fastly.net
 digger.global.ssl.fastly.net
 divinity.global.ssl.fastly.net
 doctor-ge-laoshi.global.ssl.fastly.net
-domainexpansioninfinitediamonds.global.ssl.fastly.net
 dr-ge-laoshi.global.ssl.fastly.net
 duck-2.global.ssl.fastly.net
 duck-math.global.ssl.fastly.net
@@ -22365,6 +22345,9 @@ math.canvas-lms.22web.org
 *.67clicker.org
 67clicker.org
 games.aarp.org
+5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org
+8765dnotexists7053dev.update.cyberspeedtech.accesscam.org
+update.eu.testaaa.drgd.accesscam.org
 *.agariogame.org
 agariogame.org
 *.agarioonline.org

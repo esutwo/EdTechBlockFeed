@@ -7,18 +7,6 @@ easy.ac
 ify.ac
 *.poki.ac
 poki.ac
-hazbinhotelisgood.medicalscience.academy
-hortymakesbadsongs.medicalscience.academy
-link1.medicalscience.academy
-link2.medicalscience.academy
-link3.medicalscience.academy
-link4.medicalscience.academy
-link5.medicalscience.academy
-link6.medicalscience.academy
-medevmadethistufflink.medicalscience.academy
-mickerino.medicalscience.academy
-puffer.medicalscience.academy
-summerbreakyippe.medicalscience.academy
 *.noahstutoring.academy
 noahstutoring.academy
 *.afterworkgames.ae
@@ -830,7 +818,6 @@ manygames.vercel.app
 maruwa-drive.vercel.app
 masons1v1.vercel.app
 math-lessons.vercel.app
-mathclass-streaming.vercel.app
 merge-conflict-drab.vercel.app
 merge-fellas.vercel.app
 mergefellas.vercel.app
@@ -3422,7 +3409,6 @@ acid.contactme.cl
 bene.contactme.cl
 school-tt.contratoslab.cl
 ttmath.contratoslab.cl
-math-school.dila.cl
 thg-ms.dila.cl
 tung-school.dila.cl
 bums.edificare.cl
@@ -5370,8 +5356,6 @@ logame.94secondes.com
 999fungames.com
 *.99ez.com
 99ez.com
-*.99math.com
-99math.com
 *.9club.com
 9club.com
 *.9damaogames.com
@@ -5470,8 +5454,6 @@ abcarcade.com
 *.abcjuegos.com
 abcjuegos.com
 jeux.abcmulti.com
-*.abcya.com
-abcya.com
 *.aberoth.com
 aberoth.com
 *.abgamescasino.com
@@ -7260,7 +7242,6 @@ art-games.com
 cellmathsch.art-motel.com
 engagesirok.art-motel.com
 laptoppcok.art-motel.com
-nickmathsir.art-motel.com
 pcroomsir.art-motel.com
 sirmathgood.art-motel.com
 *.art95.com
@@ -22581,8 +22562,6 @@ goodwargames.com
 googledoodle-games.com
 *.googlefeud.com
 googlefeud.com
-*.googlehosted.com
-googlehosted.com
 snake.googlemaps.com
 *.googleminigames.com
 googleminigames.com
@@ -22977,8 +22956,6 @@ gt2048.com
 gta5-mods.com
 *.gta5browser.com
 gta5browser.com
-*.gta6minigames.com
-gta6minigames.com
 *.gtabrowser.com
 gtabrowser.com
 *.gtaforums.com
@@ -29299,6 +29276,7 @@ lorientrust.com
 lorraineminiatures.com
 *.losethegame.com
 losethegame.com
+mvd.370532dev.update.asdf.loseyourip.com
 *.losjuegosdehoradeaventura.com
 losjuegosdehoradeaventura.com
 *.losjuegosgratis.com
@@ -32570,8 +32548,6 @@ natesholdem.com
 nathalielawhead.com
 *.nationalesl.com
 nationalesl.com
-*.nationalgeographic.com
-nationalgeographic.com
 *.nationalsportsmonitor.com
 nationalsportsmonitor.com
 *.nationaltoday.com
@@ -33566,8 +33542,6 @@ nuttyaboutneopets.com
 nuuvem.com
 *.nuxgame.com
 nuxgame.com
-*.nvidia.com
-nvidia.com
 *.nvizzio.com
 nvizzio.com
 *.nvsgames.com
@@ -43380,8 +43354,6 @@ stardewvalleywiki.com
 stardock.com
 *.stardoll.com
 stardoll.com
-*.starfall.com
-starfall.com
 *.starfleetgames.com
 starfleetgames.com
 *.starfleetuniverse.com
@@ -46136,6 +46108,7 @@ timelineltd.com
 timepets.com
 *.timeplay.com
 timeplay.com
+arena.timeprooflabs.com
 *.timersoft.com
 timersoft.com
 *.timetoplayfair.com
@@ -48390,6 +48363,7 @@ urwizards.com
 1v1lol.us.com
 calcsolver.us.com
 classroom6x.us.com
+contexto.us.com
 geometrydash.us.com
 happywheels.us.com
 poki.us.com
@@ -58950,6 +58924,7 @@ videoplayer.hu
 3isk.icu
 poly2.benlaunches.icu
 watch.benlaunches.icu
+studio.connections.icu
 *.freeslotsgames.icu
 freeslotsgames.icu
 *.8mgame.id
@@ -59545,7 +59520,6 @@ nukepowered.info
 *.o-a.info
 o-a.info
 jatekok.oldal.info
-paloalto.oneuniversity.info
 *.onlinesportgames.info
 onlinesportgames.info
 *.opencity.info
@@ -62148,6 +62122,7 @@ harsizcool.github.io
 harutheme.github.io
 hatscat.github.io
 haydenlgbushell-source.github.io
+hazelcaffe.github.io
 hbrine.github.io
 heafzedd.github.io
 hedalu244.github.io
@@ -64622,9 +64597,15 @@ hussvalley.io
 hypixel.io
 *.icandy.io
 icandy.io
+67j7z-6yaaa-aaaad-qf5hq-cai.icp0.io
+bcdpu-uqaaa-aaaad-qf7oa-cai.icp0.io
 cpvxz-iyaaa-aaaad-qflqq-cai.icp0.io
 eii56-giaaa-aaaad-qfypa-cai.icp0.io
+ex36n-jqaaa-aaaad-qf7qa-cai.icp0.io
 f5u4x-laaaa-aaaad-qf7xa-cai.icp0.io
+fbqgg-4aaaa-aaaad-qf7va-cai.icp0.io
+fitn2-kiaaa-aaaad-qf7uq-cai.icp0.io
+fpslo-hqaaa-aaaad-qf7ua-cai.icp0.io
 rv2yr-kyaaa-aaaad-qgaga-cai.icp0.io
 xzhoq-qiaaa-aaaag-ay4wa-cai.icp0.io
 *.idolsofash.io
@@ -65757,8 +65738,6 @@ trappersquares.io
 trapz.io
 *.trendgames.io
 trendgames.io
-*.trendshift.io
-trendshift.io
 *.tribals.io
 tribals.io
 *.triep.io
@@ -69395,7 +69374,6 @@ deltarunesim.global.ssl.fastly.net
 digger.global.ssl.fastly.net
 divinity.global.ssl.fastly.net
 doctor-ge-laoshi.global.ssl.fastly.net
-domainexpansioninfinitediamonds.global.ssl.fastly.net
 dr-ge-laoshi.global.ssl.fastly.net
 duck-2.global.ssl.fastly.net
 duck-math.global.ssl.fastly.net
@@ -74967,6 +74945,9 @@ acbldistrict23.org
 acblemba.org
 *.acblunit112.org
 acblunit112.org
+5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org
+8765dnotexists7053dev.update.cyberspeedtech.accesscam.org
+update.eu.testaaa.drgd.accesscam.org
 *.acpedia.org
 acpedia.org
 *.actorsplayhouse.org
