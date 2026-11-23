@@ -2313,6 +2313,7 @@ alphadoggames.com
 alphawars.com
 *.alteredqualia.com
 alteredqualia.com
+vending-machine.alto-games.com
 *.amandathe-adventurer.com
 amandathe-adventurer.com
 kings.amaze-apps.com
@@ -5534,6 +5535,8 @@ gryspiderman.com
 gt2048.com
 *.gta5browser.com
 gta5browser.com
+*.gta6minigames.com
+gta6minigames.com
 *.gtabrowser.com
 gtabrowser.com
 *.gtarcade.com
@@ -11702,6 +11705,7 @@ phrazle.pages.dev
 phrazle-game.pages.dev
 pineapple-games.pages.dev
 pixel-art-games-roblox.pages.dev
+pixel-game-tycoon.pages.dev
 pixel-number-diy-coloring.pages.dev
 pizagame.pages.dev
 pizza-edition-games.pages.dev

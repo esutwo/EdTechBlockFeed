@@ -14,6 +14,7 @@
 a.thumbs.redditmedia.com	pending	different-servers-than-parent	github-readme:alvinunreal/awesome-submitlist
 aaaaaaa.zapier.app	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 abrakadabra.roader247assist.co.za	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+adam.holter.com	pending	different-servers-than-parent	github-readme:ummydev/awesome-ai-games
 agbserver.gameforge.com	pending	different-servers-than-parent	github-readme:api-evangelist/gameforge
 agproxy.shveik.dev	pending	different-servers-than-parent	github-readme:mcpHQ/awesome-mcp-servers
 ai-art.latitude.io	pending	different-servers-than-parent	github-readme:pingan8787/awesome-ai-tools
@@ -331,6 +332,7 @@ edu.cyanpurr.cc.cd	pending	different-servers-than-parent	github-readme:tryingmyb
 edu.snubby.top	pending	different-servers-than-parent	github-readme:shatwyatt-boop/Gay
 edu4u.dyndns.berlin	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 education.despla.in	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+education.oracle.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
 education1.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 educationforall.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 edudash.edu-spark.top	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -492,6 +494,7 @@ pay.pnsofficial.com	pending	different-servers-than-parent	github-readme:odedkova
 payment.joynetgame.com	pending	different-servers-than-parent	github-readme:odedkovach/awesome-web-games
 pcbyuhvyjgadanzlghmw.supabase.co	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 pcroomsir.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+petalwake.non.io	pending	different-servers-than-parent	github-readme:ummydev/awesome-ai-games
 play.aidungeon.com	pending	different-servers-than-parent	github-readme:nilveryboring/awesome-ai-browser-games
 play.captive3000.com	pending	different-servers-than-parent	github-readme:ummydev/awesome-ai-games
 play.chainivore.com	pending	different-servers-than-parent	github-readme:ryviuszero/awesome-daily-games

@@ -6311,6 +6311,7 @@ alternative-armies.com
 alternativesoftware.com
 *.altitude-games.com
 altitude-games.com
+vending-machine.alto-games.com
 *.altoids.com
 altoids.com
 *.altosjogos.com
@@ -22960,6 +22961,8 @@ gt2048.com
 gta5-mods.com
 *.gta5browser.com
 gta5browser.com
+*.gta6minigames.com
+gta6minigames.com
 *.gtabrowser.com
 gtabrowser.com
 *.gtaforums.com
@@ -53896,6 +53899,7 @@ phrazle.pages.dev
 phrazle-game.pages.dev
 pineapple-games.pages.dev
 pixel-art-games-roblox.pages.dev
+pixel-game-tycoon.pages.dev
 pixel-number-diy-coloring.pages.dev
 pizagame.pages.dev
 pizza-edition-games.pages.dev
@@ -67417,8 +67421,6 @@ ripple-persistent-lifter.glitch.me
 sapphire-real-language.glitch.me
 uwu-says-ur-mom.glitch.me
 veil-band-pixie.glitch.me
-*.gofund.me
-gofund.me
 *.gogames.me
 gogames.me
 *.googlesnake.me
