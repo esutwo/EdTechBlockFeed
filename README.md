@@ -122,16 +122,54 @@ FGT_HOST=10.0.0.1 FGT_TOKEN=... python3 tools/fortiguard_coverage.py --sample 50
 
 ## Sources and licenses
 
-Feed contents come from the projects below. Each keeps its own license, and attribution is given here.
+The feed is built from four kinds of source. Everything is configured in `config/sources.toml`, and every run reports what each source contributed in [`docs/latest-run.md`](docs/latest-run.md).
 
-| Source | License |
+### 1. Curated blocklists (downloaded every run)
+
+| Source | Tier | License |
+|---|---|---|
+| [JosuhaSanhueza/BlockList](https://github.com/JosuhaSanhueza/BlockList) (games) | priority | CC BY-NC-SA 4.0 (non-commercial use) |
+| [CasCas2/school-gaming-dns-blocklist](https://github.com/CasCas2/school-gaming-dns-blocklist) (mega, classroom, lite) | priority | CC0 |
+| [dkorunic/browser-games-blocklist](https://github.com/dkorunic/browser-games-blocklist) | priority | not stated |
+| [nuneze54/Network-Lists](https://github.com/nuneze54/Network-Lists) (games) | priority | not stated |
+| [marcuccione/pihole-browser-games-blocklist](https://github.com/marcuccione/pihole-browser-games-blocklist) | priority | not stated |
+| [bridgerhung/adblock](https://github.com/bridgerhung/adblock) (games) | priority | not stated |
+| [panamastem/Pihole-BlockLists-OnlineMinigames](https://github.com/panamastem/Pihole-BlockLists-OnlineMinigames) | priority | not stated |
+| [mmcohen-tech/parsa-blocklists](https://github.com/mmcohen-tech/parsa-blocklists) (online games) | priority | MIT |
+| [apsbartlettb Game Proxy Blocklist gist](https://gist.github.com/apsbartlettb/26220978c466cdbe0aaed9c63680ea27) | priority, **live-checked first** (stale, many hijacked hosts) | not stated |
+| [gjohnpaull/adguard-games-blocklist](https://github.com/gjohnpaull/adguard-games-blocklist) | general | not stated |
+| [UT1 blacklists, Université Toulouse Capitole](https://dsi.ut-capitole.fr/blacklists/) (games) | general | CC BY-SA 4.0 |
+| [AdguardTeam/HostlistsRegistry](https://github.com/AdguardTeam/HostlistsRegistry) (gaming services) | general | GPL-3.0 |
+
+Whole-platform entries, whole-TLD rules and anything on the allowlist are stripped from these lists. The publish safety check then refuses any release that still contains a protected domain.
+
+### 2. Discovery sources (find sites no list has yet)
+
+Every site found here is fetched and fingerprinted live before it's blocked.
+
+| Source | What it finds | Detail |
+|---|---|---|
+| **GitHub repository search** | Unblocked-games and proxy projects, with their homepages, GitHub Pages and README links | 14 topics (`unblocked-games`, `unblockedforschool`, `unblockers-for-school`, `school-unblocker`, `gn-math`, `eaglercraft`, `scramjet` and others) plus 3 keyword searches |
+| **GitHub organizations** | Services run by the authors of the main web-proxy frameworks | [titaniumnetwork-dev](https://github.com/titaniumnetwork-dev) and [MercuryWorkshop](https://github.com/MercuryWorkshop): every repository's homepage and Pages site |
+| **GitHub code search** | Owners nobody has posted yet, through files with the loader signature (full-screen SVGs that embed an iframe or script) | 6 searches. Uses the `CODE_SEARCH_TOKEN` secret. |
+| **CDN owner expansion** | New repositories and loader files from GitHub owners already confirmed | GitHub API plus the [jsDelivr data API](https://www.jsdelivr.com/docs/data.jsdelivr.com) |
+| **Student link lists** | Mirror links students pass around | [yourworstnightmare1/proxy-list](https://github.com/yourworstnightmare1/proxy-list) (`links.txt`, `unsorted_links.txt`), [wea-f/ByePassHub](https://github.com/wea-f/ByePassHub), [eddy-22 gist](https://gist.github.com/eddy-22/2cdfadfa539cdaccfd0a9e31bf98e6d6), [Carter54git/Ultimate-Catalog-Of-Web-Game-Ports](https://github.com/Carter54git/Ultimate-Catalog-Of-Web-Game-Ports), [bns34/Unblocked-Sites](https://github.com/bns34/Unblocked-Sites), [task4z/unblockedgames](https://github.com/task4z/unblockedgames), [0800WebDev/UBGdir](https://github.com/0800WebDev/UBGdir) |
+| **[urlscan.io](https://urlscan.io/) search** | Pages, scanned by anyone, that load proxy framework files or are titled "unblocked games" | 5 searches every 6 hours. Uses the `URLSCAN_API_KEY` secret. |
+| **Certificate Transparency** ([crt.sh](https://crt.sh/)) | Brand-new hostnames containing `unblocked`, `ubg`, `gn-math`, `eaglercraft` and others | 9 keywords. Best-effort, and skipped automatically when crt.sh is unreachable. |
+| **Pages already blocked** | Game engines (GitHub owners loaded through CDN mirror fallback chains), unknown CDN mirrors, and redirect targets | Script URLs and redirects recorded during live checks |
+
+### 3. Detection and reference intelligence
+
+| Source | Used for |
 |---|---|
-| [JosuhaSanhueza/BlockList](https://github.com/JosuhaSanhueza/BlockList) | CC BY-NC-SA 4.0 (non-commercial use) |
-| [CasCas2/school-gaming-dns-blocklist](https://github.com/CasCas2/school-gaming-dns-blocklist) | CC0 |
-| [dkorunic/browser-games-blocklist](https://github.com/dkorunic/browser-games-blocklist) | not stated |
-| [nuneze54/Network-Lists](https://github.com/nuneze54/Network-Lists) | not stated |
-| [gjohnpaull/adguard-games-blocklist](https://github.com/gjohnpaull/adguard-games-blocklist) | not stated |
-| [UT1 blacklists, Université Toulouse Capitole](https://dsi.ut-capitole.fr/blacklists/) | CC BY-SA 4.0 |
-| [AdguardTeam/HostlistsRegistry](https://github.com/AdguardTeam/HostlistsRegistry) (gaming services) | GPL-3.0 |
-| marcuccione, bridgerhung, panamastem, mmcohen-tech lists; apsbartlettb gist | see each repo |
+| [Titanium Network](https://github.com/titaniumnetwork-dev) and [MercuryWorkshop](https://github.com/MercuryWorkshop) framework code (Ultraviolet, Scramjet, bare-mux, Wisp, Epoxy, libcurl-transport), [Rammerhead](https://github.com/binary-person/rammerhead), MasqrProject | Proxy fingerprints: default file paths, code globals and page element IDs |
+| [Tranco list](https://tranco-list.eu/) (top 100,000 domains, refreshed weekly) | Popularity guards: discovery never blocks a major site over one game page |
+| Published domain-shadowing and subdomain-takeover research ([urlscan.io](https://urlscan.io/blog/2026/04/15/ProxyingTrust/), [Infoblox via Cybersecurity News](https://cybersecuritynews.com/illegal-gambling-websites/amp/), [Brandefense](https://brandefense.io/blog/subdomain-takeover-detection/)) | DNS shadowing signals: CNAME onto free hosting, CNAMEs named after the hostname, subdomain bursts |
 
+### 4. Human decisions
+
+`seeds/` holds hand-confirmed blocks (`confirmed.txt`, `confirmed-urls.txt`, `cdn-owners-block.txt`), the allowlist (`allow.txt`), dismissed review items, and known CDN mirrors. The **daily review** (a scheduled Claude session each school morning) proposes changes to these files as a pull request for a person to approve.
+
+**Not used, by design:** Discord servers, link-dispenser bots and Discord listing sites (Disboard, Discord Me). Using them would mean joining student communities under a false identity and breaking Discord's terms. Their links still reach the feed when they're shared publicly, and engine and framework blocking catches new domains no matter how they're handed out.
+
+The collector code in this repo is © ESU 2 (see `LICENSE`). The feed files contain data from the sources above, which keep their own licenses; see each source's terms.
