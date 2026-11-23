@@ -803,6 +803,7 @@ project-87xpi.vercel.app
 project-bftvz.vercel.app
 project-scythe.vercel.app
 quantum-backrooms.vercel.app
+quenq-jade.vercel.app
 quiz-games-drab.vercel.app
 race-game-2.vercel.app
 re-pack-delta.vercel.app
@@ -5548,6 +5549,8 @@ gryspiderman.com
 gt2048.com
 *.gta5browser.com
 gta5browser.com
+*.gta6minigames.com
+gta6minigames.com
 *.gtabrowser.com
 gtabrowser.com
 *.gtarcade.com
@@ -10186,18 +10189,13 @@ urbanegger.com
 urlsnake.com
 *.urmud.com
 urmud.com
-*.1v1lol.us.com
 1v1lol.us.com
-*.calcsolver.us.com
 calcsolver.us.com
-*.classroom6x.us.com
 classroom6x.us.com
-*.geometrydash.us.com
 geometrydash.us.com
-*.poki.us.com
 poki.us.com
-*.tetris.us.com
 tetris.us.com
+thearchive.us.com
 games.usatoday.com
 puzzles.usatoday.com
 *.usaunblockedgames.com
@@ -10443,6 +10441,7 @@ winwilder.com
 *.winzygame.com
 winzygame.com
 hookedln.wixsite.com
+stock95633.wixsite.com
 *.wizardcards.com
 wizardcards.com
 unlock.wmeluna.com
@@ -15769,6 +15768,7 @@ emanperson.github.io
 emarsh93.github.io
 emberlockgames.github.io
 emjay045.github.io
+eml0073.github.io
 emmegray.github.io
 emulatorjs.github.io
 emulatoros.github.io
@@ -16761,6 +16761,7 @@ murder-unblocked.github.io
 murr88.github.io
 mutualstand2187.github.io
 my-arcade-game.github.io
+my-unblocked-games.github.io
 mynameisyou-cmyk.github.io
 mysocksaregone-dev.github.io
 mz544.github.io
@@ -17733,6 +17734,7 @@ u-bg.github.io
 ub-g.github.io
 ubg-76.github.io
 ubg-gplus.github.io
+ubg-hyper.github.io
 ubg100.github.io
 ubg100game.github.io
 ubg11.github.io
@@ -18542,6 +18544,9 @@ hussvalley.io
 *.hypixel.io
 hypixel.io
 cpvxz-iyaaa-aaaad-qflqq-cai.icp0.io
+eii56-giaaa-aaaad-qfypa-cai.icp0.io
+f5u4x-laaaa-aaaad-qf7xa-cai.icp0.io
+rv2yr-kyaaa-aaaad-qgaga-cai.icp0.io
 xzhoq-qiaaa-aaaag-ay4wa-cai.icp0.io
 *.idolsofash.io
 idolsofash.io
@@ -23152,6 +23157,7 @@ nealfun.org
 eaglercraftub.neocities.org
 niksid09.neocities.org
 slopegamefree.neocities.org
+play.neverball.org
 *.newkidsgames.org
 newkidsgames.org
 dino.njilc.org
@@ -23787,6 +23793,8 @@ wyspagier.pl
 zieloneimperium.pl
 *.crazygames.plus
 crazygames.plus
+*.playertwo.plus
+playertwo.plus
 *.1games.pro
 1games.pro
 *.aiming.pro
@@ -23926,6 +23934,7 @@ petridish.pw
 plutonium.pw
 *.yolk.quest
 yolk.quest
+play.fatal.racing
 *.geometry.report
 geometry.report
 *.mexi.rest
@@ -24282,6 +24291,8 @@ pgis-wisp.joytree.site
 koolmathgames.site
 *.langwiligi.site
 langwiligi.site
+games.lauta.site
+mka.lauta.site
 nfsmwested.lauta.site
 vh-prod-math-class-main-6f638f-09230ec8.livemy.site
 *.mathcaculator.site

@@ -906,6 +906,7 @@ project-87xpi.vercel.app
 project-bftvz.vercel.app
 project-scythe.vercel.app
 quantum-backrooms.vercel.app
+quenq-jade.vercel.app
 quiz-games-drab.vercel.app
 race-game-2.vercel.app
 re-pack-delta.vercel.app
@@ -22976,6 +22977,8 @@ gt2048.com
 gta5-mods.com
 *.gta5browser.com
 gta5browser.com
+*.gta6minigames.com
+gta6minigames.com
 *.gtabrowser.com
 gtabrowser.com
 *.gtaforums.com
@@ -48384,15 +48387,14 @@ ursegames.com
 ursiny.com
 *.urwizards.com
 urwizards.com
-*.us.com
-us.com
-*.1v1lol.us.com
-*.calcsolver.us.com
-*.classroom6x.us.com
-*.geometrydash.us.com
-*.happywheels.us.com
-*.poki.us.com
-*.tetris.us.com
+1v1lol.us.com
+calcsolver.us.com
+classroom6x.us.com
+geometrydash.us.com
+happywheels.us.com
+poki.us.com
+tetris.us.com
+thearchive.us.com
 *.usacheckers.com
 usacheckers.com
 *.usachess.com
@@ -50152,6 +50154,7 @@ wixerind.com
 *.wixgame.com
 wixgame.com
 hookedln.wixsite.com
+stock95633.wixsite.com
 *.wizard-wars.com
 wizard-wars.com
 *.wizardcards.com
@@ -61814,6 +61817,7 @@ emanperson.github.io
 emarsh93.github.io
 emberlockgames.github.io
 emjay045.github.io
+eml0073.github.io
 emmegray.github.io
 emulatorjs.github.io
 emulatoros.github.io
@@ -62809,6 +62813,7 @@ murder-unblocked.github.io
 murr88.github.io
 mutualstand2187.github.io
 my-arcade-game.github.io
+my-unblocked-games.github.io
 mynameisyou-cmyk.github.io
 mysocksaregone-dev.github.io
 mz544.github.io
@@ -63784,6 +63789,7 @@ u-bg.github.io
 ub-g.github.io
 ubg-76.github.io
 ubg-gplus.github.io
+ubg-hyper.github.io
 ubg100.github.io
 ubg100game.github.io
 ubg11.github.io
@@ -64617,6 +64623,9 @@ hypixel.io
 *.icandy.io
 icandy.io
 cpvxz-iyaaa-aaaad-qflqq-cai.icp0.io
+eii56-giaaa-aaaad-qfypa-cai.icp0.io
+f5u4x-laaaa-aaaad-qf7xa-cai.icp0.io
+rv2yr-kyaaa-aaaad-qgaga-cai.icp0.io
 xzhoq-qiaaa-aaaag-ay4wa-cai.icp0.io
 *.idolsofash.io
 idolsofash.io
@@ -77547,6 +77556,7 @@ mame.netlabs.org
 netrek.org
 *.nevadachess.org
 nevadachess.org
+play.neverball.org
 *.new-republic.org
 new-republic.org
 *.newhentaigames.org
@@ -79462,6 +79472,8 @@ gamedev.place
 crazygames.plus
 *.ddlc.plus
 ddlc.plus
+*.playertwo.plus
+playertwo.plus
 *.roblox.plus
 roblox.plus
 logiczone.eu.pn
@@ -79691,6 +79703,7 @@ vost.pw
 juegos.com.py
 *.yolk.quest
 yolk.quest
+play.fatal.racing
 *.geometry.report
 geometry.report
 *.mexi.rest
@@ -81381,6 +81394,8 @@ pgis-wisp.joytree.site
 koolmathgames.site
 *.langwiligi.site
 langwiligi.site
+games.lauta.site
+mka.lauta.site
 nfsmwested.lauta.site
 *.libertycraft.site
 libertycraft.site

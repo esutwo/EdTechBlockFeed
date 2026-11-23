@@ -34,6 +34,8 @@ cdn.esm.sh/gh/Kernel8901/ai-agent-skills-classification/
 cdn.esm.sh/gh/Kernel8901/ai-agent-skills-classification@
 cdn.esm.sh/gh/Lyte3075/
 cdn.esm.sh/gh/MRVAPORWAVE25/
+cdn.esm.sh/gh/Mo9nikeypurple/scramjet-safari/
+cdn.esm.sh/gh/Mo9nikeypurple/scramjet-safari@
 cdn.esm.sh/gh/Mr-Calvin-Math-Class/
 cdn.esm.sh/gh/Mtreasur0133-bit/autorepo1/
 cdn.esm.sh/gh/Mtreasur0133-bit/autorepo1@
@@ -132,6 +134,8 @@ cdn.esm.sh/gh/lyte3075/
 cdn.esm.sh/gh/mathissofun137/
 cdn.esm.sh/gh/mathstudyportal/
 cdn.esm.sh/gh/meghal86/
+cdn.esm.sh/gh/mo9nikeypurple/scramjet-safari/
+cdn.esm.sh/gh/mo9nikeypurple/scramjet-safari@
 cdn.esm.sh/gh/modbender/skill-library-mcp/
 cdn.esm.sh/gh/modbender/skill-library-mcp@
 cdn.esm.sh/gh/mr-calvin-math-class/
@@ -224,6 +228,8 @@ cdn.githubraw.com/Kernel8901/ai-agent-skills-classification/
 cdn.githubraw.com/Kernel8901/ai-agent-skills-classification@
 cdn.githubraw.com/Lyte3075/
 cdn.githubraw.com/MRVAPORWAVE25/
+cdn.githubraw.com/Mo9nikeypurple/scramjet-safari/
+cdn.githubraw.com/Mo9nikeypurple/scramjet-safari@
 cdn.githubraw.com/Mr-Calvin-Math-Class/
 cdn.githubraw.com/Mtreasur0133-bit/autorepo1/
 cdn.githubraw.com/Mtreasur0133-bit/autorepo1@
@@ -322,6 +328,8 @@ cdn.githubraw.com/lyte3075/
 cdn.githubraw.com/mathissofun137/
 cdn.githubraw.com/mathstudyportal/
 cdn.githubraw.com/meghal86/
+cdn.githubraw.com/mo9nikeypurple/scramjet-safari/
+cdn.githubraw.com/mo9nikeypurple/scramjet-safari@
 cdn.githubraw.com/modbender/skill-library-mcp/
 cdn.githubraw.com/modbender/skill-library-mcp@
 cdn.githubraw.com/mr-calvin-math-class/
@@ -406,6 +414,8 @@ cdn.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification/
 cdn.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification@
 cdn.jsdelivr.net/combine/gh/Lyte3075/
 cdn.jsdelivr.net/combine/gh/MRVAPORWAVE25/
+cdn.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari/
+cdn.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari@
 cdn.jsdelivr.net/combine/gh/Mr-Calvin-Math-Class/
 cdn.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1/
 cdn.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -504,6 +514,8 @@ cdn.jsdelivr.net/combine/gh/lyte3075/
 cdn.jsdelivr.net/combine/gh/mathissofun137/
 cdn.jsdelivr.net/combine/gh/mathstudyportal/
 cdn.jsdelivr.net/combine/gh/meghal86/
+cdn.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari/
+cdn.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari@
 cdn.jsdelivr.net/combine/gh/modbender/skill-library-mcp/
 cdn.jsdelivr.net/combine/gh/modbender/skill-library-mcp@
 cdn.jsdelivr.net/combine/gh/mr-calvin-math-class/
@@ -588,6 +600,8 @@ cdn.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification/
 cdn.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification@
 cdn.jsdelivr.net/gh/Lyte3075/
 cdn.jsdelivr.net/gh/MRVAPORWAVE25/
+cdn.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari/
+cdn.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari@
 cdn.jsdelivr.net/gh/Mr-Calvin-Math-Class/
 cdn.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1/
 cdn.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1@
@@ -686,6 +700,8 @@ cdn.jsdelivr.net/gh/lyte3075/
 cdn.jsdelivr.net/gh/mathissofun137/
 cdn.jsdelivr.net/gh/mathstudyportal/
 cdn.jsdelivr.net/gh/meghal86/
+cdn.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari/
+cdn.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari@
 cdn.jsdelivr.net/gh/modbender/skill-library-mcp/
 cdn.jsdelivr.net/gh/modbender/skill-library-mcp@
 cdn.jsdelivr.net/gh/mr-calvin-math-class/
@@ -784,6 +800,8 @@ cdn.jsdmirror.com/combine/gh/Kernel8901/ai-agent-skills-classification/
 cdn.jsdmirror.com/combine/gh/Kernel8901/ai-agent-skills-classification@
 cdn.jsdmirror.com/combine/gh/Lyte3075/
 cdn.jsdmirror.com/combine/gh/MRVAPORWAVE25/
+cdn.jsdmirror.com/combine/gh/Mo9nikeypurple/scramjet-safari/
+cdn.jsdmirror.com/combine/gh/Mo9nikeypurple/scramjet-safari@
 cdn.jsdmirror.com/combine/gh/Mr-Calvin-Math-Class/
 cdn.jsdmirror.com/combine/gh/Mtreasur0133-bit/autorepo1/
 cdn.jsdmirror.com/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -882,6 +900,8 @@ cdn.jsdmirror.com/combine/gh/lyte3075/
 cdn.jsdmirror.com/combine/gh/mathissofun137/
 cdn.jsdmirror.com/combine/gh/mathstudyportal/
 cdn.jsdmirror.com/combine/gh/meghal86/
+cdn.jsdmirror.com/combine/gh/mo9nikeypurple/scramjet-safari/
+cdn.jsdmirror.com/combine/gh/mo9nikeypurple/scramjet-safari@
 cdn.jsdmirror.com/combine/gh/modbender/skill-library-mcp/
 cdn.jsdmirror.com/combine/gh/modbender/skill-library-mcp@
 cdn.jsdmirror.com/combine/gh/mr-calvin-math-class/
@@ -966,6 +986,8 @@ cdn.jsdmirror.com/gh/Kernel8901/ai-agent-skills-classification/
 cdn.jsdmirror.com/gh/Kernel8901/ai-agent-skills-classification@
 cdn.jsdmirror.com/gh/Lyte3075/
 cdn.jsdmirror.com/gh/MRVAPORWAVE25/
+cdn.jsdmirror.com/gh/Mo9nikeypurple/scramjet-safari/
+cdn.jsdmirror.com/gh/Mo9nikeypurple/scramjet-safari@
 cdn.jsdmirror.com/gh/Mr-Calvin-Math-Class/
 cdn.jsdmirror.com/gh/Mtreasur0133-bit/autorepo1/
 cdn.jsdmirror.com/gh/Mtreasur0133-bit/autorepo1@
@@ -1064,6 +1086,8 @@ cdn.jsdmirror.com/gh/lyte3075/
 cdn.jsdmirror.com/gh/mathissofun137/
 cdn.jsdmirror.com/gh/mathstudyportal/
 cdn.jsdmirror.com/gh/meghal86/
+cdn.jsdmirror.com/gh/mo9nikeypurple/scramjet-safari/
+cdn.jsdmirror.com/gh/mo9nikeypurple/scramjet-safari@
 cdn.jsdmirror.com/gh/modbender/skill-library-mcp/
 cdn.jsdmirror.com/gh/modbender/skill-library-mcp@
 cdn.jsdmirror.com/gh/mr-calvin-math-class/
@@ -1160,6 +1184,8 @@ cdn.statically.io/gh/Kernel8901/ai-agent-skills-classification/
 cdn.statically.io/gh/Kernel8901/ai-agent-skills-classification@
 cdn.statically.io/gh/Lyte3075/
 cdn.statically.io/gh/MRVAPORWAVE25/
+cdn.statically.io/gh/Mo9nikeypurple/scramjet-safari/
+cdn.statically.io/gh/Mo9nikeypurple/scramjet-safari@
 cdn.statically.io/gh/Mr-Calvin-Math-Class/
 cdn.statically.io/gh/Mtreasur0133-bit/autorepo1/
 cdn.statically.io/gh/Mtreasur0133-bit/autorepo1@
@@ -1258,6 +1284,8 @@ cdn.statically.io/gh/lyte3075/
 cdn.statically.io/gh/mathissofun137/
 cdn.statically.io/gh/mathstudyportal/
 cdn.statically.io/gh/meghal86/
+cdn.statically.io/gh/mo9nikeypurple/scramjet-safari/
+cdn.statically.io/gh/mo9nikeypurple/scramjet-safari@
 cdn.statically.io/gh/modbender/skill-library-mcp/
 cdn.statically.io/gh/modbender/skill-library-mcp@
 cdn.statically.io/gh/mr-calvin-math-class/
@@ -1342,6 +1370,8 @@ cdn.staticdelivr.com/combine/gh/Kernel8901/ai-agent-skills-classification/
 cdn.staticdelivr.com/combine/gh/Kernel8901/ai-agent-skills-classification@
 cdn.staticdelivr.com/combine/gh/Lyte3075/
 cdn.staticdelivr.com/combine/gh/MRVAPORWAVE25/
+cdn.staticdelivr.com/combine/gh/Mo9nikeypurple/scramjet-safari/
+cdn.staticdelivr.com/combine/gh/Mo9nikeypurple/scramjet-safari@
 cdn.staticdelivr.com/combine/gh/Mr-Calvin-Math-Class/
 cdn.staticdelivr.com/combine/gh/Mtreasur0133-bit/autorepo1/
 cdn.staticdelivr.com/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -1440,6 +1470,8 @@ cdn.staticdelivr.com/combine/gh/lyte3075/
 cdn.staticdelivr.com/combine/gh/mathissofun137/
 cdn.staticdelivr.com/combine/gh/mathstudyportal/
 cdn.staticdelivr.com/combine/gh/meghal86/
+cdn.staticdelivr.com/combine/gh/mo9nikeypurple/scramjet-safari/
+cdn.staticdelivr.com/combine/gh/mo9nikeypurple/scramjet-safari@
 cdn.staticdelivr.com/combine/gh/modbender/skill-library-mcp/
 cdn.staticdelivr.com/combine/gh/modbender/skill-library-mcp@
 cdn.staticdelivr.com/combine/gh/mr-calvin-math-class/
@@ -1524,6 +1556,8 @@ cdn.staticdelivr.com/gh/Kernel8901/ai-agent-skills-classification/
 cdn.staticdelivr.com/gh/Kernel8901/ai-agent-skills-classification@
 cdn.staticdelivr.com/gh/Lyte3075/
 cdn.staticdelivr.com/gh/MRVAPORWAVE25/
+cdn.staticdelivr.com/gh/Mo9nikeypurple/scramjet-safari/
+cdn.staticdelivr.com/gh/Mo9nikeypurple/scramjet-safari@
 cdn.staticdelivr.com/gh/Mr-Calvin-Math-Class/
 cdn.staticdelivr.com/gh/Mtreasur0133-bit/autorepo1/
 cdn.staticdelivr.com/gh/Mtreasur0133-bit/autorepo1@
@@ -1622,6 +1656,8 @@ cdn.staticdelivr.com/gh/lyte3075/
 cdn.staticdelivr.com/gh/mathissofun137/
 cdn.staticdelivr.com/gh/mathstudyportal/
 cdn.staticdelivr.com/gh/meghal86/
+cdn.staticdelivr.com/gh/mo9nikeypurple/scramjet-safari/
+cdn.staticdelivr.com/gh/mo9nikeypurple/scramjet-safari@
 cdn.staticdelivr.com/gh/modbender/skill-library-mcp/
 cdn.staticdelivr.com/gh/modbender/skill-library-mcp@
 cdn.staticdelivr.com/gh/mr-calvin-math-class/
@@ -1728,6 +1764,8 @@ esm.sh/gh/Kernel8901/ai-agent-skills-classification/
 esm.sh/gh/Kernel8901/ai-agent-skills-classification@
 esm.sh/gh/Lyte3075/
 esm.sh/gh/MRVAPORWAVE25/
+esm.sh/gh/Mo9nikeypurple/scramjet-safari/
+esm.sh/gh/Mo9nikeypurple/scramjet-safari@
 esm.sh/gh/Mr-Calvin-Math-Class/
 esm.sh/gh/Mtreasur0133-bit/autorepo1/
 esm.sh/gh/Mtreasur0133-bit/autorepo1@
@@ -1826,6 +1864,8 @@ esm.sh/gh/lyte3075/
 esm.sh/gh/mathissofun137/
 esm.sh/gh/mathstudyportal/
 esm.sh/gh/meghal86/
+esm.sh/gh/mo9nikeypurple/scramjet-safari/
+esm.sh/gh/mo9nikeypurple/scramjet-safari@
 esm.sh/gh/modbender/skill-library-mcp/
 esm.sh/gh/modbender/skill-library-mcp@
 esm.sh/gh/mr-calvin-math-class/
@@ -1918,6 +1958,8 @@ fastly.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification/
 fastly.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification@
 fastly.jsdelivr.net/combine/gh/Lyte3075/
 fastly.jsdelivr.net/combine/gh/MRVAPORWAVE25/
+fastly.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari/
+fastly.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari@
 fastly.jsdelivr.net/combine/gh/Mr-Calvin-Math-Class/
 fastly.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1/
 fastly.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -2016,6 +2058,8 @@ fastly.jsdelivr.net/combine/gh/lyte3075/
 fastly.jsdelivr.net/combine/gh/mathissofun137/
 fastly.jsdelivr.net/combine/gh/mathstudyportal/
 fastly.jsdelivr.net/combine/gh/meghal86/
+fastly.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari/
+fastly.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari@
 fastly.jsdelivr.net/combine/gh/modbender/skill-library-mcp/
 fastly.jsdelivr.net/combine/gh/modbender/skill-library-mcp@
 fastly.jsdelivr.net/combine/gh/mr-calvin-math-class/
@@ -2100,6 +2144,8 @@ fastly.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification/
 fastly.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification@
 fastly.jsdelivr.net/gh/Lyte3075/
 fastly.jsdelivr.net/gh/MRVAPORWAVE25/
+fastly.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari/
+fastly.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari@
 fastly.jsdelivr.net/gh/Mr-Calvin-Math-Class/
 fastly.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1/
 fastly.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1@
@@ -2198,6 +2244,8 @@ fastly.jsdelivr.net/gh/lyte3075/
 fastly.jsdelivr.net/gh/mathissofun137/
 fastly.jsdelivr.net/gh/mathstudyportal/
 fastly.jsdelivr.net/gh/meghal86/
+fastly.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari/
+fastly.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari@
 fastly.jsdelivr.net/gh/modbender/skill-library-mcp/
 fastly.jsdelivr.net/gh/modbender/skill-library-mcp@
 fastly.jsdelivr.net/gh/mr-calvin-math-class/
@@ -2294,6 +2342,8 @@ gcore.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification/
 gcore.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification@
 gcore.jsdelivr.net/combine/gh/Lyte3075/
 gcore.jsdelivr.net/combine/gh/MRVAPORWAVE25/
+gcore.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari/
+gcore.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari@
 gcore.jsdelivr.net/combine/gh/Mr-Calvin-Math-Class/
 gcore.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1/
 gcore.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -2392,6 +2442,8 @@ gcore.jsdelivr.net/combine/gh/lyte3075/
 gcore.jsdelivr.net/combine/gh/mathissofun137/
 gcore.jsdelivr.net/combine/gh/mathstudyportal/
 gcore.jsdelivr.net/combine/gh/meghal86/
+gcore.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari/
+gcore.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari@
 gcore.jsdelivr.net/combine/gh/modbender/skill-library-mcp/
 gcore.jsdelivr.net/combine/gh/modbender/skill-library-mcp@
 gcore.jsdelivr.net/combine/gh/mr-calvin-math-class/
@@ -2476,6 +2528,8 @@ gcore.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification/
 gcore.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification@
 gcore.jsdelivr.net/gh/Lyte3075/
 gcore.jsdelivr.net/gh/MRVAPORWAVE25/
+gcore.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari/
+gcore.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari@
 gcore.jsdelivr.net/gh/Mr-Calvin-Math-Class/
 gcore.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1/
 gcore.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1@
@@ -2574,6 +2628,8 @@ gcore.jsdelivr.net/gh/lyte3075/
 gcore.jsdelivr.net/gh/mathissofun137/
 gcore.jsdelivr.net/gh/mathstudyportal/
 gcore.jsdelivr.net/gh/meghal86/
+gcore.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari/
+gcore.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari@
 gcore.jsdelivr.net/gh/modbender/skill-library-mcp/
 gcore.jsdelivr.net/gh/modbender/skill-library-mcp@
 gcore.jsdelivr.net/gh/mr-calvin-math-class/
@@ -2670,6 +2726,8 @@ jsd.liiiu.cn/combine/gh/Kernel8901/ai-agent-skills-classification/
 jsd.liiiu.cn/combine/gh/Kernel8901/ai-agent-skills-classification@
 jsd.liiiu.cn/combine/gh/Lyte3075/
 jsd.liiiu.cn/combine/gh/MRVAPORWAVE25/
+jsd.liiiu.cn/combine/gh/Mo9nikeypurple/scramjet-safari/
+jsd.liiiu.cn/combine/gh/Mo9nikeypurple/scramjet-safari@
 jsd.liiiu.cn/combine/gh/Mr-Calvin-Math-Class/
 jsd.liiiu.cn/combine/gh/Mtreasur0133-bit/autorepo1/
 jsd.liiiu.cn/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -2768,6 +2826,8 @@ jsd.liiiu.cn/combine/gh/lyte3075/
 jsd.liiiu.cn/combine/gh/mathissofun137/
 jsd.liiiu.cn/combine/gh/mathstudyportal/
 jsd.liiiu.cn/combine/gh/meghal86/
+jsd.liiiu.cn/combine/gh/mo9nikeypurple/scramjet-safari/
+jsd.liiiu.cn/combine/gh/mo9nikeypurple/scramjet-safari@
 jsd.liiiu.cn/combine/gh/modbender/skill-library-mcp/
 jsd.liiiu.cn/combine/gh/modbender/skill-library-mcp@
 jsd.liiiu.cn/combine/gh/mr-calvin-math-class/
@@ -2852,6 +2912,8 @@ jsd.liiiu.cn/gh/Kernel8901/ai-agent-skills-classification/
 jsd.liiiu.cn/gh/Kernel8901/ai-agent-skills-classification@
 jsd.liiiu.cn/gh/Lyte3075/
 jsd.liiiu.cn/gh/MRVAPORWAVE25/
+jsd.liiiu.cn/gh/Mo9nikeypurple/scramjet-safari/
+jsd.liiiu.cn/gh/Mo9nikeypurple/scramjet-safari@
 jsd.liiiu.cn/gh/Mr-Calvin-Math-Class/
 jsd.liiiu.cn/gh/Mtreasur0133-bit/autorepo1/
 jsd.liiiu.cn/gh/Mtreasur0133-bit/autorepo1@
@@ -2950,6 +3012,8 @@ jsd.liiiu.cn/gh/lyte3075/
 jsd.liiiu.cn/gh/mathissofun137/
 jsd.liiiu.cn/gh/mathstudyportal/
 jsd.liiiu.cn/gh/meghal86/
+jsd.liiiu.cn/gh/mo9nikeypurple/scramjet-safari/
+jsd.liiiu.cn/gh/mo9nikeypurple/scramjet-safari@
 jsd.liiiu.cn/gh/modbender/skill-library-mcp/
 jsd.liiiu.cn/gh/modbender/skill-library-mcp@
 jsd.liiiu.cn/gh/mr-calvin-math-class/
@@ -3046,6 +3110,8 @@ jsd.onmicrosoft.cn/combine/gh/Kernel8901/ai-agent-skills-classification/
 jsd.onmicrosoft.cn/combine/gh/Kernel8901/ai-agent-skills-classification@
 jsd.onmicrosoft.cn/combine/gh/Lyte3075/
 jsd.onmicrosoft.cn/combine/gh/MRVAPORWAVE25/
+jsd.onmicrosoft.cn/combine/gh/Mo9nikeypurple/scramjet-safari/
+jsd.onmicrosoft.cn/combine/gh/Mo9nikeypurple/scramjet-safari@
 jsd.onmicrosoft.cn/combine/gh/Mr-Calvin-Math-Class/
 jsd.onmicrosoft.cn/combine/gh/Mtreasur0133-bit/autorepo1/
 jsd.onmicrosoft.cn/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -3144,6 +3210,8 @@ jsd.onmicrosoft.cn/combine/gh/lyte3075/
 jsd.onmicrosoft.cn/combine/gh/mathissofun137/
 jsd.onmicrosoft.cn/combine/gh/mathstudyportal/
 jsd.onmicrosoft.cn/combine/gh/meghal86/
+jsd.onmicrosoft.cn/combine/gh/mo9nikeypurple/scramjet-safari/
+jsd.onmicrosoft.cn/combine/gh/mo9nikeypurple/scramjet-safari@
 jsd.onmicrosoft.cn/combine/gh/modbender/skill-library-mcp/
 jsd.onmicrosoft.cn/combine/gh/modbender/skill-library-mcp@
 jsd.onmicrosoft.cn/combine/gh/mr-calvin-math-class/
@@ -3228,6 +3296,8 @@ jsd.onmicrosoft.cn/gh/Kernel8901/ai-agent-skills-classification/
 jsd.onmicrosoft.cn/gh/Kernel8901/ai-agent-skills-classification@
 jsd.onmicrosoft.cn/gh/Lyte3075/
 jsd.onmicrosoft.cn/gh/MRVAPORWAVE25/
+jsd.onmicrosoft.cn/gh/Mo9nikeypurple/scramjet-safari/
+jsd.onmicrosoft.cn/gh/Mo9nikeypurple/scramjet-safari@
 jsd.onmicrosoft.cn/gh/Mr-Calvin-Math-Class/
 jsd.onmicrosoft.cn/gh/Mtreasur0133-bit/autorepo1/
 jsd.onmicrosoft.cn/gh/Mtreasur0133-bit/autorepo1@
@@ -3326,6 +3396,8 @@ jsd.onmicrosoft.cn/gh/lyte3075/
 jsd.onmicrosoft.cn/gh/mathissofun137/
 jsd.onmicrosoft.cn/gh/mathstudyportal/
 jsd.onmicrosoft.cn/gh/meghal86/
+jsd.onmicrosoft.cn/gh/mo9nikeypurple/scramjet-safari/
+jsd.onmicrosoft.cn/gh/mo9nikeypurple/scramjet-safari@
 jsd.onmicrosoft.cn/gh/modbender/skill-library-mcp/
 jsd.onmicrosoft.cn/gh/modbender/skill-library-mcp@
 jsd.onmicrosoft.cn/gh/mr-calvin-math-class/
@@ -3422,6 +3494,8 @@ jsdelivr.b-cdn.net/combine/gh/Kernel8901/ai-agent-skills-classification/
 jsdelivr.b-cdn.net/combine/gh/Kernel8901/ai-agent-skills-classification@
 jsdelivr.b-cdn.net/combine/gh/Lyte3075/
 jsdelivr.b-cdn.net/combine/gh/MRVAPORWAVE25/
+jsdelivr.b-cdn.net/combine/gh/Mo9nikeypurple/scramjet-safari/
+jsdelivr.b-cdn.net/combine/gh/Mo9nikeypurple/scramjet-safari@
 jsdelivr.b-cdn.net/combine/gh/Mr-Calvin-Math-Class/
 jsdelivr.b-cdn.net/combine/gh/Mtreasur0133-bit/autorepo1/
 jsdelivr.b-cdn.net/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -3520,6 +3594,8 @@ jsdelivr.b-cdn.net/combine/gh/lyte3075/
 jsdelivr.b-cdn.net/combine/gh/mathissofun137/
 jsdelivr.b-cdn.net/combine/gh/mathstudyportal/
 jsdelivr.b-cdn.net/combine/gh/meghal86/
+jsdelivr.b-cdn.net/combine/gh/mo9nikeypurple/scramjet-safari/
+jsdelivr.b-cdn.net/combine/gh/mo9nikeypurple/scramjet-safari@
 jsdelivr.b-cdn.net/combine/gh/modbender/skill-library-mcp/
 jsdelivr.b-cdn.net/combine/gh/modbender/skill-library-mcp@
 jsdelivr.b-cdn.net/combine/gh/mr-calvin-math-class/
@@ -3604,6 +3680,8 @@ jsdelivr.b-cdn.net/gh/Kernel8901/ai-agent-skills-classification/
 jsdelivr.b-cdn.net/gh/Kernel8901/ai-agent-skills-classification@
 jsdelivr.b-cdn.net/gh/Lyte3075/
 jsdelivr.b-cdn.net/gh/MRVAPORWAVE25/
+jsdelivr.b-cdn.net/gh/Mo9nikeypurple/scramjet-safari/
+jsdelivr.b-cdn.net/gh/Mo9nikeypurple/scramjet-safari@
 jsdelivr.b-cdn.net/gh/Mr-Calvin-Math-Class/
 jsdelivr.b-cdn.net/gh/Mtreasur0133-bit/autorepo1/
 jsdelivr.b-cdn.net/gh/Mtreasur0133-bit/autorepo1@
@@ -3702,6 +3780,8 @@ jsdelivr.b-cdn.net/gh/lyte3075/
 jsdelivr.b-cdn.net/gh/mathissofun137/
 jsdelivr.b-cdn.net/gh/mathstudyportal/
 jsdelivr.b-cdn.net/gh/meghal86/
+jsdelivr.b-cdn.net/gh/mo9nikeypurple/scramjet-safari/
+jsdelivr.b-cdn.net/gh/mo9nikeypurple/scramjet-safari@
 jsdelivr.b-cdn.net/gh/modbender/skill-library-mcp/
 jsdelivr.b-cdn.net/gh/modbender/skill-library-mcp@
 jsdelivr.b-cdn.net/gh/mr-calvin-math-class/
@@ -3798,6 +3878,8 @@ originfastly.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification/
 originfastly.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification@
 originfastly.jsdelivr.net/combine/gh/Lyte3075/
 originfastly.jsdelivr.net/combine/gh/MRVAPORWAVE25/
+originfastly.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari/
+originfastly.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari@
 originfastly.jsdelivr.net/combine/gh/Mr-Calvin-Math-Class/
 originfastly.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1/
 originfastly.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -3896,6 +3978,8 @@ originfastly.jsdelivr.net/combine/gh/lyte3075/
 originfastly.jsdelivr.net/combine/gh/mathissofun137/
 originfastly.jsdelivr.net/combine/gh/mathstudyportal/
 originfastly.jsdelivr.net/combine/gh/meghal86/
+originfastly.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari/
+originfastly.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari@
 originfastly.jsdelivr.net/combine/gh/modbender/skill-library-mcp/
 originfastly.jsdelivr.net/combine/gh/modbender/skill-library-mcp@
 originfastly.jsdelivr.net/combine/gh/mr-calvin-math-class/
@@ -3980,6 +4064,8 @@ originfastly.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification/
 originfastly.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification@
 originfastly.jsdelivr.net/gh/Lyte3075/
 originfastly.jsdelivr.net/gh/MRVAPORWAVE25/
+originfastly.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari/
+originfastly.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari@
 originfastly.jsdelivr.net/gh/Mr-Calvin-Math-Class/
 originfastly.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1/
 originfastly.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1@
@@ -4078,6 +4164,8 @@ originfastly.jsdelivr.net/gh/lyte3075/
 originfastly.jsdelivr.net/gh/mathissofun137/
 originfastly.jsdelivr.net/gh/mathstudyportal/
 originfastly.jsdelivr.net/gh/meghal86/
+originfastly.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari/
+originfastly.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari@
 originfastly.jsdelivr.net/gh/modbender/skill-library-mcp/
 originfastly.jsdelivr.net/gh/modbender/skill-library-mcp@
 originfastly.jsdelivr.net/gh/mr-calvin-math-class/
@@ -4174,6 +4262,8 @@ quantil.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification/
 quantil.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification@
 quantil.jsdelivr.net/combine/gh/Lyte3075/
 quantil.jsdelivr.net/combine/gh/MRVAPORWAVE25/
+quantil.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari/
+quantil.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari@
 quantil.jsdelivr.net/combine/gh/Mr-Calvin-Math-Class/
 quantil.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1/
 quantil.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -4272,6 +4362,8 @@ quantil.jsdelivr.net/combine/gh/lyte3075/
 quantil.jsdelivr.net/combine/gh/mathissofun137/
 quantil.jsdelivr.net/combine/gh/mathstudyportal/
 quantil.jsdelivr.net/combine/gh/meghal86/
+quantil.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari/
+quantil.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari@
 quantil.jsdelivr.net/combine/gh/modbender/skill-library-mcp/
 quantil.jsdelivr.net/combine/gh/modbender/skill-library-mcp@
 quantil.jsdelivr.net/combine/gh/mr-calvin-math-class/
@@ -4356,6 +4448,8 @@ quantil.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification/
 quantil.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification@
 quantil.jsdelivr.net/gh/Lyte3075/
 quantil.jsdelivr.net/gh/MRVAPORWAVE25/
+quantil.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari/
+quantil.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari@
 quantil.jsdelivr.net/gh/Mr-Calvin-Math-Class/
 quantil.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1/
 quantil.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1@
@@ -4454,6 +4548,8 @@ quantil.jsdelivr.net/gh/lyte3075/
 quantil.jsdelivr.net/gh/mathissofun137/
 quantil.jsdelivr.net/gh/mathstudyportal/
 quantil.jsdelivr.net/gh/meghal86/
+quantil.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari/
+quantil.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari@
 quantil.jsdelivr.net/gh/modbender/skill-library-mcp/
 quantil.jsdelivr.net/gh/modbender/skill-library-mcp@
 quantil.jsdelivr.net/gh/mr-calvin-math-class/
@@ -4554,6 +4650,8 @@ raw.esm.sh/gh/Kernel8901/ai-agent-skills-classification/
 raw.esm.sh/gh/Kernel8901/ai-agent-skills-classification@
 raw.esm.sh/gh/Lyte3075/
 raw.esm.sh/gh/MRVAPORWAVE25/
+raw.esm.sh/gh/Mo9nikeypurple/scramjet-safari/
+raw.esm.sh/gh/Mo9nikeypurple/scramjet-safari@
 raw.esm.sh/gh/Mr-Calvin-Math-Class/
 raw.esm.sh/gh/Mtreasur0133-bit/autorepo1/
 raw.esm.sh/gh/Mtreasur0133-bit/autorepo1@
@@ -4652,6 +4750,8 @@ raw.esm.sh/gh/lyte3075/
 raw.esm.sh/gh/mathissofun137/
 raw.esm.sh/gh/mathstudyportal/
 raw.esm.sh/gh/meghal86/
+raw.esm.sh/gh/mo9nikeypurple/scramjet-safari/
+raw.esm.sh/gh/mo9nikeypurple/scramjet-safari@
 raw.esm.sh/gh/modbender/skill-library-mcp/
 raw.esm.sh/gh/modbender/skill-library-mcp@
 raw.esm.sh/gh/mr-calvin-math-class/
@@ -4745,6 +4845,8 @@ raw.githack.com/Kernel8901/ai-agent-skills-classification/
 raw.githack.com/Kernel8901/ai-agent-skills-classification@
 raw.githack.com/Lyte3075/
 raw.githack.com/MRVAPORWAVE25/
+raw.githack.com/Mo9nikeypurple/scramjet-safari/
+raw.githack.com/Mo9nikeypurple/scramjet-safari@
 raw.githack.com/Mr-Calvin-Math-Class/
 raw.githack.com/Mtreasur0133-bit/autorepo1/
 raw.githack.com/Mtreasur0133-bit/autorepo1@
@@ -4844,6 +4946,8 @@ raw.githack.com/lyte3075/
 raw.githack.com/mathissofun137/
 raw.githack.com/mathstudyportal/
 raw.githack.com/meghal86/
+raw.githack.com/mo9nikeypurple/scramjet-safari/
+raw.githack.com/mo9nikeypurple/scramjet-safari@
 raw.githack.com/modbender/skill-library-mcp/
 raw.githack.com/modbender/skill-library-mcp@
 raw.githack.com/mr-calvin-math-class/
@@ -4930,6 +5034,8 @@ rawcdn.githack.com/Kernel8901/ai-agent-skills-classification/
 rawcdn.githack.com/Kernel8901/ai-agent-skills-classification@
 rawcdn.githack.com/Lyte3075/
 rawcdn.githack.com/MRVAPORWAVE25/
+rawcdn.githack.com/Mo9nikeypurple/scramjet-safari/
+rawcdn.githack.com/Mo9nikeypurple/scramjet-safari@
 rawcdn.githack.com/Mr-Calvin-Math-Class/
 rawcdn.githack.com/Mtreasur0133-bit/autorepo1/
 rawcdn.githack.com/Mtreasur0133-bit/autorepo1@
@@ -5028,6 +5134,8 @@ rawcdn.githack.com/lyte3075/
 rawcdn.githack.com/mathissofun137/
 rawcdn.githack.com/mathstudyportal/
 rawcdn.githack.com/meghal86/
+rawcdn.githack.com/mo9nikeypurple/scramjet-safari/
+rawcdn.githack.com/mo9nikeypurple/scramjet-safari@
 rawcdn.githack.com/modbender/skill-library-mcp/
 rawcdn.githack.com/modbender/skill-library-mcp@
 rawcdn.githack.com/mr-calvin-math-class/
@@ -5112,6 +5220,8 @@ s4.zstatic.net/combine/gh/Kernel8901/ai-agent-skills-classification/
 s4.zstatic.net/combine/gh/Kernel8901/ai-agent-skills-classification@
 s4.zstatic.net/combine/gh/Lyte3075/
 s4.zstatic.net/combine/gh/MRVAPORWAVE25/
+s4.zstatic.net/combine/gh/Mo9nikeypurple/scramjet-safari/
+s4.zstatic.net/combine/gh/Mo9nikeypurple/scramjet-safari@
 s4.zstatic.net/combine/gh/Mr-Calvin-Math-Class/
 s4.zstatic.net/combine/gh/Mtreasur0133-bit/autorepo1/
 s4.zstatic.net/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -5210,6 +5320,8 @@ s4.zstatic.net/combine/gh/lyte3075/
 s4.zstatic.net/combine/gh/mathissofun137/
 s4.zstatic.net/combine/gh/mathstudyportal/
 s4.zstatic.net/combine/gh/meghal86/
+s4.zstatic.net/combine/gh/mo9nikeypurple/scramjet-safari/
+s4.zstatic.net/combine/gh/mo9nikeypurple/scramjet-safari@
 s4.zstatic.net/combine/gh/modbender/skill-library-mcp/
 s4.zstatic.net/combine/gh/modbender/skill-library-mcp@
 s4.zstatic.net/combine/gh/mr-calvin-math-class/
@@ -5294,6 +5406,8 @@ s4.zstatic.net/gh/Kernel8901/ai-agent-skills-classification/
 s4.zstatic.net/gh/Kernel8901/ai-agent-skills-classification@
 s4.zstatic.net/gh/Lyte3075/
 s4.zstatic.net/gh/MRVAPORWAVE25/
+s4.zstatic.net/gh/Mo9nikeypurple/scramjet-safari/
+s4.zstatic.net/gh/Mo9nikeypurple/scramjet-safari@
 s4.zstatic.net/gh/Mr-Calvin-Math-Class/
 s4.zstatic.net/gh/Mtreasur0133-bit/autorepo1/
 s4.zstatic.net/gh/Mtreasur0133-bit/autorepo1@
@@ -5392,6 +5506,8 @@ s4.zstatic.net/gh/lyte3075/
 s4.zstatic.net/gh/mathissofun137/
 s4.zstatic.net/gh/mathstudyportal/
 s4.zstatic.net/gh/meghal86/
+s4.zstatic.net/gh/mo9nikeypurple/scramjet-safari/
+s4.zstatic.net/gh/mo9nikeypurple/scramjet-safari@
 s4.zstatic.net/gh/modbender/skill-library-mcp/
 s4.zstatic.net/gh/modbender/skill-library-mcp@
 s4.zstatic.net/gh/mr-calvin-math-class/
@@ -5537,6 +5653,8 @@ testingcf.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification/
 testingcf.jsdelivr.net/combine/gh/Kernel8901/ai-agent-skills-classification@
 testingcf.jsdelivr.net/combine/gh/Lyte3075/
 testingcf.jsdelivr.net/combine/gh/MRVAPORWAVE25/
+testingcf.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari/
+testingcf.jsdelivr.net/combine/gh/Mo9nikeypurple/scramjet-safari@
 testingcf.jsdelivr.net/combine/gh/Mr-Calvin-Math-Class/
 testingcf.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1/
 testingcf.jsdelivr.net/combine/gh/Mtreasur0133-bit/autorepo1@
@@ -5635,6 +5753,8 @@ testingcf.jsdelivr.net/combine/gh/lyte3075/
 testingcf.jsdelivr.net/combine/gh/mathissofun137/
 testingcf.jsdelivr.net/combine/gh/mathstudyportal/
 testingcf.jsdelivr.net/combine/gh/meghal86/
+testingcf.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari/
+testingcf.jsdelivr.net/combine/gh/mo9nikeypurple/scramjet-safari@
 testingcf.jsdelivr.net/combine/gh/modbender/skill-library-mcp/
 testingcf.jsdelivr.net/combine/gh/modbender/skill-library-mcp@
 testingcf.jsdelivr.net/combine/gh/mr-calvin-math-class/
@@ -5719,6 +5839,8 @@ testingcf.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification/
 testingcf.jsdelivr.net/gh/Kernel8901/ai-agent-skills-classification@
 testingcf.jsdelivr.net/gh/Lyte3075/
 testingcf.jsdelivr.net/gh/MRVAPORWAVE25/
+testingcf.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari/
+testingcf.jsdelivr.net/gh/Mo9nikeypurple/scramjet-safari@
 testingcf.jsdelivr.net/gh/Mr-Calvin-Math-Class/
 testingcf.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1/
 testingcf.jsdelivr.net/gh/Mtreasur0133-bit/autorepo1@
@@ -5817,6 +5939,8 @@ testingcf.jsdelivr.net/gh/lyte3075/
 testingcf.jsdelivr.net/gh/mathissofun137/
 testingcf.jsdelivr.net/gh/mathstudyportal/
 testingcf.jsdelivr.net/gh/meghal86/
+testingcf.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari/
+testingcf.jsdelivr.net/gh/mo9nikeypurple/scramjet-safari@
 testingcf.jsdelivr.net/gh/modbender/skill-library-mcp/
 testingcf.jsdelivr.net/gh/modbender/skill-library-mcp@
 testingcf.jsdelivr.net/gh/mr-calvin-math-class/
