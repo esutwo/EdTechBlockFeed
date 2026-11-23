@@ -45,19 +45,19 @@ FortiOS has no "URL" feed type. A Domain Name feed only matches whole hostnames,
 
 ```
 config system external-resource
-    edit "ESU2 Threat Feed DNS: Games"
+    edit "ESU2 Threat DNS: Games"
         set type domain
         set category 202
         set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/domains.txt"
         set refresh-rate 15
     next
-    edit "ESU2 Threat Feed: Games"
+    edit "ESU2 Threat URL: Games"
         set type category
         set category 200
         set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/domains.txt"
         set refresh-rate 15
     next
-    edit "ESU2 Threat Feed: Game CDNs"
+    edit "ESU2 Threat URL: Game CDNs"
         set type category
         set category 201
         set resource "https://raw.githubusercontent.com/esutwo/EdTechBlockFeed/main/fortigate/urls.txt"
