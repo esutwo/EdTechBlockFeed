@@ -81674,6 +81674,8 @@ goodgamecasinoe.store
 lovelink.store
 *.afganistan.stream
 afganistan.stream
+*.onlinegames.stream
+onlinegames.stream
 stockbloc.ai.studio
 *.amrita.studio
 amrita.studio

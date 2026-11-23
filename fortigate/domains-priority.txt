@@ -24385,6 +24385,8 @@ silenthillorigins.zeliaopen.space
 play.st
 *.afganistan.stream
 afganistan.stream
+*.onlinegames.stream
+onlinegames.stream
 stockbloc.ai.studio
 *.eaglercraft.studio
 eaglercraft.studio

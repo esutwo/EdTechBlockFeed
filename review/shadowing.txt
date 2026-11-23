@@ -523,6 +523,7 @@ rawoprrrrawirpoeiwafazzz.educationlearningcollege.lovestoblog.com	pending	differ
 rawrwoariapwriaw.educationlearningcollege.lovestoblog.com	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 readisfun.localization.ee	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 registry.modelcontextprotocol.io	pending	different-servers-than-parent	github-readme:chiholung-cmd/free-api-collection
+resources.qt.io	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Developer-Handbook
 retro.umoiq.com	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 revc.wasm.ltd	pending	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/Carter54git/Ult
 rgd.mcw.edu	pending	different-servers-than-parent	github-readme:Manavarya09/public-apis-live
