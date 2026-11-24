@@ -105,6 +105,26 @@ class Matcher:
         return False
 
 
+# Google Cloud Storage bucket addresses (<bucket>.storage.googleapis.com).
+# Each one belongs to a single bucket owner, so blocking one never affects a
+# Google service; the broad *.googleapis.com protection doesn't apply to them.
+_GCS_BUCKET = re.compile(r"^[a-z0-9][a-z0-9_.-]{1,220}[a-z0-9]\.storage\.googleapis\.com$")
+
+
+def is_bucket_host(host: str) -> bool:
+    return bool(_GCS_BUCKET.match(host))
+
+
+def allowed(allow: "Matcher", host: str) -> bool:
+    """allow.matches(), except that a bucket host is only allowed by an entry
+    for that bucket or for storage.googleapis.com, not by *.googleapis.com."""
+    if is_bucket_host(host):
+        parts = host.split(".")
+        return host in allow.exact or any(
+            ".".join(parts[i:]) in allow.suffix for i in range(len(parts) - 2))
+    return allow.matches(host)
+
+
 def platform_apex(host: str, platforms: set[str]) -> str | None:
     """If host is under a shared-hosting platform, return that platform suffix."""
     parts = host.split(".")

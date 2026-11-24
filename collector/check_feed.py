@@ -19,7 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import cdn  # noqa: E402
-from hostutil import Matcher, normalize_host, read_list  # noqa: E402
+from hostutil import Matcher, allowed, is_bucket_host, normalize_host, read_list  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 MAX_SHRINK = 0.30  # fail if a published feed file loses more than 30% of its lines
@@ -69,15 +69,18 @@ def main() -> int:
             h = normalize_host(line)
             if not h:
                 continue
-            why = ("CRITICAL" if critical.matches(h) else
-                   "allowlist" if allow.matches(h) else
+            # A single Cloud Storage bucket (<bucket>.storage.googleapis.com)
+            # may be blocked; the rest of *.googleapis.com never.
+            why = ("CRITICAL" if critical.matches(h) and not is_bucket_host(h) else
+                   "allowlist" if allowed(allow, h) else
                    "platform apex" if h in platforms else None)
             if why:
                 problems.append(f"{f.name}:{n}: {line}  ({why})")
     for f in sorted((ROOT / "fortigate").glob("urls*.txt")):
         for n, line in enumerate(f.read_text().splitlines(), 1):
             host = line.split("/", 1)[0]
-            if "/" not in line.rstrip("*").rstrip("/") and critical.matches(host):
+            if ("/" not in line.rstrip("*").rstrip("/") and critical.matches(host)
+                    and not is_bucket_host(host)):
                 problems.append(f"{f.name}:{n}: {line}  (whole critical host)")
     # Proxy server IP feed: public IPv4 only, never a CDN/cloud/shared range,
     # and never an address that a critical service resolves to.
