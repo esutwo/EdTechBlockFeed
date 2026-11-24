@@ -22574,6 +22574,8 @@ goodplayguide.com
 goodsol.com
 *.goodwargames.com
 goodwargames.com
+canvas-lms.storage.googleapis.com
+steamcloud-sydney.storage.googleapis.com
 *.googledoodle-games.com
 googledoodle-games.com
 *.googlefeud.com

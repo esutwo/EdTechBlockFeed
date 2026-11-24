@@ -5465,6 +5465,7 @@ goodgamestudios.com
 goodkidsgame.com
 *.goodoldtetris.com
 goodoldtetris.com
+canvas-lms.storage.googleapis.com
 *.googledoodle-games.com
 googledoodle-games.com
 *.googlefeud.com
