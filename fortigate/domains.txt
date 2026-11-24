@@ -3728,6 +3728,7 @@ letsplaygames.cn
 lfzgame.cn
 15.204.247.166.xip.lhjmmc.cn
 51.222.206.184.xip.lhjmmc.cn
+readinglog-107-172-75-192.xip.lhjmmc.cn
 *.limestart.cn
 limestart.cn
 *.mcmod.cn
@@ -54468,6 +54469,7 @@ eaglercraft-launcher.vexr.dev
 *.voidless.dev
 voidless.dev
 hoof-game.a2040404.workers.dev
+super-3t.aggiovato.workers.dev
 bloxcraft-ubg.bucket-ported.workers.dev
 bloxy.bucket-ported.workers.dev
 ducky.bucket-ported.workers.dev
@@ -68218,6 +68220,7 @@ uohlqsfi2d4.map.azionedge.net
 azuregaming.net
 delightful-pebble-0477dc310.6.azurestaticapps.net
 2dynamic.azurewebsites.net
+d22cacc37ef3cc12d1ff.b-cdn.net
 duck-math.b-cdn.net
 fusion-formula.b-cdn.net
 gsmedia.b-cdn.net
@@ -75055,7 +75058,10 @@ acbldistrict23.org
 acblemba.org
 *.acblunit112.org
 acblunit112.org
+update.dev.ci.bebanndakorou-scandj.accesscam.org
+update.en.we.bebanndakorou-scandj.accesscam.org
 5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org
+update.wwwwwportal.bebanndakorou-scandj.accesscam.org
 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org
 update.eu.testaaa.drgd.accesscam.org
 *.acpedia.org

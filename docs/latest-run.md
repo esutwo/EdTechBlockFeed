@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-24 21:20 UTC  
+Run: 2026-11-24 22:43 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -10,12 +10,12 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Curated lists downloaded | 14 |
 | List entries parsed and normalized | 87,132 |
 | GitHub repository searches | 30 |
-| GitHub repositories examined | 1,754 |
-| README files scanned for links | 10 |
+| GitHub repositories examined | 1,758 |
+| README files scanned for links | 25 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,655 |
 | Certificate Transparency queries | 9 |
-| Certificates examined | 0 |
+| Certificates examined | 8 |
 |   certificate-log source unreachable this run (skipped) | 0 |
 | CDN owners expanded (repo listings) | 2 |
 | CDN owner repositories listed | 0 |
@@ -23,21 +23,21 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 570 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 9,239 |
-|   dropped: allowlist | 1,781 |
-|   dropped: known non-game service | 54 |
+| Links examined by the filters | 10,371 |
+|   dropped: allowlist | 2,156 |
+|   dropped: known non-game service | 105 |
 |   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 42 |
+|   dropped: README link with no game/bypass hint | 489 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 10 |
-| urlscan.io searches (proxy framework files, page titles) | 0 |
-|   urlscan.io results examined | 0 |
-|   skipped as wildcard-DNS noise | 0 |
+| urlscan.io searches (proxy framework files, page titles) | 5 |
+|   urlscan.io results examined | 296 |
+|   skipped as wildcard-DNS noise | 223 |
 | Repositories listed from watched GitHub orgs | 135 |
 | Script URLs from confirmed pages re-queued for mirror detection | 0 |
 | Game engines (GitHub owners) newly confirmed from page scripts | 0 |
-| Sites with domain-shadowing DNS signals | 0 |
+| Sites with domain-shadowing DNS signals | 4 |
 | Sites re-queued after a fingerprint upgrade | 0 |
 | Links with a CDN path shape on unknown hosts | 0 |
 | Unknown hosts tested for being a new CDN/mirror | 0 |
@@ -50,29 +50,32 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Stalled bypass-list sites blocked for impersonating a known service | 0 |
 | Stalled bypass-list sites held for review (second signal) | 0 |
 | List domains checked in DNS for dead-domain maintenance | 6,000 |
-|   no answer / inconclusive (re-checked later) | 3,936 |
-|   answered 'does not exist' (NXDOMAIN) | 164 |
+|   no answer / inconclusive (re-checked later) | 461 |
+|   answered 'does not exist' (NXDOMAIN) | 625 |
 |   DNS check skipped (resolvers unreachable) | 0 |
 | Dead list domains kept out of the feed | 0 |
-|   failing, not yet dropped (need 3 checks over 14 days) | 3,586 |
+|   failing, not yet dropped (need 3 checks over 14 days) | 4,211 |
 |   came back to life and returned to the feed | 0 |
-| Hostnames resolved for proxy-server detection | 0 |
+| Hostnames resolved for proxy-server detection | 4 |
 |   servers excluded as shared hosting | 3 |
 |   servers excluded by network owner (cloud, CDN, parking, shared) | 1 |
 |   proxy server IPs held for review | 1 |
-| Live checks performed this run | 0 |
+| Live checks performed this run | 7 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
+| host | alive | 1 |
+| host | game | 2 |
+| host | proxy | 4 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 85,250 |
-| `domains-priority.txt` entries | 25,149 |
+| `domains.txt` entries | 85,256 |
+| `domains-priority.txt` entries | 25,155 |
 | `urls.txt` entries | 6,140 |
 | `proxyips.txt` entries (proxy server IPs) | 20 |
 | CDN owners blocked at owner level | 66 |
@@ -89,9 +92,9 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | cdn | confirmed | 1,608 |
 | cdn | pending | 23 |
 | cdn | rejected | 1,929 |
-| host | confirmed | 1,193 |
+| host | confirmed | 1,199 |
 | host | dismissed | 49 |
-| host | pending | 928 |
+| host | pending | 929 |
 | host | rejected | 5,748 |
 | url | confirmed | 57 |
 | url | pending | 7 |

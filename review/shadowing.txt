@@ -127,6 +127,7 @@ paloalto.oneuniversity.info	confirmed	different-servers-than-parent	aggregator:h
 pcroomsir.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 petalwake.non.io	pending	different-servers-than-parent	github-readme:ummydev/awesome-ai-games
 play.mint.gg	confirmed	different-servers-than-parent	github:mintdotgg/mint-playground
+readinglog-107-172-75-192.xip.lhjmmc.cn	confirmed	different-servers-than-parent	urlscan:filename:"scramjet.all.js"
 readisfun.localization.ee	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 sandbox.developerhub.citi.com	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 sas.upenn.edu	pending	different-servers-than-parent	github-readme:lineality/ai_2024_in_review
@@ -189,7 +190,10 @@ ugkyfh.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://r
 ui.adsabs.harvard.edu	pending	cname->k8s-adsprod-awsalb-f6543f16e5-1500031048.us-east-1.elb.amazonaws.com,different-servers-than-parent	github-readme:marcelscruz/public-apis
 ultramathtech.parcomunica.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 university.socradar.io	pending	different-servers-than-parent	github-readme:kush-coder/autopilot-cybersources-v2
+update.dev.ci.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
+update.en.we.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 update.eu.testaaa.drgd.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
+update.wwwwwportal.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 userguide.rescuegroups.org	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 v25.dafeiyugame.site	pending	different-servers-than-parent	github-readme:GuoCoder/awesome-html-games
 vps.15-204-116-29.my.local-ip.co	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -212,6 +216,7 @@ fwh.is	20	dgzfgfyfz.ceifjskdj.fwh.is dphckbc9.ceifjskdj.fwh.is edu.67lol.fwh.is 
 com.ar	14	able.itlogistics.com.ar ably.7dejunio.com.ar aide.tuapel.com.ar amen.zabiasrl.com.ar ames.agus-87.com.ar
 workaholicdevelopers.com	10	cam.workaholicdevelopers.com run.workaholicdevelopers.com screwloose.workaholicdevelopers.com snake.workaholicdevelopers.com strike.workaholicdevelopers.com
 bumon.ar	8	cipher.bumon.ar ford.bumon.ar homie.bumon.ar sky.haze.bumon.ar smartstudy.bumon.ar
+accesscam.org	6	5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org update.dev.ci.bebanndakorou-scandj.accesscam.org update.en.we.bebanndakorou-scandj.accesscam.org update.eu.testaaa.drgd.accesscam.org
 gcpservicios.cl	6	bias.gcpservicios.cl deend.gcpservicios.cl good.gcpservicios.cl makes.gcpservicios.cl quotes.gcpservicios.cl
 art-motel.com	6	cellmathsch.art-motel.com engagesirok.art-motel.com laptoppcok.art-motel.com nickmathsir.art-motel.com pcroomsir.art-motel.com
 krepche.com	5	allow.krepche.com amazingtt.krepche.com bestspark.krepche.com mathsri.krepche.com voya.krepche.com
@@ -223,7 +228,7 @@ parcomunica.com	5	googmamdir.parcomunica.com homeworkmath.parcomunica.com mrkult
 local-ip.co	4	15-204-116-29.my.local-ip.co api.15-204-116-29.my.local-ip.co c00lkiddtech.15-204-116-29.my.local-ip.co vps.15-204-116-29.my.local-ip.co
 net.br	4	agar.seprotec.net.br alto.seprotec.net.br bestspark.gparente.net.br bill.greengarden.net.br
 dayplaygames.com	4	bubblethread.dayplaygames.com cornhole.dayplaygames.com darts.dayplaygames.com golf.dayplaygames.com
-accesscam.org	3	5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org update.eu.testaaa.drgd.accesscam.org
+lhjmmc.cn	3	15.204.247.166.xip.lhjmmc.cn 51.222.206.184.xip.lhjmmc.cn readinglog-107-172-75-192.xip.lhjmmc.cn
 loseyourip.com	3	654370532dev.update.asdf.loseyourip.com mvd.370532dev.update.asdf.loseyourip.com update.asdf.loseyourip.com
 strongson.com	3	acme.strongson.com bind.strongson.com boat.strongson.com
 carcano.me	3	afro.carcano.me blew.carcano.me bomb.carcano.me
