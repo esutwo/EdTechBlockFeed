@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-24 09:05 UTC  
+Run: 2026-11-24 11:41 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -8,36 +8,36 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Check | Count |
 |---|---:|
 | Curated lists downloaded | 14 |
-| List entries parsed and normalized | 87,098 |
+| List entries parsed and normalized | 87,132 |
 | GitHub repository searches | 30 |
 | GitHub repositories examined | 1,748 |
-| README files scanned for links | 36 |
+| README files scanned for links | 32 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,654 |
-| Certificate Transparency queries | 9 |
-| Certificates examined | 6 |
-|   certificate-log source unreachable this run (skipped) | 0 |
+| Certificate Transparency queries | 0 |
+| Certificates examined | 0 |
+|   certificate-log source unreachable this run (skipped) | 1 |
 | CDN owners expanded (repo listings) | 2 |
 | CDN owner repositories listed | 0 |
 | CDN entry files found in owner repos | 0 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 569 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 16,138 |
-|   dropped: allowlist | 2,381 |
-|   dropped: known non-game service | 359 |
+| Links examined by the filters | 18,866 |
+|   dropped: allowlist | 10,867 |
+|   dropped: known non-game service | 141 |
 |   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 3,834 |
-|   dropped: CDN file that isn't a page (js/css/img) | 2 |
+|   dropped: README link with no game/bypass hint | 333 |
+|   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 10 |
-| urlscan.io searches (proxy framework files, page titles) | 5 |
-|   urlscan.io results examined | 282 |
-|   skipped as wildcard-DNS noise | 221 |
+| urlscan.io searches (proxy framework files, page titles) | 0 |
+|   urlscan.io results examined | 0 |
+|   skipped as wildcard-DNS noise | 0 |
 | Repositories listed from watched GitHub orgs | 135 |
 | Script URLs from confirmed pages re-queued for mirror detection | 0 |
 | Game engines (GitHub owners) newly confirmed from page scripts | 0 |
-| Sites with domain-shadowing DNS signals | 25 |
+| Sites with domain-shadowing DNS signals | 0 |
 | Sites re-queued after a fingerprint upgrade | 0 |
 | Links with a CDN path shape on unknown hosts | 0 |
 | Unknown hosts tested for being a new CDN/mirror | 0 |
@@ -49,28 +49,23 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Stalled bypass-list sites blocked as clones of known bypass pages | 0 |
 | Stalled bypass-list sites blocked for impersonating a known service | 0 |
 | Stalled bypass-list sites held for review (second signal) | 0 |
-| Hostnames resolved for proxy-server detection | 5 |
+| Hostnames resolved for proxy-server detection | 0 |
 |   servers excluded as shared hosting | 3 |
 |   servers excluded by network owner (cloud, CDN, parking, shared) | 1 |
 |   proxy server IPs held for review | 2 |
-| Live checks performed this run | 691 |
+| Live checks performed this run | 0 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| host | alive | 585 |
-| host | dead | 90 |
-| host | game | 4 |
-| host | proxy | 8 |
-| url | alive | 4 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 85,164 |
-| `domains-priority.txt` entries | 25,060 |
+| `domains.txt` entries | 85,191 |
+| `domains-priority.txt` entries | 25,087 |
 | `urls.txt` entries | 5,972 |
 | `proxyips.txt` entries (proxy server IPs) | 17 |
 | CDN owners blocked at owner level | 65 |
@@ -107,7 +102,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | dkorunic-browser-games | 1,000 |
 | game-proxy-gist | 393 |
 | gjohnpaull-games | 35,636 |
-| josuha-games | 12,925 |
+| josuha-games | 12,959 |
 | marcuccione-browser-games | 91 |
 | mmcohen-online-games | 65 |
 | nuneze54-games | 2,552 |

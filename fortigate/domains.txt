@@ -350,6 +350,7 @@ korner-arcade.netlify.app
 krunker-io.netlify.app
 lunaclientx.netlify.app
 main--geometry-dash-the-website.netlify.app
+maitri-games-website.netlify.app
 markovgamesqatar.netlify.app
 mathhomework.netlify.app
 mbweb321.netlify.app
@@ -1263,6 +1264,7 @@ jugar.com.ar
 jupitron.com.ar
 juegos.larompe.com.ar
 localstrike.com.ar
+lolavilla.com.ar
 modulorargentina.com.ar
 mundijuegos.com.ar
 openingzero.com.ar
@@ -51650,6 +51652,7 @@ zumazgames.com
 zunogame.com
 *.zupperman.com
 zupperman.com
+games.zuujis.com
 *.zuzunza.com
 zuzunza.com
 *.zuzzle.com
@@ -53267,6 +53270,7 @@ gg.deals
 *.amountle.dev
 amountle.dev
 15-204-247-166.anyip.dev
+private-7test.arc-services.dev
 *.classroom4x.dev
 classroom4x.dev
 *.claudered.dev
@@ -53308,6 +53312,7 @@ severe-brown-ea4esedo-dpwqh26ty5h3.edgeone.dev
 sleepy-moccasin-isefxvuc-dpvz0o708u61.edgeone.dev
 stickmanclassarenav37-dpwtyzdmvjlg.edgeone.dev
 stingy-salmon-pvzycqz5-dpw66qhn98a7.edgeone.dev
+subwaysurfers-dpfxoii2gv9b.edgeone.dev
 tropical-copper-ybwi2dcv-dpyxpfh7dbuy.edgeone.dev
 *.epicgames.dev
 epicgames.dev
@@ -53345,6 +53350,7 @@ nakazawa.dev
 nzxr.dev
 *.oddisbest.dev
 oddisbest.dev
+071616-com-games.pages.dev
 1990-arcade.pages.dev
 1v1-lol-unblocked.pages.dev
 1v1-lol-unblocked-games.pages.dev
@@ -53371,6 +53377,7 @@ advertise-roblox-games-discord.pages.dev
 agar-io-unblocked.pages.dev
 agario.pages.dev
 agario-unblocked.pages.dev
+agentsox-games.pages.dev
 ai-friend-in-roblox.pages.dev
 ai-games-portal.pages.dev
 ajg-games.pages.dev
@@ -53427,6 +53434,7 @@ best-casual-games-roblox.pages.dev
 best-couple-roblox-games.pages.dev
 best-math-hub.pages.dev
 best-roblox-superhero-games.pages.dev
+best-roblox-vr-games.pages.dev
 bestfightinggamesonroblox.pages.dev
 bestsimulatorgamesonroblox.pages.dev
 bgp-paolos-game.pages.dev
@@ -53505,6 +53513,7 @@ classroomgames.pages.dev
 clephu-games.pages.dev
 click-games-on-roblox.pages.dev
 clickerheroes.pages.dev
+cloudflare-01-language-games.pages.dev
 cloudmoonapp.pages.dev
 codecube-edu-github-io.pages.dev
 codyshack.pages.dev
@@ -53631,6 +53640,7 @@ f-games.pages.dev
 fallline-9zo.pages.dev
 falorant-5qk.pages.dev
 fashion-model-games-roblox.pages.dev
+firewall-safe-games.pages.dev
 five-nights-at-freddys.pages.dev
 fivenightsatfreddysgame.pages.dev
 fivestarontop.pages.dev
@@ -53675,6 +53685,7 @@ games-att.pages.dev
 games-hub-44s.pages.dev
 games-jiroop-com.pages.dev
 games-like-aut-roblox.pages.dev
+games-like-demonfall-roblox.pages.dev
 games-like-kitty-roblox.pages.dev
 games-like-roblox-vr.pages.dev
 games-not-filtered-school.pages.dev
@@ -53903,6 +53914,7 @@ paperio.pages.dev
 paperio-2.pages.dev
 paperio-online.pages.dev
 parkingfury-online.pages.dev
+passportgame.pages.dev
 peakplay.pages.dev
 pet-care-games-roblox.pages.dev
 phone-controller-games.pages.dev
@@ -53920,6 +53932,7 @@ pizza-edition-retro-bowl.pages.dev
 pizza-edition-unblocked.pages.dev
 pizzatower.pages.dev
 pkv-games-disdukcapillubuklinggaukota-amp.pages.dev
+pkvgames-situs-login.pages.dev
 plant-merge-zombie-war.pages.dev
 plantsvs-zombies.pages.dev
 play-buddy.pages.dev
@@ -53928,6 +53941,7 @@ play-games-school-wifi.pages.dev
 play-pad.pages.dev
 playasmrgirl.pages.dev
 playback-contact.pages.dev
+playbill-daily.pages.dev
 playblockpost.pages.dev
 playblockuppuzzle.pages.dev
 playcandy.pages.dev
@@ -53975,6 +53989,7 @@ playtabletennisopen.pages.dev
 playtailorstylist.pages.dev
 playwhatawalk.pages.dev
 plinko-games-on-roblox.pages.dev
+01af8209.pocket-horizon-games-website.pages.dev
 poki2-portal.pages.dev
 pokigames.pages.dev
 poly-track.pages.dev
@@ -54047,6 +54062,7 @@ roblox-horror-games-horangi99.pages.dev
 roblox-horror-games-review.pages.dev
 roblox-horror-games-yt.pages.dev
 roblox-horror-map-template.pages.dev
+roblox-house-games.pages.dev
 roblox-icon-pack-ranks.pages.dev
 roblox-jailbreak-like-games.pages.dev
 roblox-lua-guide-book.pages.dev
@@ -54066,9 +54082,12 @@ roblox-r63-games-free.pages.dev
 roblox-rats.pages.dev
 roblox-robot-sound.pages.dev
 roblox-scam-robux-games.pages.dev
+roblox-skill-games.pages.dev
 roblox-sorcerer-temp.pages.dev
 roblox-spatial-audio-script.pages.dev
 roblox-sports-games-football.pages.dev
+roblox-squid-games-avatar.pages.dev
+roblox-studio-script-library.pages.dev
 roblox-superman-script-fly.pages.dev
 roblox-teamwork-games.pages.dev
 roblox-texture-pack-cartoon.pages.dev
@@ -54098,6 +54117,7 @@ roblox-websocketsend.pages.dev
 roblox-window-esp.pages.dev
 roblox-zachs-service-station.pages.dev
 roblox-zombie-elimination-games.pages.dev
+roblox-zombie-survival-games.pages.dev
 robloxautosellscript.pages.dev
 robloxbasicadminessentialsscript.pages.dev
 robloxchakradamescript.pages.dev
@@ -54234,6 +54254,7 @@ squares-game-unlimited.pages.dev
 squaresgame.pages.dev
 squid-game-online.pages.dev
 squidgameonline.pages.dev
+squistergames-github-io.pages.dev
 starbucks-like-games-roblox.pages.dev
 steal-a-brainrot.pages.dev
 steal-a-brainrot-unblocked.pages.dev
@@ -54259,6 +54280,9 @@ suika-watermelon-game.pages.dev
 suikagame.pages.dev
 super-liquid-soccer-unblocked.pages.dev
 supermarket-games-on-roblox.pages.dev
+surf-roblox.pages.dev
+survival-horror-games-roblox.pages.dev
+sus-games.pages.dev
 sys-admin.pages.dev
 sys-administrator.pages.dev
 sys-bio.pages.dev
@@ -54361,6 +54385,7 @@ underratedrobloxgamestwitter.pages.dev
 unixgame-github-io.pages.dev
 untitledproxy.pages.dev
 up-and-coming-roblox.pages.dev
+us-steam-game.pages.dev
 vampire-roblox-games.pages.dev
 vault-ubg.pages.dev
 vaultedd.pages.dev
@@ -82036,6 +82061,8 @@ clickfunax.top
 clubplayer.top
 *.cocogames.top
 cocogames.top
+*.coregamebase.top
+coregamebase.top
 *.crazeplay-casino.top
 crazeplay-casino.top
 *.crazeplaycasino.top
