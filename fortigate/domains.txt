@@ -35130,6 +35130,7 @@ paulsquiz.com
 paulysplayhouse.com
 *.pauseandplay.com
 pauseandplay.com
+games.pavi2410.com
 *.pavonisinteractive.com
 pavonisinteractive.com
 *.pawprintgames.com
@@ -52419,6 +52420,7 @@ globaloc.de
 gomjabbar.de
 *.gondal.de
 gondal.de
+notexistswww.update.kugwcscan550ec3dd6269e940e4c89a08f591a9ab.v220221183800208764.goodsrv.de
 arcade.graf-cedric.de
 *.grandprix2.de
 grandprix2.de
@@ -53193,6 +53195,7 @@ vielespiele.de
 virtualforces.de
 *.vmlabs.de
 vmlabs.de
+www.en.yuzu-2.vpn64.de
 *.warofdragons.de
 warofdragons.de
 *.wasliestdu.de
@@ -53749,6 +53752,7 @@ hill-climb-unblocked.pages.dev
 hole-io-unblocked.pages.dev
 hollowguessr.pages.dev
 hollowreefgames-site.pages.dev
+homeworkhelp-get-a-ah.pages.dev
 horror-games-roblox-foltyn.pages.dev
 horror-games-roblox-good.pages.dev
 horror-games-roblox-itsfunneh.pages.dev
@@ -54353,6 +54357,7 @@ vampire-roblox-games.pages.dev
 vault-ubg.pages.dev
 vaultedd.pages.dev
 vava-games.pages.dev
+veb-igry-moskva.pages.dev
 veck-io.pages.dev
 vertex-games-bundle-mj.pages.dev
 vertex-play.pages.dev
@@ -63241,6 +63246,7 @@ roperunblocked.github.io
 rose008821312.github.io
 rossygames.github.io
 rotikak6-cpu.github.io
+roundtable84.github.io
 rowbaylis8-cmd.github.io
 roxyenne.github.io
 rp-unblockedgames.github.io
@@ -64622,6 +64628,7 @@ f5u4x-laaaa-aaaad-qf7xa-cai.icp0.io
 fbqgg-4aaaa-aaaad-qf7va-cai.icp0.io
 fitn2-kiaaa-aaaad-qf7uq-cai.icp0.io
 fpslo-hqaaa-aaaad-qf7ua-cai.icp0.io
+iw6pg-3iaaa-aaaad-qgc3a-cai.icp0.io
 rv2yr-kyaaa-aaaad-qgaga-cai.icp0.io
 xzhoq-qiaaa-aaaag-ay4wa-cai.icp0.io
 *.idolsofash.io
@@ -79120,6 +79127,7 @@ messcraft.ovh
 betus.com.pa
 *.creature.page
 creature.page
+update.ea.104-243-38-18.plesk.page
 15-204-247-166.plesk.page
 cc84434bb2299629.www.da.198-251-83-251.plesk.page
 51-222-206-184.plesk.page
