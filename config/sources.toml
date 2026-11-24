@@ -378,10 +378,12 @@ excluded_asns = [
   47583,                 # Hostinger
   60068,                 # CDN77 / Datacamp
   200325,                # Bunny CDN
+  132203, 45090, 139341, # Tencent Cloud / EdgeOne (139341 = Aceville, Tencent's edge network)
 ]
 excluded_owner_patterns = [
   "amazon", "cloudflare", "google", "microsoft", "fastly", "akamai-as", "github", "vercel",
   "netlify", "parking", "sedo", "bodis", "trellian", "namecheap", "godaddy", "hostinger",
   "unified layer", "wix", "squarespace", "shopify", "automattic", "wildcard", "ifastnet",
   "bunny", "cdn77", "datacamp", "incapsula", "imperva", "sucuri", "stackpath", "edgecast",
+  "tencent", "aceville",
 ]
