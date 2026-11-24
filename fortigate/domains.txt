@@ -84057,6 +84057,7 @@ flappy-bird.uk
 freesphere.uk
 *.huedle.uk
 huedle.uk
+games.mathclass.uk
 *.mathsolver.uk
 mathsolver.uk
 *.mattle.uk

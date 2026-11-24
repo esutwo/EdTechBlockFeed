@@ -24701,6 +24701,7 @@ consto.uk
 flappy-bird.uk
 *.huedle.uk
 huedle.uk
+games.mathclass.uk
 *.mathsolver.uk
 mathsolver.uk
 baba.icemail.me.uk
