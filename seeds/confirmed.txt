@@ -26,3 +26,45 @@ info.videnom.com                   # 2026-11-24 review: hijacked subdomain servi
 # 2026-11-24: Google Cloud Storage bucket "canvas-lms" (not Instructure): primary host of the
 # "unblocking" games app; same page and analytics ID as unpkg.com/unblocking
 canvas-lms.storage.googleapis.com
+# 2026-11-24: internal student list. Achroma UBG decoy clones: a fake "ACH Unified School
+# District" page that swaps itself for the game app (app.html) after 0.5s; all share
+# Google Analytics ID G-LP4D7PRDTK. Engine (gh/achroma-ubg) is blocked in urls.txt.
+d2nz5cnyijiuet.cloudfront.net
+d2f6m7iljdd0z6.cloudfront.net
+d1vo9e44ozbmkw.cloudfront.net
+d36l8uvdr9o0bm.cloudfront.net
+d2xwcv6le5oreh.cloudfront.net
+d3u0ui99s4kkgt.cloudfront.net
+d1ljihqku73jk2.cloudfront.net
+d239rcypmdrr3x.cloudfront.net
+d2gid9ydi5u955.cloudfront.net
+uohlqsfi2d4.map.azionedge.net
+mtzxadvrqjg.map.azionedge.net
+si1aawmaz3w.map.azionedge.net
+raskb31tro0.map.azionedge.net
+hdyhtmzti98.map.azionedge.net
+ad4fjl1arky.map.azionedge.net
+ml24igk6jwa.map.azionedge.net
+ou2wddbazda.map.azionedge.net
+9vny8a4tsx0.map.azionedge.net
+nutrition80874.z13.web.core.windows.net
+calculus91138.z13.web.core.windows.net
+french79619.z13.web.core.windows.net
+geometry11765.z13.web.core.windows.net
+worldhistory32749.z13.web.core.windows.net
+speech21031.z13.web.core.windows.net
+debate75633.z13.web.core.windows.net
+robotics58512.z13.web.core.windows.net
+writing80376.z13.web.core.windows.net
+# 2026-11-24: Wisp proxy relays and mirrors for the "fern" (gh/frnlol/frn) SVG loader found on
+# bulsobk.s3.amazonaws.com. The domains all serve identical decoy pages ("Ember & Pine |
+# Seasonal Candles" or "WhittierSchool"), so they are operator-controlled, not real businesses.
+actingoutdoor.com
+aplusmartialarts-templehills.com
+bananadogstore.com
+kristenblackburnvolleyballcamps.com
+restorecounselingcenter.org
+southpadreislandkiteboarding.com
+boxcasa.net
+girlspreples.org
+api.scvmath.org

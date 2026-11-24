@@ -34,6 +34,8 @@ carrd.co
 azurewebsites.net
 azurestaticapps.net
 cloudfront.net
+azionedge.net
+web.core.windows.net
 appspot.com
 b-cdn.net
 duckdns.org

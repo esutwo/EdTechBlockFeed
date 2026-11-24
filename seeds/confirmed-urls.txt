@@ -17,3 +17,6 @@ storage.googleapis.com/canvas-lms/
 # device, https://example.com/esu-feedtest/page.html should be blocked when the
 # Games CDNs connector and deep inspection are working.
 example.com/esu-feedtest/
+# 2026-11-24: "fern" SVG loader in an S3 bucket (whole S3 hosts are protected, so paths only)
+bulsobk.s3.amazonaws.com/math.html
+bulsobk.s3.amazonaws.com/index.svg
