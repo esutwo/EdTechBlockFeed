@@ -173,6 +173,8 @@ cdn.esm.sh/gh/somerandomfella/
 cdn.esm.sh/gh/spacelord42/gn-math/
 cdn.esm.sh/gh/spacelord42/gn-math@
 cdn.esm.sh/gh/stockable/
+cdn.esm.sh/gh/studyyard/67/
+cdn.esm.sh/gh/studyyard/67@
 cdn.esm.sh/gh/talongames/
 cdn.esm.sh/gh/task4z/
 cdn.esm.sh/gh/tharun9772/
@@ -365,6 +367,8 @@ cdn.githubraw.com/somerandomfella/
 cdn.githubraw.com/spacelord42/gn-math/
 cdn.githubraw.com/spacelord42/gn-math@
 cdn.githubraw.com/stockable/
+cdn.githubraw.com/studyyard/67/
+cdn.githubraw.com/studyyard/67@
 cdn.githubraw.com/talongames/
 cdn.githubraw.com/task4z/
 cdn.githubraw.com/tharun9772/
@@ -549,6 +553,8 @@ cdn.jsdelivr.net/combine/gh/somerandomfella/
 cdn.jsdelivr.net/combine/gh/spacelord42/gn-math/
 cdn.jsdelivr.net/combine/gh/spacelord42/gn-math@
 cdn.jsdelivr.net/combine/gh/stockable/
+cdn.jsdelivr.net/combine/gh/studyyard/67/
+cdn.jsdelivr.net/combine/gh/studyyard/67@
 cdn.jsdelivr.net/combine/gh/talongames/
 cdn.jsdelivr.net/combine/gh/task4z/
 cdn.jsdelivr.net/combine/gh/tharun9772/
@@ -733,6 +739,8 @@ cdn.jsdelivr.net/gh/somerandomfella/
 cdn.jsdelivr.net/gh/spacelord42/gn-math/
 cdn.jsdelivr.net/gh/spacelord42/gn-math@
 cdn.jsdelivr.net/gh/stockable/
+cdn.jsdelivr.net/gh/studyyard/67/
+cdn.jsdelivr.net/gh/studyyard/67@
 cdn.jsdelivr.net/gh/talongames/
 cdn.jsdelivr.net/gh/task4z/
 cdn.jsdelivr.net/gh/tharun9772/
@@ -931,6 +939,8 @@ cdn.jsdmirror.com/combine/gh/somerandomfella/
 cdn.jsdmirror.com/combine/gh/spacelord42/gn-math/
 cdn.jsdmirror.com/combine/gh/spacelord42/gn-math@
 cdn.jsdmirror.com/combine/gh/stockable/
+cdn.jsdmirror.com/combine/gh/studyyard/67/
+cdn.jsdmirror.com/combine/gh/studyyard/67@
 cdn.jsdmirror.com/combine/gh/talongames/
 cdn.jsdmirror.com/combine/gh/task4z/
 cdn.jsdmirror.com/combine/gh/tharun9772/
@@ -1115,6 +1125,8 @@ cdn.jsdmirror.com/gh/somerandomfella/
 cdn.jsdmirror.com/gh/spacelord42/gn-math/
 cdn.jsdmirror.com/gh/spacelord42/gn-math@
 cdn.jsdmirror.com/gh/stockable/
+cdn.jsdmirror.com/gh/studyyard/67/
+cdn.jsdmirror.com/gh/studyyard/67@
 cdn.jsdmirror.com/gh/talongames/
 cdn.jsdmirror.com/gh/task4z/
 cdn.jsdmirror.com/gh/tharun9772/
@@ -1311,6 +1323,8 @@ cdn.statically.io/gh/somerandomfella/
 cdn.statically.io/gh/spacelord42/gn-math/
 cdn.statically.io/gh/spacelord42/gn-math@
 cdn.statically.io/gh/stockable/
+cdn.statically.io/gh/studyyard/67/
+cdn.statically.io/gh/studyyard/67@
 cdn.statically.io/gh/talongames/
 cdn.statically.io/gh/task4z/
 cdn.statically.io/gh/tharun9772/
@@ -1495,6 +1509,8 @@ cdn.staticdelivr.com/combine/gh/somerandomfella/
 cdn.staticdelivr.com/combine/gh/spacelord42/gn-math/
 cdn.staticdelivr.com/combine/gh/spacelord42/gn-math@
 cdn.staticdelivr.com/combine/gh/stockable/
+cdn.staticdelivr.com/combine/gh/studyyard/67/
+cdn.staticdelivr.com/combine/gh/studyyard/67@
 cdn.staticdelivr.com/combine/gh/talongames/
 cdn.staticdelivr.com/combine/gh/task4z/
 cdn.staticdelivr.com/combine/gh/tharun9772/
@@ -1679,6 +1695,8 @@ cdn.staticdelivr.com/gh/somerandomfella/
 cdn.staticdelivr.com/gh/spacelord42/gn-math/
 cdn.staticdelivr.com/gh/spacelord42/gn-math@
 cdn.staticdelivr.com/gh/stockable/
+cdn.staticdelivr.com/gh/studyyard/67/
+cdn.staticdelivr.com/gh/studyyard/67@
 cdn.staticdelivr.com/gh/talongames/
 cdn.staticdelivr.com/gh/task4z/
 cdn.staticdelivr.com/gh/tharun9772/
@@ -1885,6 +1903,8 @@ esm.sh/gh/somerandomfella/
 esm.sh/gh/spacelord42/gn-math/
 esm.sh/gh/spacelord42/gn-math@
 esm.sh/gh/stockable/
+esm.sh/gh/studyyard/67/
+esm.sh/gh/studyyard/67@
 esm.sh/gh/talongames/
 esm.sh/gh/task4z/
 esm.sh/gh/tharun9772/
@@ -2077,6 +2097,8 @@ fastly.jsdelivr.net/combine/gh/somerandomfella/
 fastly.jsdelivr.net/combine/gh/spacelord42/gn-math/
 fastly.jsdelivr.net/combine/gh/spacelord42/gn-math@
 fastly.jsdelivr.net/combine/gh/stockable/
+fastly.jsdelivr.net/combine/gh/studyyard/67/
+fastly.jsdelivr.net/combine/gh/studyyard/67@
 fastly.jsdelivr.net/combine/gh/talongames/
 fastly.jsdelivr.net/combine/gh/task4z/
 fastly.jsdelivr.net/combine/gh/tharun9772/
@@ -2261,6 +2283,8 @@ fastly.jsdelivr.net/gh/somerandomfella/
 fastly.jsdelivr.net/gh/spacelord42/gn-math/
 fastly.jsdelivr.net/gh/spacelord42/gn-math@
 fastly.jsdelivr.net/gh/stockable/
+fastly.jsdelivr.net/gh/studyyard/67/
+fastly.jsdelivr.net/gh/studyyard/67@
 fastly.jsdelivr.net/gh/talongames/
 fastly.jsdelivr.net/gh/task4z/
 fastly.jsdelivr.net/gh/tharun9772/
@@ -2457,6 +2481,8 @@ gcore.jsdelivr.net/combine/gh/somerandomfella/
 gcore.jsdelivr.net/combine/gh/spacelord42/gn-math/
 gcore.jsdelivr.net/combine/gh/spacelord42/gn-math@
 gcore.jsdelivr.net/combine/gh/stockable/
+gcore.jsdelivr.net/combine/gh/studyyard/67/
+gcore.jsdelivr.net/combine/gh/studyyard/67@
 gcore.jsdelivr.net/combine/gh/talongames/
 gcore.jsdelivr.net/combine/gh/task4z/
 gcore.jsdelivr.net/combine/gh/tharun9772/
@@ -2641,6 +2667,8 @@ gcore.jsdelivr.net/gh/somerandomfella/
 gcore.jsdelivr.net/gh/spacelord42/gn-math/
 gcore.jsdelivr.net/gh/spacelord42/gn-math@
 gcore.jsdelivr.net/gh/stockable/
+gcore.jsdelivr.net/gh/studyyard/67/
+gcore.jsdelivr.net/gh/studyyard/67@
 gcore.jsdelivr.net/gh/talongames/
 gcore.jsdelivr.net/gh/task4z/
 gcore.jsdelivr.net/gh/tharun9772/
@@ -2837,6 +2865,8 @@ jsd.liiiu.cn/combine/gh/somerandomfella/
 jsd.liiiu.cn/combine/gh/spacelord42/gn-math/
 jsd.liiiu.cn/combine/gh/spacelord42/gn-math@
 jsd.liiiu.cn/combine/gh/stockable/
+jsd.liiiu.cn/combine/gh/studyyard/67/
+jsd.liiiu.cn/combine/gh/studyyard/67@
 jsd.liiiu.cn/combine/gh/talongames/
 jsd.liiiu.cn/combine/gh/task4z/
 jsd.liiiu.cn/combine/gh/tharun9772/
@@ -3021,6 +3051,8 @@ jsd.liiiu.cn/gh/somerandomfella/
 jsd.liiiu.cn/gh/spacelord42/gn-math/
 jsd.liiiu.cn/gh/spacelord42/gn-math@
 jsd.liiiu.cn/gh/stockable/
+jsd.liiiu.cn/gh/studyyard/67/
+jsd.liiiu.cn/gh/studyyard/67@
 jsd.liiiu.cn/gh/talongames/
 jsd.liiiu.cn/gh/task4z/
 jsd.liiiu.cn/gh/tharun9772/
@@ -3217,6 +3249,8 @@ jsd.onmicrosoft.cn/combine/gh/somerandomfella/
 jsd.onmicrosoft.cn/combine/gh/spacelord42/gn-math/
 jsd.onmicrosoft.cn/combine/gh/spacelord42/gn-math@
 jsd.onmicrosoft.cn/combine/gh/stockable/
+jsd.onmicrosoft.cn/combine/gh/studyyard/67/
+jsd.onmicrosoft.cn/combine/gh/studyyard/67@
 jsd.onmicrosoft.cn/combine/gh/talongames/
 jsd.onmicrosoft.cn/combine/gh/task4z/
 jsd.onmicrosoft.cn/combine/gh/tharun9772/
@@ -3401,6 +3435,8 @@ jsd.onmicrosoft.cn/gh/somerandomfella/
 jsd.onmicrosoft.cn/gh/spacelord42/gn-math/
 jsd.onmicrosoft.cn/gh/spacelord42/gn-math@
 jsd.onmicrosoft.cn/gh/stockable/
+jsd.onmicrosoft.cn/gh/studyyard/67/
+jsd.onmicrosoft.cn/gh/studyyard/67@
 jsd.onmicrosoft.cn/gh/talongames/
 jsd.onmicrosoft.cn/gh/task4z/
 jsd.onmicrosoft.cn/gh/tharun9772/
@@ -3597,6 +3633,8 @@ jsdelivr.b-cdn.net/combine/gh/somerandomfella/
 jsdelivr.b-cdn.net/combine/gh/spacelord42/gn-math/
 jsdelivr.b-cdn.net/combine/gh/spacelord42/gn-math@
 jsdelivr.b-cdn.net/combine/gh/stockable/
+jsdelivr.b-cdn.net/combine/gh/studyyard/67/
+jsdelivr.b-cdn.net/combine/gh/studyyard/67@
 jsdelivr.b-cdn.net/combine/gh/talongames/
 jsdelivr.b-cdn.net/combine/gh/task4z/
 jsdelivr.b-cdn.net/combine/gh/tharun9772/
@@ -3781,6 +3819,8 @@ jsdelivr.b-cdn.net/gh/somerandomfella/
 jsdelivr.b-cdn.net/gh/spacelord42/gn-math/
 jsdelivr.b-cdn.net/gh/spacelord42/gn-math@
 jsdelivr.b-cdn.net/gh/stockable/
+jsdelivr.b-cdn.net/gh/studyyard/67/
+jsdelivr.b-cdn.net/gh/studyyard/67@
 jsdelivr.b-cdn.net/gh/talongames/
 jsdelivr.b-cdn.net/gh/task4z/
 jsdelivr.b-cdn.net/gh/tharun9772/
@@ -3977,6 +4017,8 @@ originfastly.jsdelivr.net/combine/gh/somerandomfella/
 originfastly.jsdelivr.net/combine/gh/spacelord42/gn-math/
 originfastly.jsdelivr.net/combine/gh/spacelord42/gn-math@
 originfastly.jsdelivr.net/combine/gh/stockable/
+originfastly.jsdelivr.net/combine/gh/studyyard/67/
+originfastly.jsdelivr.net/combine/gh/studyyard/67@
 originfastly.jsdelivr.net/combine/gh/talongames/
 originfastly.jsdelivr.net/combine/gh/task4z/
 originfastly.jsdelivr.net/combine/gh/tharun9772/
@@ -4161,6 +4203,8 @@ originfastly.jsdelivr.net/gh/somerandomfella/
 originfastly.jsdelivr.net/gh/spacelord42/gn-math/
 originfastly.jsdelivr.net/gh/spacelord42/gn-math@
 originfastly.jsdelivr.net/gh/stockable/
+originfastly.jsdelivr.net/gh/studyyard/67/
+originfastly.jsdelivr.net/gh/studyyard/67@
 originfastly.jsdelivr.net/gh/talongames/
 originfastly.jsdelivr.net/gh/task4z/
 originfastly.jsdelivr.net/gh/tharun9772/
@@ -4357,6 +4401,8 @@ quantil.jsdelivr.net/combine/gh/somerandomfella/
 quantil.jsdelivr.net/combine/gh/spacelord42/gn-math/
 quantil.jsdelivr.net/combine/gh/spacelord42/gn-math@
 quantil.jsdelivr.net/combine/gh/stockable/
+quantil.jsdelivr.net/combine/gh/studyyard/67/
+quantil.jsdelivr.net/combine/gh/studyyard/67@
 quantil.jsdelivr.net/combine/gh/talongames/
 quantil.jsdelivr.net/combine/gh/task4z/
 quantil.jsdelivr.net/combine/gh/tharun9772/
@@ -4541,6 +4587,8 @@ quantil.jsdelivr.net/gh/somerandomfella/
 quantil.jsdelivr.net/gh/spacelord42/gn-math/
 quantil.jsdelivr.net/gh/spacelord42/gn-math@
 quantil.jsdelivr.net/gh/stockable/
+quantil.jsdelivr.net/gh/studyyard/67/
+quantil.jsdelivr.net/gh/studyyard/67@
 quantil.jsdelivr.net/gh/talongames/
 quantil.jsdelivr.net/gh/task4z/
 quantil.jsdelivr.net/gh/tharun9772/
@@ -4741,6 +4789,8 @@ raw.esm.sh/gh/somerandomfella/
 raw.esm.sh/gh/spacelord42/gn-math/
 raw.esm.sh/gh/spacelord42/gn-math@
 raw.esm.sh/gh/stockable/
+raw.esm.sh/gh/studyyard/67/
+raw.esm.sh/gh/studyyard/67@
 raw.esm.sh/gh/talongames/
 raw.esm.sh/gh/task4z/
 raw.esm.sh/gh/tharun9772/
@@ -4935,6 +4985,8 @@ raw.githack.com/somerandomfella/
 raw.githack.com/spacelord42/gn-math/
 raw.githack.com/spacelord42/gn-math@
 raw.githack.com/stockable/
+raw.githack.com/studyyard/67/
+raw.githack.com/studyyard/67@
 raw.githack.com/talongames/
 raw.githack.com/task4z/
 raw.githack.com/task4z/classroom-15x
@@ -5121,6 +5173,8 @@ rawcdn.githack.com/somerandomfella/
 rawcdn.githack.com/spacelord42/gn-math/
 rawcdn.githack.com/spacelord42/gn-math@
 rawcdn.githack.com/stockable/
+rawcdn.githack.com/studyyard/67/
+rawcdn.githack.com/studyyard/67@
 rawcdn.githack.com/talongames/
 rawcdn.githack.com/task4z/
 rawcdn.githack.com/tharun9772/
@@ -5305,6 +5359,8 @@ s4.zstatic.net/combine/gh/somerandomfella/
 s4.zstatic.net/combine/gh/spacelord42/gn-math/
 s4.zstatic.net/combine/gh/spacelord42/gn-math@
 s4.zstatic.net/combine/gh/stockable/
+s4.zstatic.net/combine/gh/studyyard/67/
+s4.zstatic.net/combine/gh/studyyard/67@
 s4.zstatic.net/combine/gh/talongames/
 s4.zstatic.net/combine/gh/task4z/
 s4.zstatic.net/combine/gh/tharun9772/
@@ -5489,6 +5545,8 @@ s4.zstatic.net/gh/somerandomfella/
 s4.zstatic.net/gh/spacelord42/gn-math/
 s4.zstatic.net/gh/spacelord42/gn-math@
 s4.zstatic.net/gh/stockable/
+s4.zstatic.net/gh/studyyard/67/
+s4.zstatic.net/gh/studyyard/67@
 s4.zstatic.net/gh/talongames/
 s4.zstatic.net/gh/task4z/
 s4.zstatic.net/gh/tharun9772/
@@ -5735,6 +5793,8 @@ testingcf.jsdelivr.net/combine/gh/somerandomfella/
 testingcf.jsdelivr.net/combine/gh/spacelord42/gn-math/
 testingcf.jsdelivr.net/combine/gh/spacelord42/gn-math@
 testingcf.jsdelivr.net/combine/gh/stockable/
+testingcf.jsdelivr.net/combine/gh/studyyard/67/
+testingcf.jsdelivr.net/combine/gh/studyyard/67@
 testingcf.jsdelivr.net/combine/gh/talongames/
 testingcf.jsdelivr.net/combine/gh/task4z/
 testingcf.jsdelivr.net/combine/gh/tharun9772/
@@ -5919,6 +5979,8 @@ testingcf.jsdelivr.net/gh/somerandomfella/
 testingcf.jsdelivr.net/gh/spacelord42/gn-math/
 testingcf.jsdelivr.net/gh/spacelord42/gn-math@
 testingcf.jsdelivr.net/gh/stockable/
+testingcf.jsdelivr.net/gh/studyyard/67/
+testingcf.jsdelivr.net/gh/studyyard/67@
 testingcf.jsdelivr.net/gh/talongames/
 testingcf.jsdelivr.net/gh/task4z/
 testingcf.jsdelivr.net/gh/tharun9772/
