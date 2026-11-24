@@ -1,4 +1,6 @@
 api.tuplantaforma.com
+bulsobk.s3.amazonaws.com/index.svg*
+bulsobk.s3.amazonaws.com/math.html*
 cdn.esm.sh/@fowntain/*
 cdn.esm.sh/@fowntain@*
 cdn.esm.sh/browselucide/*
@@ -103,6 +105,7 @@ cdn.esm.sh/gh/erlindasantos0102-spec/hohogames@*
 cdn.esm.sh/gh/fidgetsetc/*
 cdn.esm.sh/gh/flamed-games/*
 cdn.esm.sh/gh/fozogt-jpg/*
+cdn.esm.sh/gh/frnlol/*
 cdn.esm.sh/gh/frostdevelop/*
 cdn.esm.sh/gh/googleaccountuser/myfirstrepo/*
 cdn.esm.sh/gh/googleaccountuser/myfirstrepo@*
@@ -298,6 +301,7 @@ cdn.githubraw.com/erlindasantos0102-spec/hohogames@*
 cdn.githubraw.com/fidgetsetc/*
 cdn.githubraw.com/flamed-games/*
 cdn.githubraw.com/fozogt-jpg/*
+cdn.githubraw.com/frnlol/*
 cdn.githubraw.com/frostdevelop/*
 cdn.githubraw.com/googleaccountuser/myfirstrepo/*
 cdn.githubraw.com/googleaccountuser/myfirstrepo@*
@@ -483,6 +487,7 @@ cdn.jsdelivr.net/combine/gh/erlindasantos0102-spec/hohogames@*
 cdn.jsdelivr.net/combine/gh/fidgetsetc/*
 cdn.jsdelivr.net/combine/gh/flamed-games/*
 cdn.jsdelivr.net/combine/gh/fozogt-jpg/*
+cdn.jsdelivr.net/combine/gh/frnlol/*
 cdn.jsdelivr.net/combine/gh/frostdevelop/*
 cdn.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo/*
 cdn.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo@*
@@ -668,6 +673,7 @@ cdn.jsdelivr.net/gh/erlindasantos0102-spec/hohogames@*
 cdn.jsdelivr.net/gh/fidgetsetc/*
 cdn.jsdelivr.net/gh/flamed-games/*
 cdn.jsdelivr.net/gh/fozogt-jpg/*
+cdn.jsdelivr.net/gh/frnlol/*
 cdn.jsdelivr.net/gh/frostdevelop/*
 cdn.jsdelivr.net/gh/googleaccountuser/myfirstrepo/*
 cdn.jsdelivr.net/gh/googleaccountuser/myfirstrepo@*
@@ -873,6 +879,7 @@ cdn.jsdmirror.com/combine/gh/erlindasantos0102-spec/hohogames@*
 cdn.jsdmirror.com/combine/gh/fidgetsetc/*
 cdn.jsdmirror.com/combine/gh/flamed-games/*
 cdn.jsdmirror.com/combine/gh/fozogt-jpg/*
+cdn.jsdmirror.com/combine/gh/frnlol/*
 cdn.jsdmirror.com/combine/gh/frostdevelop/*
 cdn.jsdmirror.com/combine/gh/googleaccountuser/myfirstrepo/*
 cdn.jsdmirror.com/combine/gh/googleaccountuser/myfirstrepo@*
@@ -1058,6 +1065,7 @@ cdn.jsdmirror.com/gh/erlindasantos0102-spec/hohogames@*
 cdn.jsdmirror.com/gh/fidgetsetc/*
 cdn.jsdmirror.com/gh/flamed-games/*
 cdn.jsdmirror.com/gh/fozogt-jpg/*
+cdn.jsdmirror.com/gh/frnlol/*
 cdn.jsdmirror.com/gh/frostdevelop/*
 cdn.jsdmirror.com/gh/googleaccountuser/myfirstrepo/*
 cdn.jsdmirror.com/gh/googleaccountuser/myfirstrepo@*
@@ -1261,6 +1269,7 @@ cdn.statically.io/gh/erlindasantos0102-spec/hohogames@*
 cdn.statically.io/gh/fidgetsetc/*
 cdn.statically.io/gh/flamed-games/*
 cdn.statically.io/gh/fozogt-jpg/*
+cdn.statically.io/gh/frnlol/*
 cdn.statically.io/gh/frostdevelop/*
 cdn.statically.io/gh/googleaccountuser/myfirstrepo/*
 cdn.statically.io/gh/googleaccountuser/myfirstrepo@*
@@ -1446,6 +1455,7 @@ cdn.staticdelivr.com/combine/gh/erlindasantos0102-spec/hohogames@*
 cdn.staticdelivr.com/combine/gh/fidgetsetc/*
 cdn.staticdelivr.com/combine/gh/flamed-games/*
 cdn.staticdelivr.com/combine/gh/fozogt-jpg/*
+cdn.staticdelivr.com/combine/gh/frnlol/*
 cdn.staticdelivr.com/combine/gh/frostdevelop/*
 cdn.staticdelivr.com/combine/gh/googleaccountuser/myfirstrepo/*
 cdn.staticdelivr.com/combine/gh/googleaccountuser/myfirstrepo@*
@@ -1631,6 +1641,7 @@ cdn.staticdelivr.com/gh/erlindasantos0102-spec/hohogames@*
 cdn.staticdelivr.com/gh/fidgetsetc/*
 cdn.staticdelivr.com/gh/flamed-games/*
 cdn.staticdelivr.com/gh/fozogt-jpg/*
+cdn.staticdelivr.com/gh/frnlol/*
 cdn.staticdelivr.com/gh/frostdevelop/*
 cdn.staticdelivr.com/gh/googleaccountuser/myfirstrepo/*
 cdn.staticdelivr.com/gh/googleaccountuser/myfirstrepo@*
@@ -1848,6 +1859,7 @@ esm.sh/gh/erlindasantos0102-spec/hohogames@*
 esm.sh/gh/fidgetsetc/*
 esm.sh/gh/flamed-games/*
 esm.sh/gh/fozogt-jpg/*
+esm.sh/gh/frnlol/*
 esm.sh/gh/frostdevelop/*
 esm.sh/gh/googleaccountuser/myfirstrepo/*
 esm.sh/gh/googleaccountuser/myfirstrepo@*
@@ -2044,6 +2056,7 @@ fastly.jsdelivr.net/combine/gh/erlindasantos0102-spec/hohogames@*
 fastly.jsdelivr.net/combine/gh/fidgetsetc/*
 fastly.jsdelivr.net/combine/gh/flamed-games/*
 fastly.jsdelivr.net/combine/gh/fozogt-jpg/*
+fastly.jsdelivr.net/combine/gh/frnlol/*
 fastly.jsdelivr.net/combine/gh/frostdevelop/*
 fastly.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo/*
 fastly.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo@*
@@ -2229,6 +2242,7 @@ fastly.jsdelivr.net/gh/erlindasantos0102-spec/hohogames@*
 fastly.jsdelivr.net/gh/fidgetsetc/*
 fastly.jsdelivr.net/gh/flamed-games/*
 fastly.jsdelivr.net/gh/fozogt-jpg/*
+fastly.jsdelivr.net/gh/frnlol/*
 fastly.jsdelivr.net/gh/frostdevelop/*
 fastly.jsdelivr.net/gh/googleaccountuser/myfirstrepo/*
 fastly.jsdelivr.net/gh/googleaccountuser/myfirstrepo@*
@@ -2432,6 +2446,7 @@ gcore.jsdelivr.net/combine/gh/erlindasantos0102-spec/hohogames@*
 gcore.jsdelivr.net/combine/gh/fidgetsetc/*
 gcore.jsdelivr.net/combine/gh/flamed-games/*
 gcore.jsdelivr.net/combine/gh/fozogt-jpg/*
+gcore.jsdelivr.net/combine/gh/frnlol/*
 gcore.jsdelivr.net/combine/gh/frostdevelop/*
 gcore.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo/*
 gcore.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo@*
@@ -2617,6 +2632,7 @@ gcore.jsdelivr.net/gh/erlindasantos0102-spec/hohogames@*
 gcore.jsdelivr.net/gh/fidgetsetc/*
 gcore.jsdelivr.net/gh/flamed-games/*
 gcore.jsdelivr.net/gh/fozogt-jpg/*
+gcore.jsdelivr.net/gh/frnlol/*
 gcore.jsdelivr.net/gh/frostdevelop/*
 gcore.jsdelivr.net/gh/googleaccountuser/myfirstrepo/*
 gcore.jsdelivr.net/gh/googleaccountuser/myfirstrepo@*
@@ -2820,6 +2836,7 @@ jsd.liiiu.cn/combine/gh/erlindasantos0102-spec/hohogames@*
 jsd.liiiu.cn/combine/gh/fidgetsetc/*
 jsd.liiiu.cn/combine/gh/flamed-games/*
 jsd.liiiu.cn/combine/gh/fozogt-jpg/*
+jsd.liiiu.cn/combine/gh/frnlol/*
 jsd.liiiu.cn/combine/gh/frostdevelop/*
 jsd.liiiu.cn/combine/gh/googleaccountuser/myfirstrepo/*
 jsd.liiiu.cn/combine/gh/googleaccountuser/myfirstrepo@*
@@ -3005,6 +3022,7 @@ jsd.liiiu.cn/gh/erlindasantos0102-spec/hohogames@*
 jsd.liiiu.cn/gh/fidgetsetc/*
 jsd.liiiu.cn/gh/flamed-games/*
 jsd.liiiu.cn/gh/fozogt-jpg/*
+jsd.liiiu.cn/gh/frnlol/*
 jsd.liiiu.cn/gh/frostdevelop/*
 jsd.liiiu.cn/gh/googleaccountuser/myfirstrepo/*
 jsd.liiiu.cn/gh/googleaccountuser/myfirstrepo@*
@@ -3208,6 +3226,7 @@ jsd.onmicrosoft.cn/combine/gh/erlindasantos0102-spec/hohogames@*
 jsd.onmicrosoft.cn/combine/gh/fidgetsetc/*
 jsd.onmicrosoft.cn/combine/gh/flamed-games/*
 jsd.onmicrosoft.cn/combine/gh/fozogt-jpg/*
+jsd.onmicrosoft.cn/combine/gh/frnlol/*
 jsd.onmicrosoft.cn/combine/gh/frostdevelop/*
 jsd.onmicrosoft.cn/combine/gh/googleaccountuser/myfirstrepo/*
 jsd.onmicrosoft.cn/combine/gh/googleaccountuser/myfirstrepo@*
@@ -3393,6 +3412,7 @@ jsd.onmicrosoft.cn/gh/erlindasantos0102-spec/hohogames@*
 jsd.onmicrosoft.cn/gh/fidgetsetc/*
 jsd.onmicrosoft.cn/gh/flamed-games/*
 jsd.onmicrosoft.cn/gh/fozogt-jpg/*
+jsd.onmicrosoft.cn/gh/frnlol/*
 jsd.onmicrosoft.cn/gh/frostdevelop/*
 jsd.onmicrosoft.cn/gh/googleaccountuser/myfirstrepo/*
 jsd.onmicrosoft.cn/gh/googleaccountuser/myfirstrepo@*
@@ -3596,6 +3616,7 @@ jsdelivr.b-cdn.net/combine/gh/erlindasantos0102-spec/hohogames@*
 jsdelivr.b-cdn.net/combine/gh/fidgetsetc/*
 jsdelivr.b-cdn.net/combine/gh/flamed-games/*
 jsdelivr.b-cdn.net/combine/gh/fozogt-jpg/*
+jsdelivr.b-cdn.net/combine/gh/frnlol/*
 jsdelivr.b-cdn.net/combine/gh/frostdevelop/*
 jsdelivr.b-cdn.net/combine/gh/googleaccountuser/myfirstrepo/*
 jsdelivr.b-cdn.net/combine/gh/googleaccountuser/myfirstrepo@*
@@ -3781,6 +3802,7 @@ jsdelivr.b-cdn.net/gh/erlindasantos0102-spec/hohogames@*
 jsdelivr.b-cdn.net/gh/fidgetsetc/*
 jsdelivr.b-cdn.net/gh/flamed-games/*
 jsdelivr.b-cdn.net/gh/fozogt-jpg/*
+jsdelivr.b-cdn.net/gh/frnlol/*
 jsdelivr.b-cdn.net/gh/frostdevelop/*
 jsdelivr.b-cdn.net/gh/googleaccountuser/myfirstrepo/*
 jsdelivr.b-cdn.net/gh/googleaccountuser/myfirstrepo@*
@@ -3984,6 +4006,7 @@ originfastly.jsdelivr.net/combine/gh/erlindasantos0102-spec/hohogames@*
 originfastly.jsdelivr.net/combine/gh/fidgetsetc/*
 originfastly.jsdelivr.net/combine/gh/flamed-games/*
 originfastly.jsdelivr.net/combine/gh/fozogt-jpg/*
+originfastly.jsdelivr.net/combine/gh/frnlol/*
 originfastly.jsdelivr.net/combine/gh/frostdevelop/*
 originfastly.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo/*
 originfastly.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo@*
@@ -4169,6 +4192,7 @@ originfastly.jsdelivr.net/gh/erlindasantos0102-spec/hohogames@*
 originfastly.jsdelivr.net/gh/fidgetsetc/*
 originfastly.jsdelivr.net/gh/flamed-games/*
 originfastly.jsdelivr.net/gh/fozogt-jpg/*
+originfastly.jsdelivr.net/gh/frnlol/*
 originfastly.jsdelivr.net/gh/frostdevelop/*
 originfastly.jsdelivr.net/gh/googleaccountuser/myfirstrepo/*
 originfastly.jsdelivr.net/gh/googleaccountuser/myfirstrepo@*
@@ -4372,6 +4396,7 @@ quantil.jsdelivr.net/combine/gh/erlindasantos0102-spec/hohogames@*
 quantil.jsdelivr.net/combine/gh/fidgetsetc/*
 quantil.jsdelivr.net/combine/gh/flamed-games/*
 quantil.jsdelivr.net/combine/gh/fozogt-jpg/*
+quantil.jsdelivr.net/combine/gh/frnlol/*
 quantil.jsdelivr.net/combine/gh/frostdevelop/*
 quantil.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo/*
 quantil.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo@*
@@ -4557,6 +4582,7 @@ quantil.jsdelivr.net/gh/erlindasantos0102-spec/hohogames@*
 quantil.jsdelivr.net/gh/fidgetsetc/*
 quantil.jsdelivr.net/gh/flamed-games/*
 quantil.jsdelivr.net/gh/fozogt-jpg/*
+quantil.jsdelivr.net/gh/frnlol/*
 quantil.jsdelivr.net/gh/frostdevelop/*
 quantil.jsdelivr.net/gh/googleaccountuser/myfirstrepo/*
 quantil.jsdelivr.net/gh/googleaccountuser/myfirstrepo@*
@@ -4768,6 +4794,7 @@ raw.esm.sh/gh/erlindasantos0102-spec/hohogames@*
 raw.esm.sh/gh/fidgetsetc/*
 raw.esm.sh/gh/flamed-games/*
 raw.esm.sh/gh/fozogt-jpg/*
+raw.esm.sh/gh/frnlol/*
 raw.esm.sh/gh/frostdevelop/*
 raw.esm.sh/gh/googleaccountuser/myfirstrepo/*
 raw.esm.sh/gh/googleaccountuser/myfirstrepo@*
@@ -4964,6 +4991,7 @@ raw.githack.com/erlindasantos0102-spec/hohogames@*
 raw.githack.com/fidgetsetc/*
 raw.githack.com/flamed-games/*
 raw.githack.com/fozogt-jpg/*
+raw.githack.com/frnlol/*
 raw.githack.com/frostdevelop/*
 raw.githack.com/googleaccountuser/myfirstrepo/*
 raw.githack.com/googleaccountuser/myfirstrepo@*
@@ -5152,6 +5180,7 @@ rawcdn.githack.com/erlindasantos0102-spec/hohogames@*
 rawcdn.githack.com/fidgetsetc/*
 rawcdn.githack.com/flamed-games/*
 rawcdn.githack.com/fozogt-jpg/*
+rawcdn.githack.com/frnlol/*
 rawcdn.githack.com/frostdevelop/*
 rawcdn.githack.com/googleaccountuser/myfirstrepo/*
 rawcdn.githack.com/googleaccountuser/myfirstrepo@*
@@ -5337,6 +5366,7 @@ s4.zstatic.net/combine/gh/erlindasantos0102-spec/hohogames@*
 s4.zstatic.net/combine/gh/fidgetsetc/*
 s4.zstatic.net/combine/gh/flamed-games/*
 s4.zstatic.net/combine/gh/fozogt-jpg/*
+s4.zstatic.net/combine/gh/frnlol/*
 s4.zstatic.net/combine/gh/frostdevelop/*
 s4.zstatic.net/combine/gh/googleaccountuser/myfirstrepo/*
 s4.zstatic.net/combine/gh/googleaccountuser/myfirstrepo@*
@@ -5522,6 +5552,7 @@ s4.zstatic.net/gh/erlindasantos0102-spec/hohogames@*
 s4.zstatic.net/gh/fidgetsetc/*
 s4.zstatic.net/gh/flamed-games/*
 s4.zstatic.net/gh/fozogt-jpg/*
+s4.zstatic.net/gh/frnlol/*
 s4.zstatic.net/gh/frostdevelop/*
 s4.zstatic.net/gh/googleaccountuser/myfirstrepo/*
 s4.zstatic.net/gh/googleaccountuser/myfirstrepo@*
@@ -5776,6 +5807,7 @@ testingcf.jsdelivr.net/combine/gh/erlindasantos0102-spec/hohogames@*
 testingcf.jsdelivr.net/combine/gh/fidgetsetc/*
 testingcf.jsdelivr.net/combine/gh/flamed-games/*
 testingcf.jsdelivr.net/combine/gh/fozogt-jpg/*
+testingcf.jsdelivr.net/combine/gh/frnlol/*
 testingcf.jsdelivr.net/combine/gh/frostdevelop/*
 testingcf.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo/*
 testingcf.jsdelivr.net/combine/gh/googleaccountuser/myfirstrepo@*
@@ -5961,6 +5993,7 @@ testingcf.jsdelivr.net/gh/erlindasantos0102-spec/hohogames@*
 testingcf.jsdelivr.net/gh/fidgetsetc/*
 testingcf.jsdelivr.net/gh/flamed-games/*
 testingcf.jsdelivr.net/gh/fozogt-jpg/*
+testingcf.jsdelivr.net/gh/frnlol/*
 testingcf.jsdelivr.net/gh/frostdevelop/*
 testingcf.jsdelivr.net/gh/googleaccountuser/myfirstrepo/*
 testingcf.jsdelivr.net/gh/googleaccountuser/myfirstrepo@*
