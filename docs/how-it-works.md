@@ -27,8 +27,24 @@ The collector (`collector/collect.py`) runs in GitHub Actions hourly during scho
 | Rule rejection (adblock) | Skips exception rules (`@@`), cosmetic and regex rules, and rules that only target one path (`\|\|host/path`), which can't be expressed as a whole-domain block. |
 | Normalization | Lowercases, strips schemes, ports, paths and `www.`, converts international names to ASCII, and rejects IP addresses, whole-TLD rules (`\|\|games^`) and malformed names. |
 | Trust tier | **Trusted** lists go straight to the feed. **Untrusted** lists (currently one stale gist) are sent to Stage 4 to be checked live first. |
+| Dead-domain maintenance | See below. |
 
 Counted in latest-run.md as *Curated lists downloaded* and *List entries parsed and normalized*.
+
+### Dead-domain maintenance
+
+Curated lists rarely remove anything, so many of their entries are domains that no longer exist. Each still takes an entry on every FortiGate. To keep the feeds to live threats, the collector checks list domains in the DNS on a rolling schedule (`collector/liveness.py`, `config/sources.toml → [liveness]`):
+
+| Rule | Detail |
+|---|---|
+| What counts as dead | Only an NXDOMAIN answer ("this name does not exist"), confirmed by two resolvers (Cloudflare and Google). Timeouts, server errors and names that exist without an address never count. |
+| When it's dropped | After 3 NXDOMAIN answers spread over at least 14 days. |
+| Schedule | Up to 6,000 domains per run. Live domains are re-checked every 14 days; failing and dropped ones every 3 days. |
+| Coming back | A dropped domain that resolves again returns to the feed on the next run. |
+| Never pruned | Sites the collector confirmed itself (they have their own 60-day rule, see *Aging*) and reviewer confirmations in `seeds/confirmed.txt`. |
+| Network safety | If a probe shows the resolvers are unreachable or misbehaving, the whole check is skipped for that run. |
+
+Counted in latest-run.md under *List domains checked in DNS for dead-domain maintenance* and *Dead list domains kept out of the feed*.
 
 ---
 
@@ -169,7 +185,7 @@ Counted in latest-run.md under *Live check results*, by entry type and verdict.
 
 | File | Built from |
 |---|---|
-| `fortigate/domains.txt` | Hand-confirmed seeds + all trusted lists + confirmed discovered hosts, minus the allowlist and bare platforms. Registrable domains are written as both `example.com` and `*.example.com`, and subdomains already covered by a wildcard are dropped. |
+| `fortigate/domains.txt` | Hand-confirmed seeds + all trusted lists (minus dead domains) + confirmed discovered hosts, minus the allowlist and bare platforms. Registrable domains are written as both `example.com` and `*.example.com`, and subdomains already covered by a wildcard are dropped. |
 | `fortigate/domains-priority.txt` | The same, but only the lists focused on unblocked games (no general gaming category lists). |
 | `fortigate/urls.txt` | Hand-confirmed URL seeds + confirmed Google Sites and Apps Script URLs + **CDN loader entries** (below). |
 

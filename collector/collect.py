@@ -32,6 +32,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import cdn  # noqa: E402
+import liveness  # noqa: E402
 import proxyips  # noqa: E402
 import hashlib  # noqa: E402
 import socket  # noqa: E402
@@ -1340,6 +1341,17 @@ def main() -> int:
     disc_urls = {k for k, e in entries.items() if e["kind"] == "url" and e["status"] == "confirmed"}
     priority_lists = set().union(*(h for t, h, tr in lists.values() if tr and t == "priority")) if lists else set()
 
+    # Dead-domain maintenance: list entries whose name no longer exists in the
+    # DNS (repeated NXDOMAIN over weeks) are kept out of the feed. Collector
+    # discoveries and reviewer confirmations are never pruned here.
+    lcfg = cfg.get("liveness", {})
+    if lcfg.get("enabled", True):
+        check = {h for h in listed - confirmed_seed - disc_hosts
+                 if not allow.matches(h) and h not in platforms}
+        dead = liveness.maintain(state, check, lcfg, TODAY, METRICS, log)
+        listed = listed - dead
+        priority_lists = priority_lists - dead
+
     wild = settings.get("emit_wildcards", True)
     all_lines = build_domain_lines(confirmed_seed | listed | disc_hosts, allow, platforms, wild)
     pri_lines = build_domain_lines(confirmed_seed | priority_lists | disc_hosts, allow, platforms, wild)
@@ -1510,6 +1522,13 @@ def write_run_report(stats: dict, entries: dict) -> None:
         ("Stalled bypass-list sites blocked as clones of known bypass pages", g("stalled_confirmed_clone")),
         ("Stalled bypass-list sites blocked for impersonating a known service", g("stalled_confirmed_impersonation")),
         ("Stalled bypass-list sites held for review (second signal)", g("stalled_held_second_signal")),
+        ("List domains checked in DNS for dead-domain maintenance", g("liveness_checked")),
+        ("  no answer / inconclusive (re-checked later)", g("liveness_inconclusive")),
+        ("  answered 'does not exist' (NXDOMAIN)", g("liveness_nxdomain")),
+        ("  DNS check skipped (resolvers unreachable)", g("liveness_skipped")),
+        ("Dead list domains kept out of the feed", g("liveness_pruned")),
+        ("  failing, not yet dropped (need 3 checks over 14 days)", g("liveness_watching")),
+        ("  came back to life and returned to the feed", g("liveness_revived")),
         ("Hostnames resolved for proxy-server detection", g("proxyips_hosts_resolved")),
         ("  servers excluded as shared hosting", g("proxyips_shared_excluded")),
         ("  servers excluded by network owner (cloud, CDN, parking, shared)", g("proxyips_owner_excluded")),

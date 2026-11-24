@@ -15,9 +15,6 @@
 # Hosts discovered (not from a trusted list) are kept this many days after the
 # last time they were seen alive / fingerprinted.
 discovered_max_age_days = 60
-# Hosts from lists are kept this many days after they disappear from all lists
-# (protects against a source being briefly broken).
-list_grace_days = 7
 # Live verification budget per run (hosts / Google URLs, and CDN files).
 verify_max_hosts = 1500
 verify_max_cdn = 1500
@@ -325,6 +322,20 @@ min_cluster = 3
 # has seen yet. Use as a FortiGate IP address threat feed (DNS filter
 # external IP block list and/or a firewall deny policy).
 # ---------------------------------------------------------------------------
+
+[liveness]
+# Dead-domain maintenance for curated-list entries (collector/liveness.py).
+# Lists rarely remove dead domains; these are kept out of the feed so devices
+# only carry live threats. Only an NXDOMAIN answer agreed by both resolvers
+# counts; timeouts never do. Dropped names are re-checked and return if alive.
+enabled = true
+budget = 6000               # DNS checks per run
+recheck_alive_days = 14     # re-check a live name this often
+recheck_dead_days = 3       # re-check a failing or dropped name this often
+drop_after_checks = 3       # NXDOMAIN answers needed before dropping...
+drop_after_days = 14        # ...spread over at least this many days
+resolvers = ["1.1.1.1", "8.8.8.8"]
+workers = 48
 
 [proxy_ips]
 enabled = true
