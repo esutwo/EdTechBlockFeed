@@ -10,3 +10,6 @@ s4.zstatic.net/npm/edurocks
 api.tuplantaforma.com
 # 2026-11-20: from an AnySecura "games not blocked by school" article; verified live
 sites.google.com/site/unblockedgames6x
+# 2026-11-24: Google Cloud Storage bucket impersonating Canvas LMS; primary host of the
+# "unblocking" game app (npm mirror on unpkg/jsDelivr blocked via cdn-owners-block.txt)
+storage.googleapis.com/canvas-lms/

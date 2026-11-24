@@ -4,3 +4,10 @@
 # loads from a CDN, so blocking it breaks the site on any domain it moves to.
 # The collector also learns engine owners automatically (state: engine_owners).
 gh achroma-ubg     # 2026-11-20: "Achroma UBG" engine; loaded via a 10-mirror fallback chain by api.tuplantaforma.com
+# 2026-11-24: seen live at a school: unpkg.com/unblocking@1.0.15 (BitLife and other games,
+# tab titled "edu-static"). All three packages are by the same npm account; @fowntain also
+# publishes a static build of the DogeUB proxy. Primary copy is a Google Cloud bucket
+# named "canvas-lms" (seeds/confirmed-urls.txt).
+npm unblocking
+npm educationate
+npm @fowntain
