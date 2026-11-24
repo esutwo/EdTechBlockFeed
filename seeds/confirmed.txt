@@ -20,3 +20,6 @@ mathisfun.ebine-san.com            # 2026-11-23: reported by a school; hijacked 
 wiki.schooloqy.com                 # 2026-11-23: Schoology typosquat on proxy server 108.181.32.77
 rammer.nana.nyxprint.ar            # 2026-11-23: Rammerhead proxy on 108.181.32.77
 ksd-resource.sababat.com           # 2026-11-23: proxy front end on 108.181.32.77
+homeworkhelp.cc                    # 2026-11-24 review: PeteZah proxy disguised as "HypeStudy" study platform on 51.222.141.36
+sciencenews.cc                     # 2026-11-24 review: PeteZah proxy disguised as "HypeStudy" study platform on 51.222.141.36
+info.videnom.com                   # 2026-11-24 review: hijacked subdomain serving the PeteZah "HypeStudy" proxy gate on 51.222.141.36
