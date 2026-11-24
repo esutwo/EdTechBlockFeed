@@ -5,3 +5,4 @@
 # confirm appear in review/held.txt as "ip:<address>".
 108.181.32.77    # 2026-11-23: Psychz VPS, all names behind a Cloudflare challenge: mathisfun.ebine-san.com (reported by a school), wiki.schooloqy.com (Schoology typosquat), rammer.nana.nyxprint.ar and rammer-02-nana…sslip.io (Rammerhead), edu…nip.io titled "Google"
 51.222.141.36    # 2026-11-24 review: OVH dedicated server; every name serves the same PeteZah proxy gate disguised as "HypeStudy — Secure Study Platform": homeworkhelp.cc, sciencenews.cc, info.videnom.com (hijacked subdomain)
+153.76.6.6        # 2026-11-24: Achroma UBG API/embed server (Bough Limited); only Achroma names on it (urlscan); streamed ~25 MB of video to a student device

@@ -68,3 +68,8 @@ southpadreislandkiteboarding.com
 boxcasa.net
 girlspreples.org
 api.scvmath.org
+# 2026-11-24: Achroma UBG API / YouTube-embed server seen streaming video to a student device
+# (153.76.6.6, also in seeds/proxyips-confirmed.txt). Same decoy page and achromaPV marker.
+ach-api.duckdns.org
+studyhall42.duckdns.org
+classwork90.duckdns.org
