@@ -119,3 +119,8 @@ scratch.mit.edu
 # 2026-11-23: GoFundMe short links (official redirector to gofundme.com); listed as games by UT1 and gjohnpaull
 gofund.me
 *.gofund.me
+# 2026-11-24: Minecraft Education (licensed through Microsoft; school curriculum)
+*.minecrafteduservices.com        # Minecraft Education sign-in, client and servers
+*.minecraftedu.com                # Minecraft Education (older domain)
+*.minecraft-services.net          # Minecraft Education / Bedrock services (also allows Bedrock sign-in)
+*.minecraft.net                   # education.minecraft.net, educommunity.minecraft.net (official Minecraft site)
