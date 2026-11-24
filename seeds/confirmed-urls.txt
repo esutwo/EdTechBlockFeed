@@ -13,3 +13,11 @@ sites.google.com/site/unblockedgames6x
 # 2026-11-24: Google Cloud Storage bucket impersonating Canvas LMS; primary host of the
 # "unblocking" game app (npm mirror on unpkg/jsDelivr blocked via cdn-owners-block.txt)
 storage.googleapis.com/canvas-lms/
+# Feed test entries (harmless: example.com is a reserved test domain). Open each
+# test URL from a student device to see how your FortiGate matches URL-list entries:
+#   https://example.com/esu-feedtest-exact.html            -> exact-URL match
+#   https://example.com/esu-feedtest-prefix/page.html      -> prefix match (how CDN entries are written)
+#   https://example.com/esu-feedtest-wild/page.html        -> wildcard (*) match
+example.com/esu-feedtest-exact.html
+example.com/esu-feedtest-prefix/
+example.com/esu-feedtest-wild/*
