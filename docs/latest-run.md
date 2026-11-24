@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-24 00:58 UTC  
+Run: 2026-11-24 04:48 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -10,24 +10,24 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Curated lists downloaded | 14 |
 | List entries parsed and normalized | 87,098 |
 | GitHub repository searches | 30 |
-| GitHub repositories examined | 1,746 |
-| README files scanned for links | 17 |
+| GitHub repositories examined | 1,748 |
+| README files scanned for links | 55 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,654 |
-| Certificate Transparency queries | 9 |
-| Certificates examined | 6 |
-|   certificate-log source unreachable this run (skipped) | 0 |
-| CDN owners expanded (repo listings) | 40 |
-| CDN owner repositories listed | 1,084 |
-| CDN entry files found in owner repos | 1,094 |
+| Certificate Transparency queries | 0 |
+| Certificates examined | 0 |
+|   certificate-log source unreachable this run (skipped) | 1 |
+| CDN owners expanded (repo listings) | 15 |
+| CDN owner repositories listed | 307 |
+| CDN entry files found in owner repos | 503 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 569 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 10,652 |
-|   dropped: allowlist | 1,879 |
-|   dropped: known non-game service | 40 |
-|   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 70 |
+| Links examined by the filters | 38,054 |
+|   dropped: allowlist | 9,091 |
+|   dropped: known non-game service | 942 |
+|   dropped: bare hosting-platform domain | 3 |
+|   dropped: README link with no game/bypass hint | 15,459 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 10 |
@@ -37,7 +37,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Repositories listed from watched GitHub orgs | 135 |
 | Script URLs from confirmed pages re-queued for mirror detection | 0 |
 | Game engines (GitHub owners) newly confirmed from page scripts | 0 |
-| Sites with domain-shadowing DNS signals | 44 |
+| Sites with domain-shadowing DNS signals | 229 |
 | Sites re-queued after a fingerprint upgrade | 0 |
 | Links with a CDN path shape on unknown hosts | 0 |
 | Unknown hosts tested for being a new CDN/mirror | 0 |
@@ -50,29 +50,27 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Stalled bypass-list sites blocked for impersonating a known service | 0 |
 | Stalled bypass-list sites held for review (second signal) | 0 |
 | Hostnames resolved for proxy-server detection | 1 |
-|   servers excluded as shared hosting | 1 |
-|   servers excluded by network owner (cloud, CDN, parking, shared) | 1 |
+|   servers excluded as shared hosting | 3 |
+|   servers excluded by network owner (cloud, CDN, parking, shared) | 3 |
 |   proxy server IPs held for review | 2 |
-| Live checks performed this run | 1,501 |
+| Live checks performed this run | 1,500 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| cdn | alive | 1 |
-| host | alive | 337 |
-| host | dead | 1,161 |
-| host | game | 1 |
-| url | alive | 1 |
+| host | alive | 1,198 |
+| host | dead | 300 |
+| host | game | 2 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 85,148 |
-| `domains-priority.txt` entries | 25,044 |
+| `domains.txt` entries | 85,151 |
+| `domains-priority.txt` entries | 25,047 |
 | `urls.txt` entries | 5,972 |
-| `proxyips.txt` entries (proxy server IPs) | 19 |
+| `proxyips.txt` entries (proxy server IPs) | 17 |
 | CDN owners blocked at owner level | 65 |
 | CDN repos blocked at repo level | 26 |
 | npm packages blocked | 6 |
@@ -87,10 +85,10 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | cdn | confirmed | 1,606 |
 | cdn | pending | 18 |
 | cdn | rejected | 1,929 |
-| host | confirmed | 1,169 |
+| host | confirmed | 1,171 |
 | host | dismissed | 47 |
-| host | pending | 3,688 |
-| host | rejected | 2,966 |
+| host | pending | 2,256 |
+| host | rejected | 4,404 |
 | url | confirmed | 57 |
 | url | pending | 7 |
 | url | rejected | 1 |

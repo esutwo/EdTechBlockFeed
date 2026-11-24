@@ -62632,6 +62632,7 @@ mamsnsw.github.io
 manal5664.github.io
 manalisuryawanshi23.github.io
 mango-unblocked-games.github.io
+maniacalkid.github.io
 manicpixeldream.github.io
 manking2024.github.io
 manomarichal.github.io
@@ -79296,6 +79297,8 @@ grydladzieci.pl
 gryfek.pl
 *.grymini.pl
 grymini.pl
+*.gryna2osoby.pl
+gryna2osoby.pl
 *.gryonlinezadarmo.pl
 gryonlinezadarmo.pl
 gry.hitz.pl
