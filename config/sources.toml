@@ -39,9 +39,12 @@ owner_promote_min = 2
 #                                      bypass sites hide games behind a decoy)
 popular_guard_top = 10000
 popular_list_size = 100000
-# "prefix"   -> cdn.jsdelivr.net/gh/owner/        (FortiGate matches as prefix)
-# "wildcard" -> cdn.jsdelivr.net/gh/owner/*       (if your FortiOS needs it)
-url_entry_style = "prefix"
+# "wildcard" -> cdn.jsdelivr.net/gh/owner/*  and  sites.google.com/view/name*
+#               Every path entry ends in "*", the form FortiOS documents
+#               ("wildcards are allowed at the beginning or end of the URL").
+# "prefix"   -> cdn.jsdelivr.net/gh/owner/   (relies on prefix matching, which
+#               FortiOS doesn't document; produced no hits in testing)
+url_entry_style = "wildcard"
 
 # ---------------------------------------------------------------------------
 # Curated lists

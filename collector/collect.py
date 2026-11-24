@@ -1362,6 +1362,11 @@ def main() -> int:
     url_lines |= cdn_lines
     for line in read_list(ROOT / "seeds" / "confirmed-urls.txt"):
         url_lines.add(re.sub(r"^https?://", "", line).rstrip("/"))
+    # FortiOS documents wildcards only at the start or end of a URL-list entry
+    # and doesn't say whether a plain entry also matches deeper paths, so in
+    # "wildcard" style every path entry ends in "*" (host-only lines unchanged).
+    if settings.get("url_entry_style", "prefix") == "wildcard":
+        url_lines = {u if "/" not in u or u.endswith("*") else u + "*" for u in url_lines}
 
     out = ROOT / "fortigate"
     out.mkdir(exist_ok=True)

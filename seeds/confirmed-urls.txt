@@ -13,3 +13,7 @@ sites.google.com/site/unblockedgames6x
 # 2026-11-24: Google Cloud Storage bucket impersonating Canvas LMS; primary host of the
 # "unblocking" game app (npm mirror on unpkg/jsDelivr blocked via cdn-owners-block.txt)
 storage.googleapis.com/canvas-lms/
+# Feed test entry (harmless: example.com is a reserved test domain). From a student
+# device, https://example.com/esu-feedtest/page.html should be blocked when the
+# Games CDNs connector and deep inspection are working.
+example.com/esu-feedtest/
