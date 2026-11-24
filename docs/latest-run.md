@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-24 04:48 UTC  
+Run: 2026-11-24 05:07 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -11,23 +11,23 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | List entries parsed and normalized | 87,098 |
 | GitHub repository searches | 30 |
 | GitHub repositories examined | 1,748 |
-| README files scanned for links | 55 |
+| README files scanned for links | 7 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,654 |
-| Certificate Transparency queries | 0 |
-| Certificates examined | 0 |
-|   certificate-log source unreachable this run (skipped) | 1 |
-| CDN owners expanded (repo listings) | 15 |
-| CDN owner repositories listed | 307 |
-| CDN entry files found in owner repos | 503 |
+| Certificate Transparency queries | 9 |
+| Certificates examined | 8 |
+|   certificate-log source unreachable this run (skipped) | 0 |
+| CDN owners expanded (repo listings) | 2 |
+| CDN owner repositories listed | 0 |
+| CDN entry files found in owner repos | 0 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 569 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 38,054 |
-|   dropped: allowlist | 9,091 |
-|   dropped: known non-game service | 942 |
-|   dropped: bare hosting-platform domain | 3 |
-|   dropped: README link with no game/bypass hint | 15,459 |
+| Links examined by the filters | 11,356 |
+|   dropped: allowlist | 1,954 |
+|   dropped: known non-game service | 50 |
+|   dropped: bare hosting-platform domain | 1 |
+|   dropped: README link with no game/bypass hint | 1,652 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 10 |
@@ -37,21 +37,21 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Repositories listed from watched GitHub orgs | 135 |
 | Script URLs from confirmed pages re-queued for mirror detection | 0 |
 | Game engines (GitHub owners) newly confirmed from page scripts | 0 |
-| Sites with domain-shadowing DNS signals | 229 |
+| Sites with domain-shadowing DNS signals | 99 |
 | Sites re-queued after a fingerprint upgrade | 0 |
 | Links with a CDN path shape on unknown hosts | 0 |
 | Unknown hosts tested for being a new CDN/mirror | 0 |
 |   live checks on those hosts | 0 |
 |   new CDNs/mirrors confirmed this run | 0 |
-| Discovered sites held for review: top-ranked domain | 0 |
+| Discovered sites held for review: top-ranked domain | 1 |
 | Discovered sites held for review: established site, only a sub-page is a game | 0 |
 | Discovered sites held for review: possible domain shadowing | 0 |
 | Stalled bypass-list sites blocked as clones of known bypass pages | 0 |
 | Stalled bypass-list sites blocked for impersonating a known service | 0 |
 | Stalled bypass-list sites held for review (second signal) | 0 |
-| Hostnames resolved for proxy-server detection | 1 |
+| Hostnames resolved for proxy-server detection | 0 |
 |   servers excluded as shared hosting | 3 |
-|   servers excluded by network owner (cloud, CDN, parking, shared) | 3 |
+|   servers excluded by network owner (cloud, CDN, parking, shared) | 1 |
 |   proxy server IPs held for review | 2 |
 | Live checks performed this run | 1,500 |
 
@@ -59,9 +59,10 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 
 | Entry type | Result | Count |
 |---|---|---:|
-| host | alive | 1,198 |
-| host | dead | 300 |
-| host | game | 2 |
+| host | alive | 1,298 |
+| host | dead | 198 |
+| host | game | 1 |
+| url | alive | 3 |
 
 ## Feed output
 
@@ -87,8 +88,8 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | cdn | rejected | 1,929 |
 | host | confirmed | 1,171 |
 | host | dismissed | 47 |
-| host | pending | 2,256 |
-| host | rejected | 4,404 |
+| host | pending | 929 |
+| host | rejected | 5,731 |
 | url | confirmed | 57 |
 | url | pending | 7 |
 | url | rejected | 1 |
