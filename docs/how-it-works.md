@@ -199,6 +199,8 @@ Before anything is committed, `collector/check_feed.py` reads every output file 
 * a hosting platform or CDN network as a whole (`pages.dev`, `edgesuite.net`, `akamaihd.net` and so on, from `seeds/platforms.txt`); or
 * any of about 30 **critical domains hard-coded in the checker**: Google (`google.com`, `googleapis.com`, `gstatic.com`, `googlehosted.com` for custom-domain Google Sites, `gvt1/2/3.com` for Chrome and ChromeOS updates and Play Store, `ggpht.com`, `1e100.net`), Android (`android.com`), YouTube, Microsoft 365 including its sign-in content (`msauth.net`, `msftauth.net`), Apple, GitHub, jsDelivr, unpkg, Cloudflare, AWS, the **Amplify** curriculum and assessment platform (`*.amplify.com`), and the `.edu` and `.gov` TLDs.
 
+One narrow exception: a single **Google Cloud Storage bucket** address (`<bucket>.storage.googleapis.com`) may be blocked even though `googleapis.com` is protected. Each bucket belongs to one owner and never serves a Google service, and bypass sites host copies in buckets named after school tools (for example `canvas-lms`). An allowlist entry for that bucket, or for `*.storage.googleapis.com`, still wins.
+
 Because the critical list lives in code rather than in `allow.txt`, a mistaken edit to the allowlist still can't publish a feed that breaks Chromebooks. A failed check stops the workflow before the commit step, so the FortiGates keep pulling the last good feed, and the failure shows up in GitHub Actions.
 
 <a id="cdn-loaders"></a>
