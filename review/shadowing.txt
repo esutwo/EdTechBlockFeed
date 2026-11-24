@@ -3,6 +3,7 @@
 # hijacked, and parent domains with several such subdomains (bursts).
 # Consider notifying the domain's owner; held ones are in review/held.txt.
 # host	status	signals	source
+10update.104-243-38-18.backname.io	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 15-204-116-29.my.local-ip.co	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 51.222.206.184.xip.lhjmmc.cn	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
@@ -120,6 +121,7 @@ mvl.en.uhwhat123.camdvr.org	confirmed	different-servers-than-parent	urlscan:file
 mywordle.strivemath.com	pending	different-servers-than-parent	github-readme:rarelygoeshere/WordleWeb
 nichestudies.govt.hu	confirmed	different-servers-than-parent	urlscan:filename:"scramjet.all.js"
 nickmathsir.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+notexistswww.dev.we.yuzu-4.vpn64.de	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 notexistswww.update.kugwcscan550ec3dd6269e940e4c89a08f591a9ab.v220221183800208764.goodsrv.de	confirmed	different-servers-than-parent	urlscan:filename:"scramjet.all.js"
 paloalto.oneuniversity.info	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 pcroomsir.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -200,6 +202,7 @@ wordforge.travelschooling.com	pending	different-servers-than-parent	github-readm
 ydtjut.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 youman.rusticrivergear.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 yrtldy9x8td9y.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+z0yc0nkgtwf913s2.update.104-243-38-18.backname.io	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 zhitmyoghxfwqcprrqjf.supabase.co	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 zzamnvhadwibvafqcfpd.supabase.co	pending	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 

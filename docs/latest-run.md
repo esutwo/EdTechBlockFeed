@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-24 05:07 UTC  
+Run: 2026-11-24 09:05 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -11,11 +11,11 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | List entries parsed and normalized | 87,098 |
 | GitHub repository searches | 30 |
 | GitHub repositories examined | 1,748 |
-| README files scanned for links | 7 |
+| README files scanned for links | 36 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,654 |
 | Certificate Transparency queries | 9 |
-| Certificates examined | 8 |
+| Certificates examined | 6 |
 |   certificate-log source unreachable this run (skipped) | 0 |
 | CDN owners expanded (repo listings) | 2 |
 | CDN owner repositories listed | 0 |
@@ -23,53 +23,54 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 569 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 11,356 |
-|   dropped: allowlist | 1,954 |
-|   dropped: known non-game service | 50 |
+| Links examined by the filters | 16,138 |
+|   dropped: allowlist | 2,381 |
+|   dropped: known non-game service | 359 |
 |   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 1,652 |
-|   dropped: CDN file that isn't a page (js/css/img) | 1 |
+|   dropped: README link with no game/bypass hint | 3,834 |
+|   dropped: CDN file that isn't a page (js/css/img) | 2 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 10 |
-| urlscan.io searches (proxy framework files, page titles) | 0 |
-|   urlscan.io results examined | 0 |
-|   skipped as wildcard-DNS noise | 0 |
+| urlscan.io searches (proxy framework files, page titles) | 5 |
+|   urlscan.io results examined | 282 |
+|   skipped as wildcard-DNS noise | 221 |
 | Repositories listed from watched GitHub orgs | 135 |
 | Script URLs from confirmed pages re-queued for mirror detection | 0 |
 | Game engines (GitHub owners) newly confirmed from page scripts | 0 |
-| Sites with domain-shadowing DNS signals | 99 |
+| Sites with domain-shadowing DNS signals | 25 |
 | Sites re-queued after a fingerprint upgrade | 0 |
 | Links with a CDN path shape on unknown hosts | 0 |
 | Unknown hosts tested for being a new CDN/mirror | 0 |
 |   live checks on those hosts | 0 |
 |   new CDNs/mirrors confirmed this run | 0 |
-| Discovered sites held for review: top-ranked domain | 1 |
+| Discovered sites held for review: top-ranked domain | 0 |
 | Discovered sites held for review: established site, only a sub-page is a game | 0 |
 | Discovered sites held for review: possible domain shadowing | 0 |
 | Stalled bypass-list sites blocked as clones of known bypass pages | 0 |
 | Stalled bypass-list sites blocked for impersonating a known service | 0 |
 | Stalled bypass-list sites held for review (second signal) | 0 |
-| Hostnames resolved for proxy-server detection | 0 |
+| Hostnames resolved for proxy-server detection | 5 |
 |   servers excluded as shared hosting | 3 |
 |   servers excluded by network owner (cloud, CDN, parking, shared) | 1 |
 |   proxy server IPs held for review | 2 |
-| Live checks performed this run | 1,500 |
+| Live checks performed this run | 691 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| host | alive | 1,298 |
-| host | dead | 198 |
-| host | game | 1 |
-| url | alive | 3 |
+| host | alive | 585 |
+| host | dead | 90 |
+| host | game | 4 |
+| host | proxy | 8 |
+| url | alive | 4 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 85,151 |
-| `domains-priority.txt` entries | 25,047 |
+| `domains.txt` entries | 85,164 |
+| `domains-priority.txt` entries | 25,060 |
 | `urls.txt` entries | 5,972 |
 | `proxyips.txt` entries (proxy server IPs) | 17 |
 | CDN owners blocked at owner level | 65 |
@@ -86,10 +87,10 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | cdn | confirmed | 1,606 |
 | cdn | pending | 18 |
 | cdn | rejected | 1,929 |
-| host | confirmed | 1,171 |
+| host | confirmed | 1,183 |
 | host | dismissed | 47 |
-| host | pending | 929 |
-| host | rejected | 5,731 |
+| host | pending | 911 |
+| host | rejected | 5,748 |
 | url | confirmed | 57 |
 | url | pending | 7 |
 | url | rejected | 1 |
