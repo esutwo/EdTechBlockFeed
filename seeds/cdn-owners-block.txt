@@ -11,3 +11,4 @@ gh achroma-ubg     # 2026-11-20: "Achroma UBG" engine; loaded via a 10-mirror fa
 npm unblocking
 npm educationate
 npm @fowntain
+gh frnlol          # 2026-11-24: "fern" proxy/games app (frnlol/frn), loaded by an SVG on S3 via jsDelivr/githack/raw GitHub
