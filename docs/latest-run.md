@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-24 18:58 UTC  
+Run: 2026-11-24 20:58 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -10,8 +10,8 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Curated lists downloaded | 14 |
 | List entries parsed and normalized | 87,132 |
 | GitHub repository searches | 30 |
-| GitHub repositories examined | 1,753 |
-| README files scanned for links | 13 |
+| GitHub repositories examined | 1,754 |
+| README files scanned for links | 27 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,655 |
 | Certificate Transparency queries | 9 |
@@ -23,11 +23,11 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 570 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 11,387 |
-|   dropped: allowlist | 1,963 |
-|   dropped: known non-game service | 58 |
-|   dropped: bare hosting-platform domain | 2 |
-|   dropped: README link with no game/bypass hint | 1,636 |
+| Links examined by the filters | 19,045 |
+|   dropped: allowlist | 4,759 |
+|   dropped: known non-game service | 136 |
+|   dropped: bare hosting-platform domain | 1 |
+|   dropped: README link with no game/bypass hint | 5,856 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 10 |
@@ -50,23 +50,24 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Stalled bypass-list sites blocked for impersonating a known service | 0 |
 | Stalled bypass-list sites held for review (second signal) | 0 |
 | List domains checked in DNS for dead-domain maintenance | 6,000 |
-|   no answer / inconclusive (re-checked later) | 1,892 |
-|   answered 'does not exist' (NXDOMAIN) | 412 |
+|   no answer / inconclusive (re-checked later) | 274 |
+|   answered 'does not exist' (NXDOMAIN) | 604 |
 |   DNS check skipped (resolvers unreachable) | 0 |
 | Dead list domains kept out of the feed | 0 |
-|   failing, not yet dropped (need 3 checks over 14 days) | 2,818 |
+|   failing, not yet dropped (need 3 checks over 14 days) | 3,422 |
 |   came back to life and returned to the feed | 0 |
 | Hostnames resolved for proxy-server detection | 0 |
 |   servers excluded as shared hosting | 3 |
 |   servers excluded by network owner (cloud, CDN, parking, shared) | 1 |
 |   proxy server IPs held for review | 1 |
-| Live checks performed this run | 1 |
+| Live checks performed this run | 4 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| host | alive | 1 |
+| host | alive | 2 |
+| host | dead | 2 |
 
 ## Feed output
 
@@ -92,7 +93,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | cdn | rejected | 1,929 |
 | host | confirmed | 1,193 |
 | host | dismissed | 49 |
-| host | pending | 924 |
+| host | pending | 928 |
 | host | rejected | 5,748 |
 | url | confirmed | 57 |
 | url | pending | 7 |
