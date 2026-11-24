@@ -36,3 +36,6 @@ marketplace.org              # 2026-11-23 review: news article about a Wordle-st
 tickets.blackbearshow.com    # 2026-11-23 review: event ticket checkout app
 # 2026-11-23 review: already blocked by a parent domain in fortigate/domains.txt
 killedbyapixel.itch.io       # 2026-11-23 review: itch.io game page; *.itch.io already blocked
+matlab.mathworks.com         # 2026-11-24 review: MATLAB Online (engineering/coursework tool); "ubg" fingerprint is a false match
+vox.com                      # 2026-11-24 review: news article on school Chromebook privacy, not a game site
+ip:153.76.4.16               # 2026-11-24 review: InfinityFree free-hosting server (lovestoblog.com user subdomains); shared hosting, and *.lovestoblog.com is already blocked
