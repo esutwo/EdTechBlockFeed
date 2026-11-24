@@ -113,10 +113,10 @@ mastodon.gamedev.place	pending	different-servers-than-parent	github-readme:rarel
 math-school.dila.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 math.free-dyndns.org	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 math.next-education-learning.sbs	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-matlab.mathworks.com	pending	different-servers-than-parent	github-readme:enhansome/enhansome-Zorin-OS-Guide
 mhi.banglam.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mrkultragood.parcomunica.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mvd.370532dev.update.asdf.loseyourip.com	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
+mvd.yuzu-2.vpn64.de	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 mvl.en.uhwhat123.camdvr.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 mywordle.strivemath.com	pending	different-servers-than-parent	github-readme:rarelygoeshere/WordleWeb
 nichestudies.govt.hu	confirmed	different-servers-than-parent	urlscan:filename:"scramjet.all.js"
@@ -224,6 +224,7 @@ local-ip.co	4	15-204-116-29.my.local-ip.co api.15-204-116-29.my.local-ip.co c00l
 net.br	4	agar.seprotec.net.br alto.seprotec.net.br bestspark.gparente.net.br bill.greengarden.net.br
 dayplaygames.com	4	bubblethread.dayplaygames.com cornhole.dayplaygames.com darts.dayplaygames.com golf.dayplaygames.com
 accesscam.org	3	5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org update.eu.testaaa.drgd.accesscam.org
+loseyourip.com	3	654370532dev.update.asdf.loseyourip.com mvd.370532dev.update.asdf.loseyourip.com update.asdf.loseyourip.com
 strongson.com	3	acme.strongson.com bind.strongson.com boat.strongson.com
 carcano.me	3	afro.carcano.me blew.carcano.me bomb.carcano.me
 mantavyagajjar.com	3	area.mantavyagajjar.com studyhub.mantavyagajjar.com ttpscience.mantavyagajjar.com
@@ -235,5 +236,6 @@ glamourfreaks.com	3	formula.glamourfreaks.com lesson.glamourfreaks.com xoeand.gl
 roje.com.br	3	goodtung.roje.com.br schools.roje.com.br well.roje.com.br
 tripo.page	3	handbook-lantern-alley.tripo.page handbook-pit-nine.tripo.page handbook-snowdrift-dash.tripo.page
 dila.cl	3	math-school.dila.cl thg-ms.dila.cl tung-school.dila.cl
+vpn64.de	3	mvd.yuzu-2.vpn64.de notexistswww.dev.we.yuzu-4.vpn64.de www.en.yuzu-2.vpn64.de
 elemporio.ar	3	shopping.elemporio.ar smartbio.elemporio.ar triplet.elemporio.ar
 gandhinagar.com	3	triplet.gandhinagar.com tungtung.gandhinagar.com words.gandhinagar.com

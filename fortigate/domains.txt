@@ -3078,6 +3078,8 @@ insurance.happygames.cc
 happywheels.cc
 *.historyspot.cc
 historyspot.cc
+*.homeworkhelp.cc
+homeworkhelp.cc
 *.hygame.cc
 hygame.cc
 *.igg-games.cc
@@ -3157,6 +3159,8 @@ rodeostampede.cc
 romspure.cc
 *.rouletteforum.cc
 rouletteforum.cc
+*.sciencenews.cc
+sciencenews.cc
 *.selenite.cc
 selenite.cc
 *.slope-game.cc
@@ -6316,6 +6320,7 @@ alternative-armies.com
 alternativesoftware.com
 *.altitude-games.com
 altitude-games.com
+match-fire.alto-games.com
 vending-machine.alto-games.com
 *.altoids.com
 altoids.com
@@ -48765,6 +48770,7 @@ victoryforce.com
 vidaextra.com
 *.videlectrix.com
 videlectrix.com
+info.videnom.com
 *.video-games-museum.com
 video-games-museum.com
 *.video-igrice.com
@@ -53207,6 +53213,7 @@ virtualforces.de
 *.vmlabs.de
 vmlabs.de
 www.en.yuzu-2.vpn64.de
+mvd.yuzu-2.vpn64.de
 notexistswww.dev.we.yuzu-4.vpn64.de
 *.warofdragons.de
 warofdragons.de
@@ -53796,6 +53803,7 @@ italianbrainrot.pages.dev
 items-gratis-roblox-juegos.pages.dev
 itsfunneh-roblox-scary-games.pages.dev
 jab-arcade.pages.dev
+jayperiperi.pages.dev
 jelly-truck.pages.dev
 jellytruckgame.pages.dev
 jetpack-joyride-unblocked.pages.dev
@@ -57035,6 +57043,8 @@ yetisports.fr
 zoragames.fr
 *.blockblast.free
 blockblast.free
+*.vpn.free
+vpn.free
 *.1001games.fun
 1001games.fun
 *.2048game.fun
@@ -64672,6 +64682,8 @@ fpslo-hqaaa-aaaad-qf7ua-cai.icp0.io
 isobs-jaaaa-aaaad-qd3na-cai.icp0.io
 iw6pg-3iaaa-aaaad-qgc3a-cai.icp0.io
 rv2yr-kyaaa-aaaad-qgaga-cai.icp0.io
+rw65p-2aaaa-aaaad-qesuq-cai.icp0.io
+v3pzv-jaaaa-aaaad-qesoq-cai.icp0.io
 xzhoq-qiaaa-aaaag-ay4wa-cai.icp0.io
 *.idolsofash.io
 idolsofash.io

@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-24 13:00 UTC  
+Run: 2026-11-24 15:37 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -11,7 +11,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | List entries parsed and normalized | 87,132 |
 | GitHub repository searches | 30 |
 | GitHub repositories examined | 1,749 |
-| README files scanned for links | 17 |
+| README files scanned for links | 27 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,654 |
 | Certificate Transparency queries | 9 |
@@ -23,21 +23,21 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 569 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 14,761 |
-|   dropped: allowlist | 4,707 |
-|   dropped: known non-game service | 306 |
+| Links examined by the filters | 13,681 |
+|   dropped: allowlist | 2,146 |
+|   dropped: known non-game service | 636 |
 |   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 1,164 |
+|   dropped: README link with no game/bypass hint | 1,973 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 10 |
-| urlscan.io searches (proxy framework files, page titles) | 0 |
-|   urlscan.io results examined | 0 |
-|   skipped as wildcard-DNS noise | 0 |
+| urlscan.io searches (proxy framework files, page titles) | 5 |
+|   urlscan.io results examined | 288 |
+|   skipped as wildcard-DNS noise | 221 |
 | Repositories listed from watched GitHub orgs | 135 |
 | Script URLs from confirmed pages re-queued for mirror detection | 0 |
 | Game engines (GitHub owners) newly confirmed from page scripts | 0 |
-| Sites with domain-shadowing DNS signals | 0 |
+| Sites with domain-shadowing DNS signals | 1 |
 | Sites re-queued after a fingerprint upgrade | 0 |
 | Links with a CDN path shape on unknown hosts | 0 |
 | Unknown hosts tested for being a new CDN/mirror | 0 |
@@ -52,31 +52,32 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Hostnames resolved for proxy-server detection | 3 |
 |   servers excluded as shared hosting | 3 |
 |   servers excluded by network owner (cloud, CDN, parking, shared) | 1 |
-|   proxy server IPs held for review | 2 |
-| Live checks performed this run | 12 |
+|   proxy server IPs held for review | 1 |
+| Live checks performed this run | 10 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| cdn | dead | 1 |
-| host | alive | 8 |
-| host | game | 3 |
+| host | alive | 2 |
+| host | dead | 2 |
+| host | game | 2 |
+| host | proxy | 4 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 85,196 |
-| `domains-priority.txt` entries | 25,092 |
+| `domains.txt` entries | 85,208 |
+| `domains-priority.txt` entries | 25,104 |
 | `urls.txt` entries | 5,972 |
-| `proxyips.txt` entries (proxy server IPs) | 17 |
+| `proxyips.txt` entries (proxy server IPs) | 19 |
 | CDN owners blocked at owner level | 65 |
 | CDN repos blocked at repo level | 26 |
 | npm packages blocked | 6 |
 | Game engines blocked at owner level (learned + seeded) | 4 |
 | CDN mirror hosts covered | 21 |
-| Waiting for a human decision (`review/held.txt`) | 4 |
+| Waiting for a human decision (`review/held.txt`) | 1 |
 
 ## Tracked discoveries
 
@@ -85,9 +86,9 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | cdn | confirmed | 1,606 |
 | cdn | pending | 19 |
 | cdn | rejected | 1,929 |
-| host | confirmed | 1,186 |
-| host | dismissed | 47 |
-| host | pending | 919 |
+| host | confirmed | 1,192 |
+| host | dismissed | 49 |
+| host | pending | 921 |
 | host | rejected | 5,748 |
 | url | confirmed | 57 |
 | url | pending | 7 |
