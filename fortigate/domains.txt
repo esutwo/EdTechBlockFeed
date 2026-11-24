@@ -218,6 +218,8 @@ geometry-arrow.app
 geometrydashgames.app
 *.geometryvibes.app
 geometryvibes.app
+*.geosports.app
+geosports.app
 *.ghostgames.app
 ghostgames.app
 *.gointerstellar.app
@@ -46177,6 +46179,8 @@ tinyfishing-unblocked.com
 tinyfishingame.com
 *.tinyghoststudios.com
 tinyghoststudios.com
+*.tinygodsgame.com
+tinygodsgame.com
 *.tinyminer.com
 tinyminer.com
 *.tinymobgames.com
@@ -84818,6 +84822,7 @@ boom-games.world
 classicgames.world
 *.deathegg.world
 deathegg.world
+scam.gamefun.world
 *.looknorth.world
 looknorth.world
 *.mathgames.world
