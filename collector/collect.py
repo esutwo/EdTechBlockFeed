@@ -39,6 +39,7 @@ import socket  # noqa: E402
 from fingerprint import FINGERPRINT_VERSION, classify  # noqa: E402
 from hostutil import (  # noqa: E402
     Matcher,
+    allowed,
     extract_urls,
     normalize_host,
     platform_apex,
@@ -1134,7 +1135,7 @@ def build_domain_lines(hosts: set[str], allow: Matcher, platforms: set[str],
                        wildcards: bool) -> list[str]:
     clean = set()
     for h in hosts:
-        if allow.matches(h) or h in platforms or NOISE.matches(h) or h in cdn.CDN_HOSTS:
+        if allowed(allow, h) or h in platforms or NOISE.matches(h) or h in cdn.CDN_HOSTS:
             continue
         clean.add(h)
     lines = set()
