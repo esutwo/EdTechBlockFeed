@@ -43,6 +43,8 @@ ngrok.app
 000webhostapp.com
 infinityfreeapp.com
 epizy.com
+edgeone.app
+edgeone.dev
 github.dev
 stackblitz.io
 codesandbox.io
