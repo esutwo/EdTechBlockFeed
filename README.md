@@ -134,7 +134,7 @@ IP address feeds don't use a category number. If your firmware prompts for one, 
 
 The feeds are rebuilt **at least every 4 hours**, plus after every change merged to main. A FortiGate refresh rate of 10–15 minutes keeps up with it.
 
-**`urls.txt` matching:** CDN entries are written as path prefixes, such as `cdn.jsdelivr.net/gh/<owner>/`, so that one entry covers every repo and file beneath it. After the first pull, test one by opening a file under a listed owner, for example a `.svg` from an owner in the feed. If it isn't blocked even with deep inspection on, set `url_entry_style = "wildcard"` in `config/sources.toml`, which writes `.../gh/<owner>/*` instead.
+**`urls.txt` matching:** every path entry ends in `*`, such as `cdn.jsdelivr.net/gh/<owner>/*` or `sites.google.com/view/<name>*`, so one entry covers every page and file beneath it. FortiOS documents wildcards only at the start or end of a URL-list entry, which is the form used here. To confirm the feed is working, open `https://example.com/esu-feedtest/page.html` from a student device: it is a harmless test entry and should be blocked. If it loads, check that *ESU Threat Feed: Games CDNs* is set to Block in the web filter profile, that the policy uses deep SSL inspection, and that QUIC (UDP 443) is blocked or inspected so Chrome can't bypass inspection with HTTP/3.
 
 ## How it works
 
