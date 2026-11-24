@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-24 16:58 UTC  
+Run: 2026-11-24 17:55 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -10,27 +10,27 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Curated lists downloaded | 14 |
 | List entries parsed and normalized | 87,132 |
 | GitHub repository searches | 30 |
-| GitHub repositories examined | 1,750 |
-| README files scanned for links | 14 |
+| GitHub repositories examined | 1,751 |
+| README files scanned for links | 21 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,655 |
 | Certificate Transparency queries | 9 |
-| Certificates examined | 6 |
+| Certificates examined | 8 |
 |   certificate-log source unreachable this run (skipped) | 0 |
-| CDN owners expanded (repo listings) | 3 |
-| CDN owner repositories listed | 2 |
-| CDN entry files found in owner repos | 3 |
+| CDN owners expanded (repo listings) | 2 |
+| CDN owner repositories listed | 0 |
+| CDN entry files found in owner repos | 0 |
 | GitHub code searches for loader files | 6 |
-| Loader-candidate files from code search | 569 |
-|   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 10,059 |
-|   dropped: allowlist | 1,928 |
-|   dropped: known non-game service | 331 |
+| Loader-candidate files from code search | 370 |
+|   code searches that failed (check CODE_SEARCH_TOKEN) | 2 |
+| Links examined by the filters | 14,783 |
+|   dropped: allowlist | 2,565 |
+|   dropped: known non-game service | 105 |
 |   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 417 |
+|   dropped: README link with no game/bypass hint | 4,095 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
-|   dropped: CDN file in a test/fixture folder | 10 |
+|   dropped: CDN file in a test/fixture folder | 9 |
 | urlscan.io searches (proxy framework files, page titles) | 0 |
 |   urlscan.io results examined | 0 |
 |   skipped as wildcard-DNS noise | 0 |
@@ -50,32 +50,31 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Stalled bypass-list sites blocked for impersonating a known service | 0 |
 | Stalled bypass-list sites held for review (second signal) | 0 |
 | List domains checked in DNS for dead-domain maintenance | 6,000 |
-|   no answer / inconclusive (re-checked later) | 146 |
-|   answered 'does not exist' (NXDOMAIN) | 606 |
+|   no answer / inconclusive (re-checked later) | 1,858 |
+|   answered 'does not exist' (NXDOMAIN) | 392 |
 |   DNS check skipped (resolvers unreachable) | 0 |
 | Dead list domains kept out of the feed | 0 |
-|   failing, not yet dropped (need 3 checks over 14 days) | 1,219 |
+|   failing, not yet dropped (need 3 checks over 14 days) | 1,611 |
 |   came back to life and returned to the feed | 0 |
 | Hostnames resolved for proxy-server detection | 0 |
 |   servers excluded as shared hosting | 3 |
 |   servers excluded by network owner (cloud, CDN, parking, shared) | 1 |
 |   proxy server IPs held for review | 1 |
-| Live checks performed this run | 4 |
+| Live checks performed this run | 2 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| cdn | alive | 2 |
-| cdn | loader | 1 |
+| cdn | alive | 1 |
 | host | alive | 1 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 85,208 |
-| `domains-priority.txt` entries | 25,104 |
+| `domains.txt` entries | 85,200 |
+| `domains-priority.txt` entries | 25,100 |
 | `urls.txt` entries | 6,003 |
 | `proxyips.txt` entries (proxy server IPs) | 19 |
 | CDN owners blocked at owner level | 66 |
@@ -90,11 +89,11 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Entry type | Status | Count |
 |---|---|---:|
 | cdn | confirmed | 1,608 |
-| cdn | pending | 22 |
+| cdn | pending | 23 |
 | cdn | rejected | 1,929 |
 | host | confirmed | 1,192 |
 | host | dismissed | 49 |
-| host | pending | 922 |
+| host | pending | 923 |
 | host | rejected | 5,748 |
 | url | confirmed | 57 |
 | url | pending | 7 |

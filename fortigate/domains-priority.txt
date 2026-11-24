@@ -21433,12 +21433,8 @@ mcdle.net
 megamangames.net
 *.memory-game.net
 memory-game.net
-*.minecraft.net
-minecraft.net
 *.minecraft-online.net
 minecraft-online.net
-*.minecraft-services.net
-minecraft-services.net
 *.minecraftdungeons.net
 minecraftdungeons.net
 *.minecraftforge.net

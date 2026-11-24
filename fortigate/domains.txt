@@ -31082,10 +31082,6 @@ minecraftanimals.com
 minecraftbestservers.com
 *.minecraftdl.com
 minecraftdl.com
-*.minecraftedu.com
-minecraftedu.com
-*.minecrafteduservices.com
-minecrafteduservices.com
 *.minecrafteo.com
 minecrafteo.com
 *.minecraftevi.com
@@ -71401,16 +71397,12 @@ midwinter.net
 mimir.net
 *.mindcomet.net
 mindcomet.net
-*.minecraft.net
-minecraft.net
 *.minecraft-exe.net
 minecraft-exe.net
 *.minecraft-online.net
 minecraft-online.net
 *.minecraft-seeds.net
 minecraft-seeds.net
-*.minecraft-services.net
-minecraft-services.net
 *.minecraft-setup.net
 minecraft-setup.net
 *.minecraft-statistic.net
