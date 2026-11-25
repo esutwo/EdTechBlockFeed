@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-25 20:58 UTC  
+Run: 2026-11-25 21:55 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -11,7 +11,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | List entries parsed and normalized | 87,164 |
 | GitHub repository searches | 30 |
 | GitHub repositories examined | 1,772 |
-| README files scanned for links | 49 |
+| README files scanned for links | 18 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,655 |
 | Certificate Transparency queries | 0 |
@@ -23,21 +23,21 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 569 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 20,124 |
-|   dropped: allowlist | 3,788 |
-|   dropped: known non-game service | 258 |
+| Links examined by the filters | 9,333 |
+|   dropped: allowlist | 1,801 |
+|   dropped: known non-game service | 75 |
 |   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 6,924 |
+|   dropped: README link with no game/bypass hint | 48 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 9 |
-| urlscan.io searches (proxy framework files, page titles) | 5 |
-|   urlscan.io results examined | 308 |
-|   skipped as wildcard-DNS noise | 230 |
+| urlscan.io searches (proxy framework files, page titles) | 0 |
+|   urlscan.io results examined | 0 |
+|   skipped as wildcard-DNS noise | 0 |
 | Repositories listed from watched GitHub orgs | 135 |
 | Script URLs from confirmed pages re-queued for mirror detection | 0 |
 | Game engines (GitHub owners) newly confirmed from page scripts | 0 |
-| Sites with domain-shadowing DNS signals | 3 |
+| Sites with domain-shadowing DNS signals | 0 |
 | Sites re-queued after a fingerprint upgrade | 0 |
 | Links with a CDN path shape on unknown hosts | 0 |
 | Unknown hosts tested for being a new CDN/mirror | 0 |
@@ -49,27 +49,23 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Stalled bypass-list sites blocked as clones of known bypass pages | 0 |
 | Stalled bypass-list sites blocked for impersonating a known service | 0 |
 | Stalled bypass-list sites held for review (second signal) | 0 |
-| List domains checked in DNS for dead-domain maintenance | 800 |
-|   no answer / inconclusive (re-checked later) | 791 |
+| List domains checked in DNS for dead-domain maintenance | 791 |
+|   no answer / inconclusive (re-checked later) | 788 |
 |   answered 'does not exist' (NXDOMAIN) | 0 |
 |   DNS check skipped (resolvers unreachable) | 0 |
 | Dead list domains kept out of the feed | 0 |
 |   failing, not yet dropped (need 3 checks over 14 days) | 4,727 |
 |   came back to life and returned to the feed | 0 |
-| Hostnames resolved for proxy-server detection | 4 |
+| Hostnames resolved for proxy-server detection | 0 |
 |   servers excluded as shared hosting | 3 |
 |   servers excluded by network owner (cloud, CDN, parking, shared) | 1 |
 |   proxy server IPs held for review | 1 |
-| Live checks performed this run | 17 |
+| Live checks performed this run | 0 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| cdn | loader | 5 |
-| host | alive | 5 |
-| host | game | 3 |
-| host | proxy | 4 |
 
 ## Feed output
 
