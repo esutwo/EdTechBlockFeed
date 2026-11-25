@@ -309,6 +309,7 @@ eloquent-tulumba-7667c4.netlify.app
 escaperoad.netlify.app
 facle.netlify.app
 fall-guys-game.netlify.app
+farhanhub-study.netlify.app
 feetnetworks.netlify.app
 flappy-bird.netlify.app
 flappy-bird-ay.netlify.app
@@ -53240,6 +53241,7 @@ vmlabs.de
 www.en.yuzu-2.vpn64.de
 mvd.yuzu-2.vpn64.de
 notexistswww.dev.we.yuzu-4.vpn64.de
+notexistsdev.we.yuzu-4.vpn64.de
 *.warofdragons.de
 warofdragons.de
 *.wasliestdu.de
@@ -54210,10 +54212,18 @@ run3-online.pages.dev
 salak138-player.pages.dev
 school-games-unblocked-now.pages.dev
 school-unblocked-arcade.pages.dev
+schoolmaths.pages.dev
 schoolmaths-assets.pages.dev
+schoolmaths-lib10.pages.dev
 schoolmaths-lib11.pages.dev
+schoolmaths-lib12.pages.dev
+schoolmaths-lib2.pages.dev
 schoolmaths-lib3.pages.dev
 schoolmaths-lib4.pages.dev
+schoolmaths-lib5.pages.dev
+schoolmaths-lib6.pages.dev
+schoolmaths-lib7.pages.dev
+schoolmaths-lib8.pages.dev
 schoolmaths-lib9.pages.dev
 scott-cawthon-roblox.pages.dev
 scratch-roblox-cookie-clicker.pages.dev
@@ -61663,6 +61673,7 @@ d3vtoo1s.github.io
 d4ni3l-sny.github.io
 d8a-1.github.io
 dacow-zx.github.io
+daddyrico492.github.io
 daditto2012.github.io
 dafioram.github.io
 dagamerb01.github.io
@@ -64723,6 +64734,7 @@ f5u4x-laaaa-aaaad-qf7xa-cai.icp0.io
 fbqgg-4aaaa-aaaad-qf7va-cai.icp0.io
 fitn2-kiaaa-aaaad-qf7uq-cai.icp0.io
 fpslo-hqaaa-aaaad-qf7ua-cai.icp0.io
+gvdhu-taaaa-aaaad-qfhfa-cai.icp0.io
 isobs-jaaaa-aaaad-qd3na-cai.icp0.io
 iw6pg-3iaaa-aaaad-qgc3a-cai.icp0.io
 rv2yr-kyaaa-aaaad-qgaga-cai.icp0.io
@@ -74639,6 +74651,8 @@ basketballstars.online
 basketballstarsunblocked.online
 *.bc-game-casino.online
 bc-game-casino.online
+*.beakogames.online
+beakogames.online
 *.blockblast.online
 blockblast.online
 *.blockblastgame.online
@@ -75095,6 +75109,7 @@ update.dev.ci.bebanndakorou-scandj.accesscam.org
 update.en.we.bebanndakorou-scandj.accesscam.org
 5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org
 update.wwwwwportal.bebanndakorou-scandj.accesscam.org
+mvd.www.en.cyberspeedtech.accesscam.org
 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org
 update.eu.testaaa.drgd.accesscam.org
 *.acpedia.org
@@ -79042,6 +79057,8 @@ washers.org
 washingtoninteractivenetwork.org
 *.wasmarcade.org
 wasmarcade.org
+*.wasmcart.org
+wasmcart.org
 *.watercoolergames.org
 watercoolergames.org
 *.watermelon-game.org

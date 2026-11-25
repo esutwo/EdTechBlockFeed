@@ -110,10 +110,12 @@ math.next-education-learning.sbs	confirmed	different-servers-than-parent	aggrega
 mhi.banglam.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mrkultragood.parcomunica.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mvd.370532dev.update.asdf.loseyourip.com	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
+mvd.www.en.cyberspeedtech.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 mvd.yuzu-2.vpn64.de	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 mvl.en.uhwhat123.camdvr.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 nichestudies.govt.hu	confirmed	different-servers-than-parent	urlscan:filename:"scramjet.all.js"
 nickmathsir.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+notexistsdev.we.yuzu-4.vpn64.de	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 notexistswww.dev.we.yuzu-4.vpn64.de	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 notexistswww.update.kugwcscan550ec3dd6269e940e4c89a08f591a9ab.v220221183800208764.goodsrv.de	confirmed	different-servers-than-parent	urlscan:filename:"scramjet.all.js"
 paloalto.oneuniversity.info	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -134,6 +136,7 @@ sirmathgood.art-motel.com	confirmed	different-servers-than-parent	aggregator:htt
 sky.haze.bumon.ar	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 smartbio.elemporio.ar	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 smartstudy.bumon.ar	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+studio.luw.ai	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 study-hub.inmobiliariamardelplata.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 study.bumon.ar	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 studyhub.mantavyagajjar.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -176,8 +179,8 @@ z0yc0nkgtwf913s2.update.104-243-38-18.backname.io	confirmed	different-servers-th
 # parent	subdomains	examples
 fwh.is	20	dgzfgfyfz.ceifjskdj.fwh.is dphckbc9.ceifjskdj.fwh.is edu.67lol.fwh.is edu.ceifjskdj.fwh.is fyxogsit.ceifjskdj.fwh.is
 com.ar	14	able.itlogistics.com.ar ably.7dejunio.com.ar aide.tuapel.com.ar amen.zabiasrl.com.ar ames.agus-87.com.ar
+accesscam.org	7	5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org mvd.www.en.cyberspeedtech.accesscam.org update.dev.ci.bebanndakorou-scandj.accesscam.org update.en.we.bebanndakorou-scandj.accesscam.org
 bumon.ar	7	cipher.bumon.ar ford.bumon.ar homie.bumon.ar sky.haze.bumon.ar smartstudy.bumon.ar
-accesscam.org	6	5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org update.dev.ci.bebanndakorou-scandj.accesscam.org update.en.we.bebanndakorou-scandj.accesscam.org update.eu.testaaa.drgd.accesscam.org
 gcpservicios.cl	6	bias.gcpservicios.cl deend.gcpservicios.cl good.gcpservicios.cl makes.gcpservicios.cl quotes.gcpservicios.cl
 art-motel.com	6	cellmathsch.art-motel.com engagesirok.art-motel.com laptoppcok.art-motel.com nickmathsir.art-motel.com pcroomsir.art-motel.com
 krepche.com	5	allow.krepche.com amazingtt.krepche.com bestspark.krepche.com mathsri.krepche.com voya.krepche.com
@@ -188,6 +191,7 @@ srivaishnavam.org.au	5	goodmathsir.srivaishnavam.org.au goodmathsirok.srivaishna
 parcomunica.com	5	googmamdir.parcomunica.com homeworkmath.parcomunica.com mrkultragood.parcomunica.com treetreetree.parcomunica.com ultramathtech.parcomunica.com
 local-ip.co	4	15-204-116-29.my.local-ip.co api.15-204-116-29.my.local-ip.co c00lkiddtech.15-204-116-29.my.local-ip.co vps.15-204-116-29.my.local-ip.co
 net.br	4	agar.seprotec.net.br alto.seprotec.net.br bestspark.gparente.net.br bill.greengarden.net.br
+vpn64.de	4	mvd.yuzu-2.vpn64.de notexistsdev.we.yuzu-4.vpn64.de notexistswww.dev.we.yuzu-4.vpn64.de www.en.yuzu-2.vpn64.de
 backname.io	3	10update.104-243-38-18.backname.io uxsocen.update.104-243-38-18.backname.io z0yc0nkgtwf913s2.update.104-243-38-18.backname.io
 lhjmmc.cn	3	15.204.247.166.xip.lhjmmc.cn 51.222.206.184.xip.lhjmmc.cn readinglog-107-172-75-192.xip.lhjmmc.cn
 loseyourip.com	3	654370532dev.update.asdf.loseyourip.com mvd.370532dev.update.asdf.loseyourip.com update.asdf.loseyourip.com
@@ -202,6 +206,5 @@ glamourfreaks.com	3	formula.glamourfreaks.com lesson.glamourfreaks.com xoeand.gl
 roje.com.br	3	goodtung.roje.com.br schools.roje.com.br well.roje.com.br
 tripo.page	3	handbook-lantern-alley.tripo.page handbook-pit-nine.tripo.page handbook-snowdrift-dash.tripo.page
 dila.cl	3	math-school.dila.cl thg-ms.dila.cl tung-school.dila.cl
-vpn64.de	3	mvd.yuzu-2.vpn64.de notexistswww.dev.we.yuzu-4.vpn64.de www.en.yuzu-2.vpn64.de
 elemporio.ar	3	shopping.elemporio.ar smartbio.elemporio.ar triplet.elemporio.ar
 gandhinagar.com	3	triplet.gandhinagar.com tungtung.gandhinagar.com words.gandhinagar.com
