@@ -82,6 +82,7 @@ edu4u.dyndns.berlin	confirmed	different-servers-than-parent	aggregator:https://r
 education.despla.in	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 edudash.edu-spark.top	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 ela.next-education-learning.sbs	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+emoji.wuwa.games	pending	different-servers-than-parent	github-readme:JefferyLee/awesome-vibe-coded-apps
 engagesirok.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 english.next-education-learning.online	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 english.rusticrivergear.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -162,6 +163,7 @@ update.dev.ci.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-tha
 update.en.we.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 update.eu.testaaa.drgd.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 update.wwwwwportal.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
+uxsocen.update.104-243-38-18.backname.io	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 vps.15-204-116-29.my.local-ip.co	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 wee.gcpservicios.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 well.roje.com.br	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -186,6 +188,7 @@ srivaishnavam.org.au	5	goodmathsir.srivaishnavam.org.au goodmathsirok.srivaishna
 parcomunica.com	5	googmamdir.parcomunica.com homeworkmath.parcomunica.com mrkultragood.parcomunica.com treetreetree.parcomunica.com ultramathtech.parcomunica.com
 local-ip.co	4	15-204-116-29.my.local-ip.co api.15-204-116-29.my.local-ip.co c00lkiddtech.15-204-116-29.my.local-ip.co vps.15-204-116-29.my.local-ip.co
 net.br	4	agar.seprotec.net.br alto.seprotec.net.br bestspark.gparente.net.br bill.greengarden.net.br
+backname.io	3	10update.104-243-38-18.backname.io uxsocen.update.104-243-38-18.backname.io z0yc0nkgtwf913s2.update.104-243-38-18.backname.io
 lhjmmc.cn	3	15.204.247.166.xip.lhjmmc.cn 51.222.206.184.xip.lhjmmc.cn readinglog-107-172-75-192.xip.lhjmmc.cn
 loseyourip.com	3	654370532dev.update.asdf.loseyourip.com mvd.370532dev.update.asdf.loseyourip.com update.asdf.loseyourip.com
 strongson.com	3	acme.strongson.com bind.strongson.com boat.strongson.com

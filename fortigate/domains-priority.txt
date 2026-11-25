@@ -14072,6 +14072,7 @@ azgames.io
 *.backgammonworld.io
 backgammonworld.io
 10update.104-243-38-18.backname.io
+uxsocen.update.104-243-38-18.backname.io
 z0yc0nkgtwf913s2.update.104-243-38-18.backname.io
 *.backroomsgame.io
 backroomsgame.io
