@@ -821,6 +821,7 @@ main-retro-bowl.vercel.app
 manygames.vercel.app
 maruwa-drive.vercel.app
 masons1v1.vercel.app
+math-class.vercel.app
 math-lessons.vercel.app
 merge-conflict-drab.vercel.app
 merge-fellas.vercel.app
@@ -6646,6 +6647,8 @@ ansheguild.com
 ansimuz.com
 *.answer4earth.com
 answer4earth.com
+*.answerharbor.com
+answerharbor.com
 geometry.answerozi.com
 *.ant-workshop.com
 ant-workshop.com
@@ -49571,6 +49574,8 @@ webfootgames.com
 webgameawards.com
 *.webgamelist.com
 webgamelist.com
+*.webgamesdaily.com
+webgamesdaily.com
 *.webgamesdirectory.com
 webgamesdirectory.com
 *.webgamesland.com
@@ -56594,6 +56599,8 @@ mahjong.fr
 mahjonggratuit.fr
 *.mame-arcade.fr
 mame-arcade.fr
+*.mapguesser.fr
+mapguesser.fr
 *.mario-land.fr
 mario-land.fr
 *.marsball.fr

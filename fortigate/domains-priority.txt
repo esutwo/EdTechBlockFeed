@@ -718,6 +718,7 @@ main-retro-bowl.vercel.app
 manygames.vercel.app
 maruwa-drive.vercel.app
 masons1v1.vercel.app
+math-class.vercel.app
 math-lessons.vercel.app
 merge-conflict-drab.vercel.app
 merge-fellas.vercel.app
@@ -2371,6 +2372,8 @@ animalpetgames.com
 animalwebgames.com
 *.anocris.com
 anocris.com
+*.answerharbor.com
+answerharbor.com
 geometry.answerozi.com
 *.antitudegames.com
 antitudegames.com
@@ -10367,6 +10370,8 @@ wazcraft.com
 wbgamesmontreal.com
 *.weaverwordle.com
 weaverwordle.com
+*.webgamesdaily.com
+webgamesdaily.com
 *.webglgames.com
 webglgames.com
 *.webjeux.com
@@ -12766,6 +12771,8 @@ lesjeuxgratuits.fr
 logicieleducatif.fr
 *.mabelleferme.fr
 mabelleferme.fr
+*.mapguesser.fr
+mapguesser.fr
 *.molehillempire.fr
 molehillempire.fr
 *.monstersgame.fr
