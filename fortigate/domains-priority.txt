@@ -292,6 +292,7 @@ parkour-race.netlify.app
 piggygame.netlify.app
 pixelarena.netlify.app
 playdmv.netlify.app
+playing-hub.netlify.app
 playscondosgame.netlify.app
 poki-games-online.netlify.app
 prigames.netlify.app
@@ -763,6 +764,7 @@ nimcade.vercel.app
 nova-arcade-ten.vercel.app
 office-arcade-eta.vercel.app
 oh-hell-mu.vercel.app
+oktaavyagames.vercel.app
 online-games-unblocked-nextjs.vercel.app
 open-games-hub.vercel.app
 os-online-board-games.vercel.app
@@ -960,6 +962,7 @@ xcarcade.vercel.app
 yummyfood-tk.vercel.app
 z-games-zobro.vercel.app
 zens-slope.vercel.app
+zfgames-chi.vercel.app
 zohair-racing-portfolio.vercel.app
 zoidgames.vercel.app
 zzoryxgamehub-zzoryx.vercel.app
@@ -1116,6 +1119,7 @@ bonatik.com.ar
 canutoregala.com.ar
 chateagratis.com.ar
 chathispano.com.ar
+chatsfriends.com.ar
 copero.com.ar
 media.copero.com.ar
 bump.cristiangallo.com.ar
@@ -1128,6 +1132,7 @@ bias.itlogistics.com.ar
 bade.jmmipequenomundo.com.ar
 juegos.com.ar
 juegosestupidos.com.ar
+latinchat.com.ar
 lolavilla.com.ar
 mundijuegos.com.ar
 openingzero.com.ar
@@ -3216,6 +3221,8 @@ clashroyaleapp.com
 clashroyaleplay.com
 *.clashroyaleunblocked.com
 clashroyaleunblocked.com
+*.classblitz.com
+classblitz.com
 *.classgame77.com
 classgame77.com
 *.classic-retro-games.com
@@ -3440,6 +3447,8 @@ crazy-games.com
 crazycargames.com
 *.crazycattle3d.com
 crazycattle3d.com
+*.crazycattle3dgames.com
+crazycattle3dgames.com
 *.crazycattlegame.com
 crazycattlegame.com
 *.crazygames.com
@@ -7704,6 +7713,8 @@ padlessbox.com
 padlet.com
 *.padletusercontent.com
 padletusercontent.com
+*.paisdelosjuegos.com
+paisdelosjuegos.com
 *.paixnidia.com
 paixnidia.com
 *.panicbuttongames.com
@@ -9216,6 +9227,8 @@ sopa-de-letras.com
 sorvetemalvado.com
 *.soundboardguy.com
 soundboardguy.com
+*.source4game.com
+source4game.com
 *.southpadreislandkiteboarding.com
 southpadreislandkiteboarding.com
 *.spacebarclicker.com
@@ -11471,6 +11484,7 @@ euloge-arcade.pages.dev
 ev-rush-game.pages.dev
 exploration-games-in-roblox.pages.dev
 f-games.pages.dev
+fairgames.pages.dev
 fallline-9zo.pages.dev
 falorant-5qk.pages.dev
 fashion-model-games-roblox.pages.dev
@@ -11510,6 +11524,7 @@ fun-games.pages.dev
 fun-unblocked-games-roblox.pages.dev
 funbyte.pages.dev
 gabilangames-site.pages.dev
+game-dna.pages.dev
 game-ohmao.pages.dev
 game-verify.pages.dev
 gameonline-vip288.pages.dev
@@ -11599,6 +11614,7 @@ happywheels-unblocked.pages.dev
 happywheelsunblocked.pages.dev
 heardle-game.pages.dev
 heartsonline.pages.dev
+hi-freeapplegame-com.pages.dev
 hill-climb.pages.dev
 hill-climb-unblocked.pages.dev
 hole-io-unblocked.pages.dev
@@ -11632,6 +11648,7 @@ jellytruckgame.pages.dev
 jetpack-joyride-unblocked.pages.dev
 jetpack-joyride-unblocked-games.pages.dev
 jigsaw-puzzle-io.pages.dev
+juegos-desbloqueados.pages.dev
 juegos-infantiles.pages.dev
 juegosinfantiles.pages.dev
 jumo-games-support.pages.dev
@@ -11709,6 +11726,7 @@ motox3mgame.pages.dev
 multiplayer-fighting-games-roblox.pages.dev
 murder-mystery-2.pages.dev
 narrowone.pages.dev
+negativegames-privacy-policy.pages.dev
 nettleweb.pages.dev
 newyonogames.pages.dev
 nextgame-abc.pages.dev
@@ -11716,6 +11734,7 @@ nn-games-earn-money.pages.dev
 no-wifi-roblox-games.pages.dev
 noggg-roblox.pages.dev
 nopixel5minigames.pages.dev
+nova-galaxy-play-85.pages.dev
 novaarcade28.pages.dev
 numberle-unlimited.pages.dev
 nytconnections.pages.dev
@@ -11759,6 +11778,7 @@ pineapple-games.pages.dev
 pixel-art-games-roblox.pages.dev
 pixel-game-tycoon.pages.dev
 pixel-number-diy-coloring.pages.dev
+pixel-vault-arcade-40.pages.dev
 pizagame.pages.dev
 pizza-edition-games.pages.dev
 pizza-edition-golf-orbit.pages.dev
@@ -11884,6 +11904,7 @@ roblox-gameplay-horror-games.pages.dev
 roblox-games-api-v2.pages.dev
 roblox-games-for-girls.pages.dev
 roblox-games-half-loading.pages.dev
+roblox-games-high-quality.pages.dev
 roblox-games-like-iscariot.pages.dev
 roblox-games-without-tags.pages.dev
 roblox-harry-potter-script.pages.dev
@@ -11953,6 +11974,7 @@ roblox-window-esp.pages.dev
 roblox-zachs-service-station.pages.dev
 roblox-zombie-elimination-games.pages.dev
 roblox-zombie-survival-games.pages.dev
+roblox3daudioscript.pages.dev
 robloxautosellscript.pages.dev
 robloxbasicadminessentialsscript.pages.dev
 robloxchakradamescript.pages.dev
@@ -11960,6 +11982,7 @@ robloxchakramarkscript.pages.dev
 robloxchakramindscript.pages.dev
 robloxchakranaturescript.pages.dev
 robloxchakrasandscript.pages.dev
+robloxcommunityscript.pages.dev
 robloxcontextactionservicemobilebutton.pages.dev
 robloxdronescript.pages.dev
 robloxgameslikerust.pages.dev
@@ -11980,6 +12003,7 @@ robloxsurvivalgamesmultiplayer.pages.dev
 robloxtycoongames2player.pages.dev
 robloxuncopylockedgames.pages.dev
 robloxuniversalconstraintscript2.pages.dev
+robloxvetexgamesscript.pages.dev
 robloxwendigoscriptai.pages.dev
 rocketleague.pages.dev
 romplayerbycoops.pages.dev
@@ -12102,6 +12126,7 @@ stickrushgame.pages.dev
 stickwargame.pages.dev
 strandsnyt.pages.dev
 studybreak-cup.pages.dev
+studydraftgames.pages.dev
 stunts-recomp.pages.dev
 stupidzombies2.pages.dev
 subway-surfers-online.pages.dev
@@ -12258,6 +12283,7 @@ zc13.pages.dev
 zebra-gamer-roblox.pages.dev
 zeldamon.pages.dev
 zenithub.pages.dev
+zero-gravity-arcade-88.pages.dev
 zillion-games-scommesse.pages.dev
 zodiac-knights-roblox-games.pages.dev
 *.pangolinworks.dev
@@ -17013,6 +17039,7 @@ parkoutunblocked.github.io
 parms2255-ctrl.github.io
 parthgadge2025.github.io
 parthivgvs172.github.io
+partisan-games.github.io
 pataltimore.github.io
 patch-the-hype.github.io
 patrasxd.github.io
