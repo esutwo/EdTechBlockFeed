@@ -256,6 +256,7 @@ cardsgames.lovable.app
 classicludo.lovable.app
 dailyplayme.lovable.app
 flamehubgames.lovable.app
+gamezone-live.lovable.app
 level36arcade.lovable.app
 *.mahjong-solitaire.app
 mahjong-solitaire.app
@@ -54331,6 +54332,7 @@ squidgameonline.pages.dev
 squistergames-github-io.pages.dev
 starbucks-like-games-roblox.pages.dev
 states-map-game.pages.dev
+static-ice-uv-github-io.pages.dev
 steal-a-brainrot.pages.dev
 steal-a-brainrot-unblocked.pages.dev
 stealabrainrotgame.pages.dev
