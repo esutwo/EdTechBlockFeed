@@ -25064,7 +25064,6 @@ inkazee.com
 inklestudios.com
 *.inksgame.com
 inksgame.com
-cdn.inksoft.com
 *.inkwellgames.com
 inkwellgames.com
 *.inlightentertainment.com
@@ -42623,8 +42622,6 @@ sologiochigratis.com
 solojuegos.com
 *.solojuegosxp.com
 solojuegosxp.com
-*.sololearn.com
-sololearn.com
 *.solomario.com
 solomario.com
 *.soloporsms.com
@@ -57535,6 +57532,8 @@ abstraction.games
 accessible.games
 *.afterburn.games
 afterburn.games
+*.aiarcade.games
+aiarcade.games
 *.akses.games
 akses.games
 *.alamode.games
