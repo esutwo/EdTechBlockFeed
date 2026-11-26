@@ -361,6 +361,7 @@ mcv152.netlify.app
 mcv18.netlify.app
 monkeymart.netlify.app
 murdermysterygame.netlify.app
+mustgame.netlify.app
 mycondosgame.netlify.app
 nabilmirror1.netlify.app
 nabilmirror2.netlify.app
@@ -423,6 +424,7 @@ subwaysurfersbeijing.netlify.app
 sunsetgames.netlify.app
 super-liquid-soccer.netlify.app
 supermariogame.netlify.app
+syafikaledugames-wasza-arcade.netlify.app
 taco-browser.netlify.app
 tangram-game.netlify.app
 tapublishing.netlify.app
@@ -1303,6 +1305,8 @@ smartbio.elemporio.ar
 triplet.elemporio.ar
 cs.nostalgia.ar
 rammer.nana.nyxprint.ar
+*.solitario.ar
+solitario.ar
 clearfacts.vidanimal.ar
 *.pixai.art
 pixai.art
@@ -2506,6 +2510,8 @@ sojogar.com.br
 sojogosgratis.com.br
 *.spcineplay.com.br
 spcineplay.com.br
+*.subwaysurfer.com.br
+subwaysurfer.com.br
 *.sxgames.com.br
 sxgames.com.br
 *.tabuadademultiplicar.com.br
@@ -7423,6 +7429,8 @@ asteroids3d.com
 astikoo.com
 *.astonia.com
 astonia.com
+*.astraclient.com
+astraclient.com
 *.astragon.com
 astragon.com
 *.astralgameservers.com
@@ -17092,6 +17100,7 @@ mathtutors4school.firebaseapp.com
 minecraftclassic.firebaseapp.com
 miniblox.firebaseapp.com
 monkeymart.firebaseapp.com
+museo-games.firebaseapp.com
 mycat-a93ea.firebaseapp.com
 narrowone.firebaseapp.com
 nyancat-4c97f.firebaseapp.com
@@ -53504,6 +53513,7 @@ bloxcraft-ubg.pages.dev
 bloxcraftub.pages.dev
 bloxd-online.pages.dev
 bloxdio.pages.dev
+bloxnitecraft.pages.dev
 bob-the-robber-unblocked.pages.dev
 boredomgames.pages.dev
 boringgames-click.pages.dev
@@ -53678,6 +53688,7 @@ fairgames.pages.dev
 fallline-9zo.pages.dev
 falorant-5qk.pages.dev
 fashion-model-games-roblox.pages.dev
+fdzgames-guessmith.pages.dev
 firewall-safe-games.pages.dev
 five-nights-at-freddys.pages.dev
 fivenightsatfreddysgame.pages.dev
@@ -53739,6 +53750,7 @@ gameviet46.pages.dev
 gamevo-staging.pages.dev
 gbaemulator.pages.dev
 gd-webport.pages.dev
+gengame.pages.dev
 geo-guessr.pages.dev
 geodash-unblocked.pages.dev
 geodashlite.pages.dev
@@ -53825,6 +53837,7 @@ impostergamegenerator-click.pages.dev
 incrediboxunblocked.pages.dev
 indian-games-in-roblox.pages.dev
 infinite-craft.pages.dev
+infinitegames.pages.dev
 inquisitormaster-scary-roblox-games.pages.dev
 interstellar-unblocked-games-roblox.pages.dev
 iron-snout.pages.dev
@@ -54035,6 +54048,7 @@ playtabletennisopen.pages.dev
 playtailorstylist.pages.dev
 playwhatawalk.pages.dev
 plinko-games-on-roblox.pages.dev
+pocket-horizon-games-website.pages.dev
 01af8209.pocket-horizon-games-website.pages.dev
 poki2-portal.pages.dev
 pokigames.pages.dev
@@ -54098,6 +54112,7 @@ roblox-games-half-loading.pages.dev
 roblox-games-high-quality.pages.dev
 roblox-games-like-iscariot.pages.dev
 roblox-games-without-tags.pages.dev
+roblox-graphics-remover-script.pages.dev
 roblox-harry-potter-script.pages.dev
 roblox-hitbox-expander-script.pages.dev
 roblox-hockey-simulator-script.pages.dev
@@ -54109,6 +54124,7 @@ roblox-horror-games-horangi99.pages.dev
 roblox-horror-games-review.pages.dev
 roblox-horror-games-yt.pages.dev
 roblox-horror-map-template.pages.dev
+roblox-house-design-games.pages.dev
 roblox-house-games.pages.dev
 roblox-icon-pack-ranks.pages.dev
 roblox-jailbreak-like-games.pages.dev
@@ -54314,6 +54330,7 @@ squid-game-online.pages.dev
 squidgameonline.pages.dev
 squistergames-github-io.pages.dev
 starbucks-like-games-roblox.pages.dev
+states-map-game.pages.dev
 steal-a-brainrot.pages.dev
 steal-a-brainrot-unblocked.pages.dev
 stealabrainrotgame.pages.dev
@@ -54445,7 +54462,9 @@ unixgame-github-io.pages.dev
 untitledproxy.pages.dev
 up-and-coming-roblox.pages.dev
 us-steam-game.pages.dev
+userplay.pages.dev
 vampire-roblox-games.pages.dev
+vastusgames.pages.dev
 vault-ubg.pages.dev
 vaultedd.pages.dev
 vava-games.pages.dev
