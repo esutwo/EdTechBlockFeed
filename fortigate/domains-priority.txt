@@ -390,6 +390,8 @@ ragdoll-archers.app
 retrobowl.app
 *.retrobowlgames.app
 retrobowlgames.app
+*.retsurf.app
+retsurf.app
 *.ripplegame.app
 ripplegame.app
 *.slope2.app
@@ -15269,6 +15271,7 @@ b0bert1us.github.io
 b2geravesh-cmd.github.io
 b39241041-pixel.github.io
 b5teacher.github.io
+babydoekjes1.github.io
 babyowl1990-cloud.github.io
 backkampung.github.io
 backsel-lang.github.io
@@ -17020,6 +17023,7 @@ oloughlinmason-lgtm.github.io
 omerfarukoktay112-max.github.io
 omnijev.github.io
 omnitechnicity.github.io
+onionui.github.io
 online-unblocked-games.github.io
 only-game.github.io
 onorusdr749.github.io
