@@ -73,3 +73,14 @@ api.scvmath.org
 ach-api.duckdns.org
 studyhall42.duckdns.org
 classwork90.duckdns.org
+# 2026-11-26 review: blocked sites whose fingerprint lapsed, re-checked by hand
+autocode.com                       # 2026-11-26 review: service shut down; now redirects to the Miniforge 3D sandbox game
+superuser.app                      # 2026-11-26 review: redirects to the Miniforge 3D sandbox game (same as autocode.com)
+miniforge.app                      # 2026-11-26 review: "Cozy 3D world sandbox" browser game (target of autocode.com / superuser.app)
+eymc-group.github.io               # 2026-11-26 review: "WorkStudy – Free Unblocked Games" hub with proxies; /WorkStudy is a moved-notice that redirects to it
+kegillion.io                       # 2026-11-26 review: "Daily College Party Trivia Game" game site
+meticulai.com                      # 2026-11-26 review: "Meticulai Games" browser-game hall
+poly2.benlaunches.icu              # 2026-11-26 review: math_class games network (same owner as watch.benlaunches.icu, "unblocked games"); behind a Vercel checkpoint
+valodokagames.github.io            # 2026-11-26 review: "Valodoka Games" game site ("built for gamers & students"), currently a coming-soon page
+vh-prod-math-class-main-6f638f-09230ec8.livemy.site  # 2026-11-26 review: "math_class" games deploy; host sleeping, platform closing
+xiafei.netlify.app                 # 2026-11-26 review: interactive character-poking toy ("player name"), game-like, no school use

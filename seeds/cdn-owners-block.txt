@@ -12,3 +12,5 @@ npm unblocking
 npm educationate
 npm @fowntain
 gh frnlol          # 2026-11-24: "fern" proxy/games app (frnlol/frn), loaded by an SVG on S3 via jsDelivr/githack/raw GitHub
+gh Stockable       # 2026-11-26 review: games repos (Backrooms game page, duckmath clone); 21 confirmed game files under this owner
+gh lolration       # 2026-11-26 review: SVG bypass loaders (lolration/svg) and a Minecraft web port (Mojang-hello)

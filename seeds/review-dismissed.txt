@@ -39,3 +39,13 @@ killedbyapixel.itch.io       # 2026-11-23 review: itch.io game page; *.itch.io a
 matlab.mathworks.com         # 2026-11-24 review: MATLAB Online (engineering/coursework tool); "ubg" fingerprint is a false match
 vox.com                      # 2026-11-24 review: news article on school Chromebook privacy, not a game site
 ip:153.76.4.16               # 2026-11-24 review: InfinityFree free-hosting server (lovestoblog.com user subdomains); shared hosting, and *.lovestoblog.com is already blocked
+# 2026-11-26 review
+help.journy.io               # 2026-11-26 review: journy.io product help center (came from a public-APIs list), not a game site
+magist.io                    # 2026-11-26 review: product-regulation reference / MCP server (came from an MCP list), not a game site
+help.games.gg                # 2026-11-26 review: help-center article about AI assistants, not a game page
+sololearn.com                # 2026-11-26 review: coding-education platform; the one gn-math playground is blocked by URL (seeds/confirmed-urls.txt)
+cdn.inksoft.com              # 2026-11-26 review: merch-designer image CDN; the one gn-math SVG loader folder is blocked by URL (seeds/confirmed-urls.txt)
+# 2026-11-26 review: already blocked by a parent domain or owner-level entry
+bridge.playgama.com          # 2026-11-26 review: Playgama game SDK script; *.playgama.com already blocked
+cdn:gh/Stockable/games/ballerjerb.html            # 2026-11-26 review: Backrooms game page; owner blocked via seeds/cdn-owners-block.txt
+cdn:gh/lolration/Mojang-hello/Novix_26.1.2.html   # 2026-11-26 review: Minecraft web port; owner blocked via seeds/cdn-owners-block.txt

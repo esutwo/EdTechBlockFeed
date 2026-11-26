@@ -20,3 +20,6 @@ example.com/esu-feedtest/
 # 2026-11-24: "fern" SVG loader in an S3 bucket (whole S3 hosts are protected, so paths only)
 bulsobk.s3.amazonaws.com/math.html
 bulsobk.s3.amazonaws.com/index.svg
+# 2026-11-26 review: gn-math game loaders on hosts that can't be blocked whole
+cdn.inksoft.com/images/clipart/svg/2570/designer2092032341814427648under/
+www.sololearn.com/en/compiler-playground/W6oaP0W77da1
