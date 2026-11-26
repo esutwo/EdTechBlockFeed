@@ -607,6 +607,7 @@ epic-craft.vercel.app
 equinox-game.vercel.app
 escape-road-unblocked.vercel.app
 escape-road-unblocked-rust.vercel.app
+f-chi-neon.vercel.app
 f1-three-ivory.vercel.app
 f1thunder.vercel.app
 fahrun.vercel.app
@@ -7260,7 +7261,8 @@ newworldempires.com
 newyearssolitaire.com
 *.nexkinproblog.com
 nexkinproblog.com
-web.nfsmwo.com
+*.nfsmwo.com
+nfsmwo.com
 *.nfsmwonline.com
 nfsmwonline.com
 *.ngames.com
@@ -11906,6 +11908,7 @@ puzzlegames-click.pages.dev
 quake-srp.pages.dev
 quickdrawing.pages.dev
 quordlegame.pages.dev
+qwerty-ep9.pages.dev
 racecatgames-com.pages.dev
 racesurvival.pages.dev
 racinglimits.pages.dev
@@ -12382,6 +12385,7 @@ stickman-chaos.stickman-c06.workers.dev
 billiards.tailuge.workers.dev
 tops-games.workers.dev
 subway-surfers-london.tops-games.workers.dev
+golf-orbit.unblockedgameswtf.workers.dev
 happy-wheels.unblockedgameswtf.workers.dev
 frontend.viztrrx.workers.dev
 *.zuzi.dev
@@ -14128,6 +14132,7 @@ azgames.io
 *.backgammonworld.io
 backgammonworld.io
 10update.104-243-38-18.backname.io
+4020dev.update.104-243-38-18.backname.io
 uxsocen.update.104-243-38-18.backname.io
 z0yc0nkgtwf913s2.update.104-243-38-18.backname.io
 *.backroomsgame.io
