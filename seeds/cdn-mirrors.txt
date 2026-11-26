@@ -34,3 +34,4 @@ jsd.liiiu.cn                       jsdelivr
 # 2026-11-23 review of review/new-cdns.txt
 cdn.statistically.io               ignore     # 2026-11-23 review: look-alike of cdn.statically.io; returns 502, not a working mirror
 circleci.com                       ignore     # 2026-11-23 review: CI service build links (false shape match)
+clerk.marimo.io                    ignore     # 2026-11-26 review: Clerk sign-in API proxy for marimo.io (serves Clerk's own script), not a file mirror
