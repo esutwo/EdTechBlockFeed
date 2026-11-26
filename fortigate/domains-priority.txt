@@ -18968,6 +18968,7 @@ ninjas.io
 74.208.202.111.nip.io
 *.nitroclash.io
 nitroclash.io
+arcade.nitsuah.io
 *.nomorerobots.io
 nomorerobots.io
 *.nonogram-online.io
@@ -20123,6 +20124,8 @@ stickbattle.lol
 suikagame.lol
 *.tatesjourney.lol
 tatesjourney.lol
+*.unicornergame.lol
+unicornergame.lol
 *.warz.lol
 warz.lol
 *.watermelongame.lol

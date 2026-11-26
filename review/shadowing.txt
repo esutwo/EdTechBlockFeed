@@ -13,6 +13,7 @@ abrakadabra.roader247assist.co.za	confirmed	different-servers-than-parent	aggreg
 allow.krepche.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 amazingtt.krepche.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 api.15-204-116-29.my.local-ip.co	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+arcade.nitsuah.io	confirmed	different-servers-than-parent	github:nitsuah/games
 area.mantavyagajjar.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 automobiles.lkmobility.es	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 aver.pixelfucker.org	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
