@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-27 09:00 UTC  
+Run: 2026-11-27 10:14 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -8,10 +8,10 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Check | Count |
 |---|---:|
 | Curated lists downloaded | 14 |
-| List entries parsed and normalized | 87,218 |
+| List entries parsed and normalized | 87,239 |
 | GitHub repository searches | 30 |
-| GitHub repositories examined | 1,783 |
-| README files scanned for links | 54 |
+| GitHub repositories examined | 1,784 |
+| README files scanned for links | 30 |
 | Student link-list pages scanned | 8 |
 | Links harvested from link lists | 6,659 |
 | Certificate Transparency queries | 9 |
@@ -23,11 +23,11 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 569 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 31,206 |
-|   dropped: allowlist | 11,239 |
-|   dropped: known non-game service | 407 |
+| Links examined by the filters | 17,260 |
+|   dropped: allowlist | 8,973 |
+|   dropped: known non-game service | 190 |
 |   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 9,668 |
+|   dropped: README link with no game/bypass hint | 375 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 10 |
@@ -49,9 +49,9 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | Stalled bypass-list sites blocked as clones of known bypass pages | 0 |
 | Stalled bypass-list sites blocked for impersonating a known service | 0 |
 | Stalled bypass-list sites held for review (second signal) | 0 |
-| List domains checked in DNS for dead-domain maintenance | 790 |
-|   no answer / inconclusive (re-checked later) | 764 |
-|   answered 'does not exist' (NXDOMAIN) | 10 |
+| List domains checked in DNS for dead-domain maintenance | 782 |
+|   no answer / inconclusive (re-checked later) | 769 |
+|   answered 'does not exist' (NXDOMAIN) | 0 |
 |   DNS check skipped (resolvers unreachable) | 0 |
 | Dead list domains kept out of the feed | 0 |
 |   failing, not yet dropped (need 3 checks over 14 days) | 4,727 |
@@ -60,20 +60,19 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 |   servers excluded as shared hosting | 3 |
 |   servers excluded by network owner (cloud, CDN, parking, shared) | 1 |
 |   proxy server IPs held for review | 0 |
-| Live checks performed this run | 1 |
+| Live checks performed this run | 0 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| host | dead | 1 |
 
 ## Feed output
 
 | Item | Count |
 |---|---:|
-| `domains.txt` entries | 85,382 |
-| `domains-priority.txt` entries | 25,329 |
+| `domains.txt` entries | 85,403 |
+| `domains-priority.txt` entries | 25,350 |
 | `urls.txt` entries | 6,233 |
 | `proxyips.txt` entries (proxy server IPs) | 21 |
 | CDN owners blocked at owner level | 67 |
@@ -109,7 +108,7 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | dkorunic-browser-games | 1,000 |
 | game-proxy-gist | 393 |
 | gjohnpaull-games | 35,636 |
-| josuha-games | 13,010 |
+| josuha-games | 13,031 |
 | marcuccione-browser-games | 91 |
 | mmcohen-online-games | 65 |
 | nuneze54-games | 2,587 |
