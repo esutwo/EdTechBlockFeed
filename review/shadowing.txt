@@ -257,6 +257,7 @@ ultramathtech.parcomunica.com	confirmed	different-servers-than-parent	aggregator
 update.dev.ci.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 update.en.we.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 update.eu.testaaa.drgd.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
+update.ww.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 update.wwwwwportal.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 use.dyndns.berlin	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 uxsocen.update.104-243-38-18.backname.io	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
@@ -284,7 +285,7 @@ zlami.unibutton.com	confirmed	different-servers-than-parent	aggregator:https://r
 lovestoblog.com	21	awdawkpdiawa.educationlearningcollege.lovestoblog.com awdjawofiaofia.educationlearningcollege.lovestoblog.com awfijawpireia.educationlearningcollege.lovestoblog.com awidjawjfofaaa.educationlearningcollege.lovestoblog.com awifjafjaoifa.educationlearningcollege.lovestoblog.com
 fwh.is	20	dgzfgfyfz.ceifjskdj.fwh.is dphckbc9.ceifjskdj.fwh.is edu.67lol.fwh.is edu.ceifjskdj.fwh.is fyxogsit.ceifjskdj.fwh.is
 com.ar	14	able.itlogistics.com.ar ably.7dejunio.com.ar aide.tuapel.com.ar amen.zabiasrl.com.ar ames.agus-87.com.ar
-accesscam.org	7	5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org mvd.www.en.cyberspeedtech.accesscam.org update.dev.ci.bebanndakorou-scandj.accesscam.org update.en.we.bebanndakorou-scandj.accesscam.org
+accesscam.org	8	5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org mvd.www.en.cyberspeedtech.accesscam.org update.dev.ci.bebanndakorou-scandj.accesscam.org update.en.we.bebanndakorou-scandj.accesscam.org
 bumon.ar	7	cipher.bumon.ar ford.bumon.ar homie.bumon.ar sky.haze.bumon.ar smartstudy.bumon.ar
 gcpservicios.cl	6	bias.gcpservicios.cl deend.gcpservicios.cl good.gcpservicios.cl makes.gcpservicios.cl quotes.gcpservicios.cl
 art-motel.com	6	cellmathsch.art-motel.com engagesirok.art-motel.com laptoppcok.art-motel.com nickmathsir.art-motel.com pcroomsir.art-motel.com
