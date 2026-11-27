@@ -68,6 +68,13 @@ southpadreislandkiteboarding.com
 boxcasa.net
 girlspreples.org
 api.scvmath.org
+# 2026-11-27 review: blocked sites whose fingerprint lapsed, re-checked by hand
+claybound-56949.web.app            # 2026-11-27 review: "Claybound" clay platformer, free browser demo (game site)
+sktechproxies.blogspot.com         # 2026-11-27 review: blog posting daily "new working websites" proxy/unblocked-game link lists
+statpadgame.com                    # 2026-11-27 review: "StatPad Game" daily NFL trivia game
+warrenwoodhouse.blogspot.com       # 2026-11-27 review: /p/games.html is a large games and proxy link hub
+webmist.netlify.app                # 2026-11-27 review: "Mist" Steam-style browser-games storefront
+*.catclass.space                   # 2026-11-27 review: target of the task4z "catclass-cloak" SVG loaders; click-gated "Embedded Content" decoy that loads a githack loader (subdomains loading., mdtohtml. are decoys)
 # 2026-11-24: Achroma UBG API / YouTube-embed server seen streaming video to a student device
 # (153.76.6.6, also in seeds/proxyips-confirmed.txt). Same decoy page and achromaPV marker.
 ach-api.duckdns.org
