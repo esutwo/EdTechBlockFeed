@@ -121,7 +121,6 @@ education1.educationlearningcollege.lovestoblog.com	confirmed	different-servers-
 educationforall.educationlearningcollege.lovestoblog.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 edudash.edu-spark.top	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 ela.next-education-learning.sbs	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-emoji.wuwa.games	pending	different-servers-than-parent	github-readme:JefferyLee/awesome-vibe-coded-apps
 engagesirok.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 english.next-education-learning.online	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 english.rusticrivergear.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -138,6 +137,7 @@ fsdoifasfiao.educationlearningcollege.lovestoblog.com	confirmed	different-server
 full.boxathome.net	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 fyxogsit.ceifjskdj.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 games.abdullahbinfahad.info	confirmed	cname->abdullahbinfahad.github.io	github:abdullahbinfahad/Online-Fun-Games
+games.wyf0931.cn	confirmed	cname->oma-games.pages.dev,different-servers-than-parent	github-readme:wyf0931/games
 gfufgf.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 gfufgfgth.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 ggjfs.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -161,6 +161,7 @@ internet.isageek.net	confirmed	different-servers-than-parent	aggregator:https://
 jagjy.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 keepcontent.gd1code.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 laptoppcok.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+launcher.verxus.qzz.io	confirmed	different-servers-than-parent	github-readme:AkaziMC/operationbreaker
 learningdash.edu-spark.top	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 learninglab02.spencerbosworth.com	confirmed	different-servers-than-parent	github-readme:shatwyatt-boop/Gay
 lesson.glamourfreaks.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -189,12 +190,14 @@ notexistswww.dev.we.yuzu-4.vpn64.de	confirmed	different-servers-than-parent	urls
 notexistswww.update.kugwcscan550ec3dd6269e940e4c89a08f591a9ab.v220221183800208764.goodsrv.de	confirmed	different-servers-than-parent	urlscan:filename:"scramjet.all.js"
 ogdoh.ceifjskdj.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 oksirtkhmm.srivaishnavam.org.au	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+palette.stoop.games	confirmed	different-servers-than-parent	github-readme:ryviuszero/awesome-daily-games
 paloalto.oneuniversity.info	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 partners.gamepix.com	confirmed	different-servers-than-parent	redirect:company.gamepix.com
 pcroomsir.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 play.jiogames.com	confirmed	different-servers-than-parent	github-readme:Playgama/bridge-unity
 play.lakera.ai	confirmed	different-servers-than-parent	github-readme:nilveryboring/awesome-ai-browser-games
 play.mint.gg	confirmed	different-servers-than-parent	github:mintdotgg/mint-playground
+play.woodle.today	confirmed	cname->d244qxv724hj4j.cloudfront.net,different-servers-than-parent	github-readme:ryviuszero/awesome-daily-games
 quotes.gcpservicios.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 rawoprrrrawirpoeiwafazzz.educationlearningcollege.lovestoblog.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 rawrwoariapwriaw.educationlearningcollege.lovestoblog.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -223,7 +226,6 @@ sni.educations.mytunnel.org	confirmed	different-servers-than-parent	aggregator:h
 sparklygames.lgbt.sh	confirmed	cname->mutualstand2187.github.io	github:MutualStand2187/MutualStand2187.github.io
 stockbloc.ai.studio	confirmed	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 store.raidshadowlegends.com	confirmed	different-servers-than-parent	github-readme:odedkovach/awesome-web-games
-studio.luw.ai	pending	different-servers-than-parent	github-readme:marcelscruz/public-apis
 study-hub.inmobiliariamardelplata.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 study.bumon.ar	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 studyhub.mantavyagajjar.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
