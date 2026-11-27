@@ -4,6 +4,15 @@
 # loads from a CDN, so blocking it breaks the site on any domain it moves to.
 # The collector also learns engine owners automatically (state: engine_owners).
 gh achroma-ubg     # 2026-11-20: "Achroma UBG" engine; loaded via a 10-mirror fallback chain by api.tuplantaforma.com
+# 2026-11-27 review: dedicated game/proxy owners (each already has many confirmed loader repos)
+gh PrismDev3       # 2026-11-27 review: "chalkle" SVG loaders for gn-math and Arctic; 136 confirmed files
+gh c3p0r2d2luke    # 2026-11-27 review: SVG loaders for CloudMoon and a gn-math mirror
+gh task4z          # 2026-11-27 review: "classroom-15x" catclass-cloak SVG loaders; 92 confirmed files
+gh unblockedgames99x-code  # 2026-11-27 review: Neo OS games/browser, Ultraviolet and Scramjet proxy repos
+gh Bubbergamesites # 2026-11-27 review: UBG games and proxy repos (PandaProxy, BoxNet, ShadowPlay, UBG888)
+gh mathissofun137  # 2026-11-27 review: Scramjet/fern proxy and web "Mac OS" games repos
+gh fozogt-jpg      # 2026-11-27 review: "SuperUser Proxy" SVG loader and game repos
+gh ParrrotVR       # 2026-11-27 review: Holy Unblocker and Mysmic Unblocker proxy repos
 # 2026-11-24: seen live at a school: unpkg.com/unblocking@1.0.15 (BitLife and other games,
 # tab titled "edu-static"). All three packages are by the same npm account; @fowntain also
 # publishes a static build of the DogeUB proxy. Primary copy is a Google Cloud bucket

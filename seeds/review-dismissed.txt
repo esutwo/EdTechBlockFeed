@@ -36,6 +36,30 @@ marketplace.org              # 2026-11-23 review: news article about a Wordle-st
 tickets.blackbearshow.com    # 2026-11-23 review: event ticket checkout app
 # 2026-11-23 review: already blocked by a parent domain in fortigate/domains.txt
 killedbyapixel.itch.io       # 2026-11-23 review: itch.io game page; *.itch.io already blocked
+# 2026-11-27 review: CDN files still blocked at owner level (see seeds/cdn-owners-block.txt);
+# their check links lacked "@main", so jsDelivr returned 403 ("package size exceeded")
+cdn:gh/Bubbergamesites/shellshock-ithink/src/admin/index.html   # 2026-11-27 review: CMS admin page of a games-site repo; owner blocked
+cdn:gh/ParrrotVR/tbw-web/start.svg                              # 2026-11-27 review: repo too large for jsDelivr (file unreachable there); owner blocked (Holy/Mysmic Unblocker proxies)
+cdn:gh/PrismDev3/chalkle/docs/Arctic.svg                        # 2026-11-27 review: still a live SVG loader (Arctic); owner blocked
+cdn:gh/PrismDev3/chalkle/docs/Gnmath.svg                        # 2026-11-27 review: still a live SVG loader (gn-math); owner blocked
+cdn:gh/c3p0r2d2luke/lla/s/cloud/main-260430.svg                 # 2026-11-27 review: still a live SVG loader for CloudMoon; owner blocked
+cdn:gh/fidgetsetc/birdhosbybm/index.html                        # 2026-11-27 review: Scratch-packaged game; owner already owner-level (13 confirmed game files)
+cdn:gh/fozogt-jpg/Superuser-Links/site/html.svg                 # 2026-11-27 review: still a live "SuperUser Proxy" SVG loader; owner blocked
+cdn:gh/mathissofun137/lumaosbetatesting/macpls.html             # 2026-11-27 review: web "Mac OS" with games, proxy and tab cloak; owner blocked
+cdn:gh/task4z/classroom-15x/images/2026-07-24/catclass-cloak/logo.svg   # 2026-11-27 review: live loader for catclass.space; owner blocked
+cdn:gh/task4z/classroom-15x/images/a9652cb4cf/catclass-cloak/logo.svg   # 2026-11-27 review: live loader for catclass.space; owner blocked
+cdn:gh/task4z/classroom-15x/images/f4003efd44/catclass-cloak/logo.svg   # 2026-11-27 review: live loader for catclass.space; owner blocked
+cdn:gh/unblockedgames99x-code/better-cherri/Better-Cherri.html  # 2026-11-27 review: game page; owner blocked
+cdn:gh/unblockedgames99x-code/neo-os-games-02-cdn/games/ragdoll-runners.html  # 2026-11-27 review: game page (Ragdoll Runners); owner blocked
+cdn:gh/unblockedgames99x-code/scramjet/packages/core/rewriter/native/flamegraph.svg  # 2026-11-27 review: build artifact in a Scramjet proxy repo; owner blocked
+# 2026-11-27 review: lapsed blocked sites now kept blocked through seeds/confirmed.txt;
+# listed here only to clear them from review/held.txt (a confirmed.txt entry alone
+# does not clear a held item whose status is still "confirmed")
+claybound-56949.web.app      # 2026-11-27 review: kept blocked via seeds/confirmed.txt
+sktechproxies.blogspot.com   # 2026-11-27 review: kept blocked via seeds/confirmed.txt
+statpadgame.com              # 2026-11-27 review: kept blocked via seeds/confirmed.txt
+warrenwoodhouse.blogspot.com # 2026-11-27 review: kept blocked via seeds/confirmed.txt
+webmist.netlify.app          # 2026-11-27 review: kept blocked via seeds/confirmed.txt
 matlab.mathworks.com         # 2026-11-24 review: MATLAB Online (engineering/coursework tool); "ubg" fingerprint is a false match
 vox.com                      # 2026-11-24 review: news article on school Chromebook privacy, not a game site
 ip:153.76.4.16               # 2026-11-24 review: InfinityFree free-hosting server (lovestoblog.com user subdomains); shared hosting, and *.lovestoblog.com is already blocked
