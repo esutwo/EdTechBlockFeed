@@ -256,6 +256,7 @@ ufhtj.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://ra
 ugkyfh.67lol.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 ultramathtech.parcomunica.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 update.dev.ci.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
+update.en.mw.yuzu-4.vpn64.de	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 update.en.we.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 update.eu.testaaa.drgd.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 update.ww.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
@@ -271,6 +272,7 @@ vu0f9yd9.ceifjskdj.fwh.is	confirmed	different-servers-than-parent	aggregator:htt
 wee.gcpservicios.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 well.roje.com.br	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 what.cthulhu.li	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+wordpress.dev.yuzu-1.vpn64.de	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 words.gandhinagar.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 xoeand.glamourfreaks.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 yd0yf9ydpyr.ceifjskdj.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -290,6 +292,7 @@ accesscam.org	8	5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 8765dnote
 bumon.ar	7	cipher.bumon.ar ford.bumon.ar homie.bumon.ar sky.haze.bumon.ar smartstudy.bumon.ar
 gcpservicios.cl	6	bias.gcpservicios.cl deend.gcpservicios.cl good.gcpservicios.cl makes.gcpservicios.cl quotes.gcpservicios.cl
 art-motel.com	6	cellmathsch.art-motel.com engagesirok.art-motel.com laptoppcok.art-motel.com nickmathsir.art-motel.com pcroomsir.art-motel.com
+vpn64.de	6	mvd.yuzu-2.vpn64.de notexistsdev.we.yuzu-4.vpn64.de notexistswww.dev.we.yuzu-4.vpn64.de update.en.mw.yuzu-4.vpn64.de wordpress.dev.yuzu-1.vpn64.de
 krepche.com	5	allow.krepche.com amazingtt.krepche.com bestspark.krepche.com mathsri.krepche.com voya.krepche.com
 dllontop.org	5	bookshelf-bell-schedule-2264.dllontop.org chalk-eraser-metronome-3426.dllontop.org chalkboard-locker-magnet-8413.dllontop.org paintbrush-journal-8500.dllontop.org worksheet-lanyard-2479.dllontop.org
 inmobiliariamardelplata.com	5	chat.inmobiliariamardelplata.com mango.inmobiliariamardelplata.com math-sch.inmobiliariamardelplata.com study-hub.inmobiliariamardelplata.com tung-math.inmobiliariamardelplata.com
@@ -299,7 +302,6 @@ parcomunica.com	5	googmamdir.parcomunica.com homeworkmath.parcomunica.com mrkult
 backname.io	4	10update.104-243-38-18.backname.io 4020dev.update.104-243-38-18.backname.io uxsocen.update.104-243-38-18.backname.io z0yc0nkgtwf913s2.update.104-243-38-18.backname.io
 local-ip.co	4	15-204-116-29.my.local-ip.co api.15-204-116-29.my.local-ip.co c00lkiddtech.15-204-116-29.my.local-ip.co vps.15-204-116-29.my.local-ip.co
 net.br	4	agar.seprotec.net.br alto.seprotec.net.br bestspark.gparente.net.br bill.greengarden.net.br
-vpn64.de	4	mvd.yuzu-2.vpn64.de notexistsdev.we.yuzu-4.vpn64.de notexistswww.dev.we.yuzu-4.vpn64.de www.en.yuzu-2.vpn64.de
 lhjmmc.cn	3	15.204.247.166.xip.lhjmmc.cn 51.222.206.184.xip.lhjmmc.cn readinglog-107-172-75-192.xip.lhjmmc.cn
 strongson.com	3	acme.strongson.com bind.strongson.com boat.strongson.com
 carcano.me	3	afro.carcano.me blew.carcano.me bomb.carcano.me

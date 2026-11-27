@@ -53278,8 +53278,10 @@ vielespiele.de
 virtualforces.de
 *.vmlabs.de
 vmlabs.de
+wordpress.dev.yuzu-1.vpn64.de
 www.en.yuzu-2.vpn64.de
 mvd.yuzu-2.vpn64.de
+update.en.mw.yuzu-4.vpn64.de
 notexistswww.dev.we.yuzu-4.vpn64.de
 notexistsdev.we.yuzu-4.vpn64.de
 *.warofdragons.de
@@ -53809,6 +53811,7 @@ geordle.pages.dev
 getaway-shootout-games.pages.dev
 getting-over-it-free-online.pages.dev
 gettingoverit.pages.dev
+githubgamesforschool.pages.dev
 globle-game.pages.dev
 globle-infinite.pages.dev
 globlegame.pages.dev
@@ -54481,6 +54484,7 @@ unblocked-games-lunch-break.pages.dev
 unblocked-games-no-vpn.pages.dev
 unblocked-games-no-wifi.pages.dev
 unblocked-games-on-chromebook.pages.dev
+unblocked-games-premium-cloudflare-sites.pages.dev
 unblocked-games-safe-school.pages.dev
 unblocked-games-study-hall.pages.dev
 unblocked-games-websites-that-have-roblox.pages.dev
@@ -61994,6 +61998,7 @@ emulatoros420.github.io
 endlessdungeon.github.io
 energon-a-secas.github.io
 envisionpc.github.io
+enzo-lamanna.github.io
 enzodacoder.github.io
 epic704.github.io
 epicfreegames78.github.io
