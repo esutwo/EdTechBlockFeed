@@ -24276,6 +24276,7 @@ games4free.ru
 garbagegarage.ru
 *.grandgames.ru
 grandgames.ru
+arcade.hefest.ru
 *.igrixl.ru
 igrixl.ru
 *.igroutka.ru

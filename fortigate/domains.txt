@@ -80474,6 +80474,7 @@ happymod.ru
 hardcodex.ru
 *.hardmine.ru
 hardmine.ru
+arcade.hefest.ru
 *.herobrine.ru
 herobrine.ru
 *.hiervard.ru
