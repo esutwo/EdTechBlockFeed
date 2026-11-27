@@ -216,6 +216,7 @@ science.cthulhu.li	confirmed	different-servers-than-parent	aggregator:https://ra
 scramjet.mercurywork.shop	confirmed	cname->mercuryworkshop.github.io,different-servers-than-parent	github:MercuryWorkshop/scramjet
 scubaaflowworks.invisiblephotography.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 securly.com.educationlearningcollege.lovestoblog.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+shadow.nana.dragonauth.me	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 shopping.elemporio.ar	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 sirmathgood.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 siryessir.srivaishnavam.org.au	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm

@@ -464,6 +464,7 @@ agame-six.vercel.app
 agar-io-clone-8std.vercel.app
 agario-three.vercel.app
 ai-kids-games-fawn.vercel.app
+alexm67.vercel.app
 alexx743-games-unblocked.vercel.app
 almondnet.vercel.app
 arboreal-arcade.vercel.app
@@ -16483,6 +16484,7 @@ jakwhegf.github.io
 jamakinbannana.github.io
 jamalisda.github.io
 james9120.github.io
+jamesleycharles210-star.github.io
 jamestore214.github.io
 jamsilgotabujagogabojago-lang.github.io
 jan25.github.io
@@ -20266,6 +20268,7 @@ cuttherope.me
 desmos.me
 *.dinosaurgame.me
 dinosaurgame.me
+shadow.nana.dragonauth.me
 *.driftboss.me
 driftboss.me
 *.drifthunters.me
