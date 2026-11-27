@@ -1206,6 +1206,7 @@ tessel.at
 topbrowsergames.at
 *.wordle.at
 wordle.at
+steam.ix.asn.au
 bros.dstand.com.au
 *.free-games.com.au
 free-games.com.au
@@ -1771,6 +1772,8 @@ rbx.cn
 roblox.cn
 *.robloxdev.cn
 robloxdev.cn
+csgo.wmsj.cn
+dota2.wmsj.cn
 games.wyf0931.cn
 *.1v1lolgame.co
 1v1lolgame.co
@@ -2193,6 +2196,7 @@ baht.100mountain.com
 77ez.com
 *.7k7k.com
 7k7k.com
+cdn.mileweb.cs.steampowered.com.8686c.com
 *.888tragamonedas.com
 888tragamonedas.com
 *.88ez.com
@@ -3451,6 +3455,8 @@ cplegacy.com
 51-222-206-184.cprapid.com
 *.cpscount.com
 cpscount.com
+steam-content-dnld-1.apac-1-cdn.cqloud.com
+steam-content-dnld-1.eu-c1-cdn.cqloud.com
 *.crashgames.com
 crashgames.com
 *.crazy-cattle3d.com
@@ -3720,6 +3726,8 @@ dosbox.com
 dosgames.com
 *.dosgamesonline.com
 dosgamesonline.com
+*.dota2.com
+dota2.com
 *.dotjeux.com
 dotjeux.com
 *.doublespeakgames.com
@@ -5631,6 +5639,8 @@ hahagames.com
 hahamini.com
 *.halcyoncentral.com
 halcyoncentral.com
+*.half-life.com
+half-life.com
 *.halflemongames.com
 halflemongames.com
 *.halloweenflashgames.com
@@ -7136,6 +7146,7 @@ mundogamers.com
 muplatas2.com
 *.murder-mystery-game.com
 murder-mystery-game.com
+steam.apac.qtlglb.com.mwcloudcdn.com
 *.my-free-games.com
 my-free-games.com
 *.my-serv.com
@@ -8565,6 +8576,9 @@ qiyaasgame.com
 qq.com
 *.qrmfgame.com
 qrmfgame.com
+steam.apac.qtlglb.com
+steam.eca.qtlglb.com
+steam.naeu.qtlglb.com
 db.quackprep.com
 db2.quackprep.com
 duck.quackprep.com
@@ -9461,12 +9475,26 @@ stealbrainrot2.com
 stealbrainrotgame.com
 *.steam.com
 steam.com
+*.steam-chat.com
+steam-chat.com
+*.steamchina.com
+steamchina.com
 *.steamcommunity.com
 steamcommunity.com
 *.steamconnecttest.com
 steamconnecttest.com
+*.steamcontent.com
+steamcontent.com
+*.steamdeck.com
+steamdeck.com
+*.steamgames.com
+steamgames.com
 *.steamstatic.com
 steamstatic.com
+*.steamtransparent.com
+steamtransparent.com
+*.steamusercontent.com
+steamusercontent.com
 *.steppedupdle.com
 steppedupdle.com
 *.stick-war-2.com
@@ -9694,6 +9722,8 @@ taskifygames.com
 tcforums.com
 *.teagames.com
 teagames.com
+*.teamfortress.com
+teamfortress.com
 *.teamkillmedia.com
 teamkillmedia.com
 *.techgai.com
@@ -10280,6 +10310,8 @@ vaigames.com
 *.valentinesdaysolitaire.com
 valentinesdaysolitaire.com
 html001.valkix.com
+*.valvesoftware.com
+valvesoftware.com
 *.vampiregenesis.com
 vampiregenesis.com
 games.vanshul.com
@@ -20443,7 +20475,12 @@ aeon-network.net
 *.aibrowsergames.net
 aibrowsergames.net
 xboxlive.com.akadns.net
+steamcdn-a.akamaihd.net
 steamcommunity-a.akamaihd.net
+steamstore-a.akamaihd.net
+steamuserimages-a.akamaihd.net
+steampipe.akamaized.net
+steampipe-kr.akamaized.net
 *.ali213.net
 ali213.net
 *.allsonicgames.net
@@ -20572,6 +20609,7 @@ browser-games.net
 browsergamehub.net
 *.browsergamer.net
 browsergamer.net
+st.dl.bscstorage.net
 *.bubble-shooter.net
 bubble-shooter.net
 *.bubbleshooter.net
@@ -20667,6 +20705,8 @@ codetorch.net
 colute.net
 *.combatreloaded.net
 combatreloaded.net
+edge.steam-dns.top.comcast.net
+edge.steam-dns-2.top.comcast.net
 foxes.computersforpeace.net
 japan.computersforpeace.net
 *.connections-game.net
@@ -20765,6 +20805,7 @@ ducklet.net
 eaglercraft.net
 *.eaglercraftx.net
 eaglercraftx.net
+hsar.steampowered.com.edgesuite.net
 *.eggycarunblocked.net
 eggycarunblocked.net
 *.egirlgames.net
@@ -21635,6 +21676,7 @@ odioelchocolate.net
 *.ollgames.net
 ollgames.net
 nvidia.tt.omtrdc.net
+steam.cdn.on.net
 *.oneslime.net
 oneslime.net
 *.onlinegames.net
@@ -21940,6 +21982,8 @@ unblockedgameswtf.net
 uptoplay.net
 *.utoon.net
 utoon.net
+*.valve.net
+valve.net
 *.vanguardgames.net
 vanguardgames.net
 bins.verymad.net
@@ -24637,6 +24681,8 @@ cot.kevinliu.studio
 m28.studio
 *.old-games.su
 old-games.su
+*.s.team
+s.team
 *.codeplaygames.tech
 codeplaygames.tech
 *.edudeck.tech
@@ -24800,6 +24846,8 @@ medal.tv
 spellen.tv
 *.sprunki.tv
 sprunki.tv
+*.steam.tv
+steam.tv
 babe.aptrc.tw
 blue.aptrc.tw
 61.com.tw

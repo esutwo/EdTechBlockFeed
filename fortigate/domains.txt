@@ -1448,6 +1448,7 @@ wordle.at
 australiango.asn.au
 bawa.asn.au
 conquest.asn.au
+steam.ix.asn.au
 mrbc.asn.au
 othello.asn.au
 saba.asn.au
@@ -5235,6 +5236,7 @@ wow4.7821k.com
 *.85play.com
 85play.com
 steampowered.com.8686c.com
+cdn.mileweb.cs.steampowered.com.8686c.com
 steamstatic.com.8686c.com
 *.888.com
 888.com
@@ -12539,6 +12541,8 @@ cpokemon.com
 cpromptgames.com
 *.cpscount.com
 cpscount.com
+steam-content-dnld-1.apac-1-cdn.cqloud.com
+steam-content-dnld-1.eu-c1-cdn.cqloud.com
 *.crackedghostgames.com
 crackedghostgames.com
 *.crackingthecryptic.com
@@ -14537,6 +14541,8 @@ dot3dgames.com
 dota-league.com
 *.dota-utilities.com
 dota-utilities.com
+*.dota2.com
+dota2.com
 *.dotabuff.com
 dotabuff.com
 dod.dotagame.com
@@ -23260,6 +23266,8 @@ halberdstudios.com
 halcyoncentral.com
 *.haleyproductions.com
 haleyproductions.com
+*.half-life.com
+half-life.com
 orange.half-life2.com
 *.halfbot.com
 halfbot.com
@@ -32249,6 +32257,7 @@ muzzylane.com
 mvba.com
 *.mvpcapper.com
 mvpcapper.com
+steam.apac.qtlglb.com.mwcloudcdn.com
 *.mwmythicmods.com
 mwmythicmods.com
 *.mwpitts.com
@@ -38904,6 +38913,9 @@ jeux.qplaygames.com
 qq.com
 *.qrmfgame.com
 qrmfgame.com
+steam.apac.qtlglb.com
+steam.eca.qtlglb.com
+steam.naeu.qtlglb.com
 *.qtracker.com
 qtracker.com
 db.quackprep.com
@@ -43589,6 +43601,8 @@ steamrollerstudios.com
 steamsplay.com
 *.steamstatic.com
 steamstatic.com
+*.steamtransparent.com
+steamtransparent.com
 *.steamusercontent.com
 steamusercontent.com
 *.steamworldgames.com
@@ -44892,6 +44906,8 @@ teambeautycult.com
 teambingo.com
 *.teamcovenant.com
 teamcovenant.com
+*.teamfortress.com
+teamfortress.com
 *.teamgothammadrid.com
 teamgothammadrid.com
 *.teamhellspawn.com
@@ -68140,6 +68156,7 @@ epicgames-download1.akamaized.net
 fortnite-vod.akamaized.net
 steambroadcast.akamaized.net
 steampipe.akamaized.net
+steampipe-kr.akamaized.net
 *.alaplaya.net
 alaplaya.net
 *.albyor.net
@@ -68776,6 +68793,8 @@ combatreloaded.net
 chill.comcast.net
 gameinvasion.comcast.net
 playgames.comcast.net
+edge.steam-dns.top.comcast.net
+edge.steam-dns-2.top.comcast.net
 *.comecocos.net
 comecocos.net
 *.commandoshq.net
@@ -69167,6 +69186,7 @@ edengame.net
 edengames.net
 *.edgeofcreation.net
 edgeofcreation.net
+hsar.steampowered.com.edgesuite.net
 playstation.net.edgesuite88.net
 *.efreegames.net
 efreegames.net
@@ -71871,6 +71891,7 @@ parhelion.omgforum.net
 *.omnidrone.net
 omnidrone.net
 nvidia.tt.omtrdc.net
+steam.cdn.on.net
 games.on.net
 *.oneangrygamer.net
 oneangrygamer.net
@@ -82616,6 +82637,8 @@ protanki.tv
 spellen.tv
 *.sprunki.tv
 sprunki.tv
+*.steam.tv
+steam.tv
 *.sticky.tv
 sticky.tv
 *.tabletoptactics.tv
