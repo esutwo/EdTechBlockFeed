@@ -5779,6 +5779,7 @@ sites.google.com/view/dominumnetworkv2*
 sites.google.com/view/drive-u-7-home*
 sites.google.com/view/drive-u-7-home-10*
 sites.google.com/view/endisendis*
+sites.google.com/view/exploitsnstuff*
 sites.google.com/view/fraud999*
 sites.google.com/view/frostedbrowserstatic*
 sites.google.com/view/gbs360*
@@ -5796,7 +5797,9 @@ sites.google.com/view/staticquasar931*
 sites.google.com/view/super-ixl-math*
 sites.google.com/view/unblocked-galaxy*
 sites.google.com/view/unblockiverse-gnmath*
+sites.google.com/view/universalunblocking*
 sites.google.com/view/websitesabout*
+sites.google.com/view/wolfunblock*
 storage.googleapis.com/canvas-lms*
 testingcf.jsdelivr.net/combine/gh/2hz4kjwbr5-ux/*
 testingcf.jsdelivr.net/combine/gh/619amandagaiser-del/*

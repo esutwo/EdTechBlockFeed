@@ -89,7 +89,6 @@ came.confiarriendo.cl	confirmed	different-servers-than-parent	aggregator:https:/
 canvas.instructure.page.gd	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 cdn.inksoft.com	pending	different-servers-than-parent	github-readme:shatwyatt-boop/Gay
 cellmathsch.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
-cf.joinshaft.site	pending	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 chat.inmobiliariamardelplata.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 cherribestproxy.educationlearningcollege.lovestoblog.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 cherriisgood.educationlearningcollege.lovestoblog.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm

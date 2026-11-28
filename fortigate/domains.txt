@@ -31272,6 +31272,8 @@ minifreemarket.com
 minigame.com
 *.minigameas.com
 minigameas.com
+*.minigamedaily.com
+minigamedaily.com
 *.minigamemix.com
 minigamemix.com
 *.minigames.com
