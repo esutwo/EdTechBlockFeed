@@ -5835,6 +5835,8 @@ html7500.com
 htmlgames.com
 *.htmlgamescode.com
 htmlgamescode.com
+*.huddlenight.com
+huddlenight.com
 *.human-fallflat.com
 human-fallflat.com
 *.humanbenchmark.com
@@ -13046,6 +13048,8 @@ frivgames.fun
 gamelabx.fun
 *.gameload.fun
 gameload.fun
+*.gamewave.fun
+gamewave.fun
 *.gamr.fun
 gamr.fun
 *.globle.fun
@@ -14528,6 +14532,8 @@ capforts.io
 capybaragame.io
 *.cardgames.io
 cardgames.io
+*.cardsagainstformality.io
+cardsagainstformality.io
 *.cargamesfree.io
 cargamesfree.io
 *.cartoongames.io
@@ -19044,6 +19050,8 @@ modilimitado.io
 monkey-mart.io
 *.monkeymartgame.io
 monkeymartgame.io
+*.monopoly-game.io
+monopoly-game.io
 *.moomoo.io
 moomoo.io
 *.moomoo-io.io
@@ -19074,6 +19082,8 @@ mudwars.io
 musicgames.io
 *.myunblockedgames.io
 myunblockedgames.io
+*.nanagrams.io
+nanagrams.io
 *.narwhale.io
 narwhale.io
 *.nend.io
@@ -23593,6 +23603,8 @@ plays.org
 playsnake.org
 *.playsolitaire.org
 playsolitaire.org
+*.playstrategy.org
+playstrategy.org
 *.playtictactoe.org
 playtictactoe.org
 *.playwar.org
@@ -25384,6 +25396,8 @@ zvlabs.xyz
 dreams.night.int.yt
 bestspark.freshmilk.co.za
 abrakadabra.roader247assist.co.za
+*.boardgames.zone
+boardgames.zone
 *.dos.zone
 dos.zone
 *.gamenight.zone

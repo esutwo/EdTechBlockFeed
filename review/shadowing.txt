@@ -108,6 +108,7 @@ deephook.mobx.games	confirmed	cname->d7r6vx111wgoq.cloudfront.net,different-serv
 developer.playgama.com	confirmed	different-servers-than-parent	github-readme:Playgama/bridge-unity
 dgzfgfyfz.ceifjskdj.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 docs.crllect.dev	confirmed	cname->proxdocs.pages.dev,different-servers-than-parent	github:crllect/ProxDocs
+dominoes.playdrift.com	pending	cname->dominoesplaydrift.b-cdn.net,different-servers-than-parent	github-readme:drewbitt/browser-game-night
 dphckbc9.ceifjskdj.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 dreams.night.int.yt	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 duck.freezenova.chat	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm

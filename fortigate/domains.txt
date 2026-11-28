@@ -24344,6 +24344,8 @@ simcity3000.htmlplanet.com
 huanchanggame.com
 *.hubmario.com
 hubmario.com
+*.huddlenight.com
+huddlenight.com
 *.huelsbeck.com
 huelsbeck.com
 *.hueygames.com
@@ -57282,6 +57284,8 @@ gamelabx.fun
 gameload.fun
 *.gameloop.fun
 gameloop.fun
+*.gamewave.fun
+gamewave.fun
 *.gamr.fun
 gamr.fun
 *.gdhelper.fun
@@ -60414,6 +60418,8 @@ capybaragame.io
 car-games.io
 *.cardgames.io
 cardgames.io
+*.cardsagainstformality.io
+cardsagainstformality.io
 *.cargamesfree.io
 cargamesfree.io
 *.cartoongames.io
@@ -65135,6 +65141,8 @@ monarchies.io
 monkey-mart.io
 *.monkeymartgame.io
 monkeymartgame.io
+*.monopoly-game.io
+monopoly-game.io
 *.moomoo.io
 moomoo.io
 *.moomoo-io.io
@@ -65185,6 +65193,8 @@ nagagames-th.io
 nagagames89.io
 *.nakana.io
 nakana.io
+*.nanagrams.io
+nanagrams.io
 *.narwhale.io
 narwhale.io
 *.nastol.io
@@ -78156,6 +78166,8 @@ playsolitaire.org
 playspent.org
 *.playstationtrophies.org
 playstationtrophies.org
+*.playstrategy.org
+playstrategy.org
 *.playtalkread.org
 playtalkread.org
 *.playtech-slot.org
@@ -85424,6 +85436,8 @@ xword.co.za
 zombiegamer.co.za
 *.hacg.zip
 hacg.zip
+*.boardgames.zone
+boardgames.zone
 *.dos.zone
 dos.zone
 *.elsewhere.zone
