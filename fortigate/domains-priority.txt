@@ -192,6 +192,7 @@ nealfun.app
 2048-game.netlify.app
 accountancysupergames.netlify.app
 aepicside.netlify.app
+astra-games.netlify.app
 ayoolopon.netlify.app
 basket-random-unblocked.netlify.app
 basketball-io.netlify.app
@@ -664,6 +665,7 @@ games-website-chi.vercel.app
 games-website-eight.vercel.app
 games-wheat-chi.vercel.app
 games-xi-dusky.vercel.app
+gameslab.vercel.app
 gamesutilityforum.vercel.app
 gamevado.vercel.app
 gameverse-10001.vercel.app
@@ -746,6 +748,7 @@ minecraft-web-one.vercel.app
 minecraft-web-ub25.vercel.app
 minecrafteaglercraft.vercel.app
 minecraftero.vercel.app
+minecraftfree.vercel.app
 minecrafthud.vercel.app
 minecraftopus.vercel.app
 minehera-website-server-minecraft.vercel.app
@@ -3235,6 +3238,8 @@ cittagames.com
 citycardriving.com
 *.civilitythegame.com
 civilitythegame.com
+*.claim-free-games.com
+claim-free-games.com
 *.clash3d.com
 clash3d.com
 *.clashofclans.com
@@ -5499,6 +5504,8 @@ gog.com
 gogogame.com
 *.gogogogame.com
 gogogogame.com
+*.gogunlocked.com
+gogunlocked.com
 *.gogy.com
 gogy.com
 *.gogygames.com
@@ -11325,6 +11332,7 @@ oddisbest.dev
 9games.pages.dev
 a-small-world-cup-unblocked-games.pages.dev
 active-learning-games-famparentlife.pages.dev
+adlessgamescf.pages.dev
 advertise-roblox-games-discord.pages.dev
 agar-io-unblocked.pages.dev
 agario.pages.dev
@@ -11470,6 +11478,7 @@ classroomgames.pages.dev
 clephu-games.pages.dev
 click-games-on-roblox.pages.dev
 clickerheroes.pages.dev
+client-sasktel-5g-game.pages.dev
 cloudflare-01-language-games.pages.dev
 cloudmoonapp.pages.dev
 codecube-edu-github-io.pages.dev
@@ -11600,6 +11609,7 @@ fairgames.pages.dev
 fallline-9zo.pages.dev
 falorant-5qk.pages.dev
 fashion-model-games-roblox.pages.dev
+fast-paced-games-roblox.pages.dev
 fdzgames-guessmith.pages.dev
 firewall-safe-games.pages.dev
 five-nights-at-freddys.pages.dev
@@ -11640,6 +11650,7 @@ gabilangames-site.pages.dev
 game-dna.pages.dev
 game-ohmao.pages.dev
 game-verify.pages.dev
+gamedevservice.pages.dev
 gameonline-vip288.pages.dev
 games-afterhours.pages.dev
 games-ai1.pages.dev
@@ -11668,6 +11679,7 @@ geodash-unblocked.pages.dev
 geodashlite.pages.dev
 geoguessr-unblocked.pages.dev
 geometry-arrow.pages.dev
+geometry-dash-apk-cloudflare.pages.dev
 geometry-dash-lite.pages.dev
 geometry-dash-meltdown.pages.dev
 geometry-dash-unblocked.pages.dev
@@ -11687,6 +11699,7 @@ githubgamesforschool.pages.dev
 globle-game.pages.dev
 globle-infinite.pages.dev
 globlegame.pages.dev
+god-s-will-roblox.pages.dev
 godenotjogodeterrorroblox.pages.dev
 gold-static.pages.dev
 golf-orbit-game.pages.dev
@@ -12222,6 +12235,7 @@ solidstart-games.pages.dev
 solitaire-63d.pages.dev
 solitaire-free-online.pages.dev
 solitaire-online.pages.dev
+space-exploration-games-roblox.pages.dev
 spaceinvaders.pages.dev
 spaceinvadersgame.pages.dev
 spacewaves-unblocked.pages.dev
@@ -12289,6 +12303,7 @@ sysadministrator.pages.dev
 tabletennisgame.pages.dev
 tank-trouble.pages.dev
 team-building-games-roblox.pages.dev
+telegram-board-games.pages.dev
 temple-run-2.pages.dev
 temple-run2.pages.dev
 tennismasters.pages.dev
@@ -12600,6 +12615,8 @@ unblockedgames.com.es
 crazy-games.es
 *.crazygames.es
 crazygames.es
+*.cuentolino.es
+cuentolino.es
 *.digimobil.es
 digimobil.es
 *.drivemad.es
@@ -16188,6 +16205,7 @@ galvinprime.github.io
 game-unloc.github.io
 game3dcar.github.io
 gamebackup.github.io
+gamedojo-benchmark.github.io
 gamehubjogos.github.io
 gamehubportal-1.github.io
 gameinclassroom.github.io
@@ -17204,6 +17222,7 @@ parms2255-ctrl.github.io
 parthgadge2025.github.io
 parthivgvs172.github.io
 partisan-games.github.io
+pass-and-play-games.github.io
 pataltimore.github.io
 patch-the-hype.github.io
 patrasxd.github.io
@@ -23015,6 +23034,7 @@ ilovealltypesofducks.duckdns.org
 its2026.duckdns.org
 kikas41271.duckdns.org
 learnduck.duckdns.org
+leesvpn.duckdns.org
 manie-musicale.duckdns.org
 maniemusicale.duckdns.org
 mathacheivement.duckdns.org
