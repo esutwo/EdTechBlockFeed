@@ -7,9 +7,12 @@
 15-204-116-29.my.local-ip.co	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 15.204.247.166.xip.lhjmmc.cn	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 4020dev.update.104-243-38-18.backname.io	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
+4notexists7053dev.update.cyberspeedtech.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 51.222.206.184.xip.lhjmmc.cn	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
+65dnotexists7053dev.update.cyberspeedtech.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
+98765dnotexists7053dev.update.cyberspeedtech.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 abrakadabra.roader247assist.co.za	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 allow.krepche.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 amazingtt.krepche.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -179,6 +182,7 @@ math.free-dyndns.org	confirmed	different-servers-than-parent	aggregator:https://
 math.next-education-learning.sbs	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mathsri.krepche.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mhi.banglam.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+mood.cthulhu.li	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mrkultragood.parcomunica.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mvd.370532dev.update.asdf.loseyourip.com	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 mvd.www.en.cyberspeedtech.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
@@ -211,6 +215,7 @@ readisfun.localization.ee	confirmed	different-servers-than-parent	aggregator:htt
 rollingsky.3kh0.net	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/Carter54git/Ult
 school-tt.contratoslab.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 schoolast3.ekocleaner.ro	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+schoolgetgome.meridiano.com.br	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 schools.cthulhu.li	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 schools.roje.com.br	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 science-tungtung.avenuecarriagecrossing.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -221,6 +226,7 @@ science.cthulhu.li	confirmed	different-servers-than-parent	aggregator:https://ra
 scramjet.mercurywork.shop	confirmed	cname->mercuryworkshop.github.io,different-servers-than-parent	github:MercuryWorkshop/scramjet
 scubaaflowworks.invisiblephotography.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 securly.com.educationlearningcollege.lovestoblog.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+self.gcpservicios.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 shadow.nana.dragonauth.me	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 shopping.elemporio.ar	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 sirmathgood.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -230,6 +236,7 @@ smartbio.elemporio.ar	confirmed	different-servers-than-parent	aggregator:https:/
 smartstudy.bumon.ar	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 sni.educations.mytunnel.org	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 sparklygames.lgbt.sh	confirmed	cname->mutualstand2187.github.io	github:MutualStand2187/MutualStand2187.github.io
+sparkx3.lgbt.sh	pending	cname->spark-x3-launcher.pages.dev	github:sparkly-games/spark-x3
 stockbloc.ai.studio	confirmed	different-servers-than-parent	github-readme:punkpeye/awesome-remote-mcp-servers
 store.raidshadowlegends.com	confirmed	different-servers-than-parent	github-readme:odedkovach/awesome-web-games
 study-hub.inmobiliariamardelplata.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -294,15 +301,15 @@ zlami.unibutton.com	confirmed	different-servers-than-parent	aggregator:https://r
 lovestoblog.com	21	awdawkpdiawa.educationlearningcollege.lovestoblog.com awdjawofiaofia.educationlearningcollege.lovestoblog.com awfijawpireia.educationlearningcollege.lovestoblog.com awidjawjfofaaa.educationlearningcollege.lovestoblog.com awifjafjaoifa.educationlearningcollege.lovestoblog.com
 fwh.is	20	dgzfgfyfz.ceifjskdj.fwh.is dphckbc9.ceifjskdj.fwh.is edu.67lol.fwh.is edu.ceifjskdj.fwh.is fyxogsit.ceifjskdj.fwh.is
 com.ar	14	able.itlogistics.com.ar ably.7dejunio.com.ar aide.tuapel.com.ar amen.zabiasrl.com.ar ames.agus-87.com.ar
-accesscam.org	10	5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org mvd.www.en.cyberspeedtech.accesscam.org notexists7053dev.update.cyberspeedtech.accesscam.org notexistsnotexists7053dev.update.cyberspeedtech.accesscam.org
+accesscam.org	13	4notexists7053dev.update.cyberspeedtech.accesscam.org 5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 65dnotexists7053dev.update.cyberspeedtech.accesscam.org 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org 98765dnotexists7053dev.update.cyberspeedtech.accesscam.org
+gcpservicios.cl	7	bias.gcpservicios.cl deend.gcpservicios.cl good.gcpservicios.cl makes.gcpservicios.cl quotes.gcpservicios.cl
 bumon.ar	7	cipher.bumon.ar ford.bumon.ar homie.bumon.ar sky.haze.bumon.ar smartstudy.bumon.ar
-gcpservicios.cl	6	bias.gcpservicios.cl deend.gcpservicios.cl good.gcpservicios.cl makes.gcpservicios.cl quotes.gcpservicios.cl
+vpn64.de	7	mvd.yuzu-2.vpn64.de notexistsdev.we.yuzu-4.vpn64.de notexistswww.dev.we.yuzu-4.vpn64.de update.en.mw.yuzu-4.vpn64.de wordpress.dev.yuzu-1.vpn64.de
 art-motel.com	6	cellmathsch.art-motel.com engagesirok.art-motel.com laptoppcok.art-motel.com nickmathsir.art-motel.com pcroomsir.art-motel.com
-vpn64.de	6	mvd.yuzu-2.vpn64.de notexistsdev.we.yuzu-4.vpn64.de notexistswww.dev.we.yuzu-4.vpn64.de update.en.mw.yuzu-4.vpn64.de wordpress.dev.yuzu-1.vpn64.de
+cthulhu.li	6	cook.cthulhu.li felt.cthulhu.li mood.cthulhu.li schools.cthulhu.li science.cthulhu.li
 krepche.com	5	allow.krepche.com amazingtt.krepche.com bestspark.krepche.com mathsri.krepche.com voya.krepche.com
 dllontop.org	5	bookshelf-bell-schedule-2264.dllontop.org chalk-eraser-metronome-3426.dllontop.org chalkboard-locker-magnet-8413.dllontop.org paintbrush-journal-8500.dllontop.org worksheet-lanyard-2479.dllontop.org
 inmobiliariamardelplata.com	5	chat.inmobiliariamardelplata.com mango.inmobiliariamardelplata.com math-sch.inmobiliariamardelplata.com study-hub.inmobiliariamardelplata.com tung-math.inmobiliariamardelplata.com
-cthulhu.li	5	cook.cthulhu.li felt.cthulhu.li schools.cthulhu.li science.cthulhu.li what.cthulhu.li
 srivaishnavam.org.au	5	goodmathsir.srivaishnavam.org.au goodmathsirok.srivaishnavam.org.au oksirtkhmm.srivaishnavam.org.au siryessir.srivaishnavam.org.au thankssir.srivaishnavam.org.au
 parcomunica.com	5	googmamdir.parcomunica.com homeworkmath.parcomunica.com mrkultragood.parcomunica.com treetreetree.parcomunica.com ultramathtech.parcomunica.com
 backname.io	4	10update.104-243-38-18.backname.io 4020dev.update.104-243-38-18.backname.io uxsocen.update.104-243-38-18.backname.io z0yc0nkgtwf913s2.update.104-243-38-18.backname.io

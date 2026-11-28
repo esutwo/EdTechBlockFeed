@@ -2435,6 +2435,7 @@ megadriver.com.br
 megajogos.com.br
 *.menteativa.com.br
 menteativa.com.br
+schoolgetgome.meridiano.com.br
 *.meteorus.com.br
 meteorus.com.br
 *.mhund.com.br
@@ -3457,6 +3458,7 @@ deend.gcpservicios.cl
 good.gcpservicios.cl
 makes.gcpservicios.cl
 quotes.gcpservicios.cl
+self.gcpservicios.cl
 wee.gcpservicios.cl
 *.habbo.cl
 habbo.cl
@@ -53312,6 +53314,7 @@ vmlabs.de
 wordpress.dev.yuzu-1.vpn64.de
 www.en.yuzu-2.vpn64.de
 mvd.yuzu-2.vpn64.de
+www.mvd.yuzu-2.vpn64.de
 update.en.mw.yuzu-4.vpn64.de
 notexistswww.dev.we.yuzu-4.vpn64.de
 notexistsdev.we.yuzu-4.vpn64.de
@@ -54460,6 +54463,7 @@ temple-run-2.pages.dev
 temple-run2.pages.dev
 tennismasters.pages.dev
 territorialio2.pages.dev
+testtesttesttest-github-io.pages.dev
 tetris-games.pages.dev
 tetris-unblocked.pages.dev
 th08-web.pages.dev
@@ -58323,6 +58327,8 @@ silverkey.games
 skibidi.games
 *.skystone.games
 skystone.games
+*.slew.games
+slew.games
 *.slopeunblocked.games
 slopeunblocked.games
 *.slotjili.games
@@ -67274,6 +67280,7 @@ schoology.lat
 boon.busse.li
 cook.cthulhu.li
 felt.cthulhu.li
+mood.cthulhu.li
 schools.cthulhu.li
 science.cthulhu.li
 what.cthulhu.li
@@ -75273,7 +75280,10 @@ update.ww.bebanndakorou-scandj.accesscam.org
 5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org
 update.wwwwwportal.bebanndakorou-scandj.accesscam.org
 mvd.www.en.cyberspeedtech.accesscam.org
+4notexists7053dev.update.cyberspeedtech.accesscam.org
+65dnotexists7053dev.update.cyberspeedtech.accesscam.org
 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org
+98765dnotexists7053dev.update.cyberspeedtech.accesscam.org
 notexists7053dev.update.cyberspeedtech.accesscam.org
 notexistsnotexists7053dev.update.cyberspeedtech.accesscam.org
 update.eu.testaaa.drgd.accesscam.org
@@ -79452,10 +79462,12 @@ betus.com.pa
 *.creature.page
 creature.page
 update.ea.104-243-38-18.plesk.page
+mvd.update.ea.104-243-38-18.plesk.page
 15-204-247-166.plesk.page
 cc84434bb2299629.www.da.198-251-83-251.plesk.page
 51-222-206-184.plesk.page
 update.www.en.89-58-60-184.plesk.page
+ksfgpwhm.test.www.89-58-60-184.plesk.page
 handbook-lantern-alley.tripo.page
 handbook-pit-nine.tripo.page
 handbook-snowdrift-dash.tripo.page
@@ -81709,6 +81721,8 @@ dodi-repacks.site
 fireboyandwatergirl.site
 *.fitgirl-repacks.site
 fitgirl-repacks.site
+*.freeplays.site
+freeplays.site
 *.friv-games.site
 friv-games.site
 *.fruitninja.site
@@ -81743,6 +81757,8 @@ nfsunderground2.site
 *.nightgames.site
 nightgames.site
 liminalgg.notion.site
+*.onlygame.site
+onlygame.site
 *.paperio.site
 paperio.site
 *.phcode.site
