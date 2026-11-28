@@ -1,6 +1,6 @@
 # Latest collector run
 
-Run: 2026-11-28 16:56 UTC  
+Run: 2026-11-28 17:14 UTC  
 Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-works.md) for what each check does.
 
 ## Checks performed
@@ -11,23 +11,23 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 | List entries parsed and normalized | 87,257 |
 | GitHub repository searches | 30 |
 | GitHub repositories examined | 1,790 |
-| README files scanned for links | 40 |
+| README files scanned for links | 6 |
 | Student link-list pages scanned | 7 |
 | Links harvested from link lists | 5,279 |
-| Certificate Transparency queries | 0 |
-| Certificates examined | 0 |
-|   certificate-log source unreachable this run (skipped) | 1 |
+| Certificate Transparency queries | 9 |
+| Certificates examined | 6 |
+|   certificate-log source unreachable this run (skipped) | 0 |
 | CDN owners expanded (repo listings) | 2 |
 | CDN owner repositories listed | 0 |
 | CDN entry files found in owner repos | 0 |
 | GitHub code searches for loader files | 6 |
 | Loader-candidate files from code search | 569 |
 |   code searches that failed (check CODE_SEARCH_TOKEN) | 0 |
-| Links examined by the filters | 16,873 |
-|   dropped: allowlist | 2,309 |
-|   dropped: known non-game service | 153 |
+| Links examined by the filters | 7,824 |
+|   dropped: allowlist | 1,021 |
+|   dropped: known non-game service | 24 |
 |   dropped: bare hosting-platform domain | 1 |
-|   dropped: README link with no game/bypass hint | 6,194 |
+|   dropped: README link with no game/bypass hint | 11 |
 |   dropped: CDN file that isn't a page (js/css/img) | 1 |
 |   dropped: CDN owner on allowlist | 0 |
 |   dropped: CDN file in a test/fixture folder | 10 |
@@ -60,14 +60,12 @@ Generated automatically by `collector/collect.py`. See [how-it-works.md](how-it-
 |   servers excluded as shared hosting | 3 |
 |   servers excluded by network owner (cloud, CDN, parking, shared) | 1 |
 |   proxy server IPs held for review | 0 |
-| Live checks performed this run | 3 |
+| Live checks performed this run | 0 |
 
 ## Live check results
 
 | Entry type | Result | Count |
 |---|---|---:|
-| host | alive | 1 |
-| host | game | 2 |
 
 ## Feed output
 
