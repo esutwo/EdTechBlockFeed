@@ -123,6 +123,7 @@ ela.next-education-learning.sbs	confirmed	different-servers-than-parent	aggregat
 engagesirok.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 english.next-education-learning.online	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 english.rusticrivergear.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+exponential.scottsun.io	pending	cname->scottstts.github.io	github-readme:fengyiqicoder/awesome-fable-5.2
 fablelist.000ooo.ooo	confirmed	cname->fengyiqicoder.github.io	github:fengyiqicoder/awesome-fable-5.2
 felt.cthulhu.li	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 ford.bumon.ar	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -167,6 +168,7 @@ lesson.glamourfreaks.com	confirmed	different-servers-than-parent	aggregator:http
 lightspeedsystems.com.educationlearningcollege.lovestoblog.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 lightspeedsystems.coma.educationlearningcollege.lovestoblog.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 linewise.samandjen.ca	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+m05atbkv40hy1g6y.update.asdf.loseyourip.com	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 makes.gcpservicios.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 mango.inmobiliariamardelplata.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 math-sch.inmobiliariamardelplata.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -184,7 +186,9 @@ mvl.en.uhwhat123.camdvr.org	confirmed	different-servers-than-parent	urlscan:file
 nathanmath.ultradec.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 nichestudies.govt.hu	confirmed	different-servers-than-parent	urlscan:filename:"scramjet.all.js"
 nickmathsir.art-motel.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+notexists7053dev.update.cyberspeedtech.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 notexistsdev.we.yuzu-4.vpn64.de	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
+notexistsnotexists7053dev.update.cyberspeedtech.accesscam.org	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 notexistswww.dev.we.yuzu-4.vpn64.de	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 notexistswww.update.kugwcscan550ec3dd6269e940e4c89a08f591a9ab.v220221183800208764.goodsrv.de	confirmed	different-servers-than-parent	urlscan:filename:"scramjet.all.js"
 ogdoh.ceifjskdj.fwh.is	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -196,6 +200,7 @@ pcroomsir.art-motel.com	confirmed	different-servers-than-parent	aggregator:https
 play.jiogames.com	confirmed	different-servers-than-parent	github-readme:Playgama/bridge-unity
 play.lakera.ai	confirmed	different-servers-than-parent	github-readme:nilveryboring/awesome-ai-browser-games
 play.mint.gg	confirmed	different-servers-than-parent	github:mintdotgg/mint-playground
+play.unofreak.com	pending	different-servers-than-parent	github-readme:drewbitt/browser-game-night
 play.woodle.today	confirmed	cname->d244qxv724hj4j.cloudfront.net,different-servers-than-parent	github-readme:ryviuszero/awesome-daily-games
 quotes.gcpservicios.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 rawoprrrrawirpoeiwafazzz.educationlearningcollege.lovestoblog.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -271,6 +276,7 @@ vu0f9yd9.ceifjskdj.fwh.is	confirmed	different-servers-than-parent	aggregator:htt
 wee.gcpservicios.cl	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 well.roje.com.br	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 what.cthulhu.li	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
+whm.update.asdf.loseyourip.com	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 wordpress.dev.yuzu-1.vpn64.de	confirmed	different-servers-than-parent	urlscan:filename:"uv.bundle.js"
 words.gandhinagar.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
 xoeand.glamourfreaks.com	confirmed	different-servers-than-parent	aggregator:https://raw.githubusercontent.com/yourworstnightm
@@ -287,7 +293,7 @@ zlami.unibutton.com	confirmed	different-servers-than-parent	aggregator:https://r
 lovestoblog.com	21	awdawkpdiawa.educationlearningcollege.lovestoblog.com awdjawofiaofia.educationlearningcollege.lovestoblog.com awfijawpireia.educationlearningcollege.lovestoblog.com awidjawjfofaaa.educationlearningcollege.lovestoblog.com awifjafjaoifa.educationlearningcollege.lovestoblog.com
 fwh.is	20	dgzfgfyfz.ceifjskdj.fwh.is dphckbc9.ceifjskdj.fwh.is edu.67lol.fwh.is edu.ceifjskdj.fwh.is fyxogsit.ceifjskdj.fwh.is
 com.ar	14	able.itlogistics.com.ar ably.7dejunio.com.ar aide.tuapel.com.ar amen.zabiasrl.com.ar ames.agus-87.com.ar
-accesscam.org	8	5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org mvd.www.en.cyberspeedtech.accesscam.org update.dev.ci.bebanndakorou-scandj.accesscam.org update.en.we.bebanndakorou-scandj.accesscam.org
+accesscam.org	10	5update.beta.wwwapp.bebanndakorou-scandj.accesscam.org 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org mvd.www.en.cyberspeedtech.accesscam.org notexists7053dev.update.cyberspeedtech.accesscam.org notexistsnotexists7053dev.update.cyberspeedtech.accesscam.org
 bumon.ar	7	cipher.bumon.ar ford.bumon.ar homie.bumon.ar sky.haze.bumon.ar smartstudy.bumon.ar
 gcpservicios.cl	6	bias.gcpservicios.cl deend.gcpservicios.cl good.gcpservicios.cl makes.gcpservicios.cl quotes.gcpservicios.cl
 art-motel.com	6	cellmathsch.art-motel.com engagesirok.art-motel.com laptoppcok.art-motel.com nickmathsir.art-motel.com pcroomsir.art-motel.com
@@ -301,6 +307,7 @@ parcomunica.com	5	googmamdir.parcomunica.com homeworkmath.parcomunica.com mrkult
 backname.io	4	10update.104-243-38-18.backname.io 4020dev.update.104-243-38-18.backname.io uxsocen.update.104-243-38-18.backname.io z0yc0nkgtwf913s2.update.104-243-38-18.backname.io
 local-ip.co	4	15-204-116-29.my.local-ip.co api.15-204-116-29.my.local-ip.co c00lkiddtech.15-204-116-29.my.local-ip.co vps.15-204-116-29.my.local-ip.co
 net.br	4	agar.seprotec.net.br alto.seprotec.net.br bestspark.gparente.net.br bill.greengarden.net.br
+loseyourip.com	4	m05atbkv40hy1g6y.update.asdf.loseyourip.com mvd.370532dev.update.asdf.loseyourip.com mvl.07705370532dev.update.asdf.loseyourip.com whm.update.asdf.loseyourip.com
 lhjmmc.cn	3	15.204.247.166.xip.lhjmmc.cn 51.222.206.184.xip.lhjmmc.cn readinglog-107-172-75-192.xip.lhjmmc.cn
 strongson.com	3	acme.strongson.com bind.strongson.com boat.strongson.com
 carcano.me	3	afro.carcano.me blew.carcano.me bomb.carcano.me

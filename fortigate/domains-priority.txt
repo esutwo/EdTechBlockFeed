@@ -1911,6 +1911,8 @@ penaltyshooters.co
 phrazle.co
 *.play2048.co
 play2048.co
+*.playninja.co
+playninja.co
 *.pokeapi.co
 pokeapi.co
 *.poki.co
@@ -2883,12 +2885,16 @@ boardgamearena.com
 boardgamecentral.com
 *.boardgameman.com
 boardgameman.com
+*.boardgameplay.com
+boardgameplay.com
 *.boardgames247.com
 boardgames247.com
 *.boardgamespub.com
 boardgamespub.com
 *.boardgameuniverse.com
 boardgameuniverse.com
+*.boardgaminghub.com
+boardgaminghub.com
 *.boatloadpuzzles.com
 boatloadpuzzles.com
 *.bobigames.com
@@ -4088,6 +4094,8 @@ fastgames.com
 fastplaygames.com
 *.fastsonicgames.com
 fastsonicgames.com
+*.fateround.com
+fateround.com
 *.feelfreegames.com
 feelfreegames.com
 *.femo.com
@@ -4748,6 +4756,8 @@ funbrain.com
 funbridge.com
 *.funclicker.com
 funclicker.com
+*.funclubgroup.com
+funclubgroup.com
 *.funforgames.com
 funforgames.com
 *.fungamelinks.com
@@ -5724,6 +5734,8 @@ helloneighborgame.com
 helmetroyale.com
 *.helpfulgames.com
 helpfulgames.com
+*.herdgamesonline.com
+herdgamesonline.com
 *.hero-wars.com
 hero-wars.com
 *.herozerogame.com
@@ -6531,6 +6543,8 @@ lablockedgames.com
 afro.ladatap.com
 *.lagged.com
 lagged.com
+*.lanplays.com
+lanplays.com
 *.lantanagames.com
 lantanagames.com
 *.larkinor.com
@@ -6635,6 +6649,8 @@ lopigames.com
 *.lordswm.com
 lordswm.com
 mvd.370532dev.update.asdf.loseyourip.com
+m05atbkv40hy1g6y.update.asdf.loseyourip.com
+whm.update.asdf.loseyourip.com
 *.losjuegosdehoradeaventura.com
 losjuegosdehoradeaventura.com
 *.lostdecadegames.com
@@ -7124,6 +7140,8 @@ mspacman4u.com
 mudverse.com
 *.mullergame.com
 mullergame.com
+*.multiplayer-quiz.com
+multiplayer-quiz.com
 *.multiplayeragent.com
 multiplayeragent.com
 *.multiplayerchess.com
@@ -7823,6 +7841,8 @@ ultramathtech.parcomunica.com
 parkourblock3d.com
 *.partidago.com
 partidago.com
+*.passandplaygames.com
+passandplaygames.com
 *.passion-industry-game.com
 passion-industry-game.com
 *.passiongames-es.com
@@ -13201,6 +13221,8 @@ tower.game
 vex.game
 *.vibecode.game
 vibecode.game
+*.18xx.games
+18xx.games
 *.1b.games
 1b.games
 *.2player.games
@@ -13450,6 +13472,8 @@ nitzan.games
 nub.games
 *.oldvideo.games
 oldvideo.games
+*.oneword.games
+oneword.games
 *.onlinemahjong.games
 onlinemahjong.games
 *.onlineparty.games
@@ -13737,6 +13761,8 @@ monkeymart.gg
 now.gg
 *.op.gg
 op.gg
+*.playboard.gg
+playboard.gg
 *.playfrog.gg
 playfrog.gg
 *.playit.gg
@@ -14702,6 +14728,8 @@ dordle.io
 dordlegame.io
 *.drawbattle.io
 drawbattle.io
+*.drawgame.io
+drawgame.io
 *.drawthis.io
 drawthis.io
 *.drednot.io
@@ -18802,6 +18830,8 @@ idolsofash.io
 igry.io
 *.imigames.io
 imigames.io
+*.imposketch.io
+imposketch.io
 *.impostor.io
 impostor.io
 *.inblog.io
@@ -19783,6 +19813,8 @@ vex7.io
 vibegamer.io
 *.videogame.io
 videogame.io
+*.virtualtabletop.io
+virtualtabletop.io
 *.voodoo-gaming.io
 voodoo-gaming.io
 *.voxar.io
@@ -22574,6 +22606,8 @@ subwaysurfersgame.online
 supermario.online
 *.tabarcade.online
 tabarcade.online
+*.tabooparty.online
+tabooparty.online
 *.tboi.online
 tboi.online
 *.tetris.online
@@ -22662,6 +22696,8 @@ update.ww.bebanndakorou-scandj.accesscam.org
 update.wwwwwportal.bebanndakorou-scandj.accesscam.org
 mvd.www.en.cyberspeedtech.accesscam.org
 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org
+notexists7053dev.update.cyberspeedtech.accesscam.org
+notexistsnotexists7053dev.update.cyberspeedtech.accesscam.org
 update.eu.testaaa.drgd.accesscam.org
 *.agariogame.org
 agariogame.org
@@ -23060,6 +23096,8 @@ blog.free-dyndns.org
 math.free-dyndns.org
 *.freeasteroids.org
 freeasteroids.org
+*.freeboardgames.org
+freeboardgames.org
 *.freecell.org
 freecell.org
 *.freeciv.org
@@ -25348,6 +25386,8 @@ bestspark.freshmilk.co.za
 abrakadabra.roader247assist.co.za
 *.dos.zone
 dos.zone
+*.gamenight.zone
+gamenight.zone
 *.io-games.zone
 io-games.zone
 *.itch.zone

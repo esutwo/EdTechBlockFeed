@@ -4177,6 +4177,8 @@ playbutton.co
 playingwithfire.co
 *.playne.co
 playne.co
+*.playninja.co
+playninja.co
 *.playo.co
 playo.co
 *.playtoday.co
@@ -9369,6 +9371,8 @@ boardgameman.com
 boardgamenews.com
 *.boardgameoracle.com
 boardgameoracle.com
+*.boardgameplay.com
+boardgameplay.com
 *.boardgamequest.com
 boardgamequest.com
 *.boardgames.com
@@ -9389,6 +9393,8 @@ boardgameuniverse.com
 boardgamewire.com
 *.boardgameworld.com
 boardgameworld.com
+*.boardgaminghub.com
+boardgaminghub.com
 *.boatloadpuzzles.com
 boatloadpuzzles.com
 *.bobandbarn.com
@@ -16726,6 +16732,8 @@ fatal-destiny.com
 fatalgame.com
 *.fatdragongames.com
 fatdragongames.com
+*.fateround.com
+fateround.com
 *.fatesworsethandeath.com
 fatesworsethandeath.com
 *.fatgamer.com
@@ -18859,6 +18867,8 @@ funcas.com
 funcityonlinegames.com
 *.funclicker.com
 funclicker.com
+*.funclubgroup.com
+funclubgroup.com
 *.funcom.com
 funcom.com
 *.funcomfg.com
@@ -23690,6 +23700,8 @@ hemispheresamusements.com
 hempuli.com
 *.henchmangoon.com
 henchmangoon.com
+*.herdgamesonline.com
+herdgamesonline.com
 *.herecomesniko.com
 herecomesniko.com
 *.heresyminiatures.com
@@ -28422,6 +28434,8 @@ lanotd.com
 lanpartylist.com
 *.lanpartynw.com
 lanpartynw.com
+*.lanplays.com
+lanplays.com
 *.lansmash.com
 lansmash.com
 *.lantanagames.com
@@ -29348,6 +29362,8 @@ lorraineminiatures.com
 *.losethegame.com
 losethegame.com
 mvd.370532dev.update.asdf.loseyourip.com
+m05atbkv40hy1g6y.update.asdf.loseyourip.com
+whm.update.asdf.loseyourip.com
 *.losjuegosdehoradeaventura.com
 losjuegosdehoradeaventura.com
 *.losjuegosgratis.com
@@ -32163,6 +32179,8 @@ multimanpublishing.com
 multiplay.com
 *.multiplayer.com
 multiplayer.com
+*.multiplayer-quiz.com
+multiplayer-quiz.com
 *.multiplayeragent.com
 multiplayeragent.com
 *.multiplayerchess.com
@@ -35144,6 +35162,8 @@ partytop.com
 parxracing.com
 *.pascalgamedevelopment.com
 pascalgamedevelopment.com
+*.passandplaygames.com
+passandplaygames.com
 *.passenger-games.com
 passenger-games.com
 *.passfieldgames.com
@@ -57585,6 +57605,8 @@ wolf.game
 yehyeh.game
 *.1337.games
 1337.games
+*.18xx.games
+18xx.games
 *.1b.games
 1b.games
 *.2player.games
@@ -58124,6 +58146,8 @@ oasys.games
 oddfauna.games
 *.oldvideo.games
 oldvideo.games
+*.oneword.games
+oneword.games
 *.onlinemahjong.games
 onlinemahjong.games
 *.onlineparty.games
@@ -58698,6 +58722,8 @@ guernseychessclub.org.gg
 palworld.gg
 *.pgslotgame.gg
 pgslotgame.gg
+*.playboard.gg
+playboard.gg
 *.playfrog.gg
 playfrog.gg
 *.playit.gg
@@ -60630,6 +60656,8 @@ dordlegame.io
 dotz.io
 *.drawbattle.io
 drawbattle.io
+*.drawgame.io
+drawgame.io
 *.drawthis.io
 drawthis.io
 *.dreamteck.io
@@ -64837,6 +64865,8 @@ idolsofash.io
 igry.io
 *.imigames.io
 imigames.io
+*.imposketch.io
+imposketch.io
 *.impostor.io
 impostor.io
 *.improbable.io
@@ -66041,6 +66071,8 @@ vex7.io
 vibegamer.io
 *.videogame.io
 videogame.io
+*.virtualtabletop.io
+virtualtabletop.io
 *.vizinteractive.io
 vizinteractive.io
 *.voodoo.io
@@ -75049,6 +75081,8 @@ supermario.online
 sweetbonanzagame.online
 *.tabarcade.online
 tabarcade.online
+*.tabooparty.online
+tabooparty.online
 *.taigamewin79.online
 taigamewin79.online
 *.tboi.online
@@ -75211,6 +75245,8 @@ update.ww.bebanndakorou-scandj.accesscam.org
 update.wwwwwportal.bebanndakorou-scandj.accesscam.org
 mvd.www.en.cyberspeedtech.accesscam.org
 8765dnotexists7053dev.update.cyberspeedtech.accesscam.org
+notexists7053dev.update.cyberspeedtech.accesscam.org
+notexistsnotexists7053dev.update.cyberspeedtech.accesscam.org
 update.eu.testaaa.drgd.accesscam.org
 *.acpedia.org
 acpedia.org
@@ -76433,6 +76469,8 @@ math.free-dyndns.org
 freeallegiance.org
 *.freeasteroids.org
 freeasteroids.org
+*.freeboardgames.org
+freeboardgames.org
 *.freecell.org
 freecell.org
 *.freechess.org
@@ -85392,6 +85430,8 @@ dos.zone
 elsewhere.zone
 *.gamebai.zone
 gamebai.zone
+*.gamenight.zone
+gamenight.zone
 *.io-games.zone
 io-games.zone
 *.itch.zone
